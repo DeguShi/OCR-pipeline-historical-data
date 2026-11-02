@@ -82,6 +82,9 @@ flowchart LR
 
 The full configuration is [`configs/final_v6.json`](configs/final_v6.json).
 
+The method, the protocol and the analysis of the two references are described in the paper (in Portuguese):
+[`docs/paper.pdf`](docs/paper.pdf).
+
 ## Quick start
 
 **Colab (no install):** open [`notebooks/presentation.ipynb`](notebooks/presentation.ipynb) in Colab
@@ -123,7 +126,7 @@ full scans from the archive. Python 3.12, CPU or CUDA; a page takes one to two m
 | `data/extra/`                      | the book's other pages, training crops and their diplomatic transcriptions, the 10 test pages                  |
 | `models/lexicon/`                  | period dictionary and trigram model used by the final configuration                                            |
 | `records/`                         | every search, sweep and training run, so work can resume from what was measured ([details](records/README.md)) |
-| `docs/`                            | development log in Portuguese ([`PROCESS.md`](docs/PROCESS.md)) and the greedy search report                   |
+| `docs/`                            | the paper ([`paper.pdf`](docs/paper.pdf)), the development log in Portuguese ([`PROCESS.md`](docs/PROCESS.md)) and the greedy search report                   |
 
 Recognizer weights live on the Hugging Face Hub
 ([KobayashiShiroe/OCR-pipeline-historical-data](https://huggingface.co/KobayashiShiroe/OCR-pipeline-historical-data)):
@@ -167,6 +170,6 @@ Contra o gabarito oficial, nas 3 páginas reservadas, o WER fica em **18,74%** e
 transcrições diplomáticas, em 13 páginas fora do treino e da seleção, os valores são 4,10% e 1,68%. Essa referência
 foi gerada por LLM e não foi revisada por pessoas.
 
-Para ver o pipeline funcionando, abra [`notebooks/presentation.ipynb`](notebooks/presentation.ipynb), que está em
+O artigo completo está em [`docs/paper.pdf`](docs/paper.pdf). Para ver o pipeline funcionando, abra [`notebooks/presentation.ipynb`](notebooks/presentation.ipynb), que está em
 português e já executado. O processo completo, com os experimentos, os números e o que não funcionou, está em
 [`docs/PROCESS.md`](docs/PROCESS.md). Os registros de todas as buscas e treinos ficam em [`records/`](records/).
