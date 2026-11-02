@@ -1,5 +1,9 @@
 # OCR pipeline for 19th-century handwritten records
 
+[![Paper (PDF, pt-BR)](https://img.shields.io/badge/paper-PDF%20(pt--BR)-b31b1b)](docs/paper.pdf)
+[![Weights on Hugging Face](https://img.shields.io/badge/weights-Hugging%20Face-ffcc4d)](https://huggingface.co/KobayashiShiroe/OCR-pipeline-historical-data)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DeguShi/OCR-pipeline-historical-data/blob/main/notebooks/presentation.ipynb)
+
 Handwritten text recognition for the **Livro de Registro de Leis nº 1** (1892–1894), the first law register of
 the São Carlos city council (São Paulo, Brazil). The pipeline runs locally and needs no transcription service. It uses a
 [Kraken](https://github.com/mittagessen/kraken) line recognizer adapted to this book, a dictionary and word trigrams
@@ -55,24 +59,23 @@ How the error fell from version to version (all configuration choices were made 
 
 ## How it works
 
-```mermaid
-flowchart LR
-    A[page image] --> B[geometry<br/>upscale ×2, deskew]
-    B --> C[segmentation image<br/>contrast, ruling removed]
-    C --> D[Kraken blla<br/>line segmentation]
-    B --> E[recognizer<br/>PP-OCRv6 fine-tuned on the book]
-    D --> E
-    E --> F[CTC rescoring<br/>period dictionary candidates]
-    F --> G[Viterbi over word trigrams<br/>period corpus + book text]
-    G --> H[notation rules<br/>de-hyphenation]
-    H --> I[text]
-```
+<p align="center">
+  <img src="docs/figures/flow_pipeline.gif" width="860" alt="Animated pipeline diagram: (a) reading a page, (b) adapting the recognizer">
+</p>
+<p align="center"><sub>Figure from the paper (labels in Portuguese). (a) Reading a page: one geometric base, two
+images that differ only in photometry, line polygons from the segmentation image, recognition on the plain image,
+then CTC rescoring and Viterbi over period trigrams. (b) Adapting the recognizer, once, outside the reading.</sub></p>
 
 - **Image.** One image defines the coordinates (upscaled ×2 and deskewed). From it, a contrast-enhanced copy with the
   ruling lines removed goes to segmentation, and the plain copy goes to the recognizer.
 - **Recognizer.** PP-OCRv6 _medium_ (Kiessling, [Zenodo 10.5281/zenodo.21788410](https://doi.org/10.5281/zenodo.21788410)),
   fine-tuned on 78 other pages of the book. Their labels are diplomatic transcriptions produced with Gemini 4 Argon.
   None of the 12 evaluated pages, and no human transcription, was used to train the weights.
+
+  <p align="center"><img src="docs/figures/flow_rotulos.gif" width="760" alt="Two label sources for the recognizer: self-training and external transcriptions"></p>
+  <p align="center"><sub>Two label sources that were tried: (a) self-training on the pipeline's own confident lines,
+  (b) diplomatic transcriptions aligned to the segmented lines (used in the final recognizer).</sub></p>
+
 - **Post-correction.** For each word, candidates from a period dictionary are scored with the recognizer's own CTC
   posteriors. A Viterbi pass over word trigrams then picks the line. The dictionary and the trigrams come from 443
   Portuguese books on Project Gutenberg (authors born 1790–1875) and 3,565 São Paulo state laws from 1889–1910.
@@ -80,10 +83,12 @@ flowchart LR
   no option is discarded for good: an option that hurt alone can come back once others are in. The searches add up to
   about 2,300 evaluations and 92 hours of compute.
 
-The full configuration is [`configs/final_v6.json`](configs/final_v6.json).
+  <p align="center"><img src="docs/figures/flow_busca.gif" width="760" alt="Conditional greedy search: stages in pipeline order, decision of one stage"></p>
+  <p align="center"><sub>(a) Stages are decided in pipeline order, and passes repeat until the configuration stops
+  changing. (b) Deciding one stage: each option alone on the reference, then on top of the winner, then a backward pass.</sub></p>
 
-The method, the protocol and the analysis of the two references are described in the paper (in Portuguese):
-[`docs/paper.pdf`](docs/paper.pdf).
+The full configuration is [`configs/final_v6.json`](configs/final_v6.json). The method, the protocol and the analysis
+of the two references are in the paper (in Portuguese, with an English abstract): **[`docs/paper.pdf`](docs/paper.pdf)**.
 
 ## Quick start
 
@@ -113,26 +118,32 @@ full scans from the archive. Python 3.12, CPU or CUDA; a page takes one to two m
 
 ## Repository
 
-| path                               | contents                                                                                                       |
-| ---------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| `ocr_pipeline/`                    | the pipeline: preprocessing, segmentation, recognition, CTC rescoring, context model, metrics                  |
-| `ocr_pipeline/tuning/`             | greedy and random search, sweeps, training-data preparation                                                    |
-| `configs/`                         | frozen configuration of every version (`final_v6.json` is the final one)                                       |
-| `sweeps/`                          | search specifications                                                                                          |
-| `tools/`                           | corpus download and dictionary building, reference comparison, final scoring                                   |
-| `notebooks/`                       | presentation notebook (executed) and the notebook for new images                                               |
-| `data/images`, `data/ground_truth` | the 12 evaluated pages and their official transcription                                                        |
-| `data/ground_truth_gemini`         | diplomatic transcriptions of the same 12 pages                                                                 |
-| `data/extra/`                      | the book's other pages, training crops and their diplomatic transcriptions, the 10 test pages                  |
-| `models/lexicon/`                  | period dictionary and trigram model used by the final configuration                                            |
-| `records/`                         | every search, sweep and training run, so work can resume from what was measured ([details](records/README.md)) |
-| `docs/`                            | the paper ([`paper.pdf`](docs/paper.pdf)), the development log in Portuguese ([`PROCESS.md`](docs/PROCESS.md)) and the greedy search report                   |
+| path                               | contents                                                                                                                                    |
+| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| `ocr_pipeline/`                    | the pipeline: preprocessing, segmentation, recognition, CTC rescoring, context model, metrics                                               |
+| `ocr_pipeline/tuning/`             | greedy and random search, sweeps, training-data preparation                                                                                 |
+| `configs/`                         | frozen configuration of every version (`final_v6.json` is the final one)                                                                    |
+| `sweeps/`                          | search specifications                                                                                                                       |
+| `tools/`                           | corpus download and dictionary building, reference comparison, final scoring                                                                |
+| `notebooks/`                       | presentation notebook (executed) and the notebook for new images                                                                            |
+| `data/images`, `data/ground_truth` | the 12 evaluated pages and their official transcription                                                                                     |
+| `data/ground_truth_gemini`         | diplomatic transcriptions of the same 12 pages                                                                                              |
+| `data/extra/`                      | the book's other pages, training crops and their diplomatic transcriptions, the 10 test pages                                               |
+| `models/lexicon/`                  | period dictionary and trigram model used by the final configuration                                                                         |
+| `records/`                         | every search, sweep and training run, so work can resume from what was measured ([details](records/README.md))                              |
+| `docs/`                            | the paper ([`paper.pdf`](docs/paper.pdf)), the development log in Portuguese ([`PROCESS.md`](docs/PROCESS.md)) and the greedy search report |
 
 Recognizer weights live on the Hugging Face Hub
 ([KobayashiShiroe/OCR-pipeline-historical-data](https://huggingface.co/KobayashiShiroe/OCR-pipeline-historical-data)):
 `st_c1m` (v6, final) and `st_g3m` (v5). `setup_pipeline.py` downloads them and checks their SHA-256.
 
 ## Protocol
+
+<p align="center">
+  <img src="docs/figures/flow_protocolo.gif" width="760" alt="How each set of pages is used">
+</p>
+<p align="center"><sub>Where each set of pages sits in the book, and what it feeds. Pages that produce labels or
+resources never choose or measure anything (clean chain).</sub></p>
 
 - **Split.** The 12 pages with an official transcription are split with seed 42 into 9 tuning pages and 3 held-out pages (7, 10, 12).
   10 more pages, with a diplomatic reference only, form a test set.
