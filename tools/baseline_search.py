@@ -5,6 +5,8 @@ Configurations are a fixed function of --kind and --seed, so every machine sees 
 - id 0 is the configuration chosen by the first, smaller search (the reproducibility check: its output must match
   the one decoded before);
 - A: random search over LM, alpha, beta, OOV offset, the two pruning thresholds and the beam width;
+- A2: local refinement around a stage-1 configuration (--center, a JSON of its params; id 0 is the center itself):
+  Gaussian steps on the continuous parameters, both LMs, beam 128 or 256;
 - B: the full grid of mode, smoothing, corpus and beam (the space is small).
 --shard i/k runs every k-th configuration starting at i.
 
@@ -44,6 +46,20 @@ def configs_a(n: int, seed: int) -> list[dict]:
     return [dict(c, id=i) for i, c in enumerate(out)]
 
 
+def configs_a2(center: dict, n: int, seed: int) -> list[dict]:
+    rng = random.Random(seed)
+    base = {k: v for k, v in center.items() if k != 'id'}
+    sd = {'alpha': 0.25, 'beta': 0.6, 'unk': 3.0, 'beam_prune_logp': 3.0, 'token_min_logp': 1.5}
+    out = [base]
+    for _ in range(n):
+        c = {k: round(base[k] + rng.gauss(0, s), 3) for k, s in sd.items()}
+        c['alpha'] = max(c['alpha'], 0.05)
+        c['token_min_logp'] = min(c['token_min_logp'], -1.0)
+        c.update(lm=rng.choice(sorted(LMS)) if rng.random() < 0.25 else base['lm'], beam=rng.choice([128, 256]))
+        out.append(c)
+    return [dict(c, id=i) for i, c in enumerate(out)]
+
+
 def configs_b() -> list[dict]:
     out = [{'mode': 'NGrams', 'smoothing': 0.003, 'corpus': 'w1', 'beam': 64}]
     for corpus in ('w1', 'w4b8'):
@@ -58,7 +74,7 @@ def configs_b() -> list[dict]:
 
 def command(kind: str, c: dict, python: str, out: Path) -> list[str]:
     common = ['--posteriors', 'outputs/posteriors/v6_gt12', '--pages', TUNING, '--workers', '2', '--out', str(out)]
-    if kind == 'A':
+    if kind in ('A', 'A2'):
         lm, corpus = LMS[c['lm']]
         return [python, '-I', 'tools/baseline_pyctcdecode.py', *common, '--lm', lm, '--corpus', corpus,
                 '--alpha', str(c['alpha']), '--beta', str(c['beta']), '--unk', str(c['unk']), '--beam', str(c['beam']),
@@ -84,9 +100,10 @@ def run_one(kind: str, c: dict, python: str, root: Path) -> dict:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument('--kind', choices=['A', 'B'], required=True)
+    parser.add_argument('--kind', choices=['A', 'A2', 'B'], required=True)
     parser.add_argument('--n', type=int, default=120, help='random configurations for A (besides id 0)')
     parser.add_argument('--seed', type=int, default=0)
+    parser.add_argument('--center', default=None, help='A2: JSON of the stage-1 configuration to refine')
     parser.add_argument('--shard', default='0/1', help='i/k')
     parser.add_argument('--python', required=True, help='interpreter of the decoder environment')
     parser.add_argument('--root', type=Path, required=True, help='repository root (tools/ and outputs/)')
@@ -94,7 +111,12 @@ def main() -> None:
     parser.add_argument('--list', action='store_true', help='print the configurations and exit')
     args = parser.parse_args()
     logging.basicConfig(level=logging.INFO, format='%(asctime)s %(message)s')
-    configs = configs_a(args.n, args.seed) if args.kind == 'A' else configs_b()
+    if args.kind == 'A':
+        configs = configs_a(args.n, args.seed)
+    elif args.kind == 'A2':
+        configs = configs_a2(json.loads(args.center), args.n, args.seed)
+    else:
+        configs = configs_b()
     i, k = (int(x) for x in args.shard.split('/'))
     configs = configs[i::k]
     if args.list:
