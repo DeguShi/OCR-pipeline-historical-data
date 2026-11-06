@@ -7,7 +7,9 @@ The decoder constrains every word to the dictionary of a corpus and scores word 
 - accents: the recognizer writes base letters plus combining accents (NFD), so the corpus is NFD-normalized and
   combining marks count as word characters. Output is NFC-normalized back.
 - matrix layout: Word Beam Search wants the blank last; our blank is class 0.
-Corpus words with a character the recognizer cannot write are dropped.
+- speed: only classes that reach probability 1e-4 in some frame of the --class-sets posteriors are kept (the rest
+  sit at the storage floor); the search cost grows with the character count.
+Corpus words with a character outside the kept set are dropped.
 
 Runs in its own environment (numpy, word-beam-search); it does not import ocr_pipeline.
 
@@ -29,13 +31,21 @@ logger = logging.getLogger(__name__)
 FLOOR = 1e-6  # as ocr_pipeline.ctc_rescore
 
 
-def class_map(labels: list[str]) -> tuple[str, np.ndarray]:
-    """Kept characters and, for each recognizer class 1..n-1, its column in the reduced matrix (case merged)."""
-    kept = [c for c in labels[1:] if not (c.lower() != c and c.lower() in labels)]
+def used_classes(dirs: list[Path], threshold: float = 1e-4) -> set[int]:
+    used: set[int] = set()
+    for path in sorted(p for d in dirs for p in d.glob('page_*.npz')):
+        data = np.load(path)
+        for i in range(int(data['n_lines'])):
+            used.update(data[f'idx_{i}'][data[f'val_{i}'] > threshold].ravel().tolist())
+    return used - {0}
+
+
+def class_map(labels: list[str], used: set[int]) -> tuple[str, np.ndarray]:
+    """Kept characters and, per recognizer class 1..n-1, its column in the reduced matrix (case merged; -1 dropped)."""
+    merged = {labels[k].lower() if labels[k].lower() in labels else labels[k] for k in used}
+    kept = [c for c in labels[1:] if c in merged]
     column = {c: i for i, c in enumerate(kept)}
-    target = np.array([column.get(c, column.get(c.lower(), -1)) for c in labels[1:]])
-    if (target < 0).any():
-        raise ValueError('unmapped class')
+    target = np.array([column.get(c.lower() if c.lower() in labels else c, -1) for c in labels[1:]])
     return ''.join(kept), target
 
 
@@ -63,10 +73,11 @@ def load_page(path: Path, n_classes: int, target: np.ndarray, n_chars: int) -> l
         idx, val = data[f'idx_{i}'].astype(np.int64), data[f'val_{i}'].astype(np.float32)
         dense = np.full((idx.shape[0], n_classes), FLOOR, np.float32)
         np.put_along_axis(dense, idx, np.maximum(val, FLOOR), axis=1)
-        dense /= dense.sum(1, keepdims=True)
         mat = np.zeros((dense.shape[0], n_chars + 1), np.float32)
-        np.add.at(mat.T, target, dense[:, 1:].T)
+        keep = target >= 0
+        np.add.at(mat.T, target[keep], dense[:, 1:][:, keep].T)
         mat[:, n_chars] = dense[:, 0]
+        mat /= mat.sum(1, keepdims=True)
         lines.append(mat[:, None, :])
     return lines
 
@@ -94,6 +105,9 @@ def main() -> None:
     parser.add_argument('--posteriors', type=Path, required=True)
     parser.add_argument('--pages', default='all', help="'all' or a comma list of page numbers")
     parser.add_argument('--corpus', type=Path, required=True)
+    parser.add_argument('--class-sets', type=Path, nargs='+',
+                        default=[Path('outputs/posteriors/v6_gt12'), Path('outputs/posteriors/v6_test10')],
+                        help='posteriors that define the kept classes (fixed across runs)')
     parser.add_argument('--mode', nargs='+', default=['NGrams'], choices=['Words', 'NGrams', 'NGramsForecast'])
     parser.add_argument('--smoothing', type=float, nargs='+', default=[0.01])
     parser.add_argument('--beam', type=int, default=64)
@@ -104,7 +118,7 @@ def main() -> None:
     alphabet = json.loads((args.posteriors / 'alphabet.json').read_text())
     n_classes = alphabet['n_classes']
     labels = [''] + [alphabet['l2c'][str(k)] for k in range(1, n_classes)]
-    chars, target = class_map(labels)
+    chars, target = class_map(labels, used_classes(args.class_sets))
     wchars = word_chars(chars)
     corpus = nfd_corpus(args.corpus, set(wchars))
     paths = sorted(args.posteriors.glob('page_*.npz'))
