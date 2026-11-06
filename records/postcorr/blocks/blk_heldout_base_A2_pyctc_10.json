@@ -1,0 +1,19 @@
+{
+  "wer_a": 18.74015748031496,
+  "wer_b": 20.0,
+  "dwer": -1.2598425196850394,
+  "ci95": [
+    -3.01,
+    0.16
+  ],
+  "p_signflip": 0.200979902009799,
+  "blocks": 65,
+  "pages_won_tied_lost": [
+    3,
+    0,
+    0
+  ],
+  "a": "outputs/runs/v6_all12_cache",
+  "b": "outputs/runs/base_A2_pyctc_gt12",
+  "block": 10
+}

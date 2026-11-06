@@ -69,3 +69,11 @@ only if it follows them.
 - 2026-11-06: baseline A stage 1 (121 configurations, `records/postcorr/search_A_scored.jsonl`): configuration 0
   rescored from the search output gives tuning WER 21.56, as before. Best is id 112 (20.48). The best improved at
   id 112 of 120, so a local stage A2 (60 configurations around id 112, beam up to 256) runs before A is frozen.
+- 2026-11-06: baseline A frozen at A2 id 11 (kn3_w1, alpha 0.773, beta -0.243, unk -10.492, beam 256, prune -16.713,
+  token_min -7.338; tuning WER 20.09; the 8 best A2 configurations lie within 0.35 points, so the search has
+  plateaued). The local decode of all 12 pages matches the Colab search output on 285 of 285 tuning lines.
+  Held-out and test were decoded once, after freezing. v6 vs frozen A (`records/postcorr/blocks/`):
+  held-out 18.74 vs 20.00, dWER -1.26, CI95 [-3.01, 0.16], p 0.20 (block 10) / 0.19 (block 30), 3 of 3 pages;
+  test 3.49 vs 4.33, dWER -0.84, CI95 [-1.41, -0.26], p 0.007 / 0.019, pages 6 won, 2 tied, 2 lost.
+  Against the default-tuned A the test gap was -1.68: half of v6's apparent advantage was tuning asymmetry.
+
