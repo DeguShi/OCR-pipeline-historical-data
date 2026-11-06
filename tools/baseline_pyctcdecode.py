@@ -73,9 +73,10 @@ def _init(labels: list[str], lm_path: str, unigrams: list[str], alpha: float, be
     _DECODER = BeamSearchDecoderCTC(Alphabet.build_alphabet(labels), lm)  # what build_ctcdecoder does, our LM
 
 
-def _decode(args: tuple[str, int, int]) -> tuple[str, list[str]]:
-    path, n_classes, beam = args
-    return Path(path).stem, [_DECODER.decode(line, beam_width=beam) for line in load_page(Path(path), n_classes)]
+def _decode(args: tuple[str, int, int, float, float]) -> tuple[str, list[str]]:
+    path, n_classes, beam, prune, token_min = args
+    return Path(path).stem, [_DECODER.decode(line, beam_width=beam, beam_prune_logp=prune, token_min_logp=token_min)
+                             for line in load_page(Path(path), n_classes)]
 
 
 def read_unigrams(corpus: Path) -> list[str]:
@@ -96,6 +97,8 @@ def main() -> None:
     parser.add_argument('--beta', type=float, nargs='+', default=[1.0])
     parser.add_argument('--unk', type=float, default=-10.0, help='pyctcdecode OOV log-score offset (default)')
     parser.add_argument('--beam', type=int, default=64)
+    parser.add_argument('--beam-prune-logp', type=float, default=-10.0, help='pyctcdecode default')
+    parser.add_argument('--token-min-logp', type=float, default=-5.0, help='pyctcdecode default')
     parser.add_argument('--workers', type=int, default=4)
     parser.add_argument('--out', type=Path, required=True)
     args = parser.parse_args()
@@ -112,13 +115,15 @@ def main() -> None:
     for alpha, beta in itertools.product(args.alpha, args.beta):
         with ProcessPoolExecutor(args.workers, initializer=_init,
                                  initargs=(labels, str(args.lm), unigrams, alpha, beta, args.unk)) as pool:
-            pages = dict(pool.map(_decode, [(str(p), n_classes, args.beam) for p in paths]))
+            pages = dict(pool.map(_decode, [(str(p), n_classes, args.beam, args.beam_prune_logp, args.token_min_logp)
+                                              for p in paths]))
         out = args.out / f'a{alpha:g}_b{beta:g}'
         out.mkdir(parents=True, exist_ok=True)
         lines = {str(int(stem.split('_')[1])): text for stem, text in pages.items()}
         (out / 'lines.json').write_text(json.dumps(lines, ensure_ascii=False))
         (out / 'params.json').write_text(json.dumps({'alpha': alpha, 'beta': beta, 'unk': args.unk, 'beam': args.beam,
-                                                     'lm': str(args.lm)}))
+                                                     'beam_prune_logp': args.beam_prune_logp,
+                                                     'token_min_logp': args.token_min_logp, 'lm': str(args.lm)}))
         logger.info('alpha %g beta %g -> %s', alpha, beta, out)
 
 
