@@ -60,3 +60,12 @@ only if it follows them.
 - 2026-11-05: the regenerated corpus matches the manifest token count (24,670,416).
 - 2026-11-06: baseline A configuration 0, decoded on Colab CPU, is byte-identical to the local decode
   (285 of 285 tuning lines).
+- 2026-11-06: baseline B configuration 0, decoded on Colab CPU (x86-64), matches the local decode (arm64) on 282 of
+  285 tuning lines; tuning WER 23.70 vs 23.65 (one word). The three lines differ at near-ties between rare symbols
+  (`&`/`⟦`, `،`/`✳`) and one word (`convidar`/`comida2`). Two local runs agree with each other, so the difference is
+  across platforms, not between runs. Consequence: B is selected on its Colab search output, and its frozen
+  configuration is decoded on held-out and test on the same Colab CPU; a local decode of the same configuration is
+  reported alongside as the cross-platform check.
+- 2026-11-06: baseline A stage 1 (121 configurations, `records/postcorr/search_A_scored.jsonl`): configuration 0
+  rescored from the search output gives tuning WER 21.56, as before. Best is id 112 (20.48). The best improved at
+  id 112 of 120, so a local stage A2 (60 configurations around id 112, beam up to 256) runs before A is frozen.
