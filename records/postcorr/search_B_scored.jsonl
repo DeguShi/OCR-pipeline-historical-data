@@ -1,0 +1,12 @@
+{"id": 9, "params": {"mode": "NGrams", "smoothing": 0.003, "corpus": "w4b8", "beam": 128, "id": 9}, "pages": [5, 6, 8, 9, 11, 13, 14, 15, 16], "wer": 23.251, "cer": 6.227, "seconds": 1562.5}
+{"id": 7, "params": {"mode": "NGrams", "smoothing": 0.001, "corpus": "w4b8", "beam": 128, "id": 7}, "pages": [5, 6, 8, 9, 11, 13, 14, 15, 16], "wer": 23.307, "cer": 6.236, "seconds": 1558.0}
+{"id": 6, "params": {"mode": "NGrams", "smoothing": 0.001, "corpus": "w4b8", "beam": 64, "id": 6}, "pages": [5, 6, 8, 9, 11, 13, 14, 15, 16], "wer": 23.363, "cer": 6.36, "seconds": 764.8}
+{"id": 8, "params": {"mode": "NGrams", "smoothing": 0.003, "corpus": "w4b8", "beam": 64, "id": 8}, "pages": [5, 6, 8, 9, 11, 13, 14, 15, 16], "wer": 23.363, "cer": 6.36, "seconds": 768.8}
+{"id": 11, "params": {"mode": "NGrams", "smoothing": 0.01, "corpus": "w4b8", "beam": 128, "id": 11}, "pages": [5, 6, 8, 9, 11, 13, 14, 15, 16], "wer": 23.476, "cer": 6.255, "seconds": 1591.2}
+{"id": 1, "params": {"mode": "NGrams", "smoothing": 0.001, "corpus": "w1", "beam": 64, "id": 1}, "pages": [5, 6, 8, 9, 11, 13, 14, 15, 16], "wer": 23.476, "cer": 6.369, "seconds": 732.8}
+{"id": 2, "params": {"mode": "NGrams", "smoothing": 0.001, "corpus": "w1", "beam": 128, "id": 2}, "pages": [5, 6, 8, 9, 11, 13, 14, 15, 16], "wer": 23.533, "cer": 6.293, "seconds": 1557.8}
+{"id": 10, "params": {"mode": "NGrams", "smoothing": 0.01, "corpus": "w4b8", "beam": 64, "id": 10}, "pages": [5, 6, 8, 9, 11, 13, 14, 15, 16], "wer": 23.646, "cer": 6.407, "seconds": 770.7}
+{"id": 3, "params": {"mode": "NGrams", "smoothing": 0.003, "corpus": "w1", "beam": 128, "id": 3}, "pages": [5, 6, 8, 9, 11, 13, 14, 15, 16], "wer": 23.702, "cer": 6.322, "seconds": 1541.9}
+{"id": 0, "params": {"mode": "NGrams", "smoothing": 0.003, "corpus": "w1", "beam": 64, "id": 0}, "pages": [5, 6, 8, 9, 11, 13, 14, 15, 16], "wer": 23.702, "cer": 6.455, "seconds": 744.2}
+{"id": 5, "params": {"mode": "NGrams", "smoothing": 0.01, "corpus": "w1", "beam": 128, "id": 5}, "pages": [5, 6, 8, 9, 11, 13, 14, 15, 16], "wer": 23.815, "cer": 6.331, "seconds": 1541.3}
+{"id": 4, "params": {"mode": "NGrams", "smoothing": 0.01, "corpus": "w1", "beam": 64, "id": 4}, "pages": [5, 6, 8, 9, 11, 13, 14, 15, 16], "wer": 23.871, "cer": 6.445, "seconds": 758.1}

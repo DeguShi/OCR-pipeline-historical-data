@@ -7,7 +7,8 @@ Configurations are a fixed function of --kind and --seed, so every machine sees 
 - A: random search over LM, alpha, beta, OOV offset, the two pruning thresholds and the beam width;
 - A2: local refinement around a stage-1 configuration (--center, a JSON of its params; id 0 is the center itself):
   Gaussian steps on the continuous parameters, both LMs, beam 128 or 256;
-- B: the full grid of mode, smoothing, corpus and beam (the space is small).
+- B: the full grid of mode, smoothing, corpus and beam (the space is small);
+- B2: beam 256 for the two best stage-B settings (stage B peaked at its largest beam, 128).
 --shard i/k runs every k-th configuration starting at i.
 
 Every finished configuration is appended as one JSON line (params, page lines, seconds) to <out>/results.jsonl,
@@ -72,6 +73,11 @@ def configs_b() -> list[dict]:
     return [dict(c, id=i) for i, c in enumerate(out)]
 
 
+def configs_b2() -> list[dict]:
+    out = [{'mode': 'NGrams', 'smoothing': s, 'corpus': 'w4b8', 'beam': 256} for s in (0.003, 0.001)]
+    return [dict(c, id=i) for i, c in enumerate(out)]
+
+
 def command(kind: str, c: dict, python: str, out: Path) -> list[str]:
     common = ['--posteriors', 'outputs/posteriors/v6_gt12', '--pages', TUNING, '--workers', '2', '--out', str(out)]
     if kind in ('A', 'A2'):
@@ -100,7 +106,7 @@ def run_one(kind: str, c: dict, python: str, root: Path) -> dict:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument('--kind', choices=['A', 'A2', 'B'], required=True)
+    parser.add_argument('--kind', choices=['A', 'A2', 'B', 'B2'], required=True)
     parser.add_argument('--n', type=int, default=120, help='random configurations for A (besides id 0)')
     parser.add_argument('--seed', type=int, default=0)
     parser.add_argument('--center', default=None, help='A2: JSON of the stage-1 configuration to refine')
@@ -115,6 +121,8 @@ def main() -> None:
         configs = configs_a(args.n, args.seed)
     elif args.kind == 'A2':
         configs = configs_a2(json.loads(args.center), args.n, args.seed)
+    elif args.kind == 'B2':
+        configs = configs_b2()
     else:
         configs = configs_b()
     i, k = (int(x) for x in args.shard.split('/'))
