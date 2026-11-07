@@ -38,6 +38,19 @@
    "fix_rate": 64.62,
    "break_rate": 0.25,
    "fixed_per_broken": 33.6
+  },
+  "B": {
+   "path": "outputs/runs/base_B2_wbs_test10",
+   "fixed": 150,
+   "broken": 13,
+   "kept_wrong": 110,
+   "kept_right": 1988,
+   "words": 2261,
+   "ins_raw": 1,
+   "ins_run": 7,
+   "fix_rate": 57.69,
+   "break_rate": 0.65,
+   "fixed_per_broken": 11.54
   }
  }
 }

@@ -31,6 +31,19 @@
    "fix_rate": 42.68,
    "break_rate": 1.7,
    "fixed_per_broken": 8.75
+  },
+  "B": {
+   "path": "outputs/runs/base_B2_wbs_gt12",
+   "fixed": 66,
+   "broken": 4,
+   "kept_wrong": 98,
+   "kept_right": 467,
+   "words": 635,
+   "ins_raw": 36,
+   "ins_run": 27,
+   "fix_rate": 40.24,
+   "break_rate": 0.85,
+   "fixed_per_broken": 16.5
   }
  }
 }

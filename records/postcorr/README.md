@@ -77,3 +77,17 @@ only if it follows them.
   test 3.49 vs 4.33, dWER -0.84, CI95 [-1.41, -0.26], p 0.007 / 0.019, pages 6 won, 2 tied, 2 lost.
   Against the default-tuned A the test gap was -1.68: half of v6's apparent advantage was tuning asymmetry.
 
+- 2026-11-07: baseline B frozen at B2 id 1 (NGrams, smoothing 0.001, corpus w4b8, beam 256; tuning WER 23.08; beam
+  128 gave 23.25, so the beam axis has flattened). The NGramsForecast setting (stage B id 12) is excluded: on 2
+  Colab CPUs it ran over 8 h without finishing the 9 tuning pages, and the session was reclaimed. The frozen
+  configuration was decoded on all 12 GT pages and on test10 on one Colab CPU; the 9 tuning pages are identical to
+  the search output (9 of 9 pages). v6 vs frozen B: held-out 18.74 vs 20.31, dWER -1.57, CI95 [-3.15, 0.00],
+  p 0.09 (block 10) / 0.13 (block 30), 3 of 3 pages; test 3.49 vs 5.75, dWER -2.26, CI95 [-3.17, -1.35],
+  p 0.0001 / 0.0002, 10 of 10 pages.
+- 2026-11-07: `tools/postcorr_from_posteriors.py` (our post-correction run from the posterior export, for the cost
+  benchmark) reproduces the pipeline's v6 page 7 exactly once the configuration's lexicon edit step
+  (`postprocess.correct`) is included. `score_lines` gives external baselines the text rules only, not that step.
+- 2026-11-07: correction analysis (`tools/correction_analysis.py`, reference words vs raw OCR):
+  test, fixed / broken: v6 191 / 10, A 168 / 5, B 150 / 13 (of 260 raw errors, 2,001 raw-correct words);
+  tuning: v6 229 / 15, A 210 / 14, VLM paper_pt 195 / 136. The VLM breaks about 10% of the raw-correct words; at
+  least 52% of those are modernized spellings or accents (`records/postcorr/vlm_broken_words_tuning.json`).
