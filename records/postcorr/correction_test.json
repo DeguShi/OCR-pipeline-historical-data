@@ -52,6 +52,19 @@
    "break_rate": 0.65,
    "fixed_per_broken": 11.54
   },
+  "C_byt5": {
+   "path": "outputs/baselines/byt5/test10/score",
+   "fixed": 132,
+   "broken": 26,
+   "kept_wrong": 128,
+   "kept_right": 1975,
+   "words": 2261,
+   "ins_raw": 1,
+   "ins_run": 1,
+   "fix_rate": 50.77,
+   "break_rate": 1.3,
+   "fixed_per_broken": 5.08
+  },
   "E_vlm": {
    "path": "outputs/baselines/search/vlm/final_test10_paper_pt_period/score",
    "fixed": 96,

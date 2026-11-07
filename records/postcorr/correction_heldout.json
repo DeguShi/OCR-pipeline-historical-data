@@ -45,6 +45,19 @@
    "break_rate": 0.85,
    "fixed_per_broken": 16.5
   },
+  "C_byt5": {
+   "path": "outputs/baselines/byt5/gt12/score",
+   "fixed": 63,
+   "broken": 7,
+   "kept_wrong": 101,
+   "kept_right": 464,
+   "words": 635,
+   "ins_raw": 36,
+   "ins_run": 27,
+   "fix_rate": 38.41,
+   "break_rate": 1.49,
+   "fixed_per_broken": 9.0
+  },
   "E_vlm": {
    "path": "outputs/baselines/search/vlm/final_heldout_paper_pt_period/score",
    "fixed": 65,

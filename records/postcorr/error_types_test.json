@@ -131,6 +131,45 @@
     "broken": 11
    }
   },
+  "C": {
+   "path": "outputs/baselines/byt5/test10/score",
+   "numeral": {
+    "raw_errors": 9,
+    "fixed": 3,
+    "fix_rate": 33.3,
+    "broken": 0
+   },
+   "split_merge": {
+    "raw_errors": 4,
+    "fixed": 3,
+    "fix_rate": 75.0,
+    "broken": 1
+   },
+   "deleted": {
+    "raw_errors": 19,
+    "fixed": 3,
+    "fix_rate": 15.8,
+    "broken": 2
+   },
+   "short": {
+    "raw_errors": 18,
+    "fixed": 7,
+    "fix_rate": 38.9,
+    "broken": 4
+   },
+   "real_word": {
+    "raw_errors": 33,
+    "fixed": 9,
+    "fix_rate": 27.3,
+    "broken": 5
+   },
+   "non_word": {
+    "raw_errors": 177,
+    "fixed": 107,
+    "fix_rate": 60.5,
+    "broken": 14
+   }
+  },
   "VLM": {
    "path": "outputs/baselines/search/vlm/final_test10_paper_pt_period/score",
    "numeral": {

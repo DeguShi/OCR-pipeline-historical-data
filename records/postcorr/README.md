@@ -185,3 +185,18 @@ model load (87 s for paper_pt); peak GPU memory was not recorded):
   (-0.22, [-0.49, 0.04], p 0.18 / 0.24 for blocks 10 / 30; 4/6/0). A small, consistent, non-significant gain: the
   masked LM never makes a page worse, and v6's trigram already captures most of what it adds. Cost: about 44 s
   of T4 per page for the scoring (530 s for the 12 GT pages, 21,016 candidates), on top of v6, plus a 100M model.
+- 2026-11-07: baseline C, ByT5-small corrector (`tools/baseline_byt5.py`, google/byt5-small) trained on synthetic
+  recognizer noise, no evaluation page involved. The noise model holds per-character substitution, deletion and
+  insertion statistics of st_c1m's raw greedy output against the reference on the 9 tuning pages (NFC, CER 9.8%,
+  `records/postcorr/byt5/noise_tuning.json`). It is applied to clean lines from the 78 training-page transcriptions
+  (pages 17-104, no overlap with tuning, held-out or test; x10, fresh noise each time) and from ALESP laws
+  1889-1910 cut to 45-character lines. 200k pairs were generated (sha256 86090751…); the first 80k were used (78k
+  train, 2k synthetic validation), 1 epoch, batch 16 x 2 accumulation, lr 5e-4, max 128 bytes, seed 42, fp32, free
+  T4: 3,257 s, best validation loss 0.077 (`records/postcorr/byt5/`). No hyperparameter was tuned (the first run,
+  batch 32, ran out of GPU memory at step 81; its log is kept). Prediction: beam 4, greedy text of each line of
+  the posterior export, about 2 s of T4 per page. Scored like A, B and E (text rules only).
+  Tuning 22.91, held-out 21.26, test 6.86 (raw 31.04 / 31.5 / 11.54). v6 vs C: held-out dWER -2.52, CI95 [-4.54,
+  -0.63] (block 10) / [-4.86, -0.33] (block 30), p 0.02 / 0.06, 3 of 3 pages; test -3.36, [-4.41, -2.34] /
+  [-4.55, -2.18], p 0.0001, 10 of 10 pages. Fixed / broken: held-out 63 / 7, test 132 / 26. It is the only
+  method that fixes numerals (3 of 9 on test) and most split/merge errors (3 of 4), which v6 cannot do by
+  construction (one candidate word per recognized word); v6 fixes many more non-word errors (161 vs 107 of 177).

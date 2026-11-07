@@ -124,6 +124,45 @@
     "broken": 1
    }
   },
+  "C": {
+   "path": "outputs/baselines/byt5/gt12/score",
+   "numeral": {
+    "raw_errors": 25,
+    "fixed": 0,
+    "fix_rate": 0.0,
+    "broken": 1
+   },
+   "split_merge": {
+    "raw_errors": 8,
+    "fixed": 5,
+    "fix_rate": 62.5,
+    "broken": 2
+   },
+   "deleted": {
+    "raw_errors": 0,
+    "fixed": 0,
+    "fix_rate": 0.0,
+    "broken": 1
+   },
+   "short": {
+    "raw_errors": 19,
+    "fixed": 2,
+    "fix_rate": 10.5,
+    "broken": 0
+   },
+   "real_word": {
+    "raw_errors": 29,
+    "fixed": 9,
+    "fix_rate": 31.0,
+    "broken": 2
+   },
+   "non_word": {
+    "raw_errors": 83,
+    "fixed": 47,
+    "fix_rate": 56.6,
+    "broken": 1
+   }
+  },
   "VLM": {
    "path": "outputs/baselines/search/vlm/final_heldout_paper_pt_period/score",
    "numeral": {

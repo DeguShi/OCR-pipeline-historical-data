@@ -1,0 +1,8 @@
+{
+ "model": "out/byt5_model",
+ "posteriors": "outputs/posteriors/v6_test10",
+ "beams": 4,
+ "device": "cuda",
+ "seconds": 17.3,
+ "lines": 333
+}
