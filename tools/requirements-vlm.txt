@@ -1,0 +1,6 @@
+# Environment of the external VLM baseline (tools/baseline_vlm.py), Colab T4. torch is Colab's preinstalled
+# CUDA build; its version is recorded in each run's params.json.
+transformers==4.51.3
+accelerate==1.6.0
+bitsandbytes==0.45.5
+qwen-vl-utils==0.0.11
