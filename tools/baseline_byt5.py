@@ -145,7 +145,7 @@ def train(args: argparse.Namespace) -> None:
     set_seed(args.seed)
     tok = AutoTokenizer.from_pretrained(MODEL)
     model = T5ForConditionalGeneration.from_pretrained(MODEL)
-    rows = [json.loads(l) for l in args.pairs.read_text(encoding='utf-8').splitlines()]
+    rows = [json.loads(l) for l in args.pairs.read_text(encoding='utf-8').splitlines()][:args.limit or None]
     n_val = min(2000, len(rows) // 20)
 
     def encode(r: dict) -> dict:
@@ -156,6 +156,7 @@ def train(args: argparse.Namespace) -> None:
     train_set, val_set = [encode(r) for r in rows[n_val:]], [encode(r) for r in rows[:n_val]]
     targs = Seq2SeqTrainingArguments(
         output_dir=str(args.out / 'ckpt'), per_device_train_batch_size=args.batch, per_device_eval_batch_size=args.batch,
+        gradient_accumulation_steps=args.accum,
         learning_rate=args.lr, num_train_epochs=args.epochs, warmup_ratio=0.05, weight_decay=0.01, seed=args.seed,
         eval_strategy='steps', eval_steps=args.eval_steps, save_strategy='steps', save_steps=args.eval_steps,
         save_total_limit=2, load_best_model_at_end=True, metric_for_best_model='eval_loss', logging_steps=100,
@@ -165,7 +166,7 @@ def train(args: argparse.Namespace) -> None:
     t0 = time.time(); trainer.train()
     trainer.save_model(str(args.out)); tok.save_pretrained(str(args.out))
     meta = {'model': MODEL, 'pairs': str(args.pairs), 'n_train': len(train_set), 'n_val': n_val, 'epochs': args.epochs,
-            'batch': args.batch, 'lr': args.lr, 'max_len': args.max_len, 'seed': args.seed,
+            'batch': args.batch, 'accum': args.accum, 'limit': args.limit, 'lr': args.lr, 'max_len': args.max_len, 'seed': args.seed,
             'train_seconds': round(time.time() - t0, 1), 'best_eval_loss': trainer.state.best_metric,
             'gpu': torch.cuda.get_device_name(0) if torch.cuda.is_available() else None, 'torch': torch.__version__}
     (args.out / 'train_params.json').write_text(json.dumps(meta, indent=1), encoding='utf-8')
@@ -211,6 +212,7 @@ def main() -> None:
     t = sub.add_parser('train'); t.add_argument('--pairs', type=Path, required=True)
     t.add_argument('--epochs', type=float, default=1.0); t.add_argument('--batch', type=int, default=32)
     t.add_argument('--lr', type=float, default=5e-4); t.add_argument('--max-len', type=int, default=192)
+    t.add_argument('--accum', type=int, default=1); t.add_argument('--limit', type=int, default=0)
     t.add_argument('--eval-steps', type=int, default=1000); t.add_argument('--seed', type=int, default=42)
     t.add_argument('--out', type=Path, required=True)
     p = sub.add_parser('predict'); p.add_argument('--model', type=Path, required=True)
