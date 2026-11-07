@@ -210,3 +210,11 @@ model load (87 s for paper_pt); peak GPU memory was not recorded):
   accelerate 1.6.0; both ran in the session that had the VLM pins installed) and D's tokenizer revision
   (d15e086, unchanged since 2025-06-23). Colab's default transformers (5.22.1 on 2026-11-07) breaks the ByT5
   trainer (`warmup_ratio` removed), caught by a smoke test before relaunching C.
+- 2026-11-07: v6 + C hybrid (`tools/hybrid_v6_byt5.py`), a negative result. v6's text is kept, and ByT5's
+  version of a differing word block is adopted only for the error kinds v6 cannot fix (numerals, split/merge).
+  Four fixed rules were compared on the 9 tuning pages (v6 19.64): split_strict 19.53 (1 block), split_loose 19.92,
+  numeral 19.47 (22 blocks; pages won/lost 3/2, p 0.74), numeral_split 19.86. numeral was frozen and run once on
+  held-out: 19.06 vs 18.74 (dWER +0.31 worse, CI95 [0, 0.97], 0 pages better / 1 worse). On test: 3.27 vs 3.49
+  (dWER -0.22, CI95 [-0.53, 0], p 0.25, 3 pages better / 0 worse). ByT5's numeral edits are wrong about as
+  often as they are right, so there is no gain to deploy. Uses the C predictions recorded above (first model).
+  Records are in `records/postcorr/hybrid/` and `blocks/blk_*_v6_vs_hybrid_numeral_*`.

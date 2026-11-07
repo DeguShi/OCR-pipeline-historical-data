@@ -1,0 +1,19 @@
+{
+  "wer_a": 18.74015748031496,
+  "wer_b": 19.055118110236222,
+  "dwer": -0.31496062992125984,
+  "ci95": [
+    -0.97,
+    0.0
+  ],
+  "p_signflip": 1.0,
+  "blocks": 65,
+  "pages_won_tied_lost": [
+    1,
+    2,
+    0
+  ],
+  "a": "outputs/repro/gt12/score",
+  "b": "outputs/baselines/hybrid/gt12_numeral/score",
+  "block": 10
+}

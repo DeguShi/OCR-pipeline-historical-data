@@ -1,0 +1,25 @@
+{
+ "v6": "outputs/repro/gt12/score/result.json",
+ "byt5": "outputs/baselines/byt5/gt12/score/result.json",
+ "rule": "numeral_split",
+ "adopted_blocks": {
+  "5": 1,
+  "6": 2,
+  "7": 4,
+  "8": 5,
+  "9": 1,
+  "10": 3,
+  "11": 6,
+  "12": 6,
+  "13": 3,
+  "14": 0,
+  "15": 4,
+  "16": 0
+ },
+ "corpus": {
+  "wer_strict": 0.21428571428571427,
+  "cer_strict": 0.06029532403609516,
+  "wer_norm": 0.1960947237224761,
+  "cer_norm": 0.051316157938952674
+ }
+}
