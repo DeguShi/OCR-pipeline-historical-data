@@ -102,3 +102,9 @@ only if it follows them.
   functions) leaves the output unchanged: 12 of 12 GT pages byte-identical to the unmemoized run, 10 of 10 test pages
   identical to the pipeline (test WER 3.49). Local decode time per page fell about 5x (Mac M1, single process:
   gt12 181 s, test10 154 s). Cost tables report both versions; run 1 above is the unmemoized one.
+- 2026-11-07: cost benchmark run 2 (fresh Colab CPU VM, same setup as run 1; unmemoized v6, then A, then B, one
+  process each). Outputs verified: v6 12 of 12 pages identical to run 1; A 12 of 12 identical; B 11 of 12 identical to
+  its frozen decode, the 12th (page 12) differs in one character of punctuation (`(` vs `;`), which normalizes to the
+  same words, so WER is unchanged. `/usr/bin/time -v`: v6 988.7 s user CPU, 16:38 wall, peak RSS 0.40 GB;
+  A 36.5 s, 0:37, 0.57 GB; B 4,845 s, 1:21:34, 2.88 GB (CTC word beam search, NGrams mode, beam 256, over the 144 MB
+  period corpus `period_w4_livro78.txt` as its language model). Raw files in `outputs/bench/run2` (sha256 of the tarball 44c6f40b…).
