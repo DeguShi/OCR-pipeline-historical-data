@@ -97,3 +97,8 @@ only if it follows them.
   (about 94 s per page), 19 min wall, peak RSS 0.40 GB, models 17 MB (lexicon 2.4 MB + n-grams 14.7 MB).
   A: 34 s user CPU, peak RSS 0.57 GB, model 324 MB (KenLM binary) + 107 MB unigram corpus. B was cut off by a
   status-check bug (v6's own log line contains "ALL DONE"); fixed, and the whole benchmark is rerun on a fresh VM.
+- 2026-11-07: profiling v6 (page 7) showed about 90% of its time in the trigram Viterbi's `logp`, recomputing the
+  bigram probability and trigram history count for every transition. Memoizing both per line (`c159005`, pure
+  functions) leaves the output unchanged: 12 of 12 GT pages byte-identical to the unmemoized run, 10 of 10 test pages
+  identical to the pipeline (test WER 3.49). Local decode time per page fell about 5x (Mac M1, single process:
+  gt12 181 s, test10 154 s). Cost tables report both versions; run 1 above is the unmemoized one.
