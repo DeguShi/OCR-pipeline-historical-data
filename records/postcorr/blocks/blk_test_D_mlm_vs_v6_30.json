@@ -1,0 +1,19 @@
+{
+  "wer_a": 3.272888102609465,
+  "wer_b": 3.494029190623618,
+  "dwer": -0.22114108801415303,
+  "ci95": [
+    -0.52,
+    0.04
+  ],
+  "p_signflip": 0.2390760923907609,
+  "blocks": 81,
+  "pages_won_tied_lost": [
+    4,
+    6,
+    0
+  ],
+  "a": "outputs/baselines/mlm/test10_lam0.5/score",
+  "b": "outputs/runs/v6_test10_cache",
+  "block": 30
+}

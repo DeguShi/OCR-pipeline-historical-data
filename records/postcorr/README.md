@@ -175,3 +175,13 @@ model load (87 s for paper_pt); peak GPU memory was not recorded):
   474.8 s for 333 lines (1.43 s per line incl. the 4-bit load). A first test attempt died with CUDA out of
   memory because the masked-LM scoring (baseline D) shared the GPU; its log is kept as job_oom.log, and the rerun
   had the GPU alone.
+- 2026-11-07: baseline D, masked-LM rescoring of our own candidates (`tools/postcorr_mlm.py`) with PortOldBERT
+  (LIACC/PortOldBERT @ 9641bba8, EACL 2026, historical-Portuguese DeBERTa, 100M parameters). It adds lambda * PLL to
+  each candidate's slot score inside v6's Viterbi (top 10 candidates per slot; context = v6's choice for the other
+  words plus the previous and next lines). Checks: the slot dump reproduces v6 (12 of 12 pages) and lambda = 0
+  reproduces v6 exactly (12 of 12). lambda on the 9 tuning pages only (corpus WER, `records/postcorr/mlm/`):
+  0 19.64, 0.1 19.53, 0.25 19.47, 0.5 19.36, 1 19.64, 2 21.05; frozen at 0.5.
+  Held-out 18.58 vs v6 18.74 (dWER -0.16, CI95 [-0.48, 0.00], p 1.0; pages won/tied/lost 1/2/0); test 3.27 vs 3.49
+  (-0.22, [-0.49, 0.04], p 0.18 / 0.24 for blocks 10 / 30; 4/6/0). A small, consistent, non-significant gain: the
+  masked LM never makes a page worse, and v6's trigram already captures most of what it adds. Cost: about 44 s
+  of T4 per page for the scoring (530 s for the 12 GT pages, 21,016 candidates), on top of v6, plus a 100M model.

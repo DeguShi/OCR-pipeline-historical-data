@@ -1,0 +1,19 @@
+{
+  "wer_a": 18.58267716535433,
+  "wer_b": 18.74015748031496,
+  "dwer": -0.15748031496062992,
+  "ci95": [
+    -0.5,
+    0.0
+  ],
+  "p_signflip": 1.0,
+  "blocks": 23,
+  "pages_won_tied_lost": [
+    1,
+    2,
+    0
+  ],
+  "a": "outputs/baselines/mlm/gt12_lam0.5/score",
+  "b": "outputs/runs/v6_all12_cache",
+  "block": 30
+}
