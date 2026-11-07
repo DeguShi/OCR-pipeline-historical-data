@@ -200,3 +200,13 @@ model load (87 s for paper_pt); peak GPU memory was not recorded):
   [-4.55, -2.18], p 0.0001, 10 of 10 pages. Fixed / broken: held-out 63 / 7, test 132 / 26. It is the only
   method that fixes numerals (3 of 9 on test) and most split/merge errors (3 of 4), which v6 cannot do by
   construction (one candidate word per recognized word); v6 fixes many more non-word errors (161 vs 107 of 177).
+- 2026-11-07: reproduction check. `tools/check_v6_reproduction.py` (and `OCR_SLOW=1 pytest tests/`) decodes v6
+  from the committed st_c1m posteriors (`records/postcorr/posteriors/`, 3.6 MB: held-out 7, 10, 12 and the 10
+  test pages, exported by `tools/export_posteriors.py`) and compares a sha256 per page with
+  `records/postcorr/repro/v6_expected.json`. No kraken, images or GPU needed; 3 CPU min. Verified: the decoded
+  lines score to exactly 18.74 (held-out) and 3.49 (test) WER, identical per page to the committed runs
+  (bootstrap dWER 0.00), and a corrupted expected hash makes the check exit 1.
+- 2026-11-07: pinned the C/D GPU environment (`tools/requirements-postcorr-gpu.txt`: transformers 4.51.3,
+  accelerate 1.6.0; both ran in the session that had the VLM pins installed) and D's tokenizer revision
+  (d15e086, unchanged since 2025-06-23). Colab's default transformers (5.22.1 on 2026-11-07) breaks the ByT5
+  trainer (`warmup_ratio` removed), caught by a smoke test before relaunching C.
