@@ -164,3 +164,14 @@ model load (87 s for paper_pt); peak GPU memory was not recorded):
   11.54 -> 3.49 (-8.05, [-9.21, -6.89]). p 0.0001 and every page won in all six.
   The post-correction never hurts and helps most, in absolute points, on the weakest recognizer (about half of
   medium's errors removed); the relative reduction on test is largest for the best recognizer (70%).
+- 2026-11-07: frozen VLM (paper_pt_period) on held-out and test (free-tier T4). Held-out WER 26.30, CER 6.83 (raw
+  31.5); test WER 18.05, CER 5.60 (raw 11.54). v6 vs E: held-out dWER -7.56, CI95 [-10.47, -4.69] (block 10) /
+  [-10.59, -4.76] (block 30), p 0.0001 / 0.0002, 3 of 3 pages; test -14.55, [-16.01, -13.12] / [-16.12, -12.98],
+  p 0.0001, 10 of 10 pages. Fixed / broken: held-out 65 / 40 (break rate 8.5%), test 96 / 223 (11.1%); of the
+  test breaks, 156 are real-word substitutions (`records/postcorr/error_types_test.json`). The period sentence
+  lowers the damage (paper_pt broke 268 on test) but the VLM stays worse than raw OCR on test. On held-out it is
+  better than raw; part of that is the official GT itself modernizing, which matches some of the VLM's changes
+  (the test reference keeps the period spelling). Peak GPU 6.87 GB allocated; the test run used the GPU alone:
+  474.8 s for 333 lines (1.43 s per line incl. the 4-bit load). A first test attempt died with CUDA out of
+  memory because the masked-LM scoring (baseline D) shared the GPU; its log is kept as job_oom.log, and the rerun
+  had the GPU alone.

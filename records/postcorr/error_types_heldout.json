@@ -125,7 +125,7 @@
    }
   },
   "VLM": {
-   "path": "outputs/baselines/search/vlm/final_heldout_paper_pt/score",
+   "path": "outputs/baselines/search/vlm/final_heldout_paper_pt_period/score",
    "numeral": {
     "raw_errors": 25,
     "fixed": 2,
@@ -148,19 +148,19 @@
     "raw_errors": 19,
     "fixed": 4,
     "fix_rate": 21.1,
-    "broken": 5
+    "broken": 1
    },
    "real_word": {
     "raw_errors": 29,
     "fixed": 9,
     "fix_rate": 31.0,
-    "broken": 37
+    "broken": 34
    },
    "non_word": {
     "raw_errors": 83,
-    "fixed": 44,
-    "fix_rate": 53.0,
-    "broken": 5
+    "fixed": 46,
+    "fix_rate": 55.4,
+    "broken": 4
    }
   }
  }

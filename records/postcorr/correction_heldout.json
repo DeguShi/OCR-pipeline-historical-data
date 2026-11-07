@@ -46,6 +46,19 @@
    "fixed_per_broken": 16.5
   },
   "E_vlm": {
+   "path": "outputs/baselines/search/vlm/final_heldout_paper_pt_period/score",
+   "fixed": 65,
+   "broken": 40,
+   "kept_wrong": 99,
+   "kept_right": 431,
+   "words": 635,
+   "ins_raw": 36,
+   "ins_run": 28,
+   "fix_rate": 39.63,
+   "break_rate": 8.49,
+   "fixed_per_broken": 1.62
+  },
+  "E_vlm_paper_pt": {
    "path": "outputs/baselines/search/vlm/final_heldout_paper_pt/score",
    "fixed": 63,
    "broken": 48,

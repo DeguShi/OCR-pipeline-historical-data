@@ -1,0 +1,19 @@
+{
+  "wer_a": 18.74015748031496,
+  "wer_b": 26.299212598425196,
+  "dwer": -7.559055118110236,
+  "ci95": [
+    -10.59,
+    -4.76
+  ],
+  "p_signflip": 0.00019998000199980003,
+  "blocks": 23,
+  "pages_won_tied_lost": [
+    3,
+    0,
+    0
+  ],
+  "a": "outputs/runs/v6_all12_cache",
+  "b": "outputs/baselines/search/vlm/final_heldout_paper_pt_period/score",
+  "block": 30
+}

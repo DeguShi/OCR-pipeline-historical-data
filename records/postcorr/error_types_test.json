@@ -132,42 +132,42 @@
    }
   },
   "VLM": {
-   "path": "outputs/baselines/search/vlm/final_test10_paper_pt/score",
+   "path": "outputs/baselines/search/vlm/final_test10_paper_pt_period/score",
    "numeral": {
     "raw_errors": 9,
-    "fixed": 1,
-    "fix_rate": 11.1,
+    "fixed": 0,
+    "fix_rate": 0.0,
     "broken": 1
    },
    "split_merge": {
     "raw_errors": 4,
     "fixed": 0,
     "fix_rate": 0.0,
-    "broken": 6
+    "broken": 2
    },
    "deleted": {
     "raw_errors": 19,
-    "fixed": 2,
-    "fix_rate": 10.5,
-    "broken": 14
+    "fixed": 3,
+    "fix_rate": 15.8,
+    "broken": 3
    },
    "short": {
     "raw_errors": 18,
-    "fixed": 7,
-    "fix_rate": 38.9,
-    "broken": 39
+    "fixed": 8,
+    "fix_rate": 44.4,
+    "broken": 33
    },
    "real_word": {
     "raw_errors": 33,
-    "fixed": 8,
-    "fix_rate": 24.2,
-    "broken": 181
+    "fixed": 9,
+    "fix_rate": 27.3,
+    "broken": 156
    },
    "non_word": {
     "raw_errors": 177,
-    "fixed": 67,
-    "fix_rate": 37.9,
-    "broken": 27
+    "fixed": 76,
+    "fix_rate": 42.9,
+    "broken": 28
    }
   }
  }
