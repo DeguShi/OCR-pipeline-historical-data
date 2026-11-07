@@ -1,0 +1,43 @@
+{
+ "raw": "outputs/runs/check_greedy_raw_test10",
+ "pages": [
+  18,
+  22,
+  23,
+  24,
+  25,
+  31,
+  32,
+  34,
+  44,
+  55
+ ],
+ "runs": {
+  "v6": {
+   "path": "outputs/runs/v6_test10_cache",
+   "fixed": 191,
+   "broken": 10,
+   "kept_wrong": 69,
+   "kept_right": 1991,
+   "words": 2261,
+   "ins_raw": 1,
+   "ins_run": 0,
+   "fix_rate": 73.46,
+   "break_rate": 0.5,
+   "fixed_per_broken": 19.1
+  },
+  "A": {
+   "path": "outputs/runs/base_A2_pyctc_test10",
+   "fixed": 168,
+   "broken": 5,
+   "kept_wrong": 92,
+   "kept_right": 1996,
+   "words": 2261,
+   "ins_raw": 1,
+   "ins_run": 1,
+   "fix_rate": 64.62,
+   "break_rate": 0.25,
+   "fixed_per_broken": 33.6
+  }
+ }
+}
