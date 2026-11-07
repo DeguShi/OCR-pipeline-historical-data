@@ -218,3 +218,13 @@ model load (87 s for paper_pt); peak GPU memory was not recorded):
   (dWER -0.22, CI95 [-0.53, 0], p 0.25, 3 pages better / 0 worse). ByT5's numeral edits are wrong about as
   often as they are right, so there is no gain to deploy. Uses the C predictions recorded above (first model).
   Records are in `records/postcorr/hybrid/` and `blocks/blk_*_v6_vs_hybrid_numeral_*`.
+- 2026-11-07: C retrained to keep its weights and check reproducibility (pro T4, session b5). Code from `git archive`
+  at 1828a62, pinned environment (`tools/requirements-postcorr-gpu.txt`; `retrain/env.txt` holds the full pip
+  freeze), same pairs (sha256 86090751…), same command and seed (`retrain/job_cmd.txt`). 3,395 s of training,
+  best validation loss 0.07670 (first run 0.07668). Scores (text rules): tuning 22.74 (first run 22.91), held-out
+  21.89 (21.26), test 6.81 (6.86); 87% / 93% of lines are identical. Held-out moves by 0.63 points (8 of 1,270
+  words, p 0.12), more than the ±0.3 expected: GPU training is not bit-exact, so C reproduces to about ±0.6 WER.
+  v6 vs the retrained C: held-out -3.15, CI95 [-5.15, -1.25], p 0.003, 3 of 3 pages; test -3.32, [-4.42, -2.26],
+  p 0.0001, 10 of 10 pages, so the conclusion holds. The tables keep the first run's numbers. The retrained
+  weights (1.2 GB, sha256 in `retrain/model.safetensors.sha256`) are kept locally in
+  `outputs/baselines/byt5_repro/out/byt5_model/`, not yet uploaded to HF.

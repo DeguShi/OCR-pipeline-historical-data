@@ -1,0 +1,19 @@
+{
+ "model": "google/byt5-small",
+ "pairs": "outputs/baselines/byt5/pairs.jsonl",
+ "n_train": 78000,
+ "n_val": 2000,
+ "epochs": 1.0,
+ "batch": 16,
+ "accum": 2,
+ "limit": 80000,
+ "lr": 0.0005,
+ "max_len": 128,
+ "seed": 42,
+ "train_seconds": 3394.9,
+ "best_eval_loss": 0.07669997960329056,
+ "gpu": "Tesla T4",
+ "torch": "2.14.1+cu130",
+ "transformers": "4.51.3",
+ "python": "3.13.16"
+}
