@@ -10,7 +10,10 @@ Deviations from the paper, stated: line instead of sentence units; 4-bit NF4 wei
 Prompts (--prompt):
 - paper_en: Figure 7 verbatim, with the paper's English example;
 - paper_pt: the same instruction with one Portuguese example (tuning page 6, line 3, corrected by hand from the
-  image). Which one is used on held-out and test is chosen on the tuning pages.
+  image);
+- paper_pt_period: paper_pt plus one sentence asking to keep the historical spelling (added after paper_en, on the
+  tuning pages, modernized period forms such as funcções -> funções).
+Which one is used on held-out and test is chosen on the tuning pages.
 
 Every line is appended to <out>/generations.jsonl with fsync; a restarted run skips the lines already there. At the
 end <out>/lines.json ({page: [lines]}, for tools/score_lines.py) and <out>/params.json are written.
@@ -35,14 +38,19 @@ REVISION = 'cc594898137f460bfe9f0759e9844b3ce807cfb5'
 INSTRUCTION = ('I will provide you with OCR output and source image. Please fix the errors in the provided text. '
                'Return only the corrected text. Do not include any additional commentary or explanations. '
                'If you understand, please reply with OK.')
+PERIOD = (' The text is a Portuguese manuscript from the 1890s: keep its historical spelling and accents exactly as '
+          'written; do not modernize them.')
 EXAMPLES = {'paper_en': ('__RO BBERY AT A BARONET’S. V', 'ROBBERY AT A BARONETS.'),
-            'paper_pt': ('Reginento interro da Camara Memicipal', 'Regimento interno da Camara Municipal')}
+            'paper_pt': ('Reginento interro da Camara Memicipal', 'Regimento interno da Camara Municipal'),
+            'paper_pt_period': ('Reginento interro da Camara Memicipal', 'Regimento interno da Camara Municipal')}
 
 
 def messages(prompt: str, image: Image.Image, ocr: str) -> list[dict]:
     example_ocr, example_fixed = EXAMPLES[prompt]
     text = lambda t: [{'type': 'text', 'text': t}]  # noqa: E731
-    return [{'role': 'user', 'content': text(INSTRUCTION)}, {'role': 'assistant', 'content': text('OK')},
+    instruction = INSTRUCTION.replace(' If you understand', PERIOD + ' If you understand') \
+        if prompt.endswith('_period') else INSTRUCTION
+    return [{'role': 'user', 'content': text(instruction)}, {'role': 'assistant', 'content': text('OK')},
             {'role': 'user', 'content': text(example_ocr)}, {'role': 'assistant', 'content': text(example_fixed)},
             {'role': 'user', 'content': [{'type': 'image', 'image': image}, {'type': 'text', 'text': ocr}]}]
 
