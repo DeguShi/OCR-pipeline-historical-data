@@ -1,5 +1,5 @@
 {
- "raw": "outputs/runs/check_greedy_raw",
+ "raw": "outputs/runs/ladder_L0_raw",
  "pages": [
   7,
   10,
@@ -44,6 +44,19 @@
    "fix_rate": 40.24,
    "break_rate": 0.85,
    "fixed_per_broken": 16.5
+  },
+  "E_vlm": {
+   "path": "outputs/baselines/search/vlm/final_heldout_paper_pt/score",
+   "fixed": 63,
+   "broken": 48,
+   "kept_wrong": 101,
+   "kept_right": 423,
+   "words": 635,
+   "ins_raw": 36,
+   "ins_run": 62,
+   "fix_rate": 38.41,
+   "break_rate": 10.19,
+   "fixed_per_broken": 1.31
   }
  }
 }

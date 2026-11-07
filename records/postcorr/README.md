@@ -128,3 +128,20 @@ model load (87 s for paper_pt); peak GPU memory was not recorded):
   34.03). The third prompt, paper_pt_period, was never run: the free Colab tier refused a T4 on 18 tries
   (02:00-08:17), so it stays untested and is reported as such. The final held-out and test decodes of paper_pt are
   queued for the next free T4.
+- 2026-11-07: baseline E (VLM, frozen at paper_pt) decoded on held-out (7, 10, 12) and test10 on one Colab T4 (pro
+  account, by the user's decision, after the free tier refused T4s all night). Scored like every external baseline
+  (`score_lines`, text rules only; lines rebuilt from `generations.jsonl`, every line present: 99 + 333).
+  Held-out: WER 33.23, CER 13.04 (raw greedy 31.5; v6 18.74). v6 vs E: dWER -14.49, CI95 [-25.15, -7.57]
+  (block 10) / [-26.81, -6.57] (block 30), p 0.0001, 3 of 3 pages.
+  Test: WER 21.10, CER 7.31 (raw greedy 11.54; v6 3.49). v6 vs E: dWER -17.60, CI95 [-19.28, -15.94] / [-19.51,
+  -15.78], p 0.0001, 10 of 10 pages.
+  Correction analysis, fixed / broken (break rate): held-out v6 78 / 8 (1.7%), A 70 / 8, B 66 / 4, E 63 / 48
+  (10.2%); test v6 191 / 10 (0.5%), A 168 / 5, B 150 / 13, E 85 / 268 (13.4%). E rewrites 93% of the non-empty lines
+  (unchanged 9 of 99 and 24 of 330); only 1 of the 429 replies was chatty, so the loss is over-correction
+  (modernized spelling and accents, plausible wrong words), not formatting. Output reported as produced: no filter
+  was added on evaluation pages. GPU time excluding the first line (model load): held-out 109 s, test 374 s, about
+  1.1 s per line, consistent with the tuning pages.
+  Setup incident, for the record: the first three launches died at 4-bit loading because the code tarball shipped a
+  stale `tools/requirements-vlm.txt` pinning bitsandbytes 0.45.5 (no CUDA 13 binary; the committed file pins
+  0.50.2). The run used the committed `baseline_vlm.py` and `requirements-vlm.txt` (sha256 prefixes b17dab52…,
+  ebc7e6fd…, checked on the VM). Failed logs kept as `job_failed_bnb*.log`.

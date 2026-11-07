@@ -51,6 +51,19 @@
    "fix_rate": 57.69,
    "break_rate": 0.65,
    "fixed_per_broken": 11.54
+  },
+  "E_vlm": {
+   "path": "outputs/baselines/search/vlm/final_test10_paper_pt/score",
+   "fixed": 85,
+   "broken": 268,
+   "kept_wrong": 175,
+   "kept_right": 1733,
+   "words": 2261,
+   "ins_raw": 1,
+   "ins_run": 34,
+   "fix_rate": 32.69,
+   "break_rate": 13.39,
+   "fixed_per_broken": 0.32
   }
  }
 }
