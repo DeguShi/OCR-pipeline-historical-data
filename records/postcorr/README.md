@@ -124,3 +124,7 @@ model load (87 s for paper_pt); peak GPU memory was not recorded):
 | A pyctcdecode + KenLM | 3 s CPU | 0.57 GB RAM | 431 MB | beam search + 3-gram LM |
 | B CTC word beam search | 404 s CPU | 2.88 GB RAM | 144 MB corpus | beam search + n-gram LM |
 | E Qwen2.5-VL-7B 4-bit | 33 s T4 GPU (paper_pt; paper_en 34 s) | not recorded | 16.6 GB checkpoint, NF4 at load | 7B-parameter VLM |
+- 2026-11-07: baseline E (VLM) frozen at prompt paper_pt, chosen on the tuning pages only (WER 30.93 vs paper_en
+  34.03). The third prompt, paper_pt_period, was never run: the free Colab tier refused a T4 on 18 tries
+  (02:00-08:17), so it stays untested and is reported as such. The final held-out and test decodes of paper_pt are
+  queued for the next free T4.
