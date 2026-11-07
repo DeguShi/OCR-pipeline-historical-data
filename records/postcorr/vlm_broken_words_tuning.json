@@ -1,0 +1,34 @@
+{
+ "run": "vlm paper_pt, tuning pages 5,6,8,9,11,13,14,15,16",
+ "raw": "outputs/runs/check_greedy_raw",
+ "method": "words right in raw OCR and wrong after the VLM (same alignment as tools/correction_analysis.py); category by rule: accent only = equal after removing diacritics; spelling modernized = equal after diacritics removed and ph/th/y/double consonants/ct/pt/gm/mn/h simplified; deleted/merged = no aligned word; other = the rest (still contains modernizations the rule misses, e.g. s->z, ae->ai)",
+ "counts": {
+  "accent only": 48,
+  "spelling modernized": 23,
+  "deleted/merged": 3,
+  "other": 62,
+  "total": 136
+ },
+ "examples": {
+  "accent only": [
+   "camara->câmara",
+   "decencia->decência",
+   "publica->pública",
+   "tres->três"
+  ],
+  "spelling modernized": [
+   "funcções->funções",
+   "actas->atas",
+   "approvadas->aprovadas",
+   "anno->ano",
+   "contracto->contrato"
+  ],
+  "other": [
+   "organisado->organizado",
+   "municipaes->municipais",
+   "procederão->procederá",
+   "tiver->houve",
+   "de->a"
+  ]
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "raw": "outputs/runs/check_greedy_raw",
+ "pages": [
+  5,
+  6,
+  8,
+  9,
+  11,
+  13,
+  14,
+  15,
+  16
+ ],
+ "runs": {
+  "v6": {
+   "path": "outputs/runs/v6_all12_cache",
+   "fixed": 229,
+   "broken": 15,
+   "kept_wrong": 257,
+   "kept_right": 1271,
+   "words": 1772,
+   "ins_raw": 106,
+   "ins_run": 76,
+   "fix_rate": 47.12,
+   "break_rate": 1.17,
+   "fixed_per_broken": 15.27
+  },
+  "A": {
+   "path": "outputs/runs/base_A2_pyctc_gt12",
+   "fixed": 210,
+   "broken": 14,
+   "kept_wrong": 276,
+   "kept_right": 1272,
+   "words": 1772,
+   "ins_raw": 106,
+   "ins_run": 66,
+   "fix_rate": 43.21,
+   "break_rate": 1.09,
+   "fixed_per_broken": 15.0
+  },
+  "vlm_paper_en": {
+   "path": "outputs/baselines/search/vlm/tuning_paper_en/score",
+   "fixed": 180,
+   "broken": 121,
+   "kept_wrong": 306,
+   "kept_right": 1165,
+   "words": 1772,
+   "ins_raw": 106,
+   "ins_run": 176,
+   "fix_rate": 37.04,
+   "break_rate": 9.41,
+   "fixed_per_broken": 1.49
+  },
+  "vlm_paper_pt": {
+   "path": "outputs/baselines/search/vlm/tuning_paper_pt/score",
+   "fixed": 195,
+   "broken": 136,
+   "kept_wrong": 291,
+   "kept_right": 1150,
+   "words": 1772,
+   "ins_raw": 106,
+   "ins_run": 121,
+   "fix_rate": 40.12,
+   "break_rate": 10.58,
+   "fixed_per_broken": 1.43
+  }
+ }
+}
