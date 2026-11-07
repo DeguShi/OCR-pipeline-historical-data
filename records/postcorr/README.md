@@ -108,3 +108,19 @@ only if it follows them.
   same words, so WER is unchanged. `/usr/bin/time -v`: v6 988.7 s user CPU, 16:38 wall, peak RSS 0.40 GB;
   A 36.5 s, 0:37, 0.57 GB; B 4,845 s, 1:21:34, 2.88 GB (CTC word beam search, NGrams mode, beam 256, over the 144 MB
   period corpus `period_w4_livro78.txt` as its language model). Raw files in `outputs/bench/run2` (sha256 of the tarball 44c6f40b…).
+- 2026-11-07: cost benchmark run 3 (fresh Colab CPU VM, same setup; memoized v6 only). Output 12 of 12 pages
+  identical to runs 1 and 2. 416.8 s user CPU (about 35 s per page), 7:02 wall, peak RSS 0.41 GB; on this Xeon the
+  memo gives 2.4x (989 -> 417 s), less than the 5x measured on the Mac. Raw files in `outputs/bench/run3_memo`
+  (sha256 of the tarball 3cb582fa…).
+
+Cost per page (CPU methods: the 12 GT pages, one Colab vCPU, Xeon @ 2.20 GHz, model load included (v6 0.7 s). VLM: the
+9 tuning pages on one T4 GPU, `seconds` per line from `generations.jsonl`, minus the first line, which includes the
+model load (87 s for paper_pt); peak GPU memory was not recorded):
+
+| method | compute per page | peak memory | model files | kind |
+|---|---|---|---|---|
+| v6 (memoized) | 35 s CPU | 0.41 GB RAM | 17 MB | lexicon + trigram heuristics |
+| v6 (unmemoized) | 82 s CPU | 0.40 GB RAM | 17 MB | same output |
+| A pyctcdecode + KenLM | 3 s CPU | 0.57 GB RAM | 431 MB | beam search + 3-gram LM |
+| B CTC word beam search | 404 s CPU | 2.88 GB RAM | 144 MB corpus | beam search + n-gram LM |
+| E Qwen2.5-VL-7B 4-bit | 33 s T4 GPU (paper_pt; paper_en 34 s) | not recorded | 16.6 GB checkpoint, NF4 at load | 7B-parameter VLM |
