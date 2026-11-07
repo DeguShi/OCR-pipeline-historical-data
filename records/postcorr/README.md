@@ -91,3 +91,9 @@ only if it follows them.
   test, fixed / broken: v6 191 / 10, A 168 / 5, B 150 / 13 (of 260 raw errors, 2,001 raw-correct words);
   tuning: v6 229 / 15, A 210 / 14, VLM paper_pt 195 / 136. The VLM breaks about 10% of the raw-correct words; at
   least 52% of those are modernized spellings or accents (`records/postcorr/vlm_broken_words_tuning.json`).
+- 2026-11-07: cost benchmark run 1 (one Colab CPU VM: 1 vCPU, Xeon @ 2.20 GHz, 13 GB; one process each, OMP threads
+  1, `/usr/bin/time -v`; the 12 GT pages from the posterior export). v6 from posteriors reproduces the pipeline on
+  12 of 12 pages (all12 WER 19.40), and A's output is byte-identical to its frozen decode. v6: 1128 s user CPU
+  (about 94 s per page), 19 min wall, peak RSS 0.40 GB, models 17 MB (lexicon 2.4 MB + n-grams 14.7 MB).
+  A: 34 s user CPU, peak RSS 0.57 GB, model 324 MB (KenLM binary) + 107 MB unigram corpus. B was cut off by a
+  status-check bug (v6's own log line contains "ALL DONE"); fixed, and the whole benchmark is rerun on a fresh VM.
