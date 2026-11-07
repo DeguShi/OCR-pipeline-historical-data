@@ -136,7 +136,9 @@ def main() -> None:
               'torch': torch.__version__, 'transformers': transformers.__version__,
               'bitsandbytes': bitsandbytes.__version__, 'gpu': torch.cuda.get_device_name(0),
               'python': platform.python_version(), 'gpu_seconds': round(sum(r['seconds'] for r in rows.values()), 1),
-              'lines': len(rows)}
+              'lines': len(rows),
+              'peak_gpu_allocated_gb': round(torch.cuda.max_memory_allocated() / 2**30, 2),
+              'peak_gpu_reserved_gb': round(torch.cuda.max_memory_reserved() / 2**30, 2)}
     (args.out / 'params.json').write_text(json.dumps(params, indent=1, ensure_ascii=False), encoding='utf-8')
     logger.info('ALL DONE: %d lines, %.0f s', len(rows), params['gpu_seconds'])
 
