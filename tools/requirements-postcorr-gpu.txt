@@ -1,0 +1,7 @@
+# Environment of baselines C (tools/baseline_byt5.py) and D (tools/postcorr_mlm.py), Colab T4. On 2026-11-07 both
+# ran in the session that had the VLM pins installed (tools/requirements-vlm.txt), so they share them; torch is
+# Colab's preinstalled CUDA build (2.14.1+cu130, Python 3.13). The Colab default transformers (5.x) breaks
+# Seq2SeqTrainingArguments(warmup_ratio=...). Each run also writes pip freeze to its output dir (env.txt).
+transformers==4.51.3
+accelerate==1.6.0
+rapidfuzz==3.14.1
