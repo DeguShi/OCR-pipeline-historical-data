@@ -138,6 +138,19 @@ def data(args: argparse.Namespace) -> None:
                 len(pool) - len(book) * args.book_repeat)
 
 
+def record_env(out: Path) -> dict:
+    """pip freeze and nvidia-smi into out/, library versions returned for params."""
+    import subprocess
+    import torch
+    import transformers
+    out.mkdir(parents=True, exist_ok=True)
+    (out / 'env.txt').write_text(subprocess.run([sys.executable, '-m', 'pip', 'freeze'], capture_output=True,
+                                                text=True).stdout, encoding='utf-8')
+    smi = subprocess.run(['nvidia-smi'], capture_output=True, text=True) if torch.cuda.is_available() else None
+    (out / 'nvidia_smi.txt').write_text(smi.stdout if smi else 'no gpu', encoding='utf-8')
+    return {'torch': torch.__version__, 'transformers': transformers.__version__, 'python': sys.version.split()[0]}
+
+
 def train(args: argparse.Namespace) -> None:
     import torch
     from transformers import (AutoTokenizer, DataCollatorForSeq2Seq, Seq2SeqTrainer, Seq2SeqTrainingArguments,
@@ -168,7 +181,7 @@ def train(args: argparse.Namespace) -> None:
     meta = {'model': MODEL, 'pairs': str(args.pairs), 'n_train': len(train_set), 'n_val': n_val, 'epochs': args.epochs,
             'batch': args.batch, 'accum': args.accum, 'limit': args.limit, 'lr': args.lr, 'max_len': args.max_len, 'seed': args.seed,
             'train_seconds': round(time.time() - t0, 1), 'best_eval_loss': trainer.state.best_metric,
-            'gpu': torch.cuda.get_device_name(0) if torch.cuda.is_available() else None, 'torch': torch.__version__}
+            'gpu': torch.cuda.get_device_name(0) if torch.cuda.is_available() else None, **record_env(args.out)}
     (args.out / 'train_params.json').write_text(json.dumps(meta, indent=1), encoding='utf-8')
     logger.info('ALL DONE: %s', meta)
 
@@ -194,7 +207,7 @@ def predict(args: argparse.Namespace) -> None:
     args.out.mkdir(parents=True, exist_ok=True)
     (args.out / 'lines.json').write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding='utf-8')
     meta = {'model': str(args.model), 'posteriors': str(args.posteriors), 'beams': args.beams, 'device': device,
-            'seconds': round(time.time() - t0, 1), 'lines': sum(map(len, out.values()))}
+            'seconds': round(time.time() - t0, 1), 'lines': sum(map(len, out.values())), **record_env(args.out)}
     (args.out / 'params.json').write_text(json.dumps(meta, indent=1), encoding='utf-8')
     logger.info('ALL DONE: %s', meta)
 

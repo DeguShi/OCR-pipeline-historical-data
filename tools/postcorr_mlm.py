@@ -37,6 +37,7 @@ logger = logging.getLogger(__name__)
 MODEL = 'LIACC/PortOldBERT'
 MODEL_REVISION = '9641bba86b86173f91a0e3936f28fa76b1c94121'
 TOKENIZER = 'PORTULAN/albertina-100m-portuguese-ptpt-encoder'
+TOKENIZER_REVISION = 'd15e086005cdab26d746d9113984cc654439df2b'  # last change 2025-06-23, before our runs
 REAL_DECODE = ctc_rescore.decode_line
 
 
@@ -125,7 +126,7 @@ def score(args: argparse.Namespace) -> None:
     from transformers import AutoModelForMaskedLM, AutoTokenizer
     torch.manual_seed(args.seed)
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
-    tok = AutoTokenizer.from_pretrained(TOKENIZER)
+    tok = AutoTokenizer.from_pretrained(TOKENIZER, revision=TOKENIZER_REVISION)
     model = AutoModelForMaskedLM.from_pretrained(MODEL, revision=MODEL_REVISION).to(device).eval()
     calls = json.loads(args.slots.read_text(encoding='utf-8'))['calls']
     jobs = slot_jobs(calls, args.k)
@@ -142,7 +143,7 @@ def score(args: argparse.Namespace) -> None:
     for b in range(0, len(items), args.batch):
         for key, value in zip(keys[b:b + args.batch], pll_batch(model, tok, items[b:b + args.batch], device)):
             pll.setdefault(key[0], {}).setdefault(str(key[1]), {}).setdefault(str(key[2]), {})[key[3]] = value
-    meta = {'model': MODEL, 'revision': MODEL_REVISION, 'tokenizer': TOKENIZER, 'k': args.k, 'device': device,
+    meta = {'model': MODEL, 'revision': MODEL_REVISION, 'tokenizer': TOKENIZER, 'tokenizer_revision': TOKENIZER_REVISION, 'k': args.k, 'device': device,
             'gpu': torch.cuda.get_device_name(0) if device == 'cuda' else None, 'seconds': round(time.time() - t0, 1),
             'slots': len(jobs), 'candidates': len(items), 'torch': torch.__version__}
     args.out.parent.mkdir(parents=True, exist_ok=True)
