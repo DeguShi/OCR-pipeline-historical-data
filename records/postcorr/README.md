@@ -152,3 +152,15 @@ model load (87 s for paper_pt); peak GPU memory was not recorded):
   (`baseline_vlm.py` now records it): 6.87 GB allocated, 7.06 GB reserved, on a T4 with 4-bit NF4 weights. GPU
   seconds (808 s for 285 lines) are inflated by a CPU job sharing the VM (the masked-LM slot dump), so the per-line
   time stays the paper_pt measurement.
+- 2026-11-07: recognizer-quality curve. The same v6 configuration (tuned with st_c1m only; nothing retuned) is run on
+  the posteriors of two weaker recognizers: `medium` (the published Kraken model, Zenodo 10.5281/zenodo.21788410)
+  and `st_v3` (an earlier fine-tune of ours). Configs `configs/curve_<model>.json` differ from final_v6 only in
+  `rec.model`; posteriors exported with `tools/export_posteriors.py`, then `tools/run_curve.sh <model>` (greedy and v6
+  from the same export, `score_lines --no-rules`). Paired block bootstrap (block 10) v6 vs raw greedy,
+  `records/postcorr/curve/`:
+  held-out: medium 62.36 -> 28.03 (dWER -34.33, CI95 [-38.81, -29.89]); st_v3 37.32 -> 22.68 (-14.65, [-17.68,
+  -11.74]); st_c1m 31.50 -> 18.74 (-12.76, [-16.05, -9.61]).
+  test: medium 55.59 -> 25.61 (-29.99, [-32.07, -27.93]); st_v3 27.16 -> 19.24 (-7.92, [-9.17, -6.63]); st_c1m
+  11.54 -> 3.49 (-8.05, [-9.21, -6.89]). p 0.0001 and every page won in all six.
+  The post-correction never hurts and helps most, in absolute points, on the weakest recognizer (about half of
+  medium's errors removed); the relative reduction on test is largest for the best recognizer (70%).

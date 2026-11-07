@@ -1,0 +1,19 @@
+{
+  "wer_a": 3.494029190623618,
+  "wer_b": 11.543564794338788,
+  "dwer": -8.04953560371517,
+  "ci95": [
+    -9.21,
+    -6.89
+  ],
+  "p_signflip": 9.999000099990002e-05,
+  "blocks": 231,
+  "pages_won_tied_lost": [
+    10,
+    0,
+    0
+  ],
+  "a": "outputs/runs/v6_test10_cache",
+  "b": "outputs/runs/check_greedy_raw_test10",
+  "block": 10
+}
