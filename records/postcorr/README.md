@@ -145,3 +145,10 @@ model load (87 s for paper_pt); peak GPU memory was not recorded):
   stale `tools/requirements-vlm.txt` pinning bitsandbytes 0.45.5 (no CUDA 13 binary; the committed file pins
   0.50.2). The run used the committed `baseline_vlm.py` and `requirements-vlm.txt` (sha256 prefixes b17dab52…,
   ebc7e6fd…, checked on the VM). Failed logs kept as `job_failed_bnb*.log`.
+- 2026-11-07: VLM prompt paper_pt_period run on the tuning pages (free-tier T4, available again): WER 29.97, CER
+  10.33 (paper_pt 30.93 / 11.85, paper_en 34.03 / 13.64, raw greedy 31.04 / 8.38). It is the best prompt on the
+  tuning pages, so it replaces paper_pt as the frozen VLM, as the protocol states; held-out and test are decoded
+  with it, and the paper_pt results above stay as a reported second prompt. First measurement of peak GPU memory
+  (`baseline_vlm.py` now records it): 6.87 GB allocated, 7.06 GB reserved, on a T4 with 4-bit NF4 weights. GPU
+  seconds (808 s for 285 lines) are inflated by a CPU job sharing the VM (the masked-LM slot dump), so the per-line
+  time stays the paper_pt measurement.
