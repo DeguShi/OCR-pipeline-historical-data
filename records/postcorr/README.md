@@ -117,13 +117,21 @@ Cost per page (CPU methods: the 12 GT pages, one Colab vCPU, Xeon @ 2.20 GHz, mo
 9 tuning pages on one T4 GPU, `seconds` per line from `generations.jsonl`, minus the first line, which includes the
 model load (87 s for paper_pt); peak GPU memory was not recorded):
 
-| method | compute per page | peak memory | model files | kind |
-|---|---|---|---|---|
-| v6 (memoized) | 35 s CPU | 0.41 GB RAM | 17 MB | lexicon + trigram heuristics |
-| v6 (unmemoized) | 82 s CPU | 0.40 GB RAM | 17 MB | same output |
-| A pyctcdecode + KenLM | 3 s CPU | 0.57 GB RAM | 431 MB | beam search + 3-gram LM |
-| B CTC word beam search | 404 s CPU | 2.88 GB RAM | 144 MB corpus | beam search + n-gram LM |
-| E Qwen2.5-VL-7B 4-bit | 33 s T4 GPU (paper_pt; paper_en 34 s) | not recorded | 16.6 GB checkpoint, NF4 at load | 7B-parameter VLM |
+| method                 | compute per page                      | peak memory  | model files                      | kind                                                                    |
+| ---------------------- | ------------------------------------- | ------------ | -------------------------------- | ----------------------------------------------------------------------- |
+| v6 (memoized)          | 35 s CPU                              | 0.41 GB RAM  | 17 MB                            | lexicon + trigram heuristics                                            |
+| v6 (unmemoized)        | 82 s CPU                              | 0.40 GB RAM  | 17 MB                            | same output                                                             |
+| A pyctcdecode + KenLM  | 3 s CPU                               | 0.57 GB RAM  | 431 MB                           | beam search + 3-gram LM                                                 |
+| B CTC word beam search | 404 s CPU                             | 2.88 GB RAM  | 144 MB corpus                    | beam search + n-gram LM                                                 |
+| E Qwen2.5-VL-7B 4-bit  | 33 s T4 GPU (paper_pt; paper_en 34 s) | not recorded | 16.6 GB checkpoint, NF4 at load  | 7B-parameter VLM                                                        |
+| C ByT5-small           | 2 s T4 GPU (beam 4)                   | not recorded | 1.2 GB (fp32 safetensors)        | 300M-parameter byte seq2seq, trained once: 3,257 s T4 (retrain 3,395 s) |
+| D v6 + PortOldBERT PLL | 35 s CPU (v6) + 44 s T4 GPU           | not recorded | 17 MB + 100M-parameter masked LM | masked-LM rescoring of v6's slot candidates                             |
+
+One-time costs (added 2026-11-08): v6 and A only build their lexicon / n-gram / KenLM files on CPU; C needs 0.9 h of
+T4 training on synthetic pairs; D and E use pretrained models as is. C and D peak GPU memory was not recorded.
+C seconds from `records/postcorr/byt5/retrain/predict_*.json` (20.2 s for the 12 GT pages, 18.7 s for the 10 test
+pages); D from the PLL scoring log (530 s for the 12 GT pages, 21,016 candidates).
+
 - 2026-11-07: baseline E (VLM) frozen at prompt paper_pt, chosen on the tuning pages only (WER 30.93 vs paper_en
   34.03). The third prompt, paper_pt_period, was never run: the free Colab tier refused a T4 on 18 tries
   (02:00-08:17), so it stays untested and is reported as such. The final held-out and test decodes of paper_pt are
@@ -228,3 +236,6 @@ model load (87 s for paper_pt); peak GPU memory was not recorded):
   p 0.0001, 10 of 10 pages, so the conclusion holds. The tables keep the first run's numbers. The retrained
   weights (1.2 GB, sha256 in `retrain/model.safetensors.sha256`) are kept locally in
   `outputs/baselines/byt5_repro/out/byt5_model/`, not yet uploaded to HF.
+- 2026-11-08: the retrained ByT5 checkpoint (C) is on HF: `KobayashiShiroe/OCR-pipeline-historical-data`,
+  folder `postcorr_byt5_small/` (commit dd791ec; model card c91cb70). LFS sha256 matches
+  `byt5/retrain/model.safetensors.sha256` (cf52bdee…). `training_args.bin` (a pickle) was left out.
