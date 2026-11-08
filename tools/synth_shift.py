@@ -77,7 +77,12 @@ def bleed_through(image: Image.Image, rng: np.random.Generator, other: Image.Ima
     return _img(np.minimum(a, a * (1 - 0.3 * (1 - back / 255))))
 
 
-SHIFTS: dict[str, Shift] = {'low_contrast_cast': low_contrast_cast, 'uneven_light': uneven_light,
+def identity(image: Image.Image, rng: np.random.Generator, other: Image.Image) -> Image.Image:
+    """No shift (control: the adaptation run on our own book should keep the default and do no harm)."""
+    return image
+
+
+SHIFTS: dict[str, Shift] = {'identity': identity, 'low_contrast_cast': low_contrast_cast, 'uneven_light': uneven_light,
                             'low_res_blur': low_res_blur, 'faded_ink': faded_ink, 'jpeg_noise': jpeg_noise,
                             'bleed_through': bleed_through}
 
