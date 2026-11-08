@@ -1,0 +1,170 @@
+{
+ "clean": 18.740157480314963,
+ "shifts": [
+  {
+   "shift": "bleed_through",
+   "wer": {
+    "default": 19.212598425196852,
+    "conf": 19.212598425196852,
+    "lex": 19.212598425196852,
+    "conflex": 19.212598425196852,
+    "stat": 20.47244094488189,
+    "oracle": 19.52755905511811
+   },
+   "loss": 0.4724409448818889,
+   "recovery": {
+    "conf": 0.0,
+    "lex": 0.0,
+    "conflex": 0.0,
+    "stat": -2.6666666666666665,
+    "oracle": -0.6666666666666666
+   },
+   "spearman": {
+    "conf": 0.6933876325224225,
+    "lex": 0.9457152010338046,
+    "conflex": 0.9391987573406804,
+    "stat": 0.7620318505667959,
+    "n_candidates": 47
+   },
+   "chosen": {
+    "conf": "up2 seg[contrast+remove_rules] rec[]",
+    "lex": "up2 seg[contrast+remove_rules] rec[]",
+    "conflex": "up2 seg[contrast+remove_rules] rec[]",
+    "stat": "up2 seg[illumination+contrast+remove_rules] rec[]",
+    "oracle": "up2 seg[clahe+remove_rules] rec[]"
+   }
+  },
+  {
+   "shift": "faded_ink",
+   "wer": {
+    "default": 20.15748031496063,
+    "conf": 19.68503937007874,
+    "lex": 19.055118110236222,
+    "conflex": 19.055118110236222,
+    "stat": 20.0,
+    "oracle": 19.37007874015748
+   },
+   "loss": 1.4173228346456668,
+   "recovery": {
+    "conf": 0.3333333333333333,
+    "lex": 0.7777777777777778,
+    "conflex": 0.7777777777777778,
+    "stat": 0.1111111111111111,
+    "oracle": 0.5555555555555556
+   },
+   "spearman": {
+    "conf": 0.9189817415430496,
+    "lex": 0.9398065569806375,
+    "conflex": 0.9515902834214802,
+    "stat": 0.6200811939945704,
+    "n_candidates": 47
+   },
+   "chosen": {
+    "conf": "up2 seg[illumination+contrast+remove_rules] rec[clahe]",
+    "lex": "up2 seg[clahe+remove_rules] rec[contrast]",
+    "conflex": "up2 seg[clahe+remove_rules] rec[contrast]",
+    "stat": "up1 seg[contrast+remove_rules] rec[contrast]",
+    "oracle": "up2 seg[clahe+remove_rules] rec[]"
+   }
+  },
+  {
+   "shift": "jpeg_noise",
+   "wer": {
+    "default": 90.07874015748033,
+    "conf": 68.66141732283465,
+    "lex": 70.07874015748031,
+    "conflex": 70.07874015748031,
+    "stat": 90.07874015748033,
+    "oracle": 77.95275590551181
+   },
+   "loss": 71.33858267716536,
+   "recovery": {
+    "conf": 0.3002207505518764,
+    "lex": 0.28035320088300236,
+    "conflex": 0.28035320088300236,
+    "stat": 0.0,
+    "oracle": 0.16997792494481254
+   },
+   "spearman": {
+    "conf": 0.9052812939418546,
+    "lex": 0.9730752593799765,
+    "conflex": 0.975669404880116,
+    "stat": 0.555640466352561,
+    "n_candidates": 60
+   },
+   "chosen": {
+    "conf": "up2 seg[clahe+remove_rules] rec[denoise]",
+    "lex": "up2 seg[] rec[denoise]",
+    "conflex": "up2 seg[] rec[denoise]",
+    "stat": "up2 seg[contrast+remove_rules] rec[]",
+    "oracle": "up1 seg[contrast+remove_rules] rec[denoise]"
+   }
+  },
+  {
+   "shift": "low_contrast_cast",
+   "wer": {
+    "default": 19.84251968503937,
+    "conf": 18.740157480314963,
+    "lex": 19.52755905511811,
+    "conflex": 19.52755905511811,
+    "stat": 21.5748031496063,
+    "oracle": 20.15748031496063
+   },
+   "loss": 1.1023622047244075,
+   "recovery": {
+    "conf": 1.0,
+    "lex": 0.2857142857142857,
+    "conflex": 0.2857142857142857,
+    "stat": -1.5714285714285747,
+    "oracle": -0.2857142857142857
+   },
+   "spearman": {
+    "conf": 0.8845431949216834,
+    "lex": 0.9423864823573737,
+    "conflex": 0.952122109865988,
+    "stat": 0.5648740981175037,
+    "n_candidates": 47
+   },
+   "chosen": {
+    "conf": "up3 seg[contrast+remove_rules] rec[contrast]",
+    "lex": "up2 seg[clahe+remove_rules] rec[channel]",
+    "conflex": "up2 seg[clahe+remove_rules] rec[channel]",
+    "stat": "up1 seg[contrast+remove_rules] rec[gamma]",
+    "oracle": "up2 seg[clahe+remove_rules] rec[]"
+   }
+  },
+  {
+   "shift": "uneven_light",
+   "wer": {
+    "default": 21.5748031496063,
+    "conf": 19.212598425196852,
+    "lex": 19.055118110236222,
+    "conflex": 19.055118110236222,
+    "stat": 24.409448818897637,
+    "oracle": 19.055118110236222
+   },
+   "loss": 2.834645669291337,
+   "recovery": {
+    "conf": 0.8333333333333336,
+    "lex": 0.8888888888888891,
+    "conflex": 0.8888888888888891,
+    "stat": -1.0,
+    "oracle": 0.8888888888888891
+   },
+   "spearman": {
+    "conf": 0.8886768345632352,
+    "lex": 0.9572541219601252,
+    "conflex": 0.9573970115769124,
+    "stat": 0.589096197565058,
+    "n_candidates": 47
+   },
+   "chosen": {
+    "conf": "up2 seg[illumination+remove_rules] rec[gamma]",
+    "lex": "up2 seg[clahe+remove_rules] rec[gamma]",
+    "conflex": "up2 seg[clahe+remove_rules] rec[gamma]",
+    "stat": "up1 seg[contrast+remove_rules] rec[gamma]",
+    "oracle": "up2 seg[clahe+remove_rules] rec[gamma]"
+   }
+  }
+ ]
+}
