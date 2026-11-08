@@ -19,7 +19,7 @@ image, upscale) be chosen from ONE sample page without labels, and which label-f
 - Compute: one free Colab CPU VM (2 vCPU, 12 GB; free T4 refused, one session per free account), code `afd3083`,
   driver `tools/run_e18.sh`; about 1.8 h per shift. Raw outputs (no caches) in `outputs/e18_colab/`.
 
-## Results (5 of 6 shifts; `e18_report/e18_report.md`)
+## Results (6 shifts; `e18_report/e18_report.md`)
 
 Held-out WER (%), clean default 18.74; in brackets the share of the shift's damage recovered:
 
@@ -30,14 +30,16 @@ Held-out WER (%), clean default 18.74; in brackets the share of the shift's dama
 | faded_ink         | 20.16   | 19.69 (33%)          | **19.06 (78%)**      | 20.00         | 19.37  |
 | bleed_through     | 19.21   | 19.21 (kept default) | 19.21 (kept default) | 20.47 (worse) | 19.53  |
 | jpeg_noise        | 90.08   | **68.66 (30%)**      | 70.08 (28%)          | 90.08         | 77.95  |
+| low_res_blur      | 28.98   | 27.72 (12%)          | **23.31 (56%)**      | 25.35 (35%)   | 28.03  |
 
 Spearman(objective, greedy CER) over the 47–60 candidates on the sample page: lex 0.94–0.97 on every shift,
-conflex 0.94–0.98, conf 0.69–0.92, stat 0.56–0.76.
+conflex 0.94–0.98, conf 0.69–0.97, stat 0.56–0.76.
 
 Against the plan's criteria: Q2 (Spearman ≥ 0.6 on most shifts) is met by lex, conflex and conf, and only partly by
-stat. Q1 (on shifts that cost ≥ 2 points, ≥ 50% recovery on average, never > 1 point worse): lex recovers 89% and
-28% (mean 58%), conf 83% and 30% (mean 57%). Neither is ever worse than the default on any shift. stat fails
-(worse on 3 of 5 shifts: it prefers upscale 1, which segments worse). The one-page oracle is not better than lex:
+stat. Q1 (on shifts that cost ≥ 2 points — uneven_light, jpeg_noise, low_res_blur — ≥ 50% recovery on average,
+never > 1 point worse): **lex meets it** (89%, 28%, 56%; mean 58%); conf does not (83%, 30%, 12%; mean 42%).
+Neither is ever worse than the default on any shift. stat fails
+(worse on 3 of 6 shifts: it often prefers upscale 1, which segments worse). The one-page oracle is not better than lex:
 the best chain on one page transfers imperfectly. On jpeg_noise most of the damage stays (70 vs 18.7):
 preprocessing cannot undo heavy compression noise for this recognizer.
 
@@ -47,7 +49,8 @@ period-lexicon words". It does not work when it means matching image statistics.
 
 ## Pending
 
-- low_res_blur (shift 6); controls `tools/run_e18_control.sh` (identity = adaptation on our own book; a fixed
+- Controls `tools/run_e18_control.sh` (identity = adaptation on our own book; a fixed
   clahe segmentation chain on every shift, to separate per-book adaptation from a better static config).
 - Real books (Q3): TraPrInq validation set (Zenodo 13986218, CC BY 4.0), case files with ≥ 4 pages.
-- Figure panels: `tools/e18_figure.py`.
+- Figure panels done: `e18_figures/` (sample page 6, a band of lines: shifted input, default seg image, chosen
+  seg and rec images of the lex objective).

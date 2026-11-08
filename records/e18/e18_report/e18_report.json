@@ -134,6 +134,39 @@
    }
   },
   {
+   "shift": "low_res_blur",
+   "wer": {
+    "default": 28.976377952755904,
+    "conf": 27.716535433070867,
+    "lex": 23.30708661417323,
+    "conflex": 23.30708661417323,
+    "stat": 25.354330708661415,
+    "oracle": 28.03149606299213
+   },
+   "loss": 10.236220472440941,
+   "recovery": {
+    "conf": 0.1230769230769229,
+    "lex": 0.5538461538461538,
+    "conflex": 0.5538461538461538,
+    "stat": 0.35384615384615403,
+    "oracle": 0.09230769230769183
+   },
+   "spearman": {
+    "conf": 0.9691747216529778,
+    "lex": 0.9532987404105365,
+    "conflex": 0.9698687243179638,
+    "stat": 0.5958591214459142,
+    "n_candidates": 47
+   },
+   "chosen": {
+    "conf": "up2 seg[illumination+remove_rules] rec[contrast]",
+    "lex": "up2 seg[clahe+remove_rules] rec[contrast]",
+    "conflex": "up2 seg[clahe+remove_rules] rec[contrast]",
+    "stat": "up2 seg[clahe+remove_rules] rec[sharpen]",
+    "oracle": "up2 seg[contrast+remove_rules] rec[clahe]"
+   }
+  },
+  {
    "shift": "uneven_light",
    "wer": {
     "default": 21.5748031496063,
