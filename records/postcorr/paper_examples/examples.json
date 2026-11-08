@@ -1,0 +1,410 @@
+{
+ "v6_fixes_others_miss": [
+  {
+   "set": "test10",
+   "page": 23,
+   "line": 24,
+   "ref": "art º 19 º o producto das concessões de datas pertence",
+   "texts": {
+    "raw": "Art.º 19.º O producto das concessões de datas, per=",
+    "v6": "Art.º 19.º O producto das concessões de datas, pertence",
+    "A_pyctc": "Art.º 19.º O producto das concessões de datas, pertence",
+    "B_wbs": "art.º 19.º o producto das concessões de datas, pertece",
+    "C_byt5": "Art.º 19.º O producto das concessões de datas, pervence",
+    "D_mlm": "Art.º 19.º O producto das concessões de datas, pertence",
+    "E_vlm": "Art.º 19.º O produto das concessões de datas, perTence"
+   },
+   "errors": {
+    "raw": 1,
+    "v6": 0,
+    "A_pyctc": 0,
+    "B_wbs": 1,
+    "C_byt5": 1,
+    "D_mlm": 0,
+    "E_vlm": 1
+   },
+   "crop": "crops/test10_p23_l024.png"
+  },
+  {
+   "set": "test10",
+   "page": 25,
+   "line": 1,
+   "ref": "artigo 24 º a camara terá inspecção não só sobre",
+   "texts": {
+    "raw": "Artigo 24.º A Camara terá impecção não só so=",
+    "v6": "Artigo 24.º A Camara terá inspecção não só sobre",
+    "A_pyctc": "Artigo 24.º A Camara terá inpecção não só sobre",
+    "B_wbs": "artigo 24.º a camara terá inpecção não só sobre",
+    "C_byt5": "Artigo 24.º A Camara terá impecção não só sosobre",
+    "D_mlm": "Artigo 24.º A Camara terá inspecção não só sobre",
+    "E_vlm": "Artigo 24.º A Câmara terá inspeção não só"
+   },
+   "errors": {
+    "raw": 2,
+    "v6": 0,
+    "A_pyctc": 1,
+    "B_wbs": 1,
+    "C_byt5": 2,
+    "D_mlm": 0,
+    "E_vlm": 3
+   },
+   "crop": "crops/test10_p25_l001.png"
+  },
+  {
+   "set": "test10",
+   "page": 44,
+   "line": 2,
+   "ref": "multa de dez mil reis e o dobro na reincidencia",
+   "texts": {
+    "raw": "Multa de dez mil reis e o dobro na reinci=",
+    "v6": "Multa de dez mil reis e o dobro na reincidencia.",
+    "A_pyctc": "Multa de dez mil reis e o dobro na reincidencia.",
+    "B_wbs": "multa de dez mil reis e o dobro na reineidencia",
+    "C_byt5": "Multa de dez mil reis e o dobro na reincidendencia.",
+    "D_mlm": "Multa de dez mil reis e o dobro na reincidencia.",
+    "E_vlm": "Multa de dez mil reis e o dobro na reincidência"
+   },
+   "errors": {
+    "raw": 1,
+    "v6": 0,
+    "A_pyctc": 0,
+    "B_wbs": 1,
+    "C_byt5": 1,
+    "D_mlm": 0,
+    "E_vlm": 1
+   },
+   "crop": "crops/test10_p44_l002.png"
+  },
+  {
+   "set": "test10",
+   "page": 55,
+   "line": 13,
+   "ref": "1 º os carros terão o numero em suas lanternas",
+   "texts": {
+    "raw": "§ 1.º Os carros terão o miiero em suas lanterinzes",
+    "v6": "§ 1.º Os carros terão o numero em suas lanternas",
+    "A_pyctc": "§ 1.º Os carros terão o numero em suas lanterinzes",
+    "B_wbs": "§ 1.º os carros terão o mero em suas lanternas",
+    "C_byt5": "§ 1.º Os carros terão o minimo em suas lanterinas",
+    "D_mlm": "§ 1.º Os carros terão o numero em suas lanternas",
+    "E_vlm": "§ 1.º Os carros terão o miiero em suas lanternas"
+   },
+   "errors": {
+    "raw": 2,
+    "v6": 0,
+    "A_pyctc": 1,
+    "B_wbs": 1,
+    "C_byt5": 2,
+    "D_mlm": 0,
+    "E_vlm": 1
+   },
+   "crop": "crops/test10_p55_l013.png"
+  }
+ ],
+ "vlm_modernizes": [
+  {
+   "set": "test10",
+   "page": 55,
+   "line": 16,
+   "ref": "2 º todos os annos no mez de julho os fiscaes",
+   "texts": {
+    "raw": "§ 2.º Todos os annos, no mez de Julho, os fiscaes",
+    "v6": "§ 2.º Todos os annos, no mez de Julho, os fiscaes",
+    "A_pyctc": "§ 2.º Todos os annos, no mez de Julho, os fiscaes",
+    "B_wbs": "§ 2.º todos os annos, no mez de julho, os fiscaes",
+    "C_byt5": "§ 2.º Todos os annos, no mez de Julho, os fiscaes",
+    "D_mlm": "§ 2.º Todos os annos, no mez de Julho, os fiscaes",
+    "E_vlm": "§ 2.º Todos os anos, no mês de Julho, os fiscais"
+   },
+   "errors": {
+    "raw": 0,
+    "v6": 0,
+    "A_pyctc": 0,
+    "B_wbs": 0,
+    "C_byt5": 0,
+    "D_mlm": 0,
+    "E_vlm": 3
+   },
+   "crop": "crops/test10_p55_l016.png"
+  },
+  {
+   "set": "test10",
+   "page": 18,
+   "line": 3,
+   "ref": "que ellas se acham fóra delle no caso de não",
+   "texts": {
+    "raw": "que ellas se acham fóra delle. No caso de não",
+    "v6": "que ellas se acham fóra delle. No caso de não",
+    "A_pyctc": "que ellas se acham fóra delle. No caso de não",
+    "B_wbs": "que ellas se acham fóra delle. no caso de não",
+    "C_byt5": "que ellas se acham fóra delle. No caso de não",
+    "D_mlm": "que ellas se acham fóra delle. No caso de não",
+    "E_vlm": "que ellas se acham fora delas. No caso de não"
+   },
+   "errors": {
+    "raw": 0,
+    "v6": 0,
+    "A_pyctc": 0,
+    "B_wbs": 0,
+    "C_byt5": 0,
+    "D_mlm": 0,
+    "E_vlm": 2
+   },
+   "crop": "crops/test10_p18_l003.png"
+  },
+  {
+   "set": "test10",
+   "page": 31,
+   "line": 4,
+   "ref": "nota feita pelo arruador a fim de ser lavrado o",
+   "texts": {
+    "raw": "nota feita pelo arruador, a fim de ser lavrado o",
+    "v6": "nota feita pelo arruador, a fim de ser lavrado o",
+    "A_pyctc": "nota feita pelo arruador, a fim de ser lavrado o",
+    "B_wbs": "nota feita pelo arruador, a fim de ser lavrado o",
+    "C_byt5": "nota feita pelo arruador, a fim de ser lavrado o",
+    "D_mlm": "nota feita pelo arruador, a fim de ser lavrado o",
+    "E_vlm": "nota feita pelo aruador, a fim de ser lavrado o"
+   },
+   "errors": {
+    "raw": 0,
+    "v6": 0,
+    "A_pyctc": 0,
+    "B_wbs": 0,
+    "C_byt5": 0,
+    "D_mlm": 0,
+    "E_vlm": 1
+   },
+   "crop": "crops/test10_p31_l004.png"
+  },
+  {
+   "set": "test10",
+   "page": 32,
+   "line": 19,
+   "ref": "todos os dias uteis a fim de saber do intendente",
+   "texts": {
+    "raw": "todos os dias uteis a fim de saber do Intendente",
+    "v6": "todos os dias uteis a fim de saber do Intendente",
+    "A_pyctc": "todos os dias uteis a fim de saber do Intendente",
+    "B_wbs": "todos os dias uteis a fim de saber do intendente",
+    "C_byt5": "todos os dias uteis a fim de saber do Intendente",
+    "D_mlm": "todos os dias uteis a fim de saber do Intendente",
+    "E_vlm": "todos os dias úteis a fim de saber do Intendente"
+   },
+   "errors": {
+    "raw": 0,
+    "v6": 0,
+    "A_pyctc": 0,
+    "B_wbs": 0,
+    "C_byt5": 0,
+    "D_mlm": 0,
+    "E_vlm": 1
+   },
+   "crop": "crops/test10_p32_l019.png"
+  }
+ ],
+ "byt5_better": [
+  {
+   "set": "test10",
+   "page": 22,
+   "line": 29,
+   "ref": "º os postes ou moirões de pau ou pedra denominados",
+   "texts": {
+    "raw": "§ 2º Os postes ou moirões de pau ou pedra, deno=",
+    "v6": "§ 2º Os postes ou moitões de pau ou pedra, consummados",
+    "A_pyctc": "§ 28 Os postes ou moirões de pau ou pedra, donorimados",
+    "B_wbs": "§ 2º os postes ou moirões de pau ou pedra, donorimados",
+    "C_byt5": "§ 2.º Os postes ou moirões de pau ou pedra, denonumados",
+    "D_mlm": "§ 2º Os postes ou moitões de pau ou pedra, consummados",
+    "E_vlm": "§ 2º Os postes ou moirões de pau ou pedra, denonmiados"
+   },
+   "errors": {
+    "raw": 2,
+    "v6": 3,
+    "A_pyctc": 2,
+    "B_wbs": 2,
+    "C_byt5": 2,
+    "D_mlm": 3,
+    "E_vlm": 2
+   },
+   "crop": "crops/test10_p22_l029.png"
+  },
+  {
+   "set": "heldout",
+   "page": 7,
+   "line": 20,
+   "ref": "a palavra ao que primeiro a pedir fazendo observar",
+   "texts": {
+    "raw": "do a palarra ao que primeiro a pedir, fazendo obseovar",
+    "v6": "a palavra do que primeiro a pedir, fazendo observar",
+    "A_pyctc": "a palavra do que primeiro a pedir, fazendo observar",
+    "B_wbs": "a palavra ao que primeiro a pedir, fazendo observar",
+    "C_byt5": "a palavra ao que primeiro a pedir, fazendo observar",
+    "D_mlm": "a palavra do que primeiro a pedir, fazendo observar",
+    "E_vlm": "a palavra ao que primeiro a pedir, fazendo observar"
+   },
+   "errors": {
+    "raw": 3,
+    "v6": 1,
+    "A_pyctc": 1,
+    "B_wbs": 0,
+    "C_byt5": 0,
+    "D_mlm": 1,
+    "E_vlm": 0
+   },
+   "crop": "crops/heldout_p07_l020.png"
+  },
+  {
+   "set": "test10",
+   "page": 55,
+   "line": 25,
+   "ref": "em redor dos terrenos roçados e sem participar pelo",
+   "texts": {
+    "raw": "em redor dos terrenos roçados e sem partiaipar=",
+    "v6": "em redor dos terrenos roçados e sem participarem",
+    "A_pyctc": "em redor dos terrenos roçados e sem participarpelo",
+    "B_wbs": "em redor dos terrenos roçados e sem participarpelo",
+    "C_byt5": "em redor dos terrenos roçados e sem participar",
+    "D_mlm": "em redor dos terrenos roçados e sem participarem",
+    "E_vlm": "em redor dos terrenos roçados e sem participar"
+   },
+   "errors": {
+    "raw": 2,
+    "v6": 2,
+    "A_pyctc": 2,
+    "B_wbs": 2,
+    "C_byt5": 1,
+    "D_mlm": 2,
+    "E_vlm": 1
+   },
+   "crop": "crops/test10_p55_l025.png"
+  },
+  {
+   "set": "heldout",
+   "page": 7,
+   "line": 19,
+   "ref": "discussão manterá a ordem durante os trabalhos dando",
+   "texts": {
+    "raw": "discussão, manterá a ordem durante os trabalhos, dan=",
+    "v6": "discussão, manterá a ordem durante os trabalhos, dado",
+    "A_pyctc": "discussão, manterá a ordem durante os trabalhos, dando",
+    "B_wbs": "discussão, manterá a ordem durante os trabalhos, dando",
+    "C_byt5": "discussão, manterá a ordem durante os trabalhos, dando",
+    "D_mlm": "discussão, manterá a ordem durante os trabalhos, dado",
+    "E_vlm": "discussão, manterá a ordem durante os trabalhos, dando"
+   },
+   "errors": {
+    "raw": 1,
+    "v6": 1,
+    "A_pyctc": 0,
+    "B_wbs": 0,
+    "C_byt5": 0,
+    "D_mlm": 1,
+    "E_vlm": 0
+   },
+   "crop": "crops/heldout_p07_l019.png"
+  }
+ ],
+ "v6_breaks": [
+  {
+   "set": "test10",
+   "page": 22,
+   "line": 29,
+   "ref": "º os postes ou moirões de pau ou pedra denominados",
+   "texts": {
+    "raw": "§ 2º Os postes ou moirões de pau ou pedra, deno=",
+    "v6": "§ 2º Os postes ou moitões de pau ou pedra, consummados",
+    "A_pyctc": "§ 28 Os postes ou moirões de pau ou pedra, donorimados",
+    "B_wbs": "§ 2º os postes ou moirões de pau ou pedra, donorimados",
+    "C_byt5": "§ 2.º Os postes ou moirões de pau ou pedra, denonumados",
+    "D_mlm": "§ 2º Os postes ou moitões de pau ou pedra, consummados",
+    "E_vlm": "§ 2º Os postes ou moirões de pau ou pedra, denonmiados"
+   },
+   "errors": {
+    "raw": 2,
+    "v6": 3,
+    "A_pyctc": 2,
+    "B_wbs": 2,
+    "C_byt5": 2,
+    "D_mlm": 3,
+    "E_vlm": 2
+   },
+   "crop": "crops/test10_p22_l029.png"
+  },
+  {
+   "set": "heldout",
+   "page": 10,
+   "line": 18,
+   "ref": "seis sessões ordinarias de dois em dois meses",
+   "texts": {
+    "raw": "seis sessões ordinarias, de dois em dois meses,",
+    "v6": "seis sessões ordinarias, de dois em dois mezes,",
+    "A_pyctc": "seis sessões ordinarias, de dois em dois mezes,",
+    "B_wbs": "seis sessões ordinarias, de dois em dois meses,",
+    "C_byt5": "seis sessões ordinarias, de dois em dois mezes,",
+    "D_mlm": "seis sessões ordinarias, de dois em dois mezes,",
+    "E_vlm": "seis sessões ordinárias, de dois em dois meses,"
+   },
+   "errors": {
+    "raw": 0,
+    "v6": 1,
+    "A_pyctc": 1,
+    "B_wbs": 0,
+    "C_byt5": 1,
+    "D_mlm": 1,
+    "E_vlm": 1
+   },
+   "crop": "crops/heldout_p10_l018.png"
+  },
+  {
+   "set": "test10",
+   "page": 24,
+   "line": 10,
+   "ref": "quanto ao praso marcado e penas alli comminadas",
+   "texts": {
+    "raw": "quanto ao praso marcado e penas alli=",
+    "v6": "quanto ao praso marcado e penas communicadas",
+    "A_pyctc": "quanto ao praso marcado e penas allicomminadas",
+    "B_wbs": "quanto ao praso marcado e penas alli",
+    "C_byt5": "quanto ao praso marcado e penas allicommunisadas",
+    "D_mlm": "quanto ao praso marcado e penas communicadas",
+    "E_vlm": "quanto ao prazo marcado e penas alicommunidades"
+   },
+   "errors": {
+    "raw": 1,
+    "v6": 2,
+    "A_pyctc": 2,
+    "B_wbs": 1,
+    "C_byt5": 2,
+    "D_mlm": 2,
+    "E_vlm": 3
+   },
+   "crop": "crops/test10_p24_l010.png"
+  },
+  {
+   "set": "heldout",
+   "page": 10,
+   "line": 20,
+   "ref": "fevereiro abril junho e agosto que durarão",
+   "texts": {
+    "raw": "Fevereiro, Abril, Junho e Agosto que durarão",
+    "v6": "Fevereiro, Abril, Julho e Agosto que durarão",
+    "A_pyctc": "Fevereiro, Abril, Junho e Agosto que durarão",
+    "B_wbs": "fevereiro, abril, junho e agosto que durarão",
+    "C_byt5": "Fevereiro, Abril, Junho e Agosto que durarão",
+    "D_mlm": "Fevereiro, Abril, Julho e Agosto que durarão",
+    "E_vlm": "Fevereiro, Abril, Junho e Agosto que durarão"
+   },
+   "errors": {
+    "raw": 0,
+    "v6": 1,
+    "A_pyctc": 0,
+    "B_wbs": 0,
+    "C_byt5": 0,
+    "D_mlm": 1,
+    "E_vlm": 0
+   },
+   "crop": "crops/heldout_p10_l020.png"
+  }
+ ]
+}
