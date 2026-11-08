@@ -49,9 +49,10 @@ def uneven_light(image: Image.Image, rng: np.random.Generator, other: Image.Imag
 
 
 def low_res_blur(image: Image.Image, rng: np.random.Generator, other: Image.Image) -> Image.Image:
-    """A lower-resolution, slightly out-of-focus capture: half the pixels, Gaussian blur."""
-    small = image.resize((image.width // 2, image.height // 2), Image.Resampling.BICUBIC)
-    return small.filter(ImageFilter.GaussianBlur(0.8))
+    """A lower-resolution, slightly out-of-focus capture: 70% of the width and height, Gaussian blur (at 50% the
+    already small source scans become unreadable for every chain: smoke test, 2026-11-08)."""
+    small = image.resize((round(image.width * 0.7), round(image.height * 0.7)), Image.Resampling.BICUBIC)
+    return small.filter(ImageFilter.GaussianBlur(0.6))
 
 
 def faded_ink(image: Image.Image, rng: np.random.Generator, other: Image.Image) -> Image.Image:

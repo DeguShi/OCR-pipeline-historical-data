@@ -5,9 +5,10 @@ Candidates are combinations of the pipeline's own ops (ocr_pipeline/preprocessin
   stage 2 (recognition image): rec_ops chain, on the stage-1 winner of each objective.
 Each candidate is segmented and read greedily (no post-correction) and scored by label-free objectives:
   conf    mean top-1 CTC posterior over non-blank frames (how sure the recognizer is);
-  lex     share of the greedy words found in the period lexicon (Ströbel et al. 2022 use lexicon hits as a GT-free
+  lex     number of greedy words (2+ letters) found in the period lexicon; a count, not a share, so reading less
+          is not rewarded (Ströbel et al. 2022 use lexicon hits as a GT-free
           HTR quality proxy);
-  conflex conf + lex;
+  conflex conf x lex (expected number of confidently read lexicon words);
   stat    distance of the preprocessed page's statistics (paper and ink levels, contrast, noise, stroke width per line
           height, share of ink inside line polygons) to those of our book's training pages, where the pipeline is best
           ("bring the new book closer to our current best").
@@ -81,9 +82,9 @@ def load_lexicon(path: Path, size: int) -> set[str]:
     return {w.lower() for w in words}
 
 
-def lexicon_share(lines: list[str], lexicon: set[str]) -> float:
-    words = [w for line in lines for w in re.findall(r'[^\W\d_]+', line.lower())]
-    return sum(w in lexicon for w in words) / len(words) if words else 0.0
+def lexicon_hits(lines: list[str], lexicon: set[str]) -> tuple[int, int]:
+    words = [w for line in lines for w in re.findall(r'[^\W\d_]{2,}', line.lower())]
+    return sum(w in lexicon for w in words), len(words)
 
 
 def confidence(logits: list[Any]) -> float:
@@ -103,7 +104,7 @@ def image_features(rec_image: Image.Image, base: Image.Image, segmentation: Any)
     paper, ink = np.percentile(gray, 90), np.percentile(gray, 3)
     mask = ink_mask(gray)
     residual = gray.astype(np.float32) - cv2.medianBlur(gray, 5)
-    noise = float(np.median(np.abs(residual[mask == 0])))
+    noise = float(np.mean(np.abs(residual[mask == 0])))
     contours, _ = cv2.findContours(mask, cv2.RETR_LIST, cv2.CHAIN_APPROX_NONE)
     perimeter = sum(cv2.arcLength(c, True) for c in contours)
     stroke = 2 * mask.sum() / max(perimeter, 1)
@@ -140,15 +141,16 @@ def evaluate_candidate(engine: Engine, page: Page, config: PipelineConfig, cand:
                        ) -> dict[str, Any]:
     start = time.time()
     lines, logits, feats = run_candidate(engine, page, config)
-    conf, lex = confidence(logits), lexicon_share(lines, ctx['lexicon'])
+    conf, (hits, n_words) = confidence(logits), lexicon_hits(lines, ctx['lexicon'])
     row = {'stage': 'seg' if 'seg_ops' in cand else 'rec', 'name': cand['name'], 'n_lines': len(lines),
-           'conf': conf, 'lex': lex, 'conflex': conf + lex, 'stat': stat_distance(feats, ctx['stats']), **feats}
+           'conf': conf, 'lex': hits, 'lex_share': hits / max(n_words, 1), 'conflex': conf * hits,
+           'stat': stat_distance(feats, ctx['stats']), **feats}
     if ctx['reference'] is not None:
         s = score(ctx['reference'], '\n'.join(lines))
         row.update(wer_norm=s['wer_norm'], cer_norm=s['cer_norm'])
     row['seconds'] = round(time.time() - start, 1)
-    logger.info('%s %-45s lines %3d conf %.3f lex %.3f stat %6.2f%s (%.0f s)', row['stage'], cand['name'],
-                row['n_lines'], conf, lex, row['stat'],
+    logger.info('%s %-45s lines %3d conf %.3f lex %4d stat %6.2f%s (%.0f s)', row['stage'], cand['name'],
+                row['n_lines'], conf, hits, row['stat'],
                 f" WER {100 * row['wer_norm']:.1f} CER {100 * row['cer_norm']:.1f}" if 'cer_norm' in row else '',
                 row['seconds'])
     return row
