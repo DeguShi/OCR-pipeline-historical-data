@@ -47,10 +47,37 @@ Reading: the user's idea works when "closer to our current best" means "where ou
 period-lexicon words". It does not work when it means matching image statistics. Single-page selection by `lex`
 (or `conflex`) is the candidate for a deployable `adapt` step.
 
+## Controls (2026-11-08; `controls/`, `tools/run_e18_control.sh`, code `41a2bb0`, about 2.6 h free CPU)
+
+**Identity** (the whole search on our own book, JPEG re-saved at q95): lex (= conflex) keeps the default chain,
+18.74 (no change). conf picks illumination+contrast for segmentation and clahe for recognition, giving 20.16
+(+1.42, worse than the 1-point limit). stat gives 19.21. The one-page oracle gives 19.69: it overfits page 6.
+
+**Static chain** `fixed_clahe` (seg_ops = clahe, remove_rules, the chain lex and the oracle chose most often),
+same everywhere:
+
+| shift             | default | fixed_clahe | lex       |
+| ----------------- | ------- | ----------- | --------- |
+| clean             | 18.74   | 18.43       | 18.74     |
+| uneven_light      | 21.57   | 20.00 (55%) | **19.06** |
+| low_contrast_cast | 19.84   | 20.16       | **19.53** |
+| faded_ink         | 20.16   | 19.37       | **19.06** |
+| bleed_through     | 19.21   | 19.53       | **19.21** |
+| jpeg_noise        | 90.08   | 89.45 (1%)  | **70.08** |
+| low_res_blur      | 28.98   | 26.30 (26%) | **23.31** |
+
+lex is at least as good as the static chain on every shift and better on all six. On the three shifts that cost
+2 points or more, the static chain recovers 27% of the damage on average and lex 58%. So most of lex's gain comes
+from choosing a chain per book, not from CLAHE being better in general. On clean pages the static chain is 0.31
+better (3 pages, within noise), so it is not adopted as the new default.
+
+Incident: the first control run failed after 108 min on the per-shift loop. macOS bsdtar had packed `._*` xattr
+files into the state tarball (`tar t` on the Mac does not list them; GNU tar on the VM extracts them), and
+`discover()` parsed `._16…` as a page number. The fix was to delete them on the VM and resume only the missing
+runs (`control_part1.log` + `control.log`). From now on, tarballs are built with `COPYFILE_DISABLE=1`.
+
 ## Pending
 
-- Controls `tools/run_e18_control.sh` (identity = adaptation on our own book; a fixed
-  clahe segmentation chain on every shift, to separate per-book adaptation from a better static config).
 - Real books (Q3): TraPrInq validation set (Zenodo 13986218, CC BY 4.0), case files with ≥ 4 pages.
 - Figure panels done: `e18_figures/` (sample page 6, a band of lines: shifted input, default seg image, chosen
   seg and rec images of the lex objective).
