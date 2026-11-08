@@ -54,8 +54,7 @@ SEG_CHAINS = [('contrast', 'remove_rules'), (), ('clahe', 'remove_rules'), ('ill
 REC_CHAINS: list[tuple[tuple[str, ...], dict[str, Any]]] = [
     ((), {}), (('contrast',), {}), (('clahe',), {}), (('illumination',), {}), (('denoise',), {}),
     (('sharpen',), {}), (('gamma',), {'gamma': 0.7}), (('gamma',), {'gamma': 1.5}), (('channel',), {'channel': 'min'}),
-    (('illumination', 'contrast'), {}), (('denoise', 'contrast'), {}), (('denoise', 'clahe'), {}),
-    (('illumination', 'clahe'), {}), (('thicken',), {}), (('thin',), {}), (('kraken_nlbin',), {})]
+    (('illumination', 'contrast'), {}), (('denoise', 'contrast'), {}), (('thicken',), {}), (('kraken_nlbin',), {})]
 
 
 def seg_candidates(default_upscale: float) -> list[Candidate]:
