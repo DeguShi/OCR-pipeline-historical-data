@@ -1,0 +1,16 @@
+{
+ "mode": "search",
+ "config": "configs/final_v6.json",
+ "images": "None",
+ "n_pages": "8",
+ "sample": "outputs/traprinq/PT-TT-TSO-IL-28-12955/images/4.PT-TT-TSO-IL-28-12955_m0019.jpg",
+ "reference": "outputs/traprinq/PT-TT-TSO-IL-28-12955/references/4.PT-TT-TSO-IL-28-12955_m0019.txt",
+ "stats": "outputs/e18/reference_stats.json",
+ "lexicon_size": "100000",
+ "objectives": "['lex', 'conf', 'oracle']",
+ "out": "outputs/e18q/PT-TT-TSO-IL-28-12955/adapt",
+ "cache": "outputs/e18q/PT-TT-TSO-IL-28-12955/cache",
+ "device": "cpu",
+ "seed": "42",
+ "limit": "0"
+}

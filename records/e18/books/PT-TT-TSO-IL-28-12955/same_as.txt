@@ -1,0 +1,2 @@
+PT-TT-TSO-IL-28-12955/conf = lex
+PT-TT-TSO-IL-28-12955/oracle = lex

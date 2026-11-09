@@ -76,8 +76,39 @@ files into the state tarball (`tar t` on the Mac does not list them; GNU tar on 
 `discover()` parsed `._16…` as a page number. The fix was to delete them on the VM and resume only the missing
 runs (`control_part1.log` + `control.log`). From now on, tarballs are built with `COPYFILE_DISABLE=1`.
 
+## Real books (Q3, 2026-11-09; `books/`, `tools/traprinq_prepare.py`, `tools/run_e18_books.sh`, code `bad826a`)
+
+Data: TraPrInq validation set (Zenodo 13986218, CC BY 4.0; Portuguese Inquisition case files, 16th–19th c.,
+Transkribus PAGE XML with diplomatic line text). 4 case files with 4–8 pages, drawn with seed 42. Each case file is
+treated as a "new book": one sample page (seeded) for the search with lex, conf and oracle, then full v6 on the
+other 18 pages. The recognizer was never trained on these hands. Compute: free Colab CPU VM, 4.5 h. A first attempt
+on a free T4 was reclaimed after 2.5 h with nothing pulled; the watcher now pulls every 30 min.
+
+Eval-page WER / CER (%), normalized:
+
+| case file (eval pages)  | default      | lex              | conf         | oracle       | lex chain (seg / rec / upscale) |
+| ----------------------- | ------------ | ---------------- | ------------ | ------------ | ------------------------------- |
+| IL-028-CX1622-16125 (3) | 62.87 / 25.9 | **62.00 / 26.1** | 63.05 / 26.7 | 71.45 / 32.7 | none / gamma 0.7 / 2            |
+| IL-28-12955 (5)         | 81.84 / 46.6 | **81.84 / 43.3** | = lex        | = lex        | contrast+rules / gamma 0.7 / 1  |
+| IL-28-7123 (7)          | 73.04 / 38.2 | **67.76 / 32.9** | 69.76 / 32.2 | 68.34 / 31.5 | clahe+rules / channel min / 2   |
+| IL-28-7196 (3)          | 74.66 / 36.5 | **72.48 / 34.2** | 73.99 / 33.5 | = conf       | clahe+rules / channel min / 2   |
+
+Against the criterion (lex ≤ default on ≥ 3 of 4 books, never > 1 point worse): **met**. lex is at least as good
+as the default on all 4 books in WER (−0.87, 0.00, −5.28, −2.18) and reduces CER on 3 of 4 (+0.1 on the first).
+conf also helps on 3 of 4 but less in WER. The one-page oracle is again not better than lex and is much worse on the
+first book (71.45), because a chain tuned to one page's GT overfits that page.
+
+Caveats. Absolute error is high (62–82% WER): these are other hands and centuries, the recognizer has never
+seen them, and the references are diplomatic (abbreviations kept, no expansion), unlike our v6 output. The
+comparison is within-book (same pages, same metric), so the reference style affects every config the same way.
+There are 4 books and 18 pages, so this is directional evidence, not a CI-backed claim.
+
+Decision: an `adapt` step (one sample page → lex search → per-book config) is worth adding to the deployed
+pipeline as an opt-in mode. It never hurt in WER on any synthetic or real book with lex (identity included), and it
+gains 1–5 points where the scan differs from ours.
+
 ## Pending
 
-- Real books (Q3): TraPrInq validation set (Zenodo 13986218, CC BY 4.0), case files with ≥ 4 pages.
+- (done) Real books (Q3): TraPrInq validation set (Zenodo 13986218, CC BY 4.0), case files with ≥ 4 pages.
 - Figure panels done: `e18_figures/` (sample page 6, a band of lines: shifted input, default seg image, chosen
   seg and rec images of the lex objective).
