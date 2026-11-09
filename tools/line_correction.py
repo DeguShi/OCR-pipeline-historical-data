@@ -1,9 +1,11 @@
 """Per-line over/under-correction of each post-correction method (E17 reporting item: lines improved / unchanged /
 worsened, and the change in error against the raw line's error).
 
-Inputs are the frozen outputs in records/postcorr/method_outputs (one text line per segmented line). The page
-reference is split into lines by aligning it to the RAW recognizer's words (the common input of every method, so the
-split favours no corrector); see qualitative_examples.reference_by_line. Lines whose reference segment has < 4 words
+Inputs are the frozen outputs in records/postcorr/method_outputs. The page reference is split into lines by aligning
+it to the RAW recognizer's words (the common input of every method, so the split favours no corrector); see
+qualitative_examples.reference_by_line. Each method's page text is then aligned to the whole page reference and its
+words are attributed to the reference line they align to (hyp_by_ref_line): methods may merge or drop lines, so
+pairing lines by index is wrong (it shifted whole pages in a first version). Lines whose reference segment has < 4 words
 or differs from the raw line by > 2 words are dropped (alignment drift). Per line and method: word errors and
 character errors (Levenshtein on the normalized text) against the reference segment.
 
@@ -29,6 +31,22 @@ def char_errors(ref: str, hyp: str) -> int:
     return Levenshtein.distance(ref, ' '.join(words(hyp)))
 
 
+def hyp_by_ref_line(hyp_page: list[str], ref: list[str], ref_line: list[int], n_lines: int) -> list[list[str]]:
+    """Attribute a method's page words to reference lines through one word alignment of the whole page, so the
+    method's own line structure (merged, split or dropped lines) does not shift lines. Substituted/equal words go
+    to their reference word's line; inserted words to the line of the previous reference word."""
+    hyp = [w for line in hyp_page for w in words(line)]
+    vocab: dict[str, int] = {}
+    a = [vocab.setdefault(w, len(vocab)) for w in hyp]
+    b = [vocab.setdefault(w, len(vocab)) for w in ref]
+    out: list[list[str]] = [[] for _ in range(n_lines)]
+    for tag, i1, i2, j1, j2 in Levenshtein.opcodes(a, b).as_list():
+        for k, i in enumerate(range(i1, i2)):
+            j = min(j1 + k, j2 - 1) if j2 > j1 else j1 - 1
+            out[ref_line[max(j, 0)] if ref_line else 0].append(hyp[i])
+    return out
+
+
 def collect(set_name: str) -> list[dict]:
     ref_dir, pages = SETS[set_name]
     texts = method_lines(set_name)
@@ -36,14 +54,19 @@ def collect(set_name: str) -> list[dict]:
     for page in pages:
         ref_file = next(p for p in (ROOT / ref_dir).glob('*.txt') if p.name.split('.')[0] == str(page))
         segments = reference_by_line(ref_file.read_text(encoding='utf-8'), texts['raw'][page])
+        ref = [w for seg in segments for w in seg]
+        ref_line = [i for i, seg in enumerate(segments) for _ in seg]
+        hyps = {m: hyp_by_ref_line(texts[m].get(page, []), ref, ref_line, len(segments)) for m in METHODS}
         for i, seg in enumerate(segments):
-            line = {m: texts[m][page][i] if i < len(texts[m].get(page, [])) else '' for m in METHODS}
-            ref = ' '.join(seg)
-            if len(seg) < 4 or abs(len(seg) - len(words(line['raw']))) > 2:
+            raw_line = texts['raw'][page][i]
+            if len(seg) < 4 or abs(len(seg) - len(words(raw_line))) > 2:
                 continue
-            rows.append({'set': set_name, 'page': page, 'line': i, 'ref': ref, 'n_ref_words': len(seg),
-                         'n_ref_chars': len(ref), 'words': {m: word_errors(seg, t) for m, t in line.items()},
-                         'chars': {m: char_errors(ref, t) for m, t in line.items()}})
+            ref_text = ' '.join(seg)
+            line = {m: ' '.join(hyps[m][i]) for m in METHODS}
+            rows.append({'set': set_name, 'page': page, 'line': i, 'ref': ref_text, 'n_ref_words': len(seg),
+                         'n_ref_chars': len(ref_text), 'texts': line,
+                         'words': {m: word_errors(seg, t) for m, t in line.items()},
+                         'chars': {m: char_errors(ref_text, t) for m, t in line.items()}})
     return rows
 
 
