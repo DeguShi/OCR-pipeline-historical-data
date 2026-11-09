@@ -91,7 +91,7 @@ def match(gt: list[Line], pred: list[Line]) -> dict[str, int]:
         if i not in used_g and j not in used_p:
             used_g.add(i)
             used_p.add(j)
-    return {'n_gt': len(gt), 'n_pred': len(pred), 'matched': len(used_g), 'covered': covered}
+    return {'n_gt': len(gt), 'n_pred': len(pred), 'matched': len(used_g), 'covered': int(covered)}
 
 
 def eval_page(engine: Engine, page: Page, xml: Path, config: PipelineConfig, viz: Path | None = None) -> dict[str, int]:
