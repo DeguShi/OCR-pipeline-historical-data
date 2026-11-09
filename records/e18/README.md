@@ -128,8 +128,8 @@ Free Colab CPU, 1.7 h. P = matched / predicted lines, R = matched / GT lines (su
 | 7196 (80)            | 68 / 98 / 80                      | clahe: 71 / 99 / 82      | 75–90               |
 
 Recall is 93–100% for every candidate on every book: the segmenter finds nearly all GT lines whatever the image
-chain. Candidates differ in precision (59–86%), i.e. in extra lines; the overlays show these are mostly marginal text,
-facing-page edges and stains that the PAGE XML does not transcribe. lex's segmentation choice is within ±2 F1 of the
+chain. Candidates differ in precision (59–86%), i.e. in extra lines; the overlays show these are mostly marginal notes with no
+baseline in the PAGE XML, plus main-text lines broken into two pieces (one piece matches, the other counts as extra). lex's segmentation choice is within ±2 F1 of the
 default on three books and 9 F1 worse on 7123, which is the book where lex gains most in WER (−5.28). So the real-book
 gains do not come from line finding; they come from the image given to the recognizer (gamma 0.7 / channel min),
 and the lex score of a segmentation candidate reflects how well its lines are read, not how well they are found.
