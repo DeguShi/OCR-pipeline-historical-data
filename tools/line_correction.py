@@ -58,12 +58,11 @@ def collect(set_name: str) -> list[dict]:
         ref_line = [i for i, seg in enumerate(segments) for _ in seg]
         hyps = {m: hyp_by_ref_line(texts[m].get(page, []), ref, ref_line, len(segments)) for m in METHODS}
         for i, seg in enumerate(segments):
-            raw_line = texts['raw'][page][i]
-            if len(seg) < 4 or abs(len(seg) - len(words(raw_line))) > 2:
-                continue
+            raw_line = texts["raw"][page][i]
+            usable = len(seg) >= 4 and abs(len(seg) - len(words(raw_line))) <= 2
             ref_text = ' '.join(seg)
             line = {m: ' '.join(hyps[m][i]) for m in METHODS}
-            rows.append({'set': set_name, 'page': page, 'line': i, 'ref': ref_text, 'n_ref_words': len(seg),
+            rows.append({'set': set_name, 'page': page, 'line': i, "usable": usable, 'ref': ref_text, 'n_ref_words': len(seg),
                          'n_ref_chars': len(ref_text), 'texts': line,
                          'words': {m: word_errors(seg, t) for m, t in line.items()},
                          'chars': {m: char_errors(ref_text, t) for m, t in line.items()}})
@@ -81,8 +80,12 @@ def in_bin(r: dict, lo: float, hi: float) -> bool:
     return cer == 0 if hi == 0 else lo < cer <= hi
 
 
-def summarise(rows: list[dict]) -> dict:
-    out = {}
+def summarise(all_rows: list[dict]) -> dict:
+    """Line splits over usable lines; totals (word errors / reference words, all lines) as a check against WER."""
+    rows = [r for r in all_rows if r["usable"]]
+    n_ref = sum(r["n_ref_words"] for r in all_rows)
+    out = {"total_wer": {m: round(100 * sum(r["words"][m] for r in all_rows) / n_ref, 2) for m in METHODS},
+           "usable_lines": len(rows), "all_lines": len(all_rows)}
     for m in METHODS[1:]:
         out[m] = {'by_words': split(rows, m, 'words'), 'by_chars': split(rows, m, 'chars'),
                   'by_raw_cer_bin': {f'{lo}-{hi}': split([r for r in rows if in_bin(r, lo, hi)], m, 'chars')
@@ -102,10 +105,10 @@ def main() -> None:
             for r in rows:
                 f.write(json.dumps(r, ensure_ascii=False) + '\n')
             summary[set_name] = summarise(rows)
-            print(f'{set_name}: {len(rows)} usable lines')
+            print(set_name, summary[set_name]["usable_lines"], "usable of", summary[set_name]["all_lines"], "lines; total WER", summary[set_name]["total_wer"])
     (args.out / 'summary.json').write_text(json.dumps(summary, indent=1), encoding='utf-8')
     for set_name, s in summary.items():
-        for m, v in s.items():
+        for m, v in ((k, v) for k, v in s.items() if k in METHODS):
             w, c = v['by_words'], v['by_chars']
             print(f"{set_name:8s} {m:8s} words +{w['improved']}/={w['unchanged']}/-{w['worsened']}  "
                   f"chars +{c['improved']}/={c['unchanged']}/-{c['worsened']}")
