@@ -1,0 +1,1338 @@
+{
+ "PT-TT-TSO-IL-028-CX1622-16125": {
+  "rows": [
+   {
+    "case": "PT-TT-TSO-IL-028-CX1622-16125",
+    "page": 1,
+    "candidate": "up1|contrast+remove_rules",
+    "n_gt": 14,
+    "n_pred": 20,
+    "matched": 14,
+    "covered": 14
+   },
+   {
+    "case": "PT-TT-TSO-IL-028-CX1622-16125",
+    "page": 2,
+    "candidate": "up1|contrast+remove_rules",
+    "n_gt": 27,
+    "n_pred": 36,
+    "matched": 27,
+    "covered": 27
+   },
+   {
+    "case": "PT-TT-TSO-IL-028-CX1622-16125",
+    "page": 3,
+    "candidate": "up1|contrast+remove_rules",
+    "n_gt": 20,
+    "n_pred": 28,
+    "matched": 20,
+    "covered": 20
+   },
+   {
+    "case": "PT-TT-TSO-IL-028-CX1622-16125",
+    "page": 1,
+    "candidate": "up2|contrast+remove_rules",
+    "n_gt": 14,
+    "n_pred": 20,
+    "matched": 14,
+    "covered": 14
+   },
+   {
+    "case": "PT-TT-TSO-IL-028-CX1622-16125",
+    "page": 2,
+    "candidate": "up2|contrast+remove_rules",
+    "n_gt": 27,
+    "n_pred": 36,
+    "matched": 27,
+    "covered": 27
+   },
+   {
+    "case": "PT-TT-TSO-IL-028-CX1622-16125",
+    "page": 3,
+    "candidate": "up2|contrast+remove_rules",
+    "n_gt": 20,
+    "n_pred": 28,
+    "matched": 20,
+    "covered": 20
+   },
+   {
+    "case": "PT-TT-TSO-IL-028-CX1622-16125",
+    "page": 1,
+    "candidate": "up3|contrast+remove_rules",
+    "n_gt": 14,
+    "n_pred": 20,
+    "matched": 14,
+    "covered": 14
+   },
+   {
+    "case": "PT-TT-TSO-IL-028-CX1622-16125",
+    "page": 2,
+    "candidate": "up3|contrast+remove_rules",
+    "n_gt": 27,
+    "n_pred": 36,
+    "matched": 27,
+    "covered": 27
+   },
+   {
+    "case": "PT-TT-TSO-IL-028-CX1622-16125",
+    "page": 3,
+    "candidate": "up3|contrast+remove_rules",
+    "n_gt": 20,
+    "n_pred": 28,
+    "matched": 20,
+    "covered": 20
+   },
+   {
+    "case": "PT-TT-TSO-IL-028-CX1622-16125",
+    "page": 1,
+    "candidate": "up2|none",
+    "n_gt": 14,
+    "n_pred": 20,
+    "matched": 14,
+    "covered": 14
+   },
+   {
+    "case": "PT-TT-TSO-IL-028-CX1622-16125",
+    "page": 2,
+    "candidate": "up2|none",
+    "n_gt": 27,
+    "n_pred": 35,
+    "matched": 27,
+    "covered": 27
+   },
+   {
+    "case": "PT-TT-TSO-IL-028-CX1622-16125",
+    "page": 3,
+    "candidate": "up2|none",
+    "n_gt": 20,
+    "n_pred": 27,
+    "matched": 20,
+    "covered": 20
+   },
+   {
+    "case": "PT-TT-TSO-IL-028-CX1622-16125",
+    "page": 1,
+    "candidate": "up2|clahe+remove_rules",
+    "n_gt": 14,
+    "n_pred": 20,
+    "matched": 14,
+    "covered": 14
+   },
+   {
+    "case": "PT-TT-TSO-IL-028-CX1622-16125",
+    "page": 2,
+    "candidate": "up2|clahe+remove_rules",
+    "n_gt": 27,
+    "n_pred": 35,
+    "matched": 27,
+    "covered": 27
+   },
+   {
+    "case": "PT-TT-TSO-IL-028-CX1622-16125",
+    "page": 3,
+    "candidate": "up2|clahe+remove_rules",
+    "n_gt": 20,
+    "n_pred": 28,
+    "matched": 20,
+    "covered": 20
+   },
+   {
+    "case": "PT-TT-TSO-IL-028-CX1622-16125",
+    "page": 1,
+    "candidate": "up2|illumination+remove_rules",
+    "n_gt": 14,
+    "n_pred": 19,
+    "matched": 14,
+    "covered": 14
+   },
+   {
+    "case": "PT-TT-TSO-IL-028-CX1622-16125",
+    "page": 2,
+    "candidate": "up2|illumination+remove_rules",
+    "n_gt": 27,
+    "n_pred": 35,
+    "matched": 27,
+    "covered": 27
+   },
+   {
+    "case": "PT-TT-TSO-IL-028-CX1622-16125",
+    "page": 3,
+    "candidate": "up2|illumination+remove_rules",
+    "n_gt": 20,
+    "n_pred": 29,
+    "matched": 20,
+    "covered": 20
+   },
+   {
+    "case": "PT-TT-TSO-IL-028-CX1622-16125",
+    "page": 1,
+    "candidate": "up2|illumination+contrast+remove_rules",
+    "n_gt": 14,
+    "n_pred": 21,
+    "matched": 14,
+    "covered": 14
+   },
+   {
+    "case": "PT-TT-TSO-IL-028-CX1622-16125",
+    "page": 2,
+    "candidate": "up2|illumination+contrast+remove_rules",
+    "n_gt": 27,
+    "n_pred": 34,
+    "matched": 27,
+    "covered": 27
+   },
+   {
+    "case": "PT-TT-TSO-IL-028-CX1622-16125",
+    "page": 3,
+    "candidate": "up2|illumination+contrast+remove_rules",
+    "n_gt": 20,
+    "n_pred": 29,
+    "matched": 20,
+    "covered": 20
+   },
+   {
+    "case": "PT-TT-TSO-IL-028-CX1622-16125",
+    "page": 1,
+    "candidate": "up2|denoise+contrast+remove_rules",
+    "n_gt": 14,
+    "n_pred": 22,
+    "matched": 14,
+    "covered": 14
+   },
+   {
+    "case": "PT-TT-TSO-IL-028-CX1622-16125",
+    "page": 2,
+    "candidate": "up2|denoise+contrast+remove_rules",
+    "n_gt": 27,
+    "n_pred": 40,
+    "matched": 27,
+    "covered": 27
+   },
+   {
+    "case": "PT-TT-TSO-IL-028-CX1622-16125",
+    "page": 3,
+    "candidate": "up2|denoise+contrast+remove_rules",
+    "n_gt": 20,
+    "n_pred": 29,
+    "matched": 20,
+    "covered": 20
+   }
+  ],
+  "chosen": {
+   "conf": "up2|contrast+remove_rules",
+   "lex": "up2|none",
+   "oracle": "up2|contrast+remove_rules",
+   "default": "up2|contrast+remove_rules"
+  }
+ },
+ "PT-TT-TSO-IL-28-12955": {
+  "rows": [
+   {
+    "case": "PT-TT-TSO-IL-28-12955",
+    "page": 1,
+    "candidate": "up1|contrast+remove_rules",
+    "n_gt": 37,
+    "n_pred": 38,
+    "matched": 37,
+    "covered": 37
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-12955",
+    "page": 2,
+    "candidate": "up1|contrast+remove_rules",
+    "n_gt": 34,
+    "n_pred": 38,
+    "matched": 34,
+    "covered": 34
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-12955",
+    "page": 3,
+    "candidate": "up1|contrast+remove_rules",
+    "n_gt": 34,
+    "n_pred": 46,
+    "matched": 34,
+    "covered": 34
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-12955",
+    "page": 5,
+    "candidate": "up1|contrast+remove_rules",
+    "n_gt": 33,
+    "n_pred": 43,
+    "matched": 32,
+    "covered": 33
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-12955",
+    "page": 6,
+    "candidate": "up1|contrast+remove_rules",
+    "n_gt": 30,
+    "n_pred": 34,
+    "matched": 30,
+    "covered": 30
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-12955",
+    "page": 1,
+    "candidate": "up2|contrast+remove_rules",
+    "n_gt": 37,
+    "n_pred": 38,
+    "matched": 37,
+    "covered": 37
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-12955",
+    "page": 2,
+    "candidate": "up2|contrast+remove_rules",
+    "n_gt": 34,
+    "n_pred": 38,
+    "matched": 34,
+    "covered": 34
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-12955",
+    "page": 3,
+    "candidate": "up2|contrast+remove_rules",
+    "n_gt": 34,
+    "n_pred": 45,
+    "matched": 34,
+    "covered": 34
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-12955",
+    "page": 5,
+    "candidate": "up2|contrast+remove_rules",
+    "n_gt": 33,
+    "n_pred": 42,
+    "matched": 32,
+    "covered": 33
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-12955",
+    "page": 6,
+    "candidate": "up2|contrast+remove_rules",
+    "n_gt": 30,
+    "n_pred": 35,
+    "matched": 30,
+    "covered": 30
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-12955",
+    "page": 1,
+    "candidate": "up3|contrast+remove_rules",
+    "n_gt": 37,
+    "n_pred": 38,
+    "matched": 37,
+    "covered": 37
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-12955",
+    "page": 2,
+    "candidate": "up3|contrast+remove_rules",
+    "n_gt": 34,
+    "n_pred": 38,
+    "matched": 34,
+    "covered": 34
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-12955",
+    "page": 3,
+    "candidate": "up3|contrast+remove_rules",
+    "n_gt": 34,
+    "n_pred": 45,
+    "matched": 34,
+    "covered": 34
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-12955",
+    "page": 5,
+    "candidate": "up3|contrast+remove_rules",
+    "n_gt": 33,
+    "n_pred": 42,
+    "matched": 32,
+    "covered": 33
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-12955",
+    "page": 6,
+    "candidate": "up3|contrast+remove_rules",
+    "n_gt": 30,
+    "n_pred": 35,
+    "matched": 30,
+    "covered": 30
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-12955",
+    "page": 1,
+    "candidate": "up2|none",
+    "n_gt": 37,
+    "n_pred": 38,
+    "matched": 37,
+    "covered": 37
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-12955",
+    "page": 2,
+    "candidate": "up2|none",
+    "n_gt": 34,
+    "n_pred": 38,
+    "matched": 34,
+    "covered": 34
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-12955",
+    "page": 3,
+    "candidate": "up2|none",
+    "n_gt": 34,
+    "n_pred": 46,
+    "matched": 34,
+    "covered": 34
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-12955",
+    "page": 5,
+    "candidate": "up2|none",
+    "n_gt": 33,
+    "n_pred": 43,
+    "matched": 32,
+    "covered": 33
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-12955",
+    "page": 6,
+    "candidate": "up2|none",
+    "n_gt": 30,
+    "n_pred": 36,
+    "matched": 30,
+    "covered": 30
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-12955",
+    "page": 1,
+    "candidate": "up2|clahe+remove_rules",
+    "n_gt": 37,
+    "n_pred": 37,
+    "matched": 37,
+    "covered": 37
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-12955",
+    "page": 2,
+    "candidate": "up2|clahe+remove_rules",
+    "n_gt": 34,
+    "n_pred": 36,
+    "matched": 34,
+    "covered": 34
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-12955",
+    "page": 3,
+    "candidate": "up2|clahe+remove_rules",
+    "n_gt": 34,
+    "n_pred": 45,
+    "matched": 34,
+    "covered": 34
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-12955",
+    "page": 5,
+    "candidate": "up2|clahe+remove_rules",
+    "n_gt": 33,
+    "n_pred": 39,
+    "matched": 32,
+    "covered": 33
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-12955",
+    "page": 6,
+    "candidate": "up2|clahe+remove_rules",
+    "n_gt": 30,
+    "n_pred": 37,
+    "matched": 30,
+    "covered": 30
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-12955",
+    "page": 1,
+    "candidate": "up2|illumination+remove_rules",
+    "n_gt": 37,
+    "n_pred": 38,
+    "matched": 37,
+    "covered": 37
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-12955",
+    "page": 2,
+    "candidate": "up2|illumination+remove_rules",
+    "n_gt": 34,
+    "n_pred": 42,
+    "matched": 34,
+    "covered": 34
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-12955",
+    "page": 3,
+    "candidate": "up2|illumination+remove_rules",
+    "n_gt": 34,
+    "n_pred": 44,
+    "matched": 34,
+    "covered": 34
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-12955",
+    "page": 5,
+    "candidate": "up2|illumination+remove_rules",
+    "n_gt": 33,
+    "n_pred": 41,
+    "matched": 32,
+    "covered": 33
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-12955",
+    "page": 6,
+    "candidate": "up2|illumination+remove_rules",
+    "n_gt": 30,
+    "n_pred": 36,
+    "matched": 30,
+    "covered": 30
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-12955",
+    "page": 1,
+    "candidate": "up2|illumination+contrast+remove_rules",
+    "n_gt": 37,
+    "n_pred": 37,
+    "matched": 37,
+    "covered": 37
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-12955",
+    "page": 2,
+    "candidate": "up2|illumination+contrast+remove_rules",
+    "n_gt": 34,
+    "n_pred": 44,
+    "matched": 34,
+    "covered": 34
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-12955",
+    "page": 3,
+    "candidate": "up2|illumination+contrast+remove_rules",
+    "n_gt": 34,
+    "n_pred": 48,
+    "matched": 34,
+    "covered": 34
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-12955",
+    "page": 5,
+    "candidate": "up2|illumination+contrast+remove_rules",
+    "n_gt": 33,
+    "n_pred": 50,
+    "matched": 32,
+    "covered": 33
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-12955",
+    "page": 6,
+    "candidate": "up2|illumination+contrast+remove_rules",
+    "n_gt": 30,
+    "n_pred": 40,
+    "matched": 30,
+    "covered": 30
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-12955",
+    "page": 1,
+    "candidate": "up2|denoise+contrast+remove_rules",
+    "n_gt": 37,
+    "n_pred": 38,
+    "matched": 37,
+    "covered": 37
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-12955",
+    "page": 2,
+    "candidate": "up2|denoise+contrast+remove_rules",
+    "n_gt": 34,
+    "n_pred": 38,
+    "matched": 34,
+    "covered": 34
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-12955",
+    "page": 3,
+    "candidate": "up2|denoise+contrast+remove_rules",
+    "n_gt": 34,
+    "n_pred": 45,
+    "matched": 34,
+    "covered": 34
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-12955",
+    "page": 5,
+    "candidate": "up2|denoise+contrast+remove_rules",
+    "n_gt": 33,
+    "n_pred": 42,
+    "matched": 32,
+    "covered": 33
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-12955",
+    "page": 6,
+    "candidate": "up2|denoise+contrast+remove_rules",
+    "n_gt": 30,
+    "n_pred": 36,
+    "matched": 30,
+    "covered": 30
+   }
+  ],
+  "chosen": {
+   "conf": "up1|contrast+remove_rules",
+   "lex": "up1|contrast+remove_rules",
+   "oracle": "up1|contrast+remove_rules",
+   "default": "up2|contrast+remove_rules"
+  }
+ },
+ "PT-TT-TSO-IL-28-7123": {
+  "rows": [
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 1,
+    "candidate": "up1|contrast+remove_rules",
+    "n_gt": 28,
+    "n_pred": 53,
+    "matched": 24,
+    "covered": 27
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 2,
+    "candidate": "up1|contrast+remove_rules",
+    "n_gt": 32,
+    "n_pred": 37,
+    "matched": 32,
+    "covered": 32
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 3,
+    "candidate": "up1|contrast+remove_rules",
+    "n_gt": 21,
+    "n_pred": 29,
+    "matched": 21,
+    "covered": 21
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 5,
+    "candidate": "up1|contrast+remove_rules",
+    "n_gt": 31,
+    "n_pred": 43,
+    "matched": 31,
+    "covered": 31
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 6,
+    "candidate": "up1|contrast+remove_rules",
+    "n_gt": 24,
+    "n_pred": 44,
+    "matched": 24,
+    "covered": 24
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 7,
+    "candidate": "up1|contrast+remove_rules",
+    "n_gt": 29,
+    "n_pred": 31,
+    "matched": 29,
+    "covered": 29
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 8,
+    "candidate": "up1|contrast+remove_rules",
+    "n_gt": 34,
+    "n_pred": 39,
+    "matched": 31,
+    "covered": 34
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 1,
+    "candidate": "up2|contrast+remove_rules",
+    "n_gt": 28,
+    "n_pred": 54,
+    "matched": 24,
+    "covered": 27
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 2,
+    "candidate": "up2|contrast+remove_rules",
+    "n_gt": 32,
+    "n_pred": 36,
+    "matched": 31,
+    "covered": 31
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 3,
+    "candidate": "up2|contrast+remove_rules",
+    "n_gt": 21,
+    "n_pred": 29,
+    "matched": 21,
+    "covered": 21
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 5,
+    "candidate": "up2|contrast+remove_rules",
+    "n_gt": 31,
+    "n_pred": 42,
+    "matched": 31,
+    "covered": 31
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 6,
+    "candidate": "up2|contrast+remove_rules",
+    "n_gt": 24,
+    "n_pred": 44,
+    "matched": 24,
+    "covered": 24
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 7,
+    "candidate": "up2|contrast+remove_rules",
+    "n_gt": 29,
+    "n_pred": 31,
+    "matched": 29,
+    "covered": 29
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 8,
+    "candidate": "up2|contrast+remove_rules",
+    "n_gt": 34,
+    "n_pred": 38,
+    "matched": 31,
+    "covered": 34
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 1,
+    "candidate": "up3|contrast+remove_rules",
+    "n_gt": 28,
+    "n_pred": 54,
+    "matched": 24,
+    "covered": 27
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 2,
+    "candidate": "up3|contrast+remove_rules",
+    "n_gt": 32,
+    "n_pred": 36,
+    "matched": 31,
+    "covered": 31
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 3,
+    "candidate": "up3|contrast+remove_rules",
+    "n_gt": 21,
+    "n_pred": 30,
+    "matched": 21,
+    "covered": 21
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 5,
+    "candidate": "up3|contrast+remove_rules",
+    "n_gt": 31,
+    "n_pred": 42,
+    "matched": 31,
+    "covered": 31
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 6,
+    "candidate": "up3|contrast+remove_rules",
+    "n_gt": 24,
+    "n_pred": 44,
+    "matched": 24,
+    "covered": 24
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 7,
+    "candidate": "up3|contrast+remove_rules",
+    "n_gt": 29,
+    "n_pred": 31,
+    "matched": 29,
+    "covered": 29
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 8,
+    "candidate": "up3|contrast+remove_rules",
+    "n_gt": 34,
+    "n_pred": 38,
+    "matched": 31,
+    "covered": 34
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 1,
+    "candidate": "up2|none",
+    "n_gt": 28,
+    "n_pred": 45,
+    "matched": 27,
+    "covered": 28
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 2,
+    "candidate": "up2|none",
+    "n_gt": 32,
+    "n_pred": 38,
+    "matched": 32,
+    "covered": 32
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 3,
+    "candidate": "up2|none",
+    "n_gt": 21,
+    "n_pred": 28,
+    "matched": 21,
+    "covered": 21
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 5,
+    "candidate": "up2|none",
+    "n_gt": 31,
+    "n_pred": 41,
+    "matched": 31,
+    "covered": 31
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 6,
+    "candidate": "up2|none",
+    "n_gt": 24,
+    "n_pred": 42,
+    "matched": 24,
+    "covered": 24
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 7,
+    "candidate": "up2|none",
+    "n_gt": 29,
+    "n_pred": 31,
+    "matched": 29,
+    "covered": 29
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 8,
+    "candidate": "up2|none",
+    "n_gt": 34,
+    "n_pred": 38,
+    "matched": 31,
+    "covered": 34
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 1,
+    "candidate": "up2|clahe+remove_rules",
+    "n_gt": 28,
+    "n_pred": 74,
+    "matched": 20,
+    "covered": 28
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 2,
+    "candidate": "up2|clahe+remove_rules",
+    "n_gt": 32,
+    "n_pred": 41,
+    "matched": 31,
+    "covered": 31
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 3,
+    "candidate": "up2|clahe+remove_rules",
+    "n_gt": 21,
+    "n_pred": 27,
+    "matched": 21,
+    "covered": 21
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 5,
+    "candidate": "up2|clahe+remove_rules",
+    "n_gt": 31,
+    "n_pred": 43,
+    "matched": 31,
+    "covered": 31
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 6,
+    "candidate": "up2|clahe+remove_rules",
+    "n_gt": 24,
+    "n_pred": 43,
+    "matched": 23,
+    "covered": 24
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 7,
+    "candidate": "up2|clahe+remove_rules",
+    "n_gt": 29,
+    "n_pred": 31,
+    "matched": 29,
+    "covered": 29
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 8,
+    "candidate": "up2|clahe+remove_rules",
+    "n_gt": 34,
+    "n_pred": 57,
+    "matched": 31,
+    "covered": 33
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 1,
+    "candidate": "up2|illumination+remove_rules",
+    "n_gt": 28,
+    "n_pred": 54,
+    "matched": 25,
+    "covered": 28
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 2,
+    "candidate": "up2|illumination+remove_rules",
+    "n_gt": 32,
+    "n_pred": 35,
+    "matched": 32,
+    "covered": 32
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 3,
+    "candidate": "up2|illumination+remove_rules",
+    "n_gt": 21,
+    "n_pred": 27,
+    "matched": 21,
+    "covered": 21
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 5,
+    "candidate": "up2|illumination+remove_rules",
+    "n_gt": 31,
+    "n_pred": 40,
+    "matched": 31,
+    "covered": 31
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 6,
+    "candidate": "up2|illumination+remove_rules",
+    "n_gt": 24,
+    "n_pred": 36,
+    "matched": 24,
+    "covered": 24
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 7,
+    "candidate": "up2|illumination+remove_rules",
+    "n_gt": 29,
+    "n_pred": 33,
+    "matched": 29,
+    "covered": 29
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 8,
+    "candidate": "up2|illumination+remove_rules",
+    "n_gt": 34,
+    "n_pred": 38,
+    "matched": 31,
+    "covered": 34
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 1,
+    "candidate": "up2|illumination+contrast+remove_rules",
+    "n_gt": 28,
+    "n_pred": 49,
+    "matched": 27,
+    "covered": 27
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 2,
+    "candidate": "up2|illumination+contrast+remove_rules",
+    "n_gt": 32,
+    "n_pred": 37,
+    "matched": 32,
+    "covered": 32
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 3,
+    "candidate": "up2|illumination+contrast+remove_rules",
+    "n_gt": 21,
+    "n_pred": 26,
+    "matched": 21,
+    "covered": 21
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 5,
+    "candidate": "up2|illumination+contrast+remove_rules",
+    "n_gt": 31,
+    "n_pred": 40,
+    "matched": 31,
+    "covered": 31
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 6,
+    "candidate": "up2|illumination+contrast+remove_rules",
+    "n_gt": 24,
+    "n_pred": 45,
+    "matched": 24,
+    "covered": 24
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 7,
+    "candidate": "up2|illumination+contrast+remove_rules",
+    "n_gt": 29,
+    "n_pred": 31,
+    "matched": 29,
+    "covered": 29
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 8,
+    "candidate": "up2|illumination+contrast+remove_rules",
+    "n_gt": 34,
+    "n_pred": 39,
+    "matched": 31,
+    "covered": 34
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 1,
+    "candidate": "up2|denoise+contrast+remove_rules",
+    "n_gt": 28,
+    "n_pred": 54,
+    "matched": 25,
+    "covered": 28
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 2,
+    "candidate": "up2|denoise+contrast+remove_rules",
+    "n_gt": 32,
+    "n_pred": 39,
+    "matched": 32,
+    "covered": 32
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 3,
+    "candidate": "up2|denoise+contrast+remove_rules",
+    "n_gt": 21,
+    "n_pred": 30,
+    "matched": 21,
+    "covered": 21
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 5,
+    "candidate": "up2|denoise+contrast+remove_rules",
+    "n_gt": 31,
+    "n_pred": 43,
+    "matched": 31,
+    "covered": 31
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 6,
+    "candidate": "up2|denoise+contrast+remove_rules",
+    "n_gt": 24,
+    "n_pred": 49,
+    "matched": 24,
+    "covered": 24
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 7,
+    "candidate": "up2|denoise+contrast+remove_rules",
+    "n_gt": 29,
+    "n_pred": 31,
+    "matched": 29,
+    "covered": 29
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7123",
+    "page": 8,
+    "candidate": "up2|denoise+contrast+remove_rules",
+    "n_gt": 34,
+    "n_pred": 36,
+    "matched": 30,
+    "covered": 33
+   }
+  ],
+  "chosen": {
+   "conf": "up2|none",
+   "lex": "up2|clahe+remove_rules",
+   "oracle": "up1|contrast+remove_rules",
+   "default": "up2|contrast+remove_rules"
+  }
+ },
+ "PT-TT-TSO-IL-28-7196": {
+  "rows": [
+   {
+    "case": "PT-TT-TSO-IL-28-7196",
+    "page": 2,
+    "candidate": "up1|contrast+remove_rules",
+    "n_gt": 25,
+    "n_pred": 47,
+    "matched": 24,
+    "covered": 25
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7196",
+    "page": 3,
+    "candidate": "up1|contrast+remove_rules",
+    "n_gt": 25,
+    "n_pred": 34,
+    "matched": 24,
+    "covered": 24
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7196",
+    "page": 4,
+    "candidate": "up1|contrast+remove_rules",
+    "n_gt": 30,
+    "n_pred": 33,
+    "matched": 30,
+    "covered": 30
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7196",
+    "page": 2,
+    "candidate": "up2|contrast+remove_rules",
+    "n_gt": 25,
+    "n_pred": 47,
+    "matched": 24,
+    "covered": 25
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7196",
+    "page": 3,
+    "candidate": "up2|contrast+remove_rules",
+    "n_gt": 25,
+    "n_pred": 35,
+    "matched": 24,
+    "covered": 24
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7196",
+    "page": 4,
+    "candidate": "up2|contrast+remove_rules",
+    "n_gt": 30,
+    "n_pred": 33,
+    "matched": 30,
+    "covered": 30
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7196",
+    "page": 2,
+    "candidate": "up3|contrast+remove_rules",
+    "n_gt": 25,
+    "n_pred": 47,
+    "matched": 24,
+    "covered": 25
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7196",
+    "page": 3,
+    "candidate": "up3|contrast+remove_rules",
+    "n_gt": 25,
+    "n_pred": 34,
+    "matched": 24,
+    "covered": 24
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7196",
+    "page": 4,
+    "candidate": "up3|contrast+remove_rules",
+    "n_gt": 30,
+    "n_pred": 33,
+    "matched": 30,
+    "covered": 30
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7196",
+    "page": 2,
+    "candidate": "up2|none",
+    "n_gt": 25,
+    "n_pred": 25,
+    "matched": 24,
+    "covered": 25
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7196",
+    "page": 3,
+    "candidate": "up2|none",
+    "n_gt": 25,
+    "n_pred": 33,
+    "matched": 25,
+    "covered": 25
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7196",
+    "page": 4,
+    "candidate": "up2|none",
+    "n_gt": 30,
+    "n_pred": 37,
+    "matched": 30,
+    "covered": 30
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7196",
+    "page": 2,
+    "candidate": "up2|clahe+remove_rules",
+    "n_gt": 25,
+    "n_pred": 42,
+    "matched": 24,
+    "covered": 25
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7196",
+    "page": 3,
+    "candidate": "up2|clahe+remove_rules",
+    "n_gt": 25,
+    "n_pred": 36,
+    "matched": 25,
+    "covered": 25
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7196",
+    "page": 4,
+    "candidate": "up2|clahe+remove_rules",
+    "n_gt": 30,
+    "n_pred": 34,
+    "matched": 30,
+    "covered": 30
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7196",
+    "page": 2,
+    "candidate": "up2|illumination+remove_rules",
+    "n_gt": 25,
+    "n_pred": 63,
+    "matched": 24,
+    "covered": 25
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7196",
+    "page": 3,
+    "candidate": "up2|illumination+remove_rules",
+    "n_gt": 25,
+    "n_pred": 31,
+    "matched": 25,
+    "covered": 25
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7196",
+    "page": 4,
+    "candidate": "up2|illumination+remove_rules",
+    "n_gt": 30,
+    "n_pred": 37,
+    "matched": 30,
+    "covered": 30
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7196",
+    "page": 2,
+    "candidate": "up2|illumination+contrast+remove_rules",
+    "n_gt": 25,
+    "n_pred": 58,
+    "matched": 24,
+    "covered": 25
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7196",
+    "page": 3,
+    "candidate": "up2|illumination+contrast+remove_rules",
+    "n_gt": 25,
+    "n_pred": 35,
+    "matched": 25,
+    "covered": 25
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7196",
+    "page": 4,
+    "candidate": "up2|illumination+contrast+remove_rules",
+    "n_gt": 30,
+    "n_pred": 37,
+    "matched": 30,
+    "covered": 30
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7196",
+    "page": 2,
+    "candidate": "up2|denoise+contrast+remove_rules",
+    "n_gt": 25,
+    "n_pred": 47,
+    "matched": 24,
+    "covered": 25
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7196",
+    "page": 3,
+    "candidate": "up2|denoise+contrast+remove_rules",
+    "n_gt": 25,
+    "n_pred": 39,
+    "matched": 25,
+    "covered": 25
+   },
+   {
+    "case": "PT-TT-TSO-IL-28-7196",
+    "page": 4,
+    "candidate": "up2|denoise+contrast+remove_rules",
+    "n_gt": 30,
+    "n_pred": 34,
+    "matched": 30,
+    "covered": 30
+   }
+  ],
+  "chosen": {
+   "conf": "up2|clahe+remove_rules",
+   "lex": "up2|clahe+remove_rules",
+   "oracle": "up2|clahe+remove_rules",
+   "default": "up2|contrast+remove_rules"
+  }
+ }
+}

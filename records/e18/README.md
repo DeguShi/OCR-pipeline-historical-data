@@ -30,14 +30,14 @@ Held-out WER (%), clean default 18.74; in brackets the share of the shift's dama
 | faded_ink         | 20.16   | 19.69 (33%)          | **19.06 (78%)**      | 20.00         | 19.37  |
 | bleed_through     | 19.21   | 19.21 (kept default) | 19.21 (kept default) | 20.47 (worse) | 19.53  |
 | jpeg_noise        | 90.08   | **68.66 (30%)**      | 70.08 (28%)          | 90.08         | 77.95  |
-| low_res_blur      | 28.98   | 27.72 (12%)          | **23.31 (56%)**      | 25.35 (35%)   | 28.03  |
+| low_res_blur      | 28.98   | 27.72 (12%)          | **23.31 (55%)**      | 25.35 (35%)   | 28.03  |
 
 Spearman(objective, greedy CER) over the 47–60 candidates on the sample page: lex 0.94–0.97 on every shift,
 conflex 0.94–0.98, conf 0.69–0.97, stat 0.56–0.76.
 
 Against the plan's criteria: Q2 (Spearman ≥ 0.6 on most shifts) is met by lex, conflex and conf, and only partly by
 stat. Q1 (on shifts that cost ≥ 2 points — uneven_light, jpeg_noise, low_res_blur — ≥ 50% recovery on average,
-never > 1 point worse): **lex meets it** (89%, 28%, 56%; mean 58%); conf does not (83%, 30%, 12%; mean 42%).
+never > 1 point worse): **lex meets it** (89%, 28%, 55%; mean 57%); conf does not (83%, 30%, 12%; mean 42%).
 Neither is ever worse than the default on any shift. stat fails
 (worse on 3 of 6 shifts: it often prefers upscale 1, which segments worse). The one-page oracle is not better than lex:
 the best chain on one page transfers imperfectly. On jpeg_noise most of the damage stays (70 vs 18.7):
@@ -67,7 +67,7 @@ same everywhere:
 | low_res_blur      | 28.98   | 26.30 (26%) | **23.31** |
 
 lex is at least as good as the static chain on every shift and better on all six. On the three shifts that cost
-2 points or more, the static chain recovers 27% of the damage on average and lex 58%. So most of lex's gain comes
+2 points or more, the static chain recovers 28% of the damage on average and lex 57%. So most of lex's gain comes
 from choosing a chain per book, not from CLAHE being better in general. On clean pages the static chain is 0.31
 better (3 pages, within noise), so it is not adopted as the new default.
 
@@ -112,3 +112,25 @@ gains 1–5 points where the scan differs from ours.
 - (done) Real books (Q3): TraPrInq validation set (Zenodo 13986218, CC BY 4.0), case files with ≥ 4 pages.
 - Figure panels done: `e18_figures/` (sample page 6, a band of lines: shifted input, default seg image, chosen
   seg and rec images of the lex objective).
+
+## Segmentation check (2026-11-09; `seg/`, `tools/seg_eval.py`, code `3c80fba`)
+
+Question: do the real-book gains come from better line finding? For each TraPrInq case file, every one of the 8
+segmentation candidates was run on the 18 eval pages and its baselines matched to the PAGE XML baselines (after the
+same upscale + deskew; match = x-coverage ≥ 0.5 and mean |dy| ≤ 0.5 × median GT line spacing, one-to-one greedy).
+Free Colab CPU, 1.7 h. P = matched / predicted lines, R = matched / GT lines (summed over the eval pages):
+
+| case file (GT lines) | default (up2 contrast) P / R / F1 | lex chain P / R / F1     | F1 range over the 8 |
+| -------------------- | --------------------------------- | ------------------------ | ------------------- |
+| 16125 (61)           | 73 / 100 / 84                     | none: 74 / 100 / 85      | 80–85               |
+| 12955 (168)          | 84 / 99 / 91                      | up1: 84 / 99 / 91        | 86–92               |
+| 7123 (199)           | 70 / 96 / 81                      | clahe: 59 / 93 / 72      | 72–84               |
+| 7196 (80)            | 68 / 98 / 80                      | clahe: 71 / 99 / 82      | 75–90               |
+
+Recall is 93–100% for every candidate on every book: the segmenter finds nearly all GT lines whatever the image
+chain. Candidates differ in precision (59–86%), i.e. in extra lines; the overlays show these are mostly marginal text,
+facing-page edges and stains that the PAGE XML does not transcribe. lex's segmentation choice is within ±2 F1 of the
+default on three books and 9 F1 worse on 7123, which is the book where lex gains most in WER (−5.28). So the real-book
+gains do not come from line finding; they come from the image given to the recognizer (gamma 0.7 / channel min),
+and the lex score of a segmentation candidate reflects how well its lines are read, not how well they are found.
+Overlays for the default and lex chains (first eval page) are in `seg/overlays/`.
