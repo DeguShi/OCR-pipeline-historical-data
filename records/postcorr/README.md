@@ -239,3 +239,20 @@ pages); D from the PLL scoring log (530 s for the 12 GT pages, 21,016 candidates
 - 2026-11-08: the retrained ByT5 checkpoint (C) is on HF: `KobayashiShiroe/OCR-pipeline-historical-data`,
   folder `postcorr_byt5_small/` (commit dd791ec; model card c91cb70). LFS sha256 matches
   `byt5/retrain/model.safetensors.sha256` (cf52bdee…). `training_args.bin` (a pickle) was left out.
+- 2026-11-09: **correction — test "raw" was scored with text rules.** The test-set raw baseline used in the
+  comparison table, the curve and the test correction/error-type analyses (`outputs/runs/check_greedy_raw_test10`)
+  was scored by `score_lines` WITH the text rules (`"rules": true`: line-end hyphenations joined, etc.), while every
+  other raw number (held-out `ladder_L0_raw`, tuning `check_greedy_raw`, the medium/st_v3 curve) is without rules.
+  Re-scored without rules (`outputs/runs/check_greedy_raw_norules_test10`): test raw WER 14.15, CER 3.56 (was 11.54 /
+  3.29). v6 vs raw on test: 3.49 vs 14.15, dWER -10.66, CI95 [-12.19, -9.20] (block 10), p 0.0001, 10/10 pages
+  (`curve/st_c1m_test_norules.json`). Correction analysis (`correction_test_norules.json`): fixed/broken v6 214/13,
+  A 190/7, B 160/3, C 144/18, VLM 103/210. Error types (`error_types_test_norules.json`, raw errors | v6 fixed/broken):
+  non_word 169 | 153/0, real_word 41 | 26/9, split_merge 28 | 23/0 (mostly line-end hyphenations, which v6's rules
+  join), numeral 9 | 0/0 (only C fixes 3). Earlier statements "C is the only one to fix split/merged words" do not
+  hold on either definition (with rules applied first, A and B also fix 2 of 4). Method WERs are unchanged.
+- 2026-11-09: per-line over/under-correction (`tools/line_correction.py`, `lines/`): each method's page words are
+  attributed to reference lines by page alignment (reference split on raw lines); total WER over all lines reproduces
+  every method's page-level WER (check in `lines/summary.json`). Lines improved / unchanged / worsened vs raw, by word
+  errors, usable lines (test 301 of 333, held-out 81 of 99): test v6 165/131/5, A 156/143/2, B 146/150/5,
+  C 129/162/10, D 167/131/3, VLM 67/120/114; held-out v6 46/32/3, A 43/35/3, B 43/36/2, C 39/40/2, D 46/32/3,
+  VLM 34/28/19.
