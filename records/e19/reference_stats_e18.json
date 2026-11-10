@@ -1,0 +1,36 @@
+{
+ "pages": [
+  "103br-fpmsc-fun-cam-ldl---livro-de-registro-de-leis-n-1-1892---1984-pgina-101-103_52765457592_l.jpg",
+  "30br-fpmsc-fun-cam-ldl---livro-de-registro-de-leis-n-1-1892---1984-pgina-28-30_52766448378_l.jpg",
+  "33br-fpmsc-fun-cam-ldl---livro-de-registro-de-leis-n-1-1892---1984-pgina-31-33_52766212334_l.jpg",
+  "37br-fpmsc-fun-cam-ldl---livro-de-registro-de-leis-n-1-1892---1984-pgina-35-37_52766397475_l.jpg",
+  "49br-fpmsc-fun-cam-ldl---livro-de-registro-de-leis-n-1-1892---1984-pgina-47-49_52766470858_l.jpg",
+  "52br-fpmsc-fun-cam-ldl---livro-de-registro-de-leis-n-1-1892---1984-pgina-50-52_52765444592_l.jpg",
+  "57br-fpmsc-fun-cam-ldl---livro-de-registro-de-leis-n-1-1892---1984-pgina-55-57_52766235234_l.jpg",
+  "91br-fpmsc-fun-cam-ldl---livro-de-registro-de-leis-n-1-1892---1984-pgina-89-91_52766485028_l.jpg"
+ ],
+ "paper": {
+  "mean": 117.875,
+  "std": 1.964529205687714
+ },
+ "ink": {
+  "mean": 61.125,
+  "std": 8.666566505831476
+ },
+ "contrast": {
+  "mean": 56.75,
+  "std": 7.344215410784191
+ },
+ "noise": {
+  "mean": 1.7780809551477432,
+  "std": 0.22860407428185192
+ },
+ "stroke_rel": {
+  "mean": 0.04732707631506124,
+  "std": 0.002592083008595434
+ },
+ "coverage": {
+  "mean": 0.9266436617683969,
+  "std": 0.045904353705311624
+ }
+}

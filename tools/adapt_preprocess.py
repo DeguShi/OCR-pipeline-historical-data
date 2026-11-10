@@ -1,4 +1,4 @@
-"""E18: choose the preprocessing chain for a new book from ONE sample page, without labels.
+"""E18/E19: choose the preprocessing chain for a new book from one or more sample pages, without labels.
 
 Candidates are combinations of the pipeline's own ops (ocr_pipeline/preprocessing.py). The search is coordinate-wise:
   stage 1 (segmentation image): upscale factor x seg_ops chain, recognition input left at the config's default;
@@ -14,6 +14,8 @@ Each candidate is segmented and read greedily (no post-correction) and scored by
           ("bring the new book closer to our current best").
 If --reference is given (a tuning page with GT), greedy WER/CER are recorded too, and the `oracle` objective
 (lowest greedy CER) bounds what one-page selection can reach. One chosen config per objective is written.
+With several --sample pages (E19) each candidate is run on all of them: counts are summed, means averaged, and
+WER/CER are corpus rates over the sample pages; with one page the values are those of E18.
 
   python tools/adapt_preprocess.py reference --config configs/final_v6.json --images data/extra/treino_crop \
       --out outputs/e18/reference_stats.json
@@ -136,35 +138,59 @@ def run_candidate(engine: Engine, page: Page, config: PipelineConfig) -> tuple[l
     return [line.prediction for line in logits], logits, image_features(rec_image, base, segmentation)
 
 
-def evaluate_candidate(engine: Engine, page: Page, config: PipelineConfig, cand: Candidate, ctx: dict[str, Any]
-                       ) -> dict[str, Any]:
+def evaluate_candidate(engine: Engine, page: Page, config: PipelineConfig, cand: Candidate, ctx: dict[str, Any],
+                       reference: str | None = None) -> dict[str, Any]:
     start = time.time()
     lines, logits, feats = run_candidate(engine, page, config)
     conf, (hits, n_words) = confidence(logits), lexicon_hits(lines, ctx['lexicon'])
     row = {'stage': 'seg' if 'seg_ops' in cand else 'rec', 'name': cand['name'], 'n_lines': len(lines),
            'conf': conf, 'lex': hits, 'lex_share': hits / max(n_words, 1), 'conflex': conf * hits,
            'stat': stat_distance(feats, ctx['stats']), **feats}
-    if ctx['reference'] is not None:
-        s = score(ctx['reference'], '\n'.join(lines))
-        row.update(wer_norm=s['wer_norm'], cer_norm=s['cer_norm'])
+    if reference is not None:
+        s = score(reference, '\n'.join(lines))
+        row.update({k: s[k] for k in ('wer_norm', 'cer_norm', 'norm_we', 'norm_rw', 'norm_ce', 'norm_rc')})
     row['seconds'] = round(time.time() - start, 1)
-    logger.info('%s %-45s lines %3d conf %.3f lex %4d stat %6.2f%s (%.0f s)', row['stage'], cand['name'],
+    logger.info('p%s %s %-45s lines %3d conf %.3f lex %4d stat %6.2f%s (%.0f s)', page.number, row['stage'], cand['name'],
                 row['n_lines'], conf, hits, row['stat'],
                 f" WER {100 * row['wer_norm']:.1f} CER {100 * row['cer_norm']:.1f}" if 'cer_norm' in row else '',
                 row['seconds'])
     return row
 
 
+SUMMED = ('n_lines', 'lex', 'conflex', 'norm_we', 'norm_rw', 'norm_ce', 'norm_rc', 'seconds')
+
+
+def evaluate_pages(engine: Engine, pages: list[Page], config: PipelineConfig, cand: Candidate, ctx: dict[str, Any]
+                   ) -> dict[str, Any]:
+    """One candidate on every sample page: counts (lex, conflex, lines, edits) are summed, conf/stat/features averaged,
+    WER/CER are corpus rates over the sample pages."""
+    per_page = [evaluate_candidate(engine, p, config, cand, ctx, ctx['references'].get(p.number)) for p in pages]
+    if len(per_page) == 1:
+        return per_page[0]
+    row = {k: per_page[0][k] for k in ('stage', 'name')}
+    for key in per_page[0]:
+        if key in row or key in ('wer_norm', 'cer_norm'):
+            continue
+        vals = [r[key] for r in per_page]
+        row[key] = sum(vals) if key in SUMMED else float(np.mean(vals))
+    if 'norm_rw' in row:
+        row.update(wer_norm=row['norm_we'] / max(row['norm_rw'], 1), cer_norm=row['norm_ce'] / max(row['norm_rc'], 1))
+    row['n_lines_min'] = min(r['n_lines'] for r in per_page)
+    row['pages'] = [{'page': p.number, **{k: r.get(k) for k in ('n_lines', 'conf', 'lex', 'stat', 'cer_norm')}}
+                    for p, r in zip(pages, per_page)]
+    return row
+
+
 def pick(rows: list[dict[str, Any]], objective: str) -> int:
     key, best = OBJECTIVES[objective]
-    usable = [i for i, r in enumerate(rows) if key in r and r['n_lines'] > 0]
+    usable = [i for i, r in enumerate(rows) if key in r and r.get('n_lines_min', r['n_lines']) > 0]
     return best(usable, key=lambda i: rows[i][key])
 
 
-def search(engine: Engine, page: Page, config: PipelineConfig, ctx: dict[str, Any], objectives: list[str]
+def search(engine: Engine, pages: list[Page], config: PipelineConfig, ctx: dict[str, Any], objectives: list[str]
            ) -> tuple[list[dict[str, Any]], dict[str, PipelineConfig]]:
     seg_cands = seg_candidates(config.params.upscale_factor)[:ctx['limit'] or None]
-    seg_rows = [evaluate_candidate(engine, page, apply_candidate(config, c), c, ctx) for c in seg_cands]
+    seg_rows = [evaluate_pages(engine, pages, apply_candidate(config, c), c, ctx) for c in seg_cands]
     rows, chosen = list(seg_rows), {}
     done: dict[tuple[str, str], dict[str, Any]] = {}
     rec_cands = rec_candidates()[:ctx['limit'] or None]
@@ -175,7 +201,7 @@ def search(engine: Engine, page: Page, config: PipelineConfig, ctx: dict[str, An
         for cand in rec_cands:
             key = (seg_cand['name'], cand['name'])
             if key not in done:
-                done[key] = {**evaluate_candidate(engine, page, apply_candidate(seg_config, cand), cand, ctx),
+                done[key] = {**evaluate_pages(engine, pages, apply_candidate(seg_config, cand), cand, ctx),
                              'seg_name': seg_cand['name']}
                 rows.append(done[key])
             rec_rows.append(done[key])
@@ -202,8 +228,9 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument('--config', type=Path, default=Path('configs/final_v6.json'))
     parser.add_argument('--images', type=Path, help="reference: folder of our book's training pages")
     parser.add_argument('--n-pages', type=int, default=8, help='reference: pages sampled (seed 42)')
-    parser.add_argument('--sample', type=Path, help='search: the one sample page of the new book')
-    parser.add_argument('--reference', type=Path, default=None, help='search: its GT text (analysis/oracle only)')
+    parser.add_argument('--sample', type=Path, nargs='+', help='search: the sample page(s) of the new book (objective summed)')
+    parser.add_argument('--reference', type=Path, nargs='+', default=None,
+                        help='search: GT text of each sample page, same order (analysis/oracle only)')
     parser.add_argument('--stats', type=Path, help='search: output of the reference mode')
     parser.add_argument('--lexicon-size', type=int, default=100000)
     parser.add_argument('--objectives', nargs='+', default=list(OBJECTIVES), choices=list(OBJECTIVES))
@@ -215,13 +242,20 @@ def build_parser() -> argparse.ArgumentParser:
     return parser
 
 
+def page_number(path: Path, default: int) -> int:
+    return int(path.name.split('.')[0]) if path.name[0].isdigit() else default
+
+
 def run_search(args: argparse.Namespace, engine: Engine, config: PipelineConfig) -> None:
+    if args.reference is not None and len(args.reference) != len(args.sample):
+        raise SystemExit('--reference needs one file per --sample page')
     objectives = [o for o in args.objectives if o != 'oracle' or args.reference is not None]
+    refs = args.reference or [None] * len(args.sample)
+    pages = [Page(page_number(s, i), s, r or s) for i, (s, r) in enumerate(zip(args.sample, refs))]
     ctx = {'limit': args.limit, 'lexicon': load_lexicon(Path(config.post.period_lexicon), args.lexicon_size),
            'stats': json.loads(args.stats.read_text()),
-           'reference': args.reference.read_text(encoding='utf-8') if args.reference else None}
-    number = int(args.sample.name.split('.')[0]) if args.sample.name[0].isdigit() else 0
-    rows, chosen = search(engine, Page(number, args.sample, args.reference or args.sample), config, ctx, objectives)
+           'references': {p.number: r.read_text(encoding='utf-8') for p, r in zip(pages, refs) if r is not None}}
+    rows, chosen = search(engine, pages, config, ctx, objectives)
     args.out.mkdir(parents=True, exist_ok=True)
     (args.out / 'candidates.jsonl').write_text(''.join(json.dumps(r) + '\n' for r in rows), encoding='utf-8')
     for objective, cfg in chosen.items():
