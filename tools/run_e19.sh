@@ -9,6 +9,8 @@
 #   PART main   chain search on the 3 sample pages (lex conf conflex stat, oracle = greedy CER on the samples),
 #               then full v6 on the 20 eval pages with the default config and each distinct chosen config
 #               (identical configs, compared as canonical JSON, run once and listed in same_as.txt)
+#   PART default  full v6 on the 20 eval pages with the default config only (run on the other VM; then main is
+#               called with E19_SKIP_DEFAULT=1, which still dedups chosen configs against the default)
 set -euo pipefail
 PART=$1; DATA=$2; OUT=$3; DEV=${4:-cpu}
 PY=${PY:-python}; CFG=configs/final_v6.json; BOOK=$OUT/book; STATS=records/e19/reference_stats_e18.json
@@ -71,9 +73,14 @@ main)
     h=$(canon "$cfg")
     if [ -n "${seen[$h]:-}" ]; then echo "$name = ${seen[$h]}" >> "$OUT/runs_same_as.txt"; continue; fi
     seen[$h]=$name
+    [ $name = default ] && [ "${E19_SKIP_DEFAULT:-0}" = 1 ] && continue
     [ -f "$OUT/runs/$name/result.json" ] || $PY -m ocr_pipeline.run --config "$cfg" --images "$BOOK/images" \
         --references "$BOOK/references" --pages "$EVALP" --out "$OUT/runs" --name $name --cache "$OUT/cache" --device "$DEV"
   done
   echo "E19 MAIN DONE";;
+default)
+  [ -f "$OUT/runs/default/result.json" ] || $PY -m ocr_pipeline.run --config $CFG --images "$BOOK/images" \
+      --references "$BOOK/references" --pages "$EVALP" --out "$OUT/runs" --name default --cache "$OUT/cache" --device "$DEV"
+  echo "E19 DEFAULT DONE";;
 *) echo "unknown part $PART"; exit 2;;
 esac

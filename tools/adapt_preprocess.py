@@ -178,6 +178,9 @@ def evaluate_pages(engine: Engine, pages: list[Page], config: PipelineConfig, ca
     row['n_lines_min'] = min(r['n_lines'] for r in per_page)
     row['pages'] = [{'page': p.number, **{k: r.get(k) for k in ('n_lines', 'conf', 'lex', 'stat', 'cer_norm')}}
                     for p, r in zip(pages, per_page)]
+    if ctx.get('partial'):  # one line per finished candidate, so a lost VM keeps what it computed
+        with ctx['partial'].open('a', encoding='utf-8') as f:
+            f.write(json.dumps({**row, 'seg_config': config.to_dict()['seg_ops']}) + '\n')
     return row
 
 
@@ -255,8 +258,9 @@ def run_search(args: argparse.Namespace, engine: Engine, config: PipelineConfig)
     ctx = {'limit': args.limit, 'lexicon': load_lexicon(Path(config.post.period_lexicon), args.lexicon_size),
            'stats': json.loads(args.stats.read_text()),
            'references': {p.number: r.read_text(encoding='utf-8') for p, r in zip(pages, refs) if r is not None}}
-    rows, chosen = search(engine, pages, config, ctx, objectives)
     args.out.mkdir(parents=True, exist_ok=True)
+    ctx['partial'] = args.out / 'candidates_partial.jsonl'
+    rows, chosen = search(engine, pages, config, ctx, objectives)
     (args.out / 'candidates.jsonl').write_text(''.join(json.dumps(r) + '\n' for r in rows), encoding='utf-8')
     for objective, cfg in chosen.items():
         (args.out / f'chosen_{objective}.json').write_text(json.dumps(cfg.to_dict(), indent=1), encoding='utf-8')
