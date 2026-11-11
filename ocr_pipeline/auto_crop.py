@@ -8,7 +8,8 @@ The fixed box of page_crop.py only fits the FPMSC photos of book 1. This crop wo
   2. paper: Otsu threshold on the blurred HSV value channel, morphological opening, largest connected component;
      its bounding box drops the dark table, book edges and the background band.
   3. ink: black-hat (dark strokes on local background) inside the paper box, Otsu, minus long horizontal and
-     vertical lines (ruling, red margin), minus specks and components touching the paper border (edge shadows).
+     vertical lines (ruling, red margin), minus specks and components touching the paper border (edge shadows),
+     except blocks of writing on the edge (rubric, folio number; see CropParams.edge_min_side).
      The crop is the union box of what is left plus a margin, clipped to the paper box. Trimming only ever removes
      rows/columns without ink, so a stain can enlarge the crop but no stroke is cut.
 Validation: tools/crop_eval.py (hand crops of book 1, PAGE XML lines of TraPrInq, segmented lines of book 2).
@@ -34,6 +35,12 @@ class CropParams:
     margin_frac: float = 0.015  # of the paper box's longer side
     min_speck_px: int = 12
     rule_frac: float = 0.25  # a horizontal/vertical run this long (share of the paper side) is a rule, not ink
+    # a component touching the paper border is kept as writing (a rubric or folio number on the page edge) when it is a
+    # block, not a strip: both sides >= edge_min_side and area >= edge_min_area (shares of the paper box), and shorter
+    # than rule_frac along the border; strips and long runs are edge shadows. edge_min_side=0 drops every
+    # border-touching component (the crop of the first E19 runs).
+    edge_min_side: float = 0.02
+    edge_min_area: float = 0.0003
 
 
 @dataclass
@@ -117,7 +124,9 @@ def ink_mask(gray: np.ndarray, params: CropParams) -> np.ndarray:
     n, labels, stats, _ = cv2.connectedComponentsWithStats(ink)
     x, y, cw, ch, area = stats[:, 0], stats[:, 1], stats[:, 2], stats[:, 3], stats[:, 4]
     touches = (x <= 1) | (y <= 1) | (x + cw >= w - 1) | (y + ch >= h - 1)
-    keep = (area >= params.min_speck_px) & ~touches
+    block = ((np.minimum(cw, ch) >= params.edge_min_side * min(h, w)) & (area >= params.edge_min_area * h * w)
+             & (cw < params.rule_frac * w) & (ch < params.rule_frac * h) & (params.edge_min_side > 0))
+    keep = (area >= params.min_speck_px) & (~touches | block)
     keep[0] = False
     return keep[labels]
 
