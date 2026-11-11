@@ -124,16 +124,20 @@ def main() -> None:
         cands, numbers = cands[:args.limit], numbers[:1]
     args.out.mkdir(parents=True, exist_ok=True)
     (args.out / 'params.json').write_text(json.dumps({k: str(v) for k, v in vars(args).items()}, indent=1))
-    rows = []
+    jsonl = args.out / 'seg_weak.jsonl'  # resume: rows already on disk (candidate, page) are kept, not recomputed
+    rows = [json.loads(l) for l in jsonl.read_text().splitlines()] if jsonl.is_file() else []
+    done = {(r['candidate'], r['page']) for r in rows}
     for cand in cands:
         cfg = apply_candidate(config, cand)
         for n in numbers:
+            if (cand['name'], n) in done:
+                continue
             image = next((args.book / 'images').glob(f'{n}.*.jpg'))
             page = Page(n, image, args.book / 'references' / f'{image.stem}.txt')
             rows.append({'page': n, 'candidate': cand['name'],
                          **eval_page(engine, page, args.book / 'lines' / f'{image.stem}.txt', cfg)})
             logger.info('%s', rows[-1])
-        (args.out / 'seg_weak.jsonl').write_text(''.join(json.dumps(r) + '\n' for r in rows), encoding='utf-8')
+            jsonl.write_text(''.join(json.dumps(r) + '\n' for r in rows), encoding='utf-8')
     logger.info('SEG WEAK DONE %d rows', len(rows))
 
 

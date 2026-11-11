@@ -11,6 +11,7 @@
 #               (identical configs, compared as canonical JSON, run once and listed in same_as.txt)
 #   PART default  full v6 on the 20 eval pages with the default config only (run on the other VM; then main is
 #               called with E19_SKIP_DEFAULT=1, which still dedups chosen configs against the default)
+#   E19_OBJECTIVES (env) limits the search objectives and the chosen-config runs, e.g. "lex oracle"
 set -euo pipefail
 PART=$1; DATA=$2; OUT=$3; DEV=${4:-cpu}
 PY=${PY:-python}; CFG=configs/final_v6.json; BOOK=$OUT/book; STATS=records/e19/reference_stats_e18.json
@@ -29,7 +30,7 @@ search() {  # search OUTDIR LIMIT PAGES...
   local out=$1 limit=$2; shift 2; local s=() r=()
   for n in "$@"; do s+=("$(img "$n")"); r+=("$(ref "$n")"); done
   $PY tools/adapt_preprocess.py search --config $CFG --sample "${s[@]}" --reference "${r[@]}" --stats $STATS \
-      --objectives lex conf conflex stat oracle --out "$out" --cache "$OUT/cache" --device "$DEV" --limit "$limit"
+      --objectives ${E19_OBJECTIVES:-lex conf conflex stat oracle} --out "$out" --cache "$OUT/cache" --device "$DEV" --limit "$limit"
 }
 
 case $PART in
@@ -68,7 +69,7 @@ seg)
 main)
   [ -f "$OUT/adapt/chosen_lex.json" ] || search "$OUT/adapt" 0 "${SAMPLE[@]}"
   declare -A seen=()
-  for name in default lex oracle conf conflex stat; do
+  for name in default ${E19_OBJECTIVES:-lex oracle conf conflex stat}; do
     cfg=$CFG; [ $name = default ] || cfg="$OUT/adapt/chosen_$name.json"
     h=$(canon "$cfg")
     if [ -n "${seen[$h]:-}" ]; then echo "$name = ${seen[$h]}" >> "$OUT/runs_same_as.txt"; continue; fi
