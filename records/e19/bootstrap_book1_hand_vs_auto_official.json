@@ -1,0 +1,19 @@
+{
+  "wer_a": 19.40174491067719,
+  "wer_b": 19.941836310760284,
+  "dwer": -0.540091400083091,
+  "ci95": [
+    -1.57,
+    0.49
+  ],
+  "p_signflip": 0.3444655534446555,
+  "blocks": 248,
+  "pages_won_tied_lost": [
+    7,
+    1,
+    4
+  ],
+  "a": "outputs/e19_colab_e19a_run1/e19/book1_runs/hand",
+  "b": "outputs/e19_colab_e19a_run1/e19/book1_runs/auto",
+  "block": 10
+}
