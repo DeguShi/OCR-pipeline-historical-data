@@ -99,27 +99,46 @@ chains. Among the top chains, however, the lex gap is small (335 for the chosen 
   - 79, 109 and 116: the crop already reaches the paper edge; the segmented box runs past it;
   - 80, 86 and 88: false Kraken lines on the painted watermark (versos; no writing there).
   - **The "no line cut" criterion failed on 2/50 photos.** Of the E19 eval pages, only page 7 (photo 81) is affected:
-    2 header tokens. The crop is the same for every config, so the default vs lex comparison stands.
-- **Fix:** `exp/e19-crop-header` 8249aa6. A component that touches the paper border is kept when it is a block of
-  writing, not a strip (`CropParams.edge_min_side` / `edge_min_area`).
+    3 header tokens ("Souza Franco 39"). The crop is the same for every config, so the default vs lex comparison stands.
+- **Fix 1, header on the edge** (`exp/e19-crop-header` 070e327; 8249aa6 before a local rebase, same code). A
+  component that touches the paper border is kept when it is a block of writing, not a strip
+  (`CropParams.edge_min_side` / `edge_min_area`).
   - Rerun of the boxes only: 3/50 book-2 boxes change (81 and 107 fixed; 105 by +2 px). 1/106 book-1 photos changes
     (photo 46, top −4 px; not an eval page).
   - `edge_min_side=0` reproduces the old boxes exactly (0 mismatches against `crop_book2.json`).
-  - The fixed crop was not re-run through Kraken or v6.
-- **TraPrInq validation set** (504 pages, another archive):
-  - 13072/13497 PAGE-XML lines inside (96.9%);
-  - the watermark detector fires on 7 pages (max score 0.59, threshold 0.55);
-  - **not yet inspected**.
+- **TraPrInq validation set with the first crop** (504 pages, another archive): 13072/13497 PAGE-XML lines inside
+  (96.9%). Inspection of the 39 pages with a line outside showed one main cause: on dark, stained or densely written
+  paper, Otsu on lightness split paper from ink rather than from the background. The longest run of "paper" rows then
+  broke, and the paper box kept a band of the page (e.g. 412 px of 2090).
+- **Fix 2, paper box** (30a7e59; 69ecc89 before the rebase, same code). The paper box is the union of the plain box
+  and a box on the lightness closed with a square of 1/40 of the side (ink removed), with 3% gaps bridged
+  (`CropParams.paper_closing`). Alone, the closed box collapsed on 2 of 44 pages tested locally, so only the union is used.
+- **Crop v2 check** (part `crop2`, `tools/crop_compare.py`, boxes only: first crop vs crop v2). Free Colab CPU, 1 VM,
+  1154 s. Results in `records/e19/crop2_{book1,book2,traprinq}.json`.
+  - TraPrInq: lines inside go from 13072 to **13476 of 13497 (99.84%)**. No page loses a line. 21 lines remain
+    outside, on 7 pages:
+    - 16809_m0014b: 13 lines; both paper boxes keep only the top half;
+    - 11735_m0109: 3 header lines above a torn, dark edge;
+    - 5 single lines: folio numbers or headers past the paper edge, a box running past the edge.
+  - Book 2: 9/50 boxes change and every new box contains the old one; area ×1.06 at most.
+  - Book 1 raw photos: 100/106 boxes change, area ×1.13 at most. 3 new boxes (photos 43, 51, 57) do not contain the
+    old one. The ink threshold is computed over the paper region, which changed, so a few faint pixels at the edge
+    can fall below it. The recession is 2–29 px, and the overlays show blank margin there, with no text cut.
+  - TraPrInq: 6 pages where the new box does not contain the old one recede 1–47 px, and keep every PAGE-XML line.
+  - Watermark detector: it still fires on 7 TraPrInq pages (another archive's stamps; max score 0.59, threshold
+    0.55). It only paints the matched box, and no line is lost on those pages (`crop2_traprinq.json`, `watermark`).
+  - Neither crop v2 nor fix 1 was run through Kraken or v6. The E19 numbers above use the first crop.
 
 **Cost.** Free Colab CPU only.
 
 - Run 1: VM A 6456 s (crop) + ~1 h of seg; VM B ~3 h. Both lost.
 - Run 2: VM A 3299 s (default) + 16062 s (seg); VM B 17814 s (search + lex and oracle runs).
+- Crop v2 check: 1 VM, 1154 s.
 
 **Not done / open.**
 
 - Objectives conf, conflex and stat were not run.
-- Fixed crop: no Kraken or v6 re-run.
-- TraPrInq lines outside and watermark false positives: not inspected.
+- Crop v2: no Kraken or v6 re-run. TraPrInq page 16809_m0014b still loses its bottom half.
+- Watermark false positives on another archive: harmless here, not fixed.
 - One book only, 20 pages; Gemini references.
-- The chosen chain is not shipped in `entrega_ocr`.
+- Shipped as an opt-in path in the repository README (crop, lex search, batch); `entrega_ocr` not rebuilt (built from the main code; these branches are not merged).
