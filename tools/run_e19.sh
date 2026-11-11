@@ -12,6 +12,7 @@
 #   PART default  full v6 on the 20 eval pages with the default config only (run on the other VM; then main is
 #               called with E19_SKIP_DEFAULT=1, which still dedups chosen configs against the default)
 #   E19_OBJECTIVES (env) limits the search objectives and the chosen-config runs, e.g. "lex oracle"
+#   PART crop2  first E19 crop vs current crop (tools/crop_compare.py), boxes only: book-1 and book-2 photos, TraPrInq
 set -euo pipefail
 PART=$1; DATA=$2; OUT=$3; DEV=${4:-cpu}
 PY=${PY:-python}; CFG=configs/final_v6.json; BOOK=$OUT/book; STATS=records/e19/reference_stats_e18.json
@@ -83,5 +84,10 @@ default)
   [ -f "$OUT/runs/default/result.json" ] || $PY -m ocr_pipeline.run --config $CFG --images "$BOOK/images" \
       --references "$BOOK/references" --pages "$EVALP" --out "$OUT/runs" --name default --cache "$OUT/cache" --device "$DEV"
   echo "E19 DEFAULT DONE";;
+crop2)
+  $PY tools/crop_compare.py photos --raw data/extra/ldl1 --out "$OUT/crop2/book1"
+  $PY tools/crop_compare.py photos --raw "$DATA/imagens" --out "$OUT/crop2/book2"
+  [ -n "${TRAPRINQ_XML:-}" ] && $PY tools/crop_compare.py pagexml --xml "$TRAPRINQ_XML" --out "$OUT/crop2/traprinq"
+  echo "E19 CROP2 DONE";;
 *) echo "unknown part $PART"; exit 2;;
 esac

@@ -41,6 +41,7 @@ class CropParams:
     # border-touching component (the crop of the first E19 runs).
     edge_min_side: float = 0.02
     edge_min_area: float = 0.0003
+    paper_closing: bool = True  # see paper_box(closed=); False (with edge_min_side=0) is the first E19 crop
 
 
 @dataclass
@@ -101,16 +102,45 @@ def longest_run(flags: np.ndarray) -> tuple[int, int]:
     return best
 
 
-def paper_box(rgb: np.ndarray, exclude: Box | None = None, min_share: float = 0.5) -> Box:
-    """Rows and columns where at least min_share of the pixels are paper (Otsu on blurred lightness); the longest
-    run of each. Profiles ignore thin bright strips (page-stack edges) and the watermark box (exclude)."""
-    light = cv2.GaussianBlur(cv2.cvtColor(rgb, cv2.COLOR_RGB2LAB)[:, :, 0], (9, 9), 0)
-    paper = cv2.threshold(light, 0, 1, cv2.THRESH_BINARY + cv2.THRESH_OTSU)[1].astype(bool)
-    if exclude is not None:
-        paper[exclude[1]:exclude[3], exclude[0]:exclude[2]] = False
-    top, bottom = longest_run(paper.mean(axis=1) >= min_share)
-    left, right = longest_run(paper[top:bottom].mean(axis=0) >= min_share)
+def fill_gaps(flags: np.ndarray, max_gap: int) -> np.ndarray:
+    """flags with runs of False no longer than max_gap set to True when they lie between two True values."""
+    out, idx = flags.copy(), np.flatnonzero(flags)
+    for a, b in zip(idx[:-1], idx[1:]):
+        if 1 < b - a <= max_gap + 1:
+            out[a + 1:b] = True
+    return out
+
+
+def profile_box(paper: np.ndarray, min_share: float, gap_frac: float = 0.0) -> Box:
+    """Longest run of rows, then of columns (within those rows), with at least min_share paper; gaps shorter than
+    gap_frac of the side are bridged."""
+    h, w = paper.shape
+    top, bottom = longest_run(fill_gaps(paper.mean(axis=1) >= min_share, int(gap_frac * h)))
+    left, right = longest_run(fill_gaps(paper[top:bottom].mean(axis=0) >= min_share, int(gap_frac * w)))
     return int(left), int(top), int(right), int(bottom)
+
+
+def paper_box(rgb: np.ndarray, exclude: Box | None = None, min_share: float = 0.5, closed: bool = True) -> Box:
+    """Rows and columns where at least min_share of the pixels are paper (Otsu on blurred lightness); the longest
+    run of each. Profiles ignore thin bright strips (page-stack edges) and the watermark box (exclude).
+    closed: also the same box on the lightness closed with a square of 1/40 of the shorter side (ink strokes
+    removed, so on dark, stained or densely written paper Otsu still splits paper from background rather than paper
+    from ink) with gaps of 3% bridged, and return the union of both boxes. The union never shrinks the plain box;
+    alone, the closed box can collapse on pages whose lightness is bimodal inside the paper."""
+    lab = cv2.cvtColor(rgb, cv2.COLOR_RGB2LAB)[:, :, 0]
+    variants = [(lab, 0.0)]
+    if closed:
+        k = max(15, (min(lab.shape) // 40) | 1)
+        square = cv2.getStructuringElement(cv2.MORPH_RECT, (k, k))
+        variants.append((cv2.morphologyEx(lab, cv2.MORPH_CLOSE, square), 0.03))
+    found = []
+    for light, gap in variants:
+        light = cv2.GaussianBlur(light, (9, 9), 0)
+        paper = cv2.threshold(light, 0, 1, cv2.THRESH_BINARY + cv2.THRESH_OTSU)[1].astype(bool)
+        if exclude is not None:
+            paper[exclude[1]:exclude[3], exclude[0]:exclude[2]] = False
+        found.append(profile_box(paper, min_share, gap))
+    return (min(b[0] for b in found), min(b[1] for b in found), max(b[2] for b in found), max(b[3] for b in found))
 
 
 def ink_mask(gray: np.ndarray, params: CropParams) -> np.ndarray:
@@ -143,7 +173,7 @@ def auto_crop_box(image: Image.Image, params: CropParams = CropParams()) -> tupl
     """Crop box of one photo and the photo with the watermark painted out (RGB array)."""
     rgb = np.asarray(image.convert('RGB'))
     wm, wm_score = find_watermark(cv2.cvtColor(rgb, cv2.COLOR_RGB2GRAY), params)
-    paper = paper_box(rgb, wm)
+    paper = paper_box(rgb, wm, closed=params.paper_closing)
     if wm is not None:
         rgb = paint_out(rgb, wm)
     left, top, right, bottom = paper
