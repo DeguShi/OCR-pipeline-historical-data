@@ -1,6 +1,6 @@
 # OCR pipeline for 19th-century handwritten records
 
-[![Paper (PDF, pt-BR)](https://img.shields.io/badge/paper-PDF%20(pt--BR)-b31b1b)](docs/paper.pdf)
+[![Paper (PDF, pt-BR)](<https://img.shields.io/badge/paper-PDF%20(pt--BR)-b31b1b>)](docs/paper.pdf)
 [![Weights on Hugging Face](https://img.shields.io/badge/weights-Hugging%20Face-ffcc4d)](https://huggingface.co/KobayashiShiroe/OCR-pipeline-historical-data)
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DeguShi/OCR-pipeline-historical-data/blob/main/notebooks/presentation.ipynb)
 
@@ -115,6 +115,24 @@ python -m ocr_pipeline.batch --config configs/final_v6.json --images my_pages/ -
 
 [`notebooks/new_images.ipynb`](notebooks/new_images.ipynb) does the same for a folder of new images. It can also crop
 full scans from the archive. Python 3.12, CPU or CUDA; a page takes one to two minutes on a laptop CPU.
+
+**Another book (opt-in, experimental).** No training is involved. The automatic crop finds the page in a raw photo.
+It masks the Pró-Memória watermark and trims only rows and columns without ink, so the rubric and the folio number on
+the page edge are kept. The preprocessing chain can then be chosen from a few sample pages, with no transcription, by
+the `lex` objective (words of the greedy reading found in the period dictionary):
+
+```bash
+python -m ocr_pipeline.page_crop raw_photos/ cropped/ --box auto        # also writes cropped/crops.json
+python tools/adapt_preprocess.py search --config configs/final_v6.json --sample cropped/a.jpg cropped/b.jpg cropped/c.jpg \
+    --stats records/e19/reference_stats_e18.json --objectives lex --out outputs/adapt --cache outputs/adapt/cache
+python -m ocr_pipeline.batch --config outputs/adapt/chosen_lex.json --images cropped/ --out outputs/batch
+```
+
+The test book was the Livro de Atas da Câmara 1894–1902: another clerk and another kind of text. On 20 of its pages,
+the `lex` chain gave WER 21.14 against 22.50 for `final_v6.json`. That is −1.36 points, paired bootstrap CI95
+[−2.38, −0.36], measured against Gemini transcriptions. Choosing the chain with the sample transcriptions did no
+better. The search takes about 2 h for 3 pages on a 2-vCPU machine. Details are in
+[`records/e19/README.md`](records/e19/README.md).
 
 ## Repository
 
