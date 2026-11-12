@@ -13,6 +13,9 @@
 #               called with E19_SKIP_DEFAULT=1, which still dedups chosen configs against the default)
 #   E19_OBJECTIVES (env) limits the search objectives and the chosen-config runs, e.g. "lex oracle"
 #   PART crop2  first E19 crop vs current crop (tools/crop_compare.py), boxes only: book-1 and book-2 photos, TraPrInq
+#   PART cropv6 the current crop (crop v2) through full v6; E19_CROPV6 picks jobs (default "book2:default book2:lex
+#               book1"): book 2 eval pages from BOOK (built by the current code) into runs_v2/NAME with configs/final_v6.json
+#               or records/e19/chosen_NAME.json; book-1 GT pages auto-cropped into book1_runs/auto_v2
 set -euo pipefail
 PART=$1; DATA=$2; OUT=$3; DEV=${4:-cpu}
 PY=${PY:-python}; CFG=configs/final_v6.json; BOOK=$OUT/book; STATS=records/e19/reference_stats_e18.json
@@ -34,6 +37,20 @@ search() {  # search OUTDIR LIMIT PAGES...
       --objectives ${E19_OBJECTIVES:-lex conf conflex stat oracle} --out "$out" --cache "$OUT/cache" --device "$DEV" --limit "$limit"
 }
 
+book1_auto() {  # book1_auto DIR: the current auto crop of the raw photos of the 12 book-1 GT pages
+  $PY -c "
+import re, sys
+from pathlib import Path
+from PIL import Image
+sys.path.insert(0, '.')
+from ocr_pipeline.auto_crop import auto_crop
+out = Path(sys.argv[1]); out.mkdir(parents=True, exist_ok=True)
+raw = {int(re.match(r'\d+', p.name).group()): p for p in Path('data/extra/ldl1').glob('*.jpg')}
+for hand in Path('data/images').glob('*.jpg'):
+    auto_crop(Image.open(raw[int(hand.name.split('.')[0])]))[0].save(out / hand.name, quality=95)
+print('book-1 auto crops', len(list(out.glob('*.jpg'))))" "$1"
+}
+
 case $PART in
 smoke)
   SECONDS=0
@@ -47,17 +64,7 @@ crop)
       --cache "$OUT/crop_cache" --device "$DEV"
   $PY tools/crop_eval.py book1 --raw data/extra/ldl1 --hand data/images --out "$OUT/crop" --cache "$OUT/crop_cache" --device "$DEV"
   [ -z "${TRAPRINQ_XML:-}" ] || $PY tools/crop_eval.py pagexml --raw "$TRAPRINQ_IMG" --page-xml "$TRAPRINQ_XML" --out "$OUT/crop"
-  $PY -c "
-import re, sys
-from pathlib import Path
-from PIL import Image
-sys.path.insert(0, '.')
-from ocr_pipeline.auto_crop import auto_crop
-out = Path(sys.argv[1]); out.mkdir(parents=True, exist_ok=True)
-raw = {int(re.match(r'\d+', p.name).group()): p for p in Path('data/extra/ldl1').glob('*.jpg')}
-for hand in Path('data/images').glob('*.jpg'):
-    auto_crop(Image.open(raw[int(hand.name.split('.')[0])]))[0].save(out / hand.name, quality=95)
-print('book-1 auto crops', len(list(out.glob('*.jpg'))))" "$OUT/book1_auto"
+  book1_auto "$OUT/book1_auto"
   for c in hand auto; do
     imgs=data/images; [ $c = auto ] && imgs=$OUT/book1_auto
     [ -f "$OUT/book1_runs/$c/result.json" ] || $PY -m ocr_pipeline.run --config $CFG --images "$imgs" \
@@ -89,5 +96,18 @@ crop2)
   $PY tools/crop_compare.py photos --raw "$DATA/imagens" --out "$OUT/crop2/book2"
   [ -n "${TRAPRINQ_XML:-}" ] && $PY tools/crop_compare.py pagexml --xml "$TRAPRINQ_XML" --out "$OUT/crop2/traprinq"
   echo "E19 CROP2 DONE";;
+cropv6)
+  for job in ${E19_CROPV6:-book2:default book2:lex book1}; do
+    case $job in
+    book2:*) name=${job#book2:}; cfg=$CFG; [ $name = default ] || cfg=records/e19/chosen_$name.json
+      [ -f "$OUT/runs_v2/$name/result.json" ] || $PY -m ocr_pipeline.run --config "$cfg" --images "$BOOK/images" \
+          --references "$BOOK/references" --pages "$EVALP" --out "$OUT/runs_v2" --name $name --cache "$OUT/cache" --device "$DEV";;
+    book1) book1_auto "$OUT/book1_auto_v2"
+      [ -f "$OUT/book1_runs/auto_v2/result.json" ] || $PY -m ocr_pipeline.run --config $CFG --images "$OUT/book1_auto_v2" \
+          --references data/ground_truth --pages all --out "$OUT/book1_runs" --name auto_v2 --cache "$OUT/cache_book1_auto_v2" --device "$DEV";;
+    *) echo "unknown cropv6 job $job"; exit 2;;
+    esac
+  done
+  echo "E19 CROPV6 DONE";;
 *) echo "unknown part $PART"; exit 2;;
 esac
