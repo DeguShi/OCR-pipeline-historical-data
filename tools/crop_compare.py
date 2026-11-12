@@ -1,5 +1,5 @@
-"""Compare two versions of the automatic crop without segmentation: the first E19 crop (CropParams(edge_min_side=0,
-paper_closing=False), commit 32eaf79) against the current defaults.
+"""Compare two versions of the automatic crop without segmentation: an old crop (--base: the first E19 crop, commit
+32eaf79, or crop v2, commit 30a7e59) against the current defaults.
 
   pagexml  scans with PAGE XML (TraPrInq): share of the XML TextLine boxes inside each crop (>= 90% of the box area)
   photos   raw photos without line GT (book 1, book 2): whether the new box contains the old one (then every line
@@ -22,7 +22,8 @@ from ocr_pipeline.auto_crop import Box, CropParams, auto_crop_box  # noqa: E402
 from tools.crop_eval import INSIDE, inside_share, xml_lines  # noqa: E402
 
 logger = logging.getLogger('crop_compare')
-FIRST = CropParams(edge_min_side=0, paper_closing=False)
+BASES = {'first': CropParams(edge_min_side=0, paper_closing=False, paper_gap=0.0),  # first E19 crop
+         'v2': CropParams(paper_gap=0.0)}  # crop v2 (commit 30a7e59)
 
 
 def contains(outer: Box, inner: Box) -> bool:
@@ -45,8 +46,8 @@ def overlay(image: Image.Image, old: Box, new: Box, lines: list[Box], path: Path
     canvas.resize((int(canvas.width * scale), 600)).save(path, quality=85)
 
 
-def compare(image: Image.Image) -> tuple[Any, Any]:
-    return auto_crop_box(image, FIRST)[0], auto_crop_box(image)[0]
+def compare(image: Image.Image, base: str) -> tuple[Any, Any]:
+    return auto_crop_box(image, BASES[base])[0], auto_crop_box(image)[0]
 
 
 def run_pagexml(args: argparse.Namespace) -> list[dict[str, Any]]:
@@ -54,7 +55,7 @@ def run_pagexml(args: argparse.Namespace) -> list[dict[str, Any]]:
     for xml in sorted(args.xml.glob('*.xml')):
         name, lines = xml_lines(xml)
         image = Image.open(xml.parent.parent / name)
-        old, new = compare(image)
+        old, new = compare(image, args.base)
         s_old, s_new = [inside_share(l, old.box) for l in lines], [inside_share(l, new.box) for l in lines]
         row = {'image': name, 'n_lines': len(lines), 'inside_old': sum(s >= INSIDE for s in s_old),
                'inside_new': sum(s >= INSIDE for s in s_new), 'old': list(old.box), 'new': list(new.box),
@@ -74,7 +75,7 @@ def run_photos(args: argparse.Namespace) -> list[dict[str, Any]]:
     rows = []
     for path in sorted(args.raw.glob('*.jpg')):
         image = Image.open(path)
-        old, new = compare(image)
+        old, new = compare(image, args.base)
         row = {'photo': path.name, 'old': list(old.box), 'new': list(new.box), 'contains': contains(new.box, old.box),
                'area_ratio': round(area(new.box) / max(area(old.box), 1), 3)}
         rows.append(row)
@@ -93,6 +94,7 @@ def main() -> None:
     parser.add_argument('--xml', type=Path, help='pagexml: folder of PAGE XML files (images in the parent folder)')
     parser.add_argument('--raw', type=Path, help='photos: folder of raw photos')
     parser.add_argument('--out', type=Path, required=True)
+    parser.add_argument('--base', choices=list(BASES), default='first', help='the old crop the current one is compared with')
     args = parser.parse_args()
     args.out.mkdir(parents=True, exist_ok=True)
     rows = run_pagexml(args) if args.mode == 'pagexml' else run_photos(args)

@@ -42,6 +42,9 @@ class CropParams:
     edge_min_side: float = 0.02
     edge_min_area: float = 0.0003
     paper_closing: bool = True  # see paper_box(closed=); False (with edge_min_side=0) is the first E19 crop
+    # gaps up to this share of the side are bridged in the plain paper profile too: on a page with no background a
+    # dense line of writing can drop a few rows below min_share and cut the run (0 is crop v2)
+    paper_gap: float = 0.01
 
 
 @dataclass
@@ -120,15 +123,18 @@ def profile_box(paper: np.ndarray, min_share: float, gap_frac: float = 0.0) -> B
     return int(left), int(top), int(right), int(bottom)
 
 
-def paper_box(rgb: np.ndarray, exclude: Box | None = None, min_share: float = 0.5, closed: bool = True) -> Box:
+def paper_box(rgb: np.ndarray, exclude: Box | None = None, min_share: float = 0.5, closed: bool = True,
+              gap: float = 0.0) -> Box:
     """Rows and columns where at least min_share of the pixels are paper (Otsu on blurred lightness); the longest
     run of each. Profiles ignore thin bright strips (page-stack edges) and the watermark box (exclude).
     closed: also the same box on the lightness closed with a square of 1/40 of the shorter side (ink strokes
     removed, so on dark, stained or densely written paper Otsu still splits paper from background rather than paper
     from ink) with gaps of 3% bridged, and return the union of both boxes. The union never shrinks the plain box;
-    alone, the closed box can collapse on pages whose lightness is bimodal inside the paper."""
+    alone, the closed box can collapse on pages whose lightness is bimodal inside the paper.
+    gap: also the plain profile with gaps up to this share bridged (a dense line of writing on a page with no
+    background), in the union too, so the box never shrinks below the crop v2 box (gap 0)."""
     lab = cv2.cvtColor(rgb, cv2.COLOR_RGB2LAB)[:, :, 0]
-    variants = [(lab, 0.0)]
+    variants = [(lab, 0.0)] + ([(lab, gap)] if gap > 0 else [])
     if closed:
         k = max(15, (min(lab.shape) // 40) | 1)
         square = cv2.getStructuringElement(cv2.MORPH_RECT, (k, k))
@@ -173,7 +179,7 @@ def auto_crop_box(image: Image.Image, params: CropParams = CropParams()) -> tupl
     """Crop box of one photo and the photo with the watermark painted out (RGB array)."""
     rgb = np.asarray(image.convert('RGB'))
     wm, wm_score = find_watermark(cv2.cvtColor(rgb, cv2.COLOR_RGB2GRAY), params)
-    paper = paper_box(rgb, wm, closed=params.paper_closing)
+    paper = paper_box(rgb, wm, closed=params.paper_closing, gap=params.paper_gap)
     if wm is not None:
         rgb = paint_out(rgb, wm)
     left, top, right, bottom = paper

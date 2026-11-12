@@ -13,6 +13,7 @@
 #               called with E19_SKIP_DEFAULT=1, which still dedups chosen configs against the default)
 #   E19_OBJECTIVES (env) limits the search objectives and the chosen-config runs, e.g. "lex oracle"
 #   PART crop2  first E19 crop vs current crop (tools/crop_compare.py), boxes only: book-1 and book-2 photos, TraPrInq
+#   PART crop3  crop v2 vs current crop (paper_gap), boxes only, same sets as crop2
 #   PART cropv6 the current crop (crop v2) through full v6; E19_CROPV6 picks jobs (default "book2:default book2:lex
 #               book1"): book 2 eval pages from BOOK (built by the current code) into runs_v2/NAME with configs/final_v6.json
 #               or records/e19/chosen_NAME.json; book-1 GT pages auto-cropped into book1_runs/auto_v2
@@ -96,6 +97,12 @@ crop2)
   $PY tools/crop_compare.py photos --raw "$DATA/imagens" --out "$OUT/crop2/book2"
   [ -n "${TRAPRINQ_XML:-}" ] && $PY tools/crop_compare.py pagexml --xml "$TRAPRINQ_XML" --out "$OUT/crop2/traprinq"
   echo "E19 CROP2 DONE";;
+crop3)
+  for set in book1:data/extra/ldl1 book2:$DATA/imagens; do
+    $PY tools/crop_compare.py photos --base v2 --raw "${set#*:}" --out "$OUT/crop3/${set%%:*}"
+  done
+  [ -n "${TRAPRINQ_XML:-}" ] && $PY tools/crop_compare.py pagexml --base v2 --xml "$TRAPRINQ_XML" --out "$OUT/crop3/traprinq"
+  echo "E19 CROP3 DONE";;
 cropv6)
   for job in ${E19_CROPV6:-book2:default book2:lex book1}; do
     case $job in
