@@ -127,18 +127,47 @@ chains. Among the top chains, however, the lex gap is small (335 for the chosen 
   - TraPrInq: 6 pages where the new box does not contain the old one recede 1–47 px, and keep every PAGE-XML line.
   - Watermark detector: it still fires on 7 TraPrInq pages (another archive's stamps; max score 0.59, threshold
     0.55). It only paints the matched box, and no line is lost on those pages (`crop2_traprinq.json`, `watermark`).
-  - Neither crop v2 nor fix 1 was run through Kraken or v6. The E19 numbers above use the first crop.
+  - The E19 numbers above use the first crop. Crop v2 through v6: see below.
+- **Crop v2 through full v6** (2026-11-12, part `cropv6`, code 92d506c). Free Colab CPU, 2 VMs: e19d book 2
+  default + book 1 (5033 s); e19e book 2 lex (3187 s). Before the job, the book-2 boxes built on the VM
+  were checked against `crop2_book2.json` "new" (50/50).
+  - Book 2: 5 eval pages get a different box: 7 (photo 81, rubric), 16 (the second photo numbered 89), 23, 35, 48.
+    The 15 pages with an unchanged box give byte-identical text in both configs, so the pipeline is deterministic and
+    every difference comes from the crop.
+  - Default: 22.50 → 22.55 (v1 − v2 = −0.06, CI95 [−0.47, 0.38], p = 0.90). Lex: 21.14 → 21.47 (−0.33, CI95
+    [−0.86, 0.19], p = 0.26). Neither change is significant.
+  - Lex vs default with crop v2: 21.47 vs 22.55 / CER 7.16 vs 7.34. Lex − default = −1.08 points, CI95 [−2.16, −0.03],
+    p = 0.051, pages 11/4/5 (`bootstrap_v2_default_vs_lex.json`). The pre-registered criterion still holds. The gain is
+    smaller than with the first crop (−1.36, p = 0.011), mostly because lex loses 6 words on page 7 and 8 on page 35.
+  - Book 1, official GT: auto v2 19.94 / 5.33, the same corpus WER as auto v1, although 10 of 12 pages change text
+    (v1 − v2 = 0.00, CI95 [−0.62, 0.62]). Hand vs auto v2: +0.54, CI95 [−0.37, 1.48], p = 0.30; Gemini references:
+    −0.28, CI95 [−0.99, 0.43], p = 0.52. As with the first crop, no significant difference from the hand crops.
+- **Fix 3, gaps in the plain paper profile** (`exp/e19-crop-gap` b0815cf, `CropParams.paper_gap = 0.01`). On
+  16809_m0014b the page fills the photo (no background). Rows across dense writing fall below 50% "paper" (1–6 rows
+  each), and the longest run stopped at row 1392 of 1848. Gaps of up to 1% of the side are now bridged in the plain
+  profile, and the box is the union with the gap-0 box, so it never shrinks below crop v2.
+  - Check (part `crop3`, crop v2 vs crop v3, boxes only; e19e, 1125 s; `crop3_{book1,book2,traprinq}.json`):
+    TraPrInq 13476 → **13490 of 13497 lines (99.95%)**; no page loses a line; 3 boxes change, all containing the old
+    one (16809_m0014b now reaches the page bottom; 16809_m0012a gains its last line).
+  - Book 1: 3 of 106 photos change by 1 px (photos 18, 24, 90; none of the 12 GT pages). Book 2: 1 of 50 (photo 127,
+    1 px; not an eval page). So the crop v2 v6 numbers above also hold for crop v3.
+  - 7 lines remain outside, on 5 pages: 11735_m0109 (3 header lines above a torn, dark edge) and 4 single lines.
 
 **Cost.** Free Colab CPU only.
 
 - Run 1: VM A 6456 s (crop) + ~1 h of seg; VM B ~3 h. Both lost.
 - Run 2: VM A 3299 s (default) + 16062 s (seg); VM B 17814 s (search + lex and oracle runs).
 - Crop v2 check: 1 VM, 1154 s.
+- Crop v2 through v6: 2 VMs, 5033 s and 3187 s. Crop v3 check: 1 VM, 1125 s.
 
 **Not done / open.**
 
-- Objectives conf, conflex and stat were not run.
-- Crop v2: no Kraken or v6 re-run. TraPrInq page 16809_m0014b still loses its bottom half.
+- Objectives conf, conflex and stat: not run through v6. From the search log (`candidates.jsonl`, no new compute),
+  conflex picks the same chain as lex (seg up2 clahe+remove_rules 313.4, rec none). conf picks seg up2
+  illumination+contrast+remove_rules and stat seg up2 denoise+contrast+remove_rules; their rec stage was not run.
+  Both segmentations are worse than the lex one on the 3 samples (greedy CER 13.51 and 17.65 vs 12.94) and on the 20
+  eval pages (weak GT, 14.20 and 17.07 vs 13.23), so the full v6 run (about 5 h CPU) would not change what is shipped.
+- Crop: 7 TraPrInq lines (5 pages) remain outside with crop v3.
 - Watermark false positives on another archive: harmless here, not fixed.
 - One book only, 20 pages; Gemini references.
 - Shipped as an opt-in path in the repository README (crop, lex search, batch); `entrega_ocr` not rebuilt (built from the main code; these branches are not merged).

@@ -130,8 +130,9 @@ python -m ocr_pipeline.batch --config outputs/adapt/chosen_lex.json --images cro
 
 The test book was the Livro de Atas da Câmara 1894–1902: another clerk and another kind of text. On 20 of its pages,
 the `lex` chain gave WER 21.14 against 22.50 for `final_v6.json`. That is −1.36 points, paired bootstrap CI95
-[−2.38, −0.36], measured against Gemini transcriptions. Choosing the chain with the sample transcriptions did no
-better. The search takes about 2 h for 3 pages on a 2-vCPU machine. Details are in
+[−2.38, −0.36], measured against Gemini transcriptions. Those runs used the first version of the crop. With the
+current crop, 5 of the 20 boxes change and the result is 21.47 against 22.55: −1.08, CI95 [−2.16, −0.03], p = 0.05.
+Choosing the chain with the sample transcriptions did no better. The search takes about 2 h for 3 pages on a 2-vCPU machine. Details are in
 [`records/e19/README.md`](records/e19/README.md).
 
 ## Repository

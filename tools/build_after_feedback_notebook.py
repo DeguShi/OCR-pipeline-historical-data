@@ -403,9 +403,47 @@ for f, title in [('crop2_book2_81.jpg', 'livro 2, foto 81: a rubrica "Souza Fran
     display(Image(filename=str(R / 'e19/figures' / f), width=420))
 '''
 
-E19_CROP3_MD = '''A página 16809_m0014b não tem fundo: linhas de escrita muito densa ficam com menos de 50% de "papel" e quebram a
-faixa. A correção (tapar buracos de até 1% também na caixa simples, sem nunca encolher a caixa v2) está no branch
-`exp/e19-crop-gap` e sendo validada nos três conjuntos.
+E19_CROP3_MD = '''**Terceira correção (recorte v3).** A página 16809_m0014b não tem fundo: linhas de escrita muito densa ficam com
+menos de 50% de "papel" e quebram a faixa. Agora buracos de até 1% também são tapados na caixa simples, e a caixa
+nunca fica menor que a v2. Comparação v2 × v3, só das caixas:
+'''
+
+E19_CROP3 = r'''
+t3 = load('e19/crop3_traprinq.json')
+n3 = sum(r['n_lines'] for r in t3)
+table(['conjunto', 'recorte v2', 'recorte v3'], [
+    ['TraPrInq: linhas dentro', f"{sum(r['inside_old'] for r in t3)}/{n3}",
+     f"{sum(r['inside_new'] for r in t3)}/{n3} ({sum(r['inside_new'] for r in t3) / n3:.2%}); {sum(r['inside_new'] < r['inside_old'] for r in t3)} páginas pioram".replace('.', ',')],
+    ['livro 1: caixas que mudam', '', f"{sum(r['old'] != r['new'] for r in load('e19/crop3_book1.json'))}/106 (1 px; nenhuma das 12 páginas com GT)"],
+    ['livro 2: caixas que mudam', '', f"{sum(r['old'] != r['new'] for r in load('e19/crop3_book2.json'))}/50 (1 px; nenhuma página de avaliação)"],
+])
+display(Markdown('**16809_m0014b com o recorte v3** (vermelho: caixa v2; a caixa v3 vai até o pé da página)'))
+display(Image(filename=str(R / 'e19/figures/crop3_traprinq_16809_m0014b.jpg'), width=420))
+'''
+
+E19_CROPV6_MD = '''### O recorte novo muda os resultados?
+A v6 completa foi rodada de novo com o recorte v2. No livro 2 mudam 5 das 20 caixas de avaliação; as 15 páginas com a
+mesma caixa deram exatamente o mesmo texto (o pipeline é determinístico). Como o v3 não muda nenhuma caixa avaliada,
+estes números valem para o recorte atual.
+'''
+
+E19_CROPV6 = r'''
+def flip(b: dict) -> str:  # bootstrap files store a - b; show b - a
+    w, t, l = b['pages_won_tied_lost']
+    return f"{num(-b['dwer'])} {ci(-b['ci95'][1], -b['ci95'][0])}, p={num(b['p_signflip'], 3)}, págs. {l}/{t}/{w}"
+
+
+table(['comparação', 'WER', 'Δ (IC95), p, páginas ganha/empata/perde'], [
+    ['livro 2, padrão: recorte v1 → v2', '22,50 → 22,55', flip(load('e19/bootstrap_default_v1_vs_v2.json'))],
+    ['livro 2, lex: recorte v1 → v2', '21,14 → 21,47', flip(load('e19/bootstrap_lex_v1_vs_v2.json'))],
+    ['**livro 2 com recorte v2: lex − padrão**', '21,47 vs 22,55', flip(load('e19/bootstrap_v2_default_vs_lex.json'))],
+    ['livro 1, GT oficial: automático v2 − manual', '19,94 vs 19,40', flip(load('e19/bootstrap_book1_hand_vs_auto_v2_official.json'))],
+    ['livro 1, ref. Gemini: automático v2 − manual', '8,33 vs 8,61', flip(load('e19/bootstrap_book1_hand_vs_auto_v2_gemini.json'))],
+])
+'''
+
+E19_CROPV6_READ = '''Nenhuma mudança de recorte é significativa. Com o recorte v2, o `lex` continua melhor que o padrão (IC exclui 0), mas
+a vantagem cai de 1,36 para 1,08 ponto e o p fica em 0,051: o lex perde 6 palavras na página 7 e 8 na página 35.
 '''
 
 CAVEATS = '''## Ressalvas e o que está em aberto
@@ -417,7 +455,8 @@ CAVEATS = '''## Ressalvas e o que está em aberto
   da literatura + sua decodificação, com os mesmos dados de treino): o plano está escrito (E20).
 - **E18/E19:** um livro novo do mesmo acervo (20 páginas, 30 fólios seguidos de um escrivão) e 4 processos do
   TraPrInq. Evidência de direção forte no E19 (IC exclui 0), fraca no TraPrInq (sem IC).
-- **Recorte v2** está sendo passado pela v6 completa para confirmar que os números do E19 e do livro 1 não mudam.
+- **Recorte:** 7 linhas do TraPrInq (5 páginas) ainda ficam fora; a logo d'água dá falso positivo em carimbos de outro
+  acervo (sem perda de linha).
 - **Uso:** o caminho opcional para outro livro (recorte automático → busca `lex` → batch) está no README do repositório.
 '''
 
@@ -428,7 +467,8 @@ def build() -> nbformat.NotebookNode:
              code(E17_ERR), md(E17_CURVE_MD), code(E17_CURVE), md(E17_EX_MD), code(E17_EX), md(E18_MD), code(E18_SHIFTS),
              md(E18_READ), code(E18_FIG), md(E18_CTRL_MD), code(E18_CTRL), md(E18_BOOKS_MD), code(E18_BOOKS),
              md(E18_BOOKS_READ), md(E19_MD), code(E19_MAIN), md(E19_READ), code(E19_SEG), md(E19_CROP_MD), code(E19_CROP),
-             md(E19_CROP2_MD), code(E19_CROP2), md(E19_CROP3_MD), md(CAVEATS)]
+             md(E19_CROP2_MD), code(E19_CROP2), md(E19_CROP3_MD), code(E19_CROP3), md(E19_CROPV6_MD),
+             code(E19_CROPV6), md(E19_CROPV6_READ), md(CAVEATS)]
     for cell in cells:
         cell.source = cell.source.strip('\n')
     nb = new_notebook(cells=cells)
