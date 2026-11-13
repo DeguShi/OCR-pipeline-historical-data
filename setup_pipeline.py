@@ -31,6 +31,12 @@ DOWNLOADS = {  # path (as engine.MODELS / configs expect) -> (url, algorithm, di
     Path('models/10.5281_zenodo.21788410/medium.safetensors'):
         ('https://zenodo.org/records/21788410/files/medium.safetensors?download=1', 'md5',
          'e3411a453ce3b9e9efae3f8631d85762'),
+    Path('models/10.5281_zenodo.14543904/traprinq.mlmodel'):  # E20 external recognizer
+        ('https://zenodo.org/records/14543904/files/traprinq.mlmodel?download=1', 'md5',
+         'b7f84ede75a0665c275346d94fdc1b95'),
+    Path('models/10.5281_zenodo.13788177/mccatmus.mlmodel'):  # E20 external recognizer (McCATMuS_nfd_nofix_V1)
+        ('https://zenodo.org/api/records/13788177/files/McCATMuS_nfd_nofix_V1.mlmodel/content', 'md5',
+         'e531463f631303c700750784b4f9ed63'),
     Path('models/lexicon/pt_br_50k.txt'):
         ('https://raw.githubusercontent.com/hermitdave/FrequencyWords/master/content/2018/pt_br/pt_br_50k.txt',
          'sha256', 'a61d6f2ede97c5daad5fb3907b72a228f0aff12668be6d24da590d20804fa611'),
