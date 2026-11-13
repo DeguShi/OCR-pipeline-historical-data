@@ -1,0 +1,74 @@
+{
+  "p0_r0_medium": {
+    "wer_norm": 0.48717948717948717,
+    "cer_norm": 0.15954664341761116,
+    "page6": {
+      "norm_we": 95,
+      "norm_rw": 195,
+      "norm_ce": 183
+    }
+  },
+  "p6_r0_medium": {
+    "wer_norm": 0.22564102564102564,
+    "cer_norm": 0.07759372275501308,
+    "page6": {
+      "norm_we": 44,
+      "norm_rw": 195,
+      "norm_ce": 89
+    }
+  },
+  "p0_r1_st_c1m": {
+    "wer_norm": 0.3076923076923077,
+    "cer_norm": 0.06974716652136007,
+    "page6": {
+      "norm_we": 60,
+      "norm_rw": 195,
+      "norm_ce": 80
+    }
+  },
+  "p6_r1_st_c1m": {
+    "wer_norm": 0.19487179487179487,
+    "cer_norm": 0.044463818657367045,
+    "page6": {
+      "norm_we": 38,
+      "norm_rw": 195,
+      "norm_ce": 51
+    }
+  },
+  "p0_r2_traprinq": {
+    "wer_norm": 0.6666666666666666,
+    "cer_norm": 0.2702702702702703,
+    "page6": {
+      "norm_we": 130,
+      "norm_rw": 195,
+      "norm_ce": 310
+    }
+  },
+  "p6_r2_traprinq": {
+    "wer_norm": 0.4564102564102564,
+    "cer_norm": 0.1952920662598082,
+    "page6": {
+      "norm_we": 89,
+      "norm_rw": 195,
+      "norm_ce": 224
+    }
+  },
+  "p0_r3_mccatmus": {
+    "wer_norm": 0.8717948717948718,
+    "cer_norm": 0.4184829991281604,
+    "page6": {
+      "norm_we": 170,
+      "norm_rw": 195,
+      "norm_ce": 480
+    }
+  },
+  "p6_r3_mccatmus": {
+    "wer_norm": 0.717948717948718,
+    "cer_norm": 0.3679163034001744,
+    "page6": {
+      "norm_we": 140,
+      "norm_rw": 195,
+      "norm_ce": 422
+    }
+  }
+}
