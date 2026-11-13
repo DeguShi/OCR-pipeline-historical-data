@@ -30,6 +30,7 @@ from pathlib import Path
 
 logger = logging.getLogger(__name__)
 TUNING = '5,6,8,9,11,13,14,15,16'
+POSTERIORS = 'outputs/posteriors/v6_gt12'  # E17 (R1); E20 passes each recognizer's tuning export
 LMS = {'kn3_w1': ('outputs/lm/kn3_w1.bin', 'outputs/lm/period_w1.txt'),
        'kn3_w4b8': ('outputs/lm/kn3_w4b8.bin', 'outputs/lm/period_w4_livro78.txt')}
 CORPORA = {'w1': 'outputs/lm/period_w1.txt', 'w4b8': 'outputs/lm/period_w4_livro78.txt'}
@@ -78,8 +79,8 @@ def configs_b2() -> list[dict]:
     return [dict(c, id=i) for i, c in enumerate(out)]
 
 
-def command(kind: str, c: dict, python: str, out: Path) -> list[str]:
-    common = ['--posteriors', 'outputs/posteriors/v6_gt12', '--pages', TUNING, '--workers', '2', '--out', str(out)]
+def command(kind: str, c: dict, python: str, out: Path, posteriors: str = POSTERIORS) -> list[str]:
+    common = ['--posteriors', posteriors, '--pages', TUNING, '--workers', '2', '--out', str(out)]
     if kind in ('A', 'A2'):
         lm, corpus = LMS[c['lm']]
         return [python, '-I', 'tools/baseline_pyctcdecode.py', *common, '--lm', lm, '--corpus', corpus,
@@ -95,10 +96,10 @@ def done_ids(results: Path) -> set[int]:
     return {json.loads(line)['id'] for line in results.read_text().splitlines() if line.strip()}
 
 
-def run_one(kind: str, c: dict, python: str, root: Path) -> dict:
+def run_one(kind: str, c: dict, python: str, root: Path, posteriors: str = POSTERIORS) -> dict:
     with tempfile.TemporaryDirectory() as tmp:
         start = time.time()
-        subprocess.run(command(kind, c, python, Path(tmp)), cwd=root, check=True)
+        subprocess.run(command(kind, c, python, Path(tmp), posteriors), cwd=root, check=True)
         (lines_file,) = Path(tmp).glob('*/lines.json')
         return {'id': c['id'], 'kind': kind, 'params': c, 'seconds': round(time.time() - start, 1),
                 'lines': json.loads(lines_file.read_text())}
@@ -113,6 +114,7 @@ def main() -> None:
     parser.add_argument('--shard', default='0/1', help='i/k')
     parser.add_argument('--python', required=True, help='interpreter of the decoder environment')
     parser.add_argument('--root', type=Path, required=True, help='repository root (tools/ and outputs/)')
+    parser.add_argument('--posteriors', default=POSTERIORS, help='posterior export, relative to --root')
     parser.add_argument('--out', type=Path, required=True)
     parser.add_argument('--list', action='store_true', help='print the configurations and exit')
     args = parser.parse_args()
@@ -137,7 +139,7 @@ def main() -> None:
     logger.info('kind %s shard %s: %d configurations, %d done, %d to run', args.kind, args.shard, len(configs),
                 len(configs) - len(todo), len(todo))
     for c in todo:
-        row = run_one(args.kind, c, args.python, args.root)
+        row = run_one(args.kind, c, args.python, args.root, args.posteriors)
         with results.open('a', encoding='utf-8') as f:
             f.write(json.dumps(row, ensure_ascii=False) + '\n')
             f.flush()

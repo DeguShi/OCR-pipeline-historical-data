@@ -40,6 +40,8 @@ MODELS = {
     'st_c1s': Path('models/finetuned/st_c1s.safetensors'),  # 78 Gemini training pages, from st_c0
     'st_c1m': Path('models/finetuned/st_c1m.safetensors'),  # 78 Gemini training pages, from medium
     'st_c2m': Path('models/finetuned/st_c2m.safetensors'),  # same, realigned with the st_c1m pipeline, from medium
+    'e20_r4_traprinq': Path('models/finetuned/e20/r4_traprinq_lr3e-4.safetensors'),  # E20 R4: TraPrInq fine-tuned on the st_c1m lines
+    'e20_r5_mccatmus': Path('models/finetuned/e20/r5_mccatmus_lr3e-4.safetensors'),  # E20 R5: McCATMuS, same lines
 }
 
 

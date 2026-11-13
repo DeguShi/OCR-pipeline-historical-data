@@ -37,6 +37,12 @@ DOWNLOADS = {  # path (as engine.MODELS / configs expect) -> (url, algorithm, di
     Path('models/10.5281_zenodo.13788177/mccatmus.mlmodel'):  # E20 external recognizer (McCATMuS_nfd_nofix_V1)
         ('https://zenodo.org/api/records/13788177/files/McCATMuS_nfd_nofix_V1.mlmodel/content', 'md5',
          'e531463f631303c700750784b4f9ed63'),
+    Path('models/finetuned/e20/r4_traprinq_lr3e-4.safetensors'):  # E20 R4 (records/e20/train/selection.json)
+        (f'{HUB}/e20/r4_traprinq_lr3e-4.safetensors', 'sha256',
+         'a891fef0450f34238eac6b726c9ca55d0ac2b8840d5dccce594c7748d976e92e'),
+    Path('models/finetuned/e20/r5_mccatmus_lr3e-4.safetensors'):  # E20 R5
+        (f'{HUB}/e20/r5_mccatmus_lr3e-4.safetensors', 'sha256',
+         '97254bd758fce9d09c0c919ec75ceb78feb484e18791d6b5106899a769d34dec'),
     Path('models/lexicon/pt_br_50k.txt'):
         ('https://raw.githubusercontent.com/hermitdave/FrequencyWords/master/content/2018/pt_br/pt_br_50k.txt',
          'sha256', 'a61d6f2ede97c5daad5fb3907b72a228f0aff12668be6d24da590d20804fa611'),
