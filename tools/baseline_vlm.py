@@ -14,6 +14,8 @@ Prompts (--prompt):
 - paper_pt_period: paper_pt plus one sentence asking to keep the historical spelling (added after paper_en, on the
   tuning pages, modernized period forms such as funcções -> funções).
 Which one is used on held-out and test is chosen on the tuning pages.
+- tr_en, tr_pt, tr_pt_period (E20 system V0): transcription from the line crop alone, no OCR text; every line with
+  a crop is run, also those whose OCR text is empty. Chosen among themselves on the tuning pages.
 
 Every line is appended to <out>/generations.jsonl with fsync; a restarted run skips the lines already there. At the
 end <out>/lines.json ({page: [lines]}, for tools/score_lines.py) and <out>/params.json are written.
@@ -43,9 +45,23 @@ PERIOD = (' The text is a Portuguese manuscript from the 1890s: keep its histori
 EXAMPLES = {'paper_en': ('__RO BBERY AT A BARONET’S. V', 'ROBBERY AT A BARONETS.'),
             'paper_pt': ('Reginento interro da Camara Memicipal', 'Regimento interno da Camara Municipal'),
             'paper_pt_period': ('Reginento interro da Camara Memicipal', 'Regimento interno da Camara Municipal')}
+# E20 system V0: the VLM as the whole recognizer. Only the line crop goes in (same blla segmentation as every other
+# system); the OCR text is not shown. Zero-shot; which prompt is used is chosen on the tuning pages.
+TRANSCRIBE = {
+    'tr_en': 'Transcribe the handwritten text in this image exactly as written. Return only the text, on one line, '
+             'with no commentary.',
+    'tr_pt': 'This image is one line of a handwritten Brazilian Portuguese municipal law register from the 1890s. '
+             'Transcribe it exactly as written. Return only the text, on one line, with no commentary.',
+    'tr_pt_period': 'This image is one line of a handwritten Brazilian Portuguese municipal law register from the '
+                    '1890s. Transcribe it exactly as written, keeping its historical spelling, accents and '
+                    'abbreviations; do not modernize them. Return only the text, on one line, with no commentary.'}
+PROMPTS = sorted([*EXAMPLES, *TRANSCRIBE])
 
 
 def messages(prompt: str, image: Image.Image, ocr: str) -> list[dict]:
+    if prompt in TRANSCRIBE:
+        return [{'role': 'user', 'content': [{'type': 'image', 'image': image},
+                                             {'type': 'text', 'text': TRANSCRIBE[prompt]}]}]
     example_ocr, example_fixed = EXAMPLES[prompt]
     text = lambda t: [{'type': 'text', 'text': t}]  # noqa: E731
     instruction = INSTRUCTION.replace(' If you understand', PERIOD + ' If you understand') \
@@ -94,7 +110,7 @@ def run(args: argparse.Namespace) -> dict[tuple[int, int], dict]:
     model = processor = None
     for n, (page, row) in enumerate(todo, 1):
         start, text, tokens = time.time(), '', 0
-        if row['ocr'].strip() and row['file']:
+        if row['file'] and (args.prompt in TRANSCRIBE or row['ocr'].strip()):
             if model is None:
                 model, processor = load(args.quant)
             with Image.open(args.manifest.parent / row['file']) as img:
@@ -115,7 +131,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument('--manifest', type=Path, required=True)
     parser.add_argument('--pages', default='all')
-    parser.add_argument('--prompt', choices=sorted(EXAMPLES), required=True)
+    parser.add_argument('--prompt', choices=PROMPTS, required=True)
     parser.add_argument('--quant', choices=['4bit', 'fp16'], default='4bit')
     parser.add_argument('--max-new', type=int, default=160)
     parser.add_argument('--seed', type=int, default=42)
@@ -131,7 +147,9 @@ def main() -> None:
     (args.out / 'lines.json').write_text(json.dumps(lines, ensure_ascii=False, indent=1), encoding='utf-8')
     import transformers
     import bitsandbytes
-    params = {'model': MODEL, 'revision': REVISION, 'prompt': args.prompt, 'example': EXAMPLES[args.prompt],
+    params = {'model': MODEL, 'revision': REVISION, 'prompt': args.prompt,
+              'mode': 'transcribe' if args.prompt in TRANSCRIBE else 'correct',
+              'example': EXAMPLES.get(args.prompt), 'instruction': TRANSCRIBE.get(args.prompt),
               'quant': args.quant, 'max_new': args.max_new, 'seed': args.seed, 'do_sample': False,
               'torch': torch.__version__, 'transformers': transformers.__version__,
               'bitsandbytes': bitsandbytes.__version__, 'gpu': torch.cuda.get_device_name(0),
