@@ -77,11 +77,10 @@ train)  # R4/R5: TraPrInq / McCATMuS fine-tuned on the rebuilt st_c1m lines with
     echo "TRAIN $tag batch $b best $(basename "$best") sha256 $(sha256sum "$T/$tag.safetensors" | cut -c1-16)"
   done
   ;;
-select)  # step 5, tuning pages only, the same budget per recognizer (posteriors from PART tune_post in OUT/tune):
+choose)  # step 5, tuning pages only, the same budget per recognizer (posteriors from PART tune_post in OUT/tune):
   # PA = pyctcdecode+KenLM: baseline_search A (id 0 + 60 random) then A2 (center + 30 local) around the best;
   # PB = Word Beam Search at the E17 frozen configuration (B2 id 1), kept classes from this recognizer's tuning
   # posteriors only; P6 = the E16 v6 sweep (tools/p6_sweep.py). Every output goes through tools/charmap.py before
-$1
   # Smoke overrides: E20_SEL_N, E20_SEL_N2, E20_PB_BEAM, E20_P6_VARIANTS (comma list).
   T=$OUT/select; TUNE=5,6,8,9,11,13,14,15,16; DPY=${DPY:-python}
   best() { $PY -c "import json,sys; r=json.loads(open(sys.argv[1]).readline()); r['params'].pop('id'); print(json.dumps(r['params']))" "$1"; }
