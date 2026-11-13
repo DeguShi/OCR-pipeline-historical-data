@@ -1,0 +1,14 @@
+{
+  "frozen": "tr_pt",
+  "chosen_on": "tuning pages 5,6,8,9,11,13,14,15,16, official GT, normalized WER",
+  "tuning_wer_norm": {
+    "tr_en": 0.5931,
+    "tr_pt": 0.5181,
+    "tr_pt_period": 0.5339
+  },
+  "model": "Qwen/Qwen2.5-VL-7B-Instruct@cc594898",
+  "quant": "4bit NF4",
+  "max_new": 160,
+  "do_sample": false,
+  "date": "2026-11-13"
+}
