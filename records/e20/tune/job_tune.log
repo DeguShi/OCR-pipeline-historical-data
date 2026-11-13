@@ -1,0 +1,26 @@
+  export_r0_medium 	Elapsed (wall clock) time (h:mm:ss or m:ss): 14:46.65
+  export_r0_medium 	Maximum resident set size (kbytes): 2210196
+2026-11-13 14:03:14,837 9 pages, 285 lines
+WER norm 58.18% | CER norm 21.02% -> outputs/e20/tune/runs/p0_r0_medium
+  p6_r0_medium 	Elapsed (wall clock) time (h:mm:ss or m:ss): 7:29.96
+  p6_r0_medium 	Maximum resident set size (kbytes): 753956
+WER norm 30.36% | CER norm 13.00% -> outputs/e20/tune/runs/p6_r0_medium
+TUNE r0_medium done
+  export_r2_traprinq 	Elapsed (wall clock) time (h:mm:ss or m:ss): 6:29.42
+  export_r2_traprinq 	Maximum resident set size (kbytes): 1494204
+2026-11-13 14:17:14,829 9 pages, 285 lines
+WER norm 75.00% | CER norm 33.27% -> outputs/e20/tune/runs/p0_r2_traprinq
+  p6_r2_traprinq 	Elapsed (wall clock) time (h:mm:ss or m:ss): 6:41.16
+  p6_r2_traprinq 	Maximum resident set size (kbytes): 682592
+WER norm 59.54% | CER norm 28.44% -> outputs/e20/tune/runs/p6_r2_traprinq
+TUNE r2_traprinq done
+  export_r3_mccatmus 	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:53.54
+  export_r3_mccatmus 	Maximum resident set size (kbytes): 1183996
+2026-11-13 14:26:50,064 9 pages, 285 lines
+WER norm 91.70% | CER norm 46.75% -> outputs/e20/tune/runs/p0_r3_mccatmus
+  p6_r3_mccatmus 	Elapsed (wall clock) time (h:mm:ss or m:ss): 8:09.14
+  p6_r3_mccatmus 	Maximum resident set size (kbytes): 685500
+WER norm 78.89% | CER norm 42.90% -> outputs/e20/tune/runs/p6_r3_mccatmus
+TUNE r3_mccatmus done
+PART tune_post 2792s
+JOB_OK
