@@ -5,6 +5,7 @@
 #                P0 (greedy + text rules) and P6 (our post-correction) scored; wall time and peak RSS per step
 #                (/usr/bin/time -v) in OUT/smoke/time_*.txt. Checks that every recognizer loads and exports.
 #   PART tune_post  the same on the 9 tuning pages for R0, R2, R3 (E20_RECS overrides), in OUT/tune.
+#   PART train  R4/R5 fine-tuning on the rebuilt st_c1m training lines (tools/rebuild_training_lines.py), in OUT/train.
 # Only tuning pages here; held-out (7, 10, 12) and test are decoded once, after the configurations are frozen.
 set -euo pipefail
 PART=$1; OUT=$2; DEV=${3:-cpu}
@@ -46,6 +47,33 @@ tune_post)  # step 4, tuning pages only: posteriors + P0 + P6 of the published r
         --out "$T/p6/$r"
     $PY tools/score_lines.py --lines "$T/p6/$r/lines.json" --config "$c" --no-rules --out "$T/runs/p6_$r"
     echo "TUNE $r done"
+  done
+  ;;
+train)  # R4/R5: TraPrInq / McCATMuS fine-tuned on the rebuilt st_c1m lines with the st_c1m recipe (E16)
+  # E20_TRAIN: jobs NAME:INIT:LR; E20_EPOCHS (20 as st_c1m; 1 for the smoke). Batch 16 like st_c1m, falling back to
+  # 8 or 4 with gradient accumulation (same effective batch 16) on out-of-memory. Precision 16-mixed: the T4 has no
+  # bf16 (st_c1m was bf16-mixed on an L4), the one stated deviation.
+  T=$OUT/train; mkdir -p "$T"; KETOS=${KETOS:-ketos}
+  [ -f "$T/lines/select.json" ] || $PY tools/rebuild_training_lines.py --out "$T/lines"
+  [ -f "$T/train.arrow" ] || $KETOS --workers 2 compile -f page -o "$T/train.arrow" "$T"/lines/train/*.xml \
+      > "$T/compile.log" 2>&1
+  sha256sum "$T/train.arrow" | tee "$T/train.arrow.sha256"
+  for job in ${E20_TRAIN:-r4_traprinq:traprinq:1e-4 r5_mccatmus:mccatmus:1e-4}; do
+    IFS=: read -r name init lr <<< "$job"
+    initpath=$($PY -c "from ocr_pipeline.engine import MODELS; print(MODELS['$init'])")
+    tag=${name}_lr$lr${E20_TAG:-}; ok=0
+    for b in 16 8 4; do
+      m=$T/model_$tag; rm -rf "$m"; mkdir -p "$T/tb_$tag"
+      if $KETOS -d "$DEV" -s 42 --workers 2 --threads 2 --precision 16-mixed train -f binary -i "$initpath" \
+          -o "$m" --logger tensorboard --log-dir "$T/tb_$tag" -B $b --accumulate-grad-batches $((16 / b)) -r "$lr" \
+          --augment -q fixed -N "${E20_EPOCHS:-20}" -p 0.9 -u NFD --resize union "$T/train.arrow" \
+          > "$T/train_$tag.log" 2>&1; then ok=1; break; fi
+      grep -q "out of memory" "$T/train_$tag.log" || { tail -30 "$T/train_$tag.log"; exit 1; }
+      mv "$T/train_$tag.log" "$T/train_${tag}_oom_b$b.log"
+    done
+    [ $ok = 1 ] || { echo "TRAIN $tag out of memory at every batch"; exit 1; }
+    best=$(ls "$m"/*best*.safetensors); cp "$best" "$T/$tag.safetensors"
+    echo "TRAIN $tag batch $b best $(basename "$best") sha256 $(sha256sum "$T/$tag.safetensors" | cut -c1-16)"
   done
   ;;
 *) echo "unknown part $PART"; exit 1 ;;
