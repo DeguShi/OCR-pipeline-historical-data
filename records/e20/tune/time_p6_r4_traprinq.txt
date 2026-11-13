@@ -1,0 +1,33 @@
+2026-11-13 22:26:59,497 page 5: 19 lines, 9.8 s
+2026-11-13 22:27:20,588 page 6: 33 lines, 21.1 s
+2026-11-13 22:27:48,038 page 8: 33 lines, 27.4 s
+2026-11-13 22:28:19,646 page 9: 33 lines, 31.6 s
+2026-11-13 22:28:49,322 page 11: 35 lines, 29.6 s
+2026-11-13 22:29:22,677 page 13: 32 lines, 33.3 s
+2026-11-13 22:29:50,909 page 14: 34 lines, 28.2 s
+2026-11-13 22:30:22,972 page 15: 33 lines, 32.0 s
+2026-11-13 22:30:54,740 page 16: 33 lines, 31.8 s
+2026-11-13 22:30:54,744 ALL DONE: load 0.9 s, decode 244.9 s wall / 242.8 s cpu, peak 660 MB
+	Command being timed: "/content/venv/bin/python tools/postcorr_from_posteriors.py --config configs/e20/r4_traprinq.json --posteriors outputs/e20/tune/post/r4_traprinq --pages 5,6,8,9,11,13,14,15,16 --out outputs/e20/tune/p6/r4_traprinq"
+	User time (seconds): 245.85
+	System time (seconds): 0.97
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 4:08.95
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 675608
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 160
+	Minor (reclaiming a frame) page faults: 118299
+	Voluntary context switches: 129
+	Involuntary context switches: 20220
+	Swaps: 0
+	File system inputs: 66272
+	File system outputs: 96
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

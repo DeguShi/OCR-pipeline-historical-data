@@ -1,0 +1,627 @@
+2026-11-13 21:55:14,585 No segmentation model given. Loading default model from /content/venv/lib/python3.12/site-packages/kraken/blla.mlmodel.
+2026-11-13 21:55:14,967 Applying model TorchVGSLModel(
+  (nn): MultiParamSequential(
+    (C_0): ActConv2D(
+      (co): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3))
+    )
+    (Gn_1): GroupNorm(
+      (layer): GroupNorm(32, 64, eps=1e-05, affine=True)
+    )
+    (C_2): ActConv2D(
+      (co): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+    )
+    (Gn_3): GroupNorm(
+      (layer): GroupNorm(32, 128, eps=1e-05, affine=True)
+    )
+    (C_4): ActConv2D(
+      (co): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    )
+    (Gn_5): GroupNorm(
+      (layer): GroupNorm(32, 128, eps=1e-05, affine=True)
+    )
+    (C_6): ActConv2D(
+      (co): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    )
+    (Gn_7): GroupNorm(
+      (layer): GroupNorm(32, 256, eps=1e-05, affine=True)
+    )
+    (C_8): ActConv2D(
+      (co): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    )
+    (Gn_9): GroupNorm(
+      (layer): GroupNorm(32, 256, eps=1e-05, affine=True)
+    )
+    (L_10): TransposedSummarizingRNN(
+      (layer): LSTM(256, 32, batch_first=True, bidirectional=True)
+    )
+    (L_11): TransposedSummarizingRNN(
+      (layer): LSTM(64, 32, batch_first=True, bidirectional=True)
+    )
+    (C_12): ActConv2D(
+      (co): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+    )
+    (Gn_13): GroupNorm(
+      (layer): GroupNorm(32, 32, eps=1e-05, affine=True)
+    )
+    (L_14): TransposedSummarizingRNN(
+      (layer): LSTM(32, 32, batch_first=True, bidirectional=True)
+    )
+    (L_15): TransposedSummarizingRNN(
+      (layer): LSTM(64, 32, batch_first=True, bidirectional=True)
+    )
+    (l_16): ActConv2D(
+      (co): Conv2d(64, 4, kernel_size=(1, 1), stride=(1, 1))
+    )
+  )
+  (_aux_layers): ModuleDict()
+  (criterion): BCEWithLogitsLoss()
+).
+2026-11-13 21:55:30,499 Vectorizing regions
+2026-11-13 21:55:31,570 Vectorizing baselines
+2026-11-13 21:55:44,946 Skipping baseline extension for very small blob of area 3.0
+2026-11-13 21:55:49,532 Compute reading order on 1 lines in lr direction
+2026-11-13 21:55:49,532 Perform topological sort on partially ordered lines
+2026-11-13 21:55:49,532 Compute reading order on 1 lines in lr direction
+2026-11-13 21:55:49,532 Perform topological sort on partially ordered lines
+2026-11-13 21:55:49,533 Compute reading order on 17 lines in lr direction
+2026-11-13 21:55:49,536 Perform topological sort on partially ordered lines
+2026-11-13 21:55:49,536 Compute reading order on 3 lines in lr direction
+2026-11-13 21:55:49,536 Perform topological sort on partially ordered lines
+2026-11-13 21:55:49,543 Merging 1 segmentations.
+2026-11-13 21:55:49,543 Computing reading order(s)
+2026-11-13 21:56:08,137 page 5: 19 lines
+2026-11-13 21:56:09,028 Applying model TorchVGSLModel(
+  (nn): MultiParamSequential(
+    (C_0): ActConv2D(
+      (co): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3))
+    )
+    (Gn_1): GroupNorm(
+      (layer): GroupNorm(32, 64, eps=1e-05, affine=True)
+    )
+    (C_2): ActConv2D(
+      (co): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+    )
+    (Gn_3): GroupNorm(
+      (layer): GroupNorm(32, 128, eps=1e-05, affine=True)
+    )
+    (C_4): ActConv2D(
+      (co): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    )
+    (Gn_5): GroupNorm(
+      (layer): GroupNorm(32, 128, eps=1e-05, affine=True)
+    )
+    (C_6): ActConv2D(
+      (co): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    )
+    (Gn_7): GroupNorm(
+      (layer): GroupNorm(32, 256, eps=1e-05, affine=True)
+    )
+    (C_8): ActConv2D(
+      (co): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    )
+    (Gn_9): GroupNorm(
+      (layer): GroupNorm(32, 256, eps=1e-05, affine=True)
+    )
+    (L_10): TransposedSummarizingRNN(
+      (layer): LSTM(256, 32, batch_first=True, bidirectional=True)
+    )
+    (L_11): TransposedSummarizingRNN(
+      (layer): LSTM(64, 32, batch_first=True, bidirectional=True)
+    )
+    (C_12): ActConv2D(
+      (co): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+    )
+    (Gn_13): GroupNorm(
+      (layer): GroupNorm(32, 32, eps=1e-05, affine=True)
+    )
+    (L_14): TransposedSummarizingRNN(
+      (layer): LSTM(32, 32, batch_first=True, bidirectional=True)
+    )
+    (L_15): TransposedSummarizingRNN(
+      (layer): LSTM(64, 32, batch_first=True, bidirectional=True)
+    )
+    (l_16): ActConv2D(
+      (co): Conv2d(64, 4, kernel_size=(1, 1), stride=(1, 1))
+    )
+  )
+  (_aux_layers): ModuleDict()
+  (criterion): BCEWithLogitsLoss()
+).
+2026-11-13 21:56:20,571 Vectorizing regions
+2026-11-13 21:56:21,013 Vectorizing baselines
+2026-11-13 21:56:43,755 Compute reading order on 3 lines in lr direction
+2026-11-13 21:56:43,755 Perform topological sort on partially ordered lines
+2026-11-13 21:56:43,755 Compute reading order on 30 lines in lr direction
+2026-11-13 21:56:43,756 Perform topological sort on partially ordered lines
+2026-11-13 21:56:43,756 Compute reading order on 2 lines in lr direction
+2026-11-13 21:56:43,756 Perform topological sort on partially ordered lines
+2026-11-13 21:56:43,759 Merging 1 segmentations.
+2026-11-13 21:56:43,759 Computing reading order(s)
+2026-11-13 21:58:02,394 page 6: 33 lines
+2026-11-13 21:58:03,953 Applying model TorchVGSLModel(
+  (nn): MultiParamSequential(
+    (C_0): ActConv2D(
+      (co): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3))
+    )
+    (Gn_1): GroupNorm(
+      (layer): GroupNorm(32, 64, eps=1e-05, affine=True)
+    )
+    (C_2): ActConv2D(
+      (co): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+    )
+    (Gn_3): GroupNorm(
+      (layer): GroupNorm(32, 128, eps=1e-05, affine=True)
+    )
+    (C_4): ActConv2D(
+      (co): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    )
+    (Gn_5): GroupNorm(
+      (layer): GroupNorm(32, 128, eps=1e-05, affine=True)
+    )
+    (C_6): ActConv2D(
+      (co): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    )
+    (Gn_7): GroupNorm(
+      (layer): GroupNorm(32, 256, eps=1e-05, affine=True)
+    )
+    (C_8): ActConv2D(
+      (co): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    )
+    (Gn_9): GroupNorm(
+      (layer): GroupNorm(32, 256, eps=1e-05, affine=True)
+    )
+    (L_10): TransposedSummarizingRNN(
+      (layer): LSTM(256, 32, batch_first=True, bidirectional=True)
+    )
+    (L_11): TransposedSummarizingRNN(
+      (layer): LSTM(64, 32, batch_first=True, bidirectional=True)
+    )
+    (C_12): ActConv2D(
+      (co): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+    )
+    (Gn_13): GroupNorm(
+      (layer): GroupNorm(32, 32, eps=1e-05, affine=True)
+    )
+    (L_14): TransposedSummarizingRNN(
+      (layer): LSTM(32, 32, batch_first=True, bidirectional=True)
+    )
+    (L_15): TransposedSummarizingRNN(
+      (layer): LSTM(64, 32, batch_first=True, bidirectional=True)
+    )
+    (l_16): ActConv2D(
+      (co): Conv2d(64, 4, kernel_size=(1, 1), stride=(1, 1))
+    )
+  )
+  (_aux_layers): ModuleDict()
+  (criterion): BCEWithLogitsLoss()
+).
+2026-11-13 21:58:14,269 Vectorizing regions
+2026-11-13 21:58:14,652 Vectorizing baselines
+2026-11-13 21:58:38,458 Compute reading order on 33 lines in lr direction
+2026-11-13 21:58:38,459 Perform topological sort on partially ordered lines
+2026-11-13 21:58:38,460 Compute reading order on 1 lines in lr direction
+2026-11-13 21:58:38,460 Perform topological sort on partially ordered lines
+2026-11-13 21:58:38,464 Merging 1 segmentations.
+2026-11-13 21:58:38,464 Computing reading order(s)
+2026-11-13 22:00:03,915 page 8: 33 lines
+2026-11-13 22:00:04,523 Applying model TorchVGSLModel(
+  (nn): MultiParamSequential(
+    (C_0): ActConv2D(
+      (co): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3))
+    )
+    (Gn_1): GroupNorm(
+      (layer): GroupNorm(32, 64, eps=1e-05, affine=True)
+    )
+    (C_2): ActConv2D(
+      (co): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+    )
+    (Gn_3): GroupNorm(
+      (layer): GroupNorm(32, 128, eps=1e-05, affine=True)
+    )
+    (C_4): ActConv2D(
+      (co): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    )
+    (Gn_5): GroupNorm(
+      (layer): GroupNorm(32, 128, eps=1e-05, affine=True)
+    )
+    (C_6): ActConv2D(
+      (co): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    )
+    (Gn_7): GroupNorm(
+      (layer): GroupNorm(32, 256, eps=1e-05, affine=True)
+    )
+    (C_8): ActConv2D(
+      (co): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    )
+    (Gn_9): GroupNorm(
+      (layer): GroupNorm(32, 256, eps=1e-05, affine=True)
+    )
+    (L_10): TransposedSummarizingRNN(
+      (layer): LSTM(256, 32, batch_first=True, bidirectional=True)
+    )
+    (L_11): TransposedSummarizingRNN(
+      (layer): LSTM(64, 32, batch_first=True, bidirectional=True)
+    )
+    (C_12): ActConv2D(
+      (co): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+    )
+    (Gn_13): GroupNorm(
+      (layer): GroupNorm(32, 32, eps=1e-05, affine=True)
+    )
+    (L_14): TransposedSummarizingRNN(
+      (layer): LSTM(32, 32, batch_first=True, bidirectional=True)
+    )
+    (L_15): TransposedSummarizingRNN(
+      (layer): LSTM(64, 32, batch_first=True, bidirectional=True)
+    )
+    (l_16): ActConv2D(
+      (co): Conv2d(64, 4, kernel_size=(1, 1), stride=(1, 1))
+    )
+  )
+  (_aux_layers): ModuleDict()
+  (criterion): BCEWithLogitsLoss()
+).
+2026-11-13 22:00:16,560 Vectorizing regions
+2026-11-13 22:00:17,077 Vectorizing baselines
+2026-11-13 22:00:41,926 Compute reading order on 33 lines in lr direction
+2026-11-13 22:00:41,927 Perform topological sort on partially ordered lines
+2026-11-13 22:00:41,928 Compute reading order on 1 lines in lr direction
+2026-11-13 22:00:41,928 Perform topological sort on partially ordered lines
+2026-11-13 22:00:41,932 Merging 1 segmentations.
+2026-11-13 22:00:41,932 Computing reading order(s)
+2026-11-13 22:02:05,949 page 9: 33 lines
+2026-11-13 22:02:06,856 Applying model TorchVGSLModel(
+  (nn): MultiParamSequential(
+    (C_0): ActConv2D(
+      (co): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3))
+    )
+    (Gn_1): GroupNorm(
+      (layer): GroupNorm(32, 64, eps=1e-05, affine=True)
+    )
+    (C_2): ActConv2D(
+      (co): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+    )
+    (Gn_3): GroupNorm(
+      (layer): GroupNorm(32, 128, eps=1e-05, affine=True)
+    )
+    (C_4): ActConv2D(
+      (co): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    )
+    (Gn_5): GroupNorm(
+      (layer): GroupNorm(32, 128, eps=1e-05, affine=True)
+    )
+    (C_6): ActConv2D(
+      (co): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    )
+    (Gn_7): GroupNorm(
+      (layer): GroupNorm(32, 256, eps=1e-05, affine=True)
+    )
+    (C_8): ActConv2D(
+      (co): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    )
+    (Gn_9): GroupNorm(
+      (layer): GroupNorm(32, 256, eps=1e-05, affine=True)
+    )
+    (L_10): TransposedSummarizingRNN(
+      (layer): LSTM(256, 32, batch_first=True, bidirectional=True)
+    )
+    (L_11): TransposedSummarizingRNN(
+      (layer): LSTM(64, 32, batch_first=True, bidirectional=True)
+    )
+    (C_12): ActConv2D(
+      (co): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+    )
+    (Gn_13): GroupNorm(
+      (layer): GroupNorm(32, 32, eps=1e-05, affine=True)
+    )
+    (L_14): TransposedSummarizingRNN(
+      (layer): LSTM(32, 32, batch_first=True, bidirectional=True)
+    )
+    (L_15): TransposedSummarizingRNN(
+      (layer): LSTM(64, 32, batch_first=True, bidirectional=True)
+    )
+    (l_16): ActConv2D(
+      (co): Conv2d(64, 4, kernel_size=(1, 1), stride=(1, 1))
+    )
+  )
+  (_aux_layers): ModuleDict()
+  (criterion): BCEWithLogitsLoss()
+).
+2026-11-13 22:02:18,375 Vectorizing regions
+2026-11-13 22:02:18,821 Vectorizing baselines
+2026-11-13 22:02:43,639 Compute reading order on 35 lines in lr direction
+2026-11-13 22:02:43,642 Perform topological sort on partially ordered lines
+2026-11-13 22:02:43,643 Compute reading order on 1 lines in lr direction
+2026-11-13 22:02:43,643 Perform topological sort on partially ordered lines
+2026-11-13 22:02:43,648 Merging 1 segmentations.
+2026-11-13 22:02:43,648 Computing reading order(s)
+2026-11-13 22:04:13,592 page 11: 35 lines
+2026-11-13 22:04:14,515 Applying model TorchVGSLModel(
+  (nn): MultiParamSequential(
+    (C_0): ActConv2D(
+      (co): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3))
+    )
+    (Gn_1): GroupNorm(
+      (layer): GroupNorm(32, 64, eps=1e-05, affine=True)
+    )
+    (C_2): ActConv2D(
+      (co): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+    )
+    (Gn_3): GroupNorm(
+      (layer): GroupNorm(32, 128, eps=1e-05, affine=True)
+    )
+    (C_4): ActConv2D(
+      (co): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    )
+    (Gn_5): GroupNorm(
+      (layer): GroupNorm(32, 128, eps=1e-05, affine=True)
+    )
+    (C_6): ActConv2D(
+      (co): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    )
+    (Gn_7): GroupNorm(
+      (layer): GroupNorm(32, 256, eps=1e-05, affine=True)
+    )
+    (C_8): ActConv2D(
+      (co): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    )
+    (Gn_9): GroupNorm(
+      (layer): GroupNorm(32, 256, eps=1e-05, affine=True)
+    )
+    (L_10): TransposedSummarizingRNN(
+      (layer): LSTM(256, 32, batch_first=True, bidirectional=True)
+    )
+    (L_11): TransposedSummarizingRNN(
+      (layer): LSTM(64, 32, batch_first=True, bidirectional=True)
+    )
+    (C_12): ActConv2D(
+      (co): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+    )
+    (Gn_13): GroupNorm(
+      (layer): GroupNorm(32, 32, eps=1e-05, affine=True)
+    )
+    (L_14): TransposedSummarizingRNN(
+      (layer): LSTM(32, 32, batch_first=True, bidirectional=True)
+    )
+    (L_15): TransposedSummarizingRNN(
+      (layer): LSTM(64, 32, batch_first=True, bidirectional=True)
+    )
+    (l_16): ActConv2D(
+      (co): Conv2d(64, 4, kernel_size=(1, 1), stride=(1, 1))
+    )
+  )
+  (_aux_layers): ModuleDict()
+  (criterion): BCEWithLogitsLoss()
+).
+2026-11-13 22:04:28,457 Vectorizing regions
+2026-11-13 22:04:28,923 Vectorizing baselines
+2026-11-13 22:04:54,124 Compute reading order on 32 lines in lr direction
+2026-11-13 22:04:54,125 Perform topological sort on partially ordered lines
+2026-11-13 22:04:54,125 Compute reading order on 1 lines in lr direction
+2026-11-13 22:04:54,125 Perform topological sort on partially ordered lines
+2026-11-13 22:04:54,130 Merging 1 segmentations.
+2026-11-13 22:04:54,130 Computing reading order(s)
+2026-11-13 22:06:19,203 page 13: 32 lines
+2026-11-13 22:06:20,083 Applying model TorchVGSLModel(
+  (nn): MultiParamSequential(
+    (C_0): ActConv2D(
+      (co): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3))
+    )
+    (Gn_1): GroupNorm(
+      (layer): GroupNorm(32, 64, eps=1e-05, affine=True)
+    )
+    (C_2): ActConv2D(
+      (co): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+    )
+    (Gn_3): GroupNorm(
+      (layer): GroupNorm(32, 128, eps=1e-05, affine=True)
+    )
+    (C_4): ActConv2D(
+      (co): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    )
+    (Gn_5): GroupNorm(
+      (layer): GroupNorm(32, 128, eps=1e-05, affine=True)
+    )
+    (C_6): ActConv2D(
+      (co): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    )
+    (Gn_7): GroupNorm(
+      (layer): GroupNorm(32, 256, eps=1e-05, affine=True)
+    )
+    (C_8): ActConv2D(
+      (co): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    )
+    (Gn_9): GroupNorm(
+      (layer): GroupNorm(32, 256, eps=1e-05, affine=True)
+    )
+    (L_10): TransposedSummarizingRNN(
+      (layer): LSTM(256, 32, batch_first=True, bidirectional=True)
+    )
+    (L_11): TransposedSummarizingRNN(
+      (layer): LSTM(64, 32, batch_first=True, bidirectional=True)
+    )
+    (C_12): ActConv2D(
+      (co): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+    )
+    (Gn_13): GroupNorm(
+      (layer): GroupNorm(32, 32, eps=1e-05, affine=True)
+    )
+    (L_14): TransposedSummarizingRNN(
+      (layer): LSTM(32, 32, batch_first=True, bidirectional=True)
+    )
+    (L_15): TransposedSummarizingRNN(
+      (layer): LSTM(64, 32, batch_first=True, bidirectional=True)
+    )
+    (l_16): ActConv2D(
+      (co): Conv2d(64, 4, kernel_size=(1, 1), stride=(1, 1))
+    )
+  )
+  (_aux_layers): ModuleDict()
+  (criterion): BCEWithLogitsLoss()
+).
+2026-11-13 22:06:31,789 Vectorizing regions
+2026-11-13 22:06:32,226 Vectorizing baselines
+2026-11-13 22:06:57,056 Compute reading order on 1 lines in lr direction
+2026-11-13 22:06:57,056 Perform topological sort on partially ordered lines
+2026-11-13 22:06:57,056 Compute reading order on 33 lines in lr direction
+2026-11-13 22:06:57,058 Perform topological sort on partially ordered lines
+2026-11-13 22:06:57,058 Compute reading order on 2 lines in lr direction
+2026-11-13 22:06:57,058 Perform topological sort on partially ordered lines
+2026-11-13 22:06:57,063 Merging 1 segmentations.
+2026-11-13 22:06:57,064 Computing reading order(s)
+2026-11-13 22:08:24,591 page 14: 34 lines
+2026-11-13 22:08:25,245 Applying model TorchVGSLModel(
+  (nn): MultiParamSequential(
+    (C_0): ActConv2D(
+      (co): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3))
+    )
+    (Gn_1): GroupNorm(
+      (layer): GroupNorm(32, 64, eps=1e-05, affine=True)
+    )
+    (C_2): ActConv2D(
+      (co): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+    )
+    (Gn_3): GroupNorm(
+      (layer): GroupNorm(32, 128, eps=1e-05, affine=True)
+    )
+    (C_4): ActConv2D(
+      (co): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    )
+    (Gn_5): GroupNorm(
+      (layer): GroupNorm(32, 128, eps=1e-05, affine=True)
+    )
+    (C_6): ActConv2D(
+      (co): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    )
+    (Gn_7): GroupNorm(
+      (layer): GroupNorm(32, 256, eps=1e-05, affine=True)
+    )
+    (C_8): ActConv2D(
+      (co): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    )
+    (Gn_9): GroupNorm(
+      (layer): GroupNorm(32, 256, eps=1e-05, affine=True)
+    )
+    (L_10): TransposedSummarizingRNN(
+      (layer): LSTM(256, 32, batch_first=True, bidirectional=True)
+    )
+    (L_11): TransposedSummarizingRNN(
+      (layer): LSTM(64, 32, batch_first=True, bidirectional=True)
+    )
+    (C_12): ActConv2D(
+      (co): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+    )
+    (Gn_13): GroupNorm(
+      (layer): GroupNorm(32, 32, eps=1e-05, affine=True)
+    )
+    (L_14): TransposedSummarizingRNN(
+      (layer): LSTM(32, 32, batch_first=True, bidirectional=True)
+    )
+    (L_15): TransposedSummarizingRNN(
+      (layer): LSTM(64, 32, batch_first=True, bidirectional=True)
+    )
+    (l_16): ActConv2D(
+      (co): Conv2d(64, 4, kernel_size=(1, 1), stride=(1, 1))
+    )
+  )
+  (_aux_layers): ModuleDict()
+  (criterion): BCEWithLogitsLoss()
+).
+2026-11-13 22:08:37,410 Vectorizing regions
+2026-11-13 22:08:37,945 Vectorizing baselines
+2026-11-13 22:09:03,050 Compute reading order on 33 lines in lr direction
+2026-11-13 22:09:03,051 Perform topological sort on partially ordered lines
+2026-11-13 22:09:03,052 Compute reading order on 1 lines in lr direction
+2026-11-13 22:09:03,052 Perform topological sort on partially ordered lines
+2026-11-13 22:09:03,057 Merging 1 segmentations.
+2026-11-13 22:09:03,057 Computing reading order(s)
+2026-11-13 22:10:34,813 page 15: 33 lines
+2026-11-13 22:10:35,718 Applying model TorchVGSLModel(
+  (nn): MultiParamSequential(
+    (C_0): ActConv2D(
+      (co): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3))
+    )
+    (Gn_1): GroupNorm(
+      (layer): GroupNorm(32, 64, eps=1e-05, affine=True)
+    )
+    (C_2): ActConv2D(
+      (co): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+    )
+    (Gn_3): GroupNorm(
+      (layer): GroupNorm(32, 128, eps=1e-05, affine=True)
+    )
+    (C_4): ActConv2D(
+      (co): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    )
+    (Gn_5): GroupNorm(
+      (layer): GroupNorm(32, 128, eps=1e-05, affine=True)
+    )
+    (C_6): ActConv2D(
+      (co): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    )
+    (Gn_7): GroupNorm(
+      (layer): GroupNorm(32, 256, eps=1e-05, affine=True)
+    )
+    (C_8): ActConv2D(
+      (co): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    )
+    (Gn_9): GroupNorm(
+      (layer): GroupNorm(32, 256, eps=1e-05, affine=True)
+    )
+    (L_10): TransposedSummarizingRNN(
+      (layer): LSTM(256, 32, batch_first=True, bidirectional=True)
+    )
+    (L_11): TransposedSummarizingRNN(
+      (layer): LSTM(64, 32, batch_first=True, bidirectional=True)
+    )
+    (C_12): ActConv2D(
+      (co): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+    )
+    (Gn_13): GroupNorm(
+      (layer): GroupNorm(32, 32, eps=1e-05, affine=True)
+    )
+    (L_14): TransposedSummarizingRNN(
+      (layer): LSTM(32, 32, batch_first=True, bidirectional=True)
+    )
+    (L_15): TransposedSummarizingRNN(
+      (layer): LSTM(64, 32, batch_first=True, bidirectional=True)
+    )
+    (l_16): ActConv2D(
+      (co): Conv2d(64, 4, kernel_size=(1, 1), stride=(1, 1))
+    )
+  )
+  (_aux_layers): ModuleDict()
+  (criterion): BCEWithLogitsLoss()
+).
+2026-11-13 22:10:47,439 Vectorizing regions
+2026-11-13 22:10:47,870 Vectorizing baselines
+2026-11-13 22:11:15,350 Compute reading order on 33 lines in lr direction
+2026-11-13 22:11:15,351 Perform topological sort on partially ordered lines
+2026-11-13 22:11:15,352 Compute reading order on 1 lines in lr direction
+2026-11-13 22:11:15,352 Perform topological sort on partially ordered lines
+2026-11-13 22:11:15,358 Merging 1 segmentations.
+2026-11-13 22:11:15,358 Computing reading order(s)
+2026-11-13 22:12:58,116 page 16: 33 lines
+	Command being timed: "/content/venv/bin/python tools/export_posteriors.py --config configs/final_v6.json --pages 5,6,8,9,11,13,14,15,16 --device cpu --out outputs/e20/tune/post/r1_st_c1m"
+	User time (seconds): 1069.73
+	System time (seconds): 39.58
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 18:22.92
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2196820
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 6238
+	Minor (reclaiming a frame) page faults: 13494382
+	Voluntary context switches: 11000
+	Involuntary context switches: 115750
+	Swaps: 0
+	File system inputs: 1444288
+	File system outputs: 190272
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

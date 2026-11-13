@@ -1,0 +1,60 @@
+4b7cb50971da5a06
+6314899c5a78045c
+bb94153bdcf62427
+5cb90db942f48d26
+INFO downloading models/10.5281_zenodo.21788410/medium.safetensors
+INFO ok models/10.5281_zenodo.21788410/medium.safetensors
+INFO ok models/lexicon/pt_hist_legal_w1.txt
+INFO ok models/lexicon/pt_hist_legal_w4_livro78.ngrams.npz
+INFO downloading models/finetuned/st_c1m.safetensors
+INFO ok models/finetuned/st_c1m.safetensors
+INFO ok models/lexicon/pt_hist_legal_w1.txt
+INFO ok models/lexicon/pt_hist_legal_w4_livro78.ngrams.npz
+INFO downloading models/10.5281_zenodo.14543904/traprinq.mlmodel
+INFO ok models/10.5281_zenodo.14543904/traprinq.mlmodel
+INFO ok models/lexicon/pt_hist_legal_w1.txt
+INFO ok models/lexicon/pt_hist_legal_w4_livro78.ngrams.npz
+INFO downloading models/10.5281_zenodo.13788177/mccatmus.mlmodel
+INFO ok models/10.5281_zenodo.13788177/mccatmus.mlmodel
+INFO ok models/lexicon/pt_hist_legal_w1.txt
+INFO ok models/lexicon/pt_hist_legal_w4_livro78.ngrams.npz
+INFO downloading models/finetuned/e20/r4_traprinq_lr3e-4.safetensors
+INFO ok models/finetuned/e20/r4_traprinq_lr3e-4.safetensors
+INFO ok models/lexicon/pt_hist_legal_w1.txt
+INFO ok models/lexicon/pt_hist_legal_w4_livro78.ngrams.npz
+INFO downloading models/finetuned/e20/r5_mccatmus_lr3e-4.safetensors
+INFO ok models/finetuned/e20/r5_mccatmus_lr3e-4.safetensors
+INFO ok models/lexicon/pt_hist_legal_w1.txt
+INFO ok models/lexicon/pt_hist_legal_w4_livro78.ngrams.npz
+outputs/lm/period_w1.txt: OK
+outputs/lm/period_w4_livro78.txt: OK
+outputs/lm/kn3_w1.bin: OK
+outputs/lm/kn3_w4b8.bin: OK
+PART setup 267s
+  export_r1_st_c1m 	Elapsed (wall clock) time (h:mm:ss or m:ss): 18:22.92
+  export_r1_st_c1m 	Maximum resident set size (kbytes): 2196820
+2026-11-13 22:13:03,933 9 pages, 285 lines
+WER norm 31.04% | CER norm 8.38% -> outputs/e20/tune/runs/p0_r1_st_c1m
+  p6_r1_st_c1m 	Elapsed (wall clock) time (h:mm:ss or m:ss): 5:19.90
+  p6_r1_st_c1m 	Maximum resident set size (kbytes): 678740
+WER norm 19.64% | CER norm 5.58% -> outputs/e20/tune/runs/p6_r1_st_c1m
+TUNE r1_st_c1m done
+  export_r4_traprinq 	Elapsed (wall clock) time (h:mm:ss or m:ss): 8:21.86
+  export_r4_traprinq 	Maximum resident set size (kbytes): 1332884
+2026-11-13 22:26:46,263 9 pages, 285 lines
+WER norm 27.82% | CER norm 7.73% -> outputs/e20/tune/runs/p0_r4_traprinq
+  p6_r4_traprinq 	Elapsed (wall clock) time (h:mm:ss or m:ss): 4:08.95
+  p6_r4_traprinq 	Maximum resident set size (kbytes): 675608
+WER norm 20.77% | CER norm 5.98% -> outputs/e20/tune/runs/p6_r4_traprinq
+TUNE r4_traprinq done
+  export_r5_mccatmus 	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:58.01
+  export_r5_mccatmus 	Maximum resident set size (kbytes): 1203212
+2026-11-13 22:33:53,726 9 pages, 285 lines
+WER norm 34.09% | CER norm 9.95% -> outputs/e20/tune/runs/p0_r5_mccatmus
+  p6_r5_mccatmus 	Elapsed (wall clock) time (h:mm:ss or m:ss): 4:51.51
+  p6_r5_mccatmus 	Maximum resident set size (kbytes): 681364
+WER norm 22.35% | CER norm 6.82% -> outputs/e20/tune/runs/p6_r5_mccatmus
+TUNE r5_mccatmus done
+PART tune_post 2645s
+tools/run_e20.sh: line 84: select: command not found
+JOB_FAILED
