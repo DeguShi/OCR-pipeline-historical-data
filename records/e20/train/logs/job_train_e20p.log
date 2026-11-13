@@ -1,0 +1,20 @@
+1b93548bc1568dfe
+343acd317b7ebafe
+INFO downloading models/10.5281_zenodo.14543904/traprinq.mlmodel
+INFO ok models/10.5281_zenodo.14543904/traprinq.mlmodel
+INFO ok models/lexicon/pt_hist_legal_w1.txt
+INFO ok models/lexicon/pt_hist_legal_w4_livro78.ngrams.npz
+INFO downloading models/10.5281_zenodo.13788177/mccatmus.mlmodel
+INFO ok models/10.5281_zenodo.13788177/mccatmus.mlmodel
+INFO ok models/lexicon/pt_hist_legal_w1.txt
+INFO ok models/lexicon/pt_hist_legal_w4_livro78.ngrams.npz
+Using Python 3.12.12 environment at: /content/venv
+PART venv 181s
+KRAKEN_DEFAULT_LR 1e-3
+JOBS  r4_traprinq:traprinq:1e-3 r4_traprinq:traprinq:1e-4 r4_traprinq:traprinq:3e-4 r5_mccatmus:mccatmus:1e-3 r5_mccatmus:mccatmus:1e-4 r5_mccatmus:mccatmus:3e-4
+2026-11-13 16:05:52,602 REBUILD OK: {'lines': 2532, 'kept': 2425, 'pages': 78, 'kept_chars': 96248}
+{"thresholds": {"min_chars": 10, "min_mean_prob": 0.9, "min_min_prob": 0.0, "max_change": 0.1, "min_known": 0.0, "max_transcript_cer": 0.4}, "lines": 2532, "kept": 2425, "pages": 78, "kept_chars": 96248}
+14439956ede8afc14da5a160c9d21282a5a97513e07d82319e036c8788ffc8e7  outputs/e20/train/train.arrow
+TRAIN r4_traprinq_lr1e-3 batch 16 best best_0.9660.safetensors sha256 eeeb9be2e4e4f46e
+TRAIN r4_traprinq_lr1e-4 batch 16 best best_0.9626.safetensors sha256 16a9b3bc66e34207
+TRAIN r4_traprinq_lr3e-4 batch 16 best best_0.9686.safetensors sha256 a891fef0450f3423
