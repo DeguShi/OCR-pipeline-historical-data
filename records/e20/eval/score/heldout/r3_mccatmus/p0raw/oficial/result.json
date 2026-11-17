@@ -1,0 +1,66 @@
+{
+  "source": "outputs/e20/eval/lines/heldout/r3_mccatmus/p0raw.json",
+  "rules": true,
+  "corpus": {
+    "wer_strict": 0.919431279620853,
+    "cer_strict": 0.4435211633341989,
+    "wer_norm": 0.9165354330708662,
+    "cer_norm": 0.44145105361429715
+  },
+  "pages": [
+    {
+      "page": 7,
+      "lines": 33,
+      "pred_words": 219,
+      "text": "23 Otae mndente Le naturel sutrtetuté du vrrsidiule\nEte Pubetitrun en Vire Brsibrate en simais vrcaveir\nma adin de sua ntreg. ur cato du cempate seriinur\nce mais vethon\nCaprticle 3e\nDa nim un trabathos\nAetize Je\nte aua mareads para as cersaés se veices nt'arcase,\nnus no salas pioipat da mucipalisiaie, ces nize\nleai du mgl, barcue inmero Cegael; a perirute\namminis a seu tagur, due da eale ci du resaene, sen\nmabli, dare pcipi-not palanas ; ctie\ncaberta a sessaro.\nShtage 1e\ns ressoes diare o tiiis mareines de quatre huo\nvas aminasa a secrae, e precsivente cnemmani\ne tratarlus jotes pal avasi cetu inernaie a sessait:\nMliguee\nAbecta a resse, on purivente declarar a matirin un\ndus ecuscie, acintera a m drusconte nn trabisthun, dau\nd a palai au que piura proit, jasente ccvr\naa deveuoin a a civilitate entre a veviainne on\nxpectaemss\n6 1º e0 recint du tratailinn a oideite a nigerac\na persea que mas pertiven a copincion mgn eu\npal.\n22 Ea cepe dabres nas potins incterors un drbates,\nj qualquer frm, a er dun ciuion  aapprisin\nons en deragrace, oet pna a teren cheeaire, e\ncrepritas du vaila, eu ccuo de mmncidencit.\netrtogo 6.\ndt Rresidente n euu lee :\ne 1e Chaniar a adun, ate tre ersen, e vercaser que",
+      "wer_strict": 0.9205607476635514,
+      "cer_strict": 0.4541176470588235,
+      "wer_norm": 0.9162790697674419,
+      "cer_norm": 0.4519774011299435,
+      "strict_we": 197,
+      "strict_rw": 214,
+      "strict_ce": 579,
+      "strict_rc": 1275,
+      "norm_we": 197,
+      "norm_rw": 215,
+      "norm_ce": 560,
+      "norm_rc": 1239
+    },
+    {
+      "page": 10,
+      "lines": 37,
+      "pred_words": 181,
+      "text": "delet, ecendente, soga gui, uiene citrair\nseante a enhacis, sixe otis e socir dai\nmrres ma firmee, a Verrades a quem a hpartiee\nmiteverrair nat povera vetter\nAon ser\nAtrgs 1e\naires qui, un earne puutpiente\nfentarin a mon rrsoe cone cntinus, lecur\nvons un sapptentis convoeain que ms\ncompareeevind, aivat importu, pele Tresibrute\na mantr de duz mil aur Bsoreez Voq airbe\ne64 O tresisente qands tror ai réseutir\nqualques aesmpts en apresenter e sepuser\nnréveas au, passar a persiteuen a ser\nmedation\n\nl apiticle 1e\nDe mmoiro sas ressain.\neatige 162\ne bamara nuneipal farai un catr nars\n2\nn sesraé ndmarins, de dis un dois meres\nn pmmern das artris de Ouclut ; Décenutr,\nvevirr stil, pihe e Gearts qu suivaran\ne das necenaries, nimen insens de tre.\nAtrg 1e\nteavera un exda anns ttres seriré extre.\nddmarias quantres primn cregitus pelo\nben muricipal.\n31e es seeraés intraord\nnncences serair conne\nas pels reidentée semre par erdan\nhevin, incration de prpri prssatante\nc a legaurent se Tuticveute. Cin qual\nm Came mresidente ceclavava a motiun\nronsonons.\nDupenagé giraes",
+      "wer_strict": 0.9325842696629213,
+      "cer_strict": 0.44502164502164504,
+      "wer_norm": 0.9226519337016574,
+      "cer_norm": 0.4433541480820696,
+      "strict_we": 166,
+      "strict_rw": 178,
+      "strict_ce": 514,
+      "strict_rc": 1155,
+      "norm_we": 167,
+      "norm_rw": 181,
+      "norm_ce": 497,
+      "norm_rc": 1121
+    },
+    {
+      "page": 12,
+      "lines": 33,
+      "pred_words": 255,
+      "text": "compadns quai a conena a exigit, nuieitine\nrir ci mes ner cune siiz maren seils enseraon, de\nintemain, moun cu que a nimero de Cmpos\ndus ssigiits mas ere cide a capo crsate a Jr coi\ndu dynuames, euirs un que se diqu a aitesprr\ndentr de prare d ene mores contaie de \ndata de aine, muais pedens ele ter logaes ants\nde ser mcscigmides a aciita a relumicians\nconitente de prevente ecntretn\n682 t claussile 16e e contrente jieu asain\nsubtitu. le lausul sdr cle a seranaps qu\noccasenrar ae mrerrpans du lez sarar mais\nde quuze bus, puserai a cnsire rcsernder a\ncontreute, satre cuns a prea seiin que\nrea revobrata po artitinn pucfessodir\nnome cin pcta frma d sareite.\n83 t etausula 16r jiea aism.- et eupiemt\nsenri ter rempre un deparits a vimero di\npasas ne censane para militetuis mime\nvrlrmente qualqu lampase que se qaime,\nce matitire on se eepojace, sot peus de pagar\nde mil ais de mistta abative nas juta qui\nmcurais pu lampada qe sctrier aprgade\nauxs voite con eutavas, catre euse s Gerqn\nmain a puire  pivent prefessenal la Cemrer\nEbe s clausula 142 jieara dute mose- eta\nexpeissat il mogd priblien poa compicheno\na cilemaent de cars du Camai conn sces lan\npadus e a sa baden cun qual uinnéro, sectron\ntrter di acaie cen a mesa Camann\n66= et Claurala 20t pous a aisa et Couprert\nrerx chegasa a mtallere inauguvr a cilare n\nrut da Cisal sa vat dectre lei a seis ase",
+      "wer_strict": 0.9087136929460581,
+      "cer_strict": 0.4327938071780436,
+      "wer_norm": 0.9121338912133892,
+      "cer_norm": 0.43052555795536357,
+      "strict_we": 219,
+      "strict_rw": 241,
+      "strict_ce": 615,
+      "strict_rc": 1421,
+      "norm_we": 218,
+      "norm_rw": 239,
+      "norm_ce": 598,
+      "norm_rc": 1389
+    }
+  ]
+}

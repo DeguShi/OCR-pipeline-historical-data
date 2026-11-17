@@ -1,0 +1,66 @@
+{
+  "source": "outputs/e20/eval/lines/heldout/r2_traprinq/p0raw.json",
+  "rules": true,
+  "corpus": {
+    "wer_strict": 0.7926267281105991,
+    "cer_strict": 0.37130479102956165,
+    "wer_norm": 0.7831325301204819,
+    "cer_norm": 0.36059968437664386
+  },
+  "pages": [
+    {
+      "page": 7,
+      "lines": 33,
+      "pred_words": 213,
+      "text": "5 p. O qui Prensencodo natural antisibul do Tresitente\nt.e Iutosilicem ao Rico Precitente o de mais tenavorta\nzia avemm de hua Cartaçaõ huu caco de onsente seuira\noirao veche\ndo apilula do\nDa orsem ao trabalhos\nRitigo 9\naso dia marcauõ para as seuiaõ se peiraõ eleuado\nueo po calar simcipaldamuna paliuaue pai dise\nluras da manhã, e Carurel fnneio legalaõ perla sence\nactnando e seu lugar, que ela cabecira da mesa do\ntrabulhos, daraõ suu cessi as csas sela palavas dela\nalita a secaõ\nAtigo No\nAs seciaõ curaraõ o seuisso paximo de quatro ho\nras berminadas a seuaijo jueerence memardo\nos trabalhos pelas sealauras hela en cerraso as seriaõ\nArRigo sa\nMesla apescaõ o puerete declarara amateria em\ndeseuera,  mnanhera a dem durance e trabalho, dom\ndo apalamra ao que simur a Judie facemte dicircer\nadeuuciae a Cauilibade  enhre osvercadrss e tes\ne eseeadirei\ne 1.o Ro nicuel dos trabachos et oesado o migreiao\na pesoa que nao peiteu eara consurcçaõ mendi\nsial.\n820 Os qtealaures  aõ possao siulurir hum sebale\nper qualquem forma, e dazem donsignae a cuppima\nçaõ e desagrado, subjusta de herendeheiramo de\na repuboao da sala, eeu caio de nncitencia\nArigo 6.o\nAo Prissdente nocuhe\nE se cohamar e osz ate frei veus, e Veriator que ",
+      "wer_strict": 0.7892376681614349,
+      "cer_strict": 0.39603960396039606,
+      "wer_norm": 0.7850877192982456,
+      "cer_norm": 0.38455476753349094,
+      "strict_we": 176,
+      "strict_rw": 223,
+      "strict_ce": 520,
+      "strict_rc": 1313,
+      "norm_we": 179,
+      "norm_rw": 228,
+      "norm_ce": 488,
+      "norm_rc": 1269
+    },
+    {
+      "page": 10,
+      "lines": 37,
+      "pred_words": 179,
+      "text": "sentes, decendente preyro e gemo, amiane tinhado\nderrana o tinhadio, tio e pobrinho ecounsa\nmesma forma o Nercadi aquem aSuspostou\nntercnar naõ soberaõ polar\ntos ain\nArtigo 1i\ncadores que, hem cauia juelesicara,\nfastarem a duas uecaõ coneeuteras, bem\ncomo os  supptentes eovocados que he naõ\ncomparecerem,  cera e insinta, pelo Precdente\na muita de des amilacio ssodde  Regro dito 6º\ns0 O Preverente qua nto hus ou descutar\nqualquer aumpte m apeseutas se seseuder\naos eaçaõ aua, passara a Jniscrecia da que\ncimamediato\n\nCapitulo 4º\nDo numeio das deis au\nArtigo 16\nq Camara nuncipal fará em eata anno\n2\nfei aazaõ no mariao, ou diistem dois muus\nnos pimeiros dias ulcio de Eulubro, Descoutro,\nzerem Abril, Junho eAgosto que Iuraraõ\nos dias necusarias, numeas menos de hu\nArtigo 7\nhavera emeada anno santas seaca eatra\nedmariao quantas prim engeraõ pelos\nbem mancepal\nese As acazaõ entrando\nnauaõ peraõ como\nasas pelo Presiente ecumpe por orem\nserair, onciativa ao prpiio presasente\ncra Requeremunto do Antiuleute Em qual\nper cazo o presaseute declararaõ se notivo\nconurcaçaõ\nDisponçaõs gera eo",
+      "wer_strict": 0.7833333333333333,
+      "cer_strict": 0.32588134135855545,
+      "wer_norm": 0.786096256684492,
+      "cer_norm": 0.31555555555555553,
+      "strict_we": 141,
+      "strict_rw": 180,
+      "strict_ce": 379,
+      "strict_rc": 1163,
+      "norm_we": 147,
+      "norm_rw": 187,
+      "norm_ce": 355,
+      "norm_rc": 1125
+    },
+    {
+      "page": 12,
+      "lines": 33,
+      "pred_words": 239,
+      "text": "mpadlas quando alamara o irigir, pucrindo\nam alancsaa bem vuis pecei facto a nesoa, de\nante de suaia, eann uce que o premeto de Canpa\nular quigido naõ enida a capauras e ferea\ndos desnamis, e eaeo em que mu origar a jtispor\ndentr do prazo de doe mais Reoulado da\nualado auio, naõ poderdo elle  ser fogaõ andes\nlhe ser inaugurada se acuila aaulasaçaõ\ncomtante dito perczente e comtrauco\nDa Nclaurula Thi do contrado fica assim\nautilitesa. bauenta o esio suananja que\noccasinar a misemiscaõ de susa durar mais\na quee das, poreraa Camara perceudira\ncontrae, sabro caso a prea quai que\npera resobrira jur assilm pefaascimaca\nnomeados pela forma ae direito\n8 3.s alauzula 16.a fica aestm A ausucia\ntiveraõ ter acsju em deponito e nnimeio ae\ncampadas me dinario para ouselhicar nimes\ndintamente qualque Campada que a quuime\npeanulelice mte a paguu, pobsuua de pagar\nlles a mlpeis denuita abalira as pulaca\nmiuiaes por lampada que ctuve apagada\nhuas udito e omicuravas, sabo eato aforca\nmaior a juizo a Gee eal pfessima Cadar Camora\n861 es alausula 1ª figara qule odo -era\neasiciaõ utrimaçaõ publica fica compusbenlioz\naCostimaçaõ da cama de chamarã eom nus Cam\npadas ela de bascil em degualnuncido, outri\nAmbos de azendo com a mesma camara\n850 e Sauita E D. fegará a esmu = A Eusei\nzera Angada a Vsaches e maugurar aulua\naõ da cidade de sab duta sei aeui nue",
+      "wer_strict": 0.8024193548387096,
+      "cer_strict": 0.38535911602209943,
+      "wer_norm": 0.7791164658634538,
+      "cer_norm": 0.375,
+      "strict_we": 199,
+      "strict_rw": 248,
+      "strict_ce": 558,
+      "strict_rc": 1448,
+      "norm_we": 194,
+      "norm_rw": 249,
+      "norm_ce": 528,
+      "norm_rc": 1408
+    }
+  ]
+}

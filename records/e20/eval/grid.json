@@ -13,6 +13,20 @@
    "cer": 18.57
   }
  },
+ "r0_medium\u00b7p0raw": {
+  "heldout/gemini": {
+   "wer": 63.1,
+   "cer": 21.38
+  },
+  "heldout/oficial": {
+   "wer": 60.79,
+   "cer": 21.15
+  },
+  "test10/gemini": {
+   "wer": 57.28,
+   "cer": 20.01
+  }
+ },
  "r0_medium\u00b7p6": {
   "heldout/gemini": {
    "wer": 27.11,
@@ -139,6 +153,20 @@
    "cer": 29.19
   }
  },
+ "r2_traprinq\u00b7p0raw": {
+  "heldout/gemini": {
+   "wer": 78.31,
+   "cer": 36.06
+  },
+  "heldout/oficial": {
+   "wer": 79.84,
+   "cer": 36.62
+  },
+  "test10/gemini": {
+   "wer": 73.73,
+   "cer": 33.14
+  }
+ },
  "r2_traprinq\u00b7p6": {
   "heldout/gemini": {
    "wer": 54.67,
@@ -193,6 +221,20 @@
   "test10/gemini": {
    "wer": 86.47,
    "cer": 42.27
+  }
+ },
+ "r3_mccatmus\u00b7p0raw": {
+  "heldout/gemini": {
+   "wer": 89.91,
+   "cer": 44.21
+  },
+  "heldout/oficial": {
+   "wer": 91.65,
+   "cer": 44.15
+  },
+  "test10/gemini": {
+   "wer": 86.82,
+   "cer": 42.96
   }
  },
  "r3_mccatmus\u00b7p6": {

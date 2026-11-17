@@ -91,6 +91,13 @@ R1·P6 here is v6 decoded from the posteriors (held-out 18.74 / CER 4.35, test 3
 
 Greedy (P0) for reference: R1 29.45 / 18.22 / 11.50; R4 23.78 / 12.20 / 9.29.
 
+"As published" context row (`p0raw`: raw image, Kraken default segmentation, padding 16, greedy; commit 6a2872d on a
+Colab pro high-RAM CPU VM, `eval/vm_e20raw/`): R0 60.79 / 63.10 / 57.28, R2 79.84 / 78.31 / 73.73, R3 91.65 / 89.91 /
+86.82 WER. Against greedy on our pre-processing and segmentation (R0 58.58 / 60.84 / 55.20, R2 74.49 / 73.19 / 69.44,
+R3 90.55 / 89.76 / 86.47) our image chain alone gains 1–5 points; the rest of the distance to R1·P6 is adaptation and
+decoding. The first launch of this job never started (the shipped archive had no `outputs/` for its log); relaunched
+after 1 h 20 min idle, then setup 803 s and eval 1,054 s.
+
 ### Paired comparisons (`eval/paired.json`; dWER = R1·P6 minus the other, CI95, pages won/tied/lost)
 
 | R1·P6 vs | held-out official | held-out Gemini | test10 Gemini |
