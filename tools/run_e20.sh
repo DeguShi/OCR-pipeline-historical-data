@@ -183,6 +183,21 @@ eval_pe)  # step 6b: R·PE (frozen VLM prompt paper_pt_period) on the recognizer
     done
   done
   ;;
+eval_raw)  # rule 3 context row "as published": R0/R2/R3 on the raw image with kraken's default blla and line padding
+  # (configs/e20/raw_*.json: no geometric, segmentation or recognition image operations, padding 16), greedy only
+  T=$OUT/eval
+  for r in r0_medium r2_traprinq r3_mccatmus; do
+    for s in heldout test10; do
+      P=$T/post_raw/$s/$r
+      [ -f "$P/done" ] || { timed "export_raw_${s}_$r" $PY tools/export_posteriors.py --config configs/e20/raw_$r.json \
+          $(set_args $s) --device "$DEV" --out "$P"; touch "$P/done"; }
+      $PY tools/greedy_lines.py --posteriors "$P" --pages all --out "$T/raw/$s/$r/p0raw"
+      mkdir -p "$T/lines/$s/$r"
+      $PY tools/charmap.py --input "$T/raw/$s/$r/p0raw/lines.json" --out "$T/lines/$s/$r/p0raw.json"
+      score_set "$T/lines/$s/$r/p0raw.json" configs/e20/raw_$r.json $s "$T/score/$s/$r/p0raw"
+    done
+  done
+  ;;
 eval_decode)  # step 6c: P0/PA/PB/P6 of every recognizer on held-out and test10 with the frozen configurations
   # (records/e20/select/frozen.json), each decode once; E20_WORKERS jobs at a time
   T=$OUT/eval; F=records/e20/select/frozen.json; DPY=${DPY:-python}; jobs=()
