@@ -45,12 +45,33 @@ def tool(name: str, *args: str) -> None:
     subprocess.run([sys.executable, '-I', f'tools/{name}', *args], check=True, stdout=subprocess.DEVNULL)
 
 
-def score_run(name: str, overrides: dict, config: dict, posteriors: str, work: Path) -> dict:
+def decode(d: Path, posteriors: str, page_jobs: int) -> None:
+    """Our post-correction on the tuning pages. With page_jobs > 1 the pages are split over that many processes
+    (pages are decoded independently, so the merged lines.json is the same as one process writes)."""
+    if page_jobs <= 1:
+        tool('postcorr_from_posteriors.py', '--config', str(d / 'config.json'), '--posteriors', posteriors,
+             '--pages', TUNING, '--out', str(d / 'p6'))
+        return
+    pages = TUNING.split(',')
+    parts = [pages[j::page_jobs] for j in range(min(page_jobs, len(pages)))]
+    with ThreadPoolExecutor(len(parts)) as pool:
+        list(pool.map(lambda j: tool('postcorr_from_posteriors.py', '--config', str(d / 'config.json'),
+                                     '--posteriors', posteriors, '--pages', ','.join(parts[j]),
+                                     '--out', str(d / f'p6_part{j}')), range(len(parts))))
+    merged = {}
+    for j in range(len(parts)):
+        merged.update(json.loads((d / f'p6_part{j}' / 'lines.json').read_text(encoding='utf-8')))
+    order = sorted(merged, key=lambda p: f'page_{int(p):02d}')  # the glob order of one process (page_NN.npz)
+    (d / 'p6').mkdir(exist_ok=True)
+    (d / 'p6' / 'lines.json').write_text(json.dumps({p: merged[p] for p in order}, ensure_ascii=False, indent=1),
+                                         encoding='utf-8')
+
+
+def score_run(name: str, overrides: dict, config: dict, posteriors: str, work: Path, page_jobs: int = 1) -> dict:
     d = work / name
     d.mkdir(parents=True, exist_ok=True)
     (d / 'config.json').write_text(json.dumps(with_post(config, overrides), indent=1))
-    tool('postcorr_from_posteriors.py', '--config', str(d / 'config.json'), '--posteriors', posteriors,
-         '--pages', TUNING, '--out', str(d / 'p6'))
+    decode(d, posteriors, page_jobs)
     tool('charmap.py', '--input', str(d / 'p6' / 'lines.json'), '--out', str(d / 'lines_mapped.json'))
     row = {'name': name, 'overrides': overrides}
     for ref, path in REFS.items():
@@ -62,16 +83,22 @@ def score_run(name: str, overrides: dict, config: dict, posteriors: str, work: P
 
 
 class Sweep:
-    def __init__(self, config: dict, posteriors: str, out: Path, workers: int) -> None:
+    def __init__(self, config: dict, posteriors: str, out: Path, workers: int, cpus: int = 0) -> None:
         self.config, self.posteriors, self.out, self.workers = config, posteriors, out, workers
+        self.cpus = cpus or workers
         self.log = out / 'runs.jsonl'
         self.done = {r['name']: r for r in map(json.loads, self.log.read_text().splitlines())} \
             if self.log.exists() else {}
 
     def run(self, jobs: dict[str, dict]) -> dict[str, dict]:
         todo = {n: o for n, o in jobs.items() if n not in self.done}
-        with ThreadPoolExecutor(self.workers) as pool:
-            futures = {n: pool.submit(score_run, n, o, self.config, self.posteriors, self.out / "runs") for n, o in todo.items()}
+        if not todo:
+            return {n: self.done[n] for n in jobs}
+        workers = min(self.workers, len(todo))
+        page_jobs = max(1, self.cpus // workers)  # spare cores split each run's pages (combinations run alone)
+        with ThreadPoolExecutor(workers) as pool:
+            futures = {n: pool.submit(score_run, n, o, self.config, self.posteriors, self.out / "runs", page_jobs)
+                       for n, o in todo.items()}
             for name, future in futures.items():
                 row = future.result()
                 with self.log.open('a') as f:
@@ -101,12 +128,14 @@ def main() -> None:
     parser.add_argument('--posteriors', required=True)
     parser.add_argument('--out', type=Path, required=True)
     parser.add_argument('--workers', type=int, default=2)
+    parser.add_argument('--cpus', type=int, default=0,
+                        help='processes in all (default --workers); the rest split pages within a run')
     parser.add_argument('--variants', default=None, help='comma list, a subset of VARIANTS (smoke test only)')
     args = parser.parse_args()
     logging.basicConfig(level=logging.INFO, format='%(asctime)s %(message)s')
     args.out.mkdir(parents=True, exist_ok=True)
     config = json.loads(args.config.read_text())
-    sweep = Sweep(config, args.posteriors, args.out, args.workers)
+    sweep = Sweep(config, args.posteriors, args.out, args.workers, args.cpus)
     variants = {n: VARIANTS[n] for n in args.variants.split(',')} if args.variants else VARIANTS
     final = combine(sweep, sweep.run({'base': {}, **variants}))
     final['config_source'] = str(args.config)

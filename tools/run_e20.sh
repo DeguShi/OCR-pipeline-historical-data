@@ -88,21 +88,30 @@ choose)  # step 5, tuning pages only, the same budget per recognizer (posteriors
     c=${CONF[$r]}; post=$OUT/tune/post/$r; S=$T/$r; mkdir -p "$S"
     [ -d "$post" ] || { echo "no tuning posteriors for $r ($post)"; exit 1; }
     for stage in A A2; do
+      [ -f "$S/${stage}_scored.jsonl" ] && continue  # stage finished in an earlier run
       if [ $stage = A ]; then extra=(--n "${E20_SEL_N:-60}"); else extra=(--n "${E20_SEL_N2:-30}" --center "$(best "$S/A_scored.jsonl")"); fi
-      $PY tools/baseline_search.py --kind $stage "${extra[@]}" --seed 0 --python "$DPY" --root . --posteriors "$post" \
-          --out "$S/$stage"
+      # E20_SHARDS processes, each a disjoint slice of the same configuration list (--shard i/k), in S/stage/s<i>;
+      # every configuration is decoded on its own, so the merged results equal one sequential run.
+      K=${E20_SHARDS:-1}; pids=()
+      for i in $(seq 0 $((K - 1))); do
+        $PY tools/baseline_search.py --kind $stage "${extra[@]}" --seed 0 --shard "$i/$K" --python "$DPY" --root . \
+            --posteriors "$post" --out "$S/$stage/s$i" > "$S/${stage}_s$i.log" 2>&1 & pids+=($!)
+      done
+      for p in "${pids[@]}"; do wait "$p"; done
+      cat "$S/$stage"/s*/results.jsonl > "$S/$stage/results.jsonl"
       $PY tools/charmap.py --input "$S/$stage/results.jsonl" --out "$S/$stage/results_mapped.jsonl"
       $PY tools/score_search.py --results "$S/$stage/results_mapped.jsonl" --config "$c" --out "$S/${stage}_scored.jsonl"
     done
     if [ ! -f "$S/pb/result.json" ]; then
       rm -rf "$S/pb_raw"
       $DPY -I tools/baseline_wordbeam.py --posteriors "$post" --pages $TUNE --class-sets "$post" \
-          --corpus outputs/lm/period_w4_livro78.txt --mode NGrams --smoothing 0.001 --beam "${E20_PB_BEAM:-256}" --workers 2 \
+          --corpus outputs/lm/period_w4_livro78.txt --mode NGrams --smoothing 0.001 --beam "${E20_PB_BEAM:-256}" --workers "${E20_WORKERS:-2}" \
           --out "$S/pb_raw"
       $PY tools/charmap.py --input "$(ls "$S"/pb_raw/*/lines.json)" --out "$S/pb_lines.json"
       $PY tools/score_lines.py --lines "$S/pb_lines.json" --config "$c" --out "$S/pb"
     fi
-    $PY tools/p6_sweep.py --config "$c" --posteriors "$post" --out "$S/p6" --workers 2 ${E20_P6_VARIANTS:+--variants $E20_P6_VARIANTS}
+    $PY tools/p6_sweep.py --config "$c" --posteriors "$post" --out "$S/p6" --workers "${E20_P6_WORKERS:-2}" \
+        --cpus "${E20_WORKERS:-2}" ${E20_P6_VARIANTS:+--variants $E20_P6_VARIANTS}
     $PY -c "import json,sys; s=sys.argv[1]; a=json.loads(open(s+'/A2_scored.jsonl').readline()); b=json.load(open(s+'/pb/result.json'))['corpus']; p=json.load(open(s+'/p6/final_overrides.json')); print('SELECT', sys.argv[2], 'PA', a['wer'], 'PB', round(100*b['wer_norm'], 2), 'P6', p['result']['oficial']['wer'], p['chosen'])" "$S" "$r"
   done
   ;;
