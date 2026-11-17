@@ -1,0 +1,8 @@
+nproc 8 recs r0_medium r5_mccatmus
+PART setup 345s
+EQCHECK identical 64s
+SELECT r0_medium PA 40.011 PB 45.43 P6 28.84 ['minlen3', 'fold']
+PART choose_r0_medium 2130s
+SELECT r5_mccatmus PA 22.856 PB 28.16 P6 22.35 []
+PART choose_r5_mccatmus 1678s
+JOB_OK

@@ -1,0 +1,8 @@
+nproc 8 recs r2_traprinq r3_mccatmus
+PART setup 361s
+EQCHECK identical 68s
+SELECT r2_traprinq PA 63.149 PB 73.53 P6 58.47 ['beta15']
+PART choose_r2_traprinq 116s
+SELECT r3_mccatmus PA 83.352 PB 91.7 P6 77.26 ['beta15', 'fold']
+PART choose_r3_mccatmus 2980s
+JOB_OK

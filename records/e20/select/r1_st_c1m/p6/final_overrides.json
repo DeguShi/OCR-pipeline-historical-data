@@ -1,0 +1,30 @@
+{
+ "accepted": {},
+ "chosen": [],
+ "overrides": {},
+ "result": {
+  "name": "base",
+  "overrides": {},
+  "oficial": {
+   "wer": 19.64,
+   "cer": 5.58
+  },
+  "gemini": {
+   "wer": 9.42,
+   "cer": 3.76
+  }
+ },
+ "base": {
+  "name": "base",
+  "overrides": {},
+  "oficial": {
+   "wer": 19.64,
+   "cer": 5.58
+  },
+  "gemini": {
+   "wer": 9.42,
+   "cer": 3.76
+  }
+ },
+ "config_source": "configs/final_v6.json"
+}

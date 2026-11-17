@@ -1,0 +1,210 @@
+{
+ "r0_medium": {
+  "PA": {
+   "params": {
+    "alpha": 0.401,
+    "beta": 0.672,
+    "unk": -13.988,
+    "beam_prune_logp": -14.941,
+    "token_min_logp": -6.062,
+    "lm": "kn3_w1",
+    "beam": 256
+   },
+   "tuning_wer": 40.011,
+   "tuning_cer": 15.947
+  },
+  "PB": {
+   "params": {
+    "mode": "NGrams",
+    "smoothing": 0.001,
+    "corpus": "outputs/lm/period_w4_livro78.txt",
+    "beam": 256
+   },
+   "tuning_wer": 45.43,
+   "tuning_cer": 17.08
+  },
+  "P6": {
+   "config": "records/e20/select/r0_medium/p6/config.json",
+   "chosen": [
+    "minlen3",
+    "fold"
+   ],
+   "overrides": {
+    "lexicon_min_len": 3,
+    "fold_accents": true
+   },
+   "tuning_wer": 28.84,
+   "tuning_cer": 12.04
+  }
+ },
+ "r1_st_c1m": {
+  "PA": {
+   "params": {
+    "alpha": 1.371,
+    "beta": 2.804,
+    "unk": -14.615,
+    "beam_prune_logp": -20.668,
+    "token_min_logp": -6.68,
+    "lm": "kn3_w4b8",
+    "beam": 256
+   },
+   "tuning_wer": 20.542,
+   "tuning_cer": 5.999
+  },
+  "PB": {
+   "params": {
+    "mode": "NGrams",
+    "smoothing": 0.001,
+    "corpus": "outputs/lm/period_w4_livro78.txt",
+    "beam": 256
+   },
+   "tuning_wer": 23.08,
+   "tuning_cer": 6.18
+  },
+  "P6": {
+   "config": "records/e20/select/r1_st_c1m/p6/config.json",
+   "chosen": [],
+   "overrides": {},
+   "tuning_wer": 19.64,
+   "tuning_cer": 5.58
+  }
+ },
+ "r2_traprinq": {
+  "PA": {
+   "params": {
+    "alpha": 0.67,
+    "beta": 0.757,
+    "unk": -5.307,
+    "beam_prune_logp": -10.874,
+    "token_min_logp": -7.397,
+    "lm": "kn3_w1",
+    "beam": 256
+   },
+   "tuning_wer": 63.149,
+   "tuning_cer": 31.552
+  },
+  "PB": {
+   "params": {
+    "mode": "NGrams",
+    "smoothing": 0.001,
+    "corpus": "outputs/lm/period_w4_livro78.txt",
+    "beam": 256
+   },
+   "tuning_wer": 73.53,
+   "tuning_cer": 31.47
+  },
+  "P6": {
+   "config": "records/e20/select/r2_traprinq/p6/config.json",
+   "chosen": [
+    "beta15"
+   ],
+   "overrides": {
+    "context_beta": 1.5
+   },
+   "tuning_wer": 58.47,
+   "tuning_cer": 28.23
+  }
+ },
+ "r3_mccatmus": {
+  "PA": {
+   "params": {
+    "alpha": 0.67,
+    "beta": 0.757,
+    "unk": -5.307,
+    "beam_prune_logp": -10.874,
+    "token_min_logp": -7.397,
+    "lm": "kn3_w1",
+    "beam": 256
+   },
+   "tuning_wer": 83.352,
+   "tuning_cer": 47.299
+  },
+  "PB": {
+   "params": {
+    "mode": "NGrams",
+    "smoothing": 0.001,
+    "corpus": "outputs/lm/period_w4_livro78.txt",
+    "beam": 256
+   },
+   "tuning_wer": 91.7,
+   "tuning_cer": 46.54
+  },
+  "P6": {
+   "config": "records/e20/select/r3_mccatmus/p6/config.json",
+   "chosen": [
+    "beta15",
+    "fold"
+   ],
+   "overrides": {
+    "context_beta": 1.5,
+    "fold_accents": true
+   },
+   "tuning_wer": 77.26,
+   "tuning_cer": 42.47
+  }
+ },
+ "r4_traprinq": {
+  "PA": {
+   "params": {
+    "alpha": 0.786,
+    "beta": -0.313,
+    "unk": -6.206,
+    "beam_prune_logp": -16.077,
+    "token_min_logp": -10.656,
+    "lm": "kn3_w1",
+    "beam": 128
+   },
+   "tuning_wer": 20.711,
+   "tuning_cer": 6.322
+  },
+  "PB": {
+   "params": {
+    "mode": "NGrams",
+    "smoothing": 0.001,
+    "corpus": "outputs/lm/period_w4_livro78.txt",
+    "beam": 256
+   },
+   "tuning_wer": 24.6,
+   "tuning_cer": 6.76
+  },
+  "P6": {
+   "config": "records/e20/select/r4_traprinq/p6/config.json",
+   "chosen": [],
+   "overrides": {},
+   "tuning_wer": 20.71,
+   "tuning_cer": 5.97
+  }
+ },
+ "r5_mccatmus": {
+  "PA": {
+   "params": {
+    "alpha": 1.517,
+    "beta": 2.601,
+    "unk": -14.787,
+    "beam_prune_logp": -15.328,
+    "token_min_logp": -9.459,
+    "lm": "kn3_w1",
+    "beam": 128
+   },
+   "tuning_wer": 22.856,
+   "tuning_cer": 7.034
+  },
+  "PB": {
+   "params": {
+    "mode": "NGrams",
+    "smoothing": 0.001,
+    "corpus": "outputs/lm/period_w4_livro78.txt",
+    "beam": 256
+   },
+   "tuning_wer": 28.16,
+   "tuning_cer": 7.97
+  },
+  "P6": {
+   "config": "records/e20/select/r5_mccatmus/p6/config.json",
+   "chosen": [],
+   "overrides": {},
+   "tuning_wer": 22.35,
+   "tuning_cer": 6.82
+  }
+ }
+}

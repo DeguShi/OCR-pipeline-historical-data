@@ -1,0 +1,117 @@
+{
+ "input": "outputs/e20/select/r0_medium/A2/results.jsonl",
+ "alphabet_size": 88,
+ "mapped": 2785,
+ "map": {
+  "̧": {
+   "n": 773,
+   "to": "",
+   "name": "COMBINING CEDILLA"
+  },
+  "^": {
+   "n": 691,
+   "to": "",
+   "name": "CIRCUMFLEX ACCENT"
+  },
+  "°": {
+   "n": 467,
+   "to": "",
+   "name": "DEGREE SIGN"
+  },
+  "~": {
+   "n": 230,
+   "to": "",
+   "name": "TILDE"
+  },
+  "¬": {
+   "n": 147,
+   "to": "",
+   "name": "NOT SIGN"
+  },
+  "à": {
+   "n": 132,
+   "to": "a",
+   "name": "LATIN SMALL LETTER A WITH GRAVE"
+  },
+  "́": {
+   "n": 112,
+   "to": "",
+   "name": "COMBINING ACUTE ACCENT"
+  },
+  "̃": {
+   "n": 80,
+   "to": "",
+   "name": "COMBINING TILDE"
+  },
+  "̀": {
+   "n": 33,
+   "to": "",
+   "name": "COMBINING GRAVE ACCENT"
+  },
+  "?": {
+   "n": 31,
+   "to": "",
+   "name": "QUESTION MARK"
+  },
+  "£": {
+   "n": 31,
+   "to": "",
+   "name": "POUND SIGN"
+  },
+  "«": {
+   "n": 17,
+   "to": "",
+   "name": "LEFT-POINTING DOUBLE ANGLE QUOTATION MARK"
+  },
+  "„": {
+   "n": 9,
+   "to": "",
+   "name": "DOUBLE LOW-9 QUOTATION MARK"
+  },
+  "]": {
+   "n": 7,
+   "to": "",
+   "name": "RIGHT SQUARE BRACKET"
+  },
+  "̂": {
+   "n": 7,
+   "to": "",
+   "name": "COMBINING CIRCUMFLEX ACCENT"
+  },
+  "ȩ": {
+   "n": 6,
+   "to": "e",
+   "name": "LATIN SMALL LETTER E WITH CEDILLA"
+  },
+  "#": {
+   "n": 4,
+   "to": "",
+   "name": "NUMBER SIGN"
+  },
+  "í": {
+   "n": 4,
+   "to": "i",
+   "name": "LATIN SMALL LETTER I WITH ACUTE"
+  },
+  "Д": {
+   "n": 1,
+   "to": "",
+   "name": "CYRILLIC CAPITAL LETTER DE"
+  },
+  "р": {
+   "n": 1,
+   "to": "",
+   "name": "CYRILLIC SMALL LETTER ER"
+  },
+  "н": {
+   "n": 1,
+   "to": "",
+   "name": "CYRILLIC SMALL LETTER EN"
+  },
+  "⟧": {
+   "n": 1,
+   "to": "",
+   "name": "MATHEMATICAL RIGHT WHITE SQUARE BRACKET"
+  }
+ }
+}

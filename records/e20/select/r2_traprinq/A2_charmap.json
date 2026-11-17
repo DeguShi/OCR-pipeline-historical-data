@@ -1,0 +1,67 @@
+{
+ "input": "outputs/e20/select/r2_traprinq/A2/results.jsonl",
+ "alphabet_size": 88,
+ "mapped": 1882,
+ "map": {
+  "_": {
+   "n": 624,
+   "to": "",
+   "name": "LOW LINE"
+  },
+  "̃": {
+   "n": 461,
+   "to": "",
+   "name": "COMBINING TILDE"
+  },
+  "̧": {
+   "n": 457,
+   "to": "",
+   "name": "COMBINING CEDILLA"
+  },
+  "̄": {
+   "n": 255,
+   "to": "",
+   "name": "COMBINING MACRON"
+  },
+  "/": {
+   "n": 31,
+   "to": "",
+   "name": "SOLIDUS"
+  },
+  "́": {
+   "n": 25,
+   "to": "",
+   "name": "COMBINING ACUTE ACCENT"
+  },
+  "ū": {
+   "n": 9,
+   "to": "u",
+   "name": "LATIN SMALL LETTER U WITH MACRON"
+  },
+  "ā": {
+   "n": 8,
+   "to": "a",
+   "name": "LATIN SMALL LETTER A WITH MACRON"
+  },
+  "?": {
+   "n": 6,
+   "to": "",
+   "name": "QUESTION MARK"
+  },
+  "̀": {
+   "n": 4,
+   "to": "",
+   "name": "COMBINING GRAVE ACCENT"
+  },
+  "ẽ": {
+   "n": 1,
+   "to": "e",
+   "name": "LATIN SMALL LETTER E WITH TILDE"
+  },
+  "ī": {
+   "n": 1,
+   "to": "i",
+   "name": "LATIN SMALL LETTER I WITH MACRON"
+  }
+ }
+}

@@ -1,0 +1,17 @@
+{"name": "base", "overrides": {}, "oficial": {"wer": 22.35, "cer": 6.82}, "gemini": {"wer": 12.04, "cer": 5.17}}
+{"name": "alpha8", "overrides": {"ctc_alpha": 8}, "oficial": {"wer": 22.4, "cer": 6.92}, "gemini": {"wer": 12.09, "cer": 5.25}}
+{"name": "alpha24", "overrides": {"ctc_alpha": 24}, "oficial": {"wer": 22.35, "cer": 6.82}, "gemini": {"wer": 12.04, "cer": 5.17}}
+{"name": "beta05", "overrides": {"context_beta": 0.5}, "oficial": {"wer": 23.81, "cer": 7.27}, "gemini": {"wer": 13.59, "cer": 5.64}}
+{"name": "beta15", "overrides": {"context_beta": 1.5}, "oficial": {"wer": 22.01, "cer": 6.75}, "gemini": {"wer": 11.82, "cer": 5.12}}
+{"name": "ratio04", "overrides": {"lexicon_max_ratio": 0.4}, "oficial": {"wer": 22.46, "cer": 6.88}, "gemini": {"wer": 12.2, "cer": 5.21}}
+{"name": "ratio06", "overrides": {"lexicon_max_ratio": 0.6}, "oficial": {"wer": 22.35, "cer": 6.82}, "gemini": {"wer": 12.04, "cer": 5.17}}
+{"name": "short40", "overrides": {"context_short": 40}, "oficial": {"wer": 22.35, "cer": 6.82}, "gemini": {"wer": 12.04, "cer": 5.17}}
+{"name": "short80", "overrides": {"context_short": 80}, "oficial": {"wer": 22.29, "cer": 6.81}, "gemini": {"wer": 11.99, "cer": 5.15}}
+{"name": "cand20", "overrides": {"ctc_candidates": 20}, "oficial": {"wer": 22.46, "cer": 6.86}, "gemini": {"wer": 12.2, "cer": 5.21}}
+{"name": "cand50", "overrides": {"ctc_candidates": 50}, "oficial": {"wer": 22.29, "cer": 6.81}, "gemini": {"wer": 11.99, "cer": 5.15}}
+{"name": "nbest3", "overrides": {"context_nbest": 3}, "oficial": {"wer": 22.57, "cer": 6.9}, "gemini": {"wer": 12.25, "cer": 5.24}}
+{"name": "nbest8", "overrides": {"context_nbest": 8}, "oficial": {"wer": 22.29, "cer": 6.81}, "gemini": {"wer": 11.99, "cer": 5.15}}
+{"name": "beam0", "overrides": {"beam": 0}, "oficial": {"wer": 22.57, "cer": 6.9}, "gemini": {"wer": 12.31, "cer": 5.25}}
+{"name": "beam128", "overrides": {"beam": 128}, "oficial": {"wer": 22.35, "cer": 6.82}, "gemini": {"wer": 12.04, "cer": 5.17}}
+{"name": "minlen3", "overrides": {"lexicon_min_len": 3}, "oficial": {"wer": 22.07, "cer": 6.77}, "gemini": {"wer": 11.77, "cer": 5.11}}
+{"name": "fold", "overrides": {"fold_accents": true}, "oficial": {"wer": 22.74, "cer": 6.86}, "gemini": {"wer": 12.73, "cer": 5.21}}

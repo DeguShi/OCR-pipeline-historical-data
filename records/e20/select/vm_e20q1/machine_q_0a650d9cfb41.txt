@@ -1,0 +1,7 @@
+Using Python 3.12.12 environment at: /content/venv
+Using Python 3.12.12 environment at: /content/dvenv
+8
+               total        used        free      shared  buff/cache   available
+Mem:              50          34           0           0          16          16
+Swap:              0           0           0
+Model name:                              AMD EPYC 7B12
