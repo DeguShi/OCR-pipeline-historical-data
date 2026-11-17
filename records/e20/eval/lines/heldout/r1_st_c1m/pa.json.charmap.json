@@ -1,0 +1,17 @@
+{
+ "input": "outputs/e20/eval/raw/heldout/r1_st_c1m/pa/a1.371_b2.804/lines.json",
+ "alphabet_size": 88,
+ "mapped": 4,
+ "map": {
+  "̧": {
+   "n": 3,
+   "to": "",
+   "name": "COMBINING CEDILLA"
+  },
+  "̃": {
+   "n": 1,
+   "to": "",
+   "name": "COMBINING TILDE"
+  }
+ }
+}

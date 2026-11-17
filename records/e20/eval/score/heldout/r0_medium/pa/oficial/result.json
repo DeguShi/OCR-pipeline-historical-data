@@ -1,0 +1,66 @@
+{
+  "source": "outputs/e20/eval/lines/heldout/r0_medium/pa.json",
+  "rules": true,
+  "corpus": {
+    "wer_strict": 0.4186413902053712,
+    "cer_strict": 0.1482731757984939,
+    "wer_norm": 0.384251968503937,
+    "cer_norm": 0.14217124566551081
+  },
+  "pages": [
+    {
+      "page": 7,
+      "lines": 33,
+      "pred_words": 210,
+      "text": "§3º O vice Presente é a natural subtituto do Presidente\n§4º Subiram de Vice Crescente as demais Vereadores\nna ordem de sua estaçar. Em caso de empate seria\no mais velho\nCapitulo 32\nDa ordem dos trabalhos\nArtigo 3.e\nNo dia marcado para as essais se venerar e Viradores\nno salas principal da municipalidade, as onze\nhoras da manha, e havendo nero legal, a penitente\narmando a seu lage, que c'a cabeceira da mera dos\ntrabarlus,davpricipi.assier-pelospalairas:-Esta\naberta a sessão.\nArtigo 4\nAs sessar durava a tempo maximo de quatro hovas.\nTerminada a sessão, o presidente encerrará\nos trabalhos pelas palavras:- Está encerras. a sessar.\nArtigo 52\nAberta a sessão, a pesidente declarará a materia en\ndescurar, manter a ordem durante os trabalhes, don\ndo a palam as que poiein a pedir, furent cevar\na decencia e a civilidade entre os vereadores e os\nespectadores\n§ 1º No recinto de trabatho e'vedado o ingresso\na pessoa que nas pertença a corporaad minei\npal.\n2 Os espectadores nas potens intervir un debates,\npor qualquer forma, e nem dor signaes de append\nça on desagrado, 186 pena de serem observados, e\nexpulsos da sala, un caco de vencancio.\nArtigo 6.o\net Pressente membre:\n1e Chamar a ardeu, ate tre veses, a vereador que",
+      "wer_strict": 0.4719626168224299,
+      "cer_strict": 0.16941176470588235,
+      "wer_norm": 0.413953488372093,
+      "cer_norm": 0.15899919289749798,
+      "strict_we": 101,
+      "strict_rw": 214,
+      "strict_ce": 216,
+      "strict_rc": 1275,
+      "norm_we": 89,
+      "norm_rw": 215,
+      "norm_ce": 197,
+      "norm_rc": 1239
+    },
+    {
+      "page": 10,
+      "lines": 33,
+      "pred_words": 175,
+      "text": "dentes, descendentes, sogro e genro, inane centraes\ndurante o cunhadio, tio e sobrinho e socio da\nmesma firma, o vereador a quem a h postre\niteressar nao poderá votar.\nArtigo 15º\nAos Vereadores que, sem causa justificada,\nfartarem a duas sessões consecutivas, ben\ncomo aos supplentes convocados que na\ncompare even, seva importa, pelo Presidente\na multa de dez mil reis (10:000) (Reg.arto6o\n4 ). O Presidente quando tiver de discutir\nqualquer assumpto on apresentar e defender\nindicaa sua, passava a presidencia sui\nmi mediato.\nCapitulo 4\nDo mumero das sessões\nArtigo 16º\nA Camara municipal fará un cada anno\nseis sessar momarias, de dois un dois meses,\nnos primeiros dias uteis de Outubro, Desembro,\nFerir, Abril, Junho e gosto que durara\nos dias necessarios, nunca menos de tre.\nArtigo\nHaverá un cada anno tantas sesso extraordinarias\nquantas prim exigidas pelo\nben municipal.\n§1 As sesso extraordinanias seva comocavas\npelo Presidente e sempre por onem\nsuperior, iniciativa do proprio presidente\na Requerimento do Intendente. Em qualque\ncaro o presidente declarará. motivo\nda caça.\nDisposiçoes geraes.",
+      "wer_strict": 0.34269662921348315,
+      "cer_strict": 0.10735930735930736,
+      "wer_norm": 0.3314917127071823,
+      "cer_norm": 0.10615521855486174,
+      "strict_we": 61,
+      "strict_rw": 178,
+      "strict_ce": 124,
+      "strict_rc": 1155,
+      "norm_we": 60,
+      "norm_rw": 181,
+      "norm_ce": 119,
+      "norm_rc": 1121
+    },
+    {
+      "page": 12,
+      "lines": 33,
+      "pred_words": 241,
+      "text": "lampadas quando a Camara a exigir, precedendo\nairi a mesma com seis meses, pelo menos, de\ninterdencia, ina un que o numero de lampa\ndas exigido nas exceda a capacidade e força\nde dynamis, caso em que se obriga a stirpe\ndentro de prazo de doze meses contados da\ndata do aviso, nas podendo elle ter logad'antes\nde ser mangrada e acceita a silenaas\ncontante de presente contracto.\n§2 A clausula 18e de contracto fica assim\nsubstituida: Clausula 18e Se a desarranjo que\noccasionar a interropas da Luy durar mais\nde quinze dias, poria a camara rescindir a\ncontracto, salvo caso de prea maior que\nserá resolvida por arbito pr fessora\nnomeados pela forma de direito.\n§3 1 clausula 16 fica assi:- et impura\ndeverá ter sempre un deposite a numero de\nlampadas necessario para subtituir minediatamente\nqualquer lampada que se quime,\nse utilise on se apague, sob pena de pagar\ndez mil reis de muita abatida nas peta çõ\nmensaes por lampada que eter apagada\nduas noites come entras, catro caso a força\nmain a juro de fiscal profissional da Camara\n§ 4 A clausula 14 ficava dite modo:- Na\nexpessa\"uaçapublica-f'cacompuhendio-e\na liaças de Cas de Camara com seis tampadus\ne a da Cadea com egual numero, dutra\nAridos de accordo com a mesma camara.\n55 A Clausula 20e ficava assier:- et Empi\nser nada a star e augurar a\nças da cidade da data desta lei a seis meses",
+      "wer_strict": 0.42738589211618255,
+      "cer_strict": 0.1625615763546798,
+      "wer_norm": 0.39748953974895396,
+      "cer_norm": 0.156227501799856,
+      "strict_we": 103,
+      "strict_rw": 241,
+      "strict_ce": 231,
+      "strict_rc": 1421,
+      "norm_we": 95,
+      "norm_rw": 239,
+      "norm_ce": 217,
+      "norm_rc": 1389
+    }
+  ]
+}

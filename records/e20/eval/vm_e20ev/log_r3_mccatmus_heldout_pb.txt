@@ -1,0 +1,7 @@
+2026-11-17 22:11:01,677 corpus: 314355 words dropped (characters the recognizer cannot write)
+2026-11-17 22:11:02,892 3 pages, 80 chars (37 word chars)
+2026-11-17 22:28:29,748 NGrams smoothing 0.001 -> outputs/e20/eval/raw/heldout/r3_mccatmus/pb/NGrams_s0.001
+mapped 16 characters (3 distinct) -> outputs/e20/eval/lines/heldout/r3_mccatmus/pb.json
+WER norm 87.72% | CER norm 45.00% -> outputs/e20/eval/score/heldout/r3_mccatmus/pb/oficial
+WER norm 87.05% | CER norm 45.13% -> outputs/e20/eval/score/heldout/r3_mccatmus/pb/gemini
+DECODED r3_mccatmus heldout pb

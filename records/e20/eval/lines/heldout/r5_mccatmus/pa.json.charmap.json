@@ -1,0 +1,12 @@
+{
+ "input": "outputs/e20/eval/raw/heldout/r5_mccatmus/pa/a1.517_b2.601/lines.json",
+ "alphabet_size": 88,
+ "mapped": 1,
+ "map": {
+  "̧": {
+   "n": 1,
+   "to": "",
+   "name": "COMBINING CEDILLA"
+  }
+ }
+}

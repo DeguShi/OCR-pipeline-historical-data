@@ -1,0 +1,42 @@
+{
+ "input": "outputs/e20/eval/raw/test10/r0_medium/pb/NGrams_s0.001/lines.json",
+ "alphabet_size": 88,
+ "mapped": 59,
+ "map": {
+  "^": {
+   "n": 27,
+   "to": "",
+   "name": "CIRCUMFLEX ACCENT"
+  },
+  "°": {
+   "n": 10,
+   "to": "",
+   "name": "DEGREE SIGN"
+  },
+  "~": {
+   "n": 7,
+   "to": "",
+   "name": "TILDE"
+  },
+  "¬": {
+   "n": 5,
+   "to": "",
+   "name": "NOT SIGN"
+  },
+  "⁋": {
+   "n": 4,
+   "to": "",
+   "name": "REVERSED PILCROW SIGN"
+  },
+  "£": {
+   "n": 3,
+   "to": "",
+   "name": "POUND SIGN"
+  },
+  "à": {
+   "n": 3,
+   "to": "a",
+   "name": "LATIN SMALL LETTER A WITH GRAVE"
+  }
+ }
+}

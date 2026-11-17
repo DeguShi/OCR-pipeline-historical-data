@@ -1,0 +1,26 @@
+2026-11-17 21:30:12,860 page 7: 33 lines
+2026-11-17 21:30:15,797 page 10: 33 lines
+2026-11-17 21:30:18,926 page 12: 33 lines
+	Command being timed: "/content/venv/bin/python tools/export_posteriors.py --config configs/final_v6.json --pages 7,10,12 --device cuda:0 --out outputs/e20/eval/post/heldout/r1_st_c1m"
+	User time (seconds): 19.28
+	System time (seconds): 1.78
+	Percent of CPU this job got: 123%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:17.10
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1739744
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 4
+	Minor (reclaiming a frame) page faults: 341831
+	Voluntary context switches: 1072
+	Involuntary context switches: 69896
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 4832
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

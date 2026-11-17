@@ -1,0 +1,32 @@
+{
+ "input": "outputs/e20/eval/pe/test10/r4_traprinq/lines.json",
+ "alphabet_size": 88,
+ "mapped": 59,
+ "map": {
+  "í": {
+   "n": 25,
+   "to": "i",
+   "name": "LATIN SMALL LETTER I WITH ACUTE"
+  },
+  "â": {
+   "n": 21,
+   "to": "a",
+   "name": "LATIN SMALL LETTER A WITH CIRCUMFLEX"
+  },
+  "à": {
+   "n": 10,
+   "to": "a",
+   "name": "LATIN SMALL LETTER A WITH GRAVE"
+  },
+  "Ú": {
+   "n": 2,
+   "to": "U",
+   "name": "LATIN CAPITAL LETTER U WITH ACUTE"
+  },
+  "À": {
+   "n": 1,
+   "to": "A",
+   "name": "LATIN CAPITAL LETTER A WITH GRAVE"
+  }
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "input": "outputs/e20/eval/raw/test10/r0_medium/p6/lines.json",
+ "alphabet_size": 88,
+ "mapped": 14,
+ "map": {
+  "°": {
+   "n": 8,
+   "to": "",
+   "name": "DEGREE SIGN"
+  },
+  "£": {
+   "n": 3,
+   "to": "",
+   "name": "POUND SIGN"
+  },
+  "^": {
+   "n": 2,
+   "to": "",
+   "name": "CIRCUMFLEX ACCENT"
+  },
+  "í": {
+   "n": 1,
+   "to": "i",
+   "name": "LATIN SMALL LETTER I WITH ACUTE"
+  }
+ }
+}

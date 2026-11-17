@@ -1,0 +1,32 @@
+{
+ "input": "outputs/e20/eval/raw/heldout/r2_traprinq/p0/lines.json",
+ "alphabet_size": 88,
+ "mapped": 7,
+ "map": {
+  "ū": {
+   "n": 2,
+   "to": "u",
+   "name": "LATIN SMALL LETTER U WITH MACRON"
+  },
+  "/": {
+   "n": 2,
+   "to": "",
+   "name": "SOLIDUS"
+  },
+  "ĩ": {
+   "n": 1,
+   "to": "i",
+   "name": "LATIN SMALL LETTER I WITH TILDE"
+  },
+  "ñ": {
+   "n": 1,
+   "to": "n",
+   "name": "LATIN SMALL LETTER N WITH TILDE"
+  },
+  "ẽ": {
+   "n": 1,
+   "to": "e",
+   "name": "LATIN SMALL LETTER E WITH TILDE"
+  }
+ }
+}

@@ -1,0 +1,7 @@
+2026-11-17 22:24:46,910 corpus: 425980 words dropped (characters the recognizer cannot write)
+2026-11-17 22:24:47,851 3 pages, 64 chars (34 word chars)
+2026-11-17 22:41:36,565 NGrams smoothing 0.001 -> outputs/e20/eval/raw/heldout/r4_traprinq/pb/NGrams_s0.001
+mapped 0 characters (0 distinct) -> outputs/e20/eval/lines/heldout/r4_traprinq/pb.json
+WER norm 20.00% | CER norm 4.61% -> outputs/e20/eval/score/heldout/r4_traprinq/pb/oficial
+WER norm 7.98% | CER norm 2.66% -> outputs/e20/eval/score/heldout/r4_traprinq/pb/gemini
+DECODED r4_traprinq heldout pb

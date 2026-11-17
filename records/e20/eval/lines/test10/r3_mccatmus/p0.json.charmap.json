@@ -1,0 +1,47 @@
+{
+ "input": "outputs/e20/eval/raw/test10/r3_mccatmus/p0/lines.json",
+ "alphabet_size": 88,
+ "mapped": 29,
+ "map": {
+  "à": {
+   "n": 17,
+   "to": "a",
+   "name": "LATIN SMALL LETTER A WITH GRAVE"
+  },
+  "^": {
+   "n": 6,
+   "to": "",
+   "name": "CIRCUMFLEX ACCENT"
+  },
+  "î": {
+   "n": 1,
+   "to": "i",
+   "name": "LATIN SMALL LETTER I WITH CIRCUMFLEX"
+  },
+  "?": {
+   "n": 1,
+   "to": "",
+   "name": "QUESTION MARK"
+  },
+  "è": {
+   "n": 1,
+   "to": "e",
+   "name": "LATIN SMALL LETTER E WITH GRAVE"
+  },
+  "K": {
+   "n": 1,
+   "to": "",
+   "name": "LATIN CAPITAL LETTER K"
+  },
+  "⁊": {
+   "n": 1,
+   "to": "",
+   "name": "TIRONIAN SIGN ET"
+  },
+  "⟧": {
+   "n": 1,
+   "to": "",
+   "name": "MATHEMATICAL RIGHT WHITE SQUARE BRACKET"
+  }
+ }
+}

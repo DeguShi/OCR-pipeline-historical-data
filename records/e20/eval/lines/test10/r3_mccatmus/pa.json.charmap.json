@@ -1,0 +1,57 @@
+{
+ "input": "outputs/e20/eval/raw/test10/r3_mccatmus/pa/a0.67_b0.757/lines.json",
+ "alphabet_size": 88,
+ "mapped": 59,
+ "map": {
+  "⟦": {
+   "n": 24,
+   "to": "",
+   "name": "MATHEMATICAL LEFT WHITE SQUARE BRACKET"
+  },
+  "^": {
+   "n": 9,
+   "to": "",
+   "name": "CIRCUMFLEX ACCENT"
+  },
+  "à": {
+   "n": 7,
+   "to": "a",
+   "name": "LATIN SMALL LETTER A WITH GRAVE"
+  },
+  "⁊": {
+   "n": 6,
+   "to": "",
+   "name": "TIRONIAN SIGN ET"
+  },
+  "⟧": {
+   "n": 4,
+   "to": "",
+   "name": "MATHEMATICAL RIGHT WHITE SQUARE BRACKET"
+  },
+  "?": {
+   "n": 3,
+   "to": "",
+   "name": "QUESTION MARK"
+  },
+  "̀": {
+   "n": 2,
+   "to": "",
+   "name": "COMBINING GRAVE ACCENT"
+  },
+  "́": {
+   "n": 2,
+   "to": "",
+   "name": "COMBINING ACUTE ACCENT"
+  },
+  "̧": {
+   "n": 1,
+   "to": "",
+   "name": "COMBINING CEDILLA"
+  },
+  "–": {
+   "n": 1,
+   "to": "",
+   "name": "EN DASH"
+  }
+ }
+}

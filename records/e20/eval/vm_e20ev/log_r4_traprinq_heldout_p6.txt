@@ -1,0 +1,8 @@
+2026-11-17 22:29:30,135 page 7: 33 lines, 54.0 s
+2026-11-17 22:30:31,164 page 10: 33 lines, 61.0 s
+2026-11-17 22:31:42,846 page 12: 33 lines, 71.7 s
+2026-11-17 22:31:42,849 ALL DONE: load 1.8 s, decode 186.6 s wall / 144.3 s cpu, peak 664 MB
+mapped 0 characters (0 distinct) -> outputs/e20/eval/lines/heldout/r4_traprinq/p6.json
+WER norm 18.74% | CER norm 4.11% -> outputs/e20/eval/score/heldout/r4_traprinq/p6/oficial
+WER norm 5.42% | CER norm 1.92% -> outputs/e20/eval/score/heldout/r4_traprinq/p6/gemini
+DECODED r4_traprinq heldout p6

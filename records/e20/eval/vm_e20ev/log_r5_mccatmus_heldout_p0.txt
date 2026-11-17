@@ -1,0 +1,5 @@
+2026-11-17 22:41:37,928 3 pages, 99 lines
+mapped 0 characters (0 distinct) -> outputs/e20/eval/lines/heldout/r5_mccatmus/p0.json
+WER norm 30.55% | CER norm 7.02% -> outputs/e20/eval/score/heldout/r5_mccatmus/p0/oficial
+WER norm 18.52% | CER norm 5.23% -> outputs/e20/eval/score/heldout/r5_mccatmus/p0/gemini
+DECODED r5_mccatmus heldout p0

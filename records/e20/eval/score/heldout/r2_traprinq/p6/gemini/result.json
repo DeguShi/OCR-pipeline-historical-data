@@ -1,0 +1,66 @@
+{
+  "source": "outputs/e20/eval/lines/heldout/r2_traprinq/p6.json",
+  "rules": false,
+  "corpus": {
+    "wer_strict": 0.5929339477726574,
+    "cer_strict": 0.2979102956167176,
+    "wer_norm": 0.5466867469879518,
+    "cer_norm": 0.28432403997895844
+  },
+  "pages": [
+    {
+      "page": 7,
+      "lines": 33,
+      "pred_words": 215,
+      "text": "59. O Que pendente do natural autosito do Presidente\n5 1º subsidio do Vice Presidente e de mais senador e\na ordem de sua Coraçaõ Em caso de ensino deverão\no mais velho\nCapitulo\nDa ordem dos trabalhos\nArtigo 5\nao dia marcado para as dessa serra as suas\no no calar principal a palavra as de\nduas da manhã, e havendo meio legal para se\namando o seu lugar, que ella sabe cura da mas te\ntrabalhos, para parecesse as casas pelas palavras das\naberta sua.\nArtigo da\nas casas curara o tempo maximo de quatro\nas terminada a, e quarenta mar\nos trabalhos pelas palavras ella e terras asseio\nArtigo 5ª\nAberto desta o presidente declarará a materia em\ndeverão, manter a ordem durante o trabalho, dos\ndo a palavra do que sou a Judia fazenda decreta\ndecencia e agilidade entre os vereadores e dos\na escadaria\ne 1.o No seculo dos trabalhos e vedado o ingresso\npessoa que não pulsa o coração minha\nsal.\n82. Os espectadores não posso servir um debates,\npor qualquer forma, e em por segue uma\nao e desagrado, usura de serem curado de\nesputar da sala, e que reincidencia\nArtigo 6.o\nAo Presidente e o que\nE se chamar a sua te era mais, o Vereador que",
+      "wer_strict": 0.6188340807174888,
+      "cer_strict": 0.31073876618431073,
+      "wer_norm": 0.5657894736842105,
+      "cer_norm": 0.2970843183609141,
+      "strict_we": 138,
+      "strict_rw": 223,
+      "strict_ce": 408,
+      "strict_rc": 1313,
+      "norm_we": 129,
+      "norm_rw": 228,
+      "norm_ce": 377,
+      "norm_rc": 1269
+    },
+    {
+      "page": 10,
+      "lines": 33,
+      "pred_words": 182,
+      "text": "dentes, descendente, por o genio, amigo e cunhados\nDurante o cunhadio, tio e sobrinho e com a\nmesma forma, o Vereador que a resposta\nenterrar não poderá polar.\nArtigo Na\nAos criadores que, com causa publicada\nfaltarem a duas de dias consecutivos, sem\ncomo aos Supplentes convocados que se não\ncomparecerem era imposta, pelo Presidente\na multa de dez ameaço de  Reg.o acto p.o\n817 O Presidente quanto ha de escutar\nqualquer assumpto ou apresentar se defender\nnos caça sua, passara a Secreta a que\nimmediato.\nCapitulo 4º\nDo numero das os as\nArtigo 16\nA manancial fará em cada anno\ncii pessaõ do maria, de dois em dois mais\nnos primeiros dias uteis de Outubro, Dentro,\nTiverem Abril, Junho agosto que Jurára\nos dias necessarios, nunca menos de ha\nArtigo\nhaverá em cada anno Santa disse entra\nmaria quantas prima agora pelo\nem mas pl\nse a casa entranhada pero como\ncasas pelo Presidente e sempre por ordem\nsuperior, relativa ao proprio presidente\na Requerimento do Insiste Em qual\npor caso o presidente declarará o motivo\na comer com\nDisposições geraes",
+      "wer_strict": 0.4888888888888889,
+      "cer_strict": 0.23301805674978504,
+      "wer_norm": 0.46524064171123,
+      "cer_norm": 0.22044444444444444,
+      "strict_we": 88,
+      "strict_rw": 180,
+      "strict_ce": 271,
+      "strict_rc": 1163,
+      "norm_we": 87,
+      "norm_rw": 187,
+      "norm_ce": 248,
+      "norm_rc": 1125
+    },
+    {
+      "page": 12,
+      "lines": 33,
+      "pred_words": 236,
+      "text": "Lampadas quando a para o exigir, queria\na mesma tem uis e, pelos, de\nante descia, meu que o primeiro de Santa\nMas dirigido ao estudo a capturado e fria\ndos Estames, e ueo em que me obriga a bispos\ndentro do prazo de dous mais regulado da\ncalado ao, não podendo ser fogão antes\nlhe por em aguada de acta aclara a\ncomtanto presente contracto\n8E2 Clausula i.e de contracto fica assim\npublica. azul 1º se o anjo que\noccasionar a miseria da sua durar mais\na que das, poderá a Camara perdia\ncontado, outro caso a pena maior que\npara escrita por assim parecem aca\nnomeados pela forma do direito\n88 a clausula 16.o fica a em Aqui\ndeverão ter sempre em deposito meio as\nlampadas necessario para publicar me\nfinamente qualquer lampada que a quem\npublice in se apague, pobreza de pagar\ndez mil reis demais abatida mas pelo\nminas por lampada que estava apagada\nduas dito escutava, sabio e as forem\nmaior a juizo do fiscal o fim Cada Camara\n860 a clausula 1ª ficara deste modo era\nesperaram unçaõ publica fica com primeira\navaliação da Casa camara com e sem\npadas a de base em egual pouco, subia\ndos de sendo com a mesma camara\nE5a A Clausula E O. ficará aos = A hia\nera obrigada a sachar e maguar aula\nao da cidade do sal da seita eu que",
+      "wer_strict": 0.6451612903225806,
+      "cer_strict": 0.3383977900552486,
+      "wer_norm": 0.5903614457831325,
+      "cer_norm": 0.32386363636363635,
+      "strict_we": 160,
+      "strict_rw": 248,
+      "strict_ce": 490,
+      "strict_rc": 1448,
+      "norm_we": 147,
+      "norm_rw": 249,
+      "norm_ce": 456,
+      "norm_rc": 1408
+    }
+  ]
+}

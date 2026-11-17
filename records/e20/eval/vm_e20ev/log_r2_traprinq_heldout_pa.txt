@@ -1,0 +1,8 @@
+2026-11-17 21:51:14,730 3 pages, 428594 LM unigrams, 161 labels
+2026-11-17 21:51:29,594 Alphabet determined to be of regular style.
+2026-11-17 21:51:30,844 Alphabet determined to be of regular style.
+2026-11-17 21:52:50,377 alpha 0.67 beta 0.757 -> outputs/e20/eval/raw/heldout/r2_traprinq/pa/a0.67_b0.757
+mapped 20 characters (6 distinct) -> outputs/e20/eval/lines/heldout/r2_traprinq/pa.json
+WER norm 62.36% | CER norm 30.33% -> outputs/e20/eval/score/heldout/r2_traprinq/pa/oficial
+WER norm 61.45% | CER norm 29.88% -> outputs/e20/eval/score/heldout/r2_traprinq/pa/gemini
+DECODED r2_traprinq heldout pa

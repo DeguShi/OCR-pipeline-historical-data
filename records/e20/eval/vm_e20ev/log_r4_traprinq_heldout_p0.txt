@@ -1,0 +1,5 @@
+2026-11-17 22:23:39,018 3 pages, 99 lines
+mapped 3 characters (2 distinct) -> outputs/e20/eval/lines/heldout/r4_traprinq/p0.json
+WER norm 23.78% | CER norm 5.57% -> outputs/e20/eval/score/heldout/r4_traprinq/p0/oficial
+WER norm 12.20% | CER norm 3.68% -> outputs/e20/eval/score/heldout/r4_traprinq/p0/gemini
+DECODED r4_traprinq heldout p0

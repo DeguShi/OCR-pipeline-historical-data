@@ -1,0 +1,62 @@
+{
+ "input": "outputs/e20/eval/raw/test10/r0_medium/pa/a0.401_b0.672/lines.json",
+ "alphabet_size": 88,
+ "mapped": 102,
+ "map": {
+  "°": {
+   "n": 31,
+   "to": "",
+   "name": "DEGREE SIGN"
+  },
+  "^": {
+   "n": 27,
+   "to": "",
+   "name": "CIRCUMFLEX ACCENT"
+  },
+  "̧": {
+   "n": 22,
+   "to": "",
+   "name": "COMBINING CEDILLA"
+  },
+  "¬": {
+   "n": 5,
+   "to": "",
+   "name": "NOT SIGN"
+  },
+  "~": {
+   "n": 3,
+   "to": "",
+   "name": "TILDE"
+  },
+  "£": {
+   "n": 3,
+   "to": "",
+   "name": "POUND SIGN"
+  },
+  "⁋": {
+   "n": 3,
+   "to": "",
+   "name": "REVERSED PILCROW SIGN"
+  },
+  "à": {
+   "n": 2,
+   "to": "a",
+   "name": "LATIN SMALL LETTER A WITH GRAVE"
+  },
+  "́": {
+   "n": 2,
+   "to": "",
+   "name": "COMBINING ACUTE ACCENT"
+  },
+  "ȩ": {
+   "n": 2,
+   "to": "e",
+   "name": "LATIN SMALL LETTER E WITH CEDILLA"
+  },
+  "̃": {
+   "n": 2,
+   "to": "",
+   "name": "COMBINING TILDE"
+  }
+ }
+}

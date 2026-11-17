@@ -1,0 +1,32 @@
+{
+ "input": "outputs/baselines/search/vlm/final_test10_paper_pt_period/lines.json",
+ "alphabet_size": 88,
+ "mapped": 63,
+ "map": {
+  "í": {
+   "n": 28,
+   "to": "i",
+   "name": "LATIN SMALL LETTER I WITH ACUTE"
+  },
+  "â": {
+   "n": 22,
+   "to": "a",
+   "name": "LATIN SMALL LETTER A WITH CIRCUMFLEX"
+  },
+  "à": {
+   "n": 8,
+   "to": "a",
+   "name": "LATIN SMALL LETTER A WITH GRAVE"
+  },
+  "Ú": {
+   "n": 3,
+   "to": "U",
+   "name": "LATIN CAPITAL LETTER U WITH ACUTE"
+  },
+  "À": {
+   "n": 2,
+   "to": "A",
+   "name": "LATIN CAPITAL LETTER A WITH GRAVE"
+  }
+ }
+}

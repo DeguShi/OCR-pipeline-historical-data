@@ -1,0 +1,6 @@
+2026-11-17 22:50:11,191 corpus: 313226 words dropped (characters the recognizer cannot write)
+2026-11-17 22:50:12,531 10 pages, 65 chars (33 word chars)
+2026-11-17 23:13:37,098 NGrams smoothing 0.001 -> outputs/e20/eval/raw/test10/r5_mccatmus/pb/NGrams_s0.001
+mapped 1 characters (1 distinct) -> outputs/e20/eval/lines/test10/r5_mccatmus/pb.json
+WER norm 7.56% | CER norm 2.44% -> outputs/e20/eval/score/test10/r5_mccatmus/pb/gemini
+DECODED r5_mccatmus test10 pb

@@ -1,0 +1,59 @@
+nproc 8
+5bf76e7523d7e6db
+e1d7325dc10cc7d3
+9938d454bb41c21a
+f9061e18cadd7f10
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+diffusers 0.42.1 requires huggingface-hub<3.0,>=1.32.0, but you have huggingface-hub 0.36.2 which is incompatible.
+gradio-client 2.7.2 requires huggingface-hub<3.0,>=1.16.0, but you have huggingface-hub 0.36.2 which is incompatible.
+gradio 6.31.0 requires huggingface-hub<3.0,>=1.16.0, but you have huggingface-hub 0.36.2 which is incompatible.
+INFO downloading models/10.5281_zenodo.21788410/medium.safetensors
+INFO ok models/10.5281_zenodo.21788410/medium.safetensors
+INFO ok models/lexicon/pt_hist_legal_w1.txt
+INFO ok models/lexicon/pt_hist_legal_w4_livro78.ngrams.npz
+INFO downloading models/finetuned/st_c1m.safetensors
+INFO ok models/finetuned/st_c1m.safetensors
+INFO ok models/lexicon/pt_hist_legal_w1.txt
+INFO ok models/lexicon/pt_hist_legal_w4_livro78.ngrams.npz
+INFO downloading models/10.5281_zenodo.14543904/traprinq.mlmodel
+INFO ok models/10.5281_zenodo.14543904/traprinq.mlmodel
+INFO ok models/lexicon/pt_hist_legal_w1.txt
+INFO ok models/lexicon/pt_hist_legal_w4_livro78.ngrams.npz
+INFO downloading models/10.5281_zenodo.13788177/mccatmus.mlmodel
+INFO ok models/10.5281_zenodo.13788177/mccatmus.mlmodel
+INFO ok models/lexicon/pt_hist_legal_w1.txt
+INFO ok models/lexicon/pt_hist_legal_w4_livro78.ngrams.npz
+INFO downloading models/finetuned/e20/r4_traprinq_lr3e-4.safetensors
+INFO ok models/finetuned/e20/r4_traprinq_lr3e-4.safetensors
+INFO ok models/lexicon/pt_hist_legal_w1.txt
+INFO ok models/lexicon/pt_hist_legal_w4_livro78.ngrams.npz
+INFO downloading models/finetuned/e20/r5_mccatmus_lr3e-4.safetensors
+INFO ok models/finetuned/e20/r5_mccatmus_lr3e-4.safetensors
+INFO ok models/lexicon/pt_hist_legal_w1.txt
+INFO ok models/lexicon/pt_hist_legal_w4_livro78.ngrams.npz
+outputs/lm/period_w1.txt: OK
+outputs/lm/period_w4_livro78.txt: OK
+outputs/lm/kn3_w1.bin: OK
+outputs/lm/kn3_w4b8.bin: OK
+PART setup 208s
+	Percent of CPU this job got: 121%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:04.34
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 665668
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 85355
+	Voluntary context switches: 27
+	Involuntary context switches: 159
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 39392
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
+JOB_FAILED

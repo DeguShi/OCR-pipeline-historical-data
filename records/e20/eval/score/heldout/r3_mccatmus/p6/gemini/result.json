@@ -1,0 +1,66 @@
+{
+  "source": "outputs/e20/eval/lines/heldout/r3_mccatmus/p6.json",
+  "rules": false,
+  "corpus": {
+    "wer_strict": 0.7849462365591398,
+    "cer_strict": 0.4235474006116208,
+    "wer_norm": 0.7605421686746988,
+    "cer_norm": 0.41530773277222516
+  },
+  "pages": [
+    {
+      "page": 7,
+      "lines": 33,
+      "pred_words": 215,
+      "text": "83 Ore tendente Se natural substituto de Presidente\nE Substitue un vae presidente e demais seria\na ordem de sua entre. o caso de empate seria\ne mais isto\nCapitulo 3i\nDa nem n trabalhos\nAté se\ne sua marcado para as quaes se vê na'arcada\nos na sala principal do mui policia, e uze\nlei da no, Barue numero Legal , o parte\namante, o seu tagus, que é'a exc se render, se\nabriu, da pipi- a e pelas. ti\naberta a sessão.\ntage 1e\nets reaes dera . tempo marins de quatro huo\nas damas a sete, presidente e mais\na tratar por pal mas: tu entrar a essa\nA ligue\nAberta a sessão, presidente declarar a materia unn\ndas custas, terá a no restante no trabalho, de\nde a para a que por a pit, até cen\nagencia e a virilidade entre a verdade o\napertam\n61e o rei de tratal a noite a mãe\na pessoa que nas pertencer a espantou me\npal.\nE. É este dares nas point interior un bate,\na qualquer fr, em de signaes appert\nos en draga, oet para a ter hein, e\nreputa da venda, ou acto de residencia\net906\ne Residente meu lei :\nMe Chamar a ou, até tres ser, é verdade que",
+      "wer_strict": 0.7713004484304933,
+      "cer_strict": 0.4226961157654227,
+      "wer_norm": 0.7543859649122807,
+      "cer_norm": 0.4144996059889677,
+      "strict_we": 172,
+      "strict_rw": 223,
+      "strict_ce": 555,
+      "strict_rc": 1313,
+      "norm_we": 172,
+      "norm_rw": 228,
+      "norm_ce": 526,
+      "norm_rc": 1269
+    },
+    {
+      "page": 10,
+      "lines": 33,
+      "pred_words": 179,
+      "text": "dotes, pendente, rog a que, une cair\ndiante o mais, si réis e seis de\ntres a firme, a Verdade a quem a parte\nterror na poderá votar\nArtigo B2\nsociaes que, n causa justificada\ntentar a por esse cóne intimas, seus\ncon un supplentes convocados que mais\ncompreende, viva importa, ele Presidente\na manta de dez mil réis Prover Vel as e\n364 O Presidente quando tres a resentir\nqualquer assumpto e apresentar e defender\nrever a, passar a prestes a ser\nme mate.\nl apetite 1e\nDe mémoire sur sessão.\ntige 162\ne Camara municipal para un entre as\nse real maria, de dois um dois meu\ne sei o antes de Culto; Desceu,\nTerein, si, pinho Gente que savarin\ne das e cesares, meu inês de tru.\nAtrás .\nMaria un cada anno antes peixe entre\nmaria quantas prim exigidas pelo\nse real.\nse as sessões extravagantes serás com\nas pelo Presidente em por eden\neu per, imperativa da propria patente\ne a regimen de Ouviste Cinquo.\n Can presidente declarará motivo\na Comer eu\nLupanares geraes",
+      "wer_strict": 0.7944444444444444,
+      "cer_strict": 0.4041272570937231,
+      "wer_norm": 0.7540106951871658,
+      "cer_norm": 0.3973333333333333,
+      "strict_we": 143,
+      "strict_rw": 180,
+      "strict_ce": 470,
+      "strict_rc": 1163,
+      "norm_we": 141,
+      "norm_rw": 187,
+      "norm_ce": 447,
+      "norm_rc": 1125
+    },
+    {
+      "page": 12,
+      "lines": 33,
+      "pred_words": 250,
+      "text": "lampadas quasi a mená o exigir, martin\na si me na carne só mãe ils era, de\nmais, me de que o numero de Campos\nda arte mas ure cada a expo citar a Março\nde dôres, que um que se á a interior\nant pae de e mais contos de\ndata da as, mais idéa cle ter logar antes\n se margaride a acta a relação\ncontente de presente contracto\n692 Clausula 16i e contracto seu assim\ntiti. e clausula i; cle e serenas que\nescarrar a tropas ou liy casa mais\nde grande us, por a cair carnide e\ncontente, até caso a pé mas que\nse retrata o artigo proceder\nnome n pela fama de sete.\n23º Clausula 16e já as. et apres\nserá te amo um depois a numero de\npara é essa para liter me\ncertamente qualquer limpas que se que,\ne mutilar e se apaga, not pés de pagar\nde mil réis de muito abatida mas porta eu\nmeus p lampada que tres pregado\na noite com outras, catre en gran\nmais pois é pena sinal de temer\n& se A clausula Ie para deste modo, e a\nepist iil no estio por com\na ilusão de can de Comia, carne seis a\npasse a da bases o qual néro, outro\nde de até can a mesma car ann\n952 a Clausula 20i sousa as et Cupiens\nser chegada a valer e inquér a clara\nse da cidade da vat de lei a seus ares",
+      "wer_strict": 0.7903225806451613,
+      "cer_strict": 0.4399171270718232,
+      "wer_norm": 0.7710843373493976,
+      "cer_norm": 0.4303977272727273,
+      "strict_we": 196,
+      "strict_rw": 248,
+      "strict_ce": 637,
+      "strict_rc": 1448,
+      "norm_we": 192,
+      "norm_rw": 249,
+      "norm_ce": 606,
+      "norm_rc": 1408
+    }
+  ]
+}

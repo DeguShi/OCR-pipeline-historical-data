@@ -1,0 +1,8 @@
+2026-11-17 21:43:34,660 page 7: 33 lines, 190.9 s
+2026-11-17 21:46:25,820 page 10: 33 lines, 171.1 s
+2026-11-17 21:51:00,243 page 12: 33 lines, 274.4 s
+2026-11-17 21:51:00,247 ALL DONE: load 1.1 s, decode 636.3 s wall / 429.8 s cpu, peak 672 MB
+mapped 1 characters (1 distinct) -> outputs/e20/eval/lines/heldout/r0_medium/p6.json
+WER norm 26.61% | CER norm 10.32% -> outputs/e20/eval/score/heldout/r0_medium/p6/oficial
+WER norm 27.11% | CER norm 10.02% -> outputs/e20/eval/score/heldout/r0_medium/p6/gemini
+DECODED r0_medium heldout p6

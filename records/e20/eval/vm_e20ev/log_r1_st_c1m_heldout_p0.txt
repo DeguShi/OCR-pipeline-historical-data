@@ -1,0 +1,5 @@
+2026-11-17 21:40:21,229 3 pages, 99 lines
+mapped 0 characters (0 distinct) -> outputs/e20/eval/lines/heldout/r1_st_c1m/p0.json
+WER norm 29.45% | CER norm 6.88% -> outputs/e20/eval/score/heldout/r1_st_c1m/p0/oficial
+WER norm 18.22% | CER norm 4.94% -> outputs/e20/eval/score/heldout/r1_st_c1m/p0/gemini
+DECODED r1_st_c1m heldout p0

@@ -1,0 +1,42 @@
+{
+ "input": "outputs/e20/eval/raw/heldout/r3_mccatmus/pa/a0.67_b0.757/lines.json",
+ "alphabet_size": 88,
+ "mapped": 33,
+ "map": {
+  "⟦": {
+   "n": 18,
+   "to": "",
+   "name": "MATHEMATICAL LEFT WHITE SQUARE BRACKET"
+  },
+  "^": {
+   "n": 4,
+   "to": "",
+   "name": "CIRCUMFLEX ACCENT"
+  },
+  "⟧": {
+   "n": 4,
+   "to": "",
+   "name": "MATHEMATICAL RIGHT WHITE SQUARE BRACKET"
+  },
+  "à": {
+   "n": 3,
+   "to": "a",
+   "name": "LATIN SMALL LETTER A WITH GRAVE"
+  },
+  "̀": {
+   "n": 2,
+   "to": "",
+   "name": "COMBINING GRAVE ACCENT"
+  },
+  "?": {
+   "n": 1,
+   "to": "",
+   "name": "QUESTION MARK"
+  },
+  "⁊": {
+   "n": 1,
+   "to": "",
+   "name": "TIRONIAN SIGN ET"
+  }
+ }
+}

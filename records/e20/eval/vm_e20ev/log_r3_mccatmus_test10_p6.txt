@@ -1,0 +1,14 @@
+2026-11-17 22:18:44,509 page 18: 33 lines, 154.8 s
+2026-11-17 22:20:28,061 page 22: 33 lines, 103.5 s
+2026-11-17 22:22:15,650 page 23: 33 lines, 107.5 s
+2026-11-17 22:23:50,012 page 24: 34 lines, 94.3 s
+2026-11-17 22:25:32,325 page 25: 33 lines, 102.3 s
+2026-11-17 22:27:40,673 page 31: 35 lines, 128.3 s
+2026-11-17 22:28:56,904 page 32: 33 lines, 76.2 s
+2026-11-17 22:30:34,000 page 34: 33 lines, 97.0 s
+2026-11-17 22:32:51,369 page 44: 33 lines, 137.3 s
+2026-11-17 22:34:50,366 page 55: 33 lines, 118.9 s
+2026-11-17 22:34:50,373 ALL DONE: load 1.8 s, decode 1120.1 s wall / 815.5 s cpu, peak 668 MB
+mapped 8 characters (6 distinct) -> outputs/e20/eval/lines/test10/r3_mccatmus/p6.json
+WER norm 69.39% | CER norm 37.56% -> outputs/e20/eval/score/test10/r3_mccatmus/p6/gemini
+DECODED r3_mccatmus test10 p6

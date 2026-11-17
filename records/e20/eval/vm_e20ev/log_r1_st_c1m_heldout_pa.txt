@@ -1,0 +1,8 @@
+2026-11-17 21:40:30,787 3 pages, 428594 LM unigrams, 1623 labels
+2026-11-17 21:40:42,750 Alphabet determined to be of regular style.
+2026-11-17 21:40:44,077 Alphabet determined to be of regular style.
+2026-11-17 21:40:48,386 alpha 1.371 beta 2.804 -> outputs/e20/eval/raw/heldout/r1_st_c1m/pa/a1.371_b2.804
+mapped 4 characters (2 distinct) -> outputs/e20/eval/lines/heldout/r1_st_c1m/pa.json
+WER norm 19.84% | CER norm 4.88% -> outputs/e20/eval/score/heldout/r1_st_c1m/pa/oficial
+WER norm 10.39% | CER norm 3.26% -> outputs/e20/eval/score/heldout/r1_st_c1m/pa/gemini
+DECODED r1_st_c1m heldout pa

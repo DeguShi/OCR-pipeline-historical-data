@@ -1,0 +1,22 @@
+{
+ "input": "outputs/e20/eval/pe/heldout/r4_traprinq/lines.json",
+ "alphabet_size": 88,
+ "mapped": 14,
+ "map": {
+  "â": {
+   "n": 7,
+   "to": "a",
+   "name": "LATIN SMALL LETTER A WITH CIRCUMFLEX"
+  },
+  "à": {
+   "n": 4,
+   "to": "a",
+   "name": "LATIN SMALL LETTER A WITH GRAVE"
+  },
+  "í": {
+   "n": 3,
+   "to": "i",
+   "name": "LATIN SMALL LETTER I WITH ACUTE"
+  }
+ }
+}

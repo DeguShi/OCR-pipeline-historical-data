@@ -1,0 +1,4 @@
+2026-11-17 22:12:04,989 10 pages, 333 lines
+mapped 29 characters (8 distinct) -> outputs/e20/eval/lines/test10/r3_mccatmus/p0.json
+WER norm 86.47% | CER norm 42.27% -> outputs/e20/eval/score/test10/r3_mccatmus/p0/gemini
+DECODED r3_mccatmus test10 p0

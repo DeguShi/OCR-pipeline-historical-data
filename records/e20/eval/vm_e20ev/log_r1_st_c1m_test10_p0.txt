@@ -1,0 +1,4 @@
+2026-11-17 21:42:51,036 10 pages, 333 lines
+mapped 2 characters (2 distinct) -> outputs/e20/eval/lines/test10/r1_st_c1m/p0.json
+WER norm 11.50% | CER norm 3.29% -> outputs/e20/eval/score/test10/r1_st_c1m/p0/gemini
+DECODED r1_st_c1m test10 p0
