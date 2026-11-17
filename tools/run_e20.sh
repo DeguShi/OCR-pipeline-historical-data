@@ -6,6 +6,10 @@
 #                (/usr/bin/time -v) in OUT/smoke/time_*.txt. Checks that every recognizer loads and exports.
 #   PART tune_post  the same on the 9 tuning pages for R0, R2, R3 (E20_RECS overrides), in OUT/tune.
 #   PART train  R4/R5 fine-tuning on the rebuilt st_c1m training lines (tools/rebuild_training_lines.py), in OUT/train.
+#   PART choose  step 5, selection of PA/PB/P6 per recognizer on the tuning pages, in OUT/select.
+#   PART eval_export / eval_pe / eval_decode  step 6, once, after the selection is frozen (records/e20/select/frozen.json):
+#                posteriors of held-out and test10 (+ R1 v6 reproduction check), R4·PE (VPY = VLM env), and the
+#                P0/PA/PB/P6 decodes, all scored in OUT/eval/score/SET/REC/DECODER/REF.
 # Only tuning pages here; held-out (7, 10, 12) and test are decoded once, after the configurations are frozen.
 set -euo pipefail
 PART=$1; OUT=$2; DEV=${3:-cpu}
@@ -19,6 +23,43 @@ timed() {  # timed NAME CMD...: run CMD under /usr/bin/time -v, log in $T/time_N
   local name=$1; shift
   /usr/bin/time -v "$@" 2> "$T/time_$name.txt" || { tail -20 "$T/time_$name.txt"; return 1; }
   grep -E 'Elapsed|Maximum resident' "$T/time_$name.txt" | sed "s/^/  $name /"
+}
+
+set_args() {  # page set -> images, references and pages for the export tools
+  case $1 in
+    heldout) echo "--pages 7,10,12" ;;
+    test10) echo "--pages all --images data/extra/teste/imagens --references data/extra/teste/referencias" ;;
+  esac
+}
+
+score_set() {  # score_set LINES CONFIG SET OUT [--no-rules]: held-out against both references, test10 against its own
+  local lines=$1 cfg=$2 s=$3 out=$4; shift 4
+  if [ "$s" = heldout ]; then
+    $PY tools/score_lines.py --lines "$lines" --config "$cfg" "$@" --references data/ground_truth --out "$out/oficial"
+    $PY tools/score_lines.py --lines "$lines" --config "$cfg" "$@" --references data/ground_truth_gemini --out "$out/gemini"
+  else
+    $PY tools/score_lines.py --lines "$lines" --config "$cfg" "$@" --images data/extra/teste/imagens \
+        --references data/extra/teste/referencias --out "$out/gemini"
+  fi
+}
+
+decode_one() {  # decode_one REC SET DECODER: one frozen decode of the exported posteriors, character map, score
+  local r=$1 s=$2 d=$3 P=$T/post/$2/$1 W=$T/raw/$2/$1/$3 L=$T/lines/$2/$1
+  mkdir -p "$L"; rm -rf "$W"
+  case $d in
+    p0) $PY tools/greedy_lines.py --posteriors "$P" --pages all --out "$W" ;;
+    pa) read -r lm corpus a b unk beam bp tm < <($PY -c "import json,sys; p=json.load(open(sys.argv[1]))[sys.argv[2]]['PA']['params']; m={'kn3_w1':'outputs/lm/kn3_w1.bin outputs/lm/period_w1.txt','kn3_w4b8':'outputs/lm/kn3_w4b8.bin outputs/lm/period_w4_livro78.txt'}; print(m[p['lm']], p['alpha'], p['beta'], p['unk'], p['beam'], p['beam_prune_logp'], p['token_min_logp'])" "$F" "$r")
+        $DPY -I tools/baseline_pyctcdecode.py --posteriors "$P" --pages all --lm "$lm" --corpus "$corpus" --alpha "$a" \
+            --beta "$b" --unk "$unk" --beam "$beam" --beam-prune-logp "$bp" --token-min-logp "$tm" --workers 2 --out "$W" ;;
+    pb) $DPY -I tools/baseline_wordbeam.py --posteriors "$P" --pages all --class-sets "$OUT/tune/post/$r" \
+            --corpus outputs/lm/period_w4_livro78.txt --mode NGrams --smoothing 0.001 --beam 256 --workers 2 --out "$W" ;;
+    p6) $PY tools/postcorr_from_posteriors.py --config "records/e20/select/$r/p6/config.json" --posteriors "$P" \
+            --pages all --out "$W" ;;
+  esac
+  $PY tools/charmap.py --input "$(ls "$W"/lines.json "$W"/*/lines.json 2>/dev/null | head -1)" --out "$L/$d.json"
+  if [ "$d" = p6 ]; then score_set "$L/$d.json" "records/e20/select/$r/p6/config.json" "$s" "$T/score/$s/$r/$d" --no-rules
+  else score_set "$L/$d.json" "${CONF[$r]}" "$s" "$T/score/$s/$r/$d"; fi
+  echo "DECODED $r $s $d"
 }
 
 case $PART in
@@ -114,6 +155,49 @@ choose)  # step 5, tuning pages only, the same budget per recognizer (posteriors
         --cpus "${E20_WORKERS:-2}" ${E20_P6_VARIANTS:+--variants $E20_P6_VARIANTS}
     $PY -c "import json,sys; s=sys.argv[1]; a=json.loads(open(s+'/A2_scored.jsonl').readline()); b=json.load(open(s+'/pb/result.json'))['corpus']; p=json.load(open(s+'/p6/final_overrides.json')); print('SELECT', sys.argv[2], 'PA', a['wer'], 'PB', round(100*b['wer_norm'], 2), 'P6', p['result']['oficial']['wer'], p['chosen'])" "$S" "$r"
   done
+  ;;
+eval_export)  # step 6a: posteriors of held-out (7, 10, 12) and test10, once, then the v6 reproduction check on R1
+  T=$OUT/eval; mkdir -p "$T"
+  for r in ${E20_RECS:-r0_medium r1_st_c1m r2_traprinq r3_mccatmus r4_traprinq r5_mccatmus}; do
+    for s in heldout test10; do
+      [ -f "$T/post/$s/$r/done" ] && continue
+      timed "export_${s}_$r" $PY tools/export_posteriors.py --config "${CONF[$r]}" $(set_args $s) --device "$DEV" \
+          --out "$T/post/$s/$r"
+      touch "$T/post/$s/$r/done"
+    done
+  done
+  mkdir -p "$T/repro"; ln -sfn ../post/heldout/r1_st_c1m "$T/repro/v6_gt12"; ln -sfn ../post/test10/r1_st_c1m "$T/repro/v6_test10"
+  $PY tools/check_v6_reproduction.py --posteriors "$T/repro" && echo "REPRO v6 ok"
+  ;;
+eval_pe)  # step 6b: R·PE (frozen VLM prompt paper_pt_period) on the recognizers in E20_PE_RECS (default R4, the best
+  # literature recipe with our data on the tuning pages: R4·PA 20.71); line crops carry that recognizer's greedy text
+  T=$OUT/eval
+  for r in ${E20_PE_RECS:-r4_traprinq}; do
+    for s in heldout test10; do
+      $PY tools/export_line_crops.py --config "${CONF[$r]}" $(set_args $s) --posteriors "$T/post/$s/$r" \
+          --out "$T/crops/$s/$r"
+      ${VPY:-$PY} tools/baseline_vlm.py --manifest "$T/crops/$s/$r/manifest.json" --pages all --prompt paper_pt_period \
+          --out "$T/pe/$s/$r"
+      $PY tools/charmap.py --input "$T/pe/$s/$r/lines.json" --out "$T/lines/$s/$r/pe.json"
+      score_set "$T/lines/$s/$r/pe.json" "${CONF[$r]}" $s "$T/score/$s/$r/pe"
+    done
+  done
+  ;;
+eval_decode)  # step 6c: P0/PA/PB/P6 of every recognizer on held-out and test10 with the frozen configurations
+  # (records/e20/select/frozen.json), each decode once; E20_WORKERS jobs at a time
+  T=$OUT/eval; F=records/e20/select/frozen.json; DPY=${DPY:-python}; jobs=()
+  for r in ${E20_RECS:-r0_medium r1_st_c1m r2_traprinq r3_mccatmus r4_traprinq r5_mccatmus}; do
+    for s in heldout test10; do for d in p0 pa pb p6; do jobs+=("$r $s $d"); done; done
+  done
+  for j in "${jobs[@]}"; do
+    while [ "$(jobs -rp | wc -l)" -ge "${E20_WORKERS:-2}" ]; do wait -n; done
+    decode_one $j > "$T/log_$(echo $j | tr ' ' _).txt" 2>&1 &
+  done
+  wait
+  $PY -c "
+import json,sys,pathlib
+for p in sorted(pathlib.Path(sys.argv[1]).glob('*/*/*/*/result.json')):
+    c=json.loads(p.read_text())['corpus']; print('EVAL', *p.parts[-5:-1], round(100*c['wer_norm'],2), round(100*c['cer_norm'],2))" "$T/score"
   ;;
 *) echo "unknown part $PART"; exit 1 ;;
 esac
