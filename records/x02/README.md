@@ -28,3 +28,18 @@ Smoke test first (A 2 + A2 1 on R4) on the same VM type.
 **Inputs not in git.** `OUT/tune/post/{r1_st_c1m,r4_traprinq,r5_mccatmus}` and `OUT/eval/post/{heldout,test10}/...`
 from `outputs/e20_colab_e20ev_ev/outputs/e20/` (sha256 of the tarball recorded at launch); KenLM files from the HF
 model repo (`lm/`, sha256 checked in the job).
+
+### 2026-11-18 — smoke test failed (no X02 result)
+
+Free Colab CPU VM, code 03dc4a4, mode smoke (R4, A 2 + A2 1). Setup 225 s (venvs, HF weights, KenLM sha256 OK);
+`PART select` exited 1 after 58.7 s, peak RSS 529 MiB: `tools/charmap.py` could not read its default
+`--labels records/training/st_c1m/labels_r1/lines.jsonl`. Cause: the shipped `code.tgz` was a trimmed
+`git archive` (1,488 of 2,486 files, to keep the upload small) and the trim left out `records/training/`. The two
+decoded configurations were never scored, so neither the reproduction check nor the freeze ran. The full search
+was not launched. The session was then preserved and stopped (archive sha256 c1069449…, kept off git: local
+`hackathon_ocr_historico/outputs/colab_preservation_20261118/x02_remote.tar.gz`, copy on Google Drive
+`OCR-backup-20261118/`); that archive also holds `post.tgz`, the E20 posteriors this run reuses.
+
+Fix before relaunch: ship the untrimmed `git archive HEAD` (≈207 MB, upload in parts) or keep `records/training/`
+in the trim, and assert on the VM that `records/training/st_c1m/labels_r1/lines.jsonl` exists before `PART select`.
+Then repeat the smoke test.
