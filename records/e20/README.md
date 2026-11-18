@@ -140,3 +140,21 @@ without breaking any; the VLM rewrites valid words (modernized spelling), which 
 Evaluation VM (Colab pro T4 high-RAM, ~1.3 units/h): setup 208 s (first launch), export 933 s, R4·PE 1,262 s (in
 parallel with the decodes), 48 CPU decodes 5,597 s on 7 workers; the VM was up 2 h 19 min, ~3 units. Bootstrap and
 report on the Mac, 2 s.
+
+### Page-level robustness check (added after the evaluation, 2026-11-17)
+
+The word-block bootstrap ignores the correlation of errors within a page, so the main pairs were re-tested with the
+page as the unit (`tools/e20_page_test.py` → `eval/paired_pages.json`): exact paired sign-flip permutation over the
+10 test pages, and a page bootstrap (10k, seed 42). Test10, Gemini reference:
+
+| pair | dWER | page-bootstrap CI95 | sign-flip p | W/T/L |
+|---|---|---|---|---|
+| R1·P6 − R4·PA | −2.34 | [−3.64, −1.16] | 0.008 | 8/0/2 |
+| R1·P6 − R4·P6 | −1.11 | [−2.02, −0.18] | **0.066** | 7/1/2 |
+| R1·P6 − R1·PA | −1.95 | [−2.68, −1.20] | 0.004 | 9/0/1 |
+| R4·P6 − R4·PA | −1.24 | [−2.03, −0.50] | 0.014 | 9/0/1 |
+| R1·P0 − R4·P0 | +2.21 | [0.94, 3.73] | 0.016 | 0/3/7 |
+
+The verdict against R4·PA and the decoder effect hold with pages as the unit; R1·P6's test advantage over R4·P6 does
+not reach p < 0.05 by permutation, so it is reported as fragile. With 3 held-out pages the sign-flip p cannot go below
+0.25. The "2,34 vs R4·PA" splits into 1.24 from the decoder (R4 fixed) and 1.11 from R1·P6 vs R4·P6.
