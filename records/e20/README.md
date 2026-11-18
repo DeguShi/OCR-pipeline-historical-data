@@ -158,3 +158,11 @@ page as the unit (`tools/e20_page_test.py` → `eval/paired_pages.json`): exact 
 The verdict against R4·PA and the decoder effect hold with pages as the unit; R1·P6's test advantage over R4·P6 does
 not reach p < 0.05 by permutation, so it is reported as fragile. With 3 held-out pages the sign-flip p cannot go below
 0.25. The "2,34 vs R4·PA" splits into 1.24 from the decoder (R4 fixed) and 1.11 from R1·P6 vs R4·P6.
+
+### Raw row vs. the paper's baseline (added 2026-11-17)
+
+The paper's starting point (held-out official 64.57 / 21.71, `README.md` progression table) has no raw log in
+`records/`. The E20 raw row measures the same condition (published medium, raw image, default segmentation,
+greedy) at 60.79 / 21.15, but it is scored with the text rules. Rescored with `--no-rules`
+(`eval/score/heldout/r0_medium/p0raw_norules/oficial`): 62.99 / 21.42. The rules explain 2.2 of the 3.8 points;
+the remaining 1.6 (Kraken version, padding, segmentation defaults at the time) is not isolated.
