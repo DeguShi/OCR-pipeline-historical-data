@@ -166,3 +166,5 @@ The paper's starting point (held-out official 64.57 / 21.71, `README.md` progres
 greedy) at 60.79 / 21.15, but it is scored with the text rules. Rescored with `--no-rules`
 (`eval/score/heldout/r0_medium/p0raw_norules/oficial`): 62.99 / 21.42. The rules explain 2.2 of the 3.8 points;
 the remaining 1.6 (Kraken version, padding, segmentation defaults at the time) is not isolated.
+Update: the baseline's run was recovered and committed in `records/baseline/raw_medium/` (64.57 / 21.71 recomputed
+from its per-page counts). Its config matches the raw row except for the character map and the Kraken version.
