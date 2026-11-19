@@ -35,6 +35,12 @@ score_set() {  # as in tools/run_e20.sh
   fi
 }
 
+# Inputs every part reads from the repository (the 2026-11-18 smoke test died on a missing charmap label file).
+for f in records/training/st_c1m/labels_r1/lines.jsonl ${CONF[r1_st_c1m]} ${CONF[r4_traprinq]} ${CONF[r5_mccatmus]} \
+         $(for r in $RECS; do echo records/e20/select/$r/A_scored.jsonl records/e20/select/$r/A2_scored.jsonl; done); do
+  [ -f "$f" ] || { echo "missing input: $f"; exit 1; }
+done
+
 case $PART in
 select)
   [ -f "$F" ] && { echo "already frozen: $F"; exit 1; }
