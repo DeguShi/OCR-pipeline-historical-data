@@ -1,0 +1,44 @@
+{
+ "r1_st_c1m\u00b7pa181": {
+  "heldout/gemini": {
+   "wer": 8.58,
+   "cer": 2.68
+  },
+  "heldout/oficial": {
+   "wer": 19.69,
+   "cer": 4.53
+  },
+  "test10/gemini": {
+   "wer": 4.33,
+   "cer": 1.66
+  }
+ },
+ "r4_traprinq\u00b7pa181": {
+  "heldout/gemini": {
+   "wer": 7.23,
+   "cer": 2.55
+  },
+  "heldout/oficial": {
+   "wer": 19.21,
+   "cer": 4.59
+  },
+  "test10/gemini": {
+   "wer": 6.06,
+   "cer": 2.05
+  }
+ },
+ "r5_mccatmus\u00b7pa181": {
+  "heldout/gemini": {
+   "wer": 10.24,
+   "cer": 3.63
+  },
+  "heldout/oficial": {
+   "wer": 19.84,
+   "cer": 5.07
+  },
+  "test10/gemini": {
+   "wer": 6.63,
+   "cer": 2.31
+  }
+ }
+}

@@ -1,0 +1,1091 @@
+2026-11-19 03:58:21,274 kind A shard 0/1: 121 configurations, 0 done, 121 to run
+2026-11-19 03:58:27,712 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 03:58:41,935 Alphabet determined to be of regular style.
+2026-11-19 03:58:42,093 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 03:58:44,086 alpha 0.8 beta 1 -> /tmp/tmpzs70314k/a0.8_b1
+2026-11-19 03:58:44,180 id 0 done in 23s (1/121)
+2026-11-19 03:58:52,188 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 03:59:05,468 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 03:59:06,040 Alphabet determined to be of regular style.
+2026-11-19 03:59:08,605 alpha 1.564 beta 1.103 -> /tmp/tmpn1mzsbl6/a1.564_b1.103
+2026-11-19 03:59:08,691 id 1 done in 24s (2/121)
+2026-11-19 03:59:15,206 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 03:59:29,429 Alphabet determined to be of regular style.
+2026-11-19 03:59:29,548 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 03:59:34,373 alpha 0.844 beta 3.458 -> /tmp/tmpby0gjxrz/a0.844_b3.458
+2026-11-19 03:59:34,510 id 2 done in 26s (3/121)
+2026-11-19 03:59:41,488 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 03:59:55,314 Alphabet determined to be of regular style.
+2026-11-19 03:59:55,318 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 03:59:58,459 alpha 1.977 beta 1.663 -> /tmp/tmphkaguhxm/a1.977_b1.663
+2026-11-19 03:59:58,576 id 3 done in 24s (4/121)
+2026-11-19 04:00:05,208 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:00:19,344 Alphabet determined to be of regular style.
+2026-11-19 04:00:19,570 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:00:23,329 alpha 1.818 beta 2.42 -> /tmp/tmpfx2k7295/a1.818_b2.42
+2026-11-19 04:00:23,430 id 4 done in 25s (5/121)
+2026-11-19 04:00:28,886 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:00:42,662 Alphabet determined to be of regular style.
+2026-11-19 04:00:42,728 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:00:45,499 alpha 1.94 beta 1.385 -> /tmp/tmp5u8__7tn/a1.94_b1.385
+2026-11-19 04:00:45,634 id 5 done in 22s (6/121)
+2026-11-19 04:00:51,590 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:01:06,019 Alphabet determined to be of regular style.
+2026-11-19 04:01:06,237 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:01:08,511 alpha 0.368 beta 3.2 -> /tmp/tmpb64s0n2m/a0.368_b3.2
+2026-11-19 04:01:08,602 id 6 done in 23s (7/121)
+2026-11-19 04:01:16,994 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:01:31,841 Alphabet determined to be of regular style.
+2026-11-19 04:01:31,969 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:01:36,945 alpha 1.691 beta 0.666 -> /tmp/tmpy1szipw3/a1.691_b0.666
+2026-11-19 04:01:37,041 id 7 done in 28s (8/121)
+2026-11-19 04:01:42,690 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:01:55,985 Alphabet determined to be of regular style.
+2026-11-19 04:01:56,074 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:02:03,254 alpha 0.63 beta 3.838 -> /tmp/tmpiw6be1py/a0.63_b3.838
+2026-11-19 04:02:03,353 id 8 done in 26s (9/121)
+2026-11-19 04:02:10,405 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:02:24,559 Alphabet determined to be of regular style.
+2026-11-19 04:02:24,663 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:02:27,156 alpha 0.396 beta 1.756 -> /tmp/tmp1jcymtn6/a0.396_b1.756
+2026-11-19 04:02:27,300 id 9 done in 24s (10/121)
+2026-11-19 04:02:33,506 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:02:46,815 Alphabet determined to be of regular style.
+2026-11-19 04:02:46,956 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:02:49,030 alpha 1.935 beta 2.016 -> /tmp/tmpw_9xjmue/a1.935_b2.016
+2026-11-19 04:02:49,117 id 10 done in 22s (11/121)
+2026-11-19 04:02:56,271 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:03:08,876 Alphabet determined to be of regular style.
+2026-11-19 04:03:08,889 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:03:12,877 alpha 1.236 beta 0.452 -> /tmp/tmp785zc3mr/a1.236_b0.452
+2026-11-19 04:03:12,967 id 11 done in 24s (12/121)
+2026-11-19 04:03:19,713 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:03:33,875 Alphabet determined to be of regular style.
+2026-11-19 04:03:33,883 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:03:35,420 alpha 1.058 beta -0.551 -> /tmp/tmp3dhlzc14/a1.058_b-0.551
+2026-11-19 04:03:35,510 id 12 done in 22s (13/121)
+2026-11-19 04:03:43,244 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:03:56,915 Alphabet determined to be of regular style.
+2026-11-19 04:03:57,027 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:04:02,838 alpha 1.708 beta 1.623 -> /tmp/tmpj16qocy3/a1.708_b1.623
+2026-11-19 04:04:02,930 id 13 done in 27s (14/121)
+2026-11-19 04:04:10,737 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:04:24,373 Alphabet determined to be of regular style.
+2026-11-19 04:04:24,427 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:04:25,923 alpha 1.243 beta 1.253 -> /tmp/tmp37jr4ae7/a1.243_b1.253
+2026-11-19 04:04:26,025 id 14 done in 23s (15/121)
+2026-11-19 04:04:31,235 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:04:44,754 Alphabet determined to be of regular style.
+2026-11-19 04:04:44,892 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:04:48,184 alpha 0.784 beta -0.423 -> /tmp/tmpjauwhn22/a0.784_b-0.423
+2026-11-19 04:04:48,285 id 15 done in 22s (16/121)
+2026-11-19 04:04:56,180 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:05:09,831 Alphabet determined to be of regular style.
+2026-11-19 04:05:09,891 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:05:11,755 alpha 0.411 beta 0.102 -> /tmp/tmps1jmqg5j/a0.411_b0.102
+2026-11-19 04:05:11,845 id 16 done in 24s (17/121)
+2026-11-19 04:05:16,807 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:05:30,315 Alphabet determined to be of regular style.
+2026-11-19 04:05:30,331 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:05:32,130 alpha 1.74 beta 0.094 -> /tmp/tmpwdh_0ind/a1.74_b0.094
+2026-11-19 04:05:32,295 id 17 done in 20s (18/121)
+2026-11-19 04:05:38,532 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:05:51,961 Alphabet determined to be of regular style.
+2026-11-19 04:05:52,151 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:05:54,989 alpha 0.248 beta 2.175 -> /tmp/tmpu2hvw7bg/a0.248_b2.175
+2026-11-19 04:05:55,086 id 18 done in 23s (19/121)
+2026-11-19 04:06:00,261 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:06:13,680 Alphabet determined to be of regular style.
+2026-11-19 04:06:13,738 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:06:20,839 alpha 0.266 beta -0.892 -> /tmp/tmpuiml_1s0/a0.266_b-0.892
+2026-11-19 04:06:20,937 id 19 done in 26s (20/121)
+2026-11-19 04:06:26,251 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:06:39,781 Alphabet determined to be of regular style.
+2026-11-19 04:06:39,865 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:06:42,783 alpha 1.887 beta -0.886 -> /tmp/tmp4hx7i64c/a1.887_b-0.886
+2026-11-19 04:06:42,872 id 20 done in 22s (21/121)
+2026-11-19 04:06:49,054 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:07:01,682 Alphabet determined to be of regular style.
+2026-11-19 04:07:01,923 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:07:05,837 alpha 1.364 beta 0.751 -> /tmp/tmpsoxrvqwd/a1.364_b0.751
+2026-11-19 04:07:05,939 id 21 done in 23s (22/121)
+2026-11-19 04:07:12,457 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:07:25,975 Alphabet determined to be of regular style.
+2026-11-19 04:07:25,996 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:07:27,676 alpha 0.559 beta 0.793 -> /tmp/tmpgkqho110/a0.559_b0.793
+2026-11-19 04:07:27,821 id 22 done in 22s (23/121)
+2026-11-19 04:07:34,111 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:07:47,490 Alphabet determined to be of regular style.
+2026-11-19 04:07:47,609 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:07:49,826 alpha 1.94 beta -0.71 -> /tmp/tmpiam2nscx/a1.94_b-0.71
+2026-11-19 04:07:49,912 id 23 done in 22s (24/121)
+2026-11-19 04:07:54,944 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:08:08,423 Alphabet determined to be of regular style.
+2026-11-19 04:08:08,438 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:08:12,583 alpha 1.274 beta 1.212 -> /tmp/tmp17aylb3n/a1.274_b1.212
+2026-11-19 04:08:12,729 id 24 done in 23s (25/121)
+2026-11-19 04:08:20,234 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:08:33,922 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:08:34,123 Alphabet determined to be of regular style.
+2026-11-19 04:08:36,218 alpha 1.368 beta 0.943 -> /tmp/tmpur8dbx1l/a1.368_b0.943
+2026-11-19 04:08:36,314 id 25 done in 24s (26/121)
+2026-11-19 04:08:42,852 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:08:55,931 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:08:56,224 Alphabet determined to be of regular style.
+2026-11-19 04:08:57,972 alpha 0.805 beta -0.772 -> /tmp/tmp06yy2dq9/a0.805_b-0.772
+2026-11-19 04:08:58,068 id 26 done in 22s (27/121)
+2026-11-19 04:09:04,830 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:09:18,391 Alphabet determined to be of regular style.
+2026-11-19 04:09:18,433 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:09:21,313 alpha 1.412 beta 1.951 -> /tmp/tmpfgsa6m0g/a1.412_b1.951
+2026-11-19 04:09:21,405 id 27 done in 23s (28/121)
+2026-11-19 04:09:29,341 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:09:42,929 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:09:43,094 Alphabet determined to be of regular style.
+2026-11-19 04:09:44,781 alpha 1.547 beta 3.145 -> /tmp/tmpud2qu70h/a1.547_b3.145
+2026-11-19 04:09:44,872 id 28 done in 24s (29/121)
+2026-11-19 04:09:50,289 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:10:03,556 Alphabet determined to be of regular style.
+2026-11-19 04:10:03,577 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:10:05,908 alpha 0.602 beta 1.241 -> /tmp/tmpnhft9845/a0.602_b1.241
+2026-11-19 04:10:06,043 id 29 done in 21s (30/121)
+2026-11-19 04:10:13,141 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:10:26,334 Alphabet determined to be of regular style.
+2026-11-19 04:10:26,445 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:10:29,196 alpha 1.769 beta 1.837 -> /tmp/tmpcuquvztk/a1.769_b1.837
+2026-11-19 04:10:29,291 id 30 done in 23s (31/121)
+2026-11-19 04:10:37,219 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:10:50,700 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:10:50,999 Alphabet determined to be of regular style.
+2026-11-19 04:10:52,671 alpha 1.463 beta 1.232 -> /tmp/tmpc47kbjhg/a1.463_b1.232
+2026-11-19 04:10:52,761 id 31 done in 24s (32/121)
+2026-11-19 04:10:57,994 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:11:11,478 Alphabet determined to be of regular style.
+2026-11-19 04:11:11,574 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:11:13,115 alpha 1.09 beta 0.56 -> /tmp/tmp7y5clnsp/a1.09_b0.56
+2026-11-19 04:11:13,215 id 32 done in 20s (33/121)
+2026-11-19 04:11:19,580 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:11:33,171 Alphabet determined to be of regular style.
+2026-11-19 04:11:33,257 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:11:35,916 alpha 1.187 beta 3.815 -> /tmp/tmpw4lq7vo2/a1.187_b3.815
+2026-11-19 04:11:36,032 id 33 done in 23s (34/121)
+2026-11-19 04:11:42,792 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:11:56,727 Alphabet determined to be of regular style.
+2026-11-19 04:11:56,776 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:11:58,998 alpha 1.909 beta 1.087 -> /tmp/tmpr0utb22l/a1.909_b1.087
+2026-11-19 04:11:59,131 id 34 done in 23s (35/121)
+2026-11-19 04:12:05,299 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:12:19,498 Alphabet determined to be of regular style.
+2026-11-19 04:12:19,605 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:12:21,478 alpha 0.543 beta 2.042 -> /tmp/tmprfhchkcv/a0.543_b2.042
+2026-11-19 04:12:21,576 id 35 done in 22s (36/121)
+2026-11-19 04:12:27,279 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:12:41,069 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:12:41,272 Alphabet determined to be of regular style.
+2026-11-19 04:12:43,707 alpha 1.056 beta 3.614 -> /tmp/tmpwjwsz8b_/a1.056_b3.614
+2026-11-19 04:12:43,837 id 36 done in 22s (37/121)
+2026-11-19 04:12:50,675 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:13:04,099 Alphabet determined to be of regular style.
+2026-11-19 04:13:04,136 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:13:05,957 alpha 0.44 beta 1.604 -> /tmp/tmp_8empv8r/a0.44_b1.604
+2026-11-19 04:13:06,052 id 37 done in 22s (38/121)
+2026-11-19 04:13:12,473 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:13:26,515 Alphabet determined to be of regular style.
+2026-11-19 04:13:26,561 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:13:31,365 alpha 0.276 beta 0.029 -> /tmp/tmpezhznfm4/a0.276_b0.029
+2026-11-19 04:13:31,464 id 38 done in 25s (39/121)
+2026-11-19 04:13:36,450 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:13:50,007 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:13:50,199 Alphabet determined to be of regular style.
+2026-11-19 04:13:52,138 alpha 1.723 beta 3.806 -> /tmp/tmpv3dlos8x/a1.723_b3.806
+2026-11-19 04:13:52,237 id 39 done in 21s (40/121)
+2026-11-19 04:13:59,721 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:14:13,027 Alphabet determined to be of regular style.
+2026-11-19 04:14:13,158 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:14:16,687 alpha 0.87 beta 1.69 -> /tmp/tmpjba7u1yj/a0.87_b1.69
+2026-11-19 04:14:16,793 id 40 done in 24s (41/121)
+2026-11-19 04:14:24,832 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:14:38,037 Alphabet determined to be of regular style.
+2026-11-19 04:14:38,169 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:14:40,604 alpha 0.8 beta 2.948 -> /tmp/tmpig2zk0_w/a0.8_b2.948
+2026-11-19 04:14:40,696 id 41 done in 24s (42/121)
+2026-11-19 04:14:47,174 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:15:00,912 Alphabet determined to be of regular style.
+2026-11-19 04:15:01,020 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:15:03,353 alpha 0.495 beta 3.91 -> /tmp/tmp2nejsl7q/a0.495_b3.91
+2026-11-19 04:15:03,449 id 42 done in 23s (43/121)
+2026-11-19 04:15:09,836 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:15:23,445 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:15:23,676 Alphabet determined to be of regular style.
+2026-11-19 04:15:25,669 alpha 1.061 beta 0.199 -> /tmp/tmpgp5avz_6/a1.061_b0.199
+2026-11-19 04:15:25,775 id 43 done in 22s (44/121)
+2026-11-19 04:15:32,859 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:15:46,458 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:15:46,787 Alphabet determined to be of regular style.
+2026-11-19 04:15:49,447 alpha 0.926 beta 0.643 -> /tmp/tmpukvg9lmr/a0.926_b0.643
+2026-11-19 04:15:49,587 id 44 done in 24s (45/121)
+2026-11-19 04:15:56,332 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:16:09,971 Alphabet determined to be of regular style.
+2026-11-19 04:16:10,000 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:16:11,838 alpha 1.714 beta 3.881 -> /tmp/tmp9karhmok/a1.714_b3.881
+2026-11-19 04:16:11,939 id 45 done in 22s (46/121)
+2026-11-19 04:16:18,355 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:16:31,891 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:16:32,204 Alphabet determined to be of regular style.
+2026-11-19 04:16:34,158 alpha 0.743 beta 2.674 -> /tmp/tmpnhs8da3p/a0.743_b2.674
+2026-11-19 04:16:34,263 id 46 done in 22s (47/121)
+2026-11-19 04:16:39,565 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:16:53,071 Alphabet determined to be of regular style.
+2026-11-19 04:16:53,163 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:17:02,904 alpha 0.319 beta -0.577 -> /tmp/tmp7tcfpnu8/a0.319_b-0.577
+2026-11-19 04:17:03,003 id 47 done in 29s (48/121)
+2026-11-19 04:17:09,331 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:17:22,965 Alphabet determined to be of regular style.
+2026-11-19 04:17:23,047 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:17:25,453 alpha 1.007 beta 1.443 -> /tmp/tmp0yc6t6fg/a1.007_b1.443
+2026-11-19 04:17:25,546 id 48 done in 22s (49/121)
+2026-11-19 04:17:31,918 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:17:45,608 Alphabet determined to be of regular style.
+2026-11-19 04:17:45,746 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:17:48,297 alpha 1.979 beta 0.305 -> /tmp/tmpl49kuaz1/a1.979_b0.305
+2026-11-19 04:17:48,392 id 49 done in 23s (50/121)
+2026-11-19 04:17:53,459 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:18:06,796 Alphabet determined to be of regular style.
+2026-11-19 04:18:06,852 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:18:09,667 alpha 1.825 beta 1.258 -> /tmp/tmphgnmd8rv/a1.825_b1.258
+2026-11-19 04:18:09,817 id 50 done in 21s (51/121)
+2026-11-19 04:18:15,757 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:18:28,966 Alphabet determined to be of regular style.
+2026-11-19 04:18:29,009 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:18:31,957 alpha 1.995 beta 2.987 -> /tmp/tmpoug1ka7m/a1.995_b2.987
+2026-11-19 04:18:32,057 id 51 done in 22s (52/121)
+2026-11-19 04:18:37,207 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:18:51,080 Alphabet determined to be of regular style.
+2026-11-19 04:18:51,139 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:18:53,474 alpha 0.389 beta 1.981 -> /tmp/tmp2vy0u7g6/a0.389_b1.981
+2026-11-19 04:18:53,609 id 52 done in 22s (53/121)
+2026-11-19 04:19:01,083 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:19:14,478 Alphabet determined to be of regular style.
+2026-11-19 04:19:14,579 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:19:16,210 alpha 1.423 beta 3.439 -> /tmp/tmp7cujsfh5/a1.423_b3.439
+2026-11-19 04:19:16,306 id 53 done in 23s (54/121)
+2026-11-19 04:19:21,396 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:19:35,360 Alphabet determined to be of regular style.
+2026-11-19 04:19:35,528 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:19:43,046 alpha 0.217 beta 2.528 -> /tmp/tmp1xwotrxz/a0.217_b2.528
+2026-11-19 04:19:43,134 id 54 done in 27s (55/121)
+2026-11-19 04:19:48,266 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:20:01,990 Alphabet determined to be of regular style.
+2026-11-19 04:20:02,155 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:20:06,110 alpha 1.774 beta 2.013 -> /tmp/tmpxq8zjjb0/a1.774_b2.013
+2026-11-19 04:20:06,216 id 55 done in 23s (56/121)
+2026-11-19 04:20:13,965 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:20:28,210 Alphabet determined to be of regular style.
+2026-11-19 04:20:28,286 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:20:32,331 alpha 0.319 beta -0.577 -> /tmp/tmpnq82rl56/a0.319_b-0.577
+2026-11-19 04:20:32,441 id 56 done in 26s (57/121)
+2026-11-19 04:20:40,170 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:20:53,729 Alphabet determined to be of regular style.
+2026-11-19 04:20:53,807 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:21:01,229 alpha 0.228 beta 3.22 -> /tmp/tmp_je74ccv/a0.228_b3.22
+2026-11-19 04:21:01,395 id 57 done in 29s (58/121)
+2026-11-19 04:21:09,156 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:21:22,618 Alphabet determined to be of regular style.
+2026-11-19 04:21:22,691 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:21:25,508 alpha 1.943 beta 1.525 -> /tmp/tmp0ehc8l5u/a1.943_b1.525
+2026-11-19 04:21:25,604 id 58 done in 24s (59/121)
+2026-11-19 04:21:31,060 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:21:44,534 Alphabet determined to be of regular style.
+2026-11-19 04:21:44,565 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:21:47,132 alpha 1.545 beta 3.529 -> /tmp/tmphxis6t8m/a1.545_b3.529
+2026-11-19 04:21:47,301 id 59 done in 22s (60/121)
+2026-11-19 04:21:54,682 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:22:08,026 Alphabet determined to be of regular style.
+2026-11-19 04:22:08,059 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:22:09,943 alpha 1.293 beta 0.168 -> /tmp/tmpozo1gjtk/a1.293_b0.168
+2026-11-19 04:22:10,035 id 60 done in 23s (61/121)
+2026-11-19 04:22:15,314 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:22:28,051 Alphabet determined to be of regular style.
+2026-11-19 04:22:28,401 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:22:33,704 alpha 0.744 beta 1.851 -> /tmp/tmppeagtf42/a0.744_b1.851
+2026-11-19 04:22:33,808 id 61 done in 24s (62/121)
+2026-11-19 04:22:40,324 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:22:53,884 Alphabet determined to be of regular style.
+2026-11-19 04:22:53,965 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:22:56,192 alpha 0.891 beta 0.918 -> /tmp/tmpm60oijf5/a0.891_b0.918
+2026-11-19 04:22:56,288 id 62 done in 22s (63/121)
+2026-11-19 04:23:03,948 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:23:17,061 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:23:17,285 Alphabet determined to be of regular style.
+2026-11-19 04:23:19,339 alpha 0.3 beta -0.82 -> /tmp/tmpn70xl0ef/a0.3_b-0.82
+2026-11-19 04:23:19,452 id 63 done in 23s (64/121)
+2026-11-19 04:23:24,655 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:23:38,349 Alphabet determined to be of regular style.
+2026-11-19 04:23:38,451 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:23:41,151 alpha 1.412 beta -0.243 -> /tmp/tmpsx54cttj/a1.412_b-0.243
+2026-11-19 04:23:41,302 id 64 done in 22s (65/121)
+2026-11-19 04:23:49,401 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:24:03,368 Alphabet determined to be of regular style.
+2026-11-19 04:24:03,495 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:24:06,542 alpha 0.285 beta 1.354 -> /tmp/tmpvy7v9vff/a0.285_b1.354
+2026-11-19 04:24:06,646 id 65 done in 25s (66/121)
+2026-11-19 04:24:14,420 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:24:27,590 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:24:27,832 Alphabet determined to be of regular style.
+2026-11-19 04:24:29,524 alpha 0.39 beta 1.746 -> /tmp/tmpsh9jmnaq/a0.39_b1.746
+2026-11-19 04:24:29,618 id 66 done in 23s (67/121)
+2026-11-19 04:24:34,785 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:24:48,493 Alphabet determined to be of regular style.
+2026-11-19 04:24:48,638 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:24:51,241 alpha 1.786 beta 2.051 -> /tmp/tmpo_jbpafl/a1.786_b2.051
+2026-11-19 04:24:51,338 id 67 done in 22s (68/121)
+2026-11-19 04:24:59,102 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:25:12,703 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:25:12,842 Alphabet determined to be of regular style.
+2026-11-19 04:25:14,444 alpha 1.619 beta -0.364 -> /tmp/tmpe71dzn8m/a1.619_b-0.364
+2026-11-19 04:25:14,544 id 68 done in 23s (69/121)
+2026-11-19 04:25:19,682 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:25:32,824 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:25:32,998 Alphabet determined to be of regular style.
+2026-11-19 04:25:35,237 alpha 1.134 beta 2.927 -> /tmp/tmpfhkridlf/a1.134_b2.927
+2026-11-19 04:25:35,365 id 69 done in 21s (70/121)
+2026-11-19 04:25:42,779 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:25:56,484 Alphabet determined to be of regular style.
+2026-11-19 04:25:56,501 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:25:59,356 alpha 0.842 beta 2.16 -> /tmp/tmpyu2xwz0k/a0.842_b2.16
+2026-11-19 04:25:59,456 id 70 done in 24s (71/121)
+2026-11-19 04:26:05,617 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:26:18,892 Alphabet determined to be of regular style.
+2026-11-19 04:26:19,183 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:26:28,260 alpha 1.901 beta 2.333 -> /tmp/tmpq9w45vcp/a1.901_b2.333
+2026-11-19 04:26:28,373 id 71 done in 29s (72/121)
+2026-11-19 04:26:36,071 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:26:49,350 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:26:50,044 Alphabet determined to be of regular style.
+2026-11-19 04:26:51,784 alpha 1.113 beta 3.727 -> /tmp/tmp48jpnne4/a1.113_b3.727
+2026-11-19 04:26:51,889 id 72 done in 24s (73/121)
+2026-11-19 04:26:57,177 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:27:11,483 Alphabet determined to be of regular style.
+2026-11-19 04:27:11,491 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:27:15,534 alpha 0.948 beta -0.504 -> /tmp/tmp02lmu__2/a0.948_b-0.504
+2026-11-19 04:27:15,682 id 73 done in 24s (74/121)
+2026-11-19 04:27:23,221 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:27:36,691 Alphabet determined to be of regular style.
+2026-11-19 04:27:36,714 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:27:38,431 alpha 1.436 beta -0.849 -> /tmp/tmp0rkfzhii/a1.436_b-0.849
+2026-11-19 04:27:38,530 id 74 done in 23s (75/121)
+2026-11-19 04:27:46,557 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:27:59,773 Alphabet determined to be of regular style.
+2026-11-19 04:27:59,773 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:28:04,955 alpha 0.327 beta 0.796 -> /tmp/tmpbyx_1ws1/a0.327_b0.796
+2026-11-19 04:28:05,065 id 75 done in 26s (76/121)
+2026-11-19 04:28:11,806 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:28:25,668 Alphabet determined to be of regular style.
+2026-11-19 04:28:25,680 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:28:28,374 alpha 0.327 beta 3.467 -> /tmp/tmp39vf6n1f/a0.327_b3.467
+2026-11-19 04:28:28,517 id 76 done in 23s (77/121)
+2026-11-19 04:28:34,359 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:28:47,902 Alphabet determined to be of regular style.
+2026-11-19 04:28:48,110 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:28:53,712 alpha 0.728 beta 2.447 -> /tmp/tmpnq6rosnb/a0.728_b2.447
+2026-11-19 04:28:53,816 id 77 done in 25s (78/121)
+2026-11-19 04:29:00,381 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:29:14,449 Alphabet determined to be of regular style.
+2026-11-19 04:29:14,497 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:29:18,937 alpha 1.058 beta 2.537 -> /tmp/tmpyv6t_4ew/a1.058_b2.537
+2026-11-19 04:29:19,047 id 78 done in 25s (79/121)
+2026-11-19 04:29:27,360 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:29:40,376 Alphabet determined to be of regular style.
+2026-11-19 04:29:40,552 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:29:45,221 alpha 1.93 beta 0.482 -> /tmp/tmpf07nod5j/a1.93_b0.482
+2026-11-19 04:29:45,331 id 79 done in 26s (80/121)
+2026-11-19 04:29:50,670 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:30:04,952 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:30:05,089 Alphabet determined to be of regular style.
+2026-11-19 04:30:06,544 alpha 0.385 beta 1.904 -> /tmp/tmp9aiqqa5v/a0.385_b1.904
+2026-11-19 04:30:06,650 id 80 done in 21s (81/121)
+2026-11-19 04:30:14,657 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:30:28,576 Alphabet determined to be of regular style.
+2026-11-19 04:30:28,592 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:30:30,439 alpha 1.115 beta 0.183 -> /tmp/tmpjlp9a1mk/a1.115_b0.183
+2026-11-19 04:30:30,539 id 81 done in 24s (82/121)
+2026-11-19 04:30:36,240 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:30:49,778 Alphabet determined to be of regular style.
+2026-11-19 04:30:50,067 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:30:54,125 alpha 0.909 beta 2.511 -> /tmp/tmpypzg_3is/a0.909_b2.511
+2026-11-19 04:30:54,241 id 82 done in 24s (83/121)
+2026-11-19 04:31:01,214 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:31:14,462 Alphabet determined to be of regular style.
+2026-11-19 04:31:14,541 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:31:16,634 alpha 0.736 beta 0.773 -> /tmp/tmpx5_q3n68/a0.736_b0.773
+2026-11-19 04:31:16,735 id 83 done in 22s (84/121)
+2026-11-19 04:31:23,266 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:31:37,071 Alphabet determined to be of regular style.
+2026-11-19 04:31:37,118 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:31:39,377 alpha 0.878 beta -0.958 -> /tmp/tmpm661xcbp/a0.878_b-0.958
+2026-11-19 04:31:39,489 id 84 done in 23s (85/121)
+2026-11-19 04:31:46,317 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:32:00,448 Alphabet determined to be of regular style.
+2026-11-19 04:32:00,505 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:32:09,881 alpha 1.914 beta -0.545 -> /tmp/tmp4v26vwz7/a1.914_b-0.545
+2026-11-19 04:32:09,993 id 85 done in 30s (86/121)
+2026-11-19 04:32:15,201 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:32:29,206 Alphabet determined to be of regular style.
+2026-11-19 04:32:29,292 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:32:31,639 alpha 1.632 beta 1.231 -> /tmp/tmpln0ixuei/a1.632_b1.231
+2026-11-19 04:32:31,793 id 86 done in 22s (87/121)
+2026-11-19 04:32:39,444 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:32:53,470 Alphabet determined to be of regular style.
+2026-11-19 04:32:53,476 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:32:56,756 alpha 0.813 beta 1.617 -> /tmp/tmp7k5gfrz8/a0.813_b1.617
+2026-11-19 04:32:56,862 id 87 done in 25s (88/121)
+2026-11-19 04:33:04,843 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:33:18,831 Alphabet determined to be of regular style.
+2026-11-19 04:33:18,920 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:33:25,666 alpha 0.203 beta 2.495 -> /tmp/tmpmg0qz9sh/a0.203_b2.495
+2026-11-19 04:33:25,764 id 88 done in 29s (89/121)
+2026-11-19 04:33:33,316 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:33:47,302 Alphabet determined to be of regular style.
+2026-11-19 04:33:47,419 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:33:49,805 alpha 1.181 beta -0.219 -> /tmp/tmpwtutm3pg/a1.181_b-0.219
+2026-11-19 04:33:49,961 id 89 done in 24s (90/121)
+2026-11-19 04:33:57,643 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:34:11,641 Alphabet determined to be of regular style.
+2026-11-19 04:34:11,910 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:34:15,891 alpha 0.704 beta 3.92 -> /tmp/tmpffc8heyp/a0.704_b3.92
+2026-11-19 04:34:15,992 id 90 done in 26s (91/121)
+2026-11-19 04:34:22,540 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:34:36,357 Alphabet determined to be of regular style.
+2026-11-19 04:34:36,436 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:34:41,100 alpha 1.147 beta 1.908 -> /tmp/tmpo3nuy9vr/a1.147_b1.908
+2026-11-19 04:34:41,266 id 91 done in 25s (92/121)
+2026-11-19 04:34:47,494 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:35:01,597 Alphabet determined to be of regular style.
+2026-11-19 04:35:01,670 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:35:06,621 alpha 1.272 beta -0.823 -> /tmp/tmp9yj6n1yb/a1.272_b-0.823
+2026-11-19 04:35:06,729 id 92 done in 25s (93/121)
+2026-11-19 04:35:13,372 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:35:27,445 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:35:27,702 Alphabet determined to be of regular style.
+2026-11-19 04:35:29,727 alpha 1.803 beta 2.81 -> /tmp/tmp8r75vm51/a1.803_b2.81
+2026-11-19 04:35:29,832 id 93 done in 23s (94/121)
+2026-11-19 04:35:35,189 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:35:49,275 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:35:49,504 Alphabet determined to be of regular style.
+2026-11-19 04:35:51,349 alpha 1.156 beta 1.054 -> /tmp/tmpyukqb2lj/a1.156_b1.054
+2026-11-19 04:35:51,454 id 94 done in 22s (95/121)
+2026-11-19 04:35:59,508 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:36:13,781 Alphabet determined to be of regular style.
+2026-11-19 04:36:13,793 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:36:19,340 alpha 0.996 beta 1.841 -> /tmp/tmpvkbmepwy/a0.996_b1.841
+2026-11-19 04:36:19,446 id 95 done in 28s (96/121)
+2026-11-19 04:36:27,159 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:36:41,270 Alphabet determined to be of regular style.
+2026-11-19 04:36:41,289 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:36:44,239 alpha 0.451 beta 2.341 -> /tmp/tmpltfmnoli/a0.451_b2.341
+2026-11-19 04:36:44,363 id 96 done in 25s (97/121)
+2026-11-19 04:36:52,722 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:37:06,953 Alphabet determined to be of regular style.
+2026-11-19 04:37:07,111 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:37:12,743 alpha 1.45 beta 0.591 -> /tmp/tmpo52_lowk/a1.45_b0.591
+2026-11-19 04:37:12,852 id 97 done in 28s (98/121)
+2026-11-19 04:37:21,076 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:37:33,228 Alphabet determined to be of regular style.
+2026-11-19 04:37:33,335 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:37:35,800 alpha 0.294 beta 2.106 -> /tmp/tmp4xnk_2u_/a0.294_b2.106
+2026-11-19 04:37:35,913 id 98 done in 23s (99/121)
+2026-11-19 04:37:41,027 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:37:55,207 Alphabet determined to be of regular style.
+2026-11-19 04:37:55,375 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:37:57,512 alpha 1.436 beta -0.593 -> /tmp/tmpz5ibd3xt/a1.436_b-0.593
+2026-11-19 04:37:57,612 id 99 done in 22s (100/121)
+2026-11-19 04:38:03,718 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:38:17,240 Alphabet determined to be of regular style.
+2026-11-19 04:38:17,334 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:38:20,936 alpha 0.409 beta -0.981 -> /tmp/tmpiywcly0d/a0.409_b-0.981
+2026-11-19 04:38:21,038 id 100 done in 23s (101/121)
+2026-11-19 04:38:26,336 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:38:40,476 Alphabet determined to be of regular style.
+2026-11-19 04:38:40,551 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:38:43,029 alpha 1.553 beta 0.44 -> /tmp/tmp0o2irkqk/a1.553_b0.44
+2026-11-19 04:38:43,139 id 101 done in 22s (102/121)
+2026-11-19 04:38:51,141 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:39:04,416 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:39:04,840 Alphabet determined to be of regular style.
+2026-11-19 04:39:06,638 alpha 0.959 beta 3.486 -> /tmp/tmpgw4gtufl/a0.959_b3.486
+2026-11-19 04:39:06,738 id 102 done in 24s (103/121)
+2026-11-19 04:39:13,208 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:39:26,713 Alphabet determined to be of regular style.
+2026-11-19 04:39:26,958 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:39:30,535 alpha 0.433 beta 3.552 -> /tmp/tmptcvchruq/a0.433_b3.552
+2026-11-19 04:39:30,679 id 103 done in 24s (104/121)
+2026-11-19 04:39:37,678 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:39:51,743 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:39:51,915 Alphabet determined to be of regular style.
+2026-11-19 04:39:53,813 alpha 1.514 beta 2.978 -> /tmp/tmpuobtk7u0/a1.514_b2.978
+2026-11-19 04:39:53,914 id 104 done in 23s (105/121)
+2026-11-19 04:40:00,280 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:40:13,319 Alphabet determined to be of regular style.
+2026-11-19 04:40:13,667 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:40:15,853 alpha 0.621 beta -0.577 -> /tmp/tmpurl1e6eh/a0.621_b-0.577
+2026-11-19 04:40:15,962 id 105 done in 22s (106/121)
+2026-11-19 04:40:21,109 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:40:34,730 Alphabet determined to be of regular style.
+2026-11-19 04:40:34,743 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:40:38,003 alpha 1.299 beta 2.063 -> /tmp/tmplxy4nqbf/a1.299_b2.063
+2026-11-19 04:40:38,113 id 106 done in 22s (107/121)
+2026-11-19 04:40:46,038 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:41:00,029 Alphabet determined to be of regular style.
+2026-11-19 04:41:00,062 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:41:01,526 alpha 1.025 beta 2.159 -> /tmp/tmph4m_gs6l/a1.025_b2.159
+2026-11-19 04:41:01,632 id 107 done in 24s (108/121)
+2026-11-19 04:41:08,473 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:41:20,914 Alphabet determined to be of regular style.
+2026-11-19 04:41:20,928 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:41:25,775 alpha 1.246 beta 1.451 -> /tmp/tmpg5fmqpzp/a1.246_b1.451
+2026-11-19 04:41:25,929 id 108 done in 24s (109/121)
+2026-11-19 04:41:31,078 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:41:45,186 Alphabet determined to be of regular style.
+2026-11-19 04:41:45,267 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:41:47,601 alpha 0.493 beta -0.981 -> /tmp/tmphzdtrf_k/a0.493_b-0.981
+2026-11-19 04:41:47,706 id 109 done in 22s (110/121)
+2026-11-19 04:41:53,860 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:42:06,872 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:42:07,334 Alphabet determined to be of regular style.
+2026-11-19 04:42:10,895 alpha 1.947 beta 0.983 -> /tmp/tmpqravajcg/a1.947_b0.983
+2026-11-19 04:42:11,001 id 110 done in 23s (111/121)
+2026-11-19 04:42:16,120 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:42:30,029 Alphabet determined to be of regular style.
+2026-11-19 04:42:30,174 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:42:34,092 alpha 1.631 beta 0.615 -> /tmp/tmp0ikkfh3w/a1.631_b0.615
+2026-11-19 04:42:34,202 id 111 done in 23s (112/121)
+2026-11-19 04:42:40,708 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:42:54,480 Alphabet determined to be of regular style.
+2026-11-19 04:42:54,490 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:43:00,604 alpha 0.864 beta 0.048 -> /tmp/tmpeqhba7zs/a0.864_b0.048
+2026-11-19 04:43:00,709 id 112 done in 26s (113/121)
+2026-11-19 04:43:08,515 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:43:22,240 Alphabet determined to be of regular style.
+2026-11-19 04:43:22,324 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:43:24,071 alpha 0.762 beta 3.3 -> /tmp/tmpvyjiz4_7/a0.762_b3.3
+2026-11-19 04:43:24,191 id 113 done in 24s (114/121)
+2026-11-19 04:43:30,692 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:43:43,853 Alphabet determined to be of regular style.
+2026-11-19 04:43:43,993 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:43:48,652 alpha 1.882 beta -0.638 -> /tmp/tmpgxxdkaii/a1.882_b-0.638
+2026-11-19 04:43:48,811 id 114 done in 25s (115/121)
+2026-11-19 04:43:55,886 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:44:09,788 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:44:09,934 Alphabet determined to be of regular style.
+2026-11-19 04:44:11,649 alpha 1.029 beta -0.409 -> /tmp/tmpufs26xo7/a1.029_b-0.409
+2026-11-19 04:44:11,758 id 115 done in 23s (116/121)
+2026-11-19 04:44:18,093 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:44:31,113 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:44:31,428 Alphabet determined to be of regular style.
+2026-11-19 04:44:33,572 alpha 0.993 beta -0.614 -> /tmp/tmpcupqw5zv/a0.993_b-0.614
+2026-11-19 04:44:33,679 id 116 done in 22s (117/121)
+2026-11-19 04:44:38,906 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:44:52,731 Alphabet determined to be of regular style.
+2026-11-19 04:44:52,913 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:44:56,678 alpha 0.65 beta 0.1 -> /tmp/tmp2k1l80xk/a0.65_b0.1
+2026-11-19 04:44:56,793 id 117 done in 23s (118/121)
+2026-11-19 04:45:03,196 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:45:16,732 Alphabet determined to be of regular style.
+2026-11-19 04:45:16,737 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:45:20,408 alpha 1.203 beta 0.428 -> /tmp/tmp8ql_k9bu/a1.203_b0.428
+2026-11-19 04:45:20,515 id 118 done in 24s (119/121)
+2026-11-19 04:45:27,667 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:45:41,722 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:45:42,265 Alphabet determined to be of regular style.
+2026-11-19 04:45:44,800 alpha 1.165 beta 0.305 -> /tmp/tmp2zxmiqoe/a1.165_b0.305
+2026-11-19 04:45:44,918 id 119 done in 24s (120/121)
+2026-11-19 04:45:50,173 9 pages, 428594 LM unigrams, 163 labels
+2026-11-19 04:46:03,516 Alphabet determined to be of regular style.
+2026-11-19 04:46:03,625 Alphabet determined to be of regular style.
+/content/dvenv/lib/python3.12/site-packages/pyctcdecode/decoder.py:590: RuntimeWarning: Mean of empty slice.
+  if math.isclose(logits.sum(axis=1).mean(), 1):
+/content/dvenv/lib/python3.12/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+2026-11-19 04:46:05,491 alpha 1.519 beta 0.244 -> /tmp/tmpytbuc3xs/a1.519_b0.244
+2026-11-19 04:46:05,595 id 120 done in 21s (121/121)
+2026-11-19 04:46:05,595 ALL DONE

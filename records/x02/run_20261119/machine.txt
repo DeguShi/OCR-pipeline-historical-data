@@ -1,0 +1,8 @@
+Using Python 3.12.12 environment at: /content/venv
+Using Python 3.12.12 environment at: /content/dvenv
+2
+               total        used        free      shared  buff/cache   available
+Mem:              12           1           1           0          10          11
+Swap:              0           0           0
+Model name:                              Intel(R) Xeon(R) CPU @ 2.20GHz
+bdc737fba60e

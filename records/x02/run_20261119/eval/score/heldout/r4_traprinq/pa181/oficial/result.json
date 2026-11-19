@@ -1,0 +1,66 @@
+{
+  "source": "outputs/x02/eval/lines/heldout/r4_traprinq/pa181.json",
+  "rules": true,
+  "corpus": {
+    "wer_strict": 0.19747235387045814,
+    "cer_strict": 0.05427161776162036,
+    "wer_norm": 0.1921259842519685,
+    "cer_norm": 0.045878901040277406
+  },
+  "pages": [
+    {
+      "page": 7,
+      "lines": 33,
+      "pred_words": 220,
+      "text": "§ 3.º O VeéPrendente é o natural substituto do Presidente.\n§ 4.º Substituem ao Vice.- Presidente os demais vereadores,\nna ordem de sua estação. Em caso de empate servirá\no mais velho.\nCapitulo 3.º\nDa ordem dos trabalhos\nArtigo 3.º\nNo dia marcado para as sessões se reunirão os Vereadores\nno salão principal da municipalidade, as onze\nhoras da manhã, e havendo numero legal, o presidente\nassumindo o seu lugar, que é á cabeceira da mesa dos\ntrabalhos, dará principio as sessões pelas palavras: -Esta\naberta a sessão.\nArtigo 4.º\nAs sessões durarão o tempo maximo de quatro horas.\nTerminada a sessão, o presidente encerrará\nos trabalhos pelas palavras: - Está encerrada a sessão.\nArtigo 5.º\nAberta a sessão, o presidente declarará a materia em\ndiscussão, manterá a ordem durante os trabalhos, dando\na palavra ao que primeiro a pedir, fazendo observar\na decencia e a civilidade entre os vereadores e os\nespectadores.\n§ 1.º No recinto dos trabalhos é vedado o ingresso\na pessoa que não pertença a corporação municipal.\n§ 2.º Os espectadores não podem intervir nos debates,\npor qualquer forma, e nem dar signaes de approvação\nou desagrado, sob pena de serem observados, e\nexpulsos da sala, em caso de reincidencia.\nArtigo 6.º\nAo Presidente incumbe:\n§ 1.º Chamar a ordem, até tres vezes, o vereador que",
+      "wer_strict": 0.1822429906542056,
+      "cer_strict": 0.04784313725490196,
+      "wer_norm": 0.17674418604651163,
+      "cer_norm": 0.0387409200968523,
+      "strict_we": 39,
+      "strict_rw": 214,
+      "strict_ce": 61,
+      "strict_rc": 1275,
+      "norm_we": 38,
+      "norm_rw": 215,
+      "norm_ce": 48,
+      "norm_rc": 1239
+    },
+    {
+      "page": 10,
+      "lines": 33,
+      "pred_words": 177,
+      "text": "dentes, descendentes, sogro e genro, irmãos e cunhados\ndurante o cunhadio, tio e sobrinho e socios da\nmesma forma, o Vereador a quem a hupostuce\ninteressar não poderá votar.\nArtigo 15.º\nAos Vereadores que, sem causa justificada,\nfaltarem a duas sessões consecutivas, bem\ncomo aos lupptentes convocados que não\ncomparecerem, será imposta, pelo Presidente,\na multa de dez mil reis 110:000 ( Reg.art.º6.º\n§ 4.º1. O Presidente quando tiver de discutir\nqualquer assumpto ou apresentar e defender\nindicação sua, passará a residencia a seu\nimmediato.\nCapitulo 4.º\nDo numero das sessões.\nArtigo 16.º\nA Camara municipal fará em cada anno\nseis sessões ordinarias, de dois em dois mezes.\nnos primeiros dias uteis de Outubro, Dezembro,\nFevereiro, Abril, Junho e Agosto que durará\nos dias necessarios, nunca menos de tres.\nArtigo\nHaverá em cada anno tantas sessões extraordinarias\nquantas forem exigidas pelo\nbem municipal.\n§ 1.º As sessões extraordinarias serão comocadas\npelo Presidente e sempre por ordem\nsuperior, iniciativa do proprio presidente\nou a Requerimento do Intendente. Em qualquer\ncaso o presidente declarará o motivo\ndacommuscaçaõ.\nDisposições geraes.",
+      "wer_strict": 0.19101123595505617,
+      "cer_strict": 0.05108225108225108,
+      "wer_norm": 0.19337016574585636,
+      "cer_norm": 0.042818911685994644,
+      "strict_we": 34,
+      "strict_rw": 178,
+      "strict_ce": 59,
+      "strict_rc": 1155,
+      "norm_we": 35,
+      "norm_rw": 181,
+      "norm_ce": 48,
+      "norm_rc": 1121
+    },
+    {
+      "page": 12,
+      "lines": 33,
+      "pred_words": 245,
+      "text": "lampadas quando a Camara o exigir, precedendo\nanio á mesma com seis mezes, pelo menos, de\nantecedencia, uma vez que o numero de lampadas\nexigido não exceda a capacidade e força\ndos dignamos, caso em que se obriga a satisfzer\ndentro do praso de doze mezes contados da\ndata do aviso, não podendo elle ter lugar antes\nde ser inaugurada e acceita a illuminação\nconstante do presente contracto.\n§ 2.º A clausula 18.ª do contracto fica assim\nsubstituida: Clausula 18.º Se o desarranjo que\noccasionar a interrupção da Luz durar mais\nde quinze dias, poderá a Camara rescindir o\ncontracto, salvo caso de força maior que\nserá resolvida por arbitros profissionaes\nnomeados pela forma de direito.\n§ 3.º - A clanserla 16. fica assim:- A empresa\ndeverá ter sempre em deposito o numero de\nlampadas necessario para substituir immediatamente\nqualquer lampada que se queime,\nse inutilise ou se apague, sob pena de pagar\ndez mil reis de multa abatida nas pertaçees\nmensaes por lampada que estiver apagada\nduas noites consecutivas, salvo caso de força\nmaior a juizo do fiscal profissional da Camara,\n§ 4.º A clausula 14.ª ficará deste modo: - Na\nexpressão illuminação publica- fica comprehendida\na illunação da Casa da Camara com seis lampadas\ne a da Cadeia com igual numero, dustriburidas\nde accordo com a mesma Camara.\n§ 5.º A Clausula 23.º ficará assim:- A Empresa\nserá obrigada a installar e iangurara illumação\nda Cidade da data desta lei a seis mezes",
+      "wer_strict": 0.2157676348547718,
+      "cer_strict": 0.06263194933145672,
+      "wer_norm": 0.20502092050209206,
+      "cer_norm": 0.054715622750179986,
+      "strict_we": 52,
+      "strict_rw": 241,
+      "strict_ce": 89,
+      "strict_rc": 1421,
+      "norm_we": 49,
+      "norm_rw": 239,
+      "norm_ce": 76,
+      "norm_rc": 1389
+    }
+  ]
+}

@@ -59,3 +59,53 @@ reproduction check is then carried by A alone.
 
 Full-run estimate: 543 configurations (3 recognizers × 181); at the smoke's ≈20–40 s per configuration on 2 vCPU,
 about 3–6 h, peak memory < 1 GB. One shard (2 vCPU).
+
+### 2026-11-19 — results (full run, `JOB_OK`)
+
+Free Colab CPU VM (2 vCPU, 0 units), code 441c646, one shard. Select 4 h 35 min (16,532 s), eval 158 s, report 2 s;
+peak RSS 575 MiB. Pulled with `colab_pull.py` (298 files, 894 MB, `outputs/x02_colab_full/`, not in git) before the
+session was stopped; small files in `run_20261119/` (frozen configuration, all scored configurations and logs,
+`report/grid_pa181.json`, `report/paired.json`, `report/paired_pages.json`, 9 `eval/score/.../result.json`, job log,
+env, machine, tool hashes).
+
+**Gates.** (1) Reproduction: `REPRO <rec> A shared 61 of E20 61 differ 0` for R1, R4 and R5, `REPRO_OK`. A2 shared 0
+of E20's 31 for every recognizer: the larger A moved the best A configuration (R1 id 112, R4 id 92, R5 id 71, all
+outside E20's 61), so A2 explored a different neighbourhood; the reproduction check rests on A. (2) Frozen
+(`select/frozen_x02.json`) before any held-out or test page was decoded. (3) Reported below whatever the outcome.
+
+**Tuning WER of the frozen configuration** (official GT, 9 tuning pages; E20's PA in brackets): R1 19.92 (20.54),
+R4 20.94 (20.71), R5 22.29 (22.86). Because A2 is centred on A's best, the 181 configurations are not a superset of
+E20's 92, and on R4 the larger search ends with a worse tuning WER than E20's. P6's tuning WER on R1 is 19.64.
+
+**Evaluation** (WER / CER %, normalized):
+
+| system | held-out official | held-out Gemini | test10 Gemini |
+|---|---|---|---|
+| R1·pa181 | 19.69 / 4.53 | 8.58 / 2.68 | 4.33 / 1.66 |
+| R4·pa181 | 19.21 / 4.59 | 7.23 / 2.55 | 6.06 / 2.05 |
+| R5·pa181 | 19.84 / 5.07 | 10.24 / 3.63 | 6.63 / 2.31 |
+| R1·P6 (E20, for reference) | 18.74 / 4.35 | 6.33 / 2.26 | 3.49 / 1.50 |
+
+**Paired comparisons** (dWER = first minus second; word-block bootstrap CI95; pages won/tied/lost; page-level
+sign-flip p; `run_20261119/report/paired*.json`):
+
+| pair | held-out official | held-out Gemini | test10 Gemini |
+|---|---|---|---|
+| R1·P6 vs R1·pa181 | −0.94 [−2.42, 0.31] 2/1/0 | −2.26 [−3.90, −0.75] 3/0/0 | −0.84 [−1.41, −0.26] 6/3/1, p 0.047 |
+| R1·P6 vs R4·pa181 | −0.47 [−2.23, 1.26] 1/1/1 | −0.90 [−3.19, 1.21] 2/0/1 | −2.57 [−3.65, −1.50] 8/1/1, p 0.008 |
+| R1·P6 vs R5·pa181 | −1.10 [−3.49, 1.27] 2/0/1 | −3.92 [−6.04, −1.82] 3/0/0 | −3.14 [−4.27, −2.02] 10/0/0, p 0.002 |
+| R4·P6 vs R4·pa181 | −0.47 [−1.55, 0.47] | −1.81 [−3.32, −0.45] | −1.46 [−2.21, −0.75] 9/0/1, p 0.020 |
+| R5·P6 vs R5·pa181 | −0.16 [−2.19, 1.90] | −3.16 [−4.95, −1.64] | −1.86 [−2.64, −1.09] 9/0/1, p 0.006 |
+| R1·pa181 vs R1·pa | −0.16 [−1.55, 1.24] | −1.81 [−3.31, −0.45] | −1.11 [−1.68, −0.58] 7/3/0, p 0.016 |
+| R4·pa181 vs R4·pa | +0.00 [−0.80, 0.94] | +0.60 [−0.45, 1.95] | +0.22 [−0.18, 0.62] 2/3/5, p 0.28 |
+| R5·pa181 vs R5·pa | +0.47 [−1.09, 2.03] | +2.26 [0.76, 4.06] | +0.62 [0.26, 1.03] 1/2/7, p 0.031 |
+
+With 3 held-out pages the smallest attainable sign-flip p is 0.25, so the page-level test can only speak on test10.
+
+**Reading by the E20 rule** ("beats" only if the test CI excludes 0 and held-out is not unfavourable): R1·P6 beats
+R1·pa181, R4·pa181 and R5·pa181 (test CIs exclude 0, held-out official CIs include 0, no held-out point estimate
+favours PA). The answer to X02's question: R1·P6's lead over R4·PA / R5·PA on test10 does not shrink when PA gets
+E17's search size (R4: −2.34 → −2.57, R5: −2.52 → −3.14), and P6 still beats PA with the recognizer fixed on test10
+(R4 −1.46, R5 −1.86). Against R1·PA the lead shrinks from −1.95 to −0.84 and its CI still excludes 0. A larger PA
+search helped on R1 only; on R5 the configuration with the better tuning WER is worse on test10 (+0.62, CI excludes
+0), so a bigger random/local search does not by itself buy test accuracy here.
