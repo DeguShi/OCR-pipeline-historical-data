@@ -36,15 +36,17 @@ Period spelling (_maximo_, _numero_, _principio_) is kept on purpose. _Estadista
 
 Word and character error rates (WER/CER, %): lowercased, punctuation removed, computed over the whole corpus.
 
-| reference                                          | pages                                   |       WER |      CER |
-| -------------------------------------------------- | --------------------------------------- | --------: | -------: |
-| official transcription                             | 3 held-out pages                        | **18.74** | **4.43** |
-| official transcription                             | all 12 transcribed pages                |     19.40 |     5.27 |
-| diplomatic transcription (LLM, not human-reviewed) | 13 pages outside training and selection |      4.10 |     1.68 |
+| reference                                    | pages                    |       WER |      CER |
+| -------------------------------------------- | ------------------------ | --------: | -------: |
+| official transcription                       | 3 held-out pages         | **18.74** | **4.43** |
+| official transcription                       | all 12 transcribed pages |     19.40 |     5.27 |
+| Gemini transcription (not reviewed by a person) | 3 held-out pages      |      6.48 |     2.39 |
+| Gemini transcription (not reviewed by a person) | 10 test pages         |      3.41 |     1.47 |
 
 The two references disagree with each other. The official one modernizes spelling, expands abbreviations and has some
-misreadings. The diplomatic one keeps the original spelling, but no person has reviewed it. Notation alone (how
-ordinals like `1.º` are written) accounts for 5.6 WER points against the official reference.
+misreadings. The Gemini transcription keeps the original spelling, but no person has reviewed it, and it comes from
+the same source as the recognizer's training labels. Notation alone (how ordinals like `1.º` are written) accounts
+for 5.6 WER points against the official reference.
 
 How the error fell from version to version (all configuration choices were made on the 9 tuning pages):
 
@@ -55,8 +57,35 @@ How the error fell from version to version (all configuration choices were made 
 | v3          | period dictionary, n-gram context                                                              |      36.00 |        36.85 |        14.00 |
 | v4 _medium_ | ordinals, short words, n-best candidates, legislative corpus                                   |      29.63 |        28.50 |        10.64 |
 | v4          | recognizer self-trained on the book's other pages                                              |      24.77 |        22.05 |         8.16 |
-| v5          | recognizer trained on diplomatic transcriptions, book text in the context model                |      19.98 |        18.43 |         4.13 |
+| v5          | recognizer trained on Gemini transcriptions, book text in the context model                    |      19.98 |        18.43 |         4.13 |
 | **v6**      | **same configuration, recognizer retrained on a clean chain**                                  |  **19.64** |    **18.74** |     **4.43** |
+
+## Comparison with published systems
+
+Six recognizers were crossed with up to five ways of turning the CTC output into text, all on the same images and
+segmentation, with each method's parameters tuned on the 9 tuning pages
+([`records/e20/README.md`](records/e20/README.md)). TraPrInq and McCATMuS were also fine-tuned on the **same 2,425
+labelled lines** as our recognizer, so comparing them with ours isolates the starting model from the labels. WER, %:
+
+| system                                                        | 3 held-out, official | 10 test, Gemini |
+| ------------------------------------------------------------- | -------------------: | --------------: |
+| PP-OCRv6 _medium_ as published, raw image, greedy decoding    |                60.79 |           57.28 |
+| TraPrInq as published, raw image, greedy decoding             |                79.84 |           73.73 |
+| open VLM reading each line (Qwen2.5-VL 7B)                    |                49.29 |           53.78 |
+| our recognizer + VLM post-correction                          |                24.72 |           15.97 |
+| TraPrInq fine-tuned on our labels + KenLM                     |                19.21 |            5.84 |
+| TraPrInq fine-tuned on our labels + KenLM, 181 configurations |                19.21 |            6.06 |
+| TraPrInq fine-tuned on our labels + our post-correction       |                18.74 |            4.60 |
+| **v6: our recognizer + our post-correction**                  |            **18.74** |        **3.49** |
+
+On the test pages, v6 makes 2.34 WER points fewer errors than TraPrInq fine-tuned on our labels with KenLM (paired
+bootstrap CI95 [−3.42, −1.28]). Of those points, 1.24 come from replacing KenLM with our post-correction on the fine-tuned
+TraPrInq, and 1.11 from replacing the fine-tuned TraPrInq with our recognizer (the parts sum to 2.35
+because of rounding). The gap remains when KenLM's search is nearly doubled to 181
+configurations (−2.57 [−3.65, −1.50]; [`records/x02/README.md`](records/x02/README.md)). On the 3 held-out pages
+against the official transcription, the two systems cannot be told apart (−0.47 [−2.07, 1.13]). The v6 numbers in
+this section come from re-decoding the exported posteriors and differ slightly from the Results table: 3.49 against
+3.41 on the test pages, and 6.33 against 6.48 on the held-out pages against the Gemini transcription.
 
 ## How it works
 
@@ -70,12 +99,12 @@ then CTC rescoring and Viterbi over period trigrams. (b) Adapting the recognizer
 - **Image.** One image defines the coordinates (upscaled ×2 and deskewed). From it, a contrast-enhanced copy with the
   ruling lines removed goes to segmentation, and the plain copy goes to the recognizer.
 - **Recognizer.** PP-OCRv6 _medium_ (Kiessling, [Zenodo 10.5281/zenodo.21788410](https://doi.org/10.5281/zenodo.21788410)),
-  fine-tuned on 78 other pages of the book. Their labels are diplomatic transcriptions produced with Gemini 4 Argon.
+  fine-tuned on 78 other pages of the book. Their labels are transcriptions produced with Gemini 4 Argon, which keep the original spelling.
   None of the 12 evaluated pages, and no human transcription, was used to train the weights.
 
   <p align="center"><img src="docs/figures/flow_rotulos.gif" width="760" alt="Two label sources for the recognizer: self-training and external transcriptions"></p>
   <p align="center"><sub>Two label sources that were tried: (a) self-training on the pipeline's own confident lines,
-  (b) diplomatic transcriptions aligned to the segmented lines (used in the final recognizer).</sub></p>
+  (b) Gemini transcriptions aligned to the segmented lines (used in the final recognizer).</sub></p>
 
 - **Post-correction.** For each word, candidates from a period dictionary are scored with the recognizer's own CTC
   posteriors. A Viterbi pass over word trigrams then picks the line. The dictionary and the trigrams come from 443
@@ -152,15 +181,17 @@ Choosing the chain with the sample transcriptions did no better. The search take
 | `tools/`                           | corpus download and dictionary building, reference comparison, final scoring                                                                |
 | `notebooks/`                       | paper presentation and pipeline presentation (both executed), and the notebook for new images                                               |
 | `data/images`, `data/ground_truth` | the 12 evaluated pages and their official transcription                                                                                     |
-| `data/ground_truth_gemini`         | diplomatic transcriptions of the same 12 pages                                                                                              |
-| `data/extra/`                      | the book's other pages, training crops and their diplomatic transcriptions, the 10 test pages                                               |
+| `data/ground_truth_gemini`         | Gemini transcriptions of the same 12 pages                                                                                                  |
+| `data/extra/`                      | the book's other pages, training crops and their Gemini transcriptions, the 10 test pages                                                   |
 | `models/lexicon/`                  | period dictionary and trigram model used by the final configuration                                                                         |
 | `records/`                         | every search, sweep and training run, so work can resume from what was measured ([details](records/README.md))                              |
 | `docs/`                            | the paper ([`paper.pdf`](docs/paper.pdf)), the development log in Portuguese ([`PROCESS.md`](docs/PROCESS.md)) and the greedy search report |
 
 Recognizer weights live on the Hugging Face Hub
 ([KobayashiShiroe/OCR-pipeline-historical-data](https://huggingface.co/KobayashiShiroe/OCR-pipeline-historical-data)):
-`st_c1m` (v6, final) and `st_g3m` (v5). `setup_pipeline.py` downloads them and checks their SHA-256.
+`st_c1m` (v6, final) and `st_g3m` (v5). `setup_pipeline.py` downloads them and checks their SHA-256. The same repo
+holds the models of the comparison: TraPrInq and McCATMuS fine-tuned on our labels (`e20/`), the KenLM models
+(`lm/`) and the ByT5 post-corrector (`postcorr_byt5_small/`).
 
 ## Protocol
 
@@ -171,7 +202,7 @@ Recognizer weights live on the Hugging Face Hub
 resources never choose or measure anything (clean chain).</sub></p>
 
 - **Split.** The 12 pages with an official transcription are split with seed 42 into 9 tuning pages and 3 held-out pages (7, 10, 12).
-  10 more pages, with a diplomatic reference only, form a test set.
+  10 more pages, with a Gemini transcription as their only reference, form a test set.
 - **Selection.** Every choice of the final configuration was made on the tuning pages. The held-out pages were scored
   once, after the configuration was frozen. They had been looked at in earlier exploratory work, so the separation is
   not perfectly blind.
@@ -182,7 +213,7 @@ resources never choose or measure anything (clean chain).</sub></p>
 
 The page images and the official transcription belong to the
 Fundação Pró-Memória de São Carlos. They are included here only to
-reproduce the results. Rights remain with the Foundation, so contact it before any other use. The diplomatic
+reproduce the results. Rights remain with the Foundation, so contact it before any other use. The Gemini
 transcriptions were produced with Gemini 4 Argon. They were used as training labels and as a second reference, and
 they were not reviewed by a person.
 
@@ -203,10 +234,12 @@ de época, tirados de livros do século XIX e de leis paulistas de 1889–1910, 
 vieram de uma busca gulosa condicional feita só nas páginas de ajuste.
 
 Contra o gabarito oficial, nas 3 páginas reservadas, o WER fica em **18,74%** e o CER em **4,43%**. Contra as
-transcrições diplomáticas, em 13 páginas fora do treino e da seleção, os valores são 4,10% e 1,68%. Essa referência
-foi gerada por LLM e não foi revisada por pessoas.
+transcrições do Gemini, o WER é de 6,48% nessas 3 páginas e de 3,41% nas 10 de teste. Essa referência foi gerada por
+LLM e não foi revisada por pessoas. Nas 10 de teste, a v6 erra 2,34 pontos a menos que o TraPrInq ajustado com os
+mesmos rótulos e decodificado com KenLM.
 
 O artigo completo está em [`docs/paper.pdf`](docs/paper.pdf), e [`notebooks/demo_artigo.ipynb`](notebooks/demo_artigo.ipynb)
 apresenta os resultados dele com figuras. Para ver o pipeline funcionando, abra [`notebooks/presentation.ipynb`](notebooks/presentation.ipynb), que está em
-português e já executado. O processo completo, com os experimentos, os números e o que não funcionou, está em
-[`docs/PROCESS.md`](docs/PROCESS.md). Os registros de todas as buscas e treinos ficam em [`records/`](records/).
+português e já executado. O processo até a v6, com os experimentos, os números e o que não funcionou, está em
+[`docs/PROCESS.md`](docs/PROCESS.md); a comparação com sistemas publicados está em
+[`records/e20/README.md`](records/e20/README.md) e [`records/x02/README.md`](records/x02/README.md). Os registros de todas as buscas e treinos ficam em [`records/`](records/).
