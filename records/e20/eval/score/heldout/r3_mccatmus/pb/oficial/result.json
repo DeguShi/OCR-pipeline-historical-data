@@ -1,0 +1,66 @@
+{
+  "source": "outputs/e20/eval/lines/heldout/r3_mccatmus/pb.json",
+  "rules": true,
+  "corpus": {
+    "wer_strict": 0.8941548183254344,
+    "cer_strict": 0.45832251363282267,
+    "wer_norm": 0.8771653543307086,
+    "cer_norm": 0.4499866631101627
+  },
+  "pages": [
+    {
+      "page": 7,
+      "lines": 33,
+      "pred_words": 217,
+      "text": "83e o,tree mendiante le natural subtitue de presidete\ne1e publius un vire p'acidante en simas veria ir,\nma ende de sua intrego cass du empate serina\ne mais vetton\ncapitulo 3t\nda nim un trabalhes\na tige se\nte aua marcado para as crés se veis nt'arcade\nnus no calar poisal du mui riparia, en uze\nlua da ign, b'archet inere ce mel , e perscrute\na mira seu tage, que d'a exl un su vendere, sen\ntabardillo\naberta a sessar\ntages\nes resae diran . tiempos marine du quatre huo\nmas amas a sete, e presidente eu eman\ne tratastes poter palavas: cet in errare a sessor\n tiguera\naberta a resse, on persitente aclarar a mattin unn\ndis eustis, ar cetera a ns ous cante nn trabisondas\nde a pala a que piar a pit, fase cen\na demain e a civilitas entre a veran e on\nempestamento\n61e so recite du tratactu a odeie a mer\na pessoa que mas pertinens a espancou mme\npal\ne2. ea aspe d'abres nat potins interior un obeteve\nj qualquer fr, e vêm de signe  apperitivo\ns en dragais, ont pira a terne cheai, e\nreputa du vula, cu cci de sicite cit.\n10906\net residente menu lee :\ne1e chorar a adur, ate tru ciser, e vercer quin",
+      "wer_strict": 0.8925233644859814,
+      "cer_strict": 0.4752941176470588,
+      "wer_norm": 0.8790697674418605,
+      "cer_norm": 0.4665052461662631,
+      "strict_we": 191,
+      "strict_rw": 214,
+      "strict_ce": 606,
+      "strict_rc": 1275,
+      "norm_we": 189,
+      "norm_rw": 215,
+      "norm_ce": 578,
+      "norm_rc": 1239
+    },
+    {
+      "page": 10,
+      "lines": 33,
+      "pred_words": 182,
+      "text": "dotes, pendente, ro a gene, uin e atrair\nsoixante o enhadir, sia retile e sei das\nares ma firme, a serra a quem a sparte\nterror mat potira veter\natigo\noraes que, un carn jutificação\nsentar a mor resoe conse entivar, beaux\ncons un supplentes convocai que ms\ncompare vin, riva impart, ele presideute\na manta de dez mil acis sorver v'elq ais be\n364 o presidente quarts trier ae resentir\nqualquer as pte en apresentar e depusera\nrevesar passan a president a ser\nm e'atre\nl apitei 1e\nde numere sas ressai.\ntige 162\ne camara napus favi un atr nrs,\ne ressa marins, de dois un dais mien\n e non artis de calet; desunt,\nréverie, stil, pinh e vents qu savarin\ne das necessaries, numen iners de tu.\natr\nmaria un enda anno tentes a ixe extra\nmarias quantas prin exegetes pelso\n mupalaia\nse es secre entrada ces serais conne\ncaras pis prasidente e sem par erven\neu pera, inertia de proprie possa ante\ne a regiment de out inste cinquete\n campesina declarava a motin\na comme gudi\nduperré gaesum",
+      "wer_strict": 0.9044943820224719,
+      "cer_strict": 0.45541125541125543,
+      "wer_norm": 0.8784530386740331,
+      "cer_norm": 0.4451382694023194,
+      "strict_we": 161,
+      "strict_rw": 178,
+      "strict_ce": 526,
+      "strict_rc": 1155,
+      "norm_we": 159,
+      "norm_rw": 181,
+      "norm_ce": 499,
+      "norm_rc": 1121
+    },
+    {
+      "page": 12,
+      "lines": 33,
+      "pred_words": 255,
+      "text": "lampadas quais a nena a exigir, quietin\na ci m es nr cire sos mar en ils ere, de\nmain, mo vu que e numere de campes\ndas argite mas ure cide a expo citare a jr coi\n demores, care en que se a a intestar\ndante  praxe du ne mors contais de\ndata de avis, avais sidan cle ter logar ntessa\ne ser mangues e adita a retina ant\ncometente de presente contractan\n692 alanta16c d contracte pien assamento\ntitillosus ii; c o seranus que\nescaveirar a ni eripous su liz caira mais,\nde grange us, poer a naire recender en\ncontente, sate caro a pren main que\nse retrata pun artito preces des\nnome n pela prima de sarete\n23º velara 16r j'ea asse. et emprensivo\nsevera ter amp un depart a nomero du\nlampadas ne cessans parc titela mie\nvastamente quatquer compas qe s quime,\ne mutilare en se apagae, vot peus se pagur\nde mil ais de meseta abatia nas parta eui\nmuraes pu lampada que setre pregadeira\nas noite com outavas, catre cans d geran\nmain a pais d irent piscinal de camer\ne se a clausula mr java date moso , et a\nexpiatio pression pon comich\na ituana can du command, cone seis l\npadus e a sa baden cun equal néro, satr\nde de acne can a mesma car ann\n952 e clausula 20e soas a ais et cupient\nseringada a valle e muguer a cil rre \nseus sa civeis sa vat dict cei a seis aure",
+      "wer_strict": 0.8879668049792531,
+      "cer_strict": 0.4454609429978888,
+      "wer_norm": 0.8744769874476988,
+      "cer_norm": 0.43916486681065514,
+      "strict_we": 214,
+      "strict_rw": 241,
+      "strict_ce": 633,
+      "strict_rc": 1421,
+      "norm_we": 209,
+      "norm_rw": 239,
+      "norm_ce": 610,
+      "norm_rc": 1389
+    }
+  ]
+}

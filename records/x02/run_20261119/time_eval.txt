@@ -1,0 +1,62 @@
+2026-11-19 06:43:26,030 3 pages, 428594 LM unigrams, 1623 labels
+2026-11-19 06:43:39,368 Alphabet determined to be of regular style.
+2026-11-19 06:43:39,531 Alphabet determined to be of regular style.
+2026-11-19 06:43:43,063 alpha 0.704 beta 0.852 -> outputs/x02/eval/raw/heldout/r1_st_c1m/pa181/a0.704_b0.852
+mapped 1 characters (1 distinct) -> outputs/x02/eval/lines/heldout/r1_st_c1m/pa181.json
+WER norm 19.69% | CER norm 4.53% -> outputs/x02/eval/score/heldout/r1_st_c1m/pa181/oficial
+WER norm 8.58% | CER norm 2.68% -> outputs/x02/eval/score/heldout/r1_st_c1m/pa181/gemini
+2026-11-19 06:43:49,599 10 pages, 428594 LM unigrams, 1623 labels
+2026-11-19 06:44:03,431 Alphabet determined to be of regular style.
+2026-11-19 06:44:03,567 Alphabet determined to be of regular style.
+2026-11-19 06:44:12,068 alpha 0.704 beta 0.852 -> outputs/x02/eval/raw/test10/r1_st_c1m/pa181/a0.704_b0.852
+mapped 0 characters (0 distinct) -> outputs/x02/eval/lines/test10/r1_st_c1m/pa181.json
+WER norm 4.33% | CER norm 1.66% -> outputs/x02/eval/score/test10/r1_st_c1m/pa181/gemini
+2026-11-19 06:44:18,597 3 pages, 428594 LM unigrams, 163 labels
+2026-11-19 06:44:32,417 Alphabet determined to be of regular style.
+2026-11-19 06:44:32,490 Alphabet determined to be of regular style.
+2026-11-19 06:44:36,464 alpha 1.142 beta -1.066 -> outputs/x02/eval/raw/heldout/r4_traprinq/pa181/a1.142_b-1.066
+mapped 1 characters (1 distinct) -> outputs/x02/eval/lines/heldout/r4_traprinq/pa181.json
+WER norm 19.21% | CER norm 4.59% -> outputs/x02/eval/score/heldout/r4_traprinq/pa181/oficial
+WER norm 7.23% | CER norm 2.55% -> outputs/x02/eval/score/heldout/r4_traprinq/pa181/gemini
+2026-11-19 06:44:43,579 10 pages, 428594 LM unigrams, 163 labels
+2026-11-19 06:44:57,171 Alphabet determined to be of regular style.
+2026-11-19 06:44:57,267 Alphabet determined to be of regular style.
+2026-11-19 06:45:06,575 alpha 1.142 beta -1.066 -> outputs/x02/eval/raw/test10/r4_traprinq/pa181/a1.142_b-1.066
+mapped 1 characters (1 distinct) -> outputs/x02/eval/lines/test10/r4_traprinq/pa181.json
+WER norm 6.06% | CER norm 2.05% -> outputs/x02/eval/score/test10/r4_traprinq/pa181/gemini
+2026-11-19 06:45:13,464 3 pages, 428594 LM unigrams, 120 labels
+2026-11-19 06:45:27,164 Alphabet determined to be of regular style.
+2026-11-19 06:45:27,273 Alphabet determined to be of regular style.
+2026-11-19 06:45:30,327 alpha 1.817 beta 2.136 -> outputs/x02/eval/raw/heldout/r5_mccatmus/pa181/a1.817_b2.136
+mapped 0 characters (0 distinct) -> outputs/x02/eval/lines/heldout/r5_mccatmus/pa181.json
+WER norm 19.84% | CER norm 5.07% -> outputs/x02/eval/score/heldout/r5_mccatmus/pa181/oficial
+WER norm 10.24% | CER norm 3.63% -> outputs/x02/eval/score/heldout/r5_mccatmus/pa181/gemini
+2026-11-19 06:45:36,078 10 pages, 428594 LM unigrams, 120 labels
+2026-11-19 06:45:49,844 Alphabet determined to be of regular style.
+2026-11-19 06:45:49,939 Alphabet determined to be of regular style.
+2026-11-19 06:45:58,503 alpha 1.817 beta 2.136 -> outputs/x02/eval/raw/test10/r5_mccatmus/pa181/a1.817_b2.136
+mapped 2 characters (2 distinct) -> outputs/x02/eval/lines/test10/r5_mccatmus/pa181.json
+WER norm 6.63% | CER norm 2.31% -> outputs/x02/eval/score/test10/r5_mccatmus/pa181/gemini
+	Command being timed: "bash tools/run_x02.sh eval outputs/x02"
+	User time (seconds): 231.72
+	System time (seconds): 4.97
+	Percent of CPU this job got: 149%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:38.20
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 560356
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 5
+	Minor (reclaiming a frame) page faults: 960648
+	Voluntary context switches: 535
+	Involuntary context switches: 60794
+	Swaps: 0
+	File system inputs: 13456
+	File system outputs: 704
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

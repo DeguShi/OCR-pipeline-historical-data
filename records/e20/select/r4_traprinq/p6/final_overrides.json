@@ -1,0 +1,30 @@
+{
+ "accepted": {},
+ "chosen": [],
+ "overrides": {},
+ "result": {
+  "name": "base",
+  "overrides": {},
+  "oficial": {
+   "wer": 20.71,
+   "cer": 5.97
+  },
+  "gemini": {
+   "wer": 9.26,
+   "cer": 3.98
+  }
+ },
+ "base": {
+  "name": "base",
+  "overrides": {},
+  "oficial": {
+   "wer": 20.71,
+   "cer": 5.97
+  },
+  "gemini": {
+   "wer": 9.26,
+   "cer": 3.98
+  }
+ },
+ "config_source": "configs/e20/r4_traprinq.json"
+}

@@ -1,0 +1,65 @@
+mapped 851 characters (13 distinct) -> outputs/x02/select/r1_st_c1m/A/results_mapped.jsonl
+id 112  WER 20.48  CER 5.81  {"lm": "kn3_w1", "alpha": 0.864, "beta": 0.048, "unk": -10.56, "beam_prune_logp": -17.18, "token_min_logp": -8.39, "beam": 128, "id": 112}
+id 117  WER 20.82  CER 6.04  {"lm": "kn3_w1", "alpha": 0.65, "beta": 0.1, "unk": -4.87, "beam_prune_logp": -15.82, "token_min_logp": -7.18, "beam": 64, "id": 117}
+id 118  WER 20.94  CER 6.01  {"lm": "kn3_w1", "alpha": 1.203, "beta": 0.428, "unk": -10.26, "beam_prune_logp": -16.98, "token_min_logp": -7.63, "beam": 64, "id": 118}
+id   4  WER 20.94  CER 6.08  {"lm": "kn3_w1", "alpha": 1.818, "beta": 2.42, "unk": -11.5, "beam_prune_logp": -18.49, "token_min_logp": -6.53, "beam": 128, "id": 4}
+id  97  WER 20.99  CER 6.08  {"lm": "kn3_w4b8", "alpha": 1.45, "beta": 0.591, "unk": -8.26, "beam_prune_logp": -19.1, "token_min_logp": -7.6, "beam": 128, "id": 97}
+121 configurations -> outputs/x02/select/r1_st_c1m/A_scored.jsonl
+mapped 273 characters (12 distinct) -> outputs/x02/select/r1_st_c1m/A2/results_mapped.jsonl
+id  60  WER 19.92  CER 5.77  {"alpha": 0.704, "beta": 0.852, "unk": -10.046, "beam_prune_logp": -15.396, "token_min_logp": -7.407, "lm": "kn3_w1", "beam": 256, "id": 60}
+id  57  WER 20.15  CER 5.84  {"alpha": 0.899, "beta": -0.537, "unk": -11.896, "beam_prune_logp": -15.982, "token_min_logp": -7.371, "lm": "kn3_w1", "beam": 256, "id": 57}
+id  58  WER 20.20  CER 5.83  {"alpha": 0.791, "beta": 0.201, "unk": -10.283, "beam_prune_logp": -20.216, "token_min_logp": -7.529, "lm": "kn3_w1", "beam": 128, "id": 58}
+id  23  WER 20.26  CER 5.70  {"alpha": 0.584, "beta": 0.614, "unk": -7.939, "beam_prune_logp": -13.404, "token_min_logp": -8.978, "lm": "kn3_w1", "beam": 256, "id": 23}
+id  51  WER 20.32  CER 5.70  {"alpha": 0.774, "beta": -1.019, "unk": -9.406, "beam_prune_logp": -16.669, "token_min_logp": -8.101, "lm": "kn3_w1", "beam": 256, "id": 51}
+61 configurations -> outputs/x02/select/r1_st_c1m/A2_scored.jsonl
+mapped 373 characters (4 distinct) -> outputs/x02/select/r4_traprinq/A/results_mapped.jsonl
+id  92  WER 21.11  CER 6.49  {"lm": "kn3_w1", "alpha": 1.272, "beta": -0.823, "unk": -5.74, "beam_prune_logp": -15.42, "token_min_logp": -7.28, "beam": 128, "id": 92}
+id  97  WER 21.22  CER 6.58  {"lm": "kn3_w4b8", "alpha": 1.45, "beta": 0.591, "unk": -8.26, "beam_prune_logp": -19.1, "token_min_logp": -7.6, "beam": 128, "id": 97}
+id 112  WER 21.39  CER 6.46  {"lm": "kn3_w1", "alpha": 0.864, "beta": 0.048, "unk": -10.56, "beam_prune_logp": -17.18, "token_min_logp": -8.39, "beam": 128, "id": 112}
+id 108  WER 21.39  CER 6.49  {"lm": "kn3_w4b8", "alpha": 1.246, "beta": 1.451, "unk": -7.33, "beam_prune_logp": -16.77, "token_min_logp": -7.87, "beam": 32, "id": 108}
+id 118  WER 21.39  CER 6.52  {"lm": "kn3_w1", "alpha": 1.203, "beta": 0.428, "unk": -10.26, "beam_prune_logp": -16.98, "token_min_logp": -7.63, "beam": 64, "id": 118}
+121 configurations -> outputs/x02/select/r4_traprinq/A_scored.jsonl
+mapped 135 characters (4 distinct) -> outputs/x02/select/r4_traprinq/A2/results_mapped.jsonl
+id  17  WER 20.94  CER 6.50  {"alpha": 1.142, "beta": -1.066, "unk": -1.047, "beam_prune_logp": -16.294, "token_min_logp": -9.677, "lm": "kn3_w1", "beam": 256, "id": 17}
+id  48  WER 20.99  CER 6.52  {"alpha": 1.168, "beta": -0.458, "unk": -3.281, "beam_prune_logp": -18.041, "token_min_logp": -10.062, "lm": "kn3_w1", "beam": 256, "id": 48}
+id  53  WER 21.11  CER 6.38  {"alpha": 0.734, "beta": -0.864, "unk": -9.658, "beam_prune_logp": -15.48, "token_min_logp": -8.457, "lm": "kn3_w1", "beam": 128, "id": 53}
+id  51  WER 21.11  CER 6.46  {"alpha": 1.182, "beta": -1.89, "unk": -4.586, "beam_prune_logp": -14.909, "token_min_logp": -6.991, "lm": "kn3_w1", "beam": 256, "id": 51}
+id   0  WER 21.11  CER 6.49  {"lm": "kn3_w1", "alpha": 1.272, "beta": -0.823, "unk": -5.74, "beam_prune_logp": -15.42, "token_min_logp": -7.28, "beam": 128, "id": 0}
+61 configurations -> outputs/x02/select/r4_traprinq/A2_scored.jsonl
+mapped 380 characters (6 distinct) -> outputs/x02/select/r5_mccatmus/A/results_mapped.jsonl
+id  71  WER 22.52  CER 7.08  {"lm": "kn3_w1", "alpha": 1.901, "beta": 2.333, "unk": -9.71, "beam_prune_logp": -16.76, "token_min_logp": -9.25, "beam": 128, "id": 71}
+id 112  WER 22.97  CER 7.13  {"lm": "kn3_w1", "alpha": 0.864, "beta": 0.048, "unk": -10.56, "beam_prune_logp": -17.18, "token_min_logp": -8.39, "beam": 128, "id": 112}
+id  55  WER 23.14  CER 7.31  {"lm": "kn3_w1", "alpha": 1.774, "beta": 2.013, "unk": -17.19, "beam_prune_logp": -14.31, "token_min_logp": -7.64, "beam": 128, "id": 55}
+id  85  WER 23.19  CER 7.08  {"lm": "kn3_w4b8", "alpha": 1.914, "beta": -0.545, "unk": -16.66, "beam_prune_logp": -18.37, "token_min_logp": -9.1, "beam": 128, "id": 85}
+id  13  WER 23.19  CER 7.31  {"lm": "kn3_w4b8", "alpha": 1.708, "beta": 1.623, "unk": -10.61, "beam_prune_logp": -16.47, "token_min_logp": -8.28, "beam": 128, "id": 13}
+121 configurations -> outputs/x02/select/r5_mccatmus/A_scored.jsonl
+mapped 213 characters (5 distinct) -> outputs/x02/select/r5_mccatmus/A2/results_mapped.jsonl
+id  47  WER 22.29  CER 7.08  {"alpha": 1.817, "beta": 2.136, "unk": -12.456, "beam_prune_logp": -16.026, "token_min_logp": -8.922, "lm": "kn3_w1", "beam": 256, "id": 47}
+id  12  WER 22.35  CER 6.94  {"alpha": 1.454, "beta": 2.717, "unk": -12.825, "beam_prune_logp": -18.938, "token_min_logp": -9.4, "lm": "kn3_w4b8", "beam": 256, "id": 12}
+id  14  WER 22.35  CER 6.99  {"alpha": 1.801, "beta": 1.87, "unk": -11.12, "beam_prune_logp": -16.562, "token_min_logp": -8.998, "lm": "kn3_w1", "beam": 128, "id": 14}
+id  36  WER 22.35  CER 6.99  {"alpha": 1.512, "beta": 1.964, "unk": -11.943, "beam_prune_logp": -18.75, "token_min_logp": -9.492, "lm": "kn3_w1", "beam": 128, "id": 36}
+id  15  WER 22.35  CER 7.06  {"alpha": 1.795, "beta": 2.597, "unk": -10.671, "beam_prune_logp": -16.279, "token_min_logp": -8.641, "lm": "kn3_w1", "beam": 128, "id": 15}
+61 configurations -> outputs/x02/select/r5_mccatmus/A2_scored.jsonl
+	Command being timed: "bash tools/run_x02.sh select outputs/x02"
+	User time (seconds): 24621.39
+	System time (seconds): 432.73
+	Percent of CPU this job got: 151%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 4:35:32
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 589196
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 33
+	Minor (reclaiming a frame) page faults: 80242521
+	Voluntary context switches: 34207
+	Involuntary context switches: 6525968
+	Swaps: 0
+	File system inputs: 11264
+	File system outputs: 71304
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

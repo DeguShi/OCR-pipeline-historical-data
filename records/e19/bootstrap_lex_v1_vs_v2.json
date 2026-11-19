@@ -1,0 +1,19 @@
+{
+  "wer_a": 21.14159046827376,
+  "wer_b": 21.474092546411747,
+  "dwer": -0.3325020781379884,
+  "ci95": [
+    -0.86,
+    0.19
+  ],
+  "p_signflip": 0.25607439256074394,
+  "blocks": 370,
+  "pages_won_tied_lost": [
+    2,
+    17,
+    1
+  ],
+  "a": "outputs/e19_merged/b/runs/lex",
+  "b": "outputs/e19_colab_e19e/e19/runs_v2/lex",
+  "block": 10
+}

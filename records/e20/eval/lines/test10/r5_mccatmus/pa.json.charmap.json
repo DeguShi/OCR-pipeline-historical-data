@@ -1,0 +1,17 @@
+{
+ "input": "outputs/e20/eval/raw/test10/r5_mccatmus/pa/a1.517_b2.601/lines.json",
+ "alphabet_size": 88,
+ "mapped": 4,
+ "map": {
+  "̧": {
+   "n": 3,
+   "to": "",
+   "name": "COMBINING CEDILLA"
+  },
+  "́": {
+   "n": 1,
+   "to": "",
+   "name": "COMBINING ACUTE ACCENT"
+  }
+ }
+}

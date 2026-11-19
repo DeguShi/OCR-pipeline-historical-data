@@ -1,0 +1,66 @@
+{
+  "source": "outputs/e20_colab_e20v_v2/outputs/e20/v0/heldout_tr_pt/lines.json",
+  "rules": true,
+  "corpus": {
+    "wer_strict": 0.5391705069124424,
+    "cer_strict": 0.23114169215086647,
+    "wer_norm": 0.5105421686746988,
+    "cer_norm": 0.22409258285113098
+  },
+  "pages": [
+    {
+      "page": 7,
+      "lines": 33,
+      "pred_words": 217,
+      "text": "§ 3º O Vice-Presidente é o natural substituto do Presidente.\n§4º Substitui ao Vice-Presidente o Senhor Fernando\nna alçp de sua ntaçã. Em caso de enfate terivá\no mais velho\nCapítulo 3º\nDa alien do trabalhos\nAntigo 3º\nNo dia marcado para as sessões de vereador\nnas no salas principais do municipalidade, as aux\nlura da marinha havendo numero legal, o prefeito\nassimindo o seu lugar, que é a calcária da morada\nTrabalhos, dare principio as sessões, pela palavras: Esta\nabuto a usad.\nAtign 4°\nAs sessões durarão o tempo máximo de quatro horas\nras. terminada a sessão, o presidente encerrará\no Kalathio pelas palavras: Esta encarado a sessão.\nAtigo Sr\nAberto a sessão o punidante declarará a matéria em\nDiemar, mantém a alma durante o trabalho, tão\ndo a palavr as que passou a juiz, fazend chuvax\na decência e a civilidade entre os vereadores e os\nexpectadores\n§1º No mensal do trabalho é vedado o migração\na reação que nas pertence a corporação memória\npal\n§ V: Os espelhadores não podem vender em lotes.\npor qualquer forma, e nem dos signos e apreens\nnas meraçais, ut puma ou leon chenado, e\nexpulsão da sala, em caso de reincidência.\nArtigo 6°\nA Presidente vem aí:\n§ 1º Chamara o alvará, até tru viver, o Vereador que",
+      "wer_strict": 0.5336322869955157,
+      "cer_strict": 0.24295506473724296,
+      "wer_norm": 0.5043859649122807,
+      "cer_norm": 0.2371946414499606,
+      "strict_we": 119,
+      "strict_rw": 223,
+      "strict_ce": 319,
+      "strict_rc": 1313,
+      "norm_we": 115,
+      "norm_rw": 228,
+      "norm_ce": 301,
+      "norm_rc": 1269
+    },
+    {
+      "page": 10,
+      "lines": 33,
+      "pred_words": 176,
+      "text": "dentes, docimante, moço e guês, uniao e embair\nlevante o embrião, filo e sobrinho e sobrinhas\nmama feirme, o Mercado a quem a hypostitua\nmiterseur mas jardera' otan\nAtigo 152\nAo Vereador que, em causa justificada,\njustaram a duas sessões consecutivas\ncomo um suplente convocado que mas\ncompareceram, ora importa, pelo Presidente\na mostra de dez mil réis (10'000) (Reg. art. 62\n§4º). O Presidente quando tiver um disentir\nqualquer assunto ao apresentar e defender\nnúcleos rurais passaram a presidir-se a seus\nmionéd'ato\nCapítulo 4°\nDo ministro das sessões\nArtigo 16°\nA câmara municipal fará um cato anno\nsei sessas? admiarias, de dois em dois meses\nna primeira das reis de Outubro, Dezembro\nFevereiro, Abril, Junho e Agosto que durarão\no dias necessarios, nunca menos de tres\nArtigo\nHaverá em cada ano tantas sessões como\nadvarias quantas forem exigidas pelo\nbem municipal\n§/2 As sessões extraordinárias serão como\ncasas julgo Presidente e sempre por ordem\nsuperior, iniciativa do próprio presidente\nEm a Regulamento do Tutelante. Em qualque\ncaso o presidente declarara motivo\ndo Comunicaçãs.\nDisponições gerais.",
+      "wer_strict": 0.5166666666666667,
+      "cer_strict": 0.20292347377472056,
+      "wer_norm": 0.47593582887700536,
+      "cer_norm": 0.19466666666666665,
+      "strict_we": 93,
+      "strict_rw": 180,
+      "strict_ce": 236,
+      "strict_rc": 1163,
+      "norm_we": 89,
+      "norm_rw": 187,
+      "norm_ce": 219,
+      "norm_rc": 1125
+    },
+    {
+      "page": 12,
+      "lines": 33,
+      "pred_words": 243,
+      "text": "lançadas quando a Câmara o exigir, mediante\navis a' mesmos com sui mesco pelo mesmo, de\nautocertificação, uma vez que o número da lampa\ndas enigidos mas creuda a capacidade e forças\nem dyscurso, caso em que se obriga a interpor\ndentro do prazo de dois meses contados da\ndata de anio, aras pendem eli te logar ants\nDe ser inaugurado e aceita a iluminação\ncontante & presente contrato\n§ IX A clausula 18° do contrato fica afim\nsubstituida: clausula 18.º do disposto que\nocasuar a miterrupção de luz durar mais\nde quinze dias, prorrogar-se-á o Pasmara até em dia\ncontrato, rahas caso a prea maior que\nsera subordinada por arbitro profissional\nnomeado pela forma da direito\n§ 3° A clausula 16. fica assim: A empresa\nOvará ter sempre um depósito o número de\nlampadas necessarias para substituir minas\nvátemente qualquer lampada que aquiim,\nse virutilise m capaio, sob pena de pagar\nMil reis de muita abatida nas puto\nonuvas por lampada que estiver apagado\nAnas muito consecutivas, tais casas força\nmais a juiz de fiscal profissional do camará\n§6i N clausule 142 fi'ara'dute modo.- Na\nexpressas \"últimas palavras públicas\" fica compreendido\na almeças de cau de camara com seu lam\npadas cada de cadu com qual numero,\nAmigo de acordo com a mesma câmara.\n§ 5º A Clauula 20. ficará assim: - A Empréstimo\nserá obrigada a visitarlos e inaugurar a obra\ncas da Cidade da dat duta lei a sei mês",
+      "wer_strict": 0.5604838709677419,
+      "cer_strict": 0.2430939226519337,
+      "wer_norm": 0.5421686746987951,
+      "cer_norm": 0.23579545454545456,
+      "strict_we": 139,
+      "strict_rw": 248,
+      "strict_ce": 352,
+      "strict_rc": 1448,
+      "norm_we": 135,
+      "norm_rw": 249,
+      "norm_ce": 332,
+      "norm_rc": 1408
+    }
+  ]
+}

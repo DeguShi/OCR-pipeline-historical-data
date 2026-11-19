@@ -1,0 +1,66 @@
+{
+  "source": "outputs/e20/eval/lines/heldout/r0_medium/p0raw.json",
+  "rules": true,
+  "corpus": {
+    "wer_strict": 0.631911532385466,
+    "cer_strict": 0.21397039729940276,
+    "wer_norm": 0.6078740157480315,
+    "cer_norm": 0.2115230728194185
+  },
+  "pages": [
+    {
+      "page": 7,
+      "lines": 33,
+      "pred_words": 214,
+      "text": "§3º Oviec Prensente éa natural subititute do Presidente\n§4º Subibtrum de Vice Creiseute es deais Vereadores,\nna ondem de sua iotaçad. En caso de empate seriva\no mais veclre\nCapitule 32\nDa oren dos trabachos\neArtige 3e\nNo dia marcado para as sessais se renirar o Vircado\nres no salar pricipal da muricipalidade, as oze\nhoras da manho, e havennde inero legal, o peuisiate\narmindo a seu luger, que c'a cabeceiva du mera dos\ntrabarlus, davó pricipis as ussor pelos palairas: Esta\nabuta a sessaõ.\nchtigs 4º\nAs sessae duvavas a tempo maxims de quatre horas.\nPerminada a sessao, e puesivente encenará\nor trabathes pelas palairas:- Esta encirrase a sessad.\nArtigo 52\nAbecta a sessad, a pusidente declavará a materia en\ndisecuras, mantera a ordun duvante os trabathes, dan\ndo a palane as que prmein a pedir, fasentt ohuvar\na deceucia e a cisvlibade entu os vireadoes e os\nexpectadores\n§1º No recinte des trabachos e'vevado o nigresso\na pessia que nas pertença a corponaicad minei\npal.\n2º es expectadires nao porend intervir un debates,\npor qualguer forma, e nem dor signaien de appençad\non deragrado, 106 perra de eeven obervados, e\nesepulaos da sala, un caro de venicidencie.\nArtigo 6.o\net Pressvinte nembe:\nE1e Chamar a aveu, ate tre vises, a viriadur que",
+      "wer_strict": 0.6635514018691588,
+      "cer_strict": 0.2227450980392157,
+      "wer_norm": 0.627906976744186,
+      "cer_norm": 0.21630347054075869,
+      "strict_we": 142,
+      "strict_rw": 214,
+      "strict_ce": 284,
+      "strict_rc": 1275,
+      "norm_we": 135,
+      "norm_rw": 215,
+      "norm_ce": 268,
+      "norm_rc": 1239
+    },
+    {
+      "page": 10,
+      "lines": 37,
+      "pred_words": 175,
+      "text": "deutes, descendentes, soge geurs, uniaie cntrades\nPuvante o conhadio, tio e sobvinho e socio da\nmesma firma, a Vereader a quen a hyportreu\nnitiveciar nad porevci votar.\ntos ver\nArtigo 15º\ncadores que, uun caura putificada,\nfastaven a duas cessoe conecutivas, bene\ncomo cns supptentes convocade que nad\ncompaveeevend, seva importa, pelo Priidente\na musta de dez mil reis (10:000) (Reg. arte 6º\n§4º). O Prerivente quando ties de disenter\nqualquer ascmpto on aprrentar e defender\nindicaçad sua, passava a pusidurcr a sue\nmimediato.\n\nCapituto 4º\nDo mimero das sessais\nArtigo 16º\nA Camara muicipal fava un cada anno\n\nci sessae nomavias, de dois un dois meses,\nnos ponicires dias utees de Oulubr, Desembro,\nvereir Abvil, Junho e sgorto que durara\nos dias ne cessavios, nunea menos de tru.\nptigo 17Mavirá\nun cada anno tantas sessce extraerdniavias\nquantas prim exigivas pelo\nbeu murcipal.\n1º As sescoê extraords\nmanas sevao comocavas\npelo Precidente e sempe por onven\npévior, iniciativa do proprio presidente\nune a Requerment 80 Intendente. Em qualque\ncaro o prisidente declaravá. motion\n\nDiponiçoes geraes.",
+      "wer_strict": 0.6123595505617978,
+      "cer_strict": 0.21471861471861473,
+      "wer_norm": 0.5966850828729282,
+      "cer_norm": 0.215878679750223,
+      "strict_we": 109,
+      "strict_rw": 178,
+      "strict_ce": 248,
+      "strict_rc": 1155,
+      "norm_we": 108,
+      "norm_rw": 181,
+      "norm_ce": 242,
+      "norm_rc": 1121
+    },
+    {
+      "page": 12,
+      "lines": 33,
+      "pred_words": 249,
+      "text": "ampadas quando a Camara a exigir, precitendo\nairi a mesma an seis meur, pelo menos, de\nantoerdencia, ina uu que a nimero de lampa\ndas excigido nad exeida a capacisade e força\nen dynames, caso en que ce obiga a ntispor\ndente de prars de dore meses contades da\ndata do airco, arad podende elle ter logad antes\nde ser maugurada e acceita a silaças\ncomtante de presente contraute.\n§2e A clausula 18e de contracto fica afsin\niubtituida: Clausula 18e Se a desaranjo que\noccasionar a niterrupead da Luy divar mais\nde quize dias, poviva a camava rescindir a\ncontraito, satro cass de prea maior que\nseva vesolriva por arbiton pirfressoniaex\nnomeado pela forma de diveito.\nc3o 1 clausula 16e fica assmi:- et impira\ndevevá ter eempre unn déporite a mmero de\ntampavas ne cessario pava subitituir mime\ndiatamente qualquer lampada que se quime,\nse mutitise on se apagne, sob peua de pagar\ndez mil reis de musta abatida nas pectaçon\nmenraes por lampada que etrer apagada\nauas noites come entivas, satro caso a força\nmainr a juiso de fireal profisiconal da Camorad\n§42 A clausule 14ª ficava dute modo:- Na\nexpessa\" ilmmaca publica fica compihendio\na itunaças de cas de bamara com seis lam\npadas e a da badua com yual nnnero, dutri\nbridos de accode com a masma camara.\n5º et Clausula 20e ficav a assie:- et Eropies\nsera oAgada a i taor e maugurar a cue\ncud da cisade da data ducta lei a seis mere",
+      "wer_strict": 0.6182572614107884,
+      "cer_strict": 0.20548909218859956,
+      "wer_norm": 0.5983263598326359,
+      "cer_norm": 0.20374370050395968,
+      "strict_we": 149,
+      "strict_rw": 241,
+      "strict_ce": 292,
+      "strict_rc": 1421,
+      "norm_we": 143,
+      "norm_rw": 239,
+      "norm_ce": 283,
+      "norm_rc": 1389
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+2026-11-17 22:36:07,003 page 18: 33 lines, 70.1 s
+2026-11-17 22:37:00,711 page 22: 33 lines, 53.6 s
+2026-11-17 22:38:12,798 page 23: 33 lines, 72.1 s
+2026-11-17 22:39:10,783 page 24: 34 lines, 58.0 s
+2026-11-17 22:40:20,778 page 25: 33 lines, 70.0 s
+2026-11-17 22:41:23,503 page 31: 35 lines, 62.7 s
+2026-11-17 22:42:03,156 page 32: 33 lines, 39.6 s
+2026-11-17 22:42:53,953 page 34: 33 lines, 50.7 s
+2026-11-17 22:43:55,713 page 44: 33 lines, 61.7 s
+2026-11-17 22:45:02,161 page 55: 33 lines, 66.4 s
+2026-11-17 22:45:02,169 ALL DONE: load 1.2 s, decode 604.9 s wall / 477.1 s cpu, peak 665 MB
+mapped 0 characters (0 distinct) -> outputs/e20/eval/lines/test10/r4_traprinq/p6.json
+WER norm 4.60% | CER norm 1.78% -> outputs/e20/eval/score/test10/r4_traprinq/p6/gemini
+DECODED r4_traprinq test10 p6

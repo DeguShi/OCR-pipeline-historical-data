@@ -1,0 +1,66 @@
+{
+  "source": "outputs/e20/eval/lines/heldout/r3_mccatmus/pa.json",
+  "rules": true,
+  "corpus": {
+    "wer_strict": 0.8341013824884793,
+    "cer_strict": 0.4793577981651376,
+    "wer_norm": 0.8268072289156626,
+    "cer_norm": 0.4650184113624408
+  },
+  "pages": [
+    {
+      "page": 7,
+      "lines": 33,
+      "pred_words": 137,
+      "text": "83 OtrecmendenteLenattiralsutrtitutedePsidite,s\nE1e Pabtitrun,unvare.secidrute,ensimais,teria\na ordem de sua intregl.uncassduempate,serina\n mais thon\nCapitulo 3\nDa mim un trabalhos\nAtire se\ne a marcado para as e se vient'arcade\nno calarpioipatdumicipalisan,ene\nlua da igno,Barcetimer.Cemel,epersirate\namir, o seu tagus, que da ex su vendere,se\ntabarlus,darjcipi-apolices.ti\naberta a sessar.\nhtage1e\nreaes diran . temps marins de quatre ha\nas amas a sectae,prcsivente,cean\ntratatlus,poturpalavas:cetuinerare a sessor\nligue\nAberta a resse, onpuisitente aclarar a materinunn\ndas ecuscin,aciteraansorscantenntrabisthun,deu\nde pala a que prurapit,fasten\na desmaia a sivilitale entre a vereainneo\nenpectaemen\n6 1 0 recita tratactu a odeie  me\na pessoa que mas pertenex a espancou me\npal.\n22. E esped'abres nos potins interior un abate,\nqualquer fr, nem de signe appert\nos endcragrace,oetpnraaterenechreain,e\nreputa du vela, ou eco de smcidemcit\n10906\net Residente menu le :\ne Chorar a aden, ate tres crser,evercaber,quin",
+      "wer_strict": 0.8340807174887892,
+      "cer_strict": 0.5041888804265042,
+      "wer_norm": 0.8245614035087719,
+      "cer_norm": 0.4862096138691883,
+      "strict_we": 186,
+      "strict_rw": 223,
+      "strict_ce": 662,
+      "strict_rc": 1313,
+      "norm_we": 188,
+      "norm_rw": 228,
+      "norm_ce": 617,
+      "norm_rc": 1269
+    },
+    {
+      "page": 10,
+      "lines": 33,
+      "pred_words": 121,
+      "text": "ductet,pendente, romgene,uinatrair\ndiante enbaiis,siarebishescinde\nfavresmafirmi,aVerradeaqu'ema'parte\nterror na potira veter\nAtigo12\noraes que, un carne jutipieata\ntentar a nos resae consecutivas, seus\ncon un sapptentis convocai que mais\ncomparoeevind, rivatimpartie,peleTesidrute\na manta de dez mil acisBroievez,Volqaisbe\n364 O Presidente quando tres a resentir\nqualquer assmptéenapresentiresepnser\nmrevexsan, passar a president a ser\nme eatre.\nl apiticte1e\nDe numero sas ressai.\ntige 162\nCamara numipalfaviuneatr nas,\nresa marins, de dois um dois mien\nen son artis de Cuclut;Desunt,\nTévevin,stil,piimhe.Tenrts,qusavaran\ndas necessaries, numen iners de tu.\nAtro.\nMarina un cada anno tentes aixe extra\nmarias quantas pri exegitus pelo\nmuréspal.\nSe es sesseéextrandmances serais cone\ncaras pitsPrrridintée sem par erven\neu peran,ieratinadepropri patente\nera a regiment de Vuticsrute,cinquo.\n Can presidente declarava motin\n Comme gui\nDuponagé,geraes",
+      "wer_strict": 0.8611111111111112,
+      "cer_strict": 0.472055030094583,
+      "wer_norm": 0.8556149732620321,
+      "cer_norm": 0.45866666666666667,
+      "strict_we": 155,
+      "strict_rw": 180,
+      "strict_ce": 549,
+      "strict_rc": 1163,
+      "norm_we": 160,
+      "norm_rw": 187,
+      "norm_ce": 516,
+      "norm_rc": 1125
+    },
+    {
+      "page": 12,
+      "lines": 33,
+      "pred_words": 190,
+      "text": "lampadas quasi a nena a exigir, giriti\nsi me ser cure se marenseres,de\nmain, mo ou que numero de Campos\n argite mas crecido a expocivase.perco\n demores, case e que se ia a iatispirr\ndante praxe du e mos contas de\ndata de avis, mais deu elle ter logar antes\n se maugurideeeaaicta a reloninant\ncometente de presente contracto\n6 92 Aclauula16c&contracteeu assane\nsbtit.letausulaii;ceoseranmpsque\neccavenrar a niserupanssu luz casar mais\nde grangeus,poeriacnaireecernidrr,en\ncontrente,satrecareaprenmai que\nse retrata artito preceder\nnomen pela prima de sarete.\n23 Velaurula 16 pien asse. et apre\ndevera ter amp un deparits a nomero de\nlampadas ne cessans para mlitélint me\nvastamente qualquer limpas que se me,\ne mutitire en se apagae, not peur de pagar\nde mil ais de muita abatida nas parta que\nmeus p lampada que sitriesaprgade\na noite com outavas, catre as Gran\nmain aprir irent princial,deCamer\n& 1 A clausula 1 java date modo, et a\nexpaisatiilmuonpretti-onponcomicha\n itunannsdecanducommiai,conness\npadus a da base un qual unére,satrn\ntarde de e cana mesmo car ann\n952 e Clauraile 202 pousa ais et Cupiens\nser chegada a mtaller,eicuquneracilrre\net sa civeis & vate dont les a ser autre",
+      "wer_strict": 0.8145161290322581,
+      "cer_strict": 0.462707182320442,
+      "wer_norm": 0.8072289156626506,
+      "cer_norm": 0.4509943181818182,
+      "strict_we": 202,
+      "strict_rw": 248,
+      "strict_ce": 670,
+      "strict_rc": 1448,
+      "norm_we": 201,
+      "norm_rw": 249,
+      "norm_ce": 635,
+      "norm_rc": 1408
+    }
+  ]
+}

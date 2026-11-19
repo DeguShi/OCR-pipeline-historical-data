@@ -1,0 +1,22 @@
+{
+ "input": "outputs/e20/eval/raw/heldout/r3_mccatmus/pb/NGrams_s0.001/lines.json",
+ "alphabet_size": 88,
+ "mapped": 16,
+ "map": {
+  "à": {
+   "n": 8,
+   "to": "a",
+   "name": "LATIN SMALL LETTER A WITH GRAVE"
+  },
+  "⟦": {
+   "n": 5,
+   "to": "",
+   "name": "MATHEMATICAL LEFT WHITE SQUARE BRACKET"
+  },
+  "^": {
+   "n": 3,
+   "to": "",
+   "name": "CIRCUMFLEX ACCENT"
+  }
+ }
+}

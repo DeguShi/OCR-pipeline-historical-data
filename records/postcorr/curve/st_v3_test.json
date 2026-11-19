@@ -1,0 +1,19 @@
+{
+  "wer_a": 19.239274657231313,
+  "wer_b": 27.15612560813799,
+  "dwer": -7.916850950906679,
+  "ci95": [
+    -9.17,
+    -6.63
+  ],
+  "p_signflip": 9.999000099990002e-05,
+  "blocks": 231,
+  "pages_won_tied_lost": [
+    10,
+    0,
+    0
+  ],
+  "a": "outputs/baselines/curve/st_v3_test10/v6/score",
+  "b": "outputs/baselines/curve/st_v3_test10/greedy/score",
+  "block": 10
+}

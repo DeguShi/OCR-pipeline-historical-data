@@ -1,0 +1,66 @@
+{
+  "source": "outputs/e20/eval/lines/heldout/r0_medium/p6.json",
+  "rules": false,
+  "corpus": {
+    "wer_strict": 0.31911532385466035,
+    "cer_strict": 0.11036094520903661,
+    "wer_norm": 0.26614173228346455,
+    "cer_norm": 0.10322752734062417
+  },
+  "pages": [
+    {
+      "page": 7,
+      "lines": 33,
+      "pred_words": 213,
+      "text": "§3º Vice Presidente é natural substituto do Presidente.\n§4º Subiram de Vice Presidente as demais Vereadores\nna ordem de sua taça. Em caso de empate será\no mais velho\nCapitulo 32\nDa ordem dos trabalhos\nArtigo 3.e\nNada marcado para as sessões se vencer e Verdores\nno salão principal da municipalidade, ás onze\nhoras da manhã, e havendo néro legal, o presidente\narmando a seu lugar, que é'a cabeceira da mesa dos\ntrabalhos, dará principio as ser pelos palavras: Esta\naberta a sessão.\nartigo 4º\nAs sessões durará o tempo maximo de quatro ovas.\nTerminada a sessão, o presidente e ceará\nos trabalhos pelas palavras:- Esta encerrada a sessão.\nArtigo 52\nAberta a sessão, o presidente declarará a materia em\ndiscussão, manter a ordem durante os trabalhos, da\ndo a palavra as que primeiro a pedir, face dever\na decencia e a cidade entre os vereadores e os\nespectadores\n§1º No recinto dos trabalhos e'vedado o ingresso\na pessoa que não pertença a corporação me\npal.\n2e os espectadores não poderá intervir un debates,\npor qualquer fórma, e sem dar signaes de alporcar\no desagrado, 186 pena de serem observados, e\nexpulsos da sala, e caso de reincidencia.\nArtigo 6.o\ne Presente nem:\n1e Chamar á ordem, até tres vezes, o vereador que",
+      "wer_strict": 0.3598130841121495,
+      "cer_strict": 0.1207843137254902,
+      "wer_norm": 0.27906976744186046,
+      "cer_norm": 0.10976594027441484,
+      "strict_we": 77,
+      "strict_rw": 214,
+      "strict_ce": 154,
+      "strict_rc": 1275,
+      "norm_we": 60,
+      "norm_rw": 215,
+      "norm_ce": 136,
+      "norm_rc": 1239
+    },
+    {
+      "page": 10,
+      "lines": 33,
+      "pred_words": 175,
+      "text": "dentes, descendentes, sogra genro, inane contra\nDurante o cunhadio, tio e sobrinho e socio da\nmesma firma, a vereador a quem a hypoteca\ninteressar não poderá votar.\nArtigo 15º\nAos Vereadores que, sem causa justificada,\nfaltarem a duas sessões consecutivas, bem\ncomo aos supplentes convocados que não\ncomparecerem, será imposta, pelo Presidente\na multa de dez mil réis (10:000) (Reg. arte 6º\n4º). O Presidente quando tiver de discutir\nqualquer assumpto os apresentar e defender\nindicação sua, passava a presidencia a sua\nimediato.\nCapitulo 4º\nDo numero das sessões\nArtigo 16º\nA Camara municipal fará un cada anno\nseis sessões ordinarias, de dois un dois meses,\nnos primeiros dias uteis de Outubro, Desembro,\nFevereiro, Abril, Julho e agosto que durará\nos dias ne cesario, nunca menos de tres.\nArtigo\nHaverá um cada anno tantas sessões extraordinarias\nquantas forem exigidas pelo\ne municipal.\n§1 As sessões extraordinarias serão começava\npelo Presidente e sempre por ordem\nsuperior, iniciativa do proprio presidente\na a Requerimento do Intendente. Em qualquer\ncaso o presidente declarará. motivo\nda caça.\nDisposições geraes.",
+      "wer_strict": 0.2247191011235955,
+      "cer_strict": 0.06753246753246753,
+      "wer_norm": 0.19889502762430938,
+      "cer_norm": 0.06422836752899197,
+      "strict_we": 40,
+      "strict_rw": 178,
+      "strict_ce": 78,
+      "strict_rc": 1155,
+      "norm_we": 36,
+      "norm_rw": 181,
+      "norm_ce": 72,
+      "norm_rc": 1121
+    },
+    {
+      "page": 12,
+      "lines": 33,
+      "pred_words": 243,
+      "text": "lampadas quando a Camara o exigir, precedendo\nar mesma com seis mezes, pelo menos, de\nantecedencia, na ou que o numero de tampa\ndas exigido não exceda a capacidade e força\nde dunamos, caso um que se obriga a dispor\ndentro do praso de doze mezes contados da\ndata do aviso, não podendo elle ter logar antes\nde ser maguada e acceita a lanças\nconstante do presente contracto.\n§2e A clausula 18e de contracto fica assim\nsubstituida: Clausula 18e Se a desarranjo que\noccasionar a interrupção da Luz durar mais\nde quinze dias, poderá a camara rescindir o\ncontracto, salvo caso de força maior que\nserá resolvida por arbito professores\nnomeados pela fórma de direito.\n§3º 1 clausula 16e fica assim:- e impura\ndeverá ter sempre um deposito a numero de\nlampadas ne cesario para substituir imediatamente\nqualquer lampada que se que,\nde inutilise os se apague, sob pena de pagar\ndez mil réis de multa abatida nas pedaço\nmensaes por lampada que este apagada\nduas noites com estivas, salvo caso a força\nmaior a juizo do fiscal profissional da Camara\n§4º A clausula 14ª ficava deste modo- Na\nexpressão\" usada publica fica compendio\na situação da Casa da camara com seis lampadas\ne a de Cada com egual numero, opprobrios\nde accôrdo com a mesma camara.\n55º a Clausula 20e ficava assim:- e Copies\nse Anda a ser e magra a a\nas da cidade da data desta lei a seis mezes",
+      "wer_strict": 0.35269709543568467,
+      "cer_strict": 0.1358198451794511,
+      "wer_norm": 0.3054393305439331,
+      "cer_norm": 0.128869690424766,
+      "strict_we": 85,
+      "strict_rw": 241,
+      "strict_ce": 193,
+      "strict_rc": 1421,
+      "norm_we": 73,
+      "norm_rw": 239,
+      "norm_ce": 179,
+      "norm_rc": 1389
+    }
+  ]
+}

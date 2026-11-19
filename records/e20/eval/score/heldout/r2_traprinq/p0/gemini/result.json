@@ -1,0 +1,66 @@
+{
+  "source": "outputs/e20/eval/lines/heldout/r2_traprinq/p0.json",
+  "rules": true,
+  "corpus": {
+    "wer_strict": 0.7511520737327189,
+    "cer_strict": 0.3256880733944954,
+    "wer_norm": 0.7319277108433735,
+    "cer_norm": 0.3161493950552341
+  },
+  "pages": [
+    {
+      "page": 7,
+      "lines": 33,
+      "pred_words": 215,
+      "text": "59. O Ree brendente do natural autisiluto do Presetnte\n5 1º eubesiliem ao Rice Precitente o se mais teravor se\nzia osem de hua Cartaçaõ Eu cazo de onsial deuira\no sais vecho\nCapituca\nDa ovem dos trabalhos\nRiligo 5\naso uia marcaao para as ressaõ sereuiraõ os beuavos\nrio no calar picipaldamuu o paliaaue fas dise\nturas da manhã, e harendo foneio legalo pella smce\nacsnando a seu lugar, que ela cahe cira da mam tn\ntrabalhos, daraõ pincessi as cuias pela palauas delas\nabila ateuaõ.\nAtigo do\ns uasaõ curaraõ o tempo paximo de uatrifda\nras berminada alauao, o jueerente memardo\nos trabalhos pelas palauas hela en cerras asseziaõ\nAsrligo 5ª\nAbeito asestaõ o penerente declarara a materia em\ndiseueraõ, mantera a odem durante o trabalho, dom\ndo a palanra ao que simur a Judie fazame dicircer\nadecucia e asisilibade entre os vercadros e ses\ne eseadorco\ne 1.o No pecuul dos trabachos et velado o greiao\napesda que naõ pulouea a consuraçaõ mingio\nsial.\n82. Os especlavrrar naõ possas diuservir hum sebales,\npor qualquer foranaõ, e sem por segaue uppima\nçaõ en desagrado, subsuna de therem clurado de\naseputoro da sala, c cueo deuncitencia\nArtigo 6.o\nAo Prissente e mo cube\nE se chamar a osia ate tra vuis, o Vereadir que",
+      "wer_strict": 0.7713004484304933,
+      "cer_strict": 0.3571972581873572,
+      "wer_norm": 0.7631578947368421,
+      "cer_norm": 0.3490937746256895,
+      "strict_we": 172,
+      "strict_rw": 223,
+      "strict_ce": 469,
+      "strict_rc": 1313,
+      "norm_we": 174,
+      "norm_rw": 228,
+      "norm_ce": 443,
+      "norm_rc": 1269
+    },
+    {
+      "page": 10,
+      "lines": 33,
+      "pred_words": 182,
+      "text": "tentes, secendente, poero o geno, amian e emnhados\nIurante o cumhadio, dio e pobrinho e coem da\nesma forma, o Vercador aquem a suspostou\nentereuar naõ podera polar.\nArtigo Na\nAos arcadores que, cum cauia puelsicasa\nfastarem a duas se diaõ comecutiras, bem\ncomo aos Iupptentes convocado que e naõ\ncomparecerem eera imposta, pelo Preudente\na muila de xes ameacio soode  Reg.o arto p.o\n817 O Preserente quanto huas oe descutar\nqualquer asmipto on apresentas e seseuder\nmos eaçaõ aua, passara a Jescreca ha qui\nammediato.\nCapitulo 4º\nDo nimizo sas eos aes\nArtigo 16\nA bamaramuncipal fará eu cala anno\ncii pazaõ no mariao, de dois em dois muis\nnos pimeiros dias uteis de Oululr, Desoutro,\nFeverem Abril, Junho egosto que Iuraraõ\nos dias necessarios, nunca menos de hu\nArtigo\nthavera em cada anno Santas dessao extra\nadmariaõ quantas prim engeraõ pelo\nem mam upal\nte s acazaõ entrandmauaõ peraõ como\ncasas pelo Previrente e umpe por orsem\nauperaor, imciativa ao poprio presesente\nura Requeremunto so  Jtiusute Em qual\nper cazo o presasente declararaõ e motivo\nta conerao cori\nDisponçaes geraes",
+      "wer_strict": 0.7222222222222222,
+      "cer_strict": 0.2760103181427343,
+      "wer_norm": 0.7112299465240641,
+      "cer_norm": 0.26755555555555555,
+      "strict_we": 130,
+      "strict_rw": 180,
+      "strict_ce": 321,
+      "strict_rc": 1163,
+      "norm_we": 133,
+      "norm_rw": 187,
+      "norm_ce": 301,
+      "norm_rc": 1125
+    },
+    {
+      "page": 12,
+      "lines": 33,
+      "pred_words": 236,
+      "text": "Campadas quando a umera o erigir,  querin\nam ataesaa cem uis ue, pelomenoz, de\nante deseaia, emeue que o promeio de Canpa\nMas uigido naõ escuda a capaurade e frea\ndos Respames, e ueo em que m obriga a patispos\ndentro do prazo de dou mais eoulado da\nualallo auio, naõ pedendoelle ser fogaõ antes\nlhe dor em augurada de  acta ajularae aõ\ncomsantedo prezente contraul\n8V2 Aclaurula l.a de contrado fica assam\npubilituisa. blauzula 1º se o suananjo que\noccasunar a mismmipcaõ de susa durar mais\na que das, porera a Camara perecudira\ncontrado, patro cazo a prea  maior que\npera resdrita per assitmo pefaescim aca\nnomeados pela forma ao direito\n88 as elaurula 16.a fica a esm Auupui\ntiveraõ ter aimpe em deporito opnimeio aes\ncamparas necinsario para outeslucir pnime\ndialamente qualquem tampada que a queime\npemulilize in se apague, sobpeua de pagar\neles mil peis demuila abaliva nas puloc\nmuuaes por lampada que tuve asngada\nduas udite eomiculavas, iabro e ato aforem\nmaior a juizo do fiieal p fsema Cada Camora\n860 a clausula 1ª ficara decle modo era\nexpecaraõ ulnmaçaõ publica fica com jusmubira\naulisaçaõ da Casa dbamaraõ com uis sam\npadas ela de basei em igual piuueo, subri\ntmdos de azendo com a mesma cauara\nG5a A Clausula E D. figará aesmu = A hupcia\nuera obngada a misaclor e maugurar aulaua\nçaõ da cidade da sal duta seita  eui nue",
+      "wer_strict": 0.7540322580645161,
+      "cer_strict": 0.3370165745856354,
+      "wer_norm": 0.7188755020080321,
+      "cer_norm": 0.3252840909090909,
+      "strict_we": 187,
+      "strict_rw": 248,
+      "strict_ce": 488,
+      "strict_rc": 1448,
+      "norm_we": 179,
+      "norm_rw": 249,
+      "norm_ce": 458,
+      "norm_rc": 1408
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+ "accepted": {},
+ "chosen": [],
+ "overrides": {},
+ "result": {
+  "name": "base",
+  "overrides": {},
+  "oficial": {
+   "wer": 22.35,
+   "cer": 6.82
+  },
+  "gemini": {
+   "wer": 12.04,
+   "cer": 5.17
+  }
+ },
+ "base": {
+  "name": "base",
+  "overrides": {},
+  "oficial": {
+   "wer": 22.35,
+   "cer": 6.82
+  },
+  "gemini": {
+   "wer": 12.04,
+   "cer": 5.17
+  }
+ },
+ "config_source": "configs/e20/r5_mccatmus.json"
+}

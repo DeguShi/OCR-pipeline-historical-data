@@ -1,0 +1,167 @@
+{
+ "raw": "outputs/e20_colab_e20ev_ev/outputs/e20/eval/score/heldout/r1_st_c1m/p0/oficial",
+ "pages": [
+  7,
+  10,
+  12
+ ],
+ "lexicon": "models/lexicon/pt_hist_legal_w1.txt",
+ "runs": {
+  "pa": {
+   "path": "outputs/e20_colab_e20ev_ev/outputs/e20/eval/score/heldout/r1_st_c1m/pa/oficial",
+   "numeral": {
+    "raw_errors": 25,
+    "fixed": 0,
+    "fix_rate": 0.0,
+    "broken": 0
+   },
+   "split_merge": {
+    "raw_errors": 4,
+    "fixed": 0,
+    "fix_rate": 0.0,
+    "broken": 0
+   },
+   "deleted": {
+    "raw_errors": 3,
+    "fixed": 0,
+    "fix_rate": 0.0,
+    "broken": 0
+   },
+   "short": {
+    "raw_errors": 19,
+    "fixed": 2,
+    "fix_rate": 10.5,
+    "broken": 2
+   },
+   "real_word": {
+    "raw_errors": 23,
+    "fixed": 7,
+    "fix_rate": 30.4,
+    "broken": 4
+   },
+   "non_word": {
+    "raw_errors": 88,
+    "fixed": 55,
+    "fix_rate": 62.5,
+    "broken": 3
+   }
+  },
+  "pb": {
+   "path": "outputs/e20_colab_e20ev_ev/outputs/e20/eval/score/heldout/r1_st_c1m/pb/oficial",
+   "numeral": {
+    "raw_errors": 25,
+    "fixed": 0,
+    "fix_rate": 0.0,
+    "broken": 0
+   },
+   "split_merge": {
+    "raw_errors": 4,
+    "fixed": 0,
+    "fix_rate": 0.0,
+    "broken": 0
+   },
+   "deleted": {
+    "raw_errors": 3,
+    "fixed": 0,
+    "fix_rate": 0.0,
+    "broken": 0
+   },
+   "short": {
+    "raw_errors": 19,
+    "fixed": 2,
+    "fix_rate": 10.5,
+    "broken": 0
+   },
+   "real_word": {
+    "raw_errors": 23,
+    "fixed": 2,
+    "fix_rate": 8.7,
+    "broken": 0
+   },
+   "non_word": {
+    "raw_errors": 88,
+    "fixed": 56,
+    "fix_rate": 63.6,
+    "broken": 0
+   }
+  },
+  "p6": {
+   "path": "outputs/e20_colab_e20ev_ev/outputs/e20/eval/score/heldout/r1_st_c1m/p6/oficial",
+   "numeral": {
+    "raw_errors": 25,
+    "fixed": 0,
+    "fix_rate": 0.0,
+    "broken": 0
+   },
+   "split_merge": {
+    "raw_errors": 4,
+    "fixed": 0,
+    "fix_rate": 0.0,
+    "broken": 0
+   },
+   "deleted": {
+    "raw_errors": 3,
+    "fixed": 0,
+    "fix_rate": 0.0,
+    "broken": 0
+   },
+   "short": {
+    "raw_errors": 19,
+    "fixed": 2,
+    "fix_rate": 10.5,
+    "broken": 1
+   },
+   "real_word": {
+    "raw_errors": 23,
+    "fixed": 7,
+    "fix_rate": 30.4,
+    "broken": 4
+   },
+   "non_word": {
+    "raw_errors": 88,
+    "fixed": 64,
+    "fix_rate": 72.7,
+    "broken": 0
+   }
+  },
+  "pe": {
+   "path": "outputs/e20_colab_e20ev_ev/outputs/e20/eval/score/heldout/r1_st_c1m/pe/oficial",
+   "numeral": {
+    "raw_errors": 25,
+    "fixed": 2,
+    "fix_rate": 8.0,
+    "broken": 0
+   },
+   "split_merge": {
+    "raw_errors": 4,
+    "fixed": 1,
+    "fix_rate": 25.0,
+    "broken": 0
+   },
+   "deleted": {
+    "raw_errors": 3,
+    "fixed": 0,
+    "fix_rate": 0.0,
+    "broken": 0
+   },
+   "short": {
+    "raw_errors": 19,
+    "fixed": 4,
+    "fix_rate": 21.1,
+    "broken": 0
+   },
+   "real_word": {
+    "raw_errors": 23,
+    "fixed": 6,
+    "fix_rate": 26.1,
+    "broken": 27
+   },
+   "non_word": {
+    "raw_errors": 88,
+    "fixed": 51,
+    "fix_rate": 58.0,
+    "broken": 4
+   }
+  }
+ }
+}

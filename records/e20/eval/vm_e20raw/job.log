@@ -1,0 +1,52 @@
+38be382b5d0e2415
+16cc0ff528aa9582
+530a84591a311660
+31ce765b8d46fbec
+INFO downloading models/10.5281_zenodo.21788410/medium.safetensors
+INFO ok models/10.5281_zenodo.21788410/medium.safetensors
+INFO ok models/lexicon/pt_hist_legal_w1.txt
+INFO ok models/lexicon/pt_hist_legal_w4_livro78.ngrams.npz
+INFO downloading models/10.5281_zenodo.14543904/traprinq.mlmodel
+INFO ok models/10.5281_zenodo.14543904/traprinq.mlmodel
+INFO ok models/lexicon/pt_hist_legal_w1.txt
+INFO ok models/lexicon/pt_hist_legal_w4_livro78.ngrams.npz
+INFO downloading models/10.5281_zenodo.13788177/mccatmus.mlmodel
+INFO ok models/10.5281_zenodo.13788177/mccatmus.mlmodel
+INFO ok models/lexicon/pt_hist_legal_w1.txt
+INFO ok models/lexicon/pt_hist_legal_w4_livro78.ngrams.npz
+PART setup 803s
+  export_raw_heldout_r0_medium 	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:41.60
+  export_raw_heldout_r0_medium 	Maximum resident set size (kbytes): 2251400
+2026-11-17 23:18:29,426 3 pages, 103 lines
+mapped 26 characters (11 distinct) -> outputs/e20/eval/lines/heldout/r0_medium/p0raw.json
+WER norm 60.79% | CER norm 21.15% -> outputs/e20/eval/score/heldout/r0_medium/p0raw/oficial
+WER norm 63.10% | CER norm 21.38% -> outputs/e20/eval/score/heldout/r0_medium/p0raw/gemini
+  export_raw_test10_r0_medium 	Elapsed (wall clock) time (h:mm:ss or m:ss): 8:25.35
+  export_raw_test10_r0_medium 	Maximum resident set size (kbytes): 2235416
+2026-11-17 23:26:55,402 10 pages, 354 lines
+mapped 49 characters (14 distinct) -> outputs/e20/eval/lines/test10/r0_medium/p0raw.json
+WER norm 57.28% | CER norm 20.01% -> outputs/e20/eval/score/test10/r0_medium/p0raw/gemini
+  export_raw_heldout_r2_traprinq 	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:00.57
+  export_raw_heldout_r2_traprinq 	Maximum resident set size (kbytes): 1505120
+2026-11-17 23:27:56,517 3 pages, 103 lines
+mapped 4 characters (3 distinct) -> outputs/e20/eval/lines/heldout/r2_traprinq/p0raw.json
+WER norm 79.84% | CER norm 36.62% -> outputs/e20/eval/score/heldout/r2_traprinq/p0raw/oficial
+WER norm 78.31% | CER norm 36.06% -> outputs/e20/eval/score/heldout/r2_traprinq/p0raw/gemini
+  export_raw_test10_r2_traprinq 	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:59.88
+  export_raw_test10_r2_traprinq 	Maximum resident set size (kbytes): 1504428
+2026-11-17 23:30:57,030 10 pages, 354 lines
+mapped 9 characters (7 distinct) -> outputs/e20/eval/lines/test10/r2_traprinq/p0raw.json
+WER norm 73.73% | CER norm 33.14% -> outputs/e20/eval/score/test10/r2_traprinq/p0raw/gemini
+  export_raw_heldout_r3_mccatmus 	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:34.70
+  export_raw_heldout_r3_mccatmus 	Maximum resident set size (kbytes): 1154244
+2026-11-17 23:31:32,223 3 pages, 103 lines
+mapped 14 characters (4 distinct) -> outputs/e20/eval/lines/heldout/r3_mccatmus/p0raw.json
+WER norm 91.65% | CER norm 44.15% -> outputs/e20/eval/score/heldout/r3_mccatmus/p0raw/oficial
+WER norm 89.91% | CER norm 44.21% -> outputs/e20/eval/score/heldout/r3_mccatmus/p0raw/gemini
+  export_raw_test10_r3_mccatmus 	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:48.64
+  export_raw_test10_r3_mccatmus 	Maximum resident set size (kbytes): 1183328
+2026-11-17 23:33:21,538 10 pages, 354 lines
+mapped 31 characters (7 distinct) -> outputs/e20/eval/lines/test10/r3_mccatmus/p0raw.json
+WER norm 86.82% | CER norm 42.96% -> outputs/e20/eval/score/test10/r3_mccatmus/p0raw/gemini
+PART eval_raw 1054s
+JOB_OK

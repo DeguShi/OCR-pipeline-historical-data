@@ -1,0 +1,42 @@
+{
+ "accepted": {
+  "minlen3": 0.75,
+  "fold": 0.7
+ },
+ "chosen": [
+  "minlen3",
+  "fold"
+ ],
+ "overrides": {
+  "lexicon_min_len": 3,
+  "fold_accents": true
+ },
+ "result": {
+  "name": "combo_minlen3+fold",
+  "overrides": {
+   "lexicon_min_len": 3,
+   "fold_accents": true
+  },
+  "oficial": {
+   "wer": 28.84,
+   "cer": 12.04
+  },
+  "gemini": {
+   "wer": 29.21,
+   "cer": 11.95
+  }
+ },
+ "base": {
+  "name": "base",
+  "overrides": {},
+  "oficial": {
+   "wer": 30.3,
+   "cer": 12.97
+  },
+  "gemini": {
+   "wer": 30.66,
+   "cer": 12.96
+  }
+ },
+ "config_source": "configs/e20/r0_medium.json"
+}

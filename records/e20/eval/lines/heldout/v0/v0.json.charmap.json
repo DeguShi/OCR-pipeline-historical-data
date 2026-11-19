@@ -1,0 +1,42 @@
+{
+ "input": "records/e20/v0/heldout_tr_pt/lines.json",
+ "alphabet_size": 88,
+ "mapped": 16,
+ "map": {
+  "°": {
+   "n": 6,
+   "to": "",
+   "name": "DEGREE SIGN"
+  },
+  "í": {
+   "n": 3,
+   "to": "i",
+   "name": "LATIN SMALL LETTER I WITH ACUTE"
+  },
+  "â": {
+   "n": 3,
+   "to": "a",
+   "name": "LATIN SMALL LETTER A WITH CIRCUMFLEX"
+  },
+  "K": {
+   "n": 1,
+   "to": "",
+   "name": "LATIN CAPITAL LETTER K"
+  },
+  "?": {
+   "n": 1,
+   "to": "",
+   "name": "QUESTION MARK"
+  },
+  "/": {
+   "n": 1,
+   "to": "",
+   "name": "SOLIDUS"
+  },
+  "X": {
+   "n": 1,
+   "to": "",
+   "name": "LATIN CAPITAL LETTER X"
+  }
+ }
+}

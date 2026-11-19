@@ -1,0 +1,33 @@
+2026-11-13 14:27:07,760 page 5: 19 lines, 14.2 s
+2026-11-13 14:27:52,143 page 6: 33 lines, 44.4 s
+2026-11-13 14:28:53,608 page 8: 33 lines, 61.4 s
+2026-11-13 14:29:50,167 page 9: 33 lines, 56.5 s
+2026-11-13 14:31:02,326 page 11: 35 lines, 72.1 s
+2026-11-13 14:32:02,570 page 13: 32 lines, 60.2 s
+2026-11-13 14:32:52,906 page 14: 34 lines, 50.3 s
+2026-11-13 14:33:59,035 page 15: 33 lines, 66.1 s
+2026-11-13 14:34:58,564 page 16: 33 lines, 59.5 s
+2026-11-13 14:34:58,568 ALL DONE: load 0.8 s, decode 484.8 s wall / 472.8 s cpu, peak 669 MB
+	Command being timed: "/content/venv/bin/python tools/postcorr_from_posteriors.py --config configs/e20/r3_mccatmus.json --posteriors outputs/e20/tune/post/r3_mccatmus --pages 5,6,8,9,11,13,14,15,16 --out outputs/e20/tune/p6/r3_mccatmus"
+	User time (seconds): 476.16
+	System time (seconds): 0.89
+	Percent of CPU this job got: 97%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 8:09.14
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 685500
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 122384
+	Voluntary context switches: 11
+	Involuntary context switches: 41338
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 104
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

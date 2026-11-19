@@ -1,0 +1,11 @@
+{
+ "model": "out/byt5_model",
+ "posteriors": "outputs/posteriors/v6_gt12",
+ "beams": 4,
+ "device": "cuda",
+ "seconds": 20.2,
+ "lines": 384,
+ "torch": "2.14.1+cu130",
+ "transformers": "4.51.3",
+ "python": "3.13.16"
+}

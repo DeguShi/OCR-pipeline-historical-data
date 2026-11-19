@@ -1,0 +1,7 @@
+{"source": "Zenodo 13986218 Validation_Set_FINAL (tools/traprinq_prepare.py --cases 4 --seed 42, 4-8 pages)",
+ "note": "re-typed from the prepare step's stdout (job printed it; colab_pull takes directories only)",
+ "cases": [
+  {"case": "PT-TT-TSO-IL-028-CX1622-16125", "pages": 4, "sample": 4, "eval": [1, 2, 3]},
+  {"case": "PT-TT-TSO-IL-28-12955", "pages": 6, "sample": 4, "eval": [1, 2, 3, 5, 6]},
+  {"case": "PT-TT-TSO-IL-28-7123", "pages": 8, "sample": 4, "eval": [1, 2, 3, 5, 6, 7, 8]},
+  {"case": "PT-TT-TSO-IL-28-7196", "pages": 4, "sample": 1, "eval": [2, 3, 4]}]}

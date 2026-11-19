@@ -1,0 +1,8 @@
+2026-11-17 22:41:48,318 3 pages, 428594 LM unigrams, 120 labels
+2026-11-17 22:42:03,433 Alphabet determined to be of regular style.
+2026-11-17 22:42:03,783 Alphabet determined to be of regular style.
+2026-11-17 22:42:08,749 alpha 1.517 beta 2.601 -> outputs/e20/eval/raw/heldout/r5_mccatmus/pa/a1.517_b2.601
+mapped 1 characters (1 distinct) -> outputs/e20/eval/lines/heldout/r5_mccatmus/pa.json
+WER norm 19.37% | CER norm 5.12% -> outputs/e20/eval/score/heldout/r5_mccatmus/pa/oficial
+WER norm 7.98% | CER norm 3.34% -> outputs/e20/eval/score/heldout/r5_mccatmus/pa/gemini
+DECODED r5_mccatmus heldout pa

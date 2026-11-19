@@ -1,0 +1,19 @@
+{
+  "wer_a": 18.74015748031496,
+  "wer_b": 31.496062992125985,
+  "dwer": -12.755905511811024,
+  "ci95": [
+    -16.05,
+    -9.61
+  ],
+  "p_signflip": 9.999000099990002e-05,
+  "blocks": 65,
+  "pages_won_tied_lost": [
+    3,
+    0,
+    0
+  ],
+  "a": "outputs/runs/v6_all12_cache",
+  "b": "outputs/runs/ladder_L0_raw",
+  "block": 10
+}

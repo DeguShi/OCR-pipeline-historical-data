@@ -1,0 +1,62 @@
+{
+ "input": "outputs/e20/eval/raw/heldout/r0_medium/p0/lines.json",
+ "alphabet_size": 88,
+ "mapped": 25,
+ "map": {
+  "^": {
+   "n": 10,
+   "to": "",
+   "name": "CIRCUMFLEX ACCENT"
+  },
+  "а": {
+   "n": 3,
+   "to": "",
+   "name": "CYRILLIC SMALL LETTER A"
+  },
+  "à": {
+   "n": 3,
+   "to": "a",
+   "name": "LATIN SMALL LETTER A WITH GRAVE"
+  },
+  "с": {
+   "n": 2,
+   "to": "",
+   "name": "CYRILLIC SMALL LETTER ES"
+  },
+  "í": {
+   "n": 1,
+   "to": "i",
+   "name": "LATIN SMALL LETTER I WITH ACUTE"
+  },
+  "£": {
+   "n": 1,
+   "to": "",
+   "name": "POUND SIGN"
+  },
+  "б": {
+   "n": 1,
+   "to": "",
+   "name": "CYRILLIC SMALL LETTER BE"
+  },
+  "о": {
+   "n": 1,
+   "to": "",
+   "name": "CYRILLIC SMALL LETTER O"
+  },
+  "н": {
+   "n": 1,
+   "to": "",
+   "name": "CYRILLIC SMALL LETTER EN"
+  },
+  "è": {
+   "n": 1,
+   "to": "e",
+   "name": "LATIN SMALL LETTER E WITH GRAVE"
+  },
+  "¬": {
+   "n": 1,
+   "to": "",
+   "name": "NOT SIGN"
+  }
+ }
+}

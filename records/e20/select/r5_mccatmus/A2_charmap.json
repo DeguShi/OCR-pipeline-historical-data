@@ -1,0 +1,32 @@
+{
+ "input": "outputs/e20/select/r5_mccatmus/A2/results.jsonl",
+ "alphabet_size": 88,
+ "mapped": 232,
+ "map": {
+  "̧": {
+   "n": 141,
+   "to": "",
+   "name": "COMBINING CEDILLA"
+  },
+  "̃": {
+   "n": 52,
+   "to": "",
+   "name": "COMBINING TILDE"
+  },
+  "́": {
+   "n": 35,
+   "to": "",
+   "name": "COMBINING ACUTE ACCENT"
+  },
+  "î": {
+   "n": 2,
+   "to": "i",
+   "name": "LATIN SMALL LETTER I WITH CIRCUMFLEX"
+  },
+  "̂": {
+   "n": 2,
+   "to": "",
+   "name": "COMBINING CIRCUMFLEX ACCENT"
+  }
+ }
+}

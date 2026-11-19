@@ -1,0 +1,17 @@
+{
+ "input": "outputs/e20/eval/raw/heldout/r3_mccatmus/p6/lines.json",
+ "alphabet_size": 88,
+ "mapped": 4,
+ "map": {
+  "⟦": {
+   "n": 3,
+   "to": "",
+   "name": "MATHEMATICAL LEFT WHITE SQUARE BRACKET"
+  },
+  "è": {
+   "n": 1,
+   "to": "e",
+   "name": "LATIN SMALL LETTER E WITH GRAVE"
+  }
+ }
+}

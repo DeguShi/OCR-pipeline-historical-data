@@ -1,0 +1,129 @@
+nproc 8
+5bf76e7523d7e6db
+e1d7325dc10cc7d3
+9938d454bb41c21a
+f9061e18cadd7f10
+  export_heldout_r0_medium 	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:20.01
+  export_heldout_r0_medium 	Maximum resident set size (kbytes): 2011632
+  export_test10_r0_medium 	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:55.72
+  export_test10_r0_medium 	Maximum resident set size (kbytes): 2079624
+  export_heldout_r1_st_c1m 	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:17.10
+  export_heldout_r1_st_c1m 	Maximum resident set size (kbytes): 1739744
+  export_test10_r1_st_c1m 	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:38.05
+  export_test10_r1_st_c1m 	Maximum resident set size (kbytes): 1772244
+  export_heldout_r2_traprinq 	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:24.27
+  export_heldout_r2_traprinq 	Maximum resident set size (kbytes): 1732492
+  export_test10_r2_traprinq 	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:47.89
+  export_test10_r2_traprinq 	Maximum resident set size (kbytes): 1788060
+  export_heldout_r3_mccatmus 	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:16.88
+  export_heldout_r3_mccatmus 	Maximum resident set size (kbytes): 1680468
+  export_test10_r3_mccatmus 	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:41.84
+  export_test10_r3_mccatmus 	Maximum resident set size (kbytes): 1722100
+  export_heldout_r4_traprinq 	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:19.12
+  export_heldout_r4_traprinq 	Maximum resident set size (kbytes): 1699464
+  export_test10_r4_traprinq 	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:42.59
+  export_test10_r4_traprinq 	Maximum resident set size (kbytes): 1754168
+  export_heldout_r5_mccatmus 	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:13.66
+  export_heldout_r5_mccatmus 	Maximum resident set size (kbytes): 1672756
+  export_test10_r5_mccatmus 	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:29.65
+  export_test10_r5_mccatmus 	Maximum resident set size (kbytes): 1705656
+2026-11-17 21:35:19,086 page 7 decoded
+2026-11-17 21:35:43,105 page 10 decoded
+2026-11-17 21:36:15,463 page 12 decoded
+2026-11-17 21:36:15,463 heldout: all 3 pages reproduce
+2026-11-17 21:36:47,908 page 18 decoded
+2026-11-17 21:37:09,621 page 22 decoded
+2026-11-17 21:37:37,599 page 23 decoded
+2026-11-17 21:38:02,811 page 24 decoded
+2026-11-17 21:38:30,557 page 25 decoded
+2026-11-17 21:38:56,527 page 31 decoded
+2026-11-17 21:39:11,335 page 32 decoded
+2026-11-17 21:39:30,763 page 34 decoded
+2026-11-17 21:39:54,331 page 44 decoded
+2026-11-17 21:40:19,660 page 55 decoded
+2026-11-17 21:40:19,661 test10: all 10 pages reproduce
+REPRO v6 ok
+PART eval_export 933s
+PART eval_pe ok 1262s
+EVAL heldout r0_medium p0 gemini 60.84 19.46
+EVAL heldout r0_medium p0 oficial 58.58 19.42
+EVAL heldout r0_medium p6 gemini 27.11 10.02
+EVAL heldout r0_medium p6 oficial 26.61 10.32
+EVAL heldout r0_medium pa gemini 37.35 14.05
+EVAL heldout r0_medium pa oficial 38.43 14.22
+EVAL heldout r0_medium pb gemini 43.98 15.44
+EVAL heldout r0_medium pb oficial 42.52 15.52
+EVAL heldout r1_st_c1m p0 gemini 18.22 4.94
+EVAL heldout r1_st_c1m p0 oficial 29.45 6.88
+EVAL heldout r1_st_c1m p6 gemini 6.33 2.26
+EVAL heldout r1_st_c1m p6 oficial 18.74 4.35
+EVAL heldout r1_st_c1m pa gemini 10.39 3.26
+EVAL heldout r1_st_c1m pa oficial 19.84 4.88
+EVAL heldout r1_st_c1m pb gemini 8.89 2.87
+EVAL heldout r1_st_c1m pb oficial 20.16 4.72
+EVAL heldout r2_traprinq p0 gemini 73.19 31.61
+EVAL heldout r2_traprinq p0 oficial 74.49 32.06
+EVAL heldout r2_traprinq p6 gemini 54.67 28.43
+EVAL heldout r2_traprinq p6 oficial 56.22 28.62
+EVAL heldout r2_traprinq pa gemini 61.45 29.88
+EVAL heldout r2_traprinq pa oficial 62.36 30.33
+EVAL heldout r2_traprinq pb gemini 71.69 29.88
+EVAL heldout r2_traprinq pb oficial 73.86 30.33
+EVAL heldout r3_mccatmus p0 gemini 89.76 46.0
+EVAL heldout r3_mccatmus p0 oficial 90.55 46.01
+EVAL heldout r3_mccatmus p6 gemini 76.05 41.53
+EVAL heldout r3_mccatmus p6 oficial 76.22 41.13
+EVAL heldout r3_mccatmus pa gemini 82.68 46.5
+EVAL heldout r3_mccatmus pa oficial 82.68 46.41
+EVAL heldout r3_mccatmus pb gemini 87.05 45.13
+EVAL heldout r3_mccatmus pb oficial 87.72 45.0
+EVAL heldout r4_traprinq p0 gemini 12.2 3.68
+EVAL heldout r4_traprinq p0 oficial 23.78 5.57
+EVAL heldout r4_traprinq p6 gemini 5.42 1.92
+EVAL heldout r4_traprinq p6 oficial 18.74 4.11
+EVAL heldout r4_traprinq pa gemini 6.63 2.31
+EVAL heldout r4_traprinq pa oficial 19.21 4.32
+EVAL heldout r4_traprinq pb gemini 7.98 2.66
+EVAL heldout r4_traprinq pb oficial 20.0 4.61
+EVAL heldout r4_traprinq pe gemini 14.01 4.23
+EVAL heldout r4_traprinq pe oficial 24.72 5.97
+EVAL heldout r5_mccatmus p0 gemini 18.52 5.23
+EVAL heldout r5_mccatmus p0 oficial 30.55 7.02
+EVAL heldout r5_mccatmus p6 gemini 7.08 2.81
+EVAL heldout r5_mccatmus p6 oficial 19.69 4.72
+EVAL heldout r5_mccatmus pa gemini 7.98 3.34
+EVAL heldout r5_mccatmus pa oficial 19.37 5.12
+EVAL heldout r5_mccatmus pb gemini 9.34 3.29
+EVAL heldout r5_mccatmus pb oficial 21.73 5.23
+EVAL test10 r0_medium p0 gemini 55.2 18.57
+EVAL test10 r0_medium p6 gemini 25.87 8.88
+EVAL test10 r0_medium pa gemini 35.21 12.77
+EVAL test10 r0_medium pb gemini 42.68 14.93
+EVAL test10 r1_st_c1m p0 gemini 11.5 3.29
+EVAL test10 r1_st_c1m p6 gemini 3.49 1.5
+EVAL test10 r1_st_c1m pa gemini 5.44 1.93
+EVAL test10 r1_st_c1m pb gemini 5.71 1.85
+EVAL test10 r2_traprinq p0 gemini 69.44 29.19
+EVAL test10 r2_traprinq p6 gemini 51.92 25.14
+EVAL test10 r2_traprinq pa gemini 58.91 27.69
+EVAL test10 r2_traprinq pb gemini 66.48 27.45
+EVAL test10 r3_mccatmus p0 gemini 86.47 42.27
+EVAL test10 r3_mccatmus p6 gemini 69.39 37.56
+EVAL test10 r3_mccatmus pa gemini 79.48 42.3
+EVAL test10 r3_mccatmus pb gemini 85.27 41.31
+EVAL test10 r4_traprinq p0 gemini 9.29 2.72
+EVAL test10 r4_traprinq p6 gemini 4.6 1.78
+EVAL test10 r4_traprinq pa gemini 5.84 1.99
+EVAL test10 r4_traprinq pb gemini 6.9 2.08
+EVAL test10 r4_traprinq pe gemini 17.91 6.64
+EVAL test10 r5_mccatmus p0 gemini 13.98 3.89
+EVAL test10 r5_mccatmus p6 gemini 4.78 1.86
+EVAL test10 r5_mccatmus pa gemini 6.02 2.21
+EVAL test10 r5_mccatmus pb gemini 7.56 2.44
+PART eval_decode 5597s
+2026-11-17 21:59:59,179 300/333 lines
+2026-11-17 22:00:54,497 325/333 lines
+2026-11-17 22:01:12,168 ALL DONE: 333 lines, 794 s
+mapped 59 characters (5 distinct) -> outputs/e20/eval/lines/test10/r4_traprinq/pe.json
+WER norm 17.91% | CER norm 6.64% -> outputs/e20/eval/score/test10/r4_traprinq/pe/gemini
+JOB_OK

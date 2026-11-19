@@ -1,0 +1,37 @@
+{
+ "input": "outputs/e20/eval/raw/heldout/r2_traprinq/pa/a0.67_b0.757/lines.json",
+ "alphabet_size": 88,
+ "mapped": 20,
+ "map": {
+  "_": {
+   "n": 8,
+   "to": "",
+   "name": "LOW LINE"
+  },
+  "̃": {
+   "n": 4,
+   "to": "",
+   "name": "COMBINING TILDE"
+  },
+  "̧": {
+   "n": 4,
+   "to": "",
+   "name": "COMBINING CEDILLA"
+  },
+  "/": {
+   "n": 2,
+   "to": "",
+   "name": "SOLIDUS"
+  },
+  "̄": {
+   "n": 1,
+   "to": "",
+   "name": "COMBINING MACRON"
+  },
+  "ẽ": {
+   "n": 1,
+   "to": "e",
+   "name": "LATIN SMALL LETTER E WITH TILDE"
+  }
+ }
+}

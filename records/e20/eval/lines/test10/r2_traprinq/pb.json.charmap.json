@@ -1,0 +1,27 @@
+{
+ "input": "outputs/e20/eval/raw/test10/r2_traprinq/pb/NGrams_s0.001/lines.json",
+ "alphabet_size": 88,
+ "mapped": 20,
+ "map": {
+  "_": {
+   "n": 17,
+   "to": "",
+   "name": "LOW LINE"
+  },
+  "/": {
+   "n": 1,
+   "to": "",
+   "name": "SOLIDUS"
+  },
+  "?": {
+   "n": 1,
+   "to": "",
+   "name": "QUESTION MARK"
+  },
+  "+": {
+   "n": 1,
+   "to": "",
+   "name": "PLUS SIGN"
+  }
+ }
+}

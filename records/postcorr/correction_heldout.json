@@ -1,0 +1,88 @@
+{
+ "raw": "outputs/runs/ladder_L0_raw",
+ "pages": [
+  7,
+  10,
+  12
+ ],
+ "runs": {
+  "v6": {
+   "path": "outputs/runs/v6_all12_cache",
+   "fixed": 78,
+   "broken": 8,
+   "kept_wrong": 86,
+   "kept_right": 463,
+   "words": 635,
+   "ins_raw": 36,
+   "ins_run": 25,
+   "fix_rate": 47.56,
+   "break_rate": 1.7,
+   "fixed_per_broken": 9.75
+  },
+  "A": {
+   "path": "outputs/runs/base_A2_pyctc_gt12",
+   "fixed": 70,
+   "broken": 8,
+   "kept_wrong": 94,
+   "kept_right": 463,
+   "words": 635,
+   "ins_raw": 36,
+   "ins_run": 25,
+   "fix_rate": 42.68,
+   "break_rate": 1.7,
+   "fixed_per_broken": 8.75
+  },
+  "B": {
+   "path": "outputs/runs/base_B2_wbs_gt12",
+   "fixed": 66,
+   "broken": 4,
+   "kept_wrong": 98,
+   "kept_right": 467,
+   "words": 635,
+   "ins_raw": 36,
+   "ins_run": 27,
+   "fix_rate": 40.24,
+   "break_rate": 0.85,
+   "fixed_per_broken": 16.5
+  },
+  "C_byt5": {
+   "path": "outputs/baselines/byt5/gt12/score",
+   "fixed": 63,
+   "broken": 7,
+   "kept_wrong": 101,
+   "kept_right": 464,
+   "words": 635,
+   "ins_raw": 36,
+   "ins_run": 27,
+   "fix_rate": 38.41,
+   "break_rate": 1.49,
+   "fixed_per_broken": 9.0
+  },
+  "E_vlm": {
+   "path": "outputs/baselines/search/vlm/final_heldout_paper_pt_period/score",
+   "fixed": 65,
+   "broken": 40,
+   "kept_wrong": 99,
+   "kept_right": 431,
+   "words": 635,
+   "ins_raw": 36,
+   "ins_run": 28,
+   "fix_rate": 39.63,
+   "break_rate": 8.49,
+   "fixed_per_broken": 1.62
+  },
+  "E_vlm_paper_pt": {
+   "path": "outputs/baselines/search/vlm/final_heldout_paper_pt/score",
+   "fixed": 63,
+   "broken": 48,
+   "kept_wrong": 101,
+   "kept_right": 423,
+   "words": 635,
+   "ins_raw": 36,
+   "ins_run": 62,
+   "fix_rate": 38.41,
+   "break_rate": 10.19,
+   "fixed_per_broken": 1.31
+  }
+ }
+}

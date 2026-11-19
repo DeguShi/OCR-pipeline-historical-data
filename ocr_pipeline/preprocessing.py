@@ -10,6 +10,15 @@ from .config import OpParams
 
 
 def deskew(image: Image.Image, params: OpParams) -> Image.Image:
+    angle = deskew_angle(image, params)
+    if angle == 0:
+        return image.copy()
+    fill = tuple(int(v) for v in np.median(np.asarray(image.convert('RGB')).reshape(-1, 3), axis=0))
+    return image.convert('RGB').rotate(angle, Image.Resampling.BICUBIC, expand=False, fillcolor=fill)
+
+
+def deskew_angle(image: Image.Image, params: OpParams) -> float:
+    """Rotation (degrees, PIL convention: counter-clockwise about the centre) that deskew applies."""
     gray = np.asarray(image.convert('L'))
     margin_y, margin_x = gray.shape[0] // 10, gray.shape[1] // 10
     crop = gray[margin_y:-margin_y or None, margin_x:-margin_x or None]
@@ -21,11 +30,7 @@ def deskew(image: Image.Image, params: OpParams) -> Image.Image:
         rotated = cv2.warpAffine(mask, matrix, (crop.shape[1], crop.shape[0]))
         scores.append(float(np.var(rotated.sum(axis=1))))
     best = max(range(len(angles)), key=lambda i: (scores[i], -abs(angles[i])))
-    angle = float(angles[best])
-    if angle == 0:
-        return image.copy()
-    fill = tuple(int(v) for v in np.median(np.asarray(image.convert('RGB')).reshape(-1, 3), axis=0))
-    return image.convert('RGB').rotate(angle, Image.Resampling.BICUBIC, expand=False, fillcolor=fill)
+    return float(angles[best])
 
 
 def slant_angle(image: Image.Image, params: OpParams) -> float:

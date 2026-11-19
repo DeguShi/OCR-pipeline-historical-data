@@ -1,0 +1,17 @@
+{
+ "input": "outputs/e20/eval/raw/heldout/r4_traprinq/p0/lines.json",
+ "alphabet_size": 88,
+ "mapped": 3,
+ "map": {
+  "ẽ": {
+   "n": 2,
+   "to": "e",
+   "name": "LATIN SMALL LETTER E WITH TILDE"
+  },
+  "̃": {
+   "n": 1,
+   "to": "",
+   "name": "COMBINING TILDE"
+  }
+ }
+}

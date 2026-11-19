@@ -1,0 +1,4 @@
+2026-11-17 22:31:44,989 10 pages, 333 lines
+mapped 0 characters (0 distinct) -> outputs/e20/eval/lines/test10/r4_traprinq/p0.json
+WER norm 9.29% | CER norm 2.72% -> outputs/e20/eval/score/test10/r4_traprinq/p0/gemini
+DECODED r4_traprinq test10 p0

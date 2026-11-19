@@ -1,0 +1,42 @@
+{
+ "input": "outputs/e20/eval/raw/heldout/r0_medium/pb/NGrams_s0.001/lines.json",
+ "alphabet_size": 88,
+ "mapped": 18,
+ "map": {
+  "^": {
+   "n": 11,
+   "to": "",
+   "name": "CIRCUMFLEX ACCENT"
+  },
+  "à": {
+   "n": 2,
+   "to": "a",
+   "name": "LATIN SMALL LETTER A WITH GRAVE"
+  },
+  "£": {
+   "n": 1,
+   "to": "",
+   "name": "POUND SIGN"
+  },
+  "~": {
+   "n": 1,
+   "to": "",
+   "name": "TILDE"
+  },
+  "°": {
+   "n": 1,
+   "to": "",
+   "name": "DEGREE SIGN"
+  },
+  "ø": {
+   "n": 1,
+   "to": "",
+   "name": "LATIN SMALL LETTER O WITH STROKE"
+  },
+  "í": {
+   "n": 1,
+   "to": "i",
+   "name": "LATIN SMALL LETTER I WITH ACUTE"
+  }
+ }
+}

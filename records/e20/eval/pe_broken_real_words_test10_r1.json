@@ -1,0 +1,61 @@
+{
+ "counts": {
+  "other": 40,
+  "accent only": 41,
+  "modernized": 31
+ },
+ "total": 112,
+ "examples": {
+  "other": [
+   "taes->tais",
+   "delle->delas",
+   "praso->prazo",
+   "parte->plata",
+   "intimação->intimações",
+   "comprehendem->compreendem",
+   "praso->prazo",
+   "fabriqueiro->fabricante",
+   "egreja->igreja",
+   "egreja->igreja",
+   "falla->falta",
+   "prasos->prazos",
+   "praso->prazo",
+   "elle->ela",
+   "sobre->bre"
+  ],
+  "accent only": [
+   "fóra->fora",
+   "contrario->contrário",
+   "proprietarios->proprietários",
+   "alem->além",
+   "proprietarios->proprietários",
+   "alem->além",
+   "alem->além",
+   "alguem->alguém",
+   "fóra->fora",
+   "alem->além",
+   "alem->além",
+   "publico->público",
+   "concessionario->concessionário",
+   "concessionario->concessionário",
+   "codigo->código"
+  ],
+  "modernized": [
+   "paragrapho->parágrafo",
+   "direcção->direção",
+   "paralellas->paralelas",
+   "collocados->colocados",
+   "collocados->colocados",
+   "occasião->ocasião",
+   "damno->dano",
+   "producto->produto",
+   "contracto->contrato",
+   "applicação->aplicação",
+   "aquelle->aquele",
+   "accordo->acordo",
+   "annualmente->anualmente",
+   "secca->seca",
+   "secção->seção"
+  ]
+ }
+}

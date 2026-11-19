@@ -1,0 +1,8 @@
+nproc 8 recs r1_st_c1m r4_traprinq
+PART setup 423s
+EQCHECK identical 66s
+SELECT r1_st_c1m PA 20.542 PB 23.08 P6 19.64 []
+PART choose_r1_st_c1m 664s
+SELECT r4_traprinq PA 20.711 PB 24.6 P6 20.71 []
+PART choose_r4_traprinq 1596s
+JOB_OK

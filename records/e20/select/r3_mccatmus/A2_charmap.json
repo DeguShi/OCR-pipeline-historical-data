@@ -1,0 +1,112 @@
+{
+ "input": "outputs/e20/select/r3_mccatmus/A2/results.jsonl",
+ "alphabet_size": 88,
+ "mapped": 1945,
+ "map": {
+  "⟦": {
+   "n": 579,
+   "to": "",
+   "name": "MATHEMATICAL LEFT WHITE SQUARE BRACKET"
+  },
+  "⟧": {
+   "n": 226,
+   "to": "",
+   "name": "MATHEMATICAL RIGHT WHITE SQUARE BRACKET"
+  },
+  "⁊": {
+   "n": 222,
+   "to": "",
+   "name": "TIRONIAN SIGN ET"
+  },
+  "̀": {
+   "n": 199,
+   "to": "",
+   "name": "COMBINING GRAVE ACCENT"
+  },
+  "^": {
+   "n": 191,
+   "to": "",
+   "name": "CIRCUMFLEX ACCENT"
+  },
+  "?": {
+   "n": 143,
+   "to": "",
+   "name": "QUESTION MARK"
+  },
+  "́": {
+   "n": 115,
+   "to": "",
+   "name": "COMBINING ACUTE ACCENT"
+  },
+  "à": {
+   "n": 83,
+   "to": "a",
+   "name": "LATIN SMALL LETTER A WITH GRAVE"
+  },
+  "–": {
+   "n": 46,
+   "to": "",
+   "name": "EN DASH"
+  },
+  "̂": {
+   "n": 29,
+   "to": "",
+   "name": "COMBINING CIRCUMFLEX ACCENT"
+  },
+  "+": {
+   "n": 26,
+   "to": "",
+   "name": "PLUS SIGN"
+  },
+  "!": {
+   "n": 22,
+   "to": "",
+   "name": "EXCLAMATION MARK"
+  },
+  "Y": {
+   "n": 21,
+   "to": "",
+   "name": "LATIN CAPITAL LETTER Y"
+  },
+  "è": {
+   "n": 21,
+   "to": "e",
+   "name": "LATIN SMALL LETTER E WITH GRAVE"
+  },
+  "̧": {
+   "n": 7,
+   "to": "",
+   "name": "COMBINING CEDILLA"
+  },
+  "W": {
+   "n": 4,
+   "to": "",
+   "name": "LATIN CAPITAL LETTER W"
+  },
+  "X": {
+   "n": 3,
+   "to": "",
+   "name": "LATIN CAPITAL LETTER X"
+  },
+  "[": {
+   "n": 3,
+   "to": "",
+   "name": "LEFT SQUARE BRACKET"
+  },
+  "í": {
+   "n": 2,
+   "to": "i",
+   "name": "LATIN SMALL LETTER I WITH ACUTE"
+  },
+  "î": {
+   "n": 2,
+   "to": "i",
+   "name": "LATIN SMALL LETTER I WITH CIRCUMFLEX"
+  },
+  "ò": {
+   "n": 1,
+   "to": "o",
+   "name": "LATIN SMALL LETTER O WITH GRAVE"
+  }
+ }
+}

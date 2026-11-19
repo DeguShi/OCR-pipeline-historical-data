@@ -1,0 +1,50 @@
+{
+ "r1_st_c1m": {
+  "PA181": {
+   "params": {
+    "alpha": 0.704,
+    "beta": 0.852,
+    "unk": -10.046,
+    "beam_prune_logp": -15.396,
+    "token_min_logp": -7.407,
+    "lm": "kn3_w1",
+    "beam": 256
+   },
+   "tuning_wer": 19.921,
+   "tuning_cer": 5.771,
+   "n_scored": 182
+  }
+ },
+ "r4_traprinq": {
+  "PA181": {
+   "params": {
+    "alpha": 1.142,
+    "beta": -1.066,
+    "unk": -1.047,
+    "beam_prune_logp": -16.294,
+    "token_min_logp": -9.677,
+    "lm": "kn3_w1",
+    "beam": 256
+   },
+   "tuning_wer": 20.937,
+   "tuning_cer": 6.502,
+   "n_scored": 182
+  }
+ },
+ "r5_mccatmus": {
+  "PA181": {
+   "params": {
+    "alpha": 1.817,
+    "beta": 2.136,
+    "unk": -12.456,
+    "beam_prune_logp": -16.026,
+    "token_min_logp": -8.922,
+    "lm": "kn3_w1",
+    "beam": 256
+   },
+   "tuning_wer": 22.291,
+   "tuning_cer": 7.081,
+   "n_scored": 182
+  }
+ }
+}

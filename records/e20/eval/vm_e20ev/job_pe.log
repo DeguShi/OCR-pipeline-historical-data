@@ -1,0 +1,73 @@
+2026-11-17 21:40:25,562 page 7: 33 lines
+2026-11-17 21:40:28,025 page 10: 33 lines
+2026-11-17 21:40:30,840 page 12: 33 lines
+2026-11-17 21:40:40,693 3 pages, 99 lines to run, 0 already done
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1794951662.243064   11765 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1794951667.610457   11765 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+2026-11-17 21:41:08,970 NumExpr defaulting to 8 threads.
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files:  20%|██        | 1/5 [00:23<01:35, 23.78s/it]Fetching 5 files:  40%|████      | 2/5 [00:46<01:09, 23.06s/it]Fetching 5 files:  60%|██████    | 3/5 [00:49<00:27, 13.80s/it]Fetching 5 files: 100%|██████████| 5/5 [00:49<00:00,  9.82s/it]
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:13<00:54, 13.67s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:23<00:33, 11.16s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:32<00:21, 10.55s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:43<00:10, 10.40s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:45<00:00,  7.37s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:45<00:00,  9.02s/it]
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+2026-11-17 21:43:06,592 set VIDEO_TOTAL_PIXELS: 90316800
+/usr/local/lib/python3.13/dist-packages/transformers/generation/configuration_utils.py:631: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `1e-06` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/usr/local/lib/python3.13/dist-packages/bitsandbytes/backends/cuda/ops.py:957: UserWarning: inner dimension (3420) is not aligned for fast kernel with blocksize=64, falling back to slower implementation.
+  warn(
+/usr/local/lib/python3.13/dist-packages/transformers/generation/configuration_utils.py:631: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `1e-06` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/usr/local/lib/python3.13/dist-packages/bitsandbytes/backends/cuda/ops.py:957: UserWarning: inner dimension (3420) is not aligned for fast kernel with blocksize=64, falling back to slower implementation.
+  warn(
+2026-11-17 21:44:11,446 25/99 lines
+2026-11-17 21:45:02,835 50/99 lines
+2026-11-17 21:45:50,493 75/99 lines
+2026-11-17 21:46:49,875 ALL DONE: 99 lines, 368 s
+mapped 14 characters (3 distinct) -> outputs/e20/eval/lines/heldout/r4_traprinq/pe.json
+WER norm 24.72% | CER norm 5.97% -> outputs/e20/eval/score/heldout/r4_traprinq/pe/oficial
+WER norm 14.01% | CER norm 4.23% -> outputs/e20/eval/score/heldout/r4_traprinq/pe/gemini
+2026-11-17 21:47:10,517 page 18: 33 lines
+2026-11-17 21:47:14,132 page 22: 33 lines
+2026-11-17 21:47:19,377 page 23: 33 lines
+2026-11-17 21:47:22,588 page 24: 34 lines
+2026-11-17 21:47:26,124 page 25: 33 lines
+2026-11-17 21:47:30,956 page 31: 35 lines
+2026-11-17 21:47:35,962 page 32: 33 lines
+2026-11-17 21:47:39,713 page 34: 33 lines
+2026-11-17 21:47:43,491 page 44: 33 lines
+2026-11-17 21:47:46,848 page 55: 33 lines
+2026-11-17 21:47:54,588 10 pages, 333 lines to run, 0 already done
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1794952082.774058   13939 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1794952090.326373   13939 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+2026-11-17 21:48:11,787 NumExpr defaulting to 8 threads.
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:13<00:55, 13.90s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:24<00:36, 12.02s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:35<00:22, 11.44s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:49<00:12, 12.63s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:52<00:00,  9.18s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:52<00:00, 10.58s/it]
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+2026-11-17 21:49:19,214 set VIDEO_TOTAL_PIXELS: 90316800
+/usr/local/lib/python3.13/dist-packages/transformers/generation/configuration_utils.py:631: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `1e-06` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/usr/local/lib/python3.13/dist-packages/bitsandbytes/backends/cuda/ops.py:957: UserWarning: inner dimension (3420) is not aligned for fast kernel with blocksize=64, falling back to slower implementation.
+  warn(
+/usr/local/lib/python3.13/dist-packages/transformers/generation/configuration_utils.py:631: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `1e-06` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/usr/local/lib/python3.13/dist-packages/bitsandbytes/backends/cuda/ops.py:957: UserWarning: inner dimension (3420) is not aligned for fast kernel with blocksize=64, falling back to slower implementation.
+  warn(
+2026-11-17 21:50:19,624 25/333 lines
+2026-11-17 21:51:14,266 50/333 lines
+2026-11-17 21:52:24,520 75/333 lines
+2026-11-17 21:53:22,386 100/333 lines
+2026-11-17 21:54:16,753 125/333 lines
+2026-11-17 21:55:07,741 150/333 lines
+2026-11-17 21:55:57,698 175/333 lines
+2026-11-17 21:56:47,544 200/333 lines
+2026-11-17 21:57:33,760 225/333 lines
+2026-11-17 21:58:22,865 250/333 lines
+2026-11-17 21:59:09,967 275/333 lines
+2026-11-17 21:59:59,179 300/333 lines
+2026-11-17 22:00:54,497 325/333 lines
+2026-11-17 22:01:12,168 ALL DONE: 333 lines, 794 s
+mapped 59 characters (5 distinct) -> outputs/e20/eval/lines/test10/r4_traprinq/pe.json
+WER norm 17.91% | CER norm 6.64% -> outputs/e20/eval/score/test10/r4_traprinq/pe/gemini

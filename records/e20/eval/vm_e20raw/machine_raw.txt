@@ -1,0 +1,6 @@
+Using Python 3.12.12 environment at: /content/venv
+8
+               total        used        free      shared  buff/cache   available
+Mem:              50           1          35           0          14          49
+Swap:              0           0           0
+/content/e20raw_job.sh: line 10: nvidia-smi: command not found

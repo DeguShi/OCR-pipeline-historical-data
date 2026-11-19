@@ -1,0 +1,17 @@
+{
+ "input": "outputs/e20/eval/raw/test10/r1_st_c1m/p0/lines.json",
+ "alphabet_size": 88,
+ "mapped": 2,
+ "map": {
+  "ẽ": {
+   "n": 1,
+   "to": "e",
+   "name": "LATIN SMALL LETTER E WITH TILDE"
+  },
+  "̃": {
+   "n": 1,
+   "to": "",
+   "name": "COMBINING TILDE"
+  }
+ }
+}

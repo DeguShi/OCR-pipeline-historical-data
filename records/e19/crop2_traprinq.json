@@ -1,0 +1,10586 @@
+[
+ {
+  "image": "0001_page_44127202_docId_1074485.jpg",
+  "n_lines": 25,
+  "inside_old": 25,
+  "inside_new": 25,
+  "old": [
+   34,
+   40,
+   1274,
+   1808
+  ],
+  "new": [
+   34,
+   35,
+   1275,
+   1808
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.004
+ },
+ {
+  "image": "0001_page_44127215_docId_1074485.jpg",
+  "n_lines": 31,
+  "inside_old": 31,
+  "inside_new": 31,
+  "old": [
+   0,
+   66,
+   1299,
+   1934
+  ],
+  "new": [
+   0,
+   62,
+   1300,
+   1938
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.005
+ },
+ {
+  "image": "0001_page_48169615_docId_1183670.jpg",
+  "n_lines": 26,
+  "inside_old": 25,
+  "inside_new": 25,
+  "old": [
+   27,
+   67,
+   1315,
+   1911
+  ],
+  "new": [
+   0,
+   67,
+   1316,
+   1913
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.023
+ },
+ {
+  "image": "0001_page_48486139_docId_1194793.jpg",
+  "n_lines": 28,
+  "inside_old": 28,
+  "inside_new": 28,
+  "old": [
+   0,
+   25,
+   1242,
+   1851
+  ],
+  "new": [
+   0,
+   22,
+   1243,
+   1855
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.005
+ },
+ {
+  "image": "0002_page_46267677_docId_1121087.jpg",
+  "n_lines": 34,
+  "inside_old": 34,
+  "inside_new": 34,
+  "old": [
+   189,
+   138,
+   1446,
+   1983
+  ],
+  "new": [
+   181,
+   135,
+   1446,
+   1984
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.009
+ },
+ {
+  "image": "0002_page_46267693_docId_1121087.jpg",
+  "n_lines": 23,
+  "inside_old": 23,
+  "inside_new": 23,
+  "old": [
+   0,
+   114,
+   1212,
+   1949
+  ],
+  "new": [
+   0,
+   114,
+   1212,
+   1951
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "0003_page_47640480_docId_1164245.jpg",
+  "n_lines": 28,
+  "inside_old": 28,
+  "inside_new": 28,
+  "old": [
+   3,
+   67,
+   1765,
+   2603
+  ],
+  "new": [
+   3,
+   66,
+   1766,
+   2605
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "0003_page_48169621_docId_1183670.jpg",
+  "n_lines": 30,
+  "inside_old": 30,
+  "inside_new": 30,
+  "old": [
+   33,
+   89,
+   1374,
+   2066
+  ],
+  "new": [
+   31,
+   84,
+   1431,
+   2069
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.048
+ },
+ {
+  "image": "0004_page_48169601_docId_1183670.jpg",
+  "n_lines": 24,
+  "inside_old": 24,
+  "inside_new": 24,
+  "old": [
+   106,
+   65,
+   1386,
+   2016
+  ],
+  "new": [
+   105,
+   62,
+   1386,
+   2018
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.003
+ },
+ {
+  "image": "0004_page_48169670_docId_1183673.jpg",
+  "n_lines": 31,
+  "inside_old": 1,
+  "inside_new": 31,
+  "old": [
+   43,
+   38,
+   1405,
+   450
+  ],
+  "new": [
+   39,
+   35,
+   1483,
+   2050
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 5.185
+ },
+ {
+  "image": "0005_page_48169664_docId_1183673.jpg",
+  "n_lines": 25,
+  "inside_old": 2,
+  "inside_new": 25,
+  "old": [
+   0,
+   231,
+   1295,
+   584
+  ],
+  "new": [
+   0,
+   230,
+   1308,
+   2001
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 5.067
+ },
+ {
+  "image": "0006_page_48526644_docId_1196501.jpg",
+  "n_lines": 29,
+  "inside_old": 29,
+  "inside_new": 29,
+  "old": [
+   84,
+   33,
+   1352,
+   1883
+  ],
+  "new": [
+   84,
+   32,
+   1352,
+   1884
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "0007_page_49047731_docId_1203457.jpg",
+  "n_lines": 29,
+  "inside_old": 29,
+  "inside_new": 29,
+  "old": [
+   19,
+   48,
+   1206,
+   1870
+  ],
+  "new": [
+   19,
+   45,
+   1206,
+   1870
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "0008_page_49083167_docId_1204258.jpg",
+  "n_lines": 33,
+  "inside_old": 33,
+  "inside_new": 33,
+  "old": [
+   0,
+   61,
+   1261,
+   1911
+  ],
+  "new": [
+   0,
+   51,
+   1274,
+   1925
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.023
+ },
+ {
+  "image": "0009_page_49084178_docId_1204340.jpg",
+  "n_lines": 28,
+  "inside_old": 28,
+  "inside_new": 28,
+  "old": [
+   0,
+   66,
+   1789,
+   2526
+  ],
+  "new": [
+   0,
+   64,
+   1793,
+   2546
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.011
+ },
+ {
+  "image": "0010_page_49165854_docId_1209032.jpg",
+  "n_lines": 40,
+  "inside_old": 40,
+  "inside_new": 40,
+  "old": [
+   94,
+   104,
+   1426,
+   2031
+  ],
+  "new": [
+   93,
+   103,
+   1426,
+   2034
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.003
+ },
+ {
+  "image": "0011_page_49172196_docId_1209334.jpg",
+  "n_lines": 45,
+  "inside_old": 45,
+  "inside_new": 45,
+  "old": [
+   0,
+   63,
+   1284,
+   1914
+  ],
+  "new": [
+   0,
+   62,
+   1285,
+   1916
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "0012_page_49294285_docId_1213736.jpg",
+  "n_lines": 65,
+  "inside_old": 65,
+  "inside_new": 65,
+  "old": [
+   545,
+   93,
+   2179,
+   2459
+  ],
+  "new": [
+   540,
+   92,
+   2179,
+   2459
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.003
+ },
+ {
+  "image": "0013_page_49294507_docId_1213748.jpg",
+  "n_lines": 21,
+  "inside_old": 21,
+  "inside_new": 21,
+  "old": [
+   586,
+   33,
+   2263,
+   2437
+  ],
+  "new": [
+   584,
+   33,
+   2263,
+   2437
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "0014_page_49319718_docId_1214412.jpg",
+  "n_lines": 28,
+  "inside_old": 28,
+  "inside_new": 28,
+  "old": [
+   116,
+   118,
+   1411,
+   2003
+  ],
+  "new": [
+   115,
+   118,
+   1411,
+   2003
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "0015_page_49388288_docId_1219135.jpg",
+  "n_lines": 17,
+  "inside_old": 17,
+  "inside_new": 17,
+  "old": [
+   53,
+   0,
+   1409,
+   2052
+  ],
+  "new": [
+   0,
+   0,
+   1424,
+   2090
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.07
+ },
+ {
+  "image": "0016_page_49395371_docId_1219958.jpg",
+  "n_lines": 24,
+  "inside_old": 24,
+  "inside_new": 24,
+  "old": [
+   0,
+   60,
+   1265,
+   1905
+  ],
+  "new": [
+   0,
+   60,
+   1266,
+   1905
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "0017_page_49396265_docId_1220529.jpg",
+  "n_lines": 23,
+  "inside_old": 23,
+  "inside_new": 23,
+  "old": [
+   14,
+   4,
+   1131,
+   1510
+  ],
+  "new": [
+   0,
+   0,
+   1133,
+   1510
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.017
+ },
+ {
+  "image": "0018_page_49556118_docId_1222559.jpg",
+  "n_lines": 21,
+  "inside_old": 21,
+  "inside_new": 21,
+  "old": [
+   117,
+   91,
+   1399,
+   1951
+  ],
+  "new": [
+   107,
+   80,
+   1452,
+   1957
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.059
+ },
+ {
+  "image": "0019_page_49711416_docId_1223197.jpg",
+  "n_lines": 34,
+  "inside_old": 34,
+  "inside_new": 34,
+  "old": [
+   0,
+   63,
+   1280,
+   1900
+  ],
+  "new": [
+   0,
+   59,
+   1281,
+   1901
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.004
+ },
+ {
+  "image": "15_PT-TT-TSO-IL-28-65_m0089.jpg",
+  "n_lines": 24,
+  "inside_old": 24,
+  "inside_new": 24,
+  "old": [
+   59,
+   116,
+   1341,
+   1971
+  ],
+  "new": [
+   0,
+   93,
+   1342,
+   1974
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.061
+ },
+ {
+  "image": "17_PT-TT-TSO-IL-28-65_m0091.jpg",
+  "n_lines": 24,
+  "inside_old": 24,
+  "inside_new": 24,
+  "old": [
+   0,
+   105,
+   1329,
+   1967
+  ],
+  "new": [
+   0,
+   91,
+   1330,
+   1972
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.011
+ },
+ {
+  "image": "IL_17517_m0001 (1802).jpg",
+  "n_lines": 31,
+  "inside_old": 31,
+  "inside_new": 31,
+  "old": [
+   576,
+   64,
+   2231,
+   2485
+  ],
+  "new": [
+   553,
+   64,
+   2231,
+   2485
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.014
+ },
+ {
+  "image": "PT-TT-TSO-IL-028-00067_m0023_derivada.jpg",
+  "n_lines": 24,
+  "inside_old": 24,
+  "inside_new": 24,
+  "old": [
+   0,
+   39,
+   1261,
+   1892
+  ],
+  "new": [
+   0,
+   38,
+   1261,
+   1893
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-028-00067_m0117_derivada.jpg",
+  "n_lines": 24,
+  "inside_old": 24,
+  "inside_new": 24,
+  "old": [
+   57,
+   54,
+   1263,
+   1959
+  ],
+  "new": [
+   0,
+   51,
+   1264,
+   1961
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.051
+ },
+ {
+  "image": "PT-TT-TSO-IL-028-00087_m0006.jpg",
+  "n_lines": 21,
+  "inside_old": 21,
+  "inside_new": 21,
+  "old": [
+   33,
+   81,
+   1259,
+   1874
+  ],
+  "new": [
+   33,
+   81,
+   1259,
+   1874
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.0
+ },
+ {
+  "image": "PT-TT-TSO-IL-028-08396_m0096_derivada.jpg",
+  "n_lines": 25,
+  "inside_old": 25,
+  "inside_new": 25,
+  "old": [
+   68,
+   103,
+   1211,
+   1907
+  ],
+  "new": [
+   63,
+   55,
+   1272,
+   1909
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.087
+ },
+ {
+  "image": "PT-TT-TSO-IL-028-09274_m0015_derivada.jpg",
+  "n_lines": 31,
+  "inside_old": 31,
+  "inside_new": 31,
+  "old": [
+   0,
+   33,
+   1295,
+   1856
+  ],
+  "new": [
+   0,
+   31,
+   1296,
+   1856
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-028-09287_m0359_derivada.jpg",
+  "n_lines": 38,
+  "inside_old": 38,
+  "inside_new": 38,
+  "old": [
+   56,
+   42,
+   1253,
+   1786
+  ],
+  "new": [
+   0,
+   42,
+   1253,
+   1786
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.047
+ },
+ {
+  "image": "PT-TT-TSO-IL-028-10888_m0039_derivada.jpg",
+  "n_lines": 32,
+  "inside_old": 32,
+  "inside_new": 32,
+  "old": [
+   59,
+   52,
+   1256,
+   1917
+  ],
+  "new": [
+   0,
+   50,
+   1258,
+   1921
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.054
+ },
+ {
+  "image": "PT-TT-TSO-IL-028-10888_m0061_derivada.jpg",
+  "n_lines": 32,
+  "inside_old": 32,
+  "inside_new": 32,
+  "old": [
+   87,
+   67,
+   1206,
+   1913
+  ],
+  "new": [
+   0,
+   45,
+   1206,
+   1913
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.091
+ },
+ {
+  "image": "PT-TT-TSO-IL-028-CX1622-16125_m0005.jpg",
+  "n_lines": 14,
+  "inside_old": 14,
+  "inside_new": 14,
+  "old": [
+   1,
+   27,
+   898,
+   1230
+  ],
+  "new": [
+   0,
+   27,
+   898,
+   1231
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-028-CX1622-16125_m0007.jpg",
+  "n_lines": 27,
+  "inside_old": 0,
+  "inside_new": 27,
+  "old": [
+   51,
+   34,
+   1287,
+   372
+  ],
+  "new": [
+   0,
+   33,
+   1288,
+   1830
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 5.54
+ },
+ {
+  "image": "PT-TT-TSO-IL-028-CX1622-16125_m0008.jpg",
+  "n_lines": 20,
+  "inside_old": 13,
+  "inside_new": 20,
+  "old": [
+   37,
+   688,
+   1310,
+   1822
+  ],
+  "new": [
+   35,
+   64,
+   1310,
+   1824
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.554
+ },
+ {
+  "image": "PT-TT-TSO-IL-028-CX1622-16125_m0021.jpg",
+  "n_lines": 19,
+  "inside_old": 19,
+  "inside_new": 19,
+  "old": [
+   0,
+   32,
+   865,
+   1142
+  ],
+  "new": [
+   0,
+   32,
+   865,
+   1142
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.0
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-1012_m0042.jpg",
+  "n_lines": 13,
+  "inside_old": 13,
+  "inside_new": 13,
+  "old": [
+   279,
+   96,
+   1553,
+   2140
+  ],
+  "new": [
+   277,
+   105,
+   1609,
+   2140
+  ],
+  "contains": false,
+  "watermark": false,
+  "area_ratio": 1.041
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-1012_m0062.jpg",
+  "n_lines": 41,
+  "inside_old": 41,
+  "inside_new": 41,
+  "old": [
+   325,
+   88,
+   1571,
+   2079
+  ],
+  "new": [
+   324,
+   87,
+   1609,
+   2079
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.032
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-1014_m0027.jpg",
+  "n_lines": 32,
+  "inside_old": 32,
+  "inside_new": 32,
+  "old": [
+   0,
+   126,
+   1308,
+   1874
+  ],
+  "new": [
+   0,
+   126,
+   1309,
+   1875
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-10328_m0077.jpg",
+  "n_lines": 36,
+  "inside_old": 36,
+  "inside_new": 36,
+  "old": [
+   2,
+   76,
+   1668,
+   2540
+  ],
+  "new": [
+   1,
+   73,
+   1671,
+   2545
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.006
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-1033_m0100.jpg",
+  "n_lines": 19,
+  "inside_old": 19,
+  "inside_new": 19,
+  "old": [
+   142,
+   56,
+   1538,
+   2128
+  ],
+  "new": [
+   142,
+   56,
+   1538,
+   2129
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.0
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-1033_m0101.jpg",
+  "n_lines": 19,
+  "inside_old": 19,
+  "inside_new": 19,
+  "old": [
+   0,
+   55,
+   1487,
+   2112
+  ],
+  "new": [
+   0,
+   45,
+   1488,
+   2113
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.006
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-10357_m0005.jpg",
+  "n_lines": 23,
+  "inside_old": 23,
+  "inside_new": 23,
+  "old": [
+   0,
+   42,
+   1264,
+   1862
+  ],
+  "new": [
+   0,
+   35,
+   1269,
+   1919
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.039
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-10357_m0021.jpg",
+  "n_lines": 26,
+  "inside_old": 26,
+  "inside_new": 26,
+  "old": [
+   63,
+   47,
+   1247,
+   1885
+  ],
+  "new": [
+   0,
+   84,
+   1252,
+   1927
+  ],
+  "contains": false,
+  "watermark": false,
+  "area_ratio": 1.06
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-10357_m0023.jpg",
+  "n_lines": 9,
+  "inside_old": 9,
+  "inside_new": 9,
+  "old": [
+   60,
+   90,
+   1240,
+   1915
+  ],
+  "new": [
+   12,
+   90,
+   1243,
+   1926
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.05
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-103_c0035.jpg",
+  "n_lines": 27,
+  "inside_old": 27,
+  "inside_new": 27,
+  "old": [
+   0,
+   132,
+   1142,
+   1916
+  ],
+  "new": [
+   0,
+   131,
+   1142,
+   1918
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-1056_c0027.jpg",
+  "n_lines": 25,
+  "inside_old": 25,
+  "inside_new": 25,
+  "old": [
+   0,
+   96,
+   1283,
+   1950
+  ],
+  "new": [
+   0,
+   96,
+   1283,
+   1951
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-1061_c0037.jpg",
+  "n_lines": 27,
+  "inside_old": 27,
+  "inside_new": 27,
+  "old": [
+   0,
+   138,
+   1256,
+   1992
+  ],
+  "new": [
+   0,
+   136,
+   1257,
+   1993
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-10786_m0063.jpg",
+  "n_lines": 30,
+  "inside_old": 2,
+  "inside_new": 30,
+  "old": [
+   94,
+   1575,
+   1257,
+   1947
+  ],
+  "new": [
+   0,
+   86,
+   1257,
+   1948
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 5.41
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-10891_m0081.jpg",
+  "n_lines": 35,
+  "inside_old": 35,
+  "inside_new": 35,
+  "old": [
+   0,
+   117,
+   1673,
+   2517
+  ],
+  "new": [
+   0,
+   116,
+   1673,
+   2523
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.003
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-10893_m0037.jpg",
+  "n_lines": 16,
+  "inside_old": 16,
+  "inside_new": 16,
+  "old": [
+   55,
+   33,
+   1302,
+   1755
+  ],
+  "new": [
+   0,
+   33,
+   1302,
+   1755
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.044
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-10998_m0015.jpg",
+  "n_lines": 20,
+  "inside_old": 20,
+  "inside_new": 20,
+  "old": [
+   0,
+   49,
+   1328,
+   1882
+  ],
+  "new": [
+   0,
+   29,
+   1334,
+   1890
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.02
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-10998_m0088.jpg",
+  "n_lines": 38,
+  "inside_old": 38,
+  "inside_new": 38,
+  "old": [
+   91,
+   51,
+   1416,
+   1883
+  ],
+  "new": [
+   90,
+   50,
+   1416,
+   1886
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.003
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-11008_m0065.jpg",
+  "n_lines": 23,
+  "inside_old": 23,
+  "inside_new": 23,
+  "old": [
+   62,
+   74,
+   1192,
+   1906
+  ],
+  "new": [
+   20,
+   71,
+   1193,
+   1906
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.04
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-11008_m0069.jpg",
+  "n_lines": 24,
+  "inside_old": 24,
+  "inside_new": 24,
+  "old": [
+   65,
+   70,
+   1197,
+   1907
+  ],
+  "new": [
+   0,
+   66,
+   1198,
+   1909
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.062
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-11013_m0013.jpg",
+  "n_lines": 28,
+  "inside_old": 28,
+  "inside_new": 28,
+  "old": [
+   0,
+   121,
+   1343,
+   1994
+  ],
+  "new": [
+   0,
+   121,
+   1344,
+   1995
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-11016_m0078.jpg",
+  "n_lines": 29,
+  "inside_old": 29,
+  "inside_new": 29,
+  "old": [
+   61,
+   66,
+   1406,
+   1867
+  ],
+  "new": [
+   60,
+   66,
+   1406,
+   1868
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-11016_m0137.jpg",
+  "n_lines": 30,
+  "inside_old": 30,
+  "inside_new": 30,
+  "old": [
+   0,
+   106,
+   1297,
+   1836
+  ],
+  "new": [
+   0,
+   106,
+   1297,
+   1836
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.0
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-1107_m0014.jpg",
+  "n_lines": 27,
+  "inside_old": 27,
+  "inside_new": 27,
+  "old": [
+   82,
+   96,
+   1409,
+   1916
+  ],
+  "new": [
+   81,
+   95,
+   1409,
+   1918
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-1111_c0010.jpg",
+  "n_lines": 26,
+  "inside_old": 26,
+  "inside_new": 26,
+  "old": [
+   57,
+   155,
+   1262,
+   1926
+  ],
+  "new": [
+   55,
+   154,
+   1262,
+   1929
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.004
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-11567_m0087.jpg",
+  "n_lines": 33,
+  "inside_old": 33,
+  "inside_new": 33,
+  "old": [
+   20,
+   78,
+   1704,
+   2501
+  ],
+  "new": [
+   20,
+   61,
+   1705,
+   2501
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.008
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-11567_m0088.jpg",
+  "n_lines": 1,
+  "inside_old": 1,
+  "inside_new": 1,
+  "old": [
+   39,
+   87,
+   1785,
+   2568
+  ],
+  "new": [
+   0,
+   56,
+   1785,
+   2573
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.037
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-11567_m0096.jpg",
+  "n_lines": 10,
+  "inside_old": 10,
+  "inside_new": 10,
+  "old": [
+   46,
+   82,
+   1785,
+   2561
+  ],
+  "new": [
+   0,
+   56,
+   1785,
+   2565
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.039
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-11567_m0103.jpg",
+  "n_lines": 24,
+  "inside_old": 24,
+  "inside_new": 24,
+  "old": [
+   191,
+   77,
+   1698,
+   2563
+  ],
+  "new": [
+   191,
+   64,
+   1699,
+   2564
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.006
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-11735_m0109.jpg",
+  "n_lines": 34,
+  "inside_old": 31,
+  "inside_new": 31,
+  "old": [
+   0,
+   342,
+   1260,
+   1849
+  ],
+  "new": [
+   0,
+   338,
+   1260,
+   1850
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.003
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-11749_m0131.jpg",
+  "n_lines": 23,
+  "inside_old": 23,
+  "inside_new": 23,
+  "old": [
+   0,
+   29,
+   1276,
+   1914
+  ],
+  "new": [
+   0,
+   21,
+   1282,
+   1916
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.01
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-11862_m0023.jpg",
+  "n_lines": 27,
+  "inside_old": 27,
+  "inside_new": 27,
+  "old": [
+   0,
+   38,
+   1282,
+   1885
+  ],
+  "new": [
+   0,
+   37,
+   1283,
+   1886
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-11978_m0004.jpg",
+  "n_lines": 31,
+  "inside_old": 31,
+  "inside_new": 31,
+  "old": [
+   216,
+   123,
+   1314,
+   1945
+  ],
+  "new": [
+   216,
+   123,
+   1314,
+   1949
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-1198_m0027.jpg",
+  "n_lines": 24,
+  "inside_old": 24,
+  "inside_new": 24,
+  "old": [
+   0,
+   100,
+   1305,
+   1901
+  ],
+  "new": [
+   0,
+   100,
+   1307,
+   1910
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.007
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12193_m0007.jpg",
+  "n_lines": 24,
+  "inside_old": 24,
+  "inside_new": 24,
+  "old": [
+   0,
+   109,
+   1180,
+   1918
+  ],
+  "new": [
+   0,
+   99,
+   1183,
+   1938
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.019
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12193_m0008.jpg",
+  "n_lines": 27,
+  "inside_old": 27,
+  "inside_new": 27,
+  "old": [
+   140,
+   138,
+   1280,
+   1940
+  ],
+  "new": [
+   139,
+   138,
+   1280,
+   1940
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12193_m0009.jpg",
+  "n_lines": 25,
+  "inside_old": 25,
+  "inside_new": 25,
+  "old": [
+   38,
+   105,
+   1154,
+   1913
+  ],
+  "new": [
+   38,
+   95,
+   1158,
+   1932
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.02
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12193_m0068.jpg",
+  "n_lines": 25,
+  "inside_old": 25,
+  "inside_new": 25,
+  "old": [
+   78,
+   100,
+   1263,
+   1921
+  ],
+  "new": [
+   78,
+   100,
+   1280,
+   1958
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.035
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12193_m0076.jpg",
+  "n_lines": 29,
+  "inside_old": 29,
+  "inside_new": 29,
+  "old": [
+   90,
+   102,
+   1280,
+   1947
+  ],
+  "new": [
+   90,
+   100,
+   1280,
+   1956
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.006
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12193_m0077.jpg",
+  "n_lines": 26,
+  "inside_old": 26,
+  "inside_new": 26,
+  "old": [
+   0,
+   120,
+   1105,
+   1953
+  ],
+  "new": [
+   0,
+   117,
+   1105,
+   1953
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12193_m0078.jpg",
+  "n_lines": 25,
+  "inside_old": 25,
+  "inside_new": 25,
+  "old": [
+   86,
+   109,
+   1280,
+   1943
+  ],
+  "new": [
+   85,
+   106,
+   1280,
+   1956
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.01
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12193_m0099.jpg",
+  "n_lines": 33,
+  "inside_old": 33,
+  "inside_new": 33,
+  "old": [
+   0,
+   106,
+   1121,
+   2129
+  ],
+  "new": [
+   0,
+   104,
+   1158,
+   2132
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.036
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12193_m0123.jpg",
+  "n_lines": 30,
+  "inside_old": 30,
+  "inside_new": 30,
+  "old": [
+   5,
+   104,
+   1156,
+   2135
+  ],
+  "new": [
+   5,
+   101,
+   1175,
+   2136
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.019
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12193_m0124.jpg",
+  "n_lines": 30,
+  "inside_old": 30,
+  "inside_new": 30,
+  "old": [
+   74,
+   105,
+   1280,
+   2145
+  ],
+  "new": [
+   73,
+   101,
+   1280,
+   2145
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.003
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12193_m0125.jpg",
+  "n_lines": 22,
+  "inside_old": 22,
+  "inside_new": 22,
+  "old": [
+   8,
+   103,
+   1171,
+   2130
+  ],
+  "new": [
+   8,
+   101,
+   1177,
+   2130
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.006
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12193_m0135.jpg",
+  "n_lines": 27,
+  "inside_old": 27,
+  "inside_new": 27,
+  "old": [
+   0,
+   112,
+   1153,
+   2139
+  ],
+  "new": [
+   0,
+   106,
+   1159,
+   2139
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.008
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12193_m0136.jpg",
+  "n_lines": 29,
+  "inside_old": 29,
+  "inside_new": 29,
+  "old": [
+   51,
+   100,
+   1259,
+   2131
+  ],
+  "new": [
+   47,
+   94,
+   1259,
+   2132
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.007
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12193_m0137.jpg",
+  "n_lines": 31,
+  "inside_old": 31,
+  "inside_new": 31,
+  "old": [
+   0,
+   111,
+   1125,
+   2138
+  ],
+  "new": [
+   0,
+   106,
+   1155,
+   2139
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.03
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12193_m0151.jpg",
+  "n_lines": 33,
+  "inside_old": 33,
+  "inside_new": 33,
+  "old": [
+   0,
+   109,
+   1145,
+   2126
+  ],
+  "new": [
+   0,
+   109,
+   1150,
+   2127
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.005
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12193_m0152.jpg",
+  "n_lines": 30,
+  "inside_old": 30,
+  "inside_new": 30,
+  "old": [
+   67,
+   126,
+   1180,
+   2133
+  ],
+  "new": [
+   66,
+   125,
+   1280,
+   2134
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.092
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12193_m0153.jpg",
+  "n_lines": 31,
+  "inside_old": 31,
+  "inside_new": 31,
+  "old": [
+   0,
+   109,
+   1107,
+   2125
+  ],
+  "new": [
+   0,
+   109,
+   1113,
+   2125
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.005
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12193_m0189.jpg",
+  "n_lines": 26,
+  "inside_old": 26,
+  "inside_new": 26,
+  "old": [
+   0,
+   139,
+   1131,
+   2027
+  ],
+  "new": [
+   0,
+   138,
+   1132,
+   2033
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.005
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12193_m0190.jpg",
+  "n_lines": 24,
+  "inside_old": 24,
+  "inside_new": 24,
+  "old": [
+   67,
+   131,
+   1280,
+   2019
+  ],
+  "new": [
+   67,
+   129,
+   1280,
+   2020
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12193_m0191.jpg",
+  "n_lines": 27,
+  "inside_old": 27,
+  "inside_new": 27,
+  "old": [
+   0,
+   139,
+   1130,
+   2029
+  ],
+  "new": [
+   0,
+   137,
+   1132,
+   2032
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.004
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12193_m0197.jpg",
+  "n_lines": 10,
+  "inside_old": 10,
+  "inside_new": 10,
+  "old": [
+   16,
+   138,
+   1203,
+   2036
+  ],
+  "new": [
+   16,
+   137,
+   1203,
+   2039
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12193_m0209.jpg",
+  "n_lines": 29,
+  "inside_old": 29,
+  "inside_new": 29,
+  "old": [
+   0,
+   139,
+   1188,
+   2024
+  ],
+  "new": [
+   0,
+   139,
+   1190,
+   2028
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.004
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12193_m0215.jpg",
+  "n_lines": 50,
+  "inside_old": 50,
+  "inside_new": 50,
+  "old": [
+   109,
+   251,
+   1183,
+   2026
+  ],
+  "new": [
+   24,
+   251,
+   1183,
+   2029
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.081
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12193_m0216.jpg",
+  "n_lines": 48,
+  "inside_old": 48,
+  "inside_new": 48,
+  "old": [
+   57,
+   123,
+   1258,
+   2020
+  ],
+  "new": [
+   55,
+   122,
+   1280,
+   2022
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.022
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12193_m0217.jpg",
+  "n_lines": 8,
+  "inside_old": 8,
+  "inside_new": 8,
+  "old": [
+   73,
+   246,
+   1182,
+   2027
+  ],
+  "new": [
+   73,
+   139,
+   1183,
+   2031
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.063
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12193_m0231.jpg",
+  "n_lines": 26,
+  "inside_old": 26,
+  "inside_new": 26,
+  "old": [
+   0,
+   152,
+   1177,
+   2025
+  ],
+  "new": [
+   0,
+   152,
+   1179,
+   2029
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.004
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12193_m0232.jpg",
+  "n_lines": 10,
+  "inside_old": 10,
+  "inside_new": 10,
+  "old": [
+   44,
+   129,
+   1273,
+   2016
+  ],
+  "new": [
+   41,
+   123,
+   1277,
+   2026
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.014
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12193_m0233.jpg",
+  "n_lines": 23,
+  "inside_old": 23,
+  "inside_new": 23,
+  "old": [
+   0,
+   174,
+   1171,
+   1954
+  ],
+  "new": [
+   0,
+   174,
+   1172,
+   1999
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.026
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12196_m0009.jpg",
+  "n_lines": 25,
+  "inside_old": 25,
+  "inside_new": 25,
+  "old": [
+   59,
+   63,
+   1344,
+   2009
+  ],
+  "new": [
+   0,
+   62,
+   1345,
+   2010
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.048
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12196_m0011.jpg",
+  "n_lines": 20,
+  "inside_old": 20,
+  "inside_new": 20,
+  "old": [
+   66,
+   112,
+   1390,
+   1980
+  ],
+  "new": [
+   0,
+   100,
+   1406,
+   1981
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.069
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12196_m0020.jpg",
+  "n_lines": 23,
+  "inside_old": 23,
+  "inside_new": 23,
+  "old": [
+   58,
+   112,
+   1406,
+   1952
+  ],
+  "new": [
+   58,
+   103,
+   1406,
+   1953
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.005
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12196_m0025.jpg",
+  "n_lines": 32,
+  "inside_old": 32,
+  "inside_new": 32,
+  "old": [
+   7,
+   107,
+   1347,
+   1973
+  ],
+  "new": [
+   6,
+   106,
+   1348,
+   1973
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12196_m0043.jpg",
+  "n_lines": 41,
+  "inside_old": 41,
+  "inside_new": 41,
+  "old": [
+   0,
+   121,
+   1336,
+   1989
+  ],
+  "new": [
+   0,
+   120,
+   1337,
+   1990
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12196_m0069.jpg",
+  "n_lines": 30,
+  "inside_old": 29,
+  "inside_new": 30,
+  "old": [
+   74,
+   137,
+   1371,
+   1981
+  ],
+  "new": [
+   0,
+   48,
+   1372,
+   2019
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.131
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12196_m0167.jpg",
+  "n_lines": 28,
+  "inside_old": 1,
+  "inside_new": 28,
+  "old": [
+   66,
+   47,
+   1378,
+   376
+  ],
+  "new": [
+   0,
+   45,
+   1378,
+   2033
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 6.347
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-1220_m0004.jpg",
+  "n_lines": 28,
+  "inside_old": 28,
+  "inside_new": 28,
+  "old": [
+   189,
+   106,
+   1372,
+   1833
+  ],
+  "new": [
+   189,
+   106,
+   1372,
+   1834
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-1220_m0025.jpg",
+  "n_lines": 25,
+  "inside_old": 25,
+  "inside_new": 25,
+  "old": [
+   0,
+   55,
+   1335,
+   1880
+  ],
+  "new": [
+   0,
+   53,
+   1342,
+   1908
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.022
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12213_m0148.jpg",
+  "n_lines": 28,
+  "inside_old": 28,
+  "inside_new": 28,
+  "old": [
+   160,
+   109,
+   1422,
+   2044
+  ],
+  "new": [
+   159,
+   101,
+   1422,
+   2045
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.005
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-1225_m0167.jpg",
+  "n_lines": 17,
+  "inside_old": 17,
+  "inside_new": 17,
+  "old": [
+   0,
+   82,
+   1255,
+   1891
+  ],
+  "new": [
+   0,
+   81,
+   1256,
+   1891
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-1241_m0019.jpg",
+  "n_lines": 29,
+  "inside_old": 29,
+  "inside_new": 29,
+  "old": [
+   0,
+   104,
+   1340,
+   2009
+  ],
+  "new": [
+   0,
+   103,
+   1342,
+   2012
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.004
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12561_m0003.jpg",
+  "n_lines": 25,
+  "inside_old": 25,
+  "inside_new": 25,
+  "old": [
+   32,
+   120,
+   1273,
+   1970
+  ],
+  "new": [
+   0,
+   119,
+   1275,
+   1972
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.029
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12561_m0015.jpg",
+  "n_lines": 14,
+  "inside_old": 14,
+  "inside_new": 14,
+  "old": [
+   55,
+   157,
+   1269,
+   1948
+  ],
+  "new": [
+   0,
+   155,
+   1270,
+   1948
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.047
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-1269_m0061.jpg",
+  "n_lines": 27,
+  "inside_old": 27,
+  "inside_new": 27,
+  "old": [
+   0,
+   44,
+   1935,
+   2776
+  ],
+  "new": [
+   0,
+   43,
+   1939,
+   2780
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.004
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12718_m0017.jpg",
+  "n_lines": 22,
+  "inside_old": 22,
+  "inside_new": 22,
+  "old": [
+   0,
+   62,
+   1355,
+   1972
+  ],
+  "new": [
+   0,
+   61,
+   1358,
+   1973
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.003
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12730_m0013.jpg",
+  "n_lines": 26,
+  "inside_old": 26,
+  "inside_new": 26,
+  "old": [
+   0,
+   102,
+   1805,
+   2699
+  ],
+  "new": [
+   0,
+   101,
+   1807,
+   2700
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12887_m0005.jpg",
+  "n_lines": 30,
+  "inside_old": 30,
+  "inside_new": 30,
+  "old": [
+   0,
+   30,
+   1229,
+   1861
+  ],
+  "new": [
+   0,
+   29,
+   1230,
+   1862
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12887_m0006.jpg",
+  "n_lines": 28,
+  "inside_old": 28,
+  "inside_new": 28,
+  "old": [
+   35,
+   39,
+   1286,
+   1878
+  ],
+  "new": [
+   34,
+   37,
+   1286,
+   1880
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.003
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12887_m0007.jpg",
+  "n_lines": 35,
+  "inside_old": 35,
+  "inside_new": 35,
+  "old": [
+   0,
+   47,
+   1194,
+   1877
+  ],
+  "new": [
+   0,
+   46,
+   1195,
+   1878
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12888_m0010.jpg",
+  "n_lines": 29,
+  "inside_old": 29,
+  "inside_new": 29,
+  "old": [
+   58,
+   42,
+   1388,
+   1887
+  ],
+  "new": [
+   56,
+   41,
+   1388,
+   1889
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.003
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12892_m0006.jpg",
+  "n_lines": 28,
+  "inside_old": 28,
+  "inside_new": 28,
+  "old": [
+   78,
+   70,
+   1412,
+   1890
+  ],
+  "new": [
+   78,
+   70,
+   1412,
+   1890
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.0
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-1291_m0010.jpg",
+  "n_lines": 35,
+  "inside_old": 35,
+  "inside_new": 35,
+  "old": [
+   112,
+   45,
+   1397,
+   1869
+  ],
+  "new": [
+   112,
+   44,
+   1397,
+   1871
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-1291_m0042.jpg",
+  "n_lines": 24,
+  "inside_old": 24,
+  "inside_new": 24,
+  "old": [
+   52,
+   25,
+   1422,
+   1933
+  ],
+  "new": [
+   50,
+   0,
+   1422,
+   1935
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.016
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12955_m0015.jpg",
+  "n_lines": 37,
+  "inside_old": 37,
+  "inside_new": 37,
+  "old": [
+   75,
+   87,
+   1420,
+   2126
+  ],
+  "new": [
+   0,
+   78,
+   1421,
+   2148
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.073
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12955_m0016.jpg",
+  "n_lines": 34,
+  "inside_old": 34,
+  "inside_new": 34,
+  "old": [
+   50,
+   51,
+   1480,
+   2126
+  ],
+  "new": [
+   48,
+   40,
+   1480,
+   2135
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.011
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12955_m0017.jpg",
+  "n_lines": 34,
+  "inside_old": 34,
+  "inside_new": 34,
+  "old": [
+   0,
+   84,
+   1420,
+   2147
+  ],
+  "new": [
+   0,
+   78,
+   1421,
+   2148
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.004
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12955_m0019.jpg",
+  "n_lines": 31,
+  "inside_old": 31,
+  "inside_new": 31,
+  "old": [
+   73,
+   63,
+   1394,
+   2151
+  ],
+  "new": [
+   0,
+   62,
+   1394,
+   2151
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.056
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12955_m0020.jpg",
+  "n_lines": 33,
+  "inside_old": 33,
+  "inside_new": 33,
+  "old": [
+   51,
+   54,
+   1430,
+   2124
+  ],
+  "new": [
+   48,
+   40,
+   1480,
+   2134
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.05
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12955_m0021.jpg",
+  "n_lines": 30,
+  "inside_old": 30,
+  "inside_new": 30,
+  "old": [
+   70,
+   66,
+   1395,
+   2151
+  ],
+  "new": [
+   0,
+   65,
+   1395,
+   2151
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.053
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12959_m0011.jpg",
+  "n_lines": 15,
+  "inside_old": 15,
+  "inside_new": 15,
+  "old": [
+   0,
+   72,
+   1749,
+   2509
+  ],
+  "new": [
+   0,
+   70,
+   1750,
+   2511
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12959_m0025.jpg",
+  "n_lines": 25,
+  "inside_old": 25,
+  "inside_new": 25,
+  "old": [
+   80,
+   102,
+   1721,
+   2470
+  ],
+  "new": [
+   0,
+   100,
+   1721,
+   2471
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.05
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-12959_m0379.jpg",
+  "n_lines": 28,
+  "inside_old": 28,
+  "inside_new": 28,
+  "old": [
+   0,
+   141,
+   1798,
+   2598
+  ],
+  "new": [
+   0,
+   140,
+   1799,
+   2598
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-13086_m0005.jpg",
+  "n_lines": 23,
+  "inside_old": 23,
+  "inside_new": 23,
+  "old": [
+   0,
+   188,
+   1681,
+   2796
+  ],
+  "new": [
+   0,
+   186,
+   1682,
+   2797
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-13086_m0006.jpg",
+  "n_lines": 25,
+  "inside_old": 25,
+  "inside_new": 25,
+  "old": [
+   82,
+   212,
+   1855,
+   2804
+  ],
+  "new": [
+   82,
+   210,
+   1855,
+   2805
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-13102_m0094.jpg",
+  "n_lines": 26,
+  "inside_old": 26,
+  "inside_new": 26,
+  "old": [
+   137,
+   168,
+   1414,
+   2128
+  ],
+  "new": [
+   137,
+   167,
+   1414,
+   2130
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-13340_m0011.jpg",
+  "n_lines": 24,
+  "inside_old": 24,
+  "inside_new": 24,
+  "old": [
+   0,
+   57,
+   1371,
+   2014
+  ],
+  "new": [
+   0,
+   57,
+   1373,
+   2015
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-13347_m0003.jpg",
+  "n_lines": 28,
+  "inside_old": 28,
+  "inside_new": 28,
+  "old": [
+   0,
+   82,
+   1642,
+   2448
+  ],
+  "new": [
+   0,
+   82,
+   1643,
+   2448
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-13370_m0003.jpg",
+  "n_lines": 16,
+  "inside_old": 16,
+  "inside_new": 16,
+  "old": [
+   0,
+   58,
+   1315,
+   1900
+  ],
+  "new": [
+   0,
+   57,
+   1316,
+   1901
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-13374_m0005.jpg",
+  "n_lines": 38,
+  "inside_old": 38,
+  "inside_new": 38,
+  "old": [
+   0,
+   65,
+   1686,
+   2711
+  ],
+  "new": [
+   0,
+   63,
+   1687,
+   2714
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-13381_m0031.jpg",
+  "n_lines": 16,
+  "inside_old": 13,
+  "inside_new": 16,
+  "old": [
+   0,
+   587,
+   1622,
+   2519
+  ],
+  "new": [
+   0,
+   74,
+   1626,
+   2519
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.269
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-13381_m0033.jpg",
+  "n_lines": 40,
+  "inside_old": 40,
+  "inside_new": 40,
+  "old": [
+   0,
+   81,
+   1624,
+   2520
+  ],
+  "new": [
+   0,
+   81,
+   1624,
+   2520
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.0
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-13425_m0040.jpg",
+  "n_lines": 27,
+  "inside_old": 3,
+  "inside_new": 27,
+  "old": [
+   260,
+   1492,
+   1443,
+   1927
+  ],
+  "new": [
+   245,
+   130,
+   1443,
+   1927
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 4.183
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-13436_m0010.jpg",
+  "n_lines": 11,
+  "inside_old": 11,
+  "inside_new": 11,
+  "old": [
+   202,
+   84,
+   1776,
+   2474
+  ],
+  "new": [
+   201,
+   84,
+   1776,
+   2474
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-13444_m0001.jpg",
+  "n_lines": 37,
+  "inside_old": 37,
+  "inside_new": 37,
+  "old": [
+   619,
+   41,
+   2325,
+   2453
+  ],
+  "new": [
+   616,
+   41,
+   2325,
+   2453
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-13469_m0003.jpg",
+  "n_lines": 33,
+  "inside_old": 33,
+  "inside_new": 33,
+  "old": [
+   0,
+   75,
+   1470,
+   2440
+  ],
+  "new": [
+   0,
+   75,
+   1470,
+   2440
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.0
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-13693_m0055.jpg",
+  "n_lines": 40,
+  "inside_old": 40,
+  "inside_new": 40,
+  "old": [
+   0,
+   132,
+   1158,
+   1349
+  ],
+  "new": [
+   0,
+   130,
+   1158,
+   1349
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-13693_m0056.jpg",
+  "n_lines": 36,
+  "inside_old": 36,
+  "inside_new": 36,
+  "old": [
+   102,
+   72,
+   978,
+   1284
+  ],
+  "new": [
+   102,
+   72,
+   978,
+   1284
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.0
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-13693_m0057.jpg",
+  "n_lines": 38,
+  "inside_old": 38,
+  "inside_new": 38,
+  "old": [
+   0,
+   54,
+   958,
+   1270
+  ],
+  "new": [
+   0,
+   51,
+   958,
+   1271
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.003
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-137_c0022.jpg",
+  "n_lines": 24,
+  "inside_old": 24,
+  "inside_new": 24,
+  "old": [
+   92,
+   77,
+   1339,
+   1918
+  ],
+  "new": [
+   92,
+   77,
+   1339,
+   1918
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.0
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-138_c0020.jpg",
+  "n_lines": 24,
+  "inside_old": 24,
+  "inside_new": 24,
+  "old": [
+   117,
+   142,
+   1394,
+   2081
+  ],
+  "new": [
+   116,
+   142,
+   1422,
+   2082
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.023
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-14048_m0059.jpg",
+  "n_lines": 36,
+  "inside_old": 36,
+  "inside_new": 36,
+  "old": [
+   0,
+   96,
+   1333,
+   2003
+  ],
+  "new": [
+   0,
+   96,
+   1336,
+   2003
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-14048_m0071.jpg",
+  "n_lines": 25,
+  "inside_old": 24,
+  "inside_new": 25,
+  "old": [
+   76,
+   42,
+   1440,
+   2073
+  ],
+  "new": [
+   0,
+   0,
+   1447,
+   2102
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.098
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-14048_m0136.jpg",
+  "n_lines": 28,
+  "inside_old": 1,
+  "inside_new": 28,
+  "old": [
+   103,
+   82,
+   1442,
+   468
+  ],
+  "new": [
+   96,
+   80,
+   1502,
+   2104
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 5.506
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-14051_m0011.jpg",
+  "n_lines": 25,
+  "inside_old": 25,
+  "inside_new": 25,
+  "old": [
+   0,
+   44,
+   1330,
+   2029
+  ],
+  "new": [
+   0,
+   42,
+   1331,
+   2031
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.003
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-14412_m0047.jpg",
+  "n_lines": 17,
+  "inside_old": 13,
+  "inside_new": 17,
+  "old": [
+   38,
+   507,
+   1172,
+   1936
+  ],
+  "new": [
+   21,
+   86,
+   1173,
+   1937
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.316
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-1443_m0083.jpg",
+  "n_lines": 34,
+  "inside_old": 34,
+  "inside_new": 34,
+  "old": [
+   0,
+   50,
+   1319,
+   1863
+  ],
+  "new": [
+   0,
+   49,
+   1324,
+   1865
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.005
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-14500_m0015_Mario.jpg",
+  "n_lines": 23,
+  "inside_old": 23,
+  "inside_new": 23,
+  "old": [
+   0,
+   58,
+   1349,
+   1959
+  ],
+  "new": [
+   0,
+   57,
+   1349,
+   1960
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-14500_m0028_Mario.jpg",
+  "n_lines": 24,
+  "inside_old": 24,
+  "inside_new": 24,
+  "old": [
+   92,
+   60,
+   1418,
+   1893
+  ],
+  "new": [
+   91,
+   59,
+   1418,
+   1893
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-14631_m0006_Mario.jpg",
+  "n_lines": 25,
+  "inside_old": 25,
+  "inside_new": 25,
+  "old": [
+   110,
+   85,
+   1391,
+   1948
+  ],
+  "new": [
+   110,
+   84,
+   1416,
+   1948
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.02
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-14631_m0025_Mario.jpg",
+  "n_lines": 27,
+  "inside_old": 27,
+  "inside_new": 27,
+  "old": [
+   19,
+   72,
+   1200,
+   1966
+  ],
+  "new": [
+   19,
+   55,
+   1229,
+   1978
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.04
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-14631_m0054_Mario.jpg",
+  "n_lines": 4,
+  "inside_old": 4,
+  "inside_new": 4,
+  "old": [
+   41,
+   82,
+   1401,
+   1967
+  ],
+  "new": [
+   38,
+   81,
+   1401,
+   1970
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.004
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-14631_m0123_Mario.jpg",
+  "n_lines": 24,
+  "inside_old": 24,
+  "inside_new": 24,
+  "old": [
+   0,
+   44,
+   1344,
+   1931
+  ],
+  "new": [
+   0,
+   43,
+   1345,
+   1934
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.003
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-14632_m0003.jpg",
+  "n_lines": 29,
+  "inside_old": 29,
+  "inside_new": 29,
+  "old": [
+   0,
+   75,
+   1198,
+   1956
+  ],
+  "new": [
+   0,
+   74,
+   1199,
+   1957
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-14632_m0007.jpg",
+  "n_lines": 8,
+  "inside_old": 8,
+  "inside_new": 8,
+  "old": [
+   15,
+   84,
+   1193,
+   1964
+  ],
+  "new": [
+   15,
+   84,
+   1193,
+   1965
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-14632_m0015.jpg",
+  "n_lines": 24,
+  "inside_old": 24,
+  "inside_new": 24,
+  "old": [
+   101,
+   107,
+   1179,
+   1970
+  ],
+  "new": [
+   9,
+   107,
+   1180,
+   1971
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.087
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-14640_m0005.jpg",
+  "n_lines": 15,
+  "inside_old": 15,
+  "inside_new": 15,
+  "old": [
+   44,
+   128,
+   1668,
+   1658
+  ],
+  "new": [
+   44,
+   128,
+   1668,
+   1659
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-14640_m0025.jpg",
+  "n_lines": 28,
+  "inside_old": 28,
+  "inside_new": 28,
+  "old": [
+   17,
+   68,
+   1708,
+   2399
+  ],
+  "new": [
+   17,
+   68,
+   1709,
+   2399
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-14640_m0029.jpg",
+  "n_lines": 28,
+  "inside_old": 28,
+  "inside_new": 28,
+  "old": [
+   0,
+   69,
+   1756,
+   2529
+  ],
+  "new": [
+   0,
+   67,
+   1756,
+   2530
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-14642_m0035.jpg",
+  "n_lines": 17,
+  "inside_old": 17,
+  "inside_new": 17,
+  "old": [
+   0,
+   103,
+   1784,
+   2635
+  ],
+  "new": [
+   0,
+   103,
+   1785,
+   2637
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-14912_m0016.jpg",
+  "n_lines": 25,
+  "inside_old": 25,
+  "inside_new": 25,
+  "old": [
+   44,
+   80,
+   1290,
+   1953
+  ],
+  "new": [
+   43,
+   80,
+   1290,
+   1954
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-14944_m0197.jpg",
+  "n_lines": 23,
+  "inside_old": 23,
+  "inside_new": 23,
+  "old": [
+   53,
+   157,
+   1307,
+   1961
+  ],
+  "new": [
+   0,
+   157,
+   1308,
+   1961
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.043
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-15124_m0013.jpg",
+  "n_lines": 24,
+  "inside_old": 13,
+  "inside_new": 24,
+  "old": [
+   0,
+   582,
+   922,
+   1316
+  ],
+  "new": [
+   0,
+   91,
+   922,
+   1320
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.674
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-15124_m0025.jpg",
+  "n_lines": 27,
+  "inside_old": 27,
+  "inside_new": 27,
+  "old": [
+   0,
+   27,
+   1332,
+   1871
+  ],
+  "new": [
+   0,
+   26,
+   1333,
+   1872
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-15767_m0007.jpg",
+  "n_lines": 32,
+  "inside_old": 31,
+  "inside_new": 32,
+  "old": [
+   0,
+   458,
+   1330,
+   1873
+  ],
+  "new": [
+   0,
+   0,
+   1330,
+   1888
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.334
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-15767_m0018.jpg",
+  "n_lines": 36,
+  "inside_old": 28,
+  "inside_new": 36,
+  "old": [
+   26,
+   491,
+   1308,
+   1883
+  ],
+  "new": [
+   26,
+   19,
+   1385,
+   1885
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.421
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-15767_m0020.jpg",
+  "n_lines": 34,
+  "inside_old": 26,
+  "inside_new": 34,
+  "old": [
+   52,
+   45,
+   1385,
+   1447
+  ],
+  "new": [
+   47,
+   0,
+   1385,
+   1884
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.349
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-16070_m0009.jpg",
+  "n_lines": 28,
+  "inside_old": 28,
+  "inside_new": 28,
+  "old": [
+   15,
+   53,
+   1622,
+   2524
+  ],
+  "new": [
+   15,
+   52,
+   1626,
+   2525
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.003
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-16070_m0041.jpg",
+  "n_lines": 17,
+  "inside_old": 17,
+  "inside_new": 17,
+  "old": [
+   0,
+   39,
+   1813,
+   2480
+  ],
+  "new": [
+   0,
+   38,
+   1814,
+   2481
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-16809_m0012a.jpg",
+  "n_lines": 26,
+  "inside_old": 22,
+  "inside_new": 25,
+  "old": [
+   28,
+   5,
+   1019,
+   1552
+  ],
+  "new": [
+   25,
+   5,
+   1022,
+   1752
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.136
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-16809_m0012b.jpg",
+  "n_lines": 12,
+  "inside_old": 3,
+  "inside_new": 12,
+  "old": [
+   79,
+   298,
+   1092,
+   548
+  ],
+  "new": [
+   79,
+   0,
+   1100,
+   795
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 3.205
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-16809_m0014b.jpg",
+  "n_lines": 43,
+  "inside_old": 30,
+  "inside_new": 30,
+  "old": [
+   75,
+   93,
+   1053,
+   1392
+  ],
+  "new": [
+   75,
+   93,
+   1053,
+   1392
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.0
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-188_c0046.jpg",
+  "n_lines": 22,
+  "inside_old": 22,
+  "inside_new": 22,
+  "old": [
+   100,
+   91,
+   1409,
+   1928
+  ],
+  "new": [
+   99,
+   89,
+   1409,
+   1932
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.004
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-18_c0017.jpg",
+  "n_lines": 24,
+  "inside_old": 24,
+  "inside_new": 24,
+  "old": [
+   0,
+   77,
+   1375,
+   2048
+  ],
+  "new": [
+   0,
+   75,
+   1375,
+   2049
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-18_c0018.jpg",
+  "n_lines": 27,
+  "inside_old": 27,
+  "inside_new": 27,
+  "old": [
+   65,
+   69,
+   1474,
+   2041
+  ],
+  "new": [
+   64,
+   67,
+   1474,
+   2043
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.003
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-190_c0023.jpg",
+  "n_lines": 25,
+  "inside_old": 25,
+  "inside_new": 25,
+  "old": [
+   0,
+   149,
+   1230,
+   1916
+  ],
+  "new": [
+   0,
+   148,
+   1231,
+   1916
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-200_c0021.jpg",
+  "n_lines": 20,
+  "inside_old": 20,
+  "inside_new": 20,
+  "old": [
+   0,
+   37,
+   1329,
+   1901
+  ],
+  "new": [
+   0,
+   36,
+   1330,
+   1907
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.005
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-2102_m0025.jpg",
+  "n_lines": 25,
+  "inside_old": 25,
+  "inside_new": 25,
+  "old": [
+   0,
+   111,
+   1390,
+   2067
+  ],
+  "new": [
+   0,
+   96,
+   1398,
+   2075
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.018
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-2106_m0077.jpg",
+  "n_lines": 23,
+  "inside_old": 23,
+  "inside_new": 23,
+  "old": [
+   0,
+   59,
+   1400,
+   2021
+  ],
+  "new": [
+   0,
+   57,
+   1409,
+   2027
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.011
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-228_m0011.jpg",
+  "n_lines": 24,
+  "inside_old": 24,
+  "inside_new": 24,
+  "old": [
+   4,
+   54,
+   1202,
+   1885
+  ],
+  "new": [
+   0,
+   43,
+   1205,
+   1889
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.014
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-229_c0324.jpg",
+  "n_lines": 17,
+  "inside_old": 17,
+  "inside_new": 17,
+  "old": [
+   114,
+   78,
+   1332,
+   1912
+  ],
+  "new": [
+   112,
+   78,
+   1332,
+   1913
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-2384_m0663.jpg",
+  "n_lines": 27,
+  "inside_old": 27,
+  "inside_new": 27,
+  "old": [
+   0,
+   54,
+   1323,
+   1903
+  ],
+  "new": [
+   0,
+   49,
+   1326,
+   1925
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.017
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-23_c0017.jpg",
+  "n_lines": 27,
+  "inside_old": 27,
+  "inside_new": 27,
+  "old": [
+   0,
+   64,
+   1308,
+   1879
+  ],
+  "new": [
+   0,
+   64,
+   1308,
+   1879
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.0
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-23_c0018.jpg",
+  "n_lines": 34,
+  "inside_old": 34,
+  "inside_new": 34,
+  "old": [
+   63,
+   75,
+   1388,
+   1985
+  ],
+  "new": [
+   63,
+   75,
+   1388,
+   1986
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-23_c0019.jpg",
+  "n_lines": 34,
+  "inside_old": 34,
+  "inside_new": 34,
+  "old": [
+   0,
+   33,
+   1277,
+   1939
+  ],
+  "new": [
+   0,
+   33,
+   1278,
+   1940
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-247_c0015.jpg",
+  "n_lines": 24,
+  "inside_old": 24,
+  "inside_new": 24,
+  "old": [
+   0,
+   131,
+   1287,
+   2035
+  ],
+  "new": [
+   0,
+   130,
+   1288,
+   2036
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-247_c0112.jpg",
+  "n_lines": 21,
+  "inside_old": 21,
+  "inside_new": 21,
+  "old": [
+   142,
+   120,
+   1352,
+   2037
+  ],
+  "new": [
+   141,
+   118,
+   1388,
+   2038
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.032
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-2601_m0005.jpg",
+  "n_lines": 24,
+  "inside_old": 24,
+  "inside_new": 24,
+  "old": [
+   0,
+   116,
+   1334,
+   1932
+  ],
+  "new": [
+   0,
+   115,
+   1334,
+   1932
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-2601_m0037.jpg",
+  "n_lines": 27,
+  "inside_old": 27,
+  "inside_new": 27,
+  "old": [
+   0,
+   136,
+   1253,
+   1920
+  ],
+  "new": [
+   0,
+   136,
+   1254,
+   1920
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-2672_c0047.jpg",
+  "n_lines": 19,
+  "inside_old": 19,
+  "inside_new": 19,
+  "old": [
+   0,
+   95,
+   1267,
+   1987
+  ],
+  "new": [
+   0,
+   94,
+   1267,
+   1988
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-272_m0019.jpg",
+  "n_lines": 24,
+  "inside_old": 24,
+  "inside_new": 24,
+  "old": [
+   0,
+   98,
+   1819,
+   2715
+  ],
+  "new": [
+   0,
+   96,
+   1819,
+   2717
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-2747_c0179.jpg",
+  "n_lines": 18,
+  "inside_old": 18,
+  "inside_new": 18,
+  "old": [
+   0,
+   132,
+   1273,
+   2011
+  ],
+  "new": [
+   0,
+   132,
+   1273,
+   2011
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.0
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-2747_c0198.jpg",
+  "n_lines": 16,
+  "inside_old": 16,
+  "inside_new": 16,
+  "old": [
+   196,
+   193,
+   1431,
+   1867
+  ],
+  "new": [
+   195,
+   193,
+   1431,
+   1867
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-2771_c0109.jpg",
+  "n_lines": 29,
+  "inside_old": 29,
+  "inside_new": 29,
+  "old": [
+   54,
+   117,
+   1314,
+   2171
+  ],
+  "new": [
+   7,
+   117,
+   1316,
+   2174
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.04
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-2855_c0006.jpg",
+  "n_lines": 26,
+  "inside_old": 26,
+  "inside_new": 26,
+  "old": [
+   128,
+   182,
+   1325,
+   1859
+  ],
+  "new": [
+   126,
+   182,
+   1369,
+   2006
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.129
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-2878_m0036.jpg",
+  "n_lines": 27,
+  "inside_old": 27,
+  "inside_new": 27,
+  "old": [
+   145,
+   119,
+   1360,
+   1936
+  ],
+  "new": [
+   145,
+   117,
+   1406,
+   1936
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.039
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-2879_m0007.jpg",
+  "n_lines": 25,
+  "inside_old": 25,
+  "inside_new": 25,
+  "old": [
+   0,
+   62,
+   1280,
+   1825
+  ],
+  "new": [
+   0,
+   62,
+   1282,
+   1860
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.021
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-2885_c0023.jpg",
+  "n_lines": 30,
+  "inside_old": 30,
+  "inside_new": 30,
+  "old": [
+   35,
+   108,
+   1192,
+   1841
+  ],
+  "new": [
+   0,
+   108,
+   1193,
+   1841
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.031
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-2885_c0024.jpg",
+  "n_lines": 32,
+  "inside_old": 32,
+  "inside_new": 32,
+  "old": [
+   194,
+   116,
+   1394,
+   1853
+  ],
+  "new": [
+   194,
+   116,
+   1394,
+   1853
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.0
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-2885_c0025.jpg",
+  "n_lines": 11,
+  "inside_old": 11,
+  "inside_new": 11,
+  "old": [
+   0,
+   118,
+   1185,
+   1843
+  ],
+  "new": [
+   0,
+   118,
+   1185,
+   1843
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.0
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-2887_m0011.jpg",
+  "n_lines": 23,
+  "inside_old": 23,
+  "inside_new": 23,
+  "old": [
+   0,
+   92,
+   1298,
+   1869
+  ],
+  "new": [
+   0,
+   89,
+   1301,
+   1871
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.005
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-2890_m0045.jpg",
+  "n_lines": 26,
+  "inside_old": 26,
+  "inside_new": 26,
+  "old": [
+   0,
+   50,
+   1314,
+   1833
+  ],
+  "new": [
+   0,
+   44,
+   1318,
+   1856
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.019
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-2890_m0075.jpg",
+  "n_lines": 23,
+  "inside_old": 23,
+  "inside_new": 23,
+  "old": [
+   0,
+   55,
+   1290,
+   1823
+  ],
+  "new": [
+   0,
+   48,
+   1311,
+   1863
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.043
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-291_m0053.jpg",
+  "n_lines": 26,
+  "inside_old": 26,
+  "inside_new": 26,
+  "old": [
+   26,
+   37,
+   1234,
+   1837
+  ],
+  "new": [
+   26,
+   36,
+   1234,
+   1838
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-2926_m0027.jpg",
+  "n_lines": 23,
+  "inside_old": 23,
+  "inside_new": 23,
+  "old": [
+   10,
+   128,
+   1342,
+   1979
+  ],
+  "new": [
+   0,
+   124,
+   1343,
+   1987
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.015
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-2926_m0149.jpg",
+  "n_lines": 22,
+  "inside_old": 22,
+  "inside_new": 22,
+  "old": [
+   0,
+   128,
+   1329,
+   1939
+  ],
+  "new": [
+   0,
+   127,
+   1330,
+   1941
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-2928_m0015.jpg",
+  "n_lines": 25,
+  "inside_old": 25,
+  "inside_new": 25,
+  "old": [
+   0,
+   57,
+   1263,
+   1884
+  ],
+  "new": [
+   0,
+   49,
+   1266,
+   1886
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.008
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-2928_m0020.jpg",
+  "n_lines": 30,
+  "inside_old": 30,
+  "inside_new": 30,
+  "old": [
+   145,
+   73,
+   1403,
+   1870
+  ],
+  "new": [
+   144,
+   73,
+   1403,
+   1871
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-2940_c0059.jpg",
+  "n_lines": 20,
+  "inside_old": 20,
+  "inside_new": 20,
+  "old": [
+   0,
+   167,
+   1266,
+   1963
+  ],
+  "new": [
+   0,
+   166,
+   1266,
+   1963
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-2966_m0029.jpg",
+  "n_lines": 21,
+  "inside_old": 21,
+  "inside_new": 21,
+  "old": [
+   0,
+   127,
+   1339,
+   2018
+  ],
+  "new": [
+   0,
+   126,
+   1340,
+   2019
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-3026_m0060.jpg",
+  "n_lines": 25,
+  "inside_old": 25,
+  "inside_new": 25,
+  "old": [
+   54,
+   41,
+   1372,
+   1902
+  ],
+  "new": [
+   54,
+   40,
+   1372,
+   1903
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-3030_m0005.jpg",
+  "n_lines": 29,
+  "inside_old": 29,
+  "inside_new": 29,
+  "old": [
+   0,
+   94,
+   1349,
+   1974
+  ],
+  "new": [
+   0,
+   88,
+   1352,
+   1976
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.006
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-3030_m0023.jpg",
+  "n_lines": 25,
+  "inside_old": 25,
+  "inside_new": 25,
+  "old": [
+   0,
+   91,
+   1341,
+   1968
+  ],
+  "new": [
+   0,
+   89,
+   1341,
+   1970
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-305_m0053.jpg",
+  "n_lines": 29,
+  "inside_old": 29,
+  "inside_new": 29,
+  "old": [
+   0,
+   22,
+   1345,
+   1905
+  ],
+  "new": [
+   0,
+   18,
+   1349,
+   1910
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.008
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-3100_c0016.jpg",
+  "n_lines": 20,
+  "inside_old": 20,
+  "inside_new": 20,
+  "old": [
+   133,
+   67,
+   1367,
+   1878
+  ],
+  "new": [
+   132,
+   67,
+   1367,
+   1879
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-3135_m0027.jpg",
+  "n_lines": 21,
+  "inside_old": 21,
+  "inside_new": 21,
+  "old": [
+   0,
+   106,
+   1271,
+   1816
+  ],
+  "new": [
+   0,
+   105,
+   1272,
+   1817
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-314_m0059.jpg",
+  "n_lines": 26,
+  "inside_old": 26,
+  "inside_new": 26,
+  "old": [
+   8,
+   55,
+   1259,
+   1919
+  ],
+  "new": [
+   7,
+   49,
+   1267,
+   1925
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.014
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-3158_c0084.jpg",
+  "n_lines": 21,
+  "inside_old": 21,
+  "inside_new": 21,
+  "old": [
+   127,
+   81,
+   1459,
+   1945
+  ],
+  "new": [
+   126,
+   77,
+   1459,
+   1945
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.003
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-3158_c0103.jpg",
+  "n_lines": 21,
+  "inside_old": 21,
+  "inside_new": 21,
+  "old": [
+   0,
+   86,
+   1267,
+   1939
+  ],
+  "new": [
+   0,
+   85,
+   1268,
+   1941
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-3167_m0043.jpg",
+  "n_lines": 29,
+  "inside_old": 29,
+  "inside_new": 29,
+  "old": [
+   25,
+   122,
+   1636,
+   2479
+  ],
+  "new": [
+   25,
+   121,
+   1638,
+   2480
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-3167_m0084.jpg",
+  "n_lines": 30,
+  "inside_old": 30,
+  "inside_new": 30,
+  "old": [
+   166,
+   119,
+   1950,
+   2869
+  ],
+  "new": [
+   165,
+   115,
+   2055,
+   2874
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.063
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-3168_m0132.jpg",
+  "n_lines": 25,
+  "inside_old": 25,
+  "inside_new": 25,
+  "old": [
+   144,
+   119,
+   1504,
+   1982
+  ],
+  "new": [
+   143,
+   119,
+   1504,
+   1982
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-3188_m0016.jpg",
+  "n_lines": 24,
+  "inside_old": 24,
+  "inside_new": 24,
+  "old": [
+   69,
+   79,
+   1875,
+   2529
+  ],
+  "new": [
+   67,
+   79,
+   1875,
+   2531
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-3209_m0006.jpg",
+  "n_lines": 30,
+  "inside_old": 30,
+  "inside_new": 30,
+  "old": [
+   250,
+   156,
+   1973,
+   2690
+  ],
+  "new": [
+   247,
+   156,
+   1973,
+   2691
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-322_c0092.jpg",
+  "n_lines": 29,
+  "inside_old": 29,
+  "inside_new": 29,
+  "old": [
+   54,
+   49,
+   1302,
+   1909
+  ],
+  "new": [
+   52,
+   48,
+   1302,
+   1911
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.003
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-3237_m0006.jpg",
+  "n_lines": 28,
+  "inside_old": 28,
+  "inside_new": 28,
+  "old": [
+   131,
+   61,
+   1434,
+   1891
+  ],
+  "new": [
+   131,
+   61,
+   1434,
+   1892
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-3237_m0007.jpg",
+  "n_lines": 32,
+  "inside_old": 32,
+  "inside_new": 32,
+  "old": [
+   0,
+   37,
+   1350,
+   1881
+  ],
+  "new": [
+   0,
+   37,
+   1352,
+   1882
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-3237_m0016.jpg",
+  "n_lines": 47,
+  "inside_old": 47,
+  "inside_new": 47,
+  "old": [
+   117,
+   33,
+   1391,
+   1875
+  ],
+  "new": [
+   116,
+   33,
+   1434,
+   1878
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.036
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-3253_c0003.jpg",
+  "n_lines": 25,
+  "inside_old": 25,
+  "inside_new": 25,
+  "old": [
+   6,
+   93,
+   1242,
+   1892
+  ],
+  "new": [
+   5,
+   92,
+   1243,
+   1893
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.003
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-3253_c0005.jpg",
+  "n_lines": 27,
+  "inside_old": 27,
+  "inside_new": 27,
+  "old": [
+   0,
+   95,
+   1235,
+   1891
+  ],
+  "new": [
+   0,
+   94,
+   1236,
+   1892
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-3285_c0024.jpg",
+  "n_lines": 30,
+  "inside_old": 30,
+  "inside_new": 30,
+  "old": [
+   151,
+   93,
+   1346,
+   1892
+  ],
+  "new": [
+   150,
+   92,
+   1347,
+   1893
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.003
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-3301_m0141.jpg",
+  "n_lines": 23,
+  "inside_old": 23,
+  "inside_new": 23,
+  "old": [
+   0,
+   20,
+   1307,
+   1880
+  ],
+  "new": [
+   0,
+   0,
+   1308,
+   1881
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.012
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-3313_c0135.jpg",
+  "n_lines": 32,
+  "inside_old": 32,
+  "inside_new": 32,
+  "old": [
+   0,
+   136,
+   1291,
+   1948
+  ],
+  "new": [
+   0,
+   134,
+   1292,
+   1951
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.004
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-3313_c0136.jpg",
+  "n_lines": 46,
+  "inside_old": 46,
+  "inside_new": 46,
+  "old": [
+   170,
+   168,
+   1342,
+   1963
+  ],
+  "new": [
+   170,
+   168,
+   1396,
+   1964
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.047
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-3313_c0143.jpg",
+  "n_lines": 12,
+  "inside_old": 12,
+  "inside_new": 12,
+  "old": [
+   84,
+   109,
+   1310,
+   1947
+  ],
+  "new": [
+   0,
+   108,
+   1310,
+   1948
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.07
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-3417_m0011.jpg",
+  "n_lines": 32,
+  "inside_old": 32,
+  "inside_new": 32,
+  "old": [
+   0,
+   46,
+   1234,
+   1921
+  ],
+  "new": [
+   0,
+   45,
+   1243,
+   1925
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.01
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-3418_m0039.jpg",
+  "n_lines": 22,
+  "inside_old": 22,
+  "inside_new": 22,
+  "old": [
+   0,
+   53,
+   1335,
+   1889
+  ],
+  "new": [
+   0,
+   51,
+   1335,
+   1892
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.003
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-3486_m0005.jpg",
+  "n_lines": 28,
+  "inside_old": 28,
+  "inside_new": 28,
+  "old": [
+   0,
+   83,
+   1377,
+   1935
+  ],
+  "new": [
+   0,
+   70,
+   1377,
+   1936
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.008
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-3627_m0033.jpg",
+  "n_lines": 31,
+  "inside_old": 31,
+  "inside_new": 31,
+  "old": [
+   0,
+   69,
+   1209,
+   1886
+  ],
+  "new": [
+   0,
+   64,
+   1233,
+   1889
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.024
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-3642_m0005.jpg",
+  "n_lines": 26,
+  "inside_old": 26,
+  "inside_new": 26,
+  "old": [
+   0,
+   86,
+   1335,
+   1919
+  ],
+  "new": [
+   0,
+   85,
+   1335,
+   1931
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.007
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-3835_m0005.jpg",
+  "n_lines": 24,
+  "inside_old": 24,
+  "inside_new": 24,
+  "old": [
+   0,
+   78,
+   1301,
+   1867
+  ],
+  "new": [
+   0,
+   77,
+   1302,
+   1867
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-3848_c0011.jpg",
+  "n_lines": 31,
+  "inside_old": 31,
+  "inside_new": 31,
+  "old": [
+   0,
+   94,
+   1249,
+   1932
+  ],
+  "new": [
+   0,
+   92,
+   1249,
+   1933
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-3848_c0012.jpg",
+  "n_lines": 25,
+  "inside_old": 25,
+  "inside_new": 25,
+  "old": [
+   76,
+   91,
+   1348,
+   1926
+  ],
+  "new": [
+   75,
+   89,
+   1348,
+   1926
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-3848_c0036.jpg",
+  "n_lines": 23,
+  "inside_old": 23,
+  "inside_new": 23,
+  "old": [
+   182,
+   96,
+   1321,
+   1943
+  ],
+  "new": [
+   181,
+   95,
+   1348,
+   1943
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.025
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-3848_c0037.jpg",
+  "n_lines": 37,
+  "inside_old": 37,
+  "inside_new": 37,
+  "old": [
+   0,
+   159,
+   1226,
+   1921
+  ],
+  "new": [
+   0,
+   158,
+   1226,
+   1921
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-3855_m0005.jpg",
+  "n_lines": 28,
+  "inside_old": 28,
+  "inside_new": 28,
+  "old": [
+   0,
+   40,
+   1251,
+   1834
+  ],
+  "new": [
+   0,
+   38,
+   1252,
+   1836
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.003
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-3870_c0027.jpg",
+  "n_lines": 29,
+  "inside_old": 29,
+  "inside_new": 29,
+  "old": [
+   0,
+   262,
+   1244,
+   2023
+  ],
+  "new": [
+   0,
+   262,
+   1244,
+   2024
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-3870_c0029.jpg",
+  "n_lines": 21,
+  "inside_old": 21,
+  "inside_new": 21,
+  "old": [
+   0,
+   265,
+   1276,
+   2030
+  ],
+  "new": [
+   0,
+   265,
+   1276,
+   2031
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-392_m0019.jpg",
+  "n_lines": 31,
+  "inside_old": 31,
+  "inside_new": 31,
+  "old": [
+   0,
+   179,
+   1238,
+   1911
+  ],
+  "new": [
+   0,
+   179,
+   1238,
+   1912
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-396_c0065.jpg",
+  "n_lines": 23,
+  "inside_old": 23,
+  "inside_new": 23,
+  "old": [
+   0,
+   169,
+   1193,
+   2028
+  ],
+  "new": [
+   0,
+   168,
+   1194,
+   2029
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-3986_c0035.jpg",
+  "n_lines": 20,
+  "inside_old": 20,
+  "inside_new": 20,
+  "old": [
+   0,
+   74,
+   1229,
+   1907
+  ],
+  "new": [
+   0,
+   63,
+   1230,
+   1907
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.007
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-3986_c0043.jpg",
+  "n_lines": 27,
+  "inside_old": 27,
+  "inside_new": 27,
+  "old": [
+   0,
+   73,
+   1206,
+   1883
+  ],
+  "new": [
+   0,
+   65,
+   1206,
+   1887
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.007
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-3_c0027.jpg",
+  "n_lines": 26,
+  "inside_old": 21,
+  "inside_new": 26,
+  "old": [
+   0,
+   96,
+   1248,
+   1782
+  ],
+  "new": [
+   0,
+   92,
+   1249,
+   2078
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.179
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-3_c0103.jpg",
+  "n_lines": 32,
+  "inside_old": 32,
+  "inside_new": 32,
+  "old": [
+   0,
+   90,
+   1182,
+   2117
+  ],
+  "new": [
+   0,
+   90,
+   1182,
+   2119
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-4023_m0033.jpg",
+  "n_lines": 27,
+  "inside_old": 27,
+  "inside_new": 27,
+  "old": [
+   0,
+   87,
+   1267,
+   1874
+  ],
+  "new": [
+   0,
+   87,
+   1267,
+   1876
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-405_m0047.jpg",
+  "n_lines": 32,
+  "inside_old": 32,
+  "inside_new": 32,
+  "old": [
+   0,
+   85,
+   1349,
+   2100
+  ],
+  "new": [
+   0,
+   82,
+   1350,
+   2101
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.003
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-4198_m0025.jpg",
+  "n_lines": 24,
+  "inside_old": 24,
+  "inside_new": 24,
+  "old": [
+   0,
+   55,
+   1322,
+   1929
+  ],
+  "new": [
+   0,
+   53,
+   1323,
+   1930
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-419_m0229.jpg",
+  "n_lines": 44,
+  "inside_old": 44,
+  "inside_new": 44,
+  "old": [
+   22,
+   64,
+   1266,
+   1907
+  ],
+  "new": [
+   22,
+   63,
+   1267,
+   1909
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-4241_c0011.jpg",
+  "n_lines": 22,
+  "inside_old": 22,
+  "inside_new": 22,
+  "old": [
+   0,
+   45,
+   1176,
+   1898
+  ],
+  "new": [
+   0,
+   45,
+   1177,
+   1899
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-4241_c0337.jpg",
+  "n_lines": 8,
+  "inside_old": 8,
+  "inside_new": 8,
+  "old": [
+   26,
+   87,
+   1176,
+   1884
+  ],
+  "new": [
+   0,
+   87,
+   1176,
+   1884
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.023
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-4406_m0009.jpg",
+  "n_lines": 31,
+  "inside_old": 31,
+  "inside_new": 31,
+  "old": [
+   0,
+   55,
+   1192,
+   1757
+  ],
+  "new": [
+   0,
+   55,
+   1193,
+   1758
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-4411_m0237.jpg",
+  "n_lines": 17,
+  "inside_old": 17,
+  "inside_new": 17,
+  "old": [
+   18,
+   76,
+   1316,
+   1950
+  ],
+  "new": [
+   0,
+   30,
+   1323,
+   1954
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.046
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-4411_m0398.jpg",
+  "n_lines": 40,
+  "inside_old": 40,
+  "inside_new": 40,
+  "old": [
+   42,
+   52,
+   1366,
+   1956
+  ],
+  "new": [
+   41,
+   34,
+   1366,
+   1957
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.011
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-4424_m0351.jpg",
+  "n_lines": 26,
+  "inside_old": 26,
+  "inside_new": 26,
+  "old": [
+   0,
+   115,
+   1303,
+   1949
+  ],
+  "new": [
+   0,
+   114,
+   1304,
+   1950
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-462_m0015.jpg",
+  "n_lines": 38,
+  "inside_old": 31,
+  "inside_new": 38,
+  "old": [
+   0,
+   432,
+   1219,
+   1832
+  ],
+  "new": [
+   0,
+   53,
+   1220,
+   1871
+  ],
+  "contains": true,
+  "watermark": true,
+  "area_ratio": 1.3
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-4845_m0032.jpg",
+  "n_lines": 38,
+  "inside_old": 38,
+  "inside_new": 38,
+  "old": [
+   73,
+   48,
+   1328,
+   1899
+  ],
+  "new": [
+   71,
+   47,
+   1354,
+   1900
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.023
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-4864_m0434.jpg",
+  "n_lines": 29,
+  "inside_old": 29,
+  "inside_new": 29,
+  "old": [
+   236,
+   56,
+   1376,
+   1844
+  ],
+  "new": [
+   236,
+   56,
+   1376,
+   1844
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.0
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-4890_c0050.jpg",
+  "n_lines": 21,
+  "inside_old": 21,
+  "inside_new": 21,
+  "old": [
+   119,
+   100,
+   1351,
+   1750
+  ],
+  "new": [
+   119,
+   100,
+   1351,
+   1751
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-4892_m0007.jpg",
+  "n_lines": 26,
+  "inside_old": 26,
+  "inside_new": 26,
+  "old": [
+   0,
+   73,
+   1292,
+   1911
+  ],
+  "new": [
+   0,
+   47,
+   1305,
+   1915
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.027
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-490_c0010.jpg",
+  "n_lines": 25,
+  "inside_old": 25,
+  "inside_new": 25,
+  "old": [
+   103,
+   164,
+   1306,
+   1895
+  ],
+  "new": [
+   102,
+   162,
+   1347,
+   1932
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.058
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-4939_m0071.jpg",
+  "n_lines": 28,
+  "inside_old": 28,
+  "inside_new": 28,
+  "old": [
+   60,
+   37,
+   1228,
+   1889
+  ],
+  "new": [
+   0,
+   36,
+   1229,
+   1891
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.054
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-493_c0015.jpg",
+  "n_lines": 27,
+  "inside_old": 27,
+  "inside_new": 27,
+  "old": [
+   0,
+   82,
+   1411,
+   2133
+  ],
+  "new": [
+   0,
+   71,
+   1416,
+   2140
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.012
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-498_m0014.jpg",
+  "n_lines": 25,
+  "inside_old": 25,
+  "inside_new": 25,
+  "old": [
+   24,
+   89,
+   1376,
+   1940
+  ],
+  "new": [
+   22,
+   87,
+   1376,
+   1944
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.005
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-498_m0017.jpg",
+  "n_lines": 25,
+  "inside_old": 25,
+  "inside_new": 25,
+  "old": [
+   0,
+   63,
+   1276,
+   1917
+  ],
+  "new": [
+   0,
+   60,
+   1276,
+   1926
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.006
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-5000_m0010.jpg",
+  "n_lines": 33,
+  "inside_old": 33,
+  "inside_new": 33,
+  "old": [
+   204,
+   119,
+   1464,
+   1936
+  ],
+  "new": [
+   204,
+   119,
+   1464,
+   1936
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.0
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-5117_m0075.jpg",
+  "n_lines": 29,
+  "inside_old": 29,
+  "inside_new": 29,
+  "old": [
+   0,
+   106,
+   1244,
+   1940
+  ],
+  "new": [
+   0,
+   105,
+   1245,
+   1942
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-512_c0136.jpg",
+  "n_lines": 24,
+  "inside_old": 3,
+  "inside_new": 24,
+  "old": [
+   152,
+   436,
+   1344,
+   787
+  ],
+  "new": [
+   141,
+   110,
+   1413,
+   2122
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 6.117
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-5178_m0038.jpg",
+  "n_lines": 35,
+  "inside_old": 35,
+  "inside_new": 35,
+  "old": [
+   40,
+   86,
+   1342,
+   2080
+  ],
+  "new": [
+   38,
+   84,
+   1342,
+   2082
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.004
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-5178_m0132.jpg",
+  "n_lines": 26,
+  "inside_old": 26,
+  "inside_new": 26,
+  "old": [
+   62,
+   95,
+   1278,
+   2093
+  ],
+  "new": [
+   61,
+   90,
+   1357,
+   2095
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.07
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-5178_m0177.jpg",
+  "n_lines": 22,
+  "inside_old": 22,
+  "inside_new": 22,
+  "old": [
+   0,
+   194,
+   1180,
+   1989
+  ],
+  "new": [
+   0,
+   194,
+   1181,
+   1989
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-5195_c0039.jpg",
+  "n_lines": 22,
+  "inside_old": 22,
+  "inside_new": 22,
+  "old": [
+   28,
+   85,
+   1326,
+   1975
+  ],
+  "new": [
+   0,
+   72,
+   1333,
+   1976
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.035
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-5195_c0046.jpg",
+  "n_lines": 30,
+  "inside_old": 30,
+  "inside_new": 30,
+  "old": [
+   111,
+   136,
+   1346,
+   1980
+  ],
+  "new": [
+   111,
+   97,
+   1346,
+   1981
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.022
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-51_c0015.jpg",
+  "n_lines": 24,
+  "inside_old": 24,
+  "inside_new": 24,
+  "old": [
+   0,
+   107,
+   1334,
+   2091
+  ],
+  "new": [
+   0,
+   106,
+   1335,
+   2091
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-5206_m0009.jpg",
+  "n_lines": 24,
+  "inside_old": 24,
+  "inside_new": 24,
+  "old": [
+   0,
+   25,
+   1356,
+   1882
+  ],
+  "new": [
+   0,
+   24,
+   1356,
+   1883
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-5206_m0011.jpg",
+  "n_lines": 19,
+  "inside_old": 19,
+  "inside_new": 19,
+  "old": [
+   0,
+   29,
+   1284,
+   1879
+  ],
+  "new": [
+   0,
+   28,
+   1285,
+   1880
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-5206_m0026.jpg",
+  "n_lines": 20,
+  "inside_old": 11,
+  "inside_new": 20,
+  "old": [
+   147,
+   843,
+   1334,
+   1883
+  ],
+  "new": [
+   86,
+   70,
+   1336,
+   1893
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.846
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-5206_m0037.jpg",
+  "n_lines": 12,
+  "inside_old": 12,
+  "inside_new": 12,
+  "old": [
+   13,
+   59,
+   1225,
+   1895
+  ],
+  "new": [
+   13,
+   59,
+   1225,
+   1896
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-5206_m0041.jpg",
+  "n_lines": 28,
+  "inside_old": 28,
+  "inside_new": 28,
+  "old": [
+   0,
+   33,
+   1270,
+   1788
+  ],
+  "new": [
+   0,
+   32,
+   1270,
+   1860
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.042
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-5206_m0073.jpg",
+  "n_lines": 16,
+  "inside_old": 16,
+  "inside_new": 16,
+  "old": [
+   0,
+   26,
+   1291,
+   1805
+  ],
+  "new": [
+   0,
+   24,
+   1292,
+   1805
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-5206_m0077.jpg",
+  "n_lines": 20,
+  "inside_old": 20,
+  "inside_new": 20,
+  "old": [
+   0,
+   38,
+   1302,
+   1820
+  ],
+  "new": [
+   0,
+   37,
+   1304,
+   1822
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.003
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-5206_m0095.jpg",
+  "n_lines": 41,
+  "inside_old": 41,
+  "inside_new": 41,
+  "old": [
+   0,
+   76,
+   1257,
+   1821
+  ],
+  "new": [
+   0,
+   75,
+   1259,
+   1823
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.003
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-5206_m0101.jpg",
+  "n_lines": 5,
+  "inside_old": 5,
+  "inside_new": 5,
+  "old": [
+   0,
+   31,
+   1315,
+   1881
+  ],
+  "new": [
+   0,
+   30,
+   1315,
+   1883
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-5206_m0105.jpg",
+  "n_lines": 20,
+  "inside_old": 20,
+  "inside_new": 20,
+  "old": [
+   0,
+   33,
+   1342,
+   1896
+  ],
+  "new": [
+   0,
+   32,
+   1343,
+   1897
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-5206_m0146.jpg",
+  "n_lines": 26,
+  "inside_old": 26,
+  "inside_new": 26,
+  "old": [
+   140,
+   65,
+   1388,
+   1812
+  ],
+  "new": [
+   139,
+   65,
+   1388,
+   1812
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-5206_m0149.jpg",
+  "n_lines": 27,
+  "inside_old": 27,
+  "inside_new": 27,
+  "old": [
+   0,
+   46,
+   1308,
+   1763
+  ],
+  "new": [
+   0,
+   46,
+   1309,
+   1764
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-5206_m0150.jpg",
+  "n_lines": 33,
+  "inside_old": 33,
+  "inside_new": 33,
+  "old": [
+   125,
+   53,
+   1388,
+   1735
+  ],
+  "new": [
+   124,
+   52,
+   1388,
+   1735
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-5206_m0201.jpg",
+  "n_lines": 39,
+  "inside_old": 39,
+  "inside_new": 39,
+  "old": [
+   5,
+   48,
+   1279,
+   1865
+  ],
+  "new": [
+   5,
+   48,
+   1279,
+   1865
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.0
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-5206_m0231.jpg",
+  "n_lines": 38,
+  "inside_old": 38,
+  "inside_new": 38,
+  "old": [
+   0,
+   39,
+   1334,
+   1871
+  ],
+  "new": [
+   0,
+   37,
+   1335,
+   1871
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-5206_m0289.jpg",
+  "n_lines": 27,
+  "inside_old": 27,
+  "inside_new": 27,
+  "old": [
+   0,
+   20,
+   1320,
+   1842
+  ],
+  "new": [
+   0,
+   19,
+   1321,
+   1842
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-5221_m0009.jpg",
+  "n_lines": 37,
+  "inside_old": 37,
+  "inside_new": 37,
+  "old": [
+   54,
+   50,
+   1377,
+   2000
+  ],
+  "new": [
+   0,
+   41,
+   1378,
+   2001
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.047
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-5221_m0011.jpg",
+  "n_lines": 35,
+  "inside_old": 35,
+  "inside_new": 35,
+  "old": [
+   0,
+   41,
+   1370,
+   1996
+  ],
+  "new": [
+   0,
+   40,
+   1371,
+   1997
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-5221_m0014.jpg",
+  "n_lines": 31,
+  "inside_old": 31,
+  "inside_new": 31,
+  "old": [
+   54,
+   35,
+   1407,
+   1997
+  ],
+  "new": [
+   55,
+   34,
+   1407,
+   1998
+  ],
+  "contains": false,
+  "watermark": false,
+  "area_ratio": 1.0
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-5227_m0285.jpg",
+  "n_lines": 19,
+  "inside_old": 19,
+  "inside_new": 19,
+  "old": [
+   0,
+   20,
+   1309,
+   1810
+  ],
+  "new": [
+   0,
+   19,
+   1310,
+   1810
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-5227_m1499.jpg",
+  "n_lines": 29,
+  "inside_old": 29,
+  "inside_new": 29,
+  "old": [
+   0,
+   36,
+   1397,
+   2045
+  ],
+  "new": [
+   0,
+   35,
+   1406,
+   2077
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.023
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-5231_m0016.jpg",
+  "n_lines": 28,
+  "inside_old": 28,
+  "inside_new": 28,
+  "old": [
+   53,
+   14,
+   1344,
+   1881
+  ],
+  "new": [
+   51,
+   0,
+   1418,
+   1883
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.068
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-5231_m0052.jpg",
+  "n_lines": 24,
+  "inside_old": 13,
+  "inside_new": 24,
+  "old": [
+   39,
+   25,
+   1418,
+   1066
+  ],
+  "new": [
+   39,
+   23,
+   1418,
+   1918
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.82
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-5234_m0002.jpg",
+  "n_lines": 22,
+  "inside_old": 22,
+  "inside_new": 22,
+  "old": [
+   43,
+   85,
+   1374,
+   2023
+  ],
+  "new": [
+   42,
+   80,
+   1374,
+   2025
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.004
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-5291_m0069.jpg",
+  "n_lines": 33,
+  "inside_old": 33,
+  "inside_new": 33,
+  "old": [
+   0,
+   28,
+   1376,
+   1966
+  ],
+  "new": [
+   0,
+   27,
+   1377,
+   1968
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-5312_m0111.jpg",
+  "n_lines": 39,
+  "inside_old": 26,
+  "inside_new": 39,
+  "old": [
+   63,
+   1162,
+   1630,
+   2752
+  ],
+  "new": [
+   15,
+   108,
+   1630,
+   2753
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.714
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-5313_m0006.jpg",
+  "n_lines": 22,
+  "inside_old": 22,
+  "inside_new": 22,
+  "old": [
+   52,
+   98,
+   1409,
+   2050
+  ],
+  "new": [
+   52,
+   96,
+   1409,
+   2051
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-5313_m0093.jpg",
+  "n_lines": 26,
+  "inside_old": 26,
+  "inside_new": 26,
+  "old": [
+   0,
+   54,
+   1302,
+   1960
+  ],
+  "new": [
+   0,
+   54,
+   1303,
+   1962
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-5374_m0057.jpg",
+  "n_lines": 45,
+  "inside_old": 45,
+  "inside_new": 45,
+  "old": [
+   0,
+   87,
+   1764,
+   2655
+  ],
+  "new": [
+   0,
+   85,
+   1765,
+   2659
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.003
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-5492_c0011.jpg",
+  "n_lines": 20,
+  "inside_old": 20,
+  "inside_new": 20,
+  "old": [
+   70,
+   40,
+   1341,
+   1822
+  ],
+  "new": [
+   0,
+   21,
+   1342,
+   1835
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.075
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-5627_c0014.jpg",
+  "n_lines": 29,
+  "inside_old": 29,
+  "inside_new": 29,
+  "old": [
+   129,
+   99,
+   1414,
+   2113
+  ],
+  "new": [
+   129,
+   97,
+   1414,
+   2113
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-5716_c0204.jpg",
+  "n_lines": 25,
+  "inside_old": 25,
+  "inside_new": 25,
+  "old": [
+   126,
+   85,
+   1357,
+   1978
+  ],
+  "new": [
+   125,
+   82,
+   1357,
+   1979
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.003
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-573_c0021.jpg",
+  "n_lines": 28,
+  "inside_old": 28,
+  "inside_new": 28,
+  "old": [
+   0,
+   116,
+   1275,
+   1977
+  ],
+  "new": [
+   0,
+   115,
+   1275,
+   1979
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-5797_m0005.jpg",
+  "n_lines": 26,
+  "inside_old": 25,
+  "inside_new": 25,
+  "old": [
+   13,
+   94,
+   1367,
+   2076
+  ],
+  "new": [
+   12,
+   73,
+   1373,
+   2079
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.017
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-5821_m0022_Marizehc.jpg",
+  "n_lines": 23,
+  "inside_old": 23,
+  "inside_new": 23,
+  "old": [
+   48,
+   38,
+   1312,
+   1840
+  ],
+  "new": [
+   46,
+   37,
+   1312,
+   1841
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.003
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-5825_m0012_marizehc.jpg",
+  "n_lines": 28,
+  "inside_old": 28,
+  "inside_new": 28,
+  "old": [
+   125,
+   110,
+   1781,
+   2551
+  ],
+  "new": [
+   125,
+   109,
+   1781,
+   2552
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-5828_m0013_marizehc.jpg",
+  "n_lines": 24,
+  "inside_old": 24,
+  "inside_new": 24,
+  "old": [
+   59,
+   53,
+   1310,
+   1887
+  ],
+  "new": [
+   0,
+   50,
+   1311,
+   1888
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.05
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-5833_c0013.jpg",
+  "n_lines": 23,
+  "inside_old": 23,
+  "inside_new": 23,
+  "old": [
+   0,
+   115,
+   1204,
+   1880
+  ],
+  "new": [
+   0,
+   114,
+   1204,
+   1881
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-607_c0020.jpg",
+  "n_lines": 31,
+  "inside_old": 31,
+  "inside_new": 31,
+  "old": [
+   22,
+   91,
+   1290,
+   1908
+  ],
+  "new": [
+   19,
+   90,
+   1367,
+   1911
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.065
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-607_c0024.jpg",
+  "n_lines": 31,
+  "inside_old": 31,
+  "inside_new": 31,
+  "old": [
+   18,
+   124,
+   1279,
+   1910
+  ],
+  "new": [
+   0,
+   83,
+   1367,
+   1912
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.11
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-60_c0026.jpg",
+  "n_lines": 24,
+  "inside_old": 24,
+  "inside_new": 24,
+  "old": [
+   213,
+   93,
+   1357,
+   1892
+  ],
+  "new": [
+   213,
+   90,
+   1357,
+   1893
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-60_c0208.jpg",
+  "n_lines": 24,
+  "inside_old": 24,
+  "inside_new": 24,
+  "old": [
+   152,
+   119,
+   1381,
+   1802
+  ],
+  "new": [
+   151,
+   119,
+   1381,
+   1804
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-61_c0008.jpg",
+  "n_lines": 29,
+  "inside_old": 29,
+  "inside_new": 29,
+  "old": [
+   78,
+   74,
+   1317,
+   1901
+  ],
+  "new": [
+   77,
+   73,
+   1317,
+   1902
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-623_m0033.jpg",
+  "n_lines": 25,
+  "inside_old": 25,
+  "inside_new": 25,
+  "old": [
+   0,
+   47,
+   1334,
+   1872
+  ],
+  "new": [
+   0,
+   45,
+   1336,
+   1920
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.029
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-628_c0018.jpg",
+  "n_lines": 19,
+  "inside_old": 19,
+  "inside_new": 19,
+  "old": [
+   103,
+   149,
+   1467,
+   2177
+  ],
+  "new": [
+   102,
+   145,
+   1530,
+   2179
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.05
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-641_m0016.jpg",
+  "n_lines": 27,
+  "inside_old": 27,
+  "inside_new": 27,
+  "old": [
+   212,
+   64,
+   1903,
+   2563
+  ],
+  "new": [
+   211,
+   62,
+   1903,
+   2565
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-642_c0140.jpg",
+  "n_lines": 32,
+  "inside_old": 32,
+  "inside_new": 32,
+  "old": [
+   120,
+   73,
+   1397,
+   1905
+  ],
+  "new": [
+   120,
+   72,
+   1397,
+   1906
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-642_c0143.jpg",
+  "n_lines": 31,
+  "inside_old": 31,
+  "inside_new": 31,
+  "old": [
+   9,
+   69,
+   1232,
+   1902
+  ],
+  "new": [
+   9,
+   69,
+   1233,
+   1903
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-65_m0033.jpg",
+  "n_lines": 28,
+  "inside_old": 28,
+  "inside_new": 28,
+  "old": [
+   4,
+   100,
+   1357,
+   1977
+  ],
+  "new": [
+   4,
+   100,
+   1359,
+   1979
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.003
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-6692_m0009.jpg",
+  "n_lines": 33,
+  "inside_old": 33,
+  "inside_new": 33,
+  "old": [
+   18,
+   71,
+   1623,
+   2684
+  ],
+  "new": [
+   18,
+   70,
+   1623,
+   2684
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.0
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-675_m0307.jpg",
+  "n_lines": 23,
+  "inside_old": 23,
+  "inside_new": 23,
+  "old": [
+   0,
+   44,
+   1365,
+   2029
+  ],
+  "new": [
+   0,
+   42,
+   1365,
+   2030
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-687_m0017.jpg",
+  "n_lines": 29,
+  "inside_old": 29,
+  "inside_new": 29,
+  "old": [
+   0,
+   53,
+   1706,
+   2613
+  ],
+  "new": [
+   0,
+   47,
+   1712,
+   2618
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.008
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-687_m0018.jpg",
+  "n_lines": 43,
+  "inside_old": 43,
+  "inside_new": 43,
+  "old": [
+   177,
+   69,
+   1879,
+   2617
+  ],
+  "new": [
+   176,
+   67,
+   1879,
+   2617
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-687_m0019.jpg",
+  "n_lines": 40,
+  "inside_old": 40,
+  "inside_new": 40,
+  "old": [
+   0,
+   52,
+   1706,
+   2612
+  ],
+  "new": [
+   0,
+   48,
+   1712,
+   2617
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.007
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-689_c0258.jpg",
+  "n_lines": 22,
+  "inside_old": 22,
+  "inside_new": 22,
+  "old": [
+   91,
+   89,
+   1407,
+   2017
+  ],
+  "new": [
+   90,
+   85,
+   1408,
+   2021
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.006
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-689_c0259.jpg",
+  "n_lines": 23,
+  "inside_old": 23,
+  "inside_new": 23,
+  "old": [
+   0,
+   97,
+   1303,
+   2017
+  ],
+  "new": [
+   0,
+   94,
+   1304,
+   2019
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.003
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-689_c0260.jpg",
+  "n_lines": 24,
+  "inside_old": 24,
+  "inside_new": 24,
+  "old": [
+   93,
+   85,
+   1414,
+   2016
+  ],
+  "new": [
+   92,
+   83,
+   1415,
+   2019
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.004
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-69_c0033.jpg",
+  "n_lines": 28,
+  "inside_old": 28,
+  "inside_new": 28,
+  "old": [
+   0,
+   110,
+   1345,
+   1980
+  ],
+  "new": [
+   0,
+   110,
+   1346,
+   1981
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7084_m0011.jpg",
+  "n_lines": 22,
+  "inside_old": 22,
+  "inside_new": 22,
+  "old": [
+   0,
+   47,
+   1293,
+   1944
+  ],
+  "new": [
+   0,
+   41,
+   1305,
+   1959
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.02
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7084_m0079.jpg",
+  "n_lines": 19,
+  "inside_old": 19,
+  "inside_new": 19,
+  "old": [
+   43,
+   51,
+   1313,
+   1950
+  ],
+  "new": [
+   43,
+   42,
+   1313,
+   1953
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.006
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7101_m0055.jpg",
+  "n_lines": 27,
+  "inside_old": 27,
+  "inside_new": 27,
+  "old": [
+   0,
+   54,
+   1332,
+   1907
+  ],
+  "new": [
+   0,
+   45,
+   1335,
+   1908
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.008
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7116_c0039.jpg",
+  "n_lines": 25,
+  "inside_old": 25,
+  "inside_new": 25,
+  "old": [
+   0,
+   230,
+   1251,
+   2095
+  ],
+  "new": [
+   0,
+   229,
+   1255,
+   2098
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.005
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7116_c0083.jpg",
+  "n_lines": 29,
+  "inside_old": 29,
+  "inside_new": 29,
+  "old": [
+   0,
+   199,
+   1224,
+   2067
+  ],
+  "new": [
+   0,
+   197,
+   1225,
+   2067
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7116_c0089.jpg",
+  "n_lines": 20,
+  "inside_old": 20,
+  "inside_new": 20,
+  "old": [
+   0,
+   199,
+   1224,
+   2062
+  ],
+  "new": [
+   0,
+   198,
+   1225,
+   2065
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.003
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7116_c0099.jpg",
+  "n_lines": 26,
+  "inside_old": 26,
+  "inside_new": 26,
+  "old": [
+   0,
+   199,
+   1227,
+   2068
+  ],
+  "new": [
+   0,
+   197,
+   1228,
+   2069
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7120_m0007.jpg",
+  "n_lines": 36,
+  "inside_old": 35,
+  "inside_new": 36,
+  "old": [
+   0,
+   101,
+   1259,
+   1984
+  ],
+  "new": [
+   0,
+   21,
+   1266,
+   1988
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.05
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7120_m0037.jpg",
+  "n_lines": 17,
+  "inside_old": 17,
+  "inside_new": 17,
+  "old": [
+   22,
+   35,
+   1211,
+   1867
+  ],
+  "new": [
+   22,
+   33,
+   1211,
+   1868
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7123_c0031.jpg",
+  "n_lines": 28,
+  "inside_old": 28,
+  "inside_new": 28,
+  "old": [
+   0,
+   140,
+   1255,
+   1961
+  ],
+  "new": [
+   0,
+   138,
+   1260,
+   1966
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.008
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7123_c0052.jpg",
+  "n_lines": 32,
+  "inside_old": 32,
+  "inside_new": 32,
+  "old": [
+   129,
+   133,
+   1397,
+   1948
+  ],
+  "new": [
+   126,
+   131,
+   1397,
+   1950
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.005
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7123_c0096.jpg",
+  "n_lines": 21,
+  "inside_old": 21,
+  "inside_new": 21,
+  "old": [
+   93,
+   73,
+   1374,
+   1901
+  ],
+  "new": [
+   91,
+   72,
+   1374,
+   1904
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.004
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7123_c0130.jpg",
+  "n_lines": 25,
+  "inside_old": 25,
+  "inside_new": 25,
+  "old": [
+   137,
+   83,
+   1395,
+   1914
+  ],
+  "new": [
+   137,
+   83,
+   1395,
+   1916
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7123_c0151.jpg",
+  "n_lines": 31,
+  "inside_old": 31,
+  "inside_new": 31,
+  "old": [
+   23,
+   84,
+   1226,
+   1912
+  ],
+  "new": [
+   23,
+   84,
+   1227,
+   1914
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7123_c0167.jpg",
+  "n_lines": 24,
+  "inside_old": 24,
+  "inside_new": 24,
+  "old": [
+   7,
+   111,
+   1185,
+   1918
+  ],
+  "new": [
+   7,
+   111,
+   1186,
+   1918
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7123_c0190.jpg",
+  "n_lines": 29,
+  "inside_old": 29,
+  "inside_new": 29,
+  "old": [
+   89,
+   116,
+   1329,
+   1956
+  ],
+  "new": [
+   88,
+   115,
+   1397,
+   1958
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.057
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7123_c0257.jpg",
+  "n_lines": 34,
+  "inside_old": 34,
+  "inside_new": 34,
+  "old": [
+   8,
+   94,
+   1177,
+   1933
+  ],
+  "new": [
+   8,
+   92,
+   1179,
+   1937
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.005
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7152_m0051.jpg",
+  "n_lines": 27,
+  "inside_old": 27,
+  "inside_new": 27,
+  "old": [
+   0,
+   54,
+   1354,
+   1938
+  ],
+  "new": [
+   0,
+   52,
+   1355,
+   1939
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7152_m0067.jpg",
+  "n_lines": 21,
+  "inside_old": 21,
+  "inside_new": 21,
+  "old": [
+   0,
+   34,
+   1358,
+   1934
+  ],
+  "new": [
+   0,
+   28,
+   1369,
+   1957
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.023
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7152_m0089.jpg",
+  "n_lines": 23,
+  "inside_old": 23,
+  "inside_new": 23,
+  "old": [
+   0,
+   48,
+   1325,
+   1949
+  ],
+  "new": [
+   0,
+   46,
+   1326,
+   1950
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7152_m0096.jpg",
+  "n_lines": 30,
+  "inside_old": 30,
+  "inside_new": 30,
+  "old": [
+   82,
+   44,
+   1418,
+   1945
+  ],
+  "new": [
+   81,
+   42,
+   1418,
+   1949
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.004
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7152_m0112.jpg",
+  "n_lines": 37,
+  "inside_old": 37,
+  "inside_new": 37,
+  "old": [
+   29,
+   40,
+   1364,
+   1948
+  ],
+  "new": [
+   25,
+   38,
+   1418,
+   1951
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.046
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7152_m0124.jpg",
+  "n_lines": 29,
+  "inside_old": 29,
+  "inside_new": 29,
+  "old": [
+   127,
+   42,
+   1418,
+   1951
+  ],
+  "new": [
+   126,
+   41,
+   1418,
+   1952
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7152_m0149.jpg",
+  "n_lines": 29,
+  "inside_old": 29,
+  "inside_new": 29,
+  "old": [
+   0,
+   29,
+   1355,
+   1932
+  ],
+  "new": [
+   0,
+   27,
+   1356,
+   1934
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.003
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7152_m0250.jpg",
+  "n_lines": 18,
+  "inside_old": 18,
+  "inside_new": 18,
+  "old": [
+   100,
+   55,
+   1413,
+   1953
+  ],
+  "new": [
+   98,
+   54,
+   1418,
+   1955
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.007
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7152_m0254.jpg",
+  "n_lines": 22,
+  "inside_old": 22,
+  "inside_new": 22,
+  "old": [
+   94,
+   53,
+   1413,
+   1954
+  ],
+  "new": [
+   92,
+   52,
+   1418,
+   1955
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.006
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7152_m0308.jpg",
+  "n_lines": 21,
+  "inside_old": 21,
+  "inside_new": 21,
+  "old": [
+   89,
+   53,
+   1418,
+   1926
+  ],
+  "new": [
+   89,
+   53,
+   1418,
+   1927
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7152_m0338.jpg",
+  "n_lines": 19,
+  "inside_old": 19,
+  "inside_new": 19,
+  "old": [
+   74,
+   64,
+   1404,
+   1950
+  ],
+  "new": [
+   72,
+   58,
+   1418,
+   1956
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.018
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7152_m0345.jpg",
+  "n_lines": 31,
+  "inside_old": 23,
+  "inside_new": 31,
+  "old": [
+   0,
+   59,
+   1310,
+   1417
+  ],
+  "new": [
+   0,
+   56,
+   1321,
+   1943
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.401
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7165_m0063.jpg",
+  "n_lines": 29,
+  "inside_old": 29,
+  "inside_new": 29,
+  "old": [
+   19,
+   44,
+   1300,
+   1908
+  ],
+  "new": [
+   0,
+   33,
+   1302,
+   1920
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.029
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7196_m0015.jpg",
+  "n_lines": 24,
+  "inside_old": 24,
+  "inside_new": 24,
+  "old": [
+   0,
+   41,
+   1316,
+   1915
+  ],
+  "new": [
+   0,
+   39,
+   1317,
+   1915
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7196_m0063.jpg",
+  "n_lines": 25,
+  "inside_old": 25,
+  "inside_new": 25,
+  "old": [
+   0,
+   46,
+   1285,
+   1902
+  ],
+  "new": [
+   0,
+   35,
+   1287,
+   1903
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.008
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7196_m0077.jpg",
+  "n_lines": 25,
+  "inside_old": 15,
+  "inside_new": 25,
+  "old": [
+   26,
+   731,
+   1260,
+   1891
+  ],
+  "new": [
+   17,
+   41,
+   1260,
+   1892
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.607
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7196_m0137.jpg",
+  "n_lines": 30,
+  "inside_old": 30,
+  "inside_new": 30,
+  "old": [
+   3,
+   59,
+   1326,
+   1910
+  ],
+  "new": [
+   0,
+   31,
+   1326,
+   1914
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.02
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-71_c0082.jpg",
+  "n_lines": 24,
+  "inside_old": 24,
+  "inside_new": 24,
+  "old": [
+   80,
+   140,
+   1333,
+   1926
+  ],
+  "new": [
+   80,
+   104,
+   1333,
+   2007
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.066
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7203_m0065.jpg",
+  "n_lines": 33,
+  "inside_old": 32,
+  "inside_new": 33,
+  "old": [
+   0,
+   232,
+   1317,
+   1928
+  ],
+  "new": [
+   0,
+   52,
+   1332,
+   1931
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.121
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7203_m0106.jpg",
+  "n_lines": 27,
+  "inside_old": 27,
+  "inside_new": 27,
+  "old": [
+   43,
+   65,
+   1342,
+   1930
+  ],
+  "new": [
+   38,
+   62,
+   1378,
+   1931
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.034
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7203_m0130.jpg",
+  "n_lines": 13,
+  "inside_old": 13,
+  "inside_new": 13,
+  "old": [
+   22,
+   83,
+   1378,
+   1934
+  ],
+  "new": [
+   22,
+   82,
+   1378,
+   1935
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7204_c0011.jpg",
+  "n_lines": 30,
+  "inside_old": 30,
+  "inside_new": 30,
+  "old": [
+   0,
+   75,
+   1182,
+   1931
+  ],
+  "new": [
+   0,
+   75,
+   1183,
+   1932
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7204_c0023.jpg",
+  "n_lines": 27,
+  "inside_old": 27,
+  "inside_new": 27,
+  "old": [
+   0,
+   88,
+   1212,
+   1941
+  ],
+  "new": [
+   0,
+   88,
+   1213,
+   1943
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7218_m0011.jpg",
+  "n_lines": 23,
+  "inside_old": 23,
+  "inside_new": 23,
+  "old": [
+   0,
+   48,
+   1207,
+   1861
+  ],
+  "new": [
+   0,
+   45,
+   1217,
+   1870
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.015
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7218_m0042.jpg",
+  "n_lines": 22,
+  "inside_old": 22,
+  "inside_new": 22,
+  "old": [
+   48,
+   51,
+   1354,
+   1871
+  ],
+  "new": [
+   47,
+   50,
+   1354,
+   1872
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7218_m0043.jpg",
+  "n_lines": 22,
+  "inside_old": 22,
+  "inside_new": 22,
+  "old": [
+   0,
+   46,
+   1231,
+   1873
+  ],
+  "new": [
+   0,
+   45,
+   1232,
+   1874
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7218_m0122.jpg",
+  "n_lines": 32,
+  "inside_old": 32,
+  "inside_new": 32,
+  "old": [
+   116,
+   75,
+   1406,
+   1888
+  ],
+  "new": [
+   116,
+   73,
+   1406,
+   1888
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7225_m0027.jpg",
+  "n_lines": 22,
+  "inside_old": 22,
+  "inside_new": 22,
+  "old": [
+   0,
+   50,
+   1286,
+   1915
+  ],
+  "new": [
+   0,
+   35,
+   1297,
+   1917
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.018
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7225_m0131.jpg",
+  "n_lines": 30,
+  "inside_old": 30,
+  "inside_new": 30,
+  "old": [
+   0,
+   43,
+   1299,
+   1910
+  ],
+  "new": [
+   0,
+   28,
+   1300,
+   1911
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.009
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7225_m0147.jpg",
+  "n_lines": 16,
+  "inside_old": 16,
+  "inside_new": 16,
+  "old": [
+   0,
+   33,
+   1318,
+   1904
+  ],
+  "new": [
+   3,
+   29,
+   1319,
+   1913
+  ],
+  "contains": false,
+  "watermark": false,
+  "area_ratio": 1.005
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7225_m0151.jpg",
+  "n_lines": 25,
+  "inside_old": 25,
+  "inside_new": 25,
+  "old": [
+   0,
+   101,
+   1317,
+   1911
+  ],
+  "new": [
+   0,
+   101,
+   1317,
+   1913
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7225_m0193.jpg",
+  "n_lines": 18,
+  "inside_old": 9,
+  "inside_new": 18,
+  "old": [
+   1,
+   796,
+   1309,
+   1912
+  ],
+  "new": [
+   0,
+   30,
+   1313,
+   1914
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.695
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7278_m0273.jpg",
+  "n_lines": 33,
+  "inside_old": 33,
+  "inside_new": 33,
+  "old": [
+   54,
+   29,
+   1327,
+   1897
+  ],
+  "new": [
+   0,
+   25,
+   1327,
+   1912
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.053
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7291_m0012.jpg",
+  "n_lines": 31,
+  "inside_old": 31,
+  "inside_new": 31,
+  "old": [
+   269,
+   194,
+   1375,
+   1814
+  ],
+  "new": [
+   269,
+   194,
+   1375,
+   1814
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.0
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7291_m0074.jpg",
+  "n_lines": 26,
+  "inside_old": 26,
+  "inside_new": 26,
+  "old": [
+   69,
+   32,
+   1394,
+   1904
+  ],
+  "new": [
+   68,
+   31,
+   1394,
+   1905
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7291_m0097.jpg",
+  "n_lines": 28,
+  "inside_old": 28,
+  "inside_new": 28,
+  "old": [
+   6,
+   30,
+   1364,
+   1910
+  ],
+  "new": [
+   6,
+   29,
+   1366,
+   1930
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.013
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7291_m0131.jpg",
+  "n_lines": 26,
+  "inside_old": 26,
+  "inside_new": 26,
+  "old": [
+   11,
+   28,
+   1341,
+   1764
+  ],
+  "new": [
+   11,
+   27,
+   1341,
+   1764
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7338_m0053.jpg",
+  "n_lines": 34,
+  "inside_old": 26,
+  "inside_new": 34,
+  "old": [
+   0,
+   77,
+   1327,
+   1582
+  ],
+  "new": [
+   0,
+   70,
+   1327,
+   1972
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.264
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7338_m0084.jpg",
+  "n_lines": 53,
+  "inside_old": 53,
+  "inside_new": 53,
+  "old": [
+   96,
+   75,
+   1403,
+   1872
+  ],
+  "new": [
+   96,
+   75,
+   1403,
+   1872
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.0
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7381_c0007.jpg",
+  "n_lines": 28,
+  "inside_old": 28,
+  "inside_new": 28,
+  "old": [
+   27,
+   53,
+   1248,
+   1855
+  ],
+  "new": [
+   27,
+   53,
+   1249,
+   1860
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.004
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7404_c0233.jpg",
+  "n_lines": 35,
+  "inside_old": 35,
+  "inside_new": 35,
+  "old": [
+   0,
+   80,
+   1267,
+   1925
+  ],
+  "new": [
+   0,
+   80,
+   1267,
+   1930
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.003
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7429_m0011.jpg",
+  "n_lines": 33,
+  "inside_old": 33,
+  "inside_new": 33,
+  "old": [
+   0,
+   73,
+   1234,
+   1858
+  ],
+  "new": [
+   0,
+   56,
+   1257,
+   1899
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.052
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7429_m0024.jpg",
+  "n_lines": 28,
+  "inside_old": 28,
+  "inside_new": 28,
+  "old": [
+   71,
+   79,
+   1391,
+   1892
+  ],
+  "new": [
+   70,
+   77,
+   1391,
+   1894
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.003
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7429_m0046.jpg",
+  "n_lines": 16,
+  "inside_old": 16,
+  "inside_new": 16,
+  "old": [
+   52,
+   70,
+   1391,
+   1901
+  ],
+  "new": [
+   50,
+   66,
+   1391,
+   1903
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.005
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7429_m0055.jpg",
+  "n_lines": 28,
+  "inside_old": 28,
+  "inside_new": 28,
+  "old": [
+   0,
+   66,
+   1320,
+   1903
+  ],
+  "new": [
+   0,
+   51,
+   1324,
+   1904
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.012
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7557_c0043.jpg",
+  "n_lines": 32,
+  "inside_old": 32,
+  "inside_new": 32,
+  "old": [
+   3,
+   95,
+   1288,
+   1951
+  ],
+  "new": [
+   0,
+   93,
+   1289,
+   1952
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.005
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7557_c0052.jpg",
+  "n_lines": 24,
+  "inside_old": 24,
+  "inside_new": 24,
+  "old": [
+   46,
+   74,
+   1370,
+   1940
+  ],
+  "new": [
+   45,
+   72,
+   1370,
+   1944
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.004
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7569_c0043.jpg",
+  "n_lines": 32,
+  "inside_old": 32,
+  "inside_new": 32,
+  "old": [
+   0,
+   166,
+   1182,
+   1958
+  ],
+  "new": [
+   0,
+   165,
+   1184,
+   1960
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.003
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-75_c0039.jpg",
+  "n_lines": 21,
+  "inside_old": 21,
+  "inside_new": 21,
+  "old": [
+   0,
+   154,
+   1144,
+   2018
+  ],
+  "new": [
+   0,
+   153,
+   1144,
+   2018
+  ],
+  "contains": true,
+  "watermark": true,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7631_m0036.jpg",
+  "n_lines": 18,
+  "inside_old": 18,
+  "inside_new": 18,
+  "old": [
+   48,
+   34,
+   1342,
+   1815
+  ],
+  "new": [
+   46,
+   34,
+   1342,
+   1815
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7631_m0045.jpg",
+  "n_lines": 29,
+  "inside_old": 29,
+  "inside_new": 29,
+  "old": [
+   0,
+   38,
+   1308,
+   1812
+  ],
+  "new": [
+   0,
+   35,
+   1310,
+   1813
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.004
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7631_m0058.jpg",
+  "n_lines": 33,
+  "inside_old": 33,
+  "inside_new": 33,
+  "old": [
+   37,
+   44,
+   1376,
+   1843
+  ],
+  "new": [
+   34,
+   43,
+   1376,
+   1845
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.004
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7631_m0059.jpg",
+  "n_lines": 36,
+  "inside_old": 36,
+  "inside_new": 36,
+  "old": [
+   0,
+   51,
+   1301,
+   1836
+  ],
+  "new": [
+   0,
+   0,
+   1311,
+   1838
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.038
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7631_m0095.jpg",
+  "n_lines": 23,
+  "inside_old": 23,
+  "inside_new": 23,
+  "old": [
+   0,
+   43,
+   1309,
+   1835
+  ],
+  "new": [
+   0,
+   0,
+   1319,
+   1839
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.034
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7631_m0183.jpg",
+  "n_lines": 28,
+  "inside_old": 28,
+  "inside_new": 28,
+  "old": [
+   0,
+   62,
+   1138,
+   1831
+  ],
+  "new": [
+   0,
+   62,
+   1139,
+   1831
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7631_m0188.jpg",
+  "n_lines": 22,
+  "inside_old": 22,
+  "inside_new": 22,
+  "old": [
+   55,
+   19,
+   1334,
+   1825
+  ],
+  "new": [
+   54,
+   0,
+   1376,
+   1828
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.046
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-766_m0156.jpg",
+  "n_lines": 21,
+  "inside_old": 21,
+  "inside_new": 21,
+  "old": [
+   62,
+   71,
+   1366,
+   1858
+  ],
+  "new": [
+   61,
+   70,
+   1366,
+   1859
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7775_m0065.jpg",
+  "n_lines": 39,
+  "inside_old": 39,
+  "inside_new": 39,
+  "old": [
+   0,
+   77,
+   1294,
+   1754
+  ],
+  "new": [
+   0,
+   42,
+   1316,
+   1835
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.087
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-77_m0252.jpg",
+  "n_lines": 33,
+  "inside_old": 0,
+  "inside_new": 33,
+  "old": [
+   138,
+   59,
+   1174,
+   240
+  ],
+  "new": [
+   138,
+   58,
+   1406,
+   1928
+  ],
+  "contains": true,
+  "watermark": true,
+  "area_ratio": 12.645
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7801_m0022.jpg",
+  "n_lines": 29,
+  "inside_old": 29,
+  "inside_new": 29,
+  "old": [
+   140,
+   74,
+   4056,
+   5789
+  ],
+  "new": [
+   120,
+   68,
+   4056,
+   5791
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.007
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7801_m0040.jpg",
+  "n_lines": 31,
+  "inside_old": 31,
+  "inside_new": 31,
+  "old": [
+   186,
+   150,
+   4056,
+   5535
+  ],
+  "new": [
+   183,
+   149,
+   4056,
+   5543
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7805_m0004.jpg",
+  "n_lines": 29,
+  "inside_old": 29,
+  "inside_new": 29,
+  "old": [
+   80,
+   132,
+   1785,
+   2522
+  ],
+  "new": [
+   79,
+   130,
+   1785,
+   2524
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7805_m0025.jpg",
+  "n_lines": 16,
+  "inside_old": 16,
+  "inside_new": 16,
+  "old": [
+   0,
+   116,
+   1711,
+   2519
+  ],
+  "new": [
+   0,
+   99,
+   1712,
+   2536
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.015
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7805_m0027.jpg",
+  "n_lines": 12,
+  "inside_old": 12,
+  "inside_new": 12,
+  "old": [
+   0,
+   111,
+   1710,
+   2519
+  ],
+  "new": [
+   0,
+   99,
+   1712,
+   2535
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.013
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7805_m0036.jpg",
+  "n_lines": 17,
+  "inside_old": 17,
+  "inside_new": 17,
+  "old": [
+   50,
+   141,
+   1785,
+   2534
+  ],
+  "new": [
+   48,
+   139,
+   1785,
+   2536
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.003
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7805_m0048.jpg",
+  "n_lines": 26,
+  "inside_old": 26,
+  "inside_new": 26,
+  "old": [
+   120,
+   135,
+   1769,
+   2467
+  ],
+  "new": [
+   118,
+   133,
+   1785,
+   2468
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.012
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7805_m0100.jpg",
+  "n_lines": 27,
+  "inside_old": 27,
+  "inside_new": 27,
+  "old": [
+   110,
+   108,
+   1690,
+   2525
+  ],
+  "new": [
+   102,
+   106,
+   1785,
+   2528
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.067
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7816_m0027.jpg",
+  "n_lines": 30,
+  "inside_old": 30,
+  "inside_new": 30,
+  "old": [
+   0,
+   331,
+   5324,
+   8015
+  ],
+  "new": [
+   0,
+   330,
+   5324,
+   8044
+  ],
+  "contains": true,
+  "watermark": true,
+  "area_ratio": 1.004
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7816_m0070.jpg",
+  "n_lines": 24,
+  "inside_old": 24,
+  "inside_new": 24,
+  "old": [
+   98,
+   502,
+   5666,
+   8136
+  ],
+  "new": [
+   82,
+   491,
+   5666,
+   8147
+  ],
+  "contains": true,
+  "watermark": true,
+  "area_ratio": 1.006
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7816_m0075.jpg",
+  "n_lines": 31,
+  "inside_old": 31,
+  "inside_new": 31,
+  "old": [
+   0,
+   441,
+   5353,
+   7993
+  ],
+  "new": [
+   0,
+   436,
+   5355,
+   7995
+  ],
+  "contains": true,
+  "watermark": true,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7816_m0088.jpg",
+  "n_lines": 26,
+  "inside_old": 26,
+  "inside_new": 26,
+  "old": [
+   377,
+   176,
+   5809,
+   8070
+  ],
+  "new": [
+   373,
+   175,
+   5809,
+   8078
+  ],
+  "contains": true,
+  "watermark": true,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-781_m0015.jpg",
+  "n_lines": 23,
+  "inside_old": 23,
+  "inside_new": 23,
+  "old": [
+   0,
+   29,
+   1261,
+   1879
+  ],
+  "new": [
+   0,
+   26,
+   1277,
+   1888
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.019
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-781_m0182.jpg",
+  "n_lines": 34,
+  "inside_old": 34,
+  "inside_new": 34,
+  "old": [
+   126,
+   56,
+   1397,
+   1884
+  ],
+  "new": [
+   125,
+   56,
+   1397,
+   1886
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7854_m0006.jpg",
+  "n_lines": 28,
+  "inside_old": 28,
+  "inside_new": 28,
+  "old": [
+   21,
+   38,
+   1302,
+   1860
+  ],
+  "new": [
+   20,
+   37,
+   1302,
+   1861
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7854_m0019.jpg",
+  "n_lines": 17,
+  "inside_old": 17,
+  "inside_new": 17,
+  "old": [
+   0,
+   53,
+   1237,
+   1887
+  ],
+  "new": [
+   0,
+   43,
+   1252,
+   1890
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.019
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7854_m0028.jpg",
+  "n_lines": 19,
+  "inside_old": 19,
+  "inside_new": 19,
+  "old": [
+   78,
+   72,
+   1332,
+   1908
+  ],
+  "new": [
+   78,
+   71,
+   1332,
+   1914
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.004
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7854_m0038.jpg",
+  "n_lines": 38,
+  "inside_old": 38,
+  "inside_new": 38,
+  "old": [
+   59,
+   68,
+   1278,
+   1882
+  ],
+  "new": [
+   52,
+   58,
+   1332,
+   1902
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.067
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7854_m0090.jpg",
+  "n_lines": 21,
+  "inside_old": 21,
+  "inside_new": 21,
+  "old": [
+   50,
+   95,
+   1290,
+   1892
+  ],
+  "new": [
+   47,
+   93,
+   1290,
+   1897
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.006
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7854_m0206.jpg",
+  "n_lines": 28,
+  "inside_old": 28,
+  "inside_new": 28,
+  "old": [
+   54,
+   56,
+   1338,
+   1844
+  ],
+  "new": [
+   53,
+   56,
+   1338,
+   1847
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7854_m0214.jpg",
+  "n_lines": 27,
+  "inside_old": 27,
+  "inside_new": 27,
+  "old": [
+   76,
+   44,
+   1338,
+   1860
+  ],
+  "new": [
+   75,
+   41,
+   1338,
+   1860
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7854_m0222.jpg",
+  "n_lines": 29,
+  "inside_old": 29,
+  "inside_new": 29,
+  "old": [
+   128,
+   52,
+   1338,
+   1850
+  ],
+  "new": [
+   127,
+   51,
+   1338,
+   1851
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7854_m0235.jpg",
+  "n_lines": 19,
+  "inside_old": 19,
+  "inside_new": 19,
+  "old": [
+   0,
+   23,
+   1187,
+   1846
+  ],
+  "new": [
+   0,
+   0,
+   1241,
+   1860
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.067
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7854_m0240.jpg",
+  "n_lines": 28,
+  "inside_old": 28,
+  "inside_new": 28,
+  "old": [
+   39,
+   46,
+   1338,
+   1872
+  ],
+  "new": [
+   35,
+   44,
+   1338,
+   1876
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.006
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7860_m0007.jpg",
+  "n_lines": 25,
+  "inside_old": 25,
+  "inside_new": 25,
+  "old": [
+   0,
+   17,
+   1225,
+   1771
+  ],
+  "new": [
+   0,
+   0,
+   1225,
+   1776
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.013
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7860_m0024.jpg",
+  "n_lines": 30,
+  "inside_old": 30,
+  "inside_new": 30,
+  "old": [
+   113,
+   28,
+   1351,
+   1796
+  ],
+  "new": [
+   112,
+   27,
+   1347,
+   1813
+  ],
+  "contains": false,
+  "watermark": false,
+  "area_ratio": 1.008
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7860_m0025.jpg",
+  "n_lines": 27,
+  "inside_old": 27,
+  "inside_new": 27,
+  "old": [
+   0,
+   19,
+   1228,
+   1783
+  ],
+  "new": [
+   0,
+   0,
+   1270,
+   1795
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.052
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7860_m0031.jpg",
+  "n_lines": 43,
+  "inside_old": 43,
+  "inside_new": 43,
+  "old": [
+   0,
+   8,
+   1213,
+   1784
+  ],
+  "new": [
+   0,
+   0,
+   1214,
+   1789
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.008
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7860_m0076.jpg",
+  "n_lines": 29,
+  "inside_old": 29,
+  "inside_new": 29,
+  "old": [
+   28,
+   29,
+   1302,
+   1780
+  ],
+  "new": [
+   27,
+   28,
+   1302,
+   1783
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.003
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7860_m0138.jpg",
+  "n_lines": 27,
+  "inside_old": 27,
+  "inside_new": 27,
+  "old": [
+   66,
+   63,
+   1302,
+   1780
+  ],
+  "new": [
+   65,
+   62,
+   1302,
+   1781
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7864_m0003.jpg",
+  "n_lines": 29,
+  "inside_old": 29,
+  "inside_new": 29,
+  "old": [
+   0,
+   74,
+   1734,
+   2452
+  ],
+  "new": [
+   0,
+   71,
+   1737,
+   2551
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.045
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7883_c0011.jpg",
+  "n_lines": 24,
+  "inside_old": 24,
+  "inside_new": 24,
+  "old": [
+   0,
+   91,
+   2644,
+   3751
+  ],
+  "new": [
+   0,
+   79,
+   2655,
+   3758
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.009
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7883_c0063.jpg",
+  "n_lines": 26,
+  "inside_old": 26,
+  "inside_new": 26,
+  "old": [
+   74,
+   140,
+   2502,
+   3795
+  ],
+  "new": [
+   0,
+   139,
+   2503,
+   3796
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.031
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7926_m0008.jpg",
+  "n_lines": 23,
+  "inside_old": 23,
+  "inside_new": 23,
+  "old": [
+   70,
+   93,
+   1306,
+   1876
+  ],
+  "new": [
+   69,
+   93,
+   1306,
+   1877
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7926_m0028.jpg",
+  "n_lines": 27,
+  "inside_old": 27,
+  "inside_new": 27,
+  "old": [
+   22,
+   84,
+   1311,
+   1899
+  ],
+  "new": [
+   20,
+   80,
+   1311,
+   1919
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.015
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7926_m0033.jpg",
+  "n_lines": 16,
+  "inside_old": 16,
+  "inside_new": 16,
+  "old": [
+   0,
+   40,
+   1302,
+   1871
+  ],
+  "new": [
+   0,
+   34,
+   1303,
+   1872
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.005
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7926_m0037.jpg",
+  "n_lines": 34,
+  "inside_old": 34,
+  "inside_new": 34,
+  "old": [
+   0,
+   42,
+   1311,
+   1853
+  ],
+  "new": [
+   0,
+   37,
+   1312,
+   1853
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.004
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7926_m0045.jpg",
+  "n_lines": 11,
+  "inside_old": 11,
+  "inside_new": 11,
+  "old": [
+   0,
+   53,
+   1289,
+   1831
+  ],
+  "new": [
+   0,
+   43,
+   1290,
+   1841
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.012
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7926_m0052.jpg",
+  "n_lines": 18,
+  "inside_old": 18,
+  "inside_new": 18,
+  "old": [
+   44,
+   59,
+   1370,
+   1857
+  ],
+  "new": [
+   38,
+   35,
+   1370,
+   1876
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.029
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7926_m0109.jpg",
+  "n_lines": 32,
+  "inside_old": 32,
+  "inside_new": 32,
+  "old": [
+   0,
+   74,
+   1268,
+   1960
+  ],
+  "new": [
+   0,
+   73,
+   1269,
+   1967
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.005
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-7926_m0136.jpg",
+  "n_lines": 14,
+  "inside_old": 14,
+  "inside_new": 14,
+  "old": [
+   33,
+   29,
+   1431,
+   1908
+  ],
+  "new": [
+   31,
+   22,
+   1431,
+   1913
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.008
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-8002_m0047.jpg",
+  "n_lines": 28,
+  "inside_old": 15,
+  "inside_new": 28,
+  "old": [
+   11,
+   977,
+   1343,
+   2036
+  ],
+  "new": [
+   0,
+   42,
+   1346,
+   2037
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.904
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-8002_m0147.jpg",
+  "n_lines": 30,
+  "inside_old": 30,
+  "inside_new": 30,
+  "old": [
+   0,
+   49,
+   1367,
+   2027
+  ],
+  "new": [
+   0,
+   47,
+   1369,
+   2031
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.005
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-8009_m0075.jpg",
+  "n_lines": 21,
+  "inside_old": 21,
+  "inside_new": 21,
+  "old": [
+   0,
+   140,
+   1791,
+   2721
+  ],
+  "new": [
+   0,
+   139,
+   1792,
+   2724
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-8009_m0202.jpg",
+  "n_lines": 36,
+  "inside_old": 36,
+  "inside_new": 36,
+  "old": [
+   65,
+   94,
+   1969,
+   2735
+  ],
+  "new": [
+   55,
+   91,
+   1969,
+   2736
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.007
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-8044_c0041.jpg",
+  "n_lines": 39,
+  "inside_old": 39,
+  "inside_new": 39,
+  "old": [
+   0,
+   116,
+   1265,
+   2002
+  ],
+  "new": [
+   0,
+   115,
+   1265,
+   2002
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-8052_m0008.jpg",
+  "n_lines": 26,
+  "inside_old": 26,
+  "inside_new": 26,
+  "old": [
+   44,
+   22,
+   1286,
+   1865
+  ],
+  "new": [
+   43,
+   19,
+   1286,
+   1867
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.004
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-8052_m0046.jpg",
+  "n_lines": 30,
+  "inside_old": 30,
+  "inside_new": 30,
+  "old": [
+   24,
+   40,
+   1268,
+   1881
+  ],
+  "new": [
+   19,
+   40,
+   1268,
+   1885
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.006
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-8052_m0116.jpg",
+  "n_lines": 28,
+  "inside_old": 28,
+  "inside_new": 28,
+  "old": [
+   87,
+   67,
+   1348,
+   1839
+  ],
+  "new": [
+   86,
+   67,
+   1348,
+   1840
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-8052_m0158.jpg",
+  "n_lines": 25,
+  "inside_old": 25,
+  "inside_new": 25,
+  "old": [
+   62,
+   72,
+   1348,
+   1837
+  ],
+  "new": [
+   62,
+   84,
+   1348,
+   1790
+  ],
+  "contains": false,
+  "watermark": false,
+  "area_ratio": 0.967
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-8137_c0039.jpg",
+  "n_lines": 41,
+  "inside_old": 41,
+  "inside_new": 41,
+  "old": [
+   22,
+   46,
+   1237,
+   1939
+  ],
+  "new": [
+   22,
+   44,
+   1266,
+   1940
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.025
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-8137_c0041.jpg",
+  "n_lines": 29,
+  "inside_old": 29,
+  "inside_new": 29,
+  "old": [
+   17,
+   77,
+   1275,
+   1941
+  ],
+  "new": [
+   17,
+   77,
+   1276,
+   1942
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-8213_m0067.jpg",
+  "n_lines": 26,
+  "inside_old": 26,
+  "inside_new": 26,
+  "old": [
+   0,
+   40,
+   1340,
+   2016
+  ],
+  "new": [
+   0,
+   38,
+   1343,
+   2031
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.011
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-8575_m0007_derivada.jpg",
+  "n_lines": 28,
+  "inside_old": 28,
+  "inside_new": 28,
+  "old": [
+   7,
+   47,
+   1281,
+   1891
+  ],
+  "new": [
+   7,
+   31,
+   1293,
+   1896
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.021
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-8575_m0186_derivada.jpg",
+  "n_lines": 30,
+  "inside_old": 30,
+  "inside_new": 30,
+  "old": [
+   50,
+   45,
+   1382,
+   1912
+  ],
+  "new": [
+   48,
+   34,
+   1382,
+   1919
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.011
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-8575_m0212_derivada.jpg",
+  "n_lines": 29,
+  "inside_old": 29,
+  "inside_new": 29,
+  "old": [
+   85,
+   40,
+   1382,
+   1886
+  ],
+  "new": [
+   83,
+   39,
+   1382,
+   1887
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.003
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-8575_m0276_derivada.jpg",
+  "n_lines": 30,
+  "inside_old": 30,
+  "inside_new": 30,
+  "old": [
+   81,
+   44,
+   1382,
+   1917
+  ],
+  "new": [
+   80,
+   43,
+   1382,
+   1917
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-8575_m0357_derivada.jpg",
+  "n_lines": 22,
+  "inside_old": 22,
+  "inside_new": 22,
+  "old": [
+   50,
+   119,
+   1170,
+   1868
+  ],
+  "new": [
+   0,
+   119,
+   1170,
+   1869
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.045
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-8625_c0051.jpg",
+  "n_lines": 29,
+  "inside_old": 28,
+  "inside_new": 28,
+  "old": [
+   14,
+   74,
+   1264,
+   1940
+  ],
+  "new": [
+   13,
+   73,
+   1265,
+   1943
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.004
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-8718_c0006.jpg",
+  "n_lines": 35,
+  "inside_old": 35,
+  "inside_new": 35,
+  "old": [
+   100,
+   46,
+   1333,
+   1864
+  ],
+  "new": [
+   99,
+   45,
+   1333,
+   1865
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-8723_m0030.jpg",
+  "n_lines": 30,
+  "inside_old": 30,
+  "inside_new": 30,
+  "old": [
+   70,
+   50,
+   1382,
+   1839
+  ],
+  "new": [
+   69,
+   46,
+   1382,
+   1840
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.004
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-8723_m0046.jpg",
+  "n_lines": 31,
+  "inside_old": 31,
+  "inside_new": 31,
+  "old": [
+   109,
+   47,
+   1382,
+   1819
+  ],
+  "new": [
+   108,
+   47,
+   1382,
+   1819
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-8723_m0067.jpg",
+  "n_lines": 21,
+  "inside_old": 21,
+  "inside_new": 21,
+  "old": [
+   0,
+   80,
+   1304,
+   1808
+  ],
+  "new": [
+   0,
+   79,
+   1305,
+   1808
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-886_c0021.jpg",
+  "n_lines": 21,
+  "inside_old": 21,
+  "inside_new": 21,
+  "old": [
+   32,
+   94,
+   1363,
+   1944
+  ],
+  "new": [
+   32,
+   94,
+   1363,
+   1945
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-886_c0043.jpg",
+  "n_lines": 18,
+  "inside_old": 18,
+  "inside_new": 18,
+  "old": [
+   0,
+   105,
+   1334,
+   1896
+  ],
+  "new": [
+   0,
+   105,
+   1334,
+   1897
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-8919_m0013.jpg",
+  "n_lines": 70,
+  "inside_old": 70,
+  "inside_new": 70,
+  "old": [
+   130,
+   261,
+   2332,
+   1909
+  ],
+  "new": [
+   128,
+   260,
+   2333,
+   1910
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.003
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-928_m0025.jpg",
+  "n_lines": 24,
+  "inside_old": 24,
+  "inside_new": 24,
+  "old": [
+   46,
+   37,
+   1301,
+   1948
+  ],
+  "new": [
+   19,
+   34,
+   1303,
+   1954
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.028
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-939_c0091.jpg",
+  "n_lines": 27,
+  "inside_old": 27,
+  "inside_new": 27,
+  "old": [
+   50,
+   167,
+   1312,
+   2083
+  ],
+  "new": [
+   15,
+   167,
+   1313,
+   2087
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.031
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-939_c0098.jpg",
+  "n_lines": 34,
+  "inside_old": 34,
+  "inside_new": 34,
+  "old": [
+   125,
+   159,
+   1511,
+   2085
+  ],
+  "new": [
+   125,
+   158,
+   1511,
+   2086
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-941_m0085.jpg",
+  "n_lines": 25,
+  "inside_old": 25,
+  "inside_new": 25,
+  "old": [
+   47,
+   105,
+   1701,
+   2679
+  ],
+  "new": [
+   0,
+   76,
+   1702,
+   2686
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.043
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-9426_m0062.jpg",
+  "n_lines": 37,
+  "inside_old": 37,
+  "inside_new": 37,
+  "old": [
+   59,
+   50,
+   1311,
+   1887
+  ],
+  "new": [
+   54,
+   46,
+   1311,
+   1889
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.007
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-94_c0031.jpg",
+  "n_lines": 14,
+  "inside_old": 14,
+  "inside_new": 14,
+  "old": [
+   0,
+   125,
+   1334,
+   1925
+  ],
+  "new": [
+   0,
+   124,
+   1336,
+   1925
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.002
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-9525_m0008.jpg",
+  "n_lines": 38,
+  "inside_old": 38,
+  "inside_new": 38,
+  "old": [
+   150,
+   59,
+   1360,
+   1738
+  ],
+  "new": [
+   149,
+   58,
+   1360,
+   1738
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.001
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-9565_m0051.jpg",
+  "n_lines": 26,
+  "inside_old": 13,
+  "inside_new": 26,
+  "old": [
+   0,
+   30,
+   1422,
+   1109
+  ],
+  "new": [
+   0,
+   25,
+   1439,
+   2074
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.922
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-9565_m0052.jpg",
+  "n_lines": 15,
+  "inside_old": 15,
+  "inside_new": 15,
+  "old": [
+   68,
+   21,
+   1496,
+   2066
+  ],
+  "new": [
+   54,
+   0,
+   1496,
+   2067
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.021
+ },
+ {
+  "image": "PT-TT-TSO-IL-28-9565_m0297.jpg",
+  "n_lines": 17,
+  "inside_old": 16,
+  "inside_new": 16,
+  "old": [
+   81,
+   72,
+   1266,
+   1721
+  ],
+  "new": [
+   34,
+   71,
+   1267,
+   1722
+  ],
+  "contains": true,
+  "watermark": false,
+  "area_ratio": 1.042
+ }
+]

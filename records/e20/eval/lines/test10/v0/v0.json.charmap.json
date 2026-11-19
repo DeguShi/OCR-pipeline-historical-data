@@ -1,0 +1,47 @@
+{
+ "input": "records/e20/v0/test10_tr_pt/lines.json",
+ "alphabet_size": 88,
+ "mapped": 41,
+ "map": {
+  "í": {
+   "n": 23,
+   "to": "i",
+   "name": "LATIN SMALL LETTER I WITH ACUTE"
+  },
+  "â": {
+   "n": 6,
+   "to": "a",
+   "name": "LATIN SMALL LETTER A WITH CIRCUMFLEX"
+  },
+  "à": {
+   "n": 4,
+   "to": "a",
+   "name": "LATIN SMALL LETTER A WITH GRAVE"
+  },
+  "?": {
+   "n": 3,
+   "to": "",
+   "name": "QUESTION MARK"
+  },
+  "W": {
+   "n": 2,
+   "to": "",
+   "name": "LATIN CAPITAL LETTER W"
+  },
+  "X": {
+   "n": 1,
+   "to": "",
+   "name": "LATIN CAPITAL LETTER X"
+  },
+  "°": {
+   "n": 1,
+   "to": "",
+   "name": "DEGREE SIGN"
+  },
+  "¿": {
+   "n": 1,
+   "to": "",
+   "name": "INVERTED QUESTION MARK"
+  }
+ }
+}

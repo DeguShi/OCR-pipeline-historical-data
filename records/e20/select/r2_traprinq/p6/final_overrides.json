@@ -1,0 +1,39 @@
+{
+ "accepted": {
+  "beta15": 1.5,
+  "minlen3": 0.43
+ },
+ "chosen": [
+  "beta15"
+ ],
+ "overrides": {
+  "context_beta": 1.5
+ },
+ "result": {
+  "name": "beta15",
+  "overrides": {
+   "context_beta": 1.5
+  },
+  "oficial": {
+   "wer": 58.47,
+   "cer": 28.23
+  },
+  "gemini": {
+   "wer": 56.71,
+   "cer": 28.48
+  }
+ },
+ "base": {
+  "name": "base",
+  "overrides": {},
+  "oficial": {
+   "wer": 59.54,
+   "cer": 28.44
+  },
+  "gemini": {
+   "wer": 58.21,
+   "cer": 28.69
+  }
+ },
+ "config_source": "configs/e20/r2_traprinq.json"
+}

@@ -1,0 +1,7 @@
+2026-11-17 22:49:06,095 10 pages, 428594 LM unigrams, 120 labels
+2026-11-17 22:49:23,042 Alphabet determined to be of regular style.
+2026-11-17 22:49:23,162 Alphabet determined to be of regular style.
+2026-11-17 22:49:32,085 alpha 1.517 beta 2.601 -> outputs/e20/eval/raw/test10/r5_mccatmus/pa/a1.517_b2.601
+mapped 4 characters (2 distinct) -> outputs/e20/eval/lines/test10/r5_mccatmus/pa.json
+WER norm 6.02% | CER norm 2.21% -> outputs/e20/eval/score/test10/r5_mccatmus/pa/gemini
+DECODED r5_mccatmus test10 pa

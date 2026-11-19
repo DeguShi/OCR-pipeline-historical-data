@@ -1,0 +1,58 @@
+PART setup 0s
+STAGE r1_st_c1m A best {"id": 112, "params": {"lm": "kn3_w1", "alpha": 0.864, "beta": 0.048, "unk": -10.56, "beam_prune_logp": -17.18, "token_min_logp": -8.39, "beam": 128, "id": 112}, "pages": [5, 6, 8, 9, 11, 13, 14, 15, 
+STAGE r1_st_c1m A2 best {"id": 60, "params": {"alpha": 0.704, "beta": 0.852, "unk": -10.046, "beam_prune_logp": -15.396, "token_min_logp": -7.407, "lm": "kn3_w1", "beam": 256, "id": 60}, "pages": [5, 6, 8, 9, 11, 13, 14, 15,
+STAGE r4_traprinq A best {"id": 92, "params": {"lm": "kn3_w1", "alpha": 1.272, "beta": -0.823, "unk": -5.74, "beam_prune_logp": -15.42, "token_min_logp": -7.28, "beam": 128, "id": 92}, "pages": [5, 6, 8, 9, 11, 13, 14, 15, 16
+STAGE r4_traprinq A2 best {"id": 17, "params": {"alpha": 1.142, "beta": -1.066, "unk": -1.047, "beam_prune_logp": -16.294, "token_min_logp": -9.677, "lm": "kn3_w1", "beam": 256, "id": 17}, "pages": [5, 6, 8, 9, 11, 13, 14, 15,
+STAGE r5_mccatmus A best {"id": 71, "params": {"lm": "kn3_w1", "alpha": 1.901, "beta": 2.333, "unk": -9.71, "beam_prune_logp": -16.76, "token_min_logp": -9.25, "beam": 128, "id": 71}, "pages": [5, 6, 8, 9, 11, 13, 14, 15, 16]
+STAGE r5_mccatmus A2 best {"id": 47, "params": {"alpha": 1.817, "beta": 2.136, "unk": -12.456, "beam_prune_logp": -16.026, "token_min_logp": -8.922, "lm": "kn3_w1", "beam": 256, "id": 47}, "pages": [5, 6, 8, 9, 11, 13, 14, 15,
+REPRO r1_st_c1m A shared 61 of E20 61 differ 0
+REPRO r1_st_c1m A2 shared 0 of E20 31 differ 0
+FROZEN r1_st_c1m {"PA181": {"params": {"alpha": 0.704, "beta": 0.852, "unk": -10.046, "beam_prune_logp": -15.396, "token_min_logp": -7.407, "lm": "kn3_w1", "beam": 256}, "tuning_wer": 19.921, "tuning_cer": 5.771, "n_scored": 182}}
+REPRO r4_traprinq A shared 61 of E20 61 differ 0
+REPRO r4_traprinq A2 shared 0 of E20 31 differ 0
+FROZEN r4_traprinq {"PA181": {"params": {"alpha": 1.142, "beta": -1.066, "unk": -1.047, "beam_prune_logp": -16.294, "token_min_logp": -9.677, "lm": "kn3_w1", "beam": 256}, "tuning_wer": 20.937, "tuning_cer": 6.502, "n_scored": 182}}
+REPRO r5_mccatmus A shared 61 of E20 61 differ 0
+REPRO r5_mccatmus A2 shared 0 of E20 31 differ 0
+FROZEN r5_mccatmus {"PA181": {"params": {"alpha": 1.817, "beta": 2.136, "unk": -12.456, "beam_prune_logp": -16.026, "token_min_logp": -8.922, "lm": "kn3_w1", "beam": 256}, "tuning_wer": 22.291, "tuning_cer": 7.081, "n_scored": 182}}
+REPRO_OK
+PART select 16532s
+  select 	Elapsed (wall clock) time (h:mm:ss or m:ss): 4:35:32
+  select 	Maximum resident set size (kbytes): 589196
+DECODED r1_st_c1m heldout pa181
+DECODED r1_st_c1m test10 pa181
+DECODED r4_traprinq heldout pa181
+DECODED r4_traprinq test10 pa181
+DECODED r5_mccatmus heldout pa181
+DECODED r5_mccatmus test10 pa181
+PART eval 158s
+  eval 	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:38.20
+  eval 	Maximum resident set size (kbytes): 560356
+GRID r1_st_c1m·pa181 {"heldout/gemini": {"wer": 8.58, "cer": 2.68}, "heldout/oficial": {"wer": 19.69, "cer": 4.53}, "test10/gemini": {"wer": 4.33, "cer": 1.66}}
+GRID r4_traprinq·pa181 {"heldout/gemini": {"wer": 7.23, "cer": 2.55}, "heldout/oficial": {"wer": 19.21, "cer": 4.59}, "test10/gemini": {"wer": 6.06, "cer": 2.05}}
+GRID r5_mccatmus·pa181 {"heldout/gemini": {"wer": 10.24, "cer": 3.63}, "heldout/oficial": {"wer": 19.84, "cer": 5.07}, "test10/gemini": {"wer": 6.63, "cer": 2.31}}
+PAIR r1_st_c1m·p6       vs r1_st_c1m·pa181      heldout oficial dWER  -0.94 CI95 [-2.42, 0.31] | pages [2, 1, 0] p_page 0.5 CI95_page [-1.66, 0.0]
+PAIR r1_st_c1m·p6       vs r1_st_c1m·pa181      heldout gemini  dWER  -2.26 CI95 [-3.9, -0.75] | pages [3, 0, 0] p_page 0.25 CI95_page [-2.81, -1.07]
+PAIR r1_st_c1m·p6       vs r1_st_c1m·pa181      test10  gemini  dWER  -0.84 CI95 [-1.41, -0.26] | pages [6, 3, 1] p_page 0.0469 CI95_page [-1.47, -0.22]
+PAIR r1_st_c1m·p6       vs r4_traprinq·pa181    heldout oficial dWER  -0.47 CI95 [-2.23, 1.26] | pages [1, 1, 1] p_page 1.0 CI95_page [-2.76, 0.93]
+PAIR r1_st_c1m·p6       vs r4_traprinq·pa181    heldout gemini  dWER  -0.90 CI95 [-3.19, 1.21] | pages [2, 0, 1] p_page 0.5 CI95_page [-2.67, 1.32]
+PAIR r1_st_c1m·p6       vs r4_traprinq·pa181    test10  gemini  dWER  -2.57 CI95 [-3.65, -1.5] | pages [8, 1, 1] p_page 0.0078 CI95_page [-3.95, -1.29]
+PAIR r1_st_c1m·p6       vs r5_mccatmus·pa181    heldout oficial dWER  -1.10 CI95 [-3.49, 1.27] | pages [2, 0, 1] p_page 0.5 CI95_page [-3.31, 0.42]
+PAIR r1_st_c1m·p6       vs r5_mccatmus·pa181    heldout gemini  dWER  -3.92 CI95 [-6.04, -1.82] | pages [3, 0, 0] p_page 0.25 CI95_page [-5.22, -2.63]
+PAIR r1_st_c1m·p6       vs r5_mccatmus·pa181    test10  gemini  dWER  -3.14 CI95 [-4.27, -2.02] | pages [10, 0, 0] p_page 0.002 CI95_page [-4.99, -1.54]
+PAIR r4_traprinq·p6     vs r4_traprinq·pa181    heldout oficial dWER  -0.47 CI95 [-1.55, 0.47] | pages [2, 1, 0] p_page 0.5 CI95_page [-1.1, 0.0]
+PAIR r4_traprinq·p6     vs r4_traprinq·pa181    heldout gemini  dWER  -1.81 CI95 [-3.32, -0.45] | pages [2, 1, 0] p_page 0.5 CI95_page [-2.81, 0.0]
+PAIR r4_traprinq·p6     vs r4_traprinq·pa181    test10  gemini  dWER  -1.46 CI95 [-2.21, -0.75] | pages [9, 0, 1] p_page 0.0195 CI95_page [-2.36, -0.59]
+PAIR r5_mccatmus·p6     vs r5_mccatmus·pa181    heldout oficial dWER  -0.16 CI95 [-2.19, 1.9] | pages [2, 0, 1] p_page 1.0 CI95_page [-0.55, 0.42]
+PAIR r5_mccatmus·p6     vs r5_mccatmus·pa181    heldout gemini  dWER  -3.16 CI95 [-4.95, -1.64] | pages [3, 0, 0] p_page 0.25 CI95_page [-4.82, -2.14]
+PAIR r5_mccatmus·p6     vs r5_mccatmus·pa181    test10  gemini  dWER  -1.86 CI95 [-2.64, -1.09] | pages [9, 0, 1] p_page 0.0059 CI95_page [-2.85, -0.97]
+PAIR r1_st_c1m·pa181    vs r1_st_c1m·pa         heldout oficial dWER  -0.16 CI95 [-1.55, 1.24] | pages [1, 2, 0] p_page 1.0 CI95_page [-0.55, 0.0]
+PAIR r1_st_c1m·pa181    vs r1_st_c1m·pa         heldout gemini  dWER  -1.81 CI95 [-3.31, -0.45] | pages [3, 0, 0] p_page 0.25 CI95_page [-2.19, -1.2]
+PAIR r1_st_c1m·pa181    vs r1_st_c1m·pa         test10  gemini  dWER  -1.11 CI95 [-1.68, -0.58] | pages [7, 3, 0] p_page 0.0156 CI95_page [-1.74, -0.49]
+PAIR r4_traprinq·pa181  vs r4_traprinq·pa       heldout oficial dWER  +0.00 CI95 [-0.8, 0.94] | pages [1, 1, 1] p_page 1.0 CI95_page [-0.47, 0.42]
+PAIR r4_traprinq·pa181  vs r4_traprinq·pa       heldout gemini  dWER  +0.60 CI95 [-0.45, 1.95] | pages [1, 0, 2] p_page 0.5 CI95_page [-0.44, 1.6]
+PAIR r4_traprinq·pa181  vs r4_traprinq·pa       test10  gemini  dWER  +0.22 CI95 [-0.18, 0.62] | pages [2, 3, 5] p_page 0.2812 CI95_page [-0.04, 0.51]
+PAIR r5_mccatmus·pa181  vs r5_mccatmus·pa       heldout oficial dWER  +0.47 CI95 [-1.09, 2.03] | pages [0, 1, 2] p_page 0.5 CI95_page [0.0, 0.93]
+PAIR r5_mccatmus·pa181  vs r5_mccatmus·pa       heldout gemini  dWER  +2.26 CI95 [0.76, 4.06] | pages [0, 1, 2] p_page 0.5 CI95_page [0.0, 4.42]
+PAIR r5_mccatmus·pa181  vs r5_mccatmus·pa       test10  gemini  dWER  +0.62 CI95 [0.26, 1.03] | pages [1, 2, 7] p_page 0.0312 CI95_page [0.22, 1.01]
+PART report 2s
+JOB_OK

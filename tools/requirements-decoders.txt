@@ -1,0 +1,9 @@
+# Environment of the external baseline decoders (tools/baseline_pyctcdecode.py, tools/baseline_wordbeam.py).
+# Python 3.12. Kept apart from the pipeline environment: pyctcdecode 0.5.0 needs numpy < 2.
+numpy==1.26.4
+pyctcdecode==0.5.0
+pygtrie==2.6.2
+hypothesis==6.170.14
+sortedcontainers==2.4.0
+kenlm @ git+https://github.com/kpu/kenlm@4cb443e60b7bf2c0ddf3c745378f76cb59e254e5
+word-beam-search @ git+https://github.com/githubharald/CTCWordBeamSearch@6ae8c87265245b7d73f723f56560664ea182ddbb

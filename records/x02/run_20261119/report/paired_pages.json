@@ -1,0 +1,434 @@
+[
+ {
+  "a": "r1_st_c1m\u00b7p6",
+  "b": "r1_st_c1m\u00b7pa181",
+  "set": "heldout",
+  "ref": "oficial",
+  "pages": 3,
+  "won_tied_lost": [
+   2,
+   1,
+   0
+  ],
+  "dwer": -0.94,
+  "p_signflip_pages": 0.5,
+  "ci95_page_bootstrap": [
+   -1.66,
+   0.0
+  ]
+ },
+ {
+  "a": "r1_st_c1m\u00b7p6",
+  "b": "r1_st_c1m\u00b7pa181",
+  "set": "heldout",
+  "ref": "gemini",
+  "pages": 3,
+  "won_tied_lost": [
+   3,
+   0,
+   0
+  ],
+  "dwer": -2.26,
+  "p_signflip_pages": 0.25,
+  "ci95_page_bootstrap": [
+   -2.81,
+   -1.07
+  ]
+ },
+ {
+  "a": "r1_st_c1m\u00b7p6",
+  "b": "r1_st_c1m\u00b7pa181",
+  "set": "test10",
+  "ref": "gemini",
+  "pages": 10,
+  "won_tied_lost": [
+   6,
+   3,
+   1
+  ],
+  "dwer": -0.84,
+  "p_signflip_pages": 0.0469,
+  "ci95_page_bootstrap": [
+   -1.47,
+   -0.22
+  ]
+ },
+ {
+  "a": "r1_st_c1m\u00b7p6",
+  "b": "r4_traprinq\u00b7pa181",
+  "set": "heldout",
+  "ref": "oficial",
+  "pages": 3,
+  "won_tied_lost": [
+   1,
+   1,
+   1
+  ],
+  "dwer": -0.47,
+  "p_signflip_pages": 1.0,
+  "ci95_page_bootstrap": [
+   -2.76,
+   0.93
+  ]
+ },
+ {
+  "a": "r1_st_c1m\u00b7p6",
+  "b": "r4_traprinq\u00b7pa181",
+  "set": "heldout",
+  "ref": "gemini",
+  "pages": 3,
+  "won_tied_lost": [
+   2,
+   0,
+   1
+  ],
+  "dwer": -0.9,
+  "p_signflip_pages": 0.5,
+  "ci95_page_bootstrap": [
+   -2.67,
+   1.32
+  ]
+ },
+ {
+  "a": "r1_st_c1m\u00b7p6",
+  "b": "r4_traprinq\u00b7pa181",
+  "set": "test10",
+  "ref": "gemini",
+  "pages": 10,
+  "won_tied_lost": [
+   8,
+   1,
+   1
+  ],
+  "dwer": -2.57,
+  "p_signflip_pages": 0.0078,
+  "ci95_page_bootstrap": [
+   -3.95,
+   -1.29
+  ]
+ },
+ {
+  "a": "r1_st_c1m\u00b7p6",
+  "b": "r5_mccatmus\u00b7pa181",
+  "set": "heldout",
+  "ref": "oficial",
+  "pages": 3,
+  "won_tied_lost": [
+   2,
+   0,
+   1
+  ],
+  "dwer": -1.1,
+  "p_signflip_pages": 0.5,
+  "ci95_page_bootstrap": [
+   -3.31,
+   0.42
+  ]
+ },
+ {
+  "a": "r1_st_c1m\u00b7p6",
+  "b": "r5_mccatmus\u00b7pa181",
+  "set": "heldout",
+  "ref": "gemini",
+  "pages": 3,
+  "won_tied_lost": [
+   3,
+   0,
+   0
+  ],
+  "dwer": -3.92,
+  "p_signflip_pages": 0.25,
+  "ci95_page_bootstrap": [
+   -5.22,
+   -2.63
+  ]
+ },
+ {
+  "a": "r1_st_c1m\u00b7p6",
+  "b": "r5_mccatmus\u00b7pa181",
+  "set": "test10",
+  "ref": "gemini",
+  "pages": 10,
+  "won_tied_lost": [
+   10,
+   0,
+   0
+  ],
+  "dwer": -3.14,
+  "p_signflip_pages": 0.002,
+  "ci95_page_bootstrap": [
+   -4.99,
+   -1.54
+  ]
+ },
+ {
+  "a": "r4_traprinq\u00b7p6",
+  "b": "r4_traprinq\u00b7pa181",
+  "set": "heldout",
+  "ref": "oficial",
+  "pages": 3,
+  "won_tied_lost": [
+   2,
+   1,
+   0
+  ],
+  "dwer": -0.47,
+  "p_signflip_pages": 0.5,
+  "ci95_page_bootstrap": [
+   -1.1,
+   0.0
+  ]
+ },
+ {
+  "a": "r4_traprinq\u00b7p6",
+  "b": "r4_traprinq\u00b7pa181",
+  "set": "heldout",
+  "ref": "gemini",
+  "pages": 3,
+  "won_tied_lost": [
+   2,
+   1,
+   0
+  ],
+  "dwer": -1.81,
+  "p_signflip_pages": 0.5,
+  "ci95_page_bootstrap": [
+   -2.81,
+   0.0
+  ]
+ },
+ {
+  "a": "r4_traprinq\u00b7p6",
+  "b": "r4_traprinq\u00b7pa181",
+  "set": "test10",
+  "ref": "gemini",
+  "pages": 10,
+  "won_tied_lost": [
+   9,
+   0,
+   1
+  ],
+  "dwer": -1.46,
+  "p_signflip_pages": 0.0195,
+  "ci95_page_bootstrap": [
+   -2.36,
+   -0.59
+  ]
+ },
+ {
+  "a": "r5_mccatmus\u00b7p6",
+  "b": "r5_mccatmus\u00b7pa181",
+  "set": "heldout",
+  "ref": "oficial",
+  "pages": 3,
+  "won_tied_lost": [
+   2,
+   0,
+   1
+  ],
+  "dwer": -0.16,
+  "p_signflip_pages": 1.0,
+  "ci95_page_bootstrap": [
+   -0.55,
+   0.42
+  ]
+ },
+ {
+  "a": "r5_mccatmus\u00b7p6",
+  "b": "r5_mccatmus\u00b7pa181",
+  "set": "heldout",
+  "ref": "gemini",
+  "pages": 3,
+  "won_tied_lost": [
+   3,
+   0,
+   0
+  ],
+  "dwer": -3.16,
+  "p_signflip_pages": 0.25,
+  "ci95_page_bootstrap": [
+   -4.82,
+   -2.14
+  ]
+ },
+ {
+  "a": "r5_mccatmus\u00b7p6",
+  "b": "r5_mccatmus\u00b7pa181",
+  "set": "test10",
+  "ref": "gemini",
+  "pages": 10,
+  "won_tied_lost": [
+   9,
+   0,
+   1
+  ],
+  "dwer": -1.86,
+  "p_signflip_pages": 0.0059,
+  "ci95_page_bootstrap": [
+   -2.85,
+   -0.97
+  ]
+ },
+ {
+  "a": "r1_st_c1m\u00b7pa181",
+  "b": "r1_st_c1m\u00b7pa",
+  "set": "heldout",
+  "ref": "oficial",
+  "pages": 3,
+  "won_tied_lost": [
+   1,
+   2,
+   0
+  ],
+  "dwer": -0.16,
+  "p_signflip_pages": 1.0,
+  "ci95_page_bootstrap": [
+   -0.55,
+   0.0
+  ]
+ },
+ {
+  "a": "r1_st_c1m\u00b7pa181",
+  "b": "r1_st_c1m\u00b7pa",
+  "set": "heldout",
+  "ref": "gemini",
+  "pages": 3,
+  "won_tied_lost": [
+   3,
+   0,
+   0
+  ],
+  "dwer": -1.81,
+  "p_signflip_pages": 0.25,
+  "ci95_page_bootstrap": [
+   -2.19,
+   -1.2
+  ]
+ },
+ {
+  "a": "r1_st_c1m\u00b7pa181",
+  "b": "r1_st_c1m\u00b7pa",
+  "set": "test10",
+  "ref": "gemini",
+  "pages": 10,
+  "won_tied_lost": [
+   7,
+   3,
+   0
+  ],
+  "dwer": -1.11,
+  "p_signflip_pages": 0.0156,
+  "ci95_page_bootstrap": [
+   -1.74,
+   -0.49
+  ]
+ },
+ {
+  "a": "r4_traprinq\u00b7pa181",
+  "b": "r4_traprinq\u00b7pa",
+  "set": "heldout",
+  "ref": "oficial",
+  "pages": 3,
+  "won_tied_lost": [
+   1,
+   1,
+   1
+  ],
+  "dwer": 0.0,
+  "p_signflip_pages": 1.0,
+  "ci95_page_bootstrap": [
+   -0.47,
+   0.42
+  ]
+ },
+ {
+  "a": "r4_traprinq\u00b7pa181",
+  "b": "r4_traprinq\u00b7pa",
+  "set": "heldout",
+  "ref": "gemini",
+  "pages": 3,
+  "won_tied_lost": [
+   1,
+   0,
+   2
+  ],
+  "dwer": 0.6,
+  "p_signflip_pages": 0.5,
+  "ci95_page_bootstrap": [
+   -0.44,
+   1.6
+  ]
+ },
+ {
+  "a": "r4_traprinq\u00b7pa181",
+  "b": "r4_traprinq\u00b7pa",
+  "set": "test10",
+  "ref": "gemini",
+  "pages": 10,
+  "won_tied_lost": [
+   2,
+   3,
+   5
+  ],
+  "dwer": 0.22,
+  "p_signflip_pages": 0.2812,
+  "ci95_page_bootstrap": [
+   -0.04,
+   0.51
+  ]
+ },
+ {
+  "a": "r5_mccatmus\u00b7pa181",
+  "b": "r5_mccatmus\u00b7pa",
+  "set": "heldout",
+  "ref": "oficial",
+  "pages": 3,
+  "won_tied_lost": [
+   0,
+   1,
+   2
+  ],
+  "dwer": 0.47,
+  "p_signflip_pages": 0.5,
+  "ci95_page_bootstrap": [
+   0.0,
+   0.93
+  ]
+ },
+ {
+  "a": "r5_mccatmus\u00b7pa181",
+  "b": "r5_mccatmus\u00b7pa",
+  "set": "heldout",
+  "ref": "gemini",
+  "pages": 3,
+  "won_tied_lost": [
+   0,
+   1,
+   2
+  ],
+  "dwer": 2.26,
+  "p_signflip_pages": 0.5,
+  "ci95_page_bootstrap": [
+   0.0,
+   4.42
+  ]
+ },
+ {
+  "a": "r5_mccatmus\u00b7pa181",
+  "b": "r5_mccatmus\u00b7pa",
+  "set": "test10",
+  "ref": "gemini",
+  "pages": 10,
+  "won_tied_lost": [
+   1,
+   2,
+   7
+  ],
+  "dwer": 0.62,
+  "p_signflip_pages": 0.0312,
+  "ci95_page_bootstrap": [
+   0.22,
+   1.01
+  ]
+ }
+]

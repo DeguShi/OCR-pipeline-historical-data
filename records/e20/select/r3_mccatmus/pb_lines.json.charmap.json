@@ -1,0 +1,62 @@
+{
+ "input": "outputs/e20/select/r3_mccatmus/pb_raw/NGrams_s0.001/lines.json",
+ "alphabet_size": 88,
+ "mapped": 29,
+ "map": {
+  "à": {
+   "n": 8,
+   "to": "a",
+   "name": "LATIN SMALL LETTER A WITH GRAVE"
+  },
+  "^": {
+   "n": 7,
+   "to": "",
+   "name": "CIRCUMFLEX ACCENT"
+  },
+  "⟧": {
+   "n": 3,
+   "to": "",
+   "name": "MATHEMATICAL RIGHT WHITE SQUARE BRACKET"
+  },
+  "⟦": {
+   "n": 2,
+   "to": "",
+   "name": "MATHEMATICAL LEFT WHITE SQUARE BRACKET"
+  },
+  "?": {
+   "n": 2,
+   "to": "",
+   "name": "QUESTION MARK"
+  },
+  "è": {
+   "n": 2,
+   "to": "e",
+   "name": "LATIN SMALL LETTER E WITH GRAVE"
+  },
+  "î": {
+   "n": 1,
+   "to": "i",
+   "name": "LATIN SMALL LETTER I WITH CIRCUMFLEX"
+  },
+  "⁊": {
+   "n": 1,
+   "to": "",
+   "name": "TIRONIAN SIGN ET"
+  },
+  "!": {
+   "n": 1,
+   "to": "",
+   "name": "EXCLAMATION MARK"
+  },
+  "–": {
+   "n": 1,
+   "to": "",
+   "name": "EN DASH"
+  },
+  "ñ": {
+   "n": 1,
+   "to": "n",
+   "name": "LATIN SMALL LETTER N WITH TILDE"
+  }
+ }
+}

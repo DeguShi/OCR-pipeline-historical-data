@@ -1,0 +1,32 @@
+2026-11-13 14:11:17,100 page 5: 19 lines
+2026-11-13 14:11:18,029 page 6: 33 lines
+2026-11-13 14:12:06,068 page 8: 33 lines
+2026-11-13 14:12:54,661 page 9: 33 lines
+2026-11-13 14:13:45,442 page 11: 35 lines
+2026-11-13 14:14:33,232 page 13: 32 lines
+2026-11-13 14:15:24,515 page 14: 34 lines
+2026-11-13 14:16:15,750 page 15: 33 lines
+2026-11-13 14:17:13,181 page 16: 33 lines
+	Command being timed: "/content/venv/bin/python tools/export_posteriors.py --config configs/e20/r2_traprinq.json --pages 5,6,8,9,11,13,14,15,16 --device cpu --out outputs/e20/tune/post/r2_traprinq"
+	User time (seconds): 373.53
+	System time (seconds): 13.56
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 6:29.42
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1494204
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 5793436
+	Voluntary context switches: 350
+	Involuntary context switches: 33110
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 15160
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

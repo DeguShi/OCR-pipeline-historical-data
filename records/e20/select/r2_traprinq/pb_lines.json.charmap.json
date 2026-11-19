@@ -1,0 +1,22 @@
+{
+ "input": "outputs/e20/select/r2_traprinq/pb_raw/NGrams_s0.001/lines.json",
+ "alphabet_size": 88,
+ "mapped": 9,
+ "map": {
+  "_": {
+   "n": 7,
+   "to": "",
+   "name": "LOW LINE"
+  },
+  "/": {
+   "n": 1,
+   "to": "",
+   "name": "SOLIDUS"
+  },
+  "!": {
+   "n": 1,
+   "to": "",
+   "name": "EXCLAMATION MARK"
+  }
+ }
+}

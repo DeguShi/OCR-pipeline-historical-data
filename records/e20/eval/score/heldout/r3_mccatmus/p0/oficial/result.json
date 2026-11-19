@@ -1,0 +1,66 @@
+{
+  "source": "outputs/e20/eval/lines/heldout/r3_mccatmus/p0.json",
+  "rules": true,
+  "corpus": {
+    "wer_strict": 0.9052132701421801,
+    "cer_strict": 0.46143858737990134,
+    "wer_norm": 0.905511811023622,
+    "cer_norm": 0.4601226993865031
+  },
+  "pages": [
+    {
+      "page": 7,
+      "lines": 33,
+      "pred_words": 215,
+      "text": "83 Otrec mendente Le nattiral sutrtitute de Psiduite\nEte Pabttrun un vare secidrute en simais veriaii\nma endum de sux itregl. r cass du empate seriinir\nce mais rethon\nCaprtule 3t\nDa ndim un trabaches\nAtize se\ncte aua mareadi para ais craés se veie nt'arcase\nnus no calar pioipat du mui cipalisan, en uze\nleras da igno, Barcuet inmero Cemel , e persirate\namnirite, a seu tagie, que d'a exlcun su rindeie, sen\ntabarlus, dare jcipi- as t polancs. ctin\nabertie ae sessar.\nhtage 1r\nets ressae dirane . timps mareines du quatre huo\nvas amnasa a sectae,  prcsivente eu eman\ne tratatlus potur pal avas: cetu inernare a sessoit\nA tiguer\nAbecte a resse, onpuisitente aclarar a materin unn\ndis ecuscin, arcitera a ns oruscante nn trabisthun, den\nde a palai a que prur a pit, jaste cen\nadeumoia e a sivilitale entre a vereainne on\nenpectaemen\n61e so recint du trataclinn a oseie a mger\na persoa que mas pertenex a csxpincioux mme\npal.\nEd. Ea espe datres nas posins interirs un ocbates,\nj qualque fr,  vême de sigien  appevet\nsus en dcragrace, oet pnra a terene chreain, e\nerepuitan du veula, cu ccis de smsidemcit\nettr906\net Residente mecu lec :\nEe Chonrar a adun, ate tru crser, e vercaber quin",
+      "wer_strict": 0.9112149532710281,
+      "cer_strict": 0.47058823529411764,
+      "wer_norm": 0.9023255813953488,
+      "cer_norm": 0.46811945117029863,
+      "strict_we": 195,
+      "strict_rw": 214,
+      "strict_ce": 600,
+      "strict_rc": 1275,
+      "norm_we": 194,
+      "norm_rw": 215,
+      "norm_ce": 580,
+      "norm_rc": 1239
+    },
+    {
+      "page": 10,
+      "lines": 33,
+      "pred_words": 179,
+      "text": "ductet, scendete, rog a qene, umiine atrairs\nsixante o enbaiis, sia rebishe e seir da\nfavres ma firmi, a Venrade a quem a ipartee\nitiverronr mat potirai vetter\nAtrgo B2\nosiriaies qui, un cann jutipieata\nfentaru a monr rssue conse cntivas, leaux\nconns un sapptentis convocain que ms\ncomparoeevind, civat imprartie, ele Tresidrute\na manta de dyz mit acis Broievez Volq ais be\n364 A Tresiserte quanas truer ae reseutir\nqualques assmpté en apresentir e sepnser\nmrevexs an, passan a presiteient a ser\nmi meatre.\nl apiticte 1e\nDe mnmeire sas ressain.\netige 162\nee Camara numeipal favi un eatr nars\nsr ressat ndmarins, de dois un dais mien\nn mein on artis de Cuclut; Descuut,\nTévevin, stil, pimhee Tenrts qu savaraon\ne das ne cenaries, numeu inenis de tru.\nAtrs .\nMavir un exda unns trntes aexixe extrra\nmdmaries qantrs prin exegitus pels\nsn muréspal.\nete es sesseé extrandmances rerais conne\ncars pits Prrridintee semp pir ervien\nau peran, ieratina de propri pssatante\nure a reguiumiuts se Vuticsrute Cinquot.\n Can presedante aeclarava  motiun\nea Commer eudi\nDuponagés giaes",
+      "wer_strict": 0.9269662921348315,
+      "cer_strict": 0.4623376623376623,
+      "wer_norm": 0.9281767955801105,
+      "cer_norm": 0.46297948260481714,
+      "strict_we": 165,
+      "strict_rw": 178,
+      "strict_ce": 534,
+      "strict_rc": 1155,
+      "norm_we": 168,
+      "norm_rw": 181,
+      "norm_ce": 519,
+      "norm_rc": 1121
+    },
+    {
+      "page": 12,
+      "lines": 33,
+      "pred_words": 250,
+      "text": "lampadus quaits a conmena a exigis, guicitin\ni ci mes nr cnre sos maren ils eerer, de\ntmain, mo vu que e nimere de Campes\ndus srgiie mas ure cide a expo civase a Jrcoi\ndu dinones, care un qus se sa a iatispirr\ndant  prare du ne mors contais de\ndata de avise, axais sinden cle ter logaar nnttes\n ser mauguridee e aaicta a reloninant\ncemeteinte de prtesente ecntrecton\n692 Aclauula 16c d comtrante jien assaine\nsbtit. le tausula ii; cle o seranmps que\neccavenrar a nirerupans su liy cairar mais\nde grange us, proerci a cnnaire ecernidrr en\ncontrente, satre care a pren mai que\nrea renlrata pun artitnn precfades\nmome vn peta pma de saviite.\n23º Velaurula 16r jiea asse. et amprens\nsevra ter ampue un deparits a nimnero du\nlapadas ne ressane parc mlitélint mne\nvateumente qualque hompase qe se quime,\nne mutitire en se apojace, vot peus se pagur\ndu mil ais de misita abative nas perta eui\nmeuraes pu lampada que sitries aprgade\naus voite com eutavrs, catre eans dGeran\nmain apuire d pivent prinsinal de bamrer\n& sr A clausula Mr jeava dute moso, et a\nexpaisat iil muon prettion pon compich\na iunanns d can du Commiai, conne seis l\npaduse a sa basen uun qqual unére, satron\ntrde de aane can a mesma car ann\n952 e Clauraile 20r qoasa aisu et Cmupren\nrersi chegasa a mtaller e icuquner a cilrre\nvexd sa cisais sa vat dect cei a seir aure",
+      "wer_strict": 0.8838174273858921,
+      "cer_strict": 0.4524982406755806,
+      "wer_norm": 0.891213389121339,
+      "cer_norm": 0.4506839452843773,
+      "strict_we": 213,
+      "strict_rw": 241,
+      "strict_ce": 643,
+      "strict_rc": 1421,
+      "norm_we": 213,
+      "norm_rw": 239,
+      "norm_ce": 626,
+      "norm_rc": 1389
+    }
+  ]
+}

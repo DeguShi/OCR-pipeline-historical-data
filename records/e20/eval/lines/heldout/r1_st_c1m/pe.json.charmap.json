@@ -1,0 +1,22 @@
+{
+ "input": "outputs/baselines/search/vlm/final_heldout_paper_pt_period/lines.json",
+ "alphabet_size": 88,
+ "mapped": 13,
+ "map": {
+  "â": {
+   "n": 6,
+   "to": "a",
+   "name": "LATIN SMALL LETTER A WITH CIRCUMFLEX"
+  },
+  "í": {
+   "n": 4,
+   "to": "i",
+   "name": "LATIN SMALL LETTER I WITH ACUTE"
+  },
+  "à": {
+   "n": 3,
+   "to": "a",
+   "name": "LATIN SMALL LETTER A WITH GRAVE"
+  }
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "input": "outputs/e20/eval/raw/heldout/r2_traprinq/pb/NGrams_s0.001/lines.json",
+ "alphabet_size": 88,
+ "mapped": 2,
+ "map": {
+  "/": {
+   "n": 2,
+   "to": "",
+   "name": "SOLIDUS"
+  }
+ }
+}

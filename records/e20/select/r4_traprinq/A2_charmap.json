@@ -1,0 +1,22 @@
+{
+ "input": "outputs/e20/select/r4_traprinq/A2/results.jsonl",
+ "alphabet_size": 88,
+ "mapped": 95,
+ "map": {
+  "́": {
+   "n": 56,
+   "to": "",
+   "name": "COMBINING ACUTE ACCENT"
+  },
+  "̧": {
+   "n": 24,
+   "to": "",
+   "name": "COMBINING CEDILLA"
+  },
+  "̃": {
+   "n": 15,
+   "to": "",
+   "name": "COMBINING TILDE"
+  }
+ }
+}

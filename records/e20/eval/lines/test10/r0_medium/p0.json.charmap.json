@@ -1,0 +1,77 @@
+{
+ "input": "outputs/e20/eval/raw/test10/r0_medium/p0/lines.json",
+ "alphabet_size": 88,
+ "mapped": 61,
+ "map": {
+  "^": {
+   "n": 26,
+   "to": "",
+   "name": "CIRCUMFLEX ACCENT"
+  },
+  "°": {
+   "n": 8,
+   "to": "",
+   "name": "DEGREE SIGN"
+  },
+  "¬": {
+   "n": 6,
+   "to": "",
+   "name": "NOT SIGN"
+  },
+  "à": {
+   "n": 4,
+   "to": "a",
+   "name": "LATIN SMALL LETTER A WITH GRAVE"
+  },
+  "⁋": {
+   "n": 4,
+   "to": "",
+   "name": "REVERSED PILCROW SIGN"
+  },
+  "£": {
+   "n": 3,
+   "to": "",
+   "name": "POUND SIGN"
+  },
+  "ȩ": {
+   "n": 2,
+   "to": "e",
+   "name": "LATIN SMALL LETTER E WITH CEDILLA"
+  },
+  "̧": {
+   "n": 2,
+   "to": "",
+   "name": "COMBINING CEDILLA"
+  },
+  "ḿ": {
+   "n": 1,
+   "to": "m",
+   "name": "LATIN SMALL LETTER M WITH ACUTE"
+  },
+  "è": {
+   "n": 1,
+   "to": "e",
+   "name": "LATIN SMALL LETTER E WITH GRAVE"
+  },
+  "т": {
+   "n": 1,
+   "to": "",
+   "name": "CYRILLIC SMALL LETTER TE"
+  },
+  "е": {
+   "n": 1,
+   "to": "",
+   "name": "CYRILLIC SMALL LETTER IE"
+  },
+  "р": {
+   "n": 1,
+   "to": "",
+   "name": "CYRILLIC SMALL LETTER ER"
+  },
+  "и": {
+   "n": 1,
+   "to": "",
+   "name": "CYRILLIC SMALL LETTER I"
+  }
+ }
+}

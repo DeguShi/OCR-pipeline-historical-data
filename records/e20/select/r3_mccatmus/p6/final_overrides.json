@@ -1,0 +1,43 @@
+{
+ "accepted": {
+  "beta15": 1.5,
+  "cand50": 0.32,
+  "fold": 0.38
+ },
+ "chosen": [
+  "beta15",
+  "fold"
+ ],
+ "overrides": {
+  "context_beta": 1.5,
+  "fold_accents": true
+ },
+ "result": {
+  "name": "combo_beta15+fold",
+  "overrides": {
+   "context_beta": 1.5,
+   "fold_accents": true
+  },
+  "oficial": {
+   "wer": 77.26,
+   "cer": 42.47
+  },
+  "gemini": {
+   "wer": 77.26,
+   "cer": 42.93
+  }
+ },
+ "base": {
+  "name": "base",
+  "overrides": {},
+  "oficial": {
+   "wer": 78.89,
+   "cer": 42.9
+  },
+  "gemini": {
+   "wer": 78.92,
+   "cer": 43.47
+  }
+ },
+ "config_source": "configs/e20/r3_mccatmus.json"
+}

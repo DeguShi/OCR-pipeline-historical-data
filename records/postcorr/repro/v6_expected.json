@@ -1,0 +1,27 @@
+{
+ "heldout": {
+  "pages": {
+   "7": "42921e807e0c463844668517420eb2e101fff18ecf8f7fbcd391ab9b17fce401",
+   "10": "7d096164872df6238f91899e2cc4e5897b5a067124be3bb16ef8c91c9aacaced",
+   "12": "ddc7c60859402972ef0bfb46a8ca70314b364303cac3cec00656eee838b69718"
+  },
+  "wer_norm": 18.74,
+  "scored_with": "tools/score_lines.py --no-rules, configs/final_v6.json"
+ },
+ "test10": {
+  "pages": {
+   "18": "3d7972f2ce11371600e875aef1369d729458befc5d8742942a67157a02367c1b",
+   "22": "449645d7ad99da5c60478e2bad953a7aadd5a8fc0630cd981a0d80c33f53bdd9",
+   "23": "25f78b16d251879cec67d2819ca885635beaddef48c0c077111fff505dfac54f",
+   "24": "195b599f57e2c209e9e3c71a2338ea725309b46048434a9c1b350e1238940f1a",
+   "25": "ac0e4bf085cb1020a66c012abd5e6db2a9f759675266227835cb48a079566375",
+   "31": "2d37a6653526230cc7ae94677c481d50c9116637c8db859e69531fc2f6327ffd",
+   "32": "2a8aa1b6ed0dd6b35ee1e2d0159916850e0d425b66c8ab6b577da7e9ffc773d1",
+   "34": "37a48cad5a15dd6f42b6f2fc2c1d961515601a2589817c05db15669aab647824",
+   "44": "87a8d3eb8d6054d9815e3e2b1cab7f40148f9e98c38ef3c98dcd0e264a4770e5",
+   "55": "871c73dcaeb55e7f41ec3ba2cd53cc61d9a0cb281310f22724a9f588371d1296"
+  },
+  "wer_norm": 3.49,
+  "scored_with": "tools/score_lines.py --no-rules, configs/final_v6.json"
+ }
+}

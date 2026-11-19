@@ -1,0 +1,38 @@
+{
+ "pages": [
+  5,
+  6,
+  8,
+  9,
+  11,
+  13,
+  14,
+  15,
+  16
+ ],
+ "scorer": "tools/score_lines.py --config configs/final_v6.json (norm)",
+ "rows": [
+  {
+   "run": "greedy (no correction)",
+   "wer": 31.04,
+   "cer": 8.38
+  },
+  {
+   "run": "vlm paper_en",
+   "wer": 34.03,
+   "cer": 13.64,
+   "lines": 285,
+   "changed": 241,
+   "gpu_seconds": 506.2
+  },
+  {
+   "run": "vlm paper_pt",
+   "wer": 30.93,
+   "cer": 11.85,
+   "lines": 285,
+   "changed": 246,
+   "gpu_seconds": 386.5
+  }
+ ],
+ "note": "paper_pt_period pending: g1 reclaimed by Colab before it started; T4 refused on retry (free-tier GPU limit)."
+}

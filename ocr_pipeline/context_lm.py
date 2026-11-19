@@ -51,13 +51,25 @@ class NgramLM:
         i, j = self.index.get(previous), self.index.get(word)
         return i is not None and j is not None and _count(self.keys, self.counts, i * len(self.index) + j) > 0
 
-    def logp(self, word: str, previous: str | None, before: str | None = None) -> float:
-        p_bi = self.bigram(word, previous)
+    def logp(self, word: str, previous: str | None, before: str | None = None, memo: dict | None = None) -> float:
+        """memo: optional per-caller cache of the bigram probability and the trigram history count, which repeat
+        across the transitions of a Viterbi slot; pure functions, so the result is identical with or without it."""
+        if memo is None:
+            p_bi = self.bigram(word, previous)
+        else:
+            p_bi = memo.get(('b', word, previous))
+            if p_bi is None:
+                p_bi = memo[('b', word, previous)] = self.bigram(word, previous)
         ids = [self.index.get(w) if w else None for w in (before, previous, word)]
         if None in ids:
             return math.log(p_bi)
         size = len(self.index)
-        history = _count(self.keys, self.counts, ids[0] * size + ids[1])
+        if memo is None:
+            history = _count(self.keys, self.counts, ids[0] * size + ids[1])
+        else:
+            history = memo.get(('h', ids[0], ids[1]))
+            if history is None:
+                history = memo[('h', ids[0], ids[1])] = _count(self.keys, self.counts, ids[0] * size + ids[1])
         if not history:
             return math.log(p_bi)
         triple = _count(self.keys3, self.counts3, (ids[0] * size + ids[1]) * size + ids[2])
@@ -79,6 +91,7 @@ def decode_line(slots: list[list[tuple[str, float]]], lm: NgramLM, beta: float, 
         return []
     # state: the path's last order - 1 words (lowercased) -> (score, path)
     states: dict[tuple[str, ...], tuple[float, list[str]]] = {(): (0.0, [])}
+    memo: dict = {}
     for slot in slots:
         nxt: dict[tuple[str, ...], tuple[float, list[str]]] = {}
         for history, (total, path) in states.items():
@@ -86,7 +99,7 @@ def decode_line(slots: list[list[tuple[str, float]]], lm: NgramLM, beta: float, 
             before = history[-2] if len(history) > 1 and order > 2 else None
             for word, score in slot:
                 lower = word.lower()
-                value = total + score + beta * lm.logp(lower, previous, before)
+                value = total + score + beta * lm.logp(lower, previous, before, memo)
                 key = (history + (lower,))[-(order - 1):]
                 if key not in nxt or value > nxt[key][0]:
                     nxt[key] = (value, path + [word])

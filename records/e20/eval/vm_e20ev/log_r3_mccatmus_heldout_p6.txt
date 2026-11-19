@@ -1,0 +1,8 @@
+2026-11-17 22:12:00,420 page 7: 33 lines, 84.5 s
+2026-11-17 22:14:01,833 page 10: 33 lines, 121.4 s
+2026-11-17 22:16:02,169 page 12: 33 lines, 120.3 s
+2026-11-17 22:16:02,175 ALL DONE: load 1.1 s, decode 326.1 s wall / 244.8 s cpu, peak 668 MB
+mapped 4 characters (2 distinct) -> outputs/e20/eval/lines/heldout/r3_mccatmus/p6.json
+WER norm 76.22% | CER norm 41.13% -> outputs/e20/eval/score/heldout/r3_mccatmus/p6/oficial
+WER norm 76.05% | CER norm 41.53% -> outputs/e20/eval/score/heldout/r3_mccatmus/p6/gemini
+DECODED r3_mccatmus heldout p6

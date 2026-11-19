@@ -1,0 +1,11 @@
+{
+ "books": "outputs/traprinq",
+ "page_xml": "/content/traprinq/val/1499414/TRAINING_VALIDATION_SET_TraPrInq_Portuguese_Handwriting_16th-19th_c_/page",
+ "chosen": "records/e18/books",
+ "config": "configs/final_v6.json",
+ "out": "outputs/seg",
+ "cache": "outputs/seg_cache",
+ "device": "cpu",
+ "seed": "42",
+ "limit_cases": "0"
+}

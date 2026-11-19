@@ -1,0 +1,19 @@
+{
+  "wer_a": 18.74015748031496,
+  "wer_b": 21.25984251968504,
+  "dwer": -2.5196850393700787,
+  "ci95": [
+    -4.86,
+    -0.33
+  ],
+  "p_signflip": 0.058694130586941305,
+  "blocks": 23,
+  "pages_won_tied_lost": [
+    3,
+    0,
+    0
+  ],
+  "a": "outputs/runs/v6_all12_cache",
+  "b": "outputs/baselines/byt5/gt12/score",
+  "block": 30
+}

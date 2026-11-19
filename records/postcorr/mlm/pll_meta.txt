@@ -1,0 +1,2 @@
+gt12 {'model': 'LIACC/PortOldBERT', 'revision': '9641bba86b86173f91a0e3936f28fa76b1c94121', 'tokenizer': 'PORTULAN/albertina-100m-portuguese-ptpt-encoder', 'k': 10, 'device': 'cuda', 'gpu': 'Tesla T4', 'seconds': 529.5, 'slots': 2258, 'candidates': 21016, 'torch': '2.14.1+cu130'}
+test10 {'model': 'LIACC/PortOldBERT', 'revision': '9641bba86b86173f91a0e3936f28fa76b1c94121', 'tokenizer': 'PORTULAN/albertina-100m-portuguese-ptpt-encoder', 'k': 10, 'device': 'cuda', 'gpu': 'Tesla T4', 'seconds': 440.4, 'slots': 2042, 'candidates': 18712, 'torch': '2.14.1+cu130'}

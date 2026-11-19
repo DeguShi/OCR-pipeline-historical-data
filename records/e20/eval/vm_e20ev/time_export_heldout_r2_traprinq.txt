@@ -1,0 +1,26 @@
+2026-11-17 21:31:14,667 page 7: 33 lines
+2026-11-17 21:31:17,583 page 10: 33 lines
+2026-11-17 21:31:21,238 page 12: 33 lines
+	Command being timed: "/content/venv/bin/python tools/export_posteriors.py --config configs/e20/r2_traprinq.json --pages 7,10,12 --device cuda:0 --out outputs/e20/eval/post/heldout/r2_traprinq"
+	User time (seconds): 31.02
+	System time (seconds): 2.57
+	Percent of CPU this job got: 138%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:24.27
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1732492
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 809046
+	Voluntary context switches: 1199
+	Involuntary context switches: 11821
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 6008
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

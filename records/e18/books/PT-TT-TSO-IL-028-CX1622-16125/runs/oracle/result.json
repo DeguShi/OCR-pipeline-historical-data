@@ -1,0 +1,148 @@
+{
+  "config": {
+    "geometric_ops": [
+      "upscale",
+      "deskew"
+    ],
+    "seg_ops": [
+      "contrast",
+      "remove_rules"
+    ],
+    "rec_ops": [
+      "contrast"
+    ],
+    "rec_tta": [],
+    "params": {
+      "upscale_factor": 2.0,
+      "deskew_limit": 5.0,
+      "deskew_step": 0.25,
+      "contrast_factor": 1.8,
+      "clahe_clip": 2.0,
+      "clahe_grid": 8,
+      "denoise_strength": 7.0,
+      "background_sigma": 25.0,
+      "nlbin_threshold": 0.5,
+      "nlbin_zoom": 0.5,
+      "sharpen_amount": 1.0,
+      "gamma": 1.0,
+      "rule_kernel_frac": 0.08,
+      "slant_limit": 15.0,
+      "slant_gain": 1.0,
+      "channel": "b",
+      "stroke_size": 3
+    },
+    "seg": {
+      "model": null,
+      "min_line_frac": 0.0,
+      "min_line_px": 0,
+      "drop_top_frac": 0.0
+    },
+    "rec": {
+      "model": "st_c1m",
+      "padding": 24,
+      "no_legacy_polygons": false
+    },
+    "post": {
+      "conventions": true,
+      "ordinals": true,
+      "dehyphenate": true,
+      "lexicon": null,
+      "lexicon_size": 20000,
+      "period_lexicon": "models/lexicon/pt_hist_legal_w1.txt",
+      "period_lexicon_size": 0,
+      "domain_lexicon": false,
+      "lexicon_max_ratio": 0.5,
+      "lexicon_min_len": 4,
+      "fold_accents": false,
+      "decoder": "ctc+edit",
+      "ctc_alpha": 16,
+      "ctc_candidates": 30,
+      "context_lm": "models/lexicon/pt_hist_legal_w4_livro78.ngrams.npz",
+      "context_order": 3,
+      "context_beta": 1.0,
+      "context_open_known": true,
+      "context_min_edits": 1,
+      "context_pool": 0,
+      "context_short": 60,
+      "context_nbest": 5,
+      "beam": 64,
+      "beam_oov": -6.0,
+      "beam_bonus": 4.0,
+      "beam_mode": "candidates",
+      "beam_region_margin": 0.0,
+      "beam_beta": -1.0,
+      "beam_free_digits": false,
+      "beam_length_norm": false,
+      "beam_boundary_min": 0.0,
+      "context_protect": 0.0,
+      "context_coherent": false,
+      "edit_costs": null,
+      "edit_costs_weight": 1.0,
+      "edit_costs_max": 1.0
+    }
+  },
+  "pages_subset": "1,2,3",
+  "seed": 42,
+  "corpus": {
+    "wer_strict": 0.7781885397412199,
+    "cer_strict": 0.3461928934010152,
+    "wer_norm": 0.7145359019264448,
+    "cer_norm": 0.32692979392245897
+  },
+  "pages": [
+    {
+      "page": 1,
+      "lines": 20,
+      "pred_words": 68,
+      "text": "\n\n\n\ndentro do correio do que\ne escrituração, não sei bem,\na pena mas parecem\nde das mercês, e o dito sapato\na,tronalaccaaacomeheça\nao me tão. bem\nnão Rel de Pero De q se de\nmas parecem q he de 7\n\nClara. eho Aen da\ngr\neM não sei q\ntenha opaco, e crea\no ViDe da pelas o pajem\nVenço, e nao se se tão -bem\nem prosa.",
+      "wer_strict": 0.7368421052631579,
+      "cer_strict": 0.356353591160221,
+      "wer_norm": 0.654320987654321,
+      "cer_norm": 0.32571428571428573,
+      "strict_we": 56,
+      "strict_rw": 76,
+      "strict_ce": 129,
+      "strict_rc": 362,
+      "norm_we": 53,
+      "norm_rw": 81,
+      "norm_ce": 114,
+      "norm_rc": 350
+    },
+    {
+      "page": 2,
+      "lines": 36,
+      "pred_words": 242,
+      "text": "Manoel Moré de A dos Paga.a.\nCom-lis De-Oito\n\n\n\n\n\nFera. Marido Ao,ora. Severa Lob Ser. dirigido o Mas\ndos fins de a Inquisição de fazer laços inclue, De\nfor preciso f.a. bem de Couza, .. caro neste Tribunal,\nda. Justiça do inicio, atendendo ao estado da declare\nte, e over filha familia, e por isso,e a referimos de des\n\nfios orde perguntado judicial, 9. ti, vendo 0 me\nna e solemne sobredita denuncia, na for occas,\nque ella Se confessar, lhe peço-Licença para córada\nCom fetão tratar com-mesma sobre o tecto.\nder. e * o fio, Seguia *de Eu\npresente ex pressa, declarar tudo, 9.º soubera:\npeito dos partitura, debela denuncie, Sem ameno,\nde reis 9. porque teve-o seu credito, e leuctras,\nme o vender a Les dos .º ele, do que\nra Christandade, ante, 9.oteEeiicode\no var dever E- e Da Com\ncid. Logo no Confissionario, ou em outro Lugar, com toda\ntela, de force, segredo, 9.mº lhe encarregam, de No2\nOrdeiro, e Authoridade informará de de, At. Theodora\ne abre os circos torcia Se.e. Quantos tempos\n9. ella ouvio dizer 0 9. tem declarado, por 9. cozinheiros\nentendo os te duque desmentir apenas. desde\ncio, livorno prez de Da de arantes Sobre materia,\nos impropria, e incompetente a se e Lá, é a foro\nmissão dos mesmos Sugeitos; se estes lhe persuadidos\nalguem doctrina, q. competisse a.a um.e a Sociedade, desque\ne 2 5 c, e S e, ao e a\n",
+      "wer_strict": 0.8022388059701493,
+      "cer_strict": 0.376158940397351,
+      "wer_norm": 0.7678571428571429,
+      "cer_norm": 0.3613963039014374,
+      "strict_we": 215,
+      "strict_rw": 268,
+      "strict_ce": 568,
+      "strict_rc": 1510,
+      "norm_we": 215,
+      "norm_rw": 280,
+      "norm_ce": 528,
+      "norm_rc": 1461
+    },
+    {
+      "page": 3,
+      "lines": 28,
+      "pred_words": 176,
+      "text": "reprovando as vantagens de mente Socied., abonando de Suas nocturnas,\nessas tentando Perella leite, ovos, des os o elle de\najuntei, forem assemblea, p.e p.e Tratarem dos nem.e de\ntal Socied, onde os faço, serão em dias certos, e que seja\neste; se mostrarão alumnos indique, ou Cousa,, q. sejas pri=\n\nvoe lat, p.a Serem reconhecer por membros dom.- Sociedade,\nmostrar os prerogativa, della. Cultiva-avertira\na, pode, e deve de levar tudo, 9. souber relativo aos jeitos\no cinto de feridas. Chovendo Si.e procedido estacarias\ncom de de prudencia, e disfarce. Nos dará ha\na individual informação de o9. alcançar, lançando-de\npores creto no verso desta,s entregares\nMeza commercio demencia. Confiamos q.e tudo escalona\nforma Recomendado, passo pelo Zelo, q. deve\nter pelo Serviço de Deos N. Senhor, de sobem pe-logcoite\nraças Fustes do Sancto e frio, e os Serviços\nPrincipe .e dizendo Nos de sem haver,\ncumprido. imposto Sua. Deus Nosso Senhor\nSe e\nd.e a Vr-Lisboa nos Santo off.em Meza 23 de\no Novembro de 1802.\nManoel Janella Fundei. Antonio Vk\n\ndo em\nde\n\n",
+      "wer_strict": 0.7614213197969543,
+      "cer_strict": 0.3010156971375808,
+      "wer_norm": 0.6666666666666666,
+      "cer_norm": 0.279467680608365,
+      "strict_we": 150,
+      "strict_rw": 197,
+      "strict_ce": 326,
+      "strict_rc": 1083,
+      "norm_we": 140,
+      "norm_rw": 210,
+      "norm_ce": 294,
+      "norm_rc": 1052
+    }
+  ]
+}

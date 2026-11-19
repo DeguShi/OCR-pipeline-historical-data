@@ -1,0 +1,33 @@
+2026-11-13 14:03:28,365 page 5: 19 lines, 10.2 s
+2026-11-13 14:04:12,064 page 6: 33 lines, 43.7 s
+2026-11-13 14:05:13,367 page 8: 33 lines, 61.3 s
+2026-11-13 14:06:07,237 page 9: 33 lines, 53.9 s
+2026-11-13 14:07:14,889 page 11: 35 lines, 67.6 s
+2026-11-13 14:08:06,426 page 13: 32 lines, 51.5 s
+2026-11-13 14:08:52,304 page 14: 34 lines, 45.8 s
+2026-11-13 14:09:52,086 page 15: 33 lines, 59.8 s
+2026-11-13 14:10:44,116 page 16: 33 lines, 52.0 s
+2026-11-13 14:10:44,119 ALL DONE: load 0.8 s, decode 445.7 s wall / 436.4 s cpu, peak 665 MB
+	Command being timed: "/content/venv/bin/python tools/postcorr_from_posteriors.py --config configs/e20/r0_medium.json --posteriors outputs/e20/tune/post/r0_medium --pages 5,6,8,9,11,13,14,15,16 --out outputs/e20/tune/p6/r0_medium"
+	User time (seconds): 439.73
+	System time (seconds): 0.88
+	Percent of CPU this job got: 97%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 7:29.96
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 753956
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 36
+	Minor (reclaiming a frame) page faults: 120370
+	Voluntary context switches: 38
+	Involuntary context switches: 36529
+	Swaps: 0
+	File system inputs: 8264
+	File system outputs: 104
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

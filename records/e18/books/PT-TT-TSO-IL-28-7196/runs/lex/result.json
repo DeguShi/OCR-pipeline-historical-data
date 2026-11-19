@@ -1,0 +1,148 @@
+{
+  "config": {
+    "geometric_ops": [
+      "upscale",
+      "deskew"
+    ],
+    "seg_ops": [
+      "clahe",
+      "remove_rules"
+    ],
+    "rec_ops": [
+      "channel"
+    ],
+    "rec_tta": [],
+    "params": {
+      "upscale_factor": 2.0,
+      "deskew_limit": 5.0,
+      "deskew_step": 0.25,
+      "contrast_factor": 1.8,
+      "clahe_clip": 2.0,
+      "clahe_grid": 8,
+      "denoise_strength": 7.0,
+      "background_sigma": 25.0,
+      "nlbin_threshold": 0.5,
+      "nlbin_zoom": 0.5,
+      "sharpen_amount": 1.0,
+      "gamma": 1.0,
+      "rule_kernel_frac": 0.08,
+      "slant_limit": 15.0,
+      "slant_gain": 1.0,
+      "channel": "min",
+      "stroke_size": 3
+    },
+    "seg": {
+      "model": null,
+      "min_line_frac": 0.0,
+      "min_line_px": 0,
+      "drop_top_frac": 0.0
+    },
+    "rec": {
+      "model": "st_c1m",
+      "padding": 24,
+      "no_legacy_polygons": false
+    },
+    "post": {
+      "conventions": true,
+      "ordinals": true,
+      "dehyphenate": true,
+      "lexicon": null,
+      "lexicon_size": 20000,
+      "period_lexicon": "models/lexicon/pt_hist_legal_w1.txt",
+      "period_lexicon_size": 0,
+      "domain_lexicon": false,
+      "lexicon_max_ratio": 0.5,
+      "lexicon_min_len": 4,
+      "fold_accents": false,
+      "decoder": "ctc+edit",
+      "ctc_alpha": 16,
+      "ctc_candidates": 30,
+      "context_lm": "models/lexicon/pt_hist_legal_w4_livro78.ngrams.npz",
+      "context_order": 3,
+      "context_beta": 1.0,
+      "context_open_known": true,
+      "context_min_edits": 1,
+      "context_pool": 0,
+      "context_short": 60,
+      "context_nbest": 5,
+      "beam": 64,
+      "beam_oov": -6.0,
+      "beam_bonus": 4.0,
+      "beam_mode": "candidates",
+      "beam_region_margin": 0.0,
+      "beam_beta": -1.0,
+      "beam_free_digits": false,
+      "beam_length_norm": false,
+      "beam_boundary_min": 0.0,
+      "context_protect": 0.0,
+      "context_coherent": false,
+      "edit_costs": null,
+      "edit_costs_weight": 1.0,
+      "edit_costs_max": 1.0
+    }
+  },
+  "pages_subset": "2,3,4",
+  "seed": 42,
+  "corpus": {
+    "wer_strict": 0.7516891891891891,
+    "cer_strict": 0.35500821018062395,
+    "wer_norm": 0.7248322147651006,
+    "cer_norm": 0.34178059353117707
+  },
+  "pages": [
+    {
+      "page": 2,
+      "lines": 42,
+      "pred_words": 139,
+      "text": "\n\n\n\ne\n\n\n\n\n\nda-\n\n\n\n\n\n\n3\nella Redor ditto serpa Na\nParte a della Offereceo\na companhia certos das pro\nledas na e. Cerrae a ava\ncomendo, na aquecendo alonga:\ndevia acceitar por dizer q ao coma\na quella casa por for p serena\nna ley e e moyses, e certa pessoa\nq nomeou E avia ensinado\nella Raizes e prantos —onze\ndo que Se ouvia E a taleigada\nErguendo que serão quererem\nda dita Lei demais tão descobrisse.\na dita certa pessoa que nomeou o q\nlhe havia dito e disse que tal não\npassaros\nPorquidade a Regar Erro que Tempera\nde sanação fechou ella\nDe do dito tempo a se parisiense\nentre praticas que verão disserta pessoa\nda companhia a outra pessoa della\nq vespera Lei eanes Pendente De\nq a canela, ella Rectas mais\npesada dicta Companhias de a",
+      "wer_strict": 0.7791411042944786,
+      "cer_strict": 0.32889963724304716,
+      "wer_norm": 0.7239263803680982,
+      "cer_norm": 0.3111111111111111,
+      "strict_we": 127,
+      "strict_rw": 163,
+      "strict_ce": 272,
+      "strict_rc": 827,
+      "norm_we": 118,
+      "norm_rw": 163,
+      "norm_ce": 252,
+      "norm_rc": 810
+    },
+    {
+      "page": 3,
+      "lines": 36,
+      "pred_words": 177,
+      "text": "39 0\nEnque ficou e esperando salvarte 2 assim=\n\n\no declarou a Ella D. E as pessoas da dita compra\nas quais disserão que tambeira crião na da\ne E que sua observancia fazião\nas dittas ceremonias, E depois deparar\no sobredito Na E as pessoas da dita\ncompanhia tiverão Entre Ly sem ante\ndeclaração\n\n\n\nQue E R. parou empero lugar em\n\ne P e com pessoas de sua nação aonde da das\n\nduas pessoas perguntou a outra Seria\nmales de montes qual respondia que\nsi: E com esta occas ião EMa E. E as penas,\n\na. a comp.a deverão crião E verão na\nda Lei Tem a observara guardam\nos sabbados vestindo nelles metalizada\nE os mil dores vestidos, E não\nmão porco Lebre coelho nem peixe\nrepelle: E ela R. E outras das d.a pessoas\ndisserão lhe havia ensinado arena\nda d.a les certa pessoa que declararão.\n\n\nQue ella. O. se em imerso Engos\ncom comp.e. de sua parou; qual edade\noffereço certaines do mer das pri\nidos na lei de Disse,: E não querendo",
+      "wer_strict": 0.5882352941176471,
+      "cer_strict": 0.24,
+      "wer_norm": 0.5677083333333334,
+      "cer_norm": 0.2244258872651357,
+      "strict_we": 110,
+      "strict_rw": 187,
+      "strict_ce": 234,
+      "strict_rc": 975,
+      "norm_we": 109,
+      "norm_rw": 192,
+      "norm_ce": 215,
+      "norm_rc": 958
+    },
+    {
+      "page": 4,
+      "lines": 34,
+      "pred_words": 193,
+      "text": "Fez a a cara de dez\n\nperde Pelle ari quero\nda ter que do deste contratado fóra ocupa dela\nnas rachada lote pu dera da camisa\nluzes ceroulas dezem man do e ella lhe respondeu\nque não queria fazer bom caldo fizesse\ne acceita e pelo quarto des que ouvira\nde ser que presidem tornara repetir\nAnt.a parte e pedro era p.r seu rochedoP.e\nde zelador ou ordem para ferragista\nDe mil Tempo em que segue cr de que\nForam buraco pena de de de\npergunta pelludas dize que na\nEu alegra decote indole\nPiper\npara e pelo Perigo EZe nada\nque e tremente pelo esta de que uma\nvaliam de prata de de agua fica\ntoda com sentar e que verdade que tive\n\nram dote Poz grande se e andas e pela\npor em o poder e perna despede\nestava toca da contraditada desazo para\ndellas vezes deseja desejos praças sequer\nma lavrar datada editora veja\npesado não ter ou das prazer com\ntra Nhia e sabe e de destemperada que\na e Eu peregr manto vermelho ou\nlhe queira mal esta grande odio sua\npedras então dize desse\ntendo pela a2tão\n",
+      "wer_strict": 0.859504132231405,
+      "cer_strict": 0.46259050683829445,
+      "wer_norm": 0.8506224066390041,
+      "cer_norm": 0.45329000812347686,
+      "strict_we": 208,
+      "strict_rw": 242,
+      "strict_ce": 575,
+      "strict_rc": 1243,
+      "norm_we": 205,
+      "norm_rw": 241,
+      "norm_ce": 558,
+      "norm_rc": 1231
+    }
+  ]
+}

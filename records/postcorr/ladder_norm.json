@@ -1,0 +1,256 @@
+{
+  "args": {
+    "runs": "[PosixPath('outputs/runs/ladder_L0_raw'), PosixPath('outputs/runs/ladder_L1_rules'), PosixPath('outputs/runs/ladder_L2_edit'), PosixPath('outputs/runs/ladder_L3_ctc'), PosixPath('outputs/runs/ladder_L4_tri'), PosixPath('outputs/runs/ladder_L5b_bigram'), PosixPath('outputs/runs/ladder_L5c_nobeam'), PosixPath('outputs/runs/v6_all12_cache')]",
+    "raw": "outputs/runs/ladder_L0_raw",
+    "kind": "norm",
+    "bootstrap": "10000",
+    "seed": "42",
+    "out": "outputs/postcorr/ladder_norm.json"
+  },
+  "tuning": {
+    "ladder_L0_raw": {
+      "wer": 33.41,
+      "cer": 8.63,
+      "wer_reduction_pct": 0.0,
+      "cer_reduction_pct": 0.0,
+      "delta_wer_vs_raw_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "ladder_L1_rules": {
+      "wer": 31.04,
+      "cer": 8.38,
+      "wer_reduction_pct": 7.1,
+      "cer_reduction_pct": 2.9,
+      "delta_wer_vs_raw_ci95": [
+        -2.85,
+        -1.78
+      ]
+    },
+    "ladder_L2_edit": {
+      "wer": 25.9,
+      "cer": 7.54,
+      "wer_reduction_pct": 22.5,
+      "cer_reduction_pct": 12.7,
+      "delta_wer_vs_raw_ci95": [
+        -8.03,
+        -7.02
+      ]
+    },
+    "ladder_L3_ctc": {
+      "wer": 23.48,
+      "cer": 6.54,
+      "wer_reduction_pct": 29.7,
+      "cer_reduction_pct": 24.2,
+      "delta_wer_vs_raw_ci95": [
+        -11.02,
+        -8.98
+      ]
+    },
+    "ladder_L4_tri": {
+      "wer": 22.29,
+      "cer": 6.17,
+      "wer_reduction_pct": 33.3,
+      "cer_reduction_pct": 28.5,
+      "delta_wer_vs_raw_ci95": [
+        -12.16,
+        -10.16
+      ]
+    },
+    "ladder_L5b_bigram": {
+      "wer": 19.64,
+      "cer": 5.62,
+      "wer_reduction_pct": 41.2,
+      "cer_reduction_pct": 34.9,
+      "delta_wer_vs_raw_ci95": [
+        -15.0,
+        -12.73
+      ]
+    },
+    "ladder_L5c_nobeam": {
+      "wer": 19.92,
+      "cer": 5.65,
+      "wer_reduction_pct": 40.4,
+      "cer_reduction_pct": 34.5,
+      "delta_wer_vs_raw_ci95": [
+        -14.88,
+        -12.39
+      ]
+    },
+    "v6_all12_cache": {
+      "wer": 19.64,
+      "cer": 5.58,
+      "wer_reduction_pct": 41.2,
+      "cer_reduction_pct": 35.3,
+      "delta_wer_vs_raw_ci95": [
+        -15.15,
+        -12.68
+      ]
+    }
+  },
+  "heldout": {
+    "ladder_L0_raw": {
+      "wer": 31.5,
+      "cer": 7.07,
+      "wer_reduction_pct": 0.0,
+      "cer_reduction_pct": 0.0,
+      "delta_wer_vs_raw_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "ladder_L1_rules": {
+      "wer": 29.45,
+      "cer": 6.88,
+      "wer_reduction_pct": 6.5,
+      "cer_reduction_pct": 2.6,
+      "delta_wer_vs_raw_ci95": [
+        -3.72,
+        1.1
+      ]
+    },
+    "ladder_L2_edit": {
+      "wer": 22.2,
+      "cer": 5.55,
+      "wer_reduction_pct": 29.5,
+      "cer_reduction_pct": 21.5,
+      "delta_wer_vs_raw_ci95": [
+        -12.56,
+        -4.97
+      ]
+    },
+    "ladder_L3_ctc": {
+      "wer": 20.16,
+      "cer": 4.88,
+      "wer_reduction_pct": 36.0,
+      "cer_reduction_pct": 30.9,
+      "delta_wer_vs_raw_ci95": [
+        -14.42,
+        -6.63
+      ]
+    },
+    "ladder_L4_tri": {
+      "wer": 19.84,
+      "cer": 4.83,
+      "wer_reduction_pct": 37.0,
+      "cer_reduction_pct": 31.7,
+      "delta_wer_vs_raw_ci95": [
+        -15.35,
+        -6.63
+      ]
+    },
+    "ladder_L5b_bigram": {
+      "wer": 19.06,
+      "cer": 4.61,
+      "wer_reduction_pct": 39.5,
+      "cer_reduction_pct": 34.7,
+      "delta_wer_vs_raw_ci95": [
+        -15.81,
+        -6.63
+      ]
+    },
+    "ladder_L5c_nobeam": {
+      "wer": 19.21,
+      "cer": 4.48,
+      "wer_reduction_pct": 39.0,
+      "cer_reduction_pct": 36.6,
+      "delta_wer_vs_raw_ci95": [
+        -15.35,
+        -7.18
+      ]
+    },
+    "v6_all12_cache": {
+      "wer": 18.74,
+      "cer": 4.35,
+      "wer_reduction_pct": 40.5,
+      "cer_reduction_pct": 38.5,
+      "delta_wer_vs_raw_ci95": [
+        -16.28,
+        -7.18
+      ]
+    }
+  },
+  "all12": {
+    "ladder_L0_raw": {
+      "wer": 32.9,
+      "cer": 8.22,
+      "wer_reduction_pct": 0.0,
+      "cer_reduction_pct": 0.0,
+      "delta_wer_vs_raw_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "ladder_L1_rules": {
+      "wer": 30.62,
+      "cer": 7.99,
+      "wer_reduction_pct": 6.9,
+      "cer_reduction_pct": 2.8,
+      "delta_wer_vs_raw_ci95": [
+        -2.91,
+        -1.51
+      ]
+    },
+    "ladder_L2_edit": {
+      "wer": 24.93,
+      "cer": 7.01,
+      "wer_reduction_pct": 24.2,
+      "cer_reduction_pct": 14.7,
+      "delta_wer_vs_raw_ci95": [
+        -9.16,
+        -7.0
+      ]
+    },
+    "ladder_L3_ctc": {
+      "wer": 22.6,
+      "cer": 6.1,
+      "wer_reduction_pct": 31.3,
+      "cer_reduction_pct": 25.7,
+      "delta_wer_vs_raw_ci95": [
+        -11.58,
+        -9.11
+      ]
+    },
+    "ladder_L4_tri": {
+      "wer": 21.65,
+      "cer": 5.82,
+      "wer_reduction_pct": 34.2,
+      "cer_reduction_pct": 29.2,
+      "delta_wer_vs_raw_ci95": [
+        -12.51,
+        -10.03
+      ]
+    },
+    "ladder_L5b_bigram": {
+      "wer": 19.48,
+      "cer": 5.36,
+      "wer_reduction_pct": 40.8,
+      "cer_reduction_pct": 34.8,
+      "delta_wer_vs_raw_ci95": [
+        -14.67,
+        -12.0
+      ]
+    },
+    "ladder_L5c_nobeam": {
+      "wer": 19.73,
+      "cer": 5.34,
+      "wer_reduction_pct": 40.0,
+      "cer_reduction_pct": 35.0,
+      "delta_wer_vs_raw_ci95": [
+        -14.44,
+        -11.84
+      ]
+    },
+    "v6_all12_cache": {
+      "wer": 19.4,
+      "cer": 5.26,
+      "wer_reduction_pct": 41.0,
+      "cer_reduction_pct": 36.0,
+      "delta_wer_vs_raw_ci95": [
+        -14.85,
+        -12.1
+      ]
+    }
+  }
+}

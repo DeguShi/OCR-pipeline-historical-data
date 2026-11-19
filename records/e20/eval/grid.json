@@ -1,0 +1,422 @@
+{
+ "r0_medium\u00b7p0": {
+  "heldout/gemini": {
+   "wer": 60.84,
+   "cer": 19.46
+  },
+  "heldout/oficial": {
+   "wer": 58.58,
+   "cer": 19.42
+  },
+  "test10/gemini": {
+   "wer": 55.2,
+   "cer": 18.57
+  }
+ },
+ "r0_medium\u00b7p0raw": {
+  "heldout/gemini": {
+   "wer": 63.1,
+   "cer": 21.38
+  },
+  "heldout/oficial": {
+   "wer": 60.79,
+   "cer": 21.15
+  },
+  "test10/gemini": {
+   "wer": 57.28,
+   "cer": 20.01
+  }
+ },
+ "r0_medium\u00b7p6": {
+  "heldout/gemini": {
+   "wer": 27.11,
+   "cer": 10.02
+  },
+  "heldout/oficial": {
+   "wer": 26.61,
+   "cer": 10.32
+  },
+  "test10/gemini": {
+   "wer": 25.87,
+   "cer": 8.88
+  }
+ },
+ "r0_medium\u00b7pa": {
+  "heldout/gemini": {
+   "wer": 37.35,
+   "cer": 14.05
+  },
+  "heldout/oficial": {
+   "wer": 38.43,
+   "cer": 14.22
+  },
+  "test10/gemini": {
+   "wer": 35.21,
+   "cer": 12.77
+  }
+ },
+ "r0_medium\u00b7pb": {
+  "heldout/gemini": {
+   "wer": 43.98,
+   "cer": 15.44
+  },
+  "heldout/oficial": {
+   "wer": 42.52,
+   "cer": 15.52
+  },
+  "test10/gemini": {
+   "wer": 42.68,
+   "cer": 14.93
+  }
+ },
+ "r1_st_c1m\u00b7p0": {
+  "heldout/gemini": {
+   "wer": 18.22,
+   "cer": 4.94
+  },
+  "heldout/oficial": {
+   "wer": 29.45,
+   "cer": 6.88
+  },
+  "test10/gemini": {
+   "wer": 11.5,
+   "cer": 3.29
+  }
+ },
+ "r1_st_c1m\u00b7p6": {
+  "heldout/gemini": {
+   "wer": 6.33,
+   "cer": 2.26
+  },
+  "heldout/oficial": {
+   "wer": 18.74,
+   "cer": 4.35
+  },
+  "test10/gemini": {
+   "wer": 3.49,
+   "cer": 1.5
+  }
+ },
+ "r1_st_c1m\u00b7pa": {
+  "heldout/gemini": {
+   "wer": 10.39,
+   "cer": 3.26
+  },
+  "heldout/oficial": {
+   "wer": 19.84,
+   "cer": 4.88
+  },
+  "test10/gemini": {
+   "wer": 5.44,
+   "cer": 1.93
+  }
+ },
+ "r1_st_c1m\u00b7pb": {
+  "heldout/gemini": {
+   "wer": 8.89,
+   "cer": 2.87
+  },
+  "heldout/oficial": {
+   "wer": 20.16,
+   "cer": 4.72
+  },
+  "test10/gemini": {
+   "wer": 5.71,
+   "cer": 1.85
+  }
+ },
+ "r1_st_c1m\u00b7pe": {
+  "heldout/gemini": {
+   "wer": 16.57,
+   "cer": 5.18
+  },
+  "heldout/oficial": {
+   "wer": 24.72,
+   "cer": 6.54
+  },
+  "test10/gemini": {
+   "wer": 15.97,
+   "cer": 5.19
+  }
+ },
+ "r2_traprinq\u00b7p0": {
+  "heldout/gemini": {
+   "wer": 73.19,
+   "cer": 31.61
+  },
+  "heldout/oficial": {
+   "wer": 74.49,
+   "cer": 32.06
+  },
+  "test10/gemini": {
+   "wer": 69.44,
+   "cer": 29.19
+  }
+ },
+ "r2_traprinq\u00b7p0raw": {
+  "heldout/gemini": {
+   "wer": 78.31,
+   "cer": 36.06
+  },
+  "heldout/oficial": {
+   "wer": 79.84,
+   "cer": 36.62
+  },
+  "test10/gemini": {
+   "wer": 73.73,
+   "cer": 33.14
+  }
+ },
+ "r2_traprinq\u00b7p6": {
+  "heldout/gemini": {
+   "wer": 54.67,
+   "cer": 28.43
+  },
+  "heldout/oficial": {
+   "wer": 56.22,
+   "cer": 28.62
+  },
+  "test10/gemini": {
+   "wer": 51.92,
+   "cer": 25.14
+  }
+ },
+ "r2_traprinq\u00b7pa": {
+  "heldout/gemini": {
+   "wer": 61.45,
+   "cer": 29.88
+  },
+  "heldout/oficial": {
+   "wer": 62.36,
+   "cer": 30.33
+  },
+  "test10/gemini": {
+   "wer": 58.91,
+   "cer": 27.69
+  }
+ },
+ "r2_traprinq\u00b7pb": {
+  "heldout/gemini": {
+   "wer": 71.69,
+   "cer": 29.88
+  },
+  "heldout/oficial": {
+   "wer": 73.86,
+   "cer": 30.33
+  },
+  "test10/gemini": {
+   "wer": 66.48,
+   "cer": 27.45
+  }
+ },
+ "r3_mccatmus\u00b7p0": {
+  "heldout/gemini": {
+   "wer": 89.76,
+   "cer": 46.0
+  },
+  "heldout/oficial": {
+   "wer": 90.55,
+   "cer": 46.01
+  },
+  "test10/gemini": {
+   "wer": 86.47,
+   "cer": 42.27
+  }
+ },
+ "r3_mccatmus\u00b7p0raw": {
+  "heldout/gemini": {
+   "wer": 89.91,
+   "cer": 44.21
+  },
+  "heldout/oficial": {
+   "wer": 91.65,
+   "cer": 44.15
+  },
+  "test10/gemini": {
+   "wer": 86.82,
+   "cer": 42.96
+  }
+ },
+ "r3_mccatmus\u00b7p6": {
+  "heldout/gemini": {
+   "wer": 76.05,
+   "cer": 41.53
+  },
+  "heldout/oficial": {
+   "wer": 76.22,
+   "cer": 41.13
+  },
+  "test10/gemini": {
+   "wer": 69.39,
+   "cer": 37.56
+  }
+ },
+ "r3_mccatmus\u00b7pa": {
+  "heldout/gemini": {
+   "wer": 82.68,
+   "cer": 46.5
+  },
+  "heldout/oficial": {
+   "wer": 82.68,
+   "cer": 46.41
+  },
+  "test10/gemini": {
+   "wer": 79.48,
+   "cer": 42.3
+  }
+ },
+ "r3_mccatmus\u00b7pb": {
+  "heldout/gemini": {
+   "wer": 87.05,
+   "cer": 45.13
+  },
+  "heldout/oficial": {
+   "wer": 87.72,
+   "cer": 45.0
+  },
+  "test10/gemini": {
+   "wer": 85.27,
+   "cer": 41.31
+  }
+ },
+ "r4_traprinq\u00b7p0": {
+  "heldout/gemini": {
+   "wer": 12.2,
+   "cer": 3.68
+  },
+  "heldout/oficial": {
+   "wer": 23.78,
+   "cer": 5.57
+  },
+  "test10/gemini": {
+   "wer": 9.29,
+   "cer": 2.72
+  }
+ },
+ "r4_traprinq\u00b7p6": {
+  "heldout/gemini": {
+   "wer": 5.42,
+   "cer": 1.92
+  },
+  "heldout/oficial": {
+   "wer": 18.74,
+   "cer": 4.11
+  },
+  "test10/gemini": {
+   "wer": 4.6,
+   "cer": 1.78
+  }
+ },
+ "r4_traprinq\u00b7pa": {
+  "heldout/gemini": {
+   "wer": 6.63,
+   "cer": 2.31
+  },
+  "heldout/oficial": {
+   "wer": 19.21,
+   "cer": 4.32
+  },
+  "test10/gemini": {
+   "wer": 5.84,
+   "cer": 1.99
+  }
+ },
+ "r4_traprinq\u00b7pb": {
+  "heldout/gemini": {
+   "wer": 7.98,
+   "cer": 2.66
+  },
+  "heldout/oficial": {
+   "wer": 20.0,
+   "cer": 4.61
+  },
+  "test10/gemini": {
+   "wer": 6.9,
+   "cer": 2.08
+  }
+ },
+ "r4_traprinq\u00b7pe": {
+  "heldout/gemini": {
+   "wer": 14.01,
+   "cer": 4.23
+  },
+  "heldout/oficial": {
+   "wer": 24.72,
+   "cer": 5.97
+  },
+  "test10/gemini": {
+   "wer": 17.91,
+   "cer": 6.64
+  }
+ },
+ "r5_mccatmus\u00b7p0": {
+  "heldout/gemini": {
+   "wer": 18.52,
+   "cer": 5.23
+  },
+  "heldout/oficial": {
+   "wer": 30.55,
+   "cer": 7.02
+  },
+  "test10/gemini": {
+   "wer": 13.98,
+   "cer": 3.89
+  }
+ },
+ "r5_mccatmus\u00b7p6": {
+  "heldout/gemini": {
+   "wer": 7.08,
+   "cer": 2.81
+  },
+  "heldout/oficial": {
+   "wer": 19.69,
+   "cer": 4.72
+  },
+  "test10/gemini": {
+   "wer": 4.78,
+   "cer": 1.86
+  }
+ },
+ "r5_mccatmus\u00b7pa": {
+  "heldout/gemini": {
+   "wer": 7.98,
+   "cer": 3.34
+  },
+  "heldout/oficial": {
+   "wer": 19.37,
+   "cer": 5.12
+  },
+  "test10/gemini": {
+   "wer": 6.02,
+   "cer": 2.21
+  }
+ },
+ "r5_mccatmus\u00b7pb": {
+  "heldout/gemini": {
+   "wer": 9.34,
+   "cer": 3.29
+  },
+  "heldout/oficial": {
+   "wer": 21.73,
+   "cer": 5.23
+  },
+  "test10/gemini": {
+   "wer": 7.56,
+   "cer": 2.44
+  }
+ },
+ "v0\u00b7v0": {
+  "heldout/gemini": {
+   "wer": 50.3,
+   "cer": 22.28
+  },
+  "heldout/oficial": {
+   "wer": 49.29,
+   "cer": 21.82
+  },
+  "test10/gemini": {
+   "wer": 53.78,
+   "cer": 23.58
+  }
+ }
+}

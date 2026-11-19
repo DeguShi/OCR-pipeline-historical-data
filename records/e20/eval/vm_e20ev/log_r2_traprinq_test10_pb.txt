@@ -1,0 +1,6 @@
+2026-11-17 22:06:53,517 corpus: 377922 words dropped (characters the recognizer cannot write)
+2026-11-17 22:06:54,552 10 pages, 78 chars (43 word chars)
+2026-11-17 22:54:19,886 NGrams smoothing 0.001 -> outputs/e20/eval/raw/test10/r2_traprinq/pb/NGrams_s0.001
+mapped 20 characters (4 distinct) -> outputs/e20/eval/lines/test10/r2_traprinq/pb.json
+WER norm 66.48% | CER norm 27.45% -> outputs/e20/eval/score/test10/r2_traprinq/pb/gemini
+DECODED r2_traprinq test10 pb

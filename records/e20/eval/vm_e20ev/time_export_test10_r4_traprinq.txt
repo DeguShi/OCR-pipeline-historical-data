@@ -1,0 +1,33 @@
+2026-11-17 21:33:39,999 page 18: 33 lines
+2026-11-17 21:33:43,282 page 22: 33 lines
+2026-11-17 21:33:47,064 page 23: 33 lines
+2026-11-17 21:33:50,322 page 24: 34 lines
+2026-11-17 21:33:53,442 page 25: 33 lines
+2026-11-17 21:33:56,811 page 31: 35 lines
+2026-11-17 21:33:59,983 page 32: 33 lines
+2026-11-17 21:34:03,181 page 34: 33 lines
+2026-11-17 21:34:06,519 page 44: 33 lines
+2026-11-17 21:34:09,688 page 55: 33 lines
+	Command being timed: "/content/venv/bin/python tools/export_posteriors.py --config configs/e20/r4_traprinq.json --pages all --images data/extra/teste/imagens --references data/extra/teste/referencias --device cuda:0 --out outputs/e20/eval/post/test10/r4_traprinq"
+	User time (seconds): 53.32
+	System time (seconds): 2.90
+	Percent of CPU this job got: 132%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:42.59
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1754168
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 4
+	Minor (reclaiming a frame) page faults: 434868
+	Voluntary context switches: 3414
+	Involuntary context switches: 143236
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 18152
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

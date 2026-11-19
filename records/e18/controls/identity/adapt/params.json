@@ -1,0 +1,16 @@
+{
+ "mode": "search",
+ "config": "configs/final_v6.json",
+ "images": "None",
+ "n_pages": "8",
+ "sample": "outputs/e18/shifts/identity/images/6.BR FPMSC FUN CAM LDL - Livro de Registro de Leis n\u00b0 1, 1892 - 1984.jpg",
+ "reference": "outputs/e18/shifts/identity/references/6.BR FPMSC FUN CAM LDL - Livro de Registro de Leis n\u00b0 1, 1892 - 1984.txt",
+ "stats": "outputs/e18/reference_stats.json",
+ "lexicon_size": "100000",
+ "objectives": "['conf', 'lex', 'conflex', 'stat', 'oracle']",
+ "out": "outputs/e18/identity/adapt",
+ "cache": "outputs/e18/identity/cache",
+ "device": "cpu",
+ "seed": "42",
+ "limit": "0"
+}

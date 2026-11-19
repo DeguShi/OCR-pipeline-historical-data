@@ -1,0 +1,66 @@
+{
+  "source": "outputs/e20/eval/lines/heldout/r2_traprinq/pb.json",
+  "rules": true,
+  "corpus": {
+    "wer_strict": 0.7977883096366508,
+    "cer_strict": 0.32251363282264345,
+    "wer_norm": 0.7385826771653543,
+    "cer_norm": 0.30328087489997335
+  },
+  "pages": [
+    {
+      "page": 7,
+      "lines": 33,
+      "pred_words": 243,
+      "text": "59. o rei frendente do natural auto silco do presedente\ne 1º subissem ao vice precidente o se mais tenador se\nhia o sem de hua fartação eu cazo de  enfial de uira\no mais velho\ncapitula\nda nem dos trabalhos\nsiligo\nisso dia marcado para as rezaõ se beira õ o suados\nrio no calar principal da mun o palidade fas dise\ncuras da manhã, e havendo orneio legal,o pela sece\nassinando o seu lugar, que ella cahe cira da mam tn\ntrabalhos, deraõ princesse as cuias sela palavas de las\na bula a teu aõ.\nartigo a.o\nas casas juraraõ  o tempo maximo de quatrifronte\nras terminada a lua, o jumento m e mardo\nos trabalhos pelas palavas hila en cerrar as seraõ\nartigo 5ª\naberta a pessaõ o pendente declarara a materia em\nde europa.tera a ordem durante o trabalho, do me\ndo a pulana ao que somar a judia fazemo di circare\na decencia e a iliade entre os vereadores e ses\nescadorio\ne 1.o no dicuil dos trabalhos e vedado o greiro\na pessoa que naõ pulou ea a consercação mino\nsial\n8 v. os especadas naõ possas diu servir hum se bales\npor qualquer fora naõ, e sem por segue depping\nção en de sagrado, sub suna de terem o lurado de\na reputar da sala, eu caio denunciaça\nartigo 6.o\nao presidente e no cube\ne se chamar a asia ate tra veis, o vereador que",
+      "wer_strict": 0.8037383177570093,
+      "cer_strict": 0.3466666666666667,
+      "wer_norm": 0.7488372093023256,
+      "cer_norm": 0.32364810330912025,
+      "strict_we": 172,
+      "strict_rw": 214,
+      "strict_ce": 442,
+      "strict_rc": 1275,
+      "norm_we": 161,
+      "norm_rw": 215,
+      "norm_ce": 401,
+      "norm_rc": 1239
+    },
+    {
+      "page": 10,
+      "lines": 33,
+      "pred_words": 198,
+      "text": "sentes, decendente, preso o genro,  amiam e embadornada\ndurante o cunhadio, dio e pobrinho e com dã\nmesma forma, o vereador a quem a susposto\nenterrar naõ podera polar.\nartigo na\naos mercadores que, em cuia pulse casa\ngastarem a duas se d aõ come cutura, bem\ncomo aos supplentes convocados que he naõ\ncomparecerem, e era imposta, pelo pressente\na muita de xes ameaço so ode  reg.o acto p.o\n817. o presedente quanto fuas ou descutir\nqualquer acampto m apresentar e se fender\nnos cação aua, passara a sucre na qui\nimmediato\ncapitulo 4º\ndo numero sas eos aes\nartigo 16\na camara mucipal fará eu calal anno\n rasaõ no maria, de dois em dois muis\nnos primeiros dias uteis de outubo, de outro,\nteverem abril, junho e gosto que juraraõ\nos dias necessarios, nunca menos de hu\nartigo\nt haverá em cada anno santas dessa extra\narmarias quantas prim enge aõ pelo\nem mim pal\nse s a caza entrara uaõ seraõ como\ncasas pelo previdente, e cumpre por ordem\nsuperior, m cativa ao proprio presedente\na requerimento do  atiue. em qual\nper cazo o presa sente declarara õ e motivo\na comer cori\ndisposções geraes.",
+      "wer_strict": 0.7471910112359551,
+      "cer_strict": 0.2805194805194805,
+      "wer_norm": 0.6629834254143646,
+      "cer_norm": 0.25780553077609275,
+      "strict_we": 133,
+      "strict_rw": 178,
+      "strict_ce": 324,
+      "strict_rc": 1155,
+      "norm_we": 120,
+      "norm_rw": 181,
+      "norm_ce": 289,
+      "norm_rc": 1121
+    },
+    {
+      "page": 12,
+      "lines": 33,
+      "pred_words": 275,
+      "text": "lampadas quando a amara o erigir,  querini\nam a mesma tem uis mue, pelo menos, de\nante de saia, e me que que o prometo de cansa\nmas rigido naõ escuda a capa usada e prea\ndos restamos, e uso em que me obriga a sateposa\ndentro do prazo de dou mais egulado da\ndatado avio, naõ podendo elle ser fogão antes\nlhe for em augurada de  acta a clara e aõ\ncom santa do presente contrato\n822 a clausula 1.a de contado fica assam\nsubstituido clausula 1º e se o sanan jo que\noccasionar a mis paõ de susa durar mais\na que das, por era a camara percudir\ncontra o, pato caso a prega e maior que\npera restrita por arbitro e saes com aca\nnomeados pela forma ao direito\n88. 2  clausula 16.a fica a est au pui\ndeveraõ ter a impe em deposito o primero aes\ncampa ras necessario para rutilar pime\ndiatamente qu alquer lampada que a queime\nde muliere in se apague, sob peua de pagar\neles mil seis de muita a balisa, nas pulo çs\nminas por lampada que teve a pingada\nduas subito e o acula vas, iatro e ato aferem\nmaior a juizo do fiical p fiem a cada camara\n860 a clausula 1ª ficara delle modo era\nexpectoração publica fica com cumbirá\naclimação da casa de camarão c om uis sam\npadas ela de base em igual pincio, subri\nambos de avendo com a mesma cauaracaá\ne5a a clausula e d.a ficará a esu = a hugiainein\nera obrigada a sacher e m augurar a laa\nçã da cidade do sal deta seita  cui nue",
+      "wer_strict": 0.8298755186721992,
+      "cer_strict": 0.33497536945812806,
+      "wer_norm": 0.7866108786610879,
+      "cer_norm": 0.32181425485961124,
+      "strict_we": 200,
+      "strict_rw": 241,
+      "strict_ce": 476,
+      "strict_rc": 1421,
+      "norm_we": 188,
+      "norm_rw": 239,
+      "norm_ce": 447,
+      "norm_rc": 1389
+    }
+  ]
+}

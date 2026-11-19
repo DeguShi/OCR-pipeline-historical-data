@@ -1,0 +1,2 @@
+{"id": 1, "params": {"mode": "NGrams", "smoothing": 0.001, "corpus": "w4b8", "beam": 256, "id": 1}, "pages": [5, 6, 8, 9, 11, 13, 14, 15, 16], "wer": 23.081, "cer": 6.179, "seconds": 2932.0}
+{"id": 0, "params": {"mode": "NGrams", "smoothing": 0.003, "corpus": "w4b8", "beam": 256, "id": 0}, "pages": [5, 6, 8, 9, 11, 13, 14, 15, 16], "wer": 23.251, "cer": 6.217, "seconds": 3202.3}

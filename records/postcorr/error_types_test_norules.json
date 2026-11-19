@@ -1,0 +1,213 @@
+{
+ "raw": "outputs/runs/check_greedy_raw_norules_test10",
+ "pages": [
+  18,
+  22,
+  23,
+  24,
+  25,
+  31,
+  32,
+  34,
+  44,
+  55
+ ],
+ "lexicon": "models/lexicon/pt_hist_legal_w1.txt",
+ "runs": {
+  "v6": {
+   "path": "outputs/runs/v6_test10_cache",
+   "numeral": {
+    "raw_errors": 9,
+    "fixed": 0,
+    "fix_rate": 0.0,
+    "broken": 0
+   },
+   "split_merge": {
+    "raw_errors": 28,
+    "fixed": 23,
+    "fix_rate": 82.1,
+    "broken": 0
+   },
+   "deleted": {
+    "raw_errors": 15,
+    "fixed": 1,
+    "fix_rate": 6.7,
+    "broken": 2
+   },
+   "short": {
+    "raw_errors": 18,
+    "fixed": 11,
+    "fix_rate": 61.1,
+    "broken": 2
+   },
+   "real_word": {
+    "raw_errors": 41,
+    "fixed": 26,
+    "fix_rate": 63.4,
+    "broken": 9
+   },
+   "non_word": {
+    "raw_errors": 169,
+    "fixed": 153,
+    "fix_rate": 90.5,
+    "broken": 0
+   }
+  },
+  "A": {
+   "path": "outputs/runs/base_A2_pyctc_test10",
+   "numeral": {
+    "raw_errors": 9,
+    "fixed": 0,
+    "fix_rate": 0.0,
+    "broken": 0
+   },
+   "split_merge": {
+    "raw_errors": 28,
+    "fixed": 24,
+    "fix_rate": 85.7,
+    "broken": 3
+   },
+   "deleted": {
+    "raw_errors": 15,
+    "fixed": 1,
+    "fix_rate": 6.7,
+    "broken": 0
+   },
+   "short": {
+    "raw_errors": 18,
+    "fixed": 10,
+    "fix_rate": 55.6,
+    "broken": 1
+   },
+   "real_word": {
+    "raw_errors": 41,
+    "fixed": 21,
+    "fix_rate": 51.2,
+    "broken": 3
+   },
+   "non_word": {
+    "raw_errors": 169,
+    "fixed": 134,
+    "fix_rate": 79.3,
+    "broken": 0
+   }
+  },
+  "B": {
+   "path": "outputs/runs/base_B2_wbs_test10",
+   "numeral": {
+    "raw_errors": 9,
+    "fixed": 0,
+    "fix_rate": 0.0,
+    "broken": 0
+   },
+   "split_merge": {
+    "raw_errors": 28,
+    "fixed": 14,
+    "fix_rate": 50.0,
+    "broken": 3
+   },
+   "deleted": {
+    "raw_errors": 15,
+    "fixed": 2,
+    "fix_rate": 13.3,
+    "broken": 0
+   },
+   "short": {
+    "raw_errors": 18,
+    "fixed": 4,
+    "fix_rate": 22.2,
+    "broken": 0
+   },
+   "real_word": {
+    "raw_errors": 41,
+    "fixed": 13,
+    "fix_rate": 31.7,
+    "broken": 0
+   },
+   "non_word": {
+    "raw_errors": 169,
+    "fixed": 127,
+    "fix_rate": 75.1,
+    "broken": 0
+   }
+  },
+  "C": {
+   "path": "outputs/baselines/byt5/test10/score",
+   "numeral": {
+    "raw_errors": 9,
+    "fixed": 3,
+    "fix_rate": 33.3,
+    "broken": 0
+   },
+   "split_merge": {
+    "raw_errors": 28,
+    "fixed": 18,
+    "fix_rate": 64.3,
+    "broken": 0
+   },
+   "deleted": {
+    "raw_errors": 15,
+    "fixed": 1,
+    "fix_rate": 6.7,
+    "broken": 2
+   },
+   "short": {
+    "raw_errors": 18,
+    "fixed": 6,
+    "fix_rate": 33.3,
+    "broken": 4
+   },
+   "real_word": {
+    "raw_errors": 41,
+    "fixed": 13,
+    "fix_rate": 31.7,
+    "broken": 5
+   },
+   "non_word": {
+    "raw_errors": 169,
+    "fixed": 103,
+    "fix_rate": 60.9,
+    "broken": 7
+   }
+  },
+  "VLM": {
+   "path": "outputs/baselines/search/vlm/final_test10_paper_pt_period/score",
+   "numeral": {
+    "raw_errors": 9,
+    "fixed": 0,
+    "fix_rate": 0.0,
+    "broken": 1
+   },
+   "split_merge": {
+    "raw_errors": 28,
+    "fixed": 10,
+    "fix_rate": 35.7,
+    "broken": 1
+   },
+   "deleted": {
+    "raw_errors": 15,
+    "fixed": 1,
+    "fix_rate": 6.7,
+    "broken": 3
+   },
+   "short": {
+    "raw_errors": 18,
+    "fixed": 7,
+    "fix_rate": 38.9,
+    "broken": 33
+   },
+   "real_word": {
+    "raw_errors": 41,
+    "fixed": 12,
+    "fix_rate": 29.3,
+    "broken": 150
+   },
+   "non_word": {
+    "raw_errors": 169,
+    "fixed": 73,
+    "fix_rate": 43.2,
+    "broken": 22
+   }
+  }
+ }
+}

@@ -1,0 +1,174 @@
+{
+ "raw": "outputs/e20_colab_e20ev_ev/outputs/e20/eval/score/test10/r1_st_c1m/p0/gemini",
+ "pages": [
+  18,
+  22,
+  23,
+  24,
+  25,
+  31,
+  32,
+  34,
+  44,
+  55
+ ],
+ "lexicon": "models/lexicon/pt_hist_legal_w1.txt",
+ "runs": {
+  "pa": {
+   "path": "outputs/e20_colab_e20ev_ev/outputs/e20/eval/score/test10/r1_st_c1m/pa/gemini",
+   "numeral": {
+    "raw_errors": 9,
+    "fixed": 0,
+    "fix_rate": 0.0,
+    "broken": 0
+   },
+   "split_merge": {
+    "raw_errors": 4,
+    "fixed": 2,
+    "fix_rate": 50.0,
+    "broken": 2
+   },
+   "deleted": {
+    "raw_errors": 19,
+    "fixed": 2,
+    "fix_rate": 10.5,
+    "broken": 2
+   },
+   "short": {
+    "raw_errors": 18,
+    "fixed": 9,
+    "fix_rate": 50.0,
+    "broken": 6
+   },
+   "real_word": {
+    "raw_errors": 32,
+    "fixed": 18,
+    "fix_rate": 56.2,
+    "broken": 14
+   },
+   "non_word": {
+    "raw_errors": 178,
+    "fixed": 136,
+    "fix_rate": 76.4,
+    "broken": 4
+   }
+  },
+  "pb": {
+   "path": "outputs/e20_colab_e20ev_ev/outputs/e20/eval/score/test10/r1_st_c1m/pb/gemini",
+   "numeral": {
+    "raw_errors": 9,
+    "fixed": 0,
+    "fix_rate": 0.0,
+    "broken": 0
+   },
+   "split_merge": {
+    "raw_errors": 4,
+    "fixed": 2,
+    "fix_rate": 50.0,
+    "broken": 1
+   },
+   "deleted": {
+    "raw_errors": 19,
+    "fixed": 3,
+    "fix_rate": 15.8,
+    "broken": 0
+   },
+   "short": {
+    "raw_errors": 18,
+    "fixed": 5,
+    "fix_rate": 27.8,
+    "broken": 0
+   },
+   "real_word": {
+    "raw_errors": 32,
+    "fixed": 9,
+    "fix_rate": 28.1,
+    "broken": 1
+   },
+   "non_word": {
+    "raw_errors": 178,
+    "fixed": 131,
+    "fix_rate": 73.6,
+    "broken": 11
+   }
+  },
+  "p6": {
+   "path": "outputs/e20_colab_e20ev_ev/outputs/e20/eval/score/test10/r1_st_c1m/p6/gemini",
+   "numeral": {
+    "raw_errors": 9,
+    "fixed": 0,
+    "fix_rate": 0.0,
+    "broken": 0
+   },
+   "split_merge": {
+    "raw_errors": 4,
+    "fixed": 0,
+    "fix_rate": 0.0,
+    "broken": 0
+   },
+   "deleted": {
+    "raw_errors": 19,
+    "fixed": 1,
+    "fix_rate": 5.3,
+    "broken": 0
+   },
+   "short": {
+    "raw_errors": 18,
+    "fixed": 11,
+    "fix_rate": 61.1,
+    "broken": 1
+   },
+   "real_word": {
+    "raw_errors": 32,
+    "fixed": 17,
+    "fix_rate": 53.1,
+    "broken": 9
+   },
+   "non_word": {
+    "raw_errors": 178,
+    "fixed": 162,
+    "fix_rate": 91.0,
+    "broken": 0
+   }
+  },
+  "pe": {
+   "path": "outputs/e20_colab_e20ev_ev/outputs/e20/eval/score/test10/r1_st_c1m/pe/gemini",
+   "numeral": {
+    "raw_errors": 9,
+    "fixed": 0,
+    "fix_rate": 0.0,
+    "broken": 1
+   },
+   "split_merge": {
+    "raw_errors": 4,
+    "fixed": 0,
+    "fix_rate": 0.0,
+    "broken": 2
+   },
+   "deleted": {
+    "raw_errors": 19,
+    "fixed": 3,
+    "fix_rate": 15.8,
+    "broken": 3
+   },
+   "short": {
+    "raw_errors": 18,
+    "fixed": 8,
+    "fix_rate": 44.4,
+    "broken": 32
+   },
+   "real_word": {
+    "raw_errors": 32,
+    "fixed": 8,
+    "fix_rate": 25.0,
+    "broken": 112
+   },
+   "non_word": {
+    "raw_errors": 178,
+    "fixed": 82,
+    "fix_rate": 46.1,
+    "broken": 31
+   }
+  }
+ }
+}

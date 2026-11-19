@@ -1,0 +1,32 @@
+{
+ "input": "outputs/e20/eval/raw/test10/r2_traprinq/p0/lines.json",
+ "alphabet_size": 88,
+ "mapped": 5,
+ "map": {
+  "̃": {
+   "n": 1,
+   "to": "",
+   "name": "COMBINING TILDE"
+  },
+  "Ē": {
+   "n": 1,
+   "to": "E",
+   "name": "LATIN CAPITAL LETTER E WITH MACRON"
+  },
+  "̄": {
+   "n": 1,
+   "to": "",
+   "name": "COMBINING MACRON"
+  },
+  "ȩ": {
+   "n": 1,
+   "to": "e",
+   "name": "LATIN SMALL LETTER E WITH CEDILLA"
+  },
+  "ā": {
+   "n": 1,
+   "to": "a",
+   "name": "LATIN SMALL LETTER A WITH MACRON"
+  }
+ }
+}

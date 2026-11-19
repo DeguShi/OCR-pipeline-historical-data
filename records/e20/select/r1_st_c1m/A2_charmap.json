@@ -1,0 +1,57 @@
+{
+ "input": "outputs/e20/select/r1_st_c1m/A2/results.jsonl",
+ "alphabet_size": 88,
+ "mapped": 148,
+ "map": {
+  "̧": {
+   "n": 57,
+   "to": "",
+   "name": "COMBINING CEDILLA"
+  },
+  "+": {
+   "n": 31,
+   "to": "",
+   "name": "PLUS SIGN"
+  },
+  "ͦ": {
+   "n": 18,
+   "to": "",
+   "name": "COMBINING LATIN SMALL LETTER O"
+  },
+  "̃": {
+   "n": 13,
+   "to": "",
+   "name": "COMBINING TILDE"
+  },
+  "̦": {
+   "n": 12,
+   "to": "",
+   "name": "COMBINING COMMA BELOW"
+  },
+  "̄": {
+   "n": 7,
+   "to": "",
+   "name": "COMBINING MACRON"
+  },
+  "ş": {
+   "n": 5,
+   "to": "s",
+   "name": "LATIN SMALL LETTER S WITH CEDILLA"
+  },
+  "?": {
+   "n": 2,
+   "to": "",
+   "name": "QUESTION MARK"
+  },
+  "^": {
+   "n": 2,
+   "to": "",
+   "name": "CIRCUMFLEX ACCENT"
+  },
+  "́": {
+   "n": 1,
+   "to": "",
+   "name": "COMBINING ACUTE ACCENT"
+  }
+ }
+}

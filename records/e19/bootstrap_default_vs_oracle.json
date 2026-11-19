@@ -1,0 +1,19 @@
+{
+  "wer_a": 22.499307287337214,
+  "wer_b": 21.390967026877252,
+  "dwer": 1.1083402604599613,
+  "ci95": [
+    0.05,
+    2.18
+  ],
+  "p_signflip": 0.05119488051194881,
+  "blocks": 370,
+  "pages_won_tied_lost": [
+    7,
+    3,
+    10
+  ],
+  "a": "outputs/e19_colab_e19a/e19/runs/default",
+  "b": "outputs/e19_colab_e19b/e19/runs/oracle",
+  "block": 10
+}

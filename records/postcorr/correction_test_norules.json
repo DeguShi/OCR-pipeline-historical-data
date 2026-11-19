@@ -1,0 +1,82 @@
+{
+ "raw": "outputs/runs/check_greedy_raw_norules_test10",
+ "pages": [
+  18,
+  22,
+  23,
+  24,
+  25,
+  31,
+  32,
+  34,
+  44,
+  55
+ ],
+ "runs": {
+  "v6": {
+   "path": "outputs/runs/v6_test10_cache",
+   "fixed": 214,
+   "broken": 13,
+   "kept_wrong": 66,
+   "kept_right": 1968,
+   "words": 2261,
+   "ins_raw": 40,
+   "ins_run": 0,
+   "fix_rate": 76.43,
+   "break_rate": 0.66,
+   "fixed_per_broken": 16.46
+  },
+  "A": {
+   "path": "outputs/runs/base_A2_pyctc_test10",
+   "fixed": 190,
+   "broken": 7,
+   "kept_wrong": 90,
+   "kept_right": 1974,
+   "words": 2261,
+   "ins_raw": 40,
+   "ins_run": 1,
+   "fix_rate": 67.86,
+   "break_rate": 0.35,
+   "fixed_per_broken": 27.14
+  },
+  "B": {
+   "path": "outputs/runs/base_B2_wbs_test10",
+   "fixed": 160,
+   "broken": 3,
+   "kept_wrong": 120,
+   "kept_right": 1978,
+   "words": 2261,
+   "ins_raw": 40,
+   "ins_run": 7,
+   "fix_rate": 57.14,
+   "break_rate": 0.15,
+   "fixed_per_broken": 53.33
+  },
+  "C_byt5": {
+   "path": "outputs/baselines/byt5/test10/score",
+   "fixed": 144,
+   "broken": 18,
+   "kept_wrong": 136,
+   "kept_right": 1963,
+   "words": 2261,
+   "ins_raw": 40,
+   "ins_run": 1,
+   "fix_rate": 51.43,
+   "break_rate": 0.91,
+   "fixed_per_broken": 8.0
+  },
+  "E_vlm": {
+   "path": "outputs/baselines/search/vlm/final_test10_paper_pt_period/score",
+   "fixed": 103,
+   "broken": 210,
+   "kept_wrong": 177,
+   "kept_right": 1771,
+   "words": 2261,
+   "ins_raw": 40,
+   "ins_run": 21,
+   "fix_rate": 36.79,
+   "break_rate": 10.6,
+   "fixed_per_broken": 0.49
+  }
+ }
+}

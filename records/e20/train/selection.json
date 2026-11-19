@@ -1,0 +1,25 @@
+{
+  "experiment": "E20 R4/R5: TraPrInq / McCATMuS fine-tuned on the rebuilt st_c1m training lines",
+  "commit": "e7fade6",
+  "recipe": "ketos -s 42 train -f binary -i INIT -B 16 --accumulate-grad-batches 1 -r LR --augment -q fixed -N 20 -p 0.9 -u NFD --resize union --precision 16-mixed (T4; st_c1m was bf16-mixed on an L4)",
+  "data": {
+    "lines": 2425, "pages": 78, "kept_chars": 96248,
+    "rebuild_check": "select_rebuild.json equals records/training/st_c1m/select_gem_r1.json on lines/kept/pages/kept_chars",
+    "validation": "ketos -p 0.9: 243 of the 2,425 lines, random_split seeded 42 (kraken/train/vgsl.py:138); no evaluation page is involved"
+  },
+  "rule": "lr chosen per recognizer by best validation accuracy, from {Kraken default 1e-3, 1e-4, 3e-4}; validation accuracy is compared only within one recognizer",
+  "runs": {
+    "r4_traprinq_lr1e-3": {"val_acc": 0.9660, "best_epoch": 16, "sha256_16": "eeeb9be2e4e4f46e", "vm": "e20p"},
+    "r4_traprinq_lr1e-4": {"val_acc": 0.9626, "best_epoch": 19, "sha256_16": "16a9b3bc66e34207", "vm": "e20p"},
+    "r4_traprinq_lr3e-4": {"val_acc": 0.9686, "best_epoch": 18, "sha256_16": "a891fef0450f3423", "vm": "e20p"},
+    "r5_mccatmus_lr1e-3": {"val_acc": 0.9565, "best_epoch": 14, "sha256_16": "8d6a0395ea455327", "vm": "e20p4"},
+    "r5_mccatmus_lr1e-4": {"val_acc": 0.9511, "best_epoch": 19, "sha256_16": "d4b1d4fafae217b3", "vm": "e20p4"},
+    "r5_mccatmus_lr3e-4": {"val_acc": 0.9570, "best_epoch": 19, "sha256_16": "97254bd758fce9d0", "vm": "e20p4"}
+  },
+  "chosen": {"r4_traprinq": "r4_traprinq_lr3e-4", "r5_mccatmus": "r5_mccatmus_lr3e-4"},
+  "caveats": [
+    "train.arrow is not byte-identical across VMs (sha256 14439956... on e20p, b1279c26... on e20p4, c32b8f35... in the smoke): ketos compile --workers 2 writes pages in pool.imap_unordered order (kraken/lib/arrow_dataset.py:290), so the seeded 90/10 split holds out a different 243 lines on each VM. The line set is identical; the three lrs of one recognizer share one arrow, so the lr choice is consistent, but validation accuracy is not comparable across recognizers or with st_c1m. Recognizers are compared by WER on the tuning pages.",
+    "r5_mccatmus_lr3e-4 and r4 lr1e-4 / r5 lr1e-4 peaked at the last or second-to-last epoch; the 20-epoch budget is kept equal to st_c1m and not extended.",
+    "Training ran on Colab T4: TraPrInq on e20p (pro), McCATMuS on e20p4 (pro) after free VMs e20p2/e20p3 were reclaimed before finishing a run; peak GPU 10,747 MB at batch 16 (e20p4), 3,788 s for the 3 McCATMuS runs."
+  ]
+}

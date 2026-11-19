@@ -1,0 +1,19 @@
+{
+  "wer_a": 3.494029190623618,
+  "wer_b": 3.272888102609465,
+  "dwer": 0.22114108801415303,
+  "ci95": [
+    0.0,
+    0.52
+  ],
+  "p_signflip": 0.24747525247475252,
+  "blocks": 81,
+  "pages_won_tied_lost": [
+    0,
+    7,
+    3
+  ],
+  "a": "outputs/repro/test10/score",
+  "b": "outputs/baselines/hybrid/test10_numeral/score",
+  "block": 30
+}

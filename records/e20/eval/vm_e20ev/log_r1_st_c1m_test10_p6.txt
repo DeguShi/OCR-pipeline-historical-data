@@ -1,0 +1,14 @@
+2026-11-17 21:47:38,256 page 18: 33 lines, 101.2 s
+2026-11-17 21:48:51,894 page 22: 33 lines, 73.6 s
+2026-11-17 21:50:26,872 page 23: 33 lines, 94.9 s
+2026-11-17 21:51:50,025 page 24: 34 lines, 83.1 s
+2026-11-17 21:53:29,510 page 25: 33 lines, 99.4 s
+2026-11-17 21:55:02,637 page 31: 35 lines, 93.0 s
+2026-11-17 21:55:50,296 page 32: 33 lines, 47.6 s
+2026-11-17 21:56:52,595 page 34: 33 lines, 62.3 s
+2026-11-17 21:58:02,909 page 44: 33 lines, 70.2 s
+2026-11-17 21:59:14,976 page 55: 33 lines, 72.0 s
+2026-11-17 21:59:14,984 ALL DONE: load 1.1 s, decode 797.5 s wall / 625.0 s cpu, peak 666 MB
+mapped 0 characters (0 distinct) -> outputs/e20/eval/lines/test10/r1_st_c1m/p6.json
+WER norm 3.49% | CER norm 1.50% -> outputs/e20/eval/score/test10/r1_st_c1m/p6/gemini
+DECODED r1_st_c1m test10 p6
