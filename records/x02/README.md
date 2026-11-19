@@ -43,3 +43,19 @@ was not launched. The session was then preserved and stopped (archive sha256 c10
 Fix before relaunch: ship the untrimmed `git archive HEAD` (≈207 MB, upload in parts) or keep `records/training/`
 in the trim, and assert on the VM that `records/training/st_c1m/labels_r1/lines.jsonl` exists before `PART select`.
 Then repeat the smoke test.
+
+### 2026-11-19 — smoke test passed; full run launched
+
+Free Colab CPU VM (2 vCPU, 0 units), code 441c646 (untrimmed `git archive HEAD`, sha256 deca09c9…; post.tgz
+sha256 e5b80ffc…, same as the preserved copy). Launcher `records/colab_jobs/x02_launch.py`; VM sha256 of
+`tools/run_x02.sh` and `tools/charmap.py` equal to git. Smoke (R4, A 2 + A2 1): setup 263 s, select 119 s, eval 44 s,
+peak RSS 528 MiB; `REPRO r4_traprinq A shared 3 of E20 61 differ 0`, `REPRO_OK`, frozen before eval, `JOB_OK`. The
+smoke's frozen configuration and its held-out/test decodes (outputs/x02_smoke) are a pipeline check only and are not
+reported.
+
+Note for reading the full run: A2 is centred on the best A configuration. With 121 A configurations that best may
+differ from E20's (61), and then A2 shares no configuration with E20 (as in the smoke: `A2 shared 0`); the
+reproduction check is then carried by A alone.
+
+Full-run estimate: 543 configurations (3 recognizers × 181); at the smoke's ≈20–40 s per configuration on 2 vCPU,
+about 3–6 h, peak memory < 1 GB. One shard (2 vCPU).
