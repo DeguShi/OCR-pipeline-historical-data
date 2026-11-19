@@ -73,10 +73,22 @@ gabarito oficial. A leitura roda em CPU, sem LLM.
 Este notebook só lê resultados salvos (`records/e20`, `records/x02`, `records/e19`). Não treina, não busca, não decodifica.
 """),
         code("""
-import sys
+# In Colab, fetch only the records and pages this notebook reads (sparse clone, ~10 s). Locally, use the repo.
+import subprocess, sys
 from pathlib import Path
 from IPython.display import HTML, display
-ROOT = next(p for p in [Path.cwd(), *Path.cwd().parents] if (p / 'notebooks/demo_lib.py').exists())
+REPO, BRANCH = 'https://github.com/DeguShi/OCR-pipeline-historical-data', 'main'
+PATHS = ['notebooks', 'records/e20/eval', 'records/x02/run_20261119/report', 'records/e19', 'data/images',
+         'data/ground_truth', 'data/ground_truth_gemini', 'data/extra/teste']
+found = [p for p in [Path.cwd(), *Path.cwd().parents] if (p / 'notebooks/demo_lib.py').exists()]
+if not found:
+    dest = Path('/content/OCR-pipeline-historical-data')
+    if not dest.exists():
+        subprocess.run(['git', 'clone', '-q', '--depth', '1', '--filter=blob:none', '--sparse', '-b', BRANCH,
+                        REPO, str(dest)], check=True)
+        subprocess.run(['git', '-C', str(dest), 'sparse-checkout', 'set', *PATHS], check=True)
+    found = [dest]
+ROOT = found[0]
 sys.path.insert(0, str(ROOT / 'notebooks'))
 import demo_lib as L
 G = L.grid()

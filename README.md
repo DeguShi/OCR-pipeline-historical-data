@@ -2,7 +2,8 @@
 
 [![Paper (PDF, pt-BR)](<https://img.shields.io/badge/paper-PDF%20(pt--BR)-b31b1b>)](docs/paper.pdf)
 [![Weights on Hugging Face](https://img.shields.io/badge/weights-Hugging%20Face-ffcc4d)](https://huggingface.co/KobayashiShiroe/OCR-pipeline-historical-data)
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DeguShi/OCR-pipeline-historical-data/blob/main/notebooks/presentation.ipynb)
+[![Paper presentation in Colab](https://img.shields.io/badge/Colab-paper%20presentation-f9ab00?logo=googlecolab)](https://colab.research.google.com/github/DeguShi/OCR-pipeline-historical-data/blob/main/notebooks/demo_artigo.ipynb)
+[![Pipeline page by page in Colab](https://img.shields.io/badge/Colab-pipeline%20page%20by%20page-f9ab00?logo=googlecolab)](https://colab.research.google.com/github/DeguShi/OCR-pipeline-historical-data/blob/main/notebooks/presentation.ipynb)
 
 Handwritten text recognition for the **Livro de Registro de Leis nº 1** (1892–1894), the first law register of
 the São Carlos city council (São Paulo, Brazil). The pipeline runs locally and needs no transcription service. It uses a
@@ -92,6 +93,11 @@ of the two references are in the paper (in Portuguese, with an English abstract)
 
 ## Quick start
 
+**Paper presentation:** [`notebooks/demo_artigo.ipynb`](notebooks/demo_artigo.ipynb) (pt-BR, executed) presents the
+paper from the saved results: protocol, pipeline, the comparison with published systems, six example pages with
+word-level errors, and the second book. It trains and decodes nothing; in Colab, its first cell fetches only the
+records and pages it reads.
+
 **Colab (no install):** open [`notebooks/presentation.ipynb`](notebooks/presentation.ipynb) in Colab
 (_File → Open notebook → GitHub_) and run all cells. It is saved with its outputs, so you can also just read it:
 for each page it shows every image step, the segmentation, the text after each stage and the errors against the
@@ -144,7 +150,7 @@ Choosing the chain with the sample transcriptions did no better. The search take
 | `configs/`                         | frozen configuration of every version (`final_v6.json` is the final one)                                                                    |
 | `sweeps/`                          | search specifications                                                                                                                       |
 | `tools/`                           | corpus download and dictionary building, reference comparison, final scoring                                                                |
-| `notebooks/`                       | presentation notebook (executed) and the notebook for new images                                                                            |
+| `notebooks/`                       | paper presentation and pipeline presentation (both executed), and the notebook for new images                                               |
 | `data/images`, `data/ground_truth` | the 12 evaluated pages and their official transcription                                                                                     |
 | `data/ground_truth_gemini`         | diplomatic transcriptions of the same 12 pages                                                                                              |
 | `data/extra/`                      | the book's other pages, training crops and their diplomatic transcriptions, the 10 test pages                                               |
@@ -200,6 +206,7 @@ Contra o gabarito oficial, nas 3 páginas reservadas, o WER fica em **18,74%** e
 transcrições diplomáticas, em 13 páginas fora do treino e da seleção, os valores são 4,10% e 1,68%. Essa referência
 foi gerada por LLM e não foi revisada por pessoas.
 
-O artigo completo está em [`docs/paper.pdf`](docs/paper.pdf). Para ver o pipeline funcionando, abra [`notebooks/presentation.ipynb`](notebooks/presentation.ipynb), que está em
+O artigo completo está em [`docs/paper.pdf`](docs/paper.pdf), e [`notebooks/demo_artigo.ipynb`](notebooks/demo_artigo.ipynb)
+apresenta os resultados dele com figuras. Para ver o pipeline funcionando, abra [`notebooks/presentation.ipynb`](notebooks/presentation.ipynb), que está em
 português e já executado. O processo completo, com os experimentos, os números e o que não funcionou, está em
 [`docs/PROCESS.md`](docs/PROCESS.md). Os registros de todas as buscas e treinos ficam em [`records/`](records/).
